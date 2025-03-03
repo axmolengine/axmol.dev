@@ -14,11 +14,9 @@ jobs:
       shell: pwsh
       run: |
         git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        ./setup.ps1
+        ./axmol/setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol
+        axmol -d HelloCpp
   winuwp:
     # build uwp debug avoid github CI fail with memory issue
     runs-on: windows-latest
@@ -30,11 +28,9 @@ jobs:
       shell: pwsh
       run: |
         git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        ./setup.ps1
+        ./axmol/setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol -p winuwp
+        axmol -d HelloCpp -p winuwp
   win32-clang:
     runs-on: windows-latest
     env:
@@ -48,27 +44,24 @@ jobs:
       shell: pwsh
       run: |
         git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        ./setup.ps1
+        ./axmol/setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol -cc clang
+        axmol -d HelloCpp -cc clang
   linux:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
         submodules: 'recursive'
-
+    - name: Install deps
+      run: |
+        git clone --branch dev https://github.com/axmolengine/axmol.git
+        echo -e "y" | pwsh ./axmol/setup.ps1
     - name: Build
       shell: pwsh
       run: |
-        git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        echo -e "y" | ./setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol
+        axmol -d HelloCpp
   osx-arm64:
     runs-on: macos-latest
     steps:
@@ -79,11 +72,9 @@ jobs:
       shell: pwsh
       run: |
         git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        ./setup.ps1
+        ./axmol/setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol
+        axmol -d HelloCpp
   osx-x64:
     runs-on: macos-13
     steps:
@@ -94,11 +85,9 @@ jobs:
       shell: pwsh
       run: |
         git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        ./setup.ps1
+        ./axmol/setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol
+        axmol -d HelloCpp
   android:
     runs-on: ubuntu-latest
     steps:
@@ -109,11 +98,9 @@ jobs:
       shell: pwsh
       run: |
         git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        ./setup.ps1
+        ./axmol/setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol -p android
+        axmol -p android -d HelloCpp
   ios:
     runs-on: macos-latest
     strategy:
@@ -131,11 +118,9 @@ jobs:
       shell: pwsh
       run: |
         git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        ./setup.ps1
+        ./axmol/setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol -p $env:TARGET_OS
+        axmol -p $env:TARGET_OS -a x64 -d HelloCpp
   wasm:
     runs-on: ubuntu-latest
     steps:
@@ -146,8 +131,6 @@ jobs:
       shell: pwsh
       run: |
         git clone --branch dev https://github.com/axmolengine/axmol.git
-        cd axmol
-        ./setup.ps1
+        ./axmol/setup.ps1
         axmol new HelloCpp
-        cd HelloCpp
-        axmol -p wasm
+        axmol -p wasm -d HelloCpp
