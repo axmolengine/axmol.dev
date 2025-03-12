@@ -1,0 +1,64 @@
+name: build
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: 
+  push:
+    branches:
+      - master
+    paths:
+      - .github/workflows/build.yml
+  repository_dispatch:
+    types: [forward-push]
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Download artifacts from workflow build
+      uses: dawidd6/action-download-artifact@v9
+      with:
+        # Optional, GitHub token
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        # Required, workflow file name or ID
+        workflow: ci.yml
+        workflow_conclusion: success
+        branch: dev
+        name: wasm
+        path: tmp/wasm
+        repo: axmolengine/axmol
+    
+    - name: Build HTML sites
+      shell: pwsh
+      run: |
+        ls -r tmp/wasm
+        git clone https://github.com/axmolengine/axmol.git tmp/axmol-src
+        git -C tmp/axmol-src checkout dev
+        ./build.ps1 tmp/axmol-src tmp/wasm
+    
+    # Deploy HTML site to GitHub Pages
+    - name: GH Pages Deployment
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist/site1
+        enable_jekyll: false
+        allow_empty_commit: false
+        force_orphan: true
+        publish_branch: gh-pages
+        cname: axmol.dev
+    # Deploy HTML site to netlify Pages
+    - name: Netlify Pages Deployment
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist/site2
+        enable_jekyll: false
+        allow_empty_commit: false
+        force_orphan: true
+        publish_branch: netlify-pages
