@@ -17,12 +17,12 @@ function mkdirs([string]$path) {
 $site1_dist = Join-Path $my_root 'dist/site1'
 mkdirs $site1_dist
 
-# step.1 build docs to main site manual
+# step.1 build main site
 Copy-Item (Join-Path $my_root 'index.html') $site1_dist
 Copy-Item (Join-Path $my_root 'assets') $site1_dist -Recurse -Force
 Copy-Item (Join-Path $my_root 'donate') $site1_dist -Recurse -Force
 
-# step.2 build main site
+# step.2 build docs to main site manual
 if ($axmol_src) {
     $build_docs_script = Join-Path $axmol_src 'tools/ci/build-docs.ps1'
     &$build_docs_script $site1_dist
