@@ -954,31 +954,27 @@ box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);
 }
 
 
-/* 隐藏默认复选框 */
 input[type="checkbox"] {
     display: none;
 }
 
-/* 自定义复选框样式 */
 .checkbox {
-    width: 30px; /* 增大复选框尺寸 */
+    width: 30px;
     height: 30px;
     border: 3px solid #0F6FDA;
-    border-radius: 6px; /* 更大的圆角 */
+    border-radius: 6px;
     display: inline-block;
     position: relative;
     cursor: pointer;
-    vertical-align: middle; /* 垂直对齐文字 */
+    vertical-align: middle;
     box-sizing: border-box;
 }
 
-/* 勾选时的样式 */
 input[type="checkbox"]:checked + .checkbox {
     background-color: #0F6FDA;
     border-color: #0F6FDA;
 }
 
-/* 勾选时的对勾样式 */
 input[type="checkbox"]:checked + .checkbox::after {
     content: '';
     position: absolute;
@@ -988,16 +984,15 @@ input[type="checkbox"]:checked + .checkbox::after {
     height: 15px;
     border: solid white;
     border-width: 0 3px 3px 0;
-    transform: translate(-50%, -50%) rotate(45deg); /* 居中并旋转 */
+    transform: translate(-50%, -50%) rotate(45deg);
     box-sizing: border-box;
 }
 
-/* 设置文字样式与对齐 */
-.monthly-label {
+.checkbox-label {
     display: flex;
-    align-items: center; /* 文字与复选框垂直居中 */
-    font-size: 18px; /* 调整文字大小 */
-    gap: 10px; /* 设置复选框与文字之间的间距 */
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
     cursor: pointer;
     font-weight: bold;
 }
