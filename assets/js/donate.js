@@ -27,6 +27,7 @@ function formatCurrency(e) {
 }
 
 amountInput.addEventListener('focus', (e) => {
+    document.getElementById('custom').checked = true;
     document.querySelectorAll('.currency-symbol').forEach(el => el.style.opacity = 1);
 });
 
