@@ -81,7 +81,7 @@ document.querySelector('.submit-btn').addEventListener('click', () => {
 
         var form = $('#unipayment');
         form.attr('action', actionUrl);
-        form.children('#WIDbtype').attr('value', selected.id);
+        form.children('#WIDprod').attr('value', selected.id);
         form.children('#WIDout_trade_no').attr('value', window.cv_orderid);
         form.children('#WIDmonthly').attr('value', isMonthly ? '1' : '0');
         form.children('#WIDamount').attr('value', amount.toString());
