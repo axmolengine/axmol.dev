@@ -77,7 +77,7 @@ document.querySelector('.submit-btn').addEventListener('click', () => {
         console.log(`Amount: $${amount}${isMonthly ? '/month' : ''}`);
 
         let baseUrl = !sandbox ? 'simdsoft.com' : 'local.simdsoft.com';
-        let actionUrl = `https://${baseUrl}/onlinepay/unipay.php`;
+        let actionUrl = `https://${baseUrl}/onlinepay/uniorder.php`;
 
         var form = $('#unipayment');
         form.attr('action', actionUrl);
