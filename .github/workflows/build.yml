@@ -11,7 +11,14 @@ on:
   repository_dispatch:
     types: [forward-push]
   workflow_dispatch:
-    
+    inputs:
+      min_doc_ver:
+        # actions run ID
+        description: 'Please min doc version to build, example: 2.3'
+        # Default value if no value is explicitly provided
+        default: '2.3'
+        # Input has to be provided for the workflow to run
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -39,7 +46,7 @@ jobs:
         ls -r tmp/wasm
         git clone https://github.com/axmolengine/axmol.git tmp/axmol-src
         git -C tmp/axmol-src checkout dev
-        ./build.ps1 tmp/axmol-src tmp/wasm
+        ./build.ps1 tmp/axmol-src tmp/wasm -min_doc_ver ${{ github.event.inputs.min_doc_ver }}
     
     # Deploy HTML site to GitHub Pages
     - name: GH Pages Deployment

@@ -1,6 +1,7 @@
 param(
     $axmol_src = $null,
-    $wasm_artifact_dir = $null
+    $wasm_artifact_dir = $null,
+    $min_doc_ver = '2.3'
 )
 if ($wasm_artifact_dir) {
     $wasm_artifact_dir = (Resolve-Path $wasm_artifact_dir).Path
@@ -25,7 +26,7 @@ Copy-Item (Join-Path $my_root 'donate') $site1_dist -Recurse -Force
 # step.2 build docs to main site manual
 if ($axmol_src) {
     $build_docs_script = Join-Path $axmol_src 'tools/ci/build-docs.ps1'
-    &$build_docs_script $site1_dist
+    &$build_docs_script $site1_dist -min_ver $min_doc_ver
 }
 
 # step.3 build wasm preview site
