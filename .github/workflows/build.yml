@@ -19,6 +19,8 @@ on:
         default: '2.3'
         # Input has to be provided for the workflow to run
         required: true
+env:
+  DEFAULT_MIN_DOC_VER: '2.3'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -46,7 +48,9 @@ jobs:
         ls -r tmp/wasm
         git clone https://github.com/axmolengine/axmol.git tmp/axmol-src
         git -C tmp/axmol-src checkout dev
-        ./build.ps1 tmp/axmol-src tmp/wasm -min_doc_ver ${{ github.event.inputs.min_doc_ver }}
+        $min_doc_ver = '${{ github.event.inputs.min_doc_ver }}'
+        if (!$min_doc_ver) { $min_doc_ver = '${{ env.DEFAULT_MIN_DOC_VER }}'}
+        ./build.ps1 tmp/axmol-src tmp/wasm -min_doc_ver $min_doc_ver
     
     # Deploy HTML site to GitHub Pages
     - name: GH Pages Deployment
