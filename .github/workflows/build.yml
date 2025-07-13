@@ -14,13 +14,13 @@ on:
     inputs:
       min_doc_ver:
         # actions run ID
-        description: 'Please min doc version to build, example: 2.3'
+        description: 'Please min doc version to build, example: 2.4'
         # Default value if no value is explicitly provided
         default: '2.4'
         # Input has to be provided for the workflow to run
         required: true
 env:
-  DEFAULT_MIN_DOC_VER: '2.3'
+  DEFAULT_MIN_DOC_VER: '2.4'
 jobs:
   build:
     runs-on: ubuntu-latest
