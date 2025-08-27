@@ -37,7 +37,7 @@ jobs:
         # Required, workflow file name or ID
         workflow: build.yml
         workflow_conclusion: success
-        branch: dev
+        branch: dev/v3
         name: wasm
         path: tmp/wasm
         repo: axmolengine/axmol
@@ -47,7 +47,7 @@ jobs:
       run: |
         ls -r tmp/wasm
         git clone https://github.com/axmolengine/axmol.git tmp/axmol-src
-        git -C tmp/axmol-src checkout dev
+        git -C tmp/axmol-src checkout dev/v3
         $min_doc_ver = '${{ github.event.inputs.min_doc_ver }}'
         if (!$min_doc_ver) { $min_doc_ver = '${{ env.DEFAULT_MIN_DOC_VER }}'}
         ./build.ps1 tmp/axmol-src tmp/wasm -min_doc_ver $min_doc_ver
