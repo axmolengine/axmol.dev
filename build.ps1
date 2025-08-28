@@ -1,7 +1,7 @@
 param(
     $axmol_src = $null,
     $wasm_artifact_dir = $null,
-    $min_doc_ver = '2.3'
+    $min_doc_ver = '2.4'
 )
 if ($wasm_artifact_dir) {
     $wasm_artifact_dir = (Resolve-Path $wasm_artifact_dir).Path
