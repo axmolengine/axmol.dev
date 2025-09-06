@@ -1,0 +1,711 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: TextureImpl Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" src="../../darkmode_toggle.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;3.0.0-17c3cb0</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d5/db8/classax_1_1rhi_1_1gl_1_1_texture_impl.html','../../','dd/dd6/classax_1_1rhi_1_1gl_1_1_texture_impl-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">TextureImpl Class Reference<div class="ingroups"><a class="el" href="../../d3/d92/group____opengl.html">_opengl</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>The texture implementation supports 2D, cubemap, and 2D array textures.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;TextureGL.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html">Texture</a>.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a1ce045ea20dff9ca8fef9702a9c16652" id="r_a1ce045ea20dff9ca8fef9702a9c16652"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ce045ea20dff9ca8fef9702a9c16652">TextureImpl</a> (const <a class="el" href="../../d5/d34/structax_1_1rhi_1_1_texture_desc.html">TextureDesc</a> &amp;desc)</td></tr>
+<tr class="memitem:a8f1201dd6f5bd8b4ad59e2c7664827da" id="r_a8f1201dd6f5bd8b4ad59e2c7664827da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f1201dd6f5bd8b4ad59e2c7664827da">updateData</a> (const void *data, int width, int height, int level, int layerIndex) override</td></tr>
+<tr class="memdesc:a8f1201dd6f5bd8b4ad59e2c7664827da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a two-dimensional texture image.  <br /></td></tr>
+<tr class="memitem:ab0979582f37e0398987d41d9d6492e02" id="r_ab0979582f37e0398987d41d9d6492e02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0979582f37e0398987d41d9d6492e02">updateCompressedData</a> (const void *data, int width, int height, std::size_t dataSize, int level, int layerIndex) override</td></tr>
+<tr class="memdesc:ab0979582f37e0398987d41d9d6492e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a two-dimensional texture image in a compressed format.  <br /></td></tr>
+<tr class="memitem:a3120fc3e8dd1474cf765c4fa7173af0d" id="r_a3120fc3e8dd1474cf765c4fa7173af0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3120fc3e8dd1474cf765c4fa7173af0d">updateSubData</a> (int xoffset, int yoffset, int width, int height, int level, const void *data, int layerIndex) override</td></tr>
+<tr class="memdesc:a3120fc3e8dd1474cf765c4fa7173af0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a two-dimensional texture subimage.  <br /></td></tr>
+<tr class="memitem:af0c7bab21f4a648e75cf6aeab84e84ac" id="r_af0c7bab21f4a648e75cf6aeab84e84ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0c7bab21f4a648e75cf6aeab84e84ac">updateCompressedSubData</a> (int xoffset, int yoffset, int width, int height, std::size_t dataSize, int level, const void *data, int layerIndex) override</td></tr>
+<tr class="memdesc:af0c7bab21f4a648e75cf6aeab84e84ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a two-dimensional texture subimage in a compressed format.  <br /></td></tr>
+<tr class="memitem:a6f09721fba0a7adb6f2173efab78bb17" id="r_a6f09721fba0a7adb6f2173efab78bb17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f09721fba0a7adb6f2173efab78bb17">updateFaceData</a> (TextureCubeFace side, const void *data) override</td></tr>
+<tr class="memdesc:a6f09721fba0a7adb6f2173efab78bb17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update texutre cube data in give slice side.  <br /></td></tr>
+<tr class="memitem:ab03c77305ae517eab480bfa49d7636fc" id="r_ab03c77305ae517eab480bfa49d7636fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab03c77305ae517eab480bfa49d7636fc">updateSamplerDesc</a> (const <a class="el" href="../../de/d0b/structax_1_1rhi_1_1_sampler_desc.html">SamplerDesc</a> &amp;sampler) override</td></tr>
+<tr class="memdesc:ab03c77305ae517eab480bfa49d7636fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update sampler.  <br /></td></tr>
+<tr class="memitem:a4a1d142f3c5ff9845a227f8e15aadf72" id="r_a4a1d142f3c5ff9845a227f8e15aadf72"><td class="memItemLeft" align="right" valign="top"><a id="a4a1d142f3c5ff9845a227f8e15aadf72" name="a4a1d142f3c5ff9845a227f8e15aadf72"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>generateMipmaps</b> ()</td></tr>
+<tr class="memdesc:a4a1d142f3c5ff9845a227f8e15aadf72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate mipmaps. <br /></td></tr>
+<tr class="memitem:a00d7d60e0c828670103c1b6dfe3b93c0" id="r_a00d7d60e0c828670103c1b6dfe3b93c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00d7d60e0c828670103c1b6dfe3b93c0">updateTextureDesc</a> (const <a class="el" href="../../d5/d34/structax_1_1rhi_1_1_texture_desc.html">TextureDesc</a> &amp;descriptor) override</td></tr>
+<tr class="memdesc:a00d7d60e0c828670103c1b6dfe3b93c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update texture description.  <br /></td></tr>
+<tr class="memitem:a62c38dcaa8e10982080e520cc1b29123" id="r_a62c38dcaa8e10982080e520cc1b29123"><td class="memItemLeft" align="right" valign="top">GLuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62c38dcaa8e10982080e520cc1b29123">internalHandle</a> () const</td></tr>
+<tr class="memdesc:a62c38dcaa8e10982080e520cc1b29123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get internal texture object handle.  <br /></td></tr>
+<tr class="memitem:ad73dfc4c6d8949ea786ff379f53a2def" id="r_ad73dfc4c6d8949ea786ff379f53a2def"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad73dfc4c6d8949ea786ff379f53a2def">apply</a> (int slot) const</td></tr>
+<tr class="memdesc:ad73dfc4c6d8949ea786ff379f53a2def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set texture to pipeline.  <br /></td></tr>
+<tr class="inherit_header pub_methods_classax_1_1rhi_1_1_texture"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classax_1_1rhi_1_1_texture')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html">Texture</a></td></tr>
+<tr class="memitem:ad62167a7dc43f898f5ff80dc72f6a2e4 inherit pub_methods_classax_1_1rhi_1_1_texture" id="r_ad62167a7dc43f898f5ff80dc72f6a2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d88/namespaceax_1_1rhi.html#afe919d7a7aeba256337f0fc494cf7221">PixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#ad62167a7dc43f898f5ff80dc72f6a2e4">getPixelFormat</a> () const</td></tr>
+<tr class="memdesc:ad62167a7dc43f898f5ff80dc72f6a2e4 inherit pub_methods_classax_1_1rhi_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get texture format.  <br /></td></tr>
+<tr class="memitem:a83787b4b0ceff7d5d7b9a8a56c5ee449 inherit pub_methods_classax_1_1rhi_1_1_texture" id="r_a83787b4b0ceff7d5d7b9a8a56c5ee449"><td class="memItemLeft" align="right" valign="top">TextureUsage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#a83787b4b0ceff7d5d7b9a8a56c5ee449">getTextureUsage</a> () const</td></tr>
+<tr class="memdesc:a83787b4b0ceff7d5d7b9a8a56c5ee449 inherit pub_methods_classax_1_1rhi_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get texture usage.  <br /></td></tr>
+<tr class="memitem:ab6029fd3824ee6b4ff8f48c6ea5de289 inherit pub_methods_classax_1_1rhi_1_1_texture" id="r_ab6029fd3824ee6b4ff8f48c6ea5de289"><td class="memItemLeft" align="right" valign="top">TextureType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#ab6029fd3824ee6b4ff8f48c6ea5de289">getTextureType</a> () const</td></tr>
+<tr class="memdesc:ab6029fd3824ee6b4ff8f48c6ea5de289 inherit pub_methods_classax_1_1rhi_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get texture type.  <br /></td></tr>
+<tr class="memitem:a46416c18b84a3536b983225175f154a1 inherit pub_methods_classax_1_1rhi_1_1_texture" id="r_a46416c18b84a3536b983225175f154a1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#a46416c18b84a3536b983225175f154a1">hasMipmaps</a> () const</td></tr>
+<tr class="memdesc:a46416c18b84a3536b983225175f154a1 inherit pub_methods_classax_1_1rhi_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if mipmap had generated before.  <br /></td></tr>
+<tr class="memitem:ab5cd5d250ae780f7c863be7adf3d88b8 inherit pub_methods_classax_1_1rhi_1_1_texture" id="r_ab5cd5d250ae780f7c863be7adf3d88b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#ab5cd5d250ae780f7c863be7adf3d88b8">zeroTexData</a> ()</td></tr>
+<tr class="memdesc:ab5cd5d250ae780f7c863be7adf3d88b8 inherit pub_methods_classax_1_1rhi_1_1_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">clear texture data to zero.  <br /></td></tr>
+<tr class="inherit_header pub_methods_classax_1_1_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classax_1_1_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object" id="r_a24888ae1fe9df2d329c9b485807cb62b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a24888ae1fe9df2d329c9b485807cb62b">retain</a> ()</td></tr>
+<tr class="memdesc:a24888ae1fe9df2d329c9b485807cb62b inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retains the ownership.  <br /></td></tr>
+<tr class="memitem:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object" id="r_a23b477d0e2d399f75d585d154c346591"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a23b477d0e2d399f75d585d154c346591">release</a> ()</td></tr>
+<tr class="memdesc:a23b477d0e2d399f75d585d154c346591 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership immediately.  <br /></td></tr>
+<tr class="memitem:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object" id="r_a8c10c4318ad9f6d71f24f5185e4b8512"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a8c10c4318ad9f6d71f24f5185e4b8512">autorelease</a> ()</td></tr>
+<tr class="memdesc:a8c10c4318ad9f6d71f24f5185e4b8512 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the ownership sometime soon automatically.  <br /></td></tr>
+<tr class="memitem:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object" id="r_a00f5c543c1504195eb40b1dcc4d1e794"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#a00f5c543c1504195eb40b1dcc4d1e794">getReferenceCount</a> () const</td></tr>
+<tr class="memdesc:a00f5c543c1504195eb40b1dcc4d1e794 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../d0/d25/classax_1_1_object.html" title="Object is used for reference count management.">Object</a>'s current reference count.  <br /></td></tr>
+<tr class="memitem:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object" id="r_ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classax_1_1_object.html#ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5">~Object</a> ()</td></tr>
+<tr class="memdesc:ab5cc4f9ba1ea5c2f25bc4b1f0dac5dc5 inherit pub_methods_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classax_1_1_object"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classax_1_1_object')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="../../d0/d25/classax_1_1_object.html">Object</a></td></tr>
+<tr class="memitem:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object" id="r_a87199ccfa9acfd9dbbe4a61be4f3f15d"><td class="memItemLeft" align="right" valign="top">
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>_ID</b></td></tr>
+<tr class="memdesc:a87199ccfa9acfd9dbbe4a61be4f3f15d inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">object id, ScriptSupport need public _ID <br /></td></tr>
+<tr class="memitem:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object" id="r_adb10edfc88a28e6dc62942b7f532edd0"><td class="memItemLeft" align="right" valign="top">
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_luaID</b></td></tr>
+<tr class="memdesc:adb10edfc88a28e6dc62942b7f532edd0 inherit pub_attribs_classax_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lua reference id. <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The texture implementation supports 2D, cubemap, and 2D array textures. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1ce045ea20dff9ca8fef9702a9c16652" name="a1ce045ea20dff9ca8fef9702a9c16652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ce045ea20dff9ca8fef9702a9c16652">&#9670;&#160;</a></span>TextureImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/db8/classax_1_1rhi_1_1gl_1_1_texture_impl.html">TextureImpl</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d34/structax_1_1rhi_1_1_texture_desc.html">TextureDesc</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>desc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desc</td><td>Specifies the texture description. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a8f1201dd6f5bd8b4ad59e2c7664827da" name="a8f1201dd6f5bd8b4ad59e2c7664827da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f1201dd6f5bd8b4ad59e2c7664827da">&#9670;&#160;</a></span>updateData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateData </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>layerIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update a two-dimensional texture image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the image data in memory. </td></tr>
+    <tr><td class="paramname">width</td><td>Specifies the width of the texture image. </td></tr>
+    <tr><td class="paramname">height</td><td>Specifies the height of the texture image. </td></tr>
+    <tr><td class="paramname">level</td><td>Specifies the level-of-detail number. Level 0 is the base image level. Level n is the nth mipmap </td></tr>
+    <tr><td class="paramname">layerIndex</td><td>Specifies the layer index for 2D array textures. reduction image. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#a2889872e3cf36441cf9fd98beae1a42e">Texture</a>.</p>
+
+</div>
+</div>
+<a id="ab0979582f37e0398987d41d9d6492e02" name="ab0979582f37e0398987d41d9d6492e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0979582f37e0398987d41d9d6492e02">&#9670;&#160;</a></span>updateCompressedData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateCompressedData </td>
+          <td>(</td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>dataSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>layerIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update a two-dimensional texture image in a compressed format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the compressed image data in memory. </td></tr>
+    <tr><td class="paramname">width</td><td>Specifies the width of the texture image. </td></tr>
+    <tr><td class="paramname">height</td><td>Specifies the height of the texture image. </td></tr>
+    <tr><td class="paramname">dataSize</td><td>Specifies the totoal size of compressed image in bytes. </td></tr>
+    <tr><td class="paramname">level</td><td>Specifies the level-of-detail number. Level 0 is the base image level. Level n is the nth mipmap reduction image. </td></tr>
+    <tr><td class="paramname">layerIndex</td><td>Specifies the layer index for 2D array textures. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#a213071db36e3b9d304dd1dfda7c991a5">Texture</a>.</p>
+
+</div>
+</div>
+<a id="a3120fc3e8dd1474cf765c4fa7173af0d" name="a3120fc3e8dd1474cf765c4fa7173af0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3120fc3e8dd1474cf765c4fa7173af0d">&#9670;&#160;</a></span>updateSubData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateSubData </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>xoffset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>yoffset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>layerIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update a two-dimensional texture subimage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xoffset</td><td>Specifies a texel offset in the x direction within the texture array. </td></tr>
+    <tr><td class="paramname">yoffset</td><td>Specifies a texel offset in the y direction within the texture array. </td></tr>
+    <tr><td class="paramname">width</td><td>Specifies the width of the texture subimage. </td></tr>
+    <tr><td class="paramname">height</td><td>Specifies the height of the texture subimage. </td></tr>
+    <tr><td class="paramname">level</td><td>Specifies the level-of-detail number. Level 0 is the base image level. Level n is the nth mipmap reduction image. </td></tr>
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the image data in memory. </td></tr>
+    <tr><td class="paramname">layerIndex</td><td>Specifies the layer index for 2D array textures. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#a9c44d7981ef0b48f9b85fb3c1b74791b">Texture</a>.</p>
+
+</div>
+</div>
+<a id="af0c7bab21f4a648e75cf6aeab84e84ac" name="af0c7bab21f4a648e75cf6aeab84e84ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0c7bab21f4a648e75cf6aeab84e84ac">&#9670;&#160;</a></span>updateCompressedSubData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateCompressedSubData </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>xoffset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>yoffset</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>width</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t</td>          <td class="paramname"><span class="paramname"><em>dataSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>layerIndex</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update a two-dimensional texture subimage in a compressed format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">xoffset</td><td>Specifies a texel offset in the x direction within the texture array. </td></tr>
+    <tr><td class="paramname">yoffset</td><td>Specifies a texel offset in the y direction within the texture array. </td></tr>
+    <tr><td class="paramname">width</td><td>Specifies the width of the texture subimage. </td></tr>
+    <tr><td class="paramname">height</td><td>Specifies the height of the texture subimage. </td></tr>
+    <tr><td class="paramname">dataSize</td><td>Specifies the totoal size of compressed subimage in bytes. </td></tr>
+    <tr><td class="paramname">level</td><td>Specifies the level-of-detail number. Level 0 is the base image level. Level n is the nth mipmap reduction image. </td></tr>
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the compressed image data in memory. </td></tr>
+    <tr><td class="paramname">layerIndex</td><td>Specifies the layer index for 2D array textures. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#a7b55474bdda6c6250dbe296690a52d3a">Texture</a>.</p>
+
+</div>
+</div>
+<a id="a6f09721fba0a7adb6f2173efab78bb17" name="a6f09721fba0a7adb6f2173efab78bb17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f09721fba0a7adb6f2173efab78bb17">&#9670;&#160;</a></span>updateFaceData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateFaceData </td>
+          <td>(</td>
+          <td class="paramtype">TextureCubeFace</td>          <td class="paramname"><span class="paramname"><em>side</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update texutre cube data in give slice side. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">side</td><td>Specifies which slice texture of cube to be update. </td></tr>
+    <tr><td class="paramname">data</td><td>Specifies a pointer to the image data in memory. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#aa79461d5c11c995f93c484b21871bcec">Texture</a>.</p>
+
+</div>
+</div>
+<a id="ab03c77305ae517eab480bfa49d7636fc" name="ab03c77305ae517eab480bfa49d7636fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab03c77305ae517eab480bfa49d7636fc">&#9670;&#160;</a></span>updateSamplerDesc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateSamplerDesc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../de/d0b/structax_1_1rhi_1_1_sampler_desc.html">SamplerDesc</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>sampler</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update sampler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sampler</td><td>Specifies the sampler descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#a27ad78eef9166664cfaf55d18c3fd5f5">Texture</a>.</p>
+
+</div>
+</div>
+<a id="a00d7d60e0c828670103c1b6dfe3b93c0" name="a00d7d60e0c828670103c1b6dfe3b93c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00d7d60e0c828670103c1b6dfe3b93c0">&#9670;&#160;</a></span>updateTextureDesc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void updateTextureDesc </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d34/structax_1_1rhi_1_1_texture_desc.html">TextureDesc</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>descriptor</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update texture description. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">descriptor</td><td>Specifies texture and sampler descriptor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html#a1d4415228fd6008a38c42877bd323832">Texture</a>.</p>
+
+</div>
+</div>
+<a id="a62c38dcaa8e10982080e520cc1b29123" name="a62c38dcaa8e10982080e520cc1b29123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c38dcaa8e10982080e520cc1b29123">&#9670;&#160;</a></span>internalHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLuint internalHandle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get internal texture object handle. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../db/dd3/classax_1_1rhi_1_1_texture.html" title="A base texture.">Texture</a> object. </dd></dl>
+
+</div>
+</div>
+<a id="ad73dfc4c6d8949ea786ff379f53a2def" name="ad73dfc4c6d8949ea786ff379f53a2def"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73dfc4c6d8949ea786ff379f53a2def">&#9670;&#160;</a></span>apply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>slot</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set texture to pipeline. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Specifies the texture image unit selector. </td></tr>
+    <tr><td class="paramname">target</td><td>GL_TEXTURE_2D or GL_TEXTURE_CUBE_MAP </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><b>TextureGL.h</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><a href="../../dd/d88/namespaceax_1_1rhi.html">rhi</a></li><li class="navelem"><b>gl</b></li><li class="navelem"><a href="../../d5/db8/classax_1_1rhi_1_1gl_1_1_texture_impl.html">TextureImpl</a></li>
+    <li class="footer">Generated on <span class="timestamp"></span> for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
