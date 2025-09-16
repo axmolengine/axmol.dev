@@ -37,7 +37,7 @@ jobs:
         # Required, workflow file name or ID
         workflow: build.yml
         workflow_conclusion: success
-        branch: dev/v3
+        branch: dev
         name: wasm
         path: tmp/wasm
         repo: axmolengine/axmol
