@@ -996,3 +996,51 @@ input[type="checkbox"]:checked + .checkbox::after {
     cursor: pointer;
     font-weight: bold;
 }
+
+.help-tooltip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #eef2f7;
+    color: #333;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: help;
+    position: relative;
+    user-select: none;
+  }
+  .help-tooltip .tooltip {
+    position: absolute;
+    left: 50%;
+    bottom: 130%;
+    transform: translateX(-50%) translateY(6px);
+    background: #111;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .15s ease, transform .15s ease;
+  }
+  .help-tooltip .tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: #111;
+  }
+  .help-tooltip:hover .tooltip,
+  .help-tooltip:focus .tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }

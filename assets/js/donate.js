@@ -76,16 +76,26 @@ document.querySelector('.submit-btn').addEventListener('click', () => {
 
         console.log(`Amount: $${amount}${isMonthly ? '/month' : ''}`);
 
-        let baseUrl = !sandbox ? 'simdsoft.com' : 'local.simdsoft.com';
-        let actionUrl = `https://${baseUrl}/onlinepay/uniorder.php`;
+        const f_amount = parseFloat(amount);
+        const paypal_fee = (0.043 * f_amount) + 0.30;
+        const gh_fee = 0.10 * f_amount;
 
-        var form = $('#unipayment');
-        form.attr('action', actionUrl);
-        form.children('#WIDprod').attr('value', selected.id);
-        form.children('#WIDout_trade_no').attr('value', window.cv_orderid);
-        form.children('#WIDmonthly').attr('value', isMonthly ? '1' : '0');
-        form.children('#WIDamount').attr('value', amount.toString());
-        form.submit();
+        if (paypal_fee < gh_fee) {
+          let baseUrl = !sandbox ? 'simdsoft.com' : 'local.simdsoft.com';
+          const actionUrl = `https://${baseUrl}/onlinepay/uniorder.php`;
+          var form = $('#unipayment');
+          form.attr('action', actionUrl);
+          form.children('#WIDprod').attr('value', selected.id);
+          form.children('#WIDout_trade_no').attr('value', window.cv_orderid);
+          form.children('#WIDmonthly').attr('value', isMonthly ? '1' : '0');
+          form.children('#WIDamount').attr('value', amount.toString());
+          form.submit();
+        }
+        else {
+          const gh_freq = isMonthly ?  'recurring' : 'one-time';
+          const actionUrl = `https://github.com/sponsors/axmolengine/sponsorships?preview=false&frequency=${gh_freq}&amount=${amount}`;
+          window.open(actionUrl, '_blank');
+        }
     } else {
         window.alert('Please select a tier!');
     }
