@@ -1,0 +1,1446 @@
+<!-- HTML header for doxygen 1.9.6-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Axmol Engine: Helper Class Reference</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript">
+    window.__relpath = "../../";
+</script>
+<script src="../../hacks.js" type="text/javascript"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(function() { init_search(); });
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+//<![CDATA[
+MathJax.Hub.Config(
+{
+  TeX: {
+      Macros: {
+          qprel: [ "{\\gtreqless}", 0],
+          qpx: [ "{\\mathbf{x}}", 0],
+          qpl: [ "{\\mathbf{l}}", 0],
+          qpu: [ "{\\mathbf{u}}", 0],
+          qpc: [ "{\\mathbf{c}}", 0],
+          qpb: [ "{\\mathbf{b}}", 0],
+          qpy: [ "{\\mathbf{y}}", 0],
+          qpw: [ "{\\mathbf{w}}", 0],
+          qplambda: [ "{\\mathbf{\\lambda}}", 0],
+          ssWpoint: [ "{\\bf #1}", 1],
+          ssWeight: [ "{w_{#1}}", 1],
+          dabs: [ "{\\parallel\\! #1 \\!\\parallel}", 1],
+          E: [ "{\\mathrm{E}}", 0],
+          A: [ "{\\mathrm{A}}", 0],
+          R: [ "{\\mathrm{R}}", 0],
+          N: [ "{\\mathrm{N}}", 0],
+          Q: [ "{\\mathrm{Q}}", 0],
+          Z: [ "{\\mathrm{Z}}", 0],
+          ccSum: [ "{\\sum_{#1}^{#2}{#3}}", 3],
+          ccProd: [ "{\\prod_{#1}^{#2}{#3}}", 3],
+          pyr: [ "{\\operatorname{Pyr}}", 0],
+          aff: [ "{\\operatorname{aff}}", 0],
+          Ac: [ "{\\cal A}", 0],
+          Sc: [ "{\\cal S}", 0],
+      },
+      equationNumbers: { autoNumber: "AMS" }
+  }
+}
+);
+//]]>
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<script type="text/javascript" src="../../darkmode_toggle.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<!-- This should probably be an extrastylesheet instead of hardcoded. -->
+<link href="../../stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="back-nav">
+  <ul>
+    <li><a href="https://github.com/axmolengine/axmol">GitHub</a></li>
+    <li><a href="../../index.html">Top</a></li>
+  </ul>
+          <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</div>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Axmol Engine<span id="projectnumber">&#160;3.0.0-612a9b4</span>
+   </div>
+  </td>
+    <!--<td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon" onmouseover="return searchBox.OnSearchSelectShow()" onmouseout="return searchBox.OnSearchSelectHide()"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+</td>-->
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('d2/db8/classax_1_1ui_1_1_helper.html','../../','d5/dfb/classax_1_1ui_1_1_helper-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Helper Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="../../d2/db8/classax_1_1ui_1_1_helper.html" title="Helper class for traversing children in widget tree.">Helper</a> class for traversing children in widget tree.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;UIHelper.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:VisibleRect" id="r_VisibleRect"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/classax_1_1ui_1_1_helper_1_1_visible_rect.html">VisibleRect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CLASS <a class="el" href="../../d5/d88/classax_1_1ui_1_1_helper_1_1_visible_rect.html" title="CLASS VisibleRect.">VisibleRect</a>.  <a href="../../d5/d88/classax_1_1ui_1_1_helper_1_1_visible_rect.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a92252f45c0b29727ff708ff21150505b" id="r_a92252f45c0b29727ff708ff21150505b"><td class="memItemLeft" align="right" valign="top"><a id="a92252f45c0b29727ff708ff21150505b" name="a92252f45c0b29727ff708ff21150505b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92252f45c0b29727ff708ff21150505b">AlignType</a> </td></tr>
+<tr class="memdesc:a92252f45c0b29727ff708ff21150505b"><td class="mdescLeft">&#160;</td><td class="mdescRight">align type defination <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a43bf95b1ea3aa4456d0f9c12bbdc5a14" id="r_a43bf95b1ea3aa4456d0f9c12bbdc5a14"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43bf95b1ea3aa4456d0f9c12bbdc5a14">seekWidgetByTag</a> (<a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *root, int tag)</td></tr>
+<tr class="memdesc:a43bf95b1ea3aa4456d0f9c12bbdc5a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a widget with a specific tag from root widget.  <br /></td></tr>
+<tr class="memitem:a1a444c9461479790d5052754c66d0ced" id="r_a1a444c9461479790d5052754c66d0ced"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a444c9461479790d5052754c66d0ced">seekWidgetByName</a> (<a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *root, std::string_view name)</td></tr>
+<tr class="memdesc:a1a444c9461479790d5052754c66d0ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a widget with a specific name from root widget.  <br /></td></tr>
+<tr class="memitem:a2a30eefee195833212a1eeda33d8ec09" id="r_a2a30eefee195833212a1eeda33d8ec09"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a30eefee195833212a1eeda33d8ec09">seekActionWidgetByActionTag</a> (<a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *root, int tag)</td></tr>
+<tr class="memdesc:a2a30eefee195833212a1eeda33d8ec09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a widget with a specific action tag from root widget This search will be recursive through all child widgets.  <br /></td></tr>
+<tr class="memitem:a55c7a0aa938ebd75dd50d72601280c8a" id="r_a55c7a0aa938ebd75dd50d72601280c8a"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55c7a0aa938ebd75dd50d72601280c8a">getSubStringOfUTF8String</a> (std::string_view str, std::string::size_type start, std::string::size_type length)</td></tr>
+<tr class="memdesc:a55c7a0aa938ebd75dd50d72601280c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a UTF8 substring from a std::string with a given start position and length Sample: std::string str = "中国中国中国"; substr = getSubStringOfUTF8String(str,0,2) will = "中国".  <br /></td></tr>
+<tr class="memitem:aa1a1f89b9f5de9877a8be1de1e502650" id="r_aa1a1f89b9f5de9877a8be1de1e502650"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1a1f89b9f5de9877a8be1de1e502650">doLayout</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *rootNode)</td></tr>
+<tr class="memdesc:aa1a1f89b9f5de9877a8be1de1e502650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh object and it's children layout state.  <br /></td></tr>
+<tr class="memitem:ab19503ade6b4d22d00e9967f34add7e9" id="r_ab19503ade6b4d22d00e9967f34add7e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab19503ade6b4d22d00e9967f34add7e9">changeLayoutSystemActiveState</a> (bool active)</td></tr>
+<tr class="memdesc:ab19503ade6b4d22d00e9967f34add7e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the active property of <a class="el" href="../../d3/d85/classax_1_1ui_1_1_layout.html" title="A container for holding a few child widgets.">Layout</a>'s.  <br /></td></tr>
+<tr class="memitem:a9da7406da809d8b01f31f3b3d328748b" id="r_a9da7406da809d8b01f31f3b3d328748b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9da7406da809d8b01f31f3b3d328748b">restrictCapInsetRect</a> (const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;capInsets, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;textureSize)</td></tr>
+<tr class="memdesc:a9da7406da809d8b01f31f3b3d328748b"><td class="mdescLeft">&#160;</td><td class="mdescRight">restrict capInsetSize, when the capInsets's width is larger than the textureSize, it will restrict to 0, the height goes the same way as width.  <br /></td></tr>
+<tr class="memitem:abb8413df96284d82da00f872a6d93ebe" id="r_abb8413df96284d82da00f872a6d93ebe"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb8413df96284d82da00f872a6d93ebe">convertBoundingBoxToScreen</a> (<a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *node)</td></tr>
+<tr class="memdesc:abb8413df96284d82da00f872a6d93ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a node's boundingBox rect into screen coordinates.  <br /></td></tr>
+<tr class="memitem:a8bb3f601b7b0c014120e04efffae7f29" id="r_a8bb3f601b7b0c014120e04efffae7f29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bb3f601b7b0c014120e04efffae7f29">setDesignSizeFixedEdge</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;designSize)</td></tr>
+<tr class="memdesc:a8bb3f601b7b0c014120e04efffae7f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">adatpe design size with fixed edge, normally, use this function for screen adatpe  <br /></td></tr>
+<tr class="memitem:a3a70cefd594d35b181950189a837b22d" id="r_a3a70cefd594d35b181950189a837b22d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a70cefd594d35b181950189a837b22d">setDesignSizeNoBorder</a> (const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;designSize)</td></tr>
+<tr class="memdesc:a3a70cefd594d35b181950189a837b22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">adapte design size with no border  <br /></td></tr>
+<tr class="memitem:a8e7ea735d28dc47277437b1e9585f23c" id="r_a8e7ea735d28dc47277437b1e9585f23c"><td class="memItemLeft" align="right" valign="top"><a id="a8e7ea735d28dc47277437b1e9585f23c" name="a8e7ea735d28dc47277437b1e9585f23c"></a>
+static <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeGroupSize</b> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a8e7ea735d28dc47277437b1e9585f23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get node group size. <br /></td></tr>
+<tr class="memitem:a03bcbf873c0dac0749ae135636153a3b" id="r_a03bcbf873c0dac0749ae135636153a3b"><td class="memItemLeft" align="right" valign="top"><a id="a03bcbf873c0dac0749ae135636153a3b" name="a03bcbf873c0dac0749ae135636153a3b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>setNodeGroupSize</b> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes, const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;newSize)</td></tr>
+<tr class="memdesc:a03bcbf873c0dac0749ae135636153a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set nodes group size. <br /></td></tr>
+<tr class="memitem:aedc0dd081fdb79b774699e5a79aa2de8" id="r_aedc0dd081fdb79b774699e5a79aa2de8"><td class="memItemLeft" align="right" valign="top"><a id="aedc0dd081fdb79b774699e5a79aa2de8" name="aedc0dd081fdb79b774699e5a79aa2de8"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeGroupLeft</b> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:aedc0dd081fdb79b774699e5a79aa2de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="../../df/da2/classax_1_1_node.html" title="Node is the base element of the Scene Graph.">Node</a> group left. <br /></td></tr>
+<tr class="memitem:aedfd1da8ae179f58cac12ab01cbe3166" id="r_aedfd1da8ae179f58cac12ab01cbe3166"><td class="memItemLeft" align="right" valign="top"><a id="aedfd1da8ae179f58cac12ab01cbe3166" name="aedfd1da8ae179f58cac12ab01cbe3166"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeGroupTop</b> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:aedfd1da8ae179f58cac12ab01cbe3166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get node group top. <br /></td></tr>
+<tr class="memitem:af29052ff93e4edb5829de5b584e2b36f" id="r_af29052ff93e4edb5829de5b584e2b36f"><td class="memItemLeft" align="right" valign="top"><a id="af29052ff93e4edb5829de5b584e2b36f" name="af29052ff93e4edb5829de5b584e2b36f"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeGroupRight</b> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:af29052ff93e4edb5829de5b584e2b36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get node group right. <br /></td></tr>
+<tr class="memitem:a02bdc939f3837063342192bf3d002e00" id="r_a02bdc939f3837063342192bf3d002e00"><td class="memItemLeft" align="right" valign="top"><a id="a02bdc939f3837063342192bf3d002e00" name="a02bdc939f3837063342192bf3d002e00"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>getNodeGroupBottom</b> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a02bdc939f3837063342192bf3d002e00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get node group bottom. <br /></td></tr>
+<tr class="memitem:a3681e8f62b47d7489040b4b81d4e415a" id="r_a3681e8f62b47d7489040b4b81d4e415a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3681e8f62b47d7489040b4b81d4e415a">centerHorizontally</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a3681e8f62b47d7489040b4b81d4e415a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center horiz to parent.  <br /></td></tr>
+<tr class="memitem:a20b5f8c94218664d9975645bbbfd52c8" id="r_a20b5f8c94218664d9975645bbbfd52c8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20b5f8c94218664d9975645bbbfd52c8">centerVertically</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a20b5f8c94218664d9975645bbbfd52c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center vertical to parent.  <br /></td></tr>
+<tr class="memitem:ae741da19772f34f50a5acc0eb93bd868" id="r_ae741da19772f34f50a5acc0eb93bd868"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae741da19772f34f50a5acc0eb93bd868">centerToParent</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:ae741da19772f34f50a5acc0eb93bd868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Center to parent.  <br /></td></tr>
+<tr class="memitem:aa2631a7f008f5a670ea2fdb310c791f5" id="r_aa2631a7f008f5a670ea2fdb310c791f5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2631a7f008f5a670ea2fdb310c791f5">alignLefts</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:aa2631a7f008f5a670ea2fdb310c791f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align lefts.  <br /></td></tr>
+<tr class="memitem:a4fd4ca3aef0fe1208e78285d39faa2ec" id="r_a4fd4ca3aef0fe1208e78285d39faa2ec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fd4ca3aef0fe1208e78285d39faa2ec">alignRights</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a4fd4ca3aef0fe1208e78285d39faa2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align rights.  <br /></td></tr>
+<tr class="memitem:a65661deaf3a7fc32d38ce9e74ad0b6d2" id="r_a65661deaf3a7fc32d38ce9e74ad0b6d2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65661deaf3a7fc32d38ce9e74ad0b6d2">alignTops</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a65661deaf3a7fc32d38ce9e74ad0b6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align tops.  <br /></td></tr>
+<tr class="memitem:a3e1e8f98c5892e09347d5db9f2a3ace6" id="r_a3e1e8f98c5892e09347d5db9f2a3ace6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e1e8f98c5892e09347d5db9f2a3ace6">alignBottoms</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a3e1e8f98c5892e09347d5db9f2a3ace6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align bottoms.  <br /></td></tr>
+<tr class="memitem:a90c449f1af680faf9d59c462bfd68286" id="r_a90c449f1af680faf9d59c462bfd68286"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90c449f1af680faf9d59c462bfd68286">alignHorizontals</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a90c449f1af680faf9d59c462bfd68286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align horiz.  <br /></td></tr>
+<tr class="memitem:a2d98851a54365eac6bb0d820c4effaba" id="r_a2d98851a54365eac6bb0d820c4effaba"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d98851a54365eac6bb0d820c4effaba">alignVerticals</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a2d98851a54365eac6bb0d820c4effaba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align vertical.  <br /></td></tr>
+<tr class="memitem:a2c263b4792fba7fce884182f02a00094" id="r_a2c263b4792fba7fce884182f02a00094"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c263b4792fba7fce884182f02a00094">alignCenters</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a2c263b4792fba7fce884182f02a00094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Align centers.  <br /></td></tr>
+<tr class="memitem:aafc38e4c89b4fe7cf6f2ec06e9b0c333" id="r_aafc38e4c89b4fe7cf6f2ec06e9b0c333"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafc38e4c89b4fe7cf6f2ec06e9b0c333">makeSameWidth</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:aafc38e4c89b4fe7cf6f2ec06e9b0c333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make same width.  <br /></td></tr>
+<tr class="memitem:a4e209ba4cf410fac33c2f784e68da34f" id="r_a4e209ba4cf410fac33c2f784e68da34f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e209ba4cf410fac33c2f784e68da34f">makeSameHeight</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a4e209ba4cf410fac33c2f784e68da34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make same height.  <br /></td></tr>
+<tr class="memitem:afa4d6530ceac2ff15ac8362f4c6053c4" id="r_afa4d6530ceac2ff15ac8362f4c6053c4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa4d6530ceac2ff15ac8362f4c6053c4">makeSameSize</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:afa4d6530ceac2ff15ac8362f4c6053c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make same size.  <br /></td></tr>
+<tr class="memitem:a70fc48c8f087bddbdde30eada5ea20a8" id="r_a70fc48c8f087bddbdde30eada5ea20a8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70fc48c8f087bddbdde30eada5ea20a8">makeHorizontalSpacingEqual</a> (std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a70fc48c8f087bddbdde30eada5ea20a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make horiz spacing equal.  <br /></td></tr>
+<tr class="memitem:aba1071fea9ce5a7866d613d0b58a9fa7" id="r_aba1071fea9ce5a7866d613d0b58a9fa7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba1071fea9ce5a7866d613d0b58a9fa7">makeVerticalSpacingEqual</a> (std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:aba1071fea9ce5a7866d613d0b58a9fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make vertical spacing equal.  <br /></td></tr>
+<tr class="memitem:a31d75a86b026494d118ff784ad8a68a7" id="r_a31d75a86b026494d118ff784ad8a68a7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31d75a86b026494d118ff784ad8a68a7">increaseHorizontalSpacing</a> (std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes, float theSpacing)</td></tr>
+<tr class="memdesc:a31d75a86b026494d118ff784ad8a68a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increease horiz spacing.  <br /></td></tr>
+<tr class="memitem:a99ae7aa6383ea49d542d5ab7dc15a8ae" id="r_a99ae7aa6383ea49d542d5ab7dc15a8ae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99ae7aa6383ea49d542d5ab7dc15a8ae">increaseVerticalSpacing</a> (std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes, float theSpacing)</td></tr>
+<tr class="memdesc:a99ae7aa6383ea49d542d5ab7dc15a8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increase vertical spacing.  <br /></td></tr>
+<tr class="memitem:ab34fd42f5ec6775bc2a79572499b5fdb" id="r_ab34fd42f5ec6775bc2a79572499b5fdb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab34fd42f5ec6775bc2a79572499b5fdb">decreaseHorizontalSpacing</a> (std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes, float theSpacing)</td></tr>
+<tr class="memdesc:ab34fd42f5ec6775bc2a79572499b5fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease horiz spacing.  <br /></td></tr>
+<tr class="memitem:a516f3f72c9234e59c63f06a1d1b489fe" id="r_a516f3f72c9234e59c63f06a1d1b489fe"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a516f3f72c9234e59c63f06a1d1b489fe">decreaseVerticalSpacing</a> (std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes, float theSpacing)</td></tr>
+<tr class="memdesc:a516f3f72c9234e59c63f06a1d1b489fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrease vertical spacing.  <br /></td></tr>
+<tr class="memitem:a65091a49330cfcb81455d2d919887d65" id="r_a65091a49330cfcb81455d2d919887d65"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65091a49330cfcb81455d2d919887d65">removeHorizontalSpacing</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a65091a49330cfcb81455d2d919887d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove horiz spacing.  <br /></td></tr>
+<tr class="memitem:a9d4651ab7f0303eeb2fa2a9028007b91" id="r_a9d4651ab7f0303eeb2fa2a9028007b91"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d4651ab7f0303eeb2fa2a9028007b91">removeVerticalSpacing</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes)</td></tr>
+<tr class="memdesc:a9d4651ab7f0303eeb2fa2a9028007b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove Vertical spacing.  <br /></td></tr>
+<tr class="memitem:a3c5a2caf47aef986233ea2ffc9fd0c37" id="r_a3c5a2caf47aef986233ea2ffc9fd0c37"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c5a2caf47aef986233ea2ffc9fd0c37">makeHorizontalSpacingEqual</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes, float theSpacing)</td></tr>
+<tr class="memdesc:a3c5a2caf47aef986233ea2ffc9fd0c37"><td class="mdescLeft">&#160;</td><td class="mdescRight">maybe for internal use  <br /></td></tr>
+<tr class="memitem:a4b41952a54e94f426ce2575e2b757a94" id="r_a4b41952a54e94f426ce2575e2b757a94"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b41952a54e94f426ce2575e2b757a94">makeVerticalSpacingEqual</a> (const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;nodes, float theSpacing)</td></tr>
+<tr class="memdesc:a4b41952a54e94f426ce2575e2b757a94"><td class="mdescLeft">&#160;</td><td class="mdescRight">maybe for internal use  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="../../d2/db8/classax_1_1ui_1_1_helper.html" title="Helper class for traversing children in widget tree.">Helper</a> class for traversing children in widget tree. </p>
+<p>It also provides some helper functions for layout. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a43bf95b1ea3aa4456d0f9c12bbdc5a14" name="a43bf95b1ea3aa4456d0f9c12bbdc5a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43bf95b1ea3aa4456d0f9c12bbdc5a14">&#9670;&#160;</a></span>seekWidgetByTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> * seekWidgetByTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tag</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find a widget with a specific tag from root widget. </p>
+<p>This search will be recursive through all child widgets. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>The be searched root widget. </td></tr>
+    <tr><td class="paramname">tag</td><td>The widget tag. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html" title="Base class for all ui widgets.">Widget</a> instance pointer. </dd></dl>
+
+</div>
+</div>
+<a id="a1a444c9461479790d5052754c66d0ced" name="a1a444c9461479790d5052754c66d0ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a444c9461479790d5052754c66d0ced">&#9670;&#160;</a></span>seekWidgetByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> * seekWidgetByName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find a widget with a specific name from root widget. </p>
+<p>This search will be recursive through all child widgets.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>The be searched root widget. </td></tr>
+    <tr><td class="paramname">name</td><td>The widget name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html" title="Base class for all ui widgets.">Widget</a> instance pointer. </dd></dl>
+
+</div>
+</div>
+<a id="a2a30eefee195833212a1eeda33d8ec09" name="a2a30eefee195833212a1eeda33d8ec09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a30eefee195833212a1eeda33d8ec09">&#9670;&#160;</a></span>seekActionWidgetByActionTag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> * seekActionWidgetByActionTag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html">Widget</a> *</td>          <td class="paramname"><span class="paramname"><em>root</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>tag</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find a widget with a specific action tag from root widget This search will be recursive through all child widgets. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>The be searched root widget. </td></tr>
+    <tr><td class="paramname">tag</td><td>The widget action's tag. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../dc/db1/classax_1_1ui_1_1_widget.html" title="Base class for all ui widgets.">Widget</a> instance pointer. </dd></dl>
+
+</div>
+</div>
+<a id="a55c7a0aa938ebd75dd50d72601280c8a" name="a55c7a0aa938ebd75dd50d72601280c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55c7a0aa938ebd75dd50d72601280c8a">&#9670;&#160;</a></span>getSubStringOfUTF8String()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string getSubStringOfUTF8String </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>str</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string::size_type</td>          <td class="paramname"><span class="paramname"><em>start</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string::size_type</td>          <td class="paramname"><span class="paramname"><em>length</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a UTF8 substring from a std::string with a given start position and length Sample: std::string str = "中国中国中国"; substr = getSubStringOfUTF8String(str,0,2) will = "中国". </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The source string. </td></tr>
+    <tr><td class="paramname">start</td><td>The start position of the substring. </td></tr>
+    <tr><td class="paramname">length</td><td>The length of the substring in UTF8 count </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a UTF8 substring </dd></dl>
+
+</div>
+</div>
+<a id="aa1a1f89b9f5de9877a8be1de1e502650" name="aa1a1f89b9f5de9877a8be1de1e502650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a1f89b9f5de9877a8be1de1e502650">&#9670;&#160;</a></span>doLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void doLayout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>rootNode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refresh object and it's children layout state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rootNode</td><td>A Node* or Node* descendant instance pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab19503ade6b4d22d00e9967f34add7e9" name="ab19503ade6b4d22d00e9967f34add7e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab19503ade6b4d22d00e9967f34add7e9">&#9670;&#160;</a></span>changeLayoutSystemActiveState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void changeLayoutSystemActiveState </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>active</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Change the active property of <a class="el" href="../../d3/d85/classax_1_1ui_1_1_layout.html" title="A container for holding a few child widgets.">Layout</a>'s. </p>
+<dl class="section see"><dt>See also</dt><dd><span class="tt"><a class="el" href="../../d9/d2a/classax_1_1ui_1_1_layout_component.html" title="A component class used for layout.">LayoutComponent</a></span> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">active</td><td>A boolean value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9da7406da809d8b01f31f3b3d328748b" name="a9da7406da809d8b01f31f3b3d328748b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da7406da809d8b01f31f3b3d328748b">&#9670;&#160;</a></span>restrictCapInsetRect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> restrictCapInsetRect </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>capInsets</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>textureSize</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>restrict capInsetSize, when the capInsets's width is larger than the textureSize, it will restrict to 0, the height goes the same way as width. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">capInsets</td><td>A user defined capInsets. </td></tr>
+    <tr><td class="paramname">textureSize</td><td>The size of a scale9enabled texture </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a restricted capInset. </dd></dl>
+
+</div>
+</div>
+<a id="abb8413df96284d82da00f872a6d93ebe" name="abb8413df96284d82da00f872a6d93ebe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8413df96284d82da00f872a6d93ebe">&#9670;&#160;</a></span>convertBoundingBoxToScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/dc5/classax_1_1_rect.html">Rect</a> convertBoundingBoxToScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/da2/classax_1_1_node.html">Node</a> *</td>          <td class="paramname"><span class="paramname"><em>node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert a node's boundingBox rect into screen coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Any node pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="../../df/dc5/classax_1_1_rect.html" title="Rectangle area.">Rect</a> in screen coordinates. </dd></dl>
+
+</div>
+</div>
+<a id="a8bb3f601b7b0c014120e04efffae7f29" name="a8bb3f601b7b0c014120e04efffae7f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bb3f601b7b0c014120e04efffae7f29">&#9670;&#160;</a></span>setDesignSizeFixedEdge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDesignSizeFixedEdge </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>designSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>adatpe design size with fixed edge, normally, use this function for screen adatpe </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">designSize</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a70cefd594d35b181950189a837b22d" name="a3a70cefd594d35b181950189a837b22d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a70cefd594d35b181950189a837b22d">&#9670;&#160;</a></span>setDesignSizeNoBorder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setDesignSizeNoBorder </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d6f/classax_1_1_vec2.html">Vec2</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>designSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>adapte design size with no border </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">designSize</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3681e8f62b47d7489040b4b81d4e415a" name="a3681e8f62b47d7489040b4b81d4e415a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3681e8f62b47d7489040b4b81d4e415a">&#9670;&#160;</a></span>centerHorizontally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void centerHorizontally </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Center horiz to parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20b5f8c94218664d9975645bbbfd52c8" name="a20b5f8c94218664d9975645bbbfd52c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b5f8c94218664d9975645bbbfd52c8">&#9670;&#160;</a></span>centerVertically()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void centerVertically </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Center vertical to parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae741da19772f34f50a5acc0eb93bd868" name="ae741da19772f34f50a5acc0eb93bd868"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae741da19772f34f50a5acc0eb93bd868">&#9670;&#160;</a></span>centerToParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void centerToParent </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Center to parent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2631a7f008f5a670ea2fdb310c791f5" name="aa2631a7f008f5a670ea2fdb310c791f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2631a7f008f5a670ea2fdb310c791f5">&#9670;&#160;</a></span>alignLefts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alignLefts </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Align lefts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4fd4ca3aef0fe1208e78285d39faa2ec" name="a4fd4ca3aef0fe1208e78285d39faa2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fd4ca3aef0fe1208e78285d39faa2ec">&#9670;&#160;</a></span>alignRights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alignRights </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Align rights. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a65661deaf3a7fc32d38ce9e74ad0b6d2" name="a65661deaf3a7fc32d38ce9e74ad0b6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65661deaf3a7fc32d38ce9e74ad0b6d2">&#9670;&#160;</a></span>alignTops()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alignTops </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Align tops. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3e1e8f98c5892e09347d5db9f2a3ace6" name="a3e1e8f98c5892e09347d5db9f2a3ace6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e1e8f98c5892e09347d5db9f2a3ace6">&#9670;&#160;</a></span>alignBottoms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alignBottoms </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Align bottoms. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a90c449f1af680faf9d59c462bfd68286" name="a90c449f1af680faf9d59c462bfd68286"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90c449f1af680faf9d59c462bfd68286">&#9670;&#160;</a></span>alignHorizontals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alignHorizontals </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Align horiz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d98851a54365eac6bb0d820c4effaba" name="a2d98851a54365eac6bb0d820c4effaba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d98851a54365eac6bb0d820c4effaba">&#9670;&#160;</a></span>alignVerticals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alignVerticals </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Align vertical. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c263b4792fba7fce884182f02a00094" name="a2c263b4792fba7fce884182f02a00094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c263b4792fba7fce884182f02a00094">&#9670;&#160;</a></span>alignCenters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alignCenters </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Align centers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aafc38e4c89b4fe7cf6f2ec06e9b0c333" name="aafc38e4c89b4fe7cf6f2ec06e9b0c333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc38e4c89b4fe7cf6f2ec06e9b0c333">&#9670;&#160;</a></span>makeSameWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeSameWidth </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make same width. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4e209ba4cf410fac33c2f784e68da34f" name="a4e209ba4cf410fac33c2f784e68da34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e209ba4cf410fac33c2f784e68da34f">&#9670;&#160;</a></span>makeSameHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeSameHeight </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make same height. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa4d6530ceac2ff15ac8362f4c6053c4" name="afa4d6530ceac2ff15ac8362f4c6053c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa4d6530ceac2ff15ac8362f4c6053c4">&#9670;&#160;</a></span>makeSameSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeSameSize </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make same size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a70fc48c8f087bddbdde30eada5ea20a8" name="a70fc48c8f087bddbdde30eada5ea20a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70fc48c8f087bddbdde30eada5ea20a8">&#9670;&#160;</a></span>makeHorizontalSpacingEqual() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeHorizontalSpacingEqual </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make horiz spacing equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aba1071fea9ce5a7866d613d0b58a9fa7" name="aba1071fea9ce5a7866d613d0b58a9fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba1071fea9ce5a7866d613d0b58a9fa7">&#9670;&#160;</a></span>makeVerticalSpacingEqual() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeVerticalSpacingEqual </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make vertical spacing equal. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a31d75a86b026494d118ff784ad8a68a7" name="a31d75a86b026494d118ff784ad8a68a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d75a86b026494d118ff784ad8a68a7">&#9670;&#160;</a></span>increaseHorizontalSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void increaseHorizontalSpacing </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>theSpacing</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increease horiz spacing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a99ae7aa6383ea49d542d5ab7dc15a8ae" name="a99ae7aa6383ea49d542d5ab7dc15a8ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ae7aa6383ea49d542d5ab7dc15a8ae">&#9670;&#160;</a></span>increaseVerticalSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void increaseVerticalSpacing </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>theSpacing</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Increase vertical spacing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab34fd42f5ec6775bc2a79572499b5fdb" name="ab34fd42f5ec6775bc2a79572499b5fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab34fd42f5ec6775bc2a79572499b5fdb">&#9670;&#160;</a></span>decreaseHorizontalSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void decreaseHorizontalSpacing </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>theSpacing</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrease horiz spacing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a516f3f72c9234e59c63f06a1d1b489fe" name="a516f3f72c9234e59c63f06a1d1b489fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a516f3f72c9234e59c63f06a1d1b489fe">&#9670;&#160;</a></span>decreaseVerticalSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void decreaseVerticalSpacing </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>theSpacing</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrease vertical spacing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a65091a49330cfcb81455d2d919887d65" name="a65091a49330cfcb81455d2d919887d65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65091a49330cfcb81455d2d919887d65">&#9670;&#160;</a></span>removeHorizontalSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeHorizontalSpacing </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove horiz spacing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d4651ab7f0303eeb2fa2a9028007b91" name="a9d4651ab7f0303eeb2fa2a9028007b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d4651ab7f0303eeb2fa2a9028007b91">&#9670;&#160;</a></span>removeVerticalSpacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void removeVerticalSpacing </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove Vertical spacing. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c5a2caf47aef986233ea2ffc9fd0c37" name="a3c5a2caf47aef986233ea2ffc9fd0c37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5a2caf47aef986233ea2ffc9fd0c37">&#9670;&#160;</a></span>makeHorizontalSpacingEqual() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeHorizontalSpacingEqual </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>theSpacing</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>maybe for internal use </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b41952a54e94f426ce2575e2b757a94" name="a4b41952a54e94f426ce2575e2b757a94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b41952a54e94f426ce2575e2b757a94">&#9670;&#160;</a></span>makeVerticalSpacingEqual() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeVerticalSpacingEqual </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../df/da2/classax_1_1_node.html">ax::Node</a> * &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>nodes</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>theSpacing</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>maybe for internal use </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodes</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><b>UIHelper.h</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="../../d3/d6b/namespaceax.html">ax</a></li><li class="navelem"><b>ui</b></li><li class="navelem"><a href="../../d2/db8/classax_1_1ui_1_1_helper.html">Helper</a></li>
+    <li class="footer">Generated on <span class="timestamp"></span> for Axmol Engine by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['negate_0',['negate',['../d8/d6e/classax_1_1_mat4.html#abcdb1512395327f8236a4f4a4d4ff648',1,'ax::Mat4::negate()'],['../d3/d6f/classax_1_1_vec2.html#abcdb1512395327f8236a4f4a4d4ff648',1,'ax::Vec2::negate()'],['../d0/de0/classax_1_1_vec3.html#abcdb1512395327f8236a4f4a4d4ff648',1,'ax::Vec3::negate()']]],
+  ['ninepatchimageparser_1',['NinePatchImageParser',['../dd/dbd/classax_1_1_nine_patch_image_parser.html#a65079cac8b6f4da796ee9c71a774ffd6',1,'ax::NinePatchImageParser::NinePatchImageParser()'],['../dd/dbd/classax_1_1_nine_patch_image_parser.html#a6e2d256b4d884f5e5cdc25b9c840747c',1,'ax::NinePatchImageParser::NinePatchImageParser(Image *image)'],['../dd/dbd/classax_1_1_nine_patch_image_parser.html#a7154cf9db57f7a0df884762f8ef255ad',1,'ax::NinePatchImageParser::NinePatchImageParser(Image *image, const Rect &amp;frameRect, bool rotated)']]],
+  ['normalize_2',['normalize',['../d7/da5/classax_1_1_quaternion.html#acd0de676568888d848beb97dcc53ae47',1,'ax::Quaternion::normalize()'],['../d3/d6f/classax_1_1_vec2.html#acd0de676568888d848beb97dcc53ae47',1,'ax::Vec2::normalize()'],['../d0/de0/classax_1_1_vec3.html#acd0de676568888d848beb97dcc53ae47',1,'ax::Vec3::normalize()'],['../da/dfc/classax_1_1_vec4.html#acd0de676568888d848beb97dcc53ae47',1,'ax::Vec4::normalize()']]]
+];
