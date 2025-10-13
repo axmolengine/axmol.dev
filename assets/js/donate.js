@@ -118,25 +118,31 @@ function channelName(code) {
   return map[code] || "Other";
 }
 
-function buildAmountTooltip(grossStr, feeStr, hostFeeStr) {
+function formatAmountAndTootip(r) {
+
+  const grossStr = formatAmount(r.mc_gross, r.currency);
+  const feeStr = formatAmount(r.mc_fee, r.currency);
+  const hostFeeStr = formatAmount(r.host_fee, r.currency);
+
   let parts = [];
 
   // First line: only show processor fee part if > 0
-  if (feeStr !== "$0.00") {
+  if (r.mc_fee != 0) {
     parts.push(`${grossStr} - ${feeStr} (payment processor fee)`);
   } else {
     parts.push(grossStr);
   }
 
   // Extra lines: only include if > 0
-  if (feeStr !== "$0.00") {
+  if (r.mc_fee != 0) {
     parts.push(`This transaction includes ${feeStr} payment processor fees`);
   }
-  if (hostFeeStr !== "$0.00") {
+  if (r.host_fee != 0) {
     parts.push(`This transaction includes ${hostFeeStr} host fees`);
   }
 
-  return parts.join("\n");
+  let amountTooltip = parts.join("\n");
+  return { grossStr, amountTooltip };
 }
 
 function formatDateDay(ts) {
@@ -190,6 +196,31 @@ function formatAmount(value, currency) {
   }).format(value);
 }
 
+/**
+ * Mask sponsor name with a single asterisk, always showing the last character.
+ * - If length = 1: show char + "*"
+ * - If length = 2: show first + "*" (last still visible)
+ * - If length >= 3: show first + "*" + last
+ */
+function maskName(name, currency) {
+  if (currency != 'CNY') return name;
+  if (!name) return "";
+
+  const chars = Array.from(name); // handle UTF-8 safely
+  const len = chars.length;
+
+  if (len === 1) {
+    // Single character: append "*"
+    return chars[0] + "*";
+  } else if (len === 2) {
+    // Two characters: show first + "*" + last
+    return chars[0] + "*" + chars[1];
+  } else {
+    // Three or more: show first + "*" + last
+    return chars[0] + "*" + chars[len - 1];
+  }
+}
+
 async function loadData(page = 1) {
   const url = `${API_URL}&per_page=${perPage}&page=${page}`;
   const res = await fetch(url);
@@ -204,20 +235,26 @@ async function loadData(page = 1) {
 
   data.forEach(r => {
     const { dayStr, tooltip } = formatDateDay(r.mc_time);
-    const grossStr = formatAmount(r.mc_gross, r.currency);
-    const feeStr = formatAmount(r.mc_fee, r.currency);
-    const hostFeeStr = formatAmount(r.host_fee, r.currency);
-
-    const amountTooltip = buildAmountTooltip(grossStr, feeStr, hostFeeStr);
+    const { grossStr, amountTooltip } = formatAmountAndTootip(r);
 
     const tr = document.createElement("tr");
-    tr.innerHTML = `
+    if (amountTooltip) {
+      tr.innerHTML = `
+        <td title="${tooltip}">${dayStr}</td>
+        <td>${maskName(r.contrib_name, r.currency)}</td>
+        <td>${channelName(r.channel)}</td>
+        <td class="amount" title="${amountTooltip}"><span title="${amountTooltip}">ℹ️</span><strong>${grossStr}</strong></td>
+        <td>${r.memo ?? ""}</td>
+      `;
+    } else {
+      tr.innerHTML = `
       <td title="${tooltip}">${dayStr}</td>
-      <td>${r.contrib_name}</td>
+      <td>${maskName(r.contrib_name, r.currency)}</td>
       <td>${channelName(r.channel)}</td>
-      <td class="amount" title="${amountTooltip}"><span title="${amountTooltip}">ℹ️</span><strong>${grossStr}</strong></td>
+      <td class="amount"><strong>${grossStr}</strong></td>
       <td>${r.memo ?? ""}</td>
-    `;
+      `;
+    }
     tbody.appendChild(tr);
   });
 
