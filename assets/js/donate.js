@@ -52,6 +52,8 @@ amountInput.addEventListener('blur', (e) => {
 });
 
 
+const sandbox = window.location.host.includes('local');
+
 document.querySelector('.submit-btn').addEventListener('click', () => {
     const selected = document.querySelector('input[name="sponsor"]:checked');
     const isMonthly = document.getElementById('monthly').checked;
@@ -71,8 +73,6 @@ document.querySelector('.submit-btn').addEventListener('click', () => {
             window.cv_is_mouthly = isMonthly;
             window.cv_orderid = genOrderId();
         }
-
-        let sandbox = window.location.host.includes('local');
 
         console.log(`Amount: $${amount}${isMonthly ? '/month' : ''}`);
 
@@ -100,3 +100,153 @@ document.querySelector('.submit-btn').addEventListener('click', () => {
         window.alert('Please select a tier!');
     }
 });
+
+// sponsor transactions
+const API_URL = !sandbox ? "https://portal.simdsoft.com/sponsors/?action=query" : "https://local.simdsoft.com/sponsors/?action=query";
+let currentPage = 1;
+let perPage = 10;
+let totalPages = 1;
+
+function channelName(code) {
+  const map = {
+    1: "Alipay",
+    2: "WeChat",
+    3: "PayPal",
+    4: "OSC",
+    5: "GitHub"
+  };
+  return map[code] || "Other";
+}
+
+function buildAmountTooltip(grossStr, feeStr, hostFeeStr) {
+  let parts = [];
+
+  // First line: only show processor fee part if > 0
+  if (feeStr !== "$0.00") {
+    parts.push(`${grossStr} - ${feeStr} (payment processor fee)`);
+  } else {
+    parts.push(grossStr);
+  }
+
+  // Extra lines: only include if > 0
+  if (feeStr !== "$0.00") {
+    parts.push(`This transaction includes ${feeStr} payment processor fees`);
+  }
+  if (hostFeeStr !== "$0.00") {
+    parts.push(`This transaction includes ${hostFeeStr} host fees`);
+  }
+
+  return parts.join("\n");
+}
+
+function formatDateDay(ts) {
+  const d = new Date(ts * 1000);
+
+  // Fixed display: e.g. "1/25/2025"
+  const dayStr = d.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric"
+  });
+
+  // Tooltip: Local time with weekday + timezone
+  const localStr = d.toLocaleString("en-US", {
+    weekday: "short",   // e.g. "Sat"
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    timeZoneName: "short"   // e.g. "GMT+8"
+  });
+
+  // Tooltip: UTC time with weekday + timezone
+  const utcStr = d.toLocaleString("en-US", {
+    weekday: "short",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+    timeZone: "UTC",
+    timeZoneName: "short"   // will show "UTC"
+  });
+
+  const tooltip = `Local Time: ${localStr}\nUTC: ${utcStr}`;
+  return { dayStr, tooltip };
+}
+
+function formatAmount(value, currency) {
+  if (value == null) return "";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: currency,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  }).format(value);
+}
+
+async function loadData(page = 1) {
+  const url = `${API_URL}&per_page=${perPage}&page=${page}`;
+  const res = await fetch(url);
+  const result = await res.json();
+
+  const data = result.rows || [];
+  totalPages = result.total_pages || 1;
+  currentPage = result.page || page;
+
+  const tbody = document.querySelector("#recordsTable tbody");
+  tbody.innerHTML = "";
+
+  data.forEach(r => {
+    const { dayStr, tooltip } = formatDateDay(r.mc_time);
+    const grossStr = formatAmount(r.mc_gross, r.currency);
+    const feeStr = formatAmount(r.mc_fee, r.currency);
+    const hostFeeStr = formatAmount(r.host_fee, r.currency);
+
+    const amountTooltip = buildAmountTooltip(grossStr, feeStr, hostFeeStr);
+
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td title="${tooltip}">${dayStr}</td>
+      <td>${r.contrib_name}</td>
+      <td>${channelName(r.channel)}</td>
+      <td class="amount" title="${amountTooltip}"><span title="${amountTooltip}">ℹ️</span><strong>${grossStr}</strong></td>
+      <td>${r.memo ?? ""}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  document.getElementById("pageInfo").textContent = `(${currentPage}/${totalPages})`;
+}
+
+// Handle Previous button click
+document.getElementById("prevBtn").addEventListener("click", () => {
+  if (currentPage > 1) {
+    loadData(currentPage - 1);
+  } else {
+    alert("Already on the first page");
+  }
+});
+
+// Handle Next button click
+document.getElementById("nextBtn").addEventListener("click", () => {
+  if (currentPage < totalPages) {
+    loadData(currentPage + 1);
+  } else {
+    alert("Already on the last page");
+  }
+});
+
+// Handle per-page selection change
+document.getElementById("perPageSelect").addEventListener("change", (e) => {
+  perPage = parseInt(e.target.value, 10);
+  loadData(1);
+});
+
+// Initial load
+loadData();
