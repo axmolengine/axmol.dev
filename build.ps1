@@ -18,6 +18,7 @@ mkdirs $site_dist
 
 # step.1 build main site
 Copy-Item (Join-Path $PSScriptRoot 'index.html') $site_dist
+Copy-Item (Join-Path $PSScriptRoot 'favicon.ico') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'assets') $site_dist -Recurse -Force
 Copy-Item (Join-Path $PSScriptRoot 'donate') $site_dist -Recurse -Force
 
