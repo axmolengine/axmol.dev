@@ -182,7 +182,7 @@ function formatDateDay(ts) {
     timeZoneName: "short"   // will show "UTC"
   });
 
-  const tooltip = `Local Time: ${localStr}\nUTC: ${utcStr}`;
+  const tooltip = `Local Time: ${localStr}&#10;UTC Time: ${utcStr}`;
   return { dayStr, tooltip };
 }
 
@@ -240,17 +240,17 @@ async function loadData(page = 1) {
     const tr = document.createElement("tr");
     if (amountTooltip) {
       tr.innerHTML = `
-        <td title="${tooltip}">${dayStr}</td>
+        <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${tooltip}">${dayStr}</span></td>
         <td>${maskName(r.contrib_name, r.currency)}</td>
-        <td class="amount" title="${amountTooltip}"><span title="${amountTooltip}">ℹ️</span><strong>${grossStr}</strong></td>
+        <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${amountTooltip}"><strong>${grossStr}</strong>&nbsp;<i class="bi bi-info-circle"></i></span></td>
         <td>${channelName(r.channel)}</td>
         <td>${r.memo ?? ""}</td>
       `;
     } else {
       tr.innerHTML = `
-      <td title="${tooltip}">${dayStr}</td>
+      <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${tooltip}">${dayStr}</span></td>
       <td>${maskName(r.contrib_name, r.currency)}</td>
-      <td class="amount"><strong>${grossStr}</strong></td>
+      <td><strong>${grossStr}</strong></td>
       <td>${channelName(r.channel)}</td>
       <td>${r.memo ?? ""}</td>
       `;

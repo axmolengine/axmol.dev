@@ -475,3 +475,12 @@ section {
     transform: translateY(0);
   }
 }
+
+.tooltip {
+  --bs-tooltip-max-width: 390px;
+}
+
+.tooltip-inner {
+  white-space: pre-line; /* preserve lf */
+  text-align: left;
+}

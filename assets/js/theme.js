@@ -70,4 +70,18 @@
 
     items.forEach(item => observer.observe(item));
   });
+
+  /* Enable bootstrap static tooltip */
+  document.addEventListener("DOMContentLoaded", function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    [...tooltipTriggerList].forEach(el => new bootstrap.Tooltip(el));
+  });
+
+  /* Enable bootstrap dynamic tooltip */
+  document.addEventListener("DOMContentLoaded", function () {
+    new bootstrap.Tooltip(document.body, {
+      selector: '[data-bs-toggle="tooltip"]'
+    });
+  });
+
 })();
