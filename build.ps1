@@ -48,5 +48,4 @@ if ($wasm_artifact_dir) {
   }
   copy_tree_if $cpp_tests_dir $site_wasm_dir
   copy_tree_if $(Join-Path $wasm_artifact_dir 'fairygui-tests') $site_wasm_dir
-  copy_tree_if $(Join-Path $wasm_artifact_dir 'HelloLua') $site_wasm_dir
 }
