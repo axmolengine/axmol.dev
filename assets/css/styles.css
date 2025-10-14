@@ -50,16 +50,30 @@
   position: relative;
   color: var(--bs-body-color);
   background:
-    radial-gradient(1000px 600px at 20% 30%, rgba(0, 255, 200, 0.2), transparent 60%),
-    radial-gradient(800px 400px at 80% 70%, rgba(255, 0, 150, 0.15), transparent 55%),
+    radial-gradient(1000px 600px at 20% 30%, rgba(0, 255, 200, 0.15), transparent 95%),
+    radial-gradient(800px 400px at 80% 70%, rgba(255, 0, 150, 0.1), transparent 90%),
     linear-gradient(
       135deg,
       var(--bs-body-bg) 0%,
-      rgba(var(--bs-primary-rgb), 0.1) 40%,
-      rgba(var(--bs-secondary-rgb), 0.1) 100%
+      rgba(var(--bs-primary-rgb), 0.08) 40%,
+      rgba(var(--bs-secondary-rgb), 0.08) 100%
     );
   background-size: 200% 200%;
-  animation: heroPulse 8s ease-in-out infinite;
+  animation: heroPulse 10s ease-in-out infinite;
+  overflow: hidden; /* ensure pseudo-element stays inside */
+}
+
+/* fade-out mask at the bottom */
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--bs-body-bg));
+  pointer-events: none; /* ✅ allow clicks to pass through */
+  z-index: -1; /* push behind content */
 }
 
 @keyframes heroPulse {
@@ -435,4 +449,29 @@ section {
   max-width: 100%;    /* fill card width */
   object-fit: contain; /* keep aspect ratio */
   flex-grow: 1;        /* expand inside flex container */
+}
+
+/* base fade-in animation */
+.fade-in-list .list-group-item {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-in-list .list-group-item.visible {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.fade-in-list .list-group-item.visible:nth-child(1) { animation-delay: 0.2s; }
+.fade-in-list .list-group-item.visible:nth-child(2) { animation-delay: 0.4s; }
+.fade-in-list .list-group-item.visible:nth-child(3) { animation-delay: 0.6s; }
+.fade-in-list .list-group-item.visible:nth-child(4) { animation-delay: 0.8s; }
+.fade-in-list .list-group-item.visible:nth-child(5) { animation-delay: 1.0s; }
+.fade-in-list .list-group-item.visible:nth-child(6) { animation-delay: 1.2s; }
+.fade-in-list .list-group-item.visible:nth-child(7) { animation-delay: 1.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Axmol | Open-source, multi-platform game engine</title>
+    <title>Axmol | A Multi-platform Engine for Mobile, Desktop, WebAssembly and
+      Xbox</title>
     <meta name="description"
       content="Axmol — open-source C++ multi-platform game engine with modern rendering, rich tooling, and an active community.">
     <meta name="color-scheme" content="light dark">
@@ -102,6 +103,11 @@
               <a class="nav-link"
                 href="https://axmol.dev/manual" target="_blank">API
                 Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
+                href="https://github.com/axmolengine/axmol/wiki"
+                target="_blank">Wiki</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-donate active" href="/donate/">Donate
@@ -215,7 +221,7 @@
       </div>
     </header>
 
-    <section class="container my-5 my-lg-6">
+    <section class="container py-5">
       <form class="container" id="unipayment" action method="POST"
         target="_blank">
         <input style="display:none" readonly="readonly" name="WIDout_trade_no"
@@ -343,8 +349,9 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
         </div>
       </div>
 
-      <hr />
+    </section>
 
+    <section class="container py-5">
       <h1>Axmol Supporters</h1>
       <h3 id="platinum">Corporate Platinum</h3>
       <p align="left">
@@ -445,70 +452,94 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
           </div>
         </div>
       </div>
+    </section>
 
-      <hr />
-      <h2 id="faq" class="mt-5">FAQ</h2>
-      <ul class="faq-section list-unstyled">
-        <li class="faq mb-4">
-          <label class="faq-label d-block">
-            <span class="faq-question fw-bold">How can I cancel my recurring
-              donations?</span>
-            <p class="faq-answer mt-2">
-              Axmol currently supports recurring donations via PayPal and GitHub
-              Sponsors.<br><br>
+    <section class="py-5" id="faq">
+      <div class="container">
+        <h2 class="mb-4">FAQ</h2>
+        <div class="accordion" id="faqAccordion">
 
-              To cancel a PayPal subscription, please log in to your PayPal
-              account at
-              <a href="https://www.paypal.com/" target="_blank"
-                rel="noopener">paypal.com</a>, then go to:
-              <strong>Settings &gt; Automatic Payments &gt; Manage Automatic
-                Payments</strong>, and cancel the one labeled <em>Axmol
-                Foundation</em>.<br><br>
+          <!-- Q1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading1">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faqCollapse1"
+                aria-expanded="false" aria-controls="faqCollapse1">
+                How can I cancel my recurring donations?
+              </button>
+            </h2>
+            <div id="faqCollapse1" class="accordion-collapse collapse"
+              aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Axmol currently supports recurring donations via PayPal and
+                GitHub Sponsors.<br><br>
+                To cancel a PayPal subscription, please log in to your PayPal
+                account at
+                <a href="https://www.paypal.com/" target="_blank"
+                  rel="noopener">paypal.com</a>, then go to:
+                <strong>Settings &gt; Automatic Payments &gt; Manage Automatic
+                  Payments</strong>, and cancel the one labeled <em>Axmol
+                  Foundation</em>.<br><br>
+                To cancel a recurring GitHub sponsorship, visit
+                <a href="https://github.com/sponsors" target="_blank"
+                  rel="noopener">github.com/sponsors</a>, click on <strong>Your
+                  Sponsorships</strong>, locate Axmol Engine, and choose
+                <strong>Cancel Sponsorship</strong> from the options
+                menu.<br><br>
+                If you encounter any issues, feel free to contact us at
+                <a href="mailto:support@simdsoft.com">support@simdsoft.com</a>
+                with your PayPal or GitHub account email and your current
+                membership level.
+              </div>
+            </div>
+          </div>
 
-              To cancel a recurring GitHub sponsorship, visit
-              <a href="https://github.com/sponsors" target="_blank"
-                rel="noopener">github.com/sponsors</a>, click on <strong>Your
-                Sponsorships</strong>, locate Axmol Engine, and choose
-              <strong>Cancel Sponsorship</strong> from the options menu.<br><br>
+          <!-- Q2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading2">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faqCollapse2"
+                aria-expanded="false" aria-controls="faqCollapse2">
+                Can I choose whether my name appears in the sponsor list?
+              </button>
+            </h2>
+            <div id="faqCollapse2" class="accordion-collapse collapse"
+              aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes. All sponsor names are added manually. If you prefer to
+                remain anonymous, please email us at
+                <a href="mailto:support@simdsoft.com">support@simdsoft.com</a>
+                and we’ll update your listing accordingly.
+              </div>
+            </div>
+          </div>
 
-              If you encounter any issues, feel free to contact us at
-              <a href="mailto:support@simdsoft.com">support@simdsoft.com</a>
-              with your PayPal or GitHub account email and your current
-              membership level.
-            </p>
-          </label>
-        </li>
+          <!-- Q3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeading3">
+              <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faqCollapse3"
+                aria-expanded="false" aria-controls="faqCollapse3">
+                What sponsorship channels does Axmol support?
+              </button>
+            </h2>
+            <div id="faqCollapse3" class="accordion-collapse collapse"
+              aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                We support sponsorship via PayPal, GitHub Sponsors, and the Open
+                Source Collective platform. However, we strongly recommend using
+                the interactive sponsorship form on this page, as it helps us
+                minimize platform fees and process your support more
+                efficiently.<br><br>
+                Please note that Open Source Collective charges a <strong>10%
+                  fiscal hosting fee</strong>, which is why we do not recommend
+                it unless necessary.
+              </div>
+            </div>
+          </div>
 
-        <li class="faq mb-4">
-          <label class="faq-label d-block">
-            <span class="faq-question fw-bold">Can I choose whether my name
-              appears in the sponsor list?</span>
-            <p class="faq-answer mt-2">
-              Yes. All sponsor names are added manually. If you prefer to remain
-              anonymous, please email us at
-              <a href="mailto:support@simdsoft.com">support@simdsoft.com</a> and
-              we’ll update your listing accordingly.
-            </p>
-          </label>
-        </li>
-
-        <li class="faq mb-4">
-          <label class="faq-label d-block">
-            <span class="faq-question fw-bold">What sponsorship channels does
-              Axmol support?</span>
-            <p class="faq-answer mt-2">
-              We support sponsorship via PayPal, GitHub Sponsors, and the Open
-              Source Collective platform. However, we strongly recommend using
-              the interactive sponsorship form on this page, as it helps us
-              minimize platform fees and process your support more
-              efficiently.<br><br>
-              Please note that Open Source Collective charges a <strong>10%
-                fiscal hosting fee</strong>, which is why we do not recommend it
-              unless necessary.
-            </p>
-          </label>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <footer class="border-top mt-5">
@@ -517,7 +548,8 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
           <!-- Left: Copyright -->
           <div class="col-md text-center text-md-start">
             <div class="text-body-secondary">
-              © Axmol — open source, multi-platform game engine.
+              © 2019-Present Axmol Engine <a href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md" target="_blank" rel="noopener">contributors</a>. <br />
+              Hosted on GitHub Pages, Website <a href="https://github.com/axmolengine/axmol.dev" target="_blank" rel="noopener">source code on GitHub</a>
             </div>
           </div>
 
