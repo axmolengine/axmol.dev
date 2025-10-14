@@ -52,9 +52,9 @@ amountInput.addEventListener('blur', (e) => {
 });
 
 
-const sandbox = window.location.host.includes('local');
+const sandbox = window.location.host.includes('local.') || window.location.host.includes('test.');
 
-document.querySelector('.submit-btn').addEventListener('click', () => {
+document.querySelector('#submit-btn').addEventListener('click', () => {
     const selected = document.querySelector('input[name="sponsor"]:checked');
     const isMonthly = document.getElementById('monthly').checked;
 
