@@ -46,14 +46,6 @@
 }
 
 /* Hero gradient and energy accents */
-/* .hero-gradient {
-  color: #e9ecef;
-  background:
-    radial-gradient(1200px 600px at 15% 20%, rgba(114,137,218,0.25), transparent 60%),
-    radial-gradient(800px 400px at 85% 70%, rgba(0,200,150,0.22), transparent 55%),
-    linear-gradient(135deg, #12121a 0%, #161a2a 50%, #0f1030 100%);
-} */
-
 .hero-gradient {
   position: relative;
   color: var(--bs-body-color);
