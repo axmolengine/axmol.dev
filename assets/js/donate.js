@@ -242,16 +242,16 @@ async function loadData(page = 1) {
       tr.innerHTML = `
         <td title="${tooltip}">${dayStr}</td>
         <td>${maskName(r.contrib_name, r.currency)}</td>
-        <td>${channelName(r.channel)}</td>
         <td class="amount" title="${amountTooltip}"><span title="${amountTooltip}">ℹ️</span><strong>${grossStr}</strong></td>
+        <td>${channelName(r.channel)}</td>
         <td>${r.memo ?? ""}</td>
       `;
     } else {
       tr.innerHTML = `
       <td title="${tooltip}">${dayStr}</td>
       <td>${maskName(r.contrib_name, r.currency)}</td>
-      <td>${channelName(r.channel)}</td>
       <td class="amount"><strong>${grossStr}</strong></td>
+      <td>${channelName(r.channel)}</td>
       <td>${r.memo ?? ""}</td>
       `;
     }

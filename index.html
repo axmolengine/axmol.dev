@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="auto">
   <head>
     <meta charset="utf-8">
@@ -7,8 +7,8 @@
     <meta name="description"
       content="Axmol — open-source C++ multi-platform game engine with modern rendering, rich tooling, and an active community.">
     <meta name="color-scheme" content="light dark">
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/styles.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=2.0.6" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> <symbol
@@ -94,13 +94,18 @@
         <!-- Navigation links -->
         <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav me-auto">
-            <li class="nav-item"><a class="nav-link active"
-                href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link"
-                href="/donate/">Donate</a></li>
-            <li class="nav-item"><a class="nav-link"
+            <li class="nav-item">
+              <a class="nav-link active"
+                href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
                 href="https://axmol.dev/manual" target="_blank">API
-                docomentation</a></li>
+                Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-donate" href="/donate/">Donate ❤️</a>
+            </li>
           </ul>
 
           <!-- Right side: GitHub + Theme dropdown -->
@@ -192,15 +197,6 @@
             </p>
             <div
               class="mt-4 d-flex align-items-center gap-3 text-body-secondary small justify-content-center">
-              <!-- <span
-                class="badge bg-primary-subtle text-primary-emphasis">C++20</span>
-              <span
-                class="badge bg-success-subtle text-success-emphasis">D3D11/Metal/OpenGL</span>
-              <span class="badge bg-info-subtle text-info-emphasis">Lua
-                scripting</span>
-              <span class="badge bg-warning-subtle text-warning-emphasis">WASM
-                (preview)</span> -->
-
               <a href="https://github.com/axmolengine/axmol/releases">
                 <img
                   src="https://img.shields.io/github/v/release/axmolengine/axmol?include_prereleases&label=release"
@@ -215,11 +211,6 @@
                 <img src="https://img.shields.io/badge/license-MIT-blue.svg"
                   alt="License badge" class="img-fluid">
               </a>
-              <a href="/donate">
-                <img src="https://img.shields.io/badge/❤️Donate-pink.svg"
-                  alt="Donate badge" class="img-fluid">
-              </a>
-
             </div>
           </div>
           <!-- <div class="col-lg-5 text-center">
@@ -394,7 +385,7 @@
       </div>
     </footer>
 
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/theme.js?v=2.0.0"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
+    <script src="/assets/js/theme.js?v=2.0.6"></script>
   </body>
 </html>

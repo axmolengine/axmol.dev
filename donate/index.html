@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en" data-bs-theme="auto">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,8 +7,8 @@
     <meta name="description"
       content="Axmol — open-source C++ multi-platform game engine with modern rendering, rich tooling, and an active community.">
     <meta name="color-scheme" content="light dark">
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/styles.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=2.0.6" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> <symbol
@@ -94,13 +94,18 @@
         <!-- Navigation links -->
         <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav me-auto">
-            <li class="nav-item"><a class="nav-link active"
-                href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link"
-                href="/donate/">Donate</a></li>
-            <li class="nav-item"><a class="nav-link"
+            <li class="nav-item">
+              <a class="nav-link"
+                href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"
                 href="https://axmol.dev/manual" target="_blank">API
-                Documentation</a></li>
+                Documentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-donate active" href="/donate/">Donate ❤️</a>
+            </li>
           </ul>
 
           <!-- Right side: GitHub + Theme dropdown -->
@@ -391,8 +396,8 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
             <tr>
               <th>Date</th>
               <th>Supporter</th>
-              <th>Channel</th>
               <th>Amount</th>
+              <th>Channel</th>
               <th>Comment</th>
             </tr>
           </thead>
@@ -540,11 +545,11 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
     </footer>
 
     <script src="/assets/js/jquery.min.js?v=3.7.1"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/md5.js?v=2.2"></script>
-    <script src="/assets/js/utils.js?v=1.0"></script>
-    <script src="/assets/js/donate.js?v=2.0.5"></script>
-    <script src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/theme.js?v=2.0.0"></script>
+    <script src="/assets/js/utils.js?v=2.0.6"></script>
+    <script src="/assets/js/donate.js?v=2.0.6"></script>
+    <script src="/assets/js/theme.js?v=2.0.6"></script>
   </body>
 
 </html>
