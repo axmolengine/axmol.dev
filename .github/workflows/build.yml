@@ -8,6 +8,7 @@ on:
       - master
     paths:
       - .github/workflows/build.yml
+      - */**/*.html
   repository_dispatch:
     types: [forward-push]
   workflow_dispatch:
@@ -42,7 +43,7 @@ jobs:
         path: tmp/wasm
         repo: axmolengine/axmol
     
-    - name: Build HTML sites
+    - name: Build HTML site
       shell: pwsh
       run: |
         ls -r tmp/wasm
