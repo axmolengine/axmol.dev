@@ -25,7 +25,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         fetch-depth: 0
 
@@ -47,7 +47,7 @@ jobs:
       run: |
         ls -r tmp/wasm
         git clone https://github.com/axmolengine/axmol.git tmp/axmol-src
-        git -C tmp/axmol-src checkout dev/v3
+        git -C tmp/axmol-src checkout dev
         $min_doc_ver = '${{ github.event.inputs.min_doc_ver }}'
         if (!$min_doc_ver) { $min_doc_ver = '${{ env.DEFAULT_MIN_DOC_VER }}'}
         ./build.ps1 tmp/axmol-src tmp/wasm -min_doc_ver $min_doc_ver
@@ -56,20 +56,11 @@ jobs:
     - name: GH Pages Deployment
       uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/site1
+        personal_token: ${{ secrets.AXMOL_DEV_DIST_PAT }}
+        external_repository: axmolengine/axmol.dev.dist
+        publish_dir: ./dist
         enable_jekyll: false
         allow_empty_commit: false
         force_orphan: true
-        publish_branch: gh-pages
+        publish_branch: axmol-pages
         cname: axmol.dev
-    # Deploy HTML site to netlify Pages
-    - name: Netlify Pages Deployment
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/site2
-        enable_jekyll: false
-        allow_empty_commit: false
-        force_orphan: true
-        publish_branch: netlify-pages

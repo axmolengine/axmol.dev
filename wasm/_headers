@@ -1,4 +1,0 @@
-Cross-Origin-Embedder-Policy: require-corp
-Cross-Origin-Opener-Policy: same-origin
-X-Frame-Options: ALLOWALL
-Content-Security-Policy: frame-ancestors *
