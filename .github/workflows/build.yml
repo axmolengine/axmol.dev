@@ -57,8 +57,8 @@ jobs:
         if (!$min_doc_ver) { $min_doc_ver = '${{ env.DEFAULT_MIN_DOC_VER }}'}
         ./build.ps1 tmp/axmol-src tmp/wasm -min_doc_ver $min_doc_ver
     
-    # Deploy HTML site to GitHub Pages
-    - name: GH Pages Deployment
+    # Commit html site pages to repo: axmolengine/axmol.dev.dist
+    - name: Commit HTML site pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         personal_token: ${{ secrets.AXMOL_DEV_DIST_PAT }}
