@@ -8,7 +8,11 @@ on:
       - master
     paths:
       - .github/workflows/build.yml
-      - */**/*.html
+      - '**/*.html'
+      - 'assets'
+      - 'donate'
+      - 'wasm'
+      - '_headers'
   repository_dispatch:
     types: [forward-push]
   workflow_dispatch:
