@@ -104,7 +104,8 @@
                 Documentation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-donate active" href="/donate/">Donate ❤️</a>
+              <a class="nav-link nav-donate active" href="/donate/">Donate
+                ❤️</a>
             </li>
           </ul>
 
@@ -231,7 +232,7 @@
           id="WIDmonthly" type="text" value="0" size="50" />
       </form>
 
-      <h4>PAYPAL/GITHUB<span
+      <h4>PAYPAL / GITHUB<span
           role="button"
           tabindex="0"
           title="Automatically directs you to the sponsorship channel with the lower transaction fee.
@@ -305,14 +306,6 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
         </label>
       </div>
 
-      <!-- <div style="display: inline-block; margin-right: 10px;">
-        <label class="checkbox-label">
-          <input type="checkbox" id="monthly">
-          <span class="checkbox"></span>Monthly Sponsorship
-        </label>
-      </div>
-      <button class="btn btn-primary btn-lg mt-4">💖 Confirm Sponsorship</button> -->
-
       <div
         class="d-flex flex-wrap align-items-center justify-content-left gap-4 mt-4">
         <!-- Submit button -->
@@ -328,18 +321,27 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
 
       <hr />
 
-      <!-- scan qrcode to donate -->
-      <h4>ALIPAY</h4>
-      <p>请备注：赞助Axmol</p>
-      <p align="left">
-        <img src="/assets/img/alipay.jpg" height="300" />
-      </p>
-
-      <h4>WXPAY</h4>
-      <p>请备注：赞助Axmol</p>
-      <p align="left">
-        <img src="/assets/img/wxpay.jpg" height="300" />
-      </p>
+      <!-- scan wexin/alipay qrcode to donate -->
+      <div class="container my-4">
+        <h4 class="mb-3">ALIPAY / WXPAY</h4>
+        <p class="text-muted">Please note: Axmol</p>
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <!-- QR card for WeChat Pay -->
+            <div
+              class="qr-card d-flex flex-column align-items-center justify-content-center">
+              <img src="/assets/img/wxpay.jpg" alt="WeChat Pay QR">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <!-- QR card for Alipay -->
+            <div
+              class="qr-card d-flex flex-column align-items-center justify-content-center">
+              <img src="/assets/img/alipay.jpg" alt="Alipay QR">
+            </div>
+          </div>
+        </div>
+      </div>
 
       <hr />
 
