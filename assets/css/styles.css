@@ -476,6 +476,7 @@ section {
   }
 }
 
+/* bootstrap tooltip style */
 .tooltip {
   --bs-tooltip-max-width: 390px;
 }
@@ -483,4 +484,11 @@ section {
 .tooltip-inner {
   white-space: pre-line; /* preserve lf */
   text-align: left;
+}
+
+/* ensure svg icon align vertical center */
+svg.bi {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.125em;
 }
