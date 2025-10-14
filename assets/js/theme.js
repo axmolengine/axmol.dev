@@ -35,11 +35,11 @@
     if (!iconUse) return;
 
     if (theme === "light") {
-      iconUse.setAttribute("xlink:href", "#sun-fill");
+      iconUse.setAttribute("href", "/assets/icons.svg#sun-fill");
     } else if (theme === "dark") {
-      iconUse.setAttribute("xlink:href", "#moon-stars-fill");
+      iconUse.setAttribute("href", "/assets/icons.svg#moon-stars-fill");
     } else {
-      iconUse.setAttribute("xlink:href", "#circle-half");
+      iconUse.setAttribute("href", "/assets/icons.svg#circle-half");
     }
   }
 

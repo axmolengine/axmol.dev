@@ -243,7 +243,7 @@ async function loadData(page = 1) {
         <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${tooltip}">${dayStr}</span></td>
         <td>${maskName(r.contrib_name, r.currency)}</td>
         <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${amountTooltip}"><strong>${grossStr}</strong>&nbsp;<svg class="bi"
-                  fill="currentColor"><use xlink:href="#info-circle"></use></svg></span></td>
+                  fill="currentColor"><use href="/assets/icons.svg#info-circle"></use></svg></span></td>
         <td>${channelName(r.channel)}</td>
         <td>${r.memo ?? ""}</td>
       `;
