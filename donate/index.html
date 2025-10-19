@@ -298,13 +298,13 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
         bingsoo, DUONG, thienphuoc
       </p>
 
-      <h3>All transactions</h3>
+      <h3>💸 Funding Activity</h3>
       <div
         class="d-flex flex-wrap align-items-center justify-content-between gap-3 my-3">
 
         <!-- Page info -->
         <span id="pageInfo" class="text-body-secondary small">
-          Page 1 of 10
+          (1/10)
         </span>
 
         <!-- Pagination controls -->
@@ -343,6 +343,17 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
 
       <div id="statsArea" class="my-4">
         <h3 class="mb-3">Budget</h3>
+        <span
+          role="button"
+          tabindex="1"
+          data-bs-toggle="tooltip"
+          data-bs-html="true"
+          data-bs-placement="right"
+          title="GitHub Sponsors transfers funds monthly to recipients. As a result, reported totals may appear ahead of actual available balance.">
+          <svg class="bi"
+            fill="currentColor"><use
+              href="/assets/icons.svg#info-circle"></use></svg>
+        </span>
         <div class="row g-3">
           <!-- USD Wallet -->
           <div class="col-md-6">
@@ -357,9 +368,13 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
                   <strong>Total raised:</strong>
                   <span id="usdTotal" class="fw-semibold">--</span>
                 </p>
-                <p class="card-text">
+                <p class="card-text mb-1">
                   <strong>Total fees:</strong>
                   <span id="usdFeesTotal" class="fw-semibold">--</span>
+                </p>
+                <p class="card-text">
+                  <strong>Total spent:</strong>
+                  <span id="usdSpentTotal" class="fw-semibold">--</span>
                 </p>
               </div>
             </div>
@@ -518,7 +533,7 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
     <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/md5.js?v=2.2"></script>
     <script src="/assets/js/utils.js?v=2.1.0"></script>
-    <script src="/assets/js/donate.js?v=2.1.0"></script>
+    <script src="/assets/js/donate.js?v=2.1.1"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
 

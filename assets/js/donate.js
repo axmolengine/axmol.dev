@@ -102,7 +102,7 @@ document.querySelector('#submit-btn').addEventListener('click', () => {
 });
 
 // sponsor transactions
-const API_URL = !sandbox ? "https://portal.simdsoft.com/sponsors/?action=query" : "https://local.simdsoft.com/sponsors/?action=query";
+const API_BASE_URL = !sandbox ? "https://portal.simdsoft.com/sponsors/" : "https://local.simdsoft.com/sponsors/";
 let currentPage = 1;
 let perPage = 10;
 let totalPages = 1;
@@ -222,7 +222,7 @@ function maskName(name, currency) {
 }
 
 async function loadData(page = 1) {
-  const url = `${API_URL}&per_page=${perPage}&page=${page}`;
+  const url = `${API_BASE_URL}?action=query-records&per_page=${perPage}&page=${page}`;
   const res = await fetch(url);
   const result = await res.json();
 
@@ -288,3 +288,32 @@ document.getElementById("perPageSelect").addEventListener("change", (e) => {
 
 // Initial load
 loadData();
+
+async function loadWalletData() {
+  // Construct the API URL with query parameters
+  const url = `${API_BASE_URL}?action=query-wallet&oss_id=axmol&currency=USD`;
+
+  try {
+    // Send request to backend
+    const res = await fetch(url);
+    const result = await res.json();
+
+    // Check if response is successful
+    if (result.ret === 0 && result.wallet_info) {
+      const wallet = result.wallet_info;
+
+      // Update DOM elements with wallet data
+      document.getElementById("usdBalance").textContent = `$${wallet.balance}`;
+      document.getElementById("usdTotal").textContent = `$${wallet.total_raised}`;
+      document.getElementById("usdFeesTotal").textContent = `$${wallet.total_fees}`;
+      document.getElementById("usdSpentTotal").textContent = `$${wallet.total_spent}`;
+    } else {
+      console.warn("Wallet data not available or ret != 0");
+    }
+  } catch (error) {
+    // Handle network or parsing errors
+    console.error("Failed to load wallet data:", error);
+  }
+}
+
+loadWalletData();
