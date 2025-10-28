@@ -9,7 +9,7 @@
       content="Axmol — open-source C++ multi-platform game engine with modern rendering, rich tooling, and an active community.">
     <meta name="color-scheme" content="light dark">
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=2.1.0" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=2.1.1" rel="stylesheet">
   </head>
   <body>
     <nav
@@ -168,7 +168,7 @@
           data-bs-placement="right"
           title="Automatically directs you to the sponsorship channel with the lower transaction fee.
 PayPal: 4.4% + $0.30 fixed fee;
-GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
+GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting fee).">
           <svg class="bi"
             fill="currentColor"><use
               href="/assets/icons.svg#question-circle"></use></svg>
@@ -349,7 +349,7 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
             data-bs-toggle="tooltip"
             data-bs-html="true"
             data-bs-placement="right"
-            title="GitHub Sponsors transfers funds monthly to recipients. As a result, reported totals may appear ahead of actual available balance. Total fees consist of both transaction fees and fiscal host fees.">
+            title="GitHub Sponsors transfers funds monthly to recipients. As a result, reported totals may appear ahead of actual available balance. Total fees consist of both transaction fees and fiscal host fees. GitHub estimates sponsorship transactions using an approximate 5% Stripe fee, so reported totals may differ slightly from OSC’s records.">
             <svg class="bi"
               fill="currentColor"><use
                 href="/assets/icons.svg#info-circle"></use></svg>
@@ -366,16 +366,16 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
                   <span id="usdBalance" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text mb-1">
-                  <strong>Total raised:</strong>
-                  <span id="usdTotal" class="fw-semibold">--</span>
+                  <span id="usdTotalRaisedTitle" role="button" class="dotted-underline" data-bs-toggle="tooltip" data-bs-placement="right" title="---"><strong>Total raised:</strong></span>
+                  <span id="usdTotalRaised" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text mb-1">
                   <strong>Total disbursed:</strong>
-                  <span id="usdSpentTotal" class="fw-semibold">--</span>
+                  <span id="usdTotalSpent" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text">
                   <strong>Total fees:</strong>
-                  <span id="usdFeesTotal" class="fw-semibold">--</span>
+                  <span id="usdTotalFees" class="fw-semibold">--</span>
                 </p>
               </div>
             </div>
@@ -518,7 +518,7 @@ GitHub (Open Source Collective): Current will cost 10% fiscal hosting fee.">
     <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/md5.js?v=2.2"></script>
     <script src="/assets/js/utils.js?v=2.1.0"></script>
-    <script src="/assets/js/donate.js?v=2.1.1"></script>
+    <script src="/assets/js/donate.js?v=2.1.2"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
 

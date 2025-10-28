@@ -492,3 +492,10 @@ svg.bi {
   height: 1em;
   vertical-align: -.125em;
 }
+
+
+.dotted-underline {
+  text-decoration: underline dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}

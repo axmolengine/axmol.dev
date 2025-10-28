@@ -78,7 +78,7 @@ document.querySelector('#submit-btn').addEventListener('click', () => {
 
         const f_amount = parseFloat(amount);
         const paypal_fee = (0.043 * f_amount) + 0.30;
-        const gh_fee = 0.10 * f_amount;
+        const gh_fee = 0.15 * f_amount;
 
         if (paypal_fee < gh_fee) {
           let baseUrl = !sandbox ? 'simdsoft.com' : 'local.simdsoft.com';
@@ -304,9 +304,13 @@ async function loadWalletData() {
 
       // Update DOM elements with wallet data
       document.getElementById("usdBalance").textContent = `$${wallet.balance}`;
-      document.getElementById("usdTotal").textContent = `$${wallet.total_raised}`;
-      document.getElementById("usdFeesTotal").textContent = `$${wallet.total_fees}`;
-      document.getElementById("usdSpentTotal").textContent = `$${wallet.total_spent}`;
+      document.getElementById("usdTotalRaised").textContent = `$${wallet.total_raised}`;
+      document.getElementById("usdTotalSpent").textContent = `$${wallet.total_spent}`;
+      document.getElementById("usdTotalFees").textContent = `$${wallet.total_fees}`;
+      
+      const total_contributed = (parseFloat(wallet.total_raised) + parseFloat(wallet.total_fees)).toFixed(2);
+      const newTitle = `Total net amount available to spend after fees.\nTotal contributed before fees: $${total_contributed}, it's often appears higher than the amount shown on OpenCollective, since OpenCollective reports figures after Stripe transaction fees are deducted.`;
+      document.getElementById("usdTotalRaisedTitle").setAttribute("data-bs-original-title", newTitle);
     } else {
       console.warn("Wallet data not available or ret != 0");
     }
