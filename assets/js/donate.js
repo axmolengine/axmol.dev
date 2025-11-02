@@ -182,8 +182,8 @@ function formatDateDay(ts) {
     timeZoneName: "short"   // will show "UTC"
   });
 
-  const tooltip = `Local Time: ${localStr}&#10;UTC Time: ${utcStr}`;
-  return { dayStr, tooltip };
+  const timeHint = `Local Time: ${localStr}&#10;UTC Time: ${utcStr}`;
+  return { dayStr, timeHint };
 }
 
 function formatAmount(value, currency) {
@@ -234,13 +234,13 @@ async function loadData(page = 1) {
   tbody.innerHTML = "";
 
   data.forEach(r => {
-    const { dayStr, tooltip } = formatDateDay(r.mc_time);
+    const { dayStr, timeHint } = formatDateDay(r.mc_time);
     const { grossStr, amountTooltip } = formatAmountAndTootip(r);
 
     const tr = document.createElement("tr");
     if (amountTooltip) {
       tr.innerHTML = `
-        <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${tooltip}">${dayStr}</span></td>
+        <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${timeHint}">${dayStr}</span></td>
         <td>${maskName(r.contrib_name, r.currency)}</td>
         <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${amountTooltip}"><strong>${grossStr}</strong>&nbsp;<svg class="bi"
                   fill="currentColor"><use href="/assets/icons.svg#info-circle"></use></svg></span></td>
@@ -249,7 +249,7 @@ async function loadData(page = 1) {
       `;
     } else {
       tr.innerHTML = `
-      <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${tooltip}">${dayStr}</span></td>
+      <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${timeHint}">${dayStr}</span></td>
       <td>${maskName(r.contrib_name, r.currency)}</td>
       <td><strong>${grossStr}</strong></td>
       <td>${channelName(r.channel)}</td>
@@ -310,7 +310,10 @@ async function loadWalletData() {
       
       const total_contributed = (parseFloat(wallet.total_raised) + parseFloat(wallet.total_fees)).toFixed(2);
       const newTitle = `Total net amount available to spend after fees.\nTotal contributed before fees: $${total_contributed}, it's often appears higher than the amount shown on OpenCollective, since OpenCollective reports figures after Stripe transaction fees are deducted.`;
-      document.getElementById("usdTotalRaisedTitle").setAttribute("data-bs-original-title", newTitle);
+      document.getElementById("usdTotalRaisedTooltip").setAttribute("data-bs-original-title", newTitle);
+
+      const { _, timeHint } = formatDateDay(wallet.last_updated);
+      document.getElementById("usdWalletTooltip").setAttribute("data-bs-original-title", `The current balance, last updated on:\n ${timeHint}`);
     } else {
       console.warn("Wallet data not available or ret != 0");
     }

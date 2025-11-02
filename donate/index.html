@@ -362,11 +362,11 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
               <div class="card-body">
                 <h5 class="card-title">USD Wallet</h5>
                 <p class="card-text mb-1">
-                  <strong>Today’s balance:</strong>
+                  <span id="usdWalletTooltip" role="button" class="dotted-underline" data-bs-html="true" data-bs-toggle="tooltip" data-bs-placement="right" title="---"><strong>Balance:</strong></span>
                   <span id="usdBalance" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text mb-1">
-                  <span id="usdTotalRaisedTitle" role="button" class="dotted-underline" data-bs-toggle="tooltip" data-bs-placement="right" title="---"><strong>Total raised:</strong></span>
+                  <span id="usdTotalRaisedTooltip" role="button" class="dotted-underline" data-bs-toggle="tooltip" data-bs-placement="right" title="---"><strong>Total raised:</strong></span>
                   <span id="usdTotalRaised" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text mb-1">
@@ -374,7 +374,7 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
                   <span id="usdTotalSpent" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text">
-                  <strong>Total fees:</strong>
+                  <span role="button" class="dotted-underline" data-bs-toggle="tooltip" data-bs-placement="right" title="Total fees include transaction fees and fiscal host fees."><strong>Total fees:</strong></span>
                   <span id="usdTotalFees" class="fw-semibold">--</span>
                 </p>
               </div>
@@ -518,7 +518,7 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
     <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/md5.js?v=2.2"></script>
     <script src="/assets/js/utils.js?v=2.1.0"></script>
-    <script src="/assets/js/donate.js?v=2.1.2"></script>
+    <script src="/assets/js/donate.js?v=2.1.5"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
 
