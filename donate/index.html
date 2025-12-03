@@ -160,7 +160,7 @@
           id="WIDmonthly" type="text" value="0" size="50" />
       </form>
 
-      <h4>PAYPAL / GITHUB<span
+      <!-- <h4>PAYPAL / GITHUB<span
           role="button"
           tabindex="0"
           data-bs-toggle="tooltip"
@@ -173,55 +173,96 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
             fill="currentColor"><use
               href="/assets/icons.svg#question-circle"></use></svg>
         </span>
-      </h4>
+      </h4> -->
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <!-- Sponsor Type Tabs -->
+        <div class="d-flex gap-3">
+          <button id="btn-individual-tiers" type="button"
+            class="btn btn-outline-primary active">
+            Individual Tiers
+          </button>
+          <button id="btn-corporate-tiers" type="button"
+            class="btn btn-outline-primary">
+            Corporate Tiers
+            <span
+              role="button"
+              tabindex="0"
+              data-bs-toggle="tooltip"
+              data-bs-html="true"
+              data-bs-placement="right"
+              title="For corporate sponsorship, we recommend using Open Source Collective as the primary channel.  
+It ensures transparency, compliance, and long‑term sustainability.  
+PayPal and GitHub Sponsors are intended for individual backers.
+">
+              <svg class="bi"
+                fill="currentColor"><use
+                  href="/assets/icons.svg#question-circle"></use></svg>
+            </span>
+          </button>
+
+        </div>
+
+        <!-- Sponsor Channel Dropdown -->
+        <div class="d-flex align-items-center gap-2">
+          <label for="channel-options" class="form-label mb-0">Sponsor
+            Channel:</label>
+          <select id="channel-options"
+            class="form-select form-select-sm w-auto">
+            <option value="github">GitHub Sponsors</option>
+            <option value="osc">Open Source Collective</option>
+            <option value="paypal">PayPal</option>
+          </select>
+        </div>
+      </div>
+
       <div class="sponsor-cards">
         <!-- Sponsors tiers -->
         <label>
-          <input id="d1002" class="sponsor-radio" type="radio" name="sponsor"
-            value="128">
+          <input id="t01" class="sponsor-radio" type="radio" name="sponsor"
+            value="5">
           <div class="sponsor-card">
-            <h3>Bronze</h3>
-            <div class="price">USD$128</div>
+            <h3 class="tier-title">Backer</h3>
+            <div class="price">USD$5</div>
           </div>
         </label>
 
         <label>
-          <input id="d1003" class="sponsor-radio" type="radio" name="sponsor"
-            value="256">
+          <input id="t02" class="sponsor-radio" type="radio" name="sponsor"
+            value="25">
           <div class="sponsor-card">
-            <h3>Silver</h3>
-            <div class="price">USD$256</div>
+            <h3 class="tier-title">Bronze</h3>
+            <div class="price">USD$25</div>
           </div>
         </label>
 
         <label>
-          <input id="d1004" class="sponsor-radio" type="radio" name="sponsor"
-            value="1000">
+          <input id="t03" class="sponsor-radio" type="radio" name="sponsor"
+            value="50">
           <div class="sponsor-card">
-            <h3>Gold</h3>
-            <div class="price">USD$1000</div>
+            <h3 class="tier-title">Silver</h3>
+            <div class="price">USD$50</div>
           </div>
         </label>
 
         <label>
-          <input id="d1005" class="sponsor-radio" type="radio" name="sponsor"
-            value="3000">
+          <input id="t04" class="sponsor-radio" type="radio" name="sponsor"
+            value="100">
           <div class="sponsor-card">
-            <h3>Platinum</h3>
-            <div class="price">USD$3000</div>
+            <h3 class="tier-title">Gold</h3>
+            <div class="price">USD$100</div>
           </div>
         </label>
 
         <label>
-          <input id="d1006" class="sponsor-radio" type="radio" name="sponsor"
-            value="6000">
+          <input id="t05" class="sponsor-radio" type="radio" name="sponsor"
+            value="250">
           <div class="sponsor-card">
-            <h3>Diamond</h3>
-            <div class="price">USD$6000</div>
+            <h3 class="tier-title">Platinum</h3>
+            <div class="price">USD$250</div>
           </div>
         </label>
 
-        <!-- custom -->
+        <!-- Other Amount -->
         <label>
           <input id="custom" class="sponsor-radio" type="radio" name="sponsor">
           <div class="sponsor-card">
@@ -231,7 +272,6 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
               <input id="amount-input" class="amount-input" inputmode="decimal"
                 placeholder="Enter amount (USD)" min="1"
                 step="1" required>
-
               <div id="amount-prefix" class="currency-symbol">$</div>
               <div id="amount-suffix" class="currency-symbol">USD</div>
             </div>
@@ -242,7 +282,7 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
       <div
         class="d-flex flex-wrap align-items-center justify-content-left gap-4 mt-4">
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-lg" id="submit-btn">
+        <button type="submit" class="btn btn-primary btn-lg" id="confirm-btn">
           💖 Confirm Sponsorship
         </button>
         <!-- Monthly checkbox -->
@@ -362,11 +402,17 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
               <div class="card-body">
                 <h5 class="card-title">USD Wallet</h5>
                 <p class="card-text mb-1">
-                  <span id="usdWalletTooltip" role="button" class="dotted-underline" data-bs-html="true" data-bs-toggle="tooltip" data-bs-placement="right" title="---"><strong>Balance:</strong></span>
+                  <span id="usdWalletTooltip" role="button"
+                    class="dotted-underline" data-bs-html="true"
+                    data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="---"><strong>Balance:</strong></span>
                   <span id="usdBalance" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text mb-1">
-                  <span id="usdTotalRaisedTooltip" role="button" class="dotted-underline" data-bs-toggle="tooltip" data-bs-placement="right" title="---"><strong>Total raised:</strong></span>
+                  <span id="usdTotalRaisedTooltip" role="button"
+                    class="dotted-underline" data-bs-toggle="tooltip"
+                    data-bs-placement="right" title="---"><strong>Total
+                      raised:</strong></span>
                   <span id="usdTotalRaised" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text mb-1">
@@ -374,7 +420,10 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
                   <span id="usdTotalSpent" class="fw-semibold">--</span>
                 </p>
                 <p class="card-text">
-                  <span role="button" class="dotted-underline" data-bs-toggle="tooltip" data-bs-placement="right" title="Total fees include transaction fees and fiscal host fees."><strong>Total fees:</strong></span>
+                  <span role="button" class="dotted-underline"
+                    data-bs-toggle="tooltip" data-bs-placement="right"
+                    title="Total fees include transaction fees and fiscal host fees."><strong>Total
+                      fees:</strong></span>
                   <span id="usdTotalFees" class="fw-semibold">--</span>
                 </p>
               </div>
@@ -401,7 +450,8 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
             <div id="faqCollapse1" class="accordion-collapse collapse"
               aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
               <div class="accordion-body">
-                Axmol currently supports recurring donations via PayPal and
+                Axmol currently supports recurring donations via OSC(Open Source
+                Collective), PayPal and
                 GitHub Sponsors.<br><br>
                 To cancel a PayPal subscription, please log in to your PayPal
                 account at
@@ -440,30 +490,6 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
                 remain anonymous, please email us at
                 <a href="mailto:support@simdsoft.com">support@simdsoft.com</a>
                 and we’ll update your listing accordingly.
-              </div>
-            </div>
-          </div>
-
-          <!-- Q3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading3">
-              <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faqCollapse3"
-                aria-expanded="false" aria-controls="faqCollapse3">
-                What sponsorship channels does Axmol support?
-              </button>
-            </h2>
-            <div id="faqCollapse3" class="accordion-collapse collapse"
-              aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                We support sponsorship via PayPal, GitHub Sponsors, and the Open
-                Source Collective platform. However, we strongly recommend using
-                the interactive sponsorship form on this page, as it helps us
-                minimize platform fees and process your support more
-                efficiently.<br><br>
-                Please note that Open Source Collective charges a <strong>10%
-                  fiscal hosting fee</strong>, which is why we do not recommend
-                it unless necessary.
               </div>
             </div>
           </div>
@@ -514,11 +540,60 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
       </div>
     </footer>
 
+    <!-- Corporate Sponsor Channel Prompt Modal -->
+    <div class="modal fade" id="channelWarning" tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Channel Warning</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            For corporate sponsorship, we recommend using <strong>Open Source
+              Collective</strong>
+            for transparency and compliance. PayPal/GitHub are intended for
+            individual backers.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-bs-dismiss="modal">Continue Anyway</button>
+            <button type="button" class="btn btn-primary"
+              onclick="switchToOSC()">Switch to OSC</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common modal -->
+    <div class="modal fade" id="commonModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="commonModalTitle" class="modal-title">Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div id="commonModalBody" class="modal-body">
+            Message goes here.
+          </div>
+          <div id="commonModalFooter" class="modal-footer">
+            <!-- Buttons will be injected dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common toast container -->
+    <div
+      class="toast-container position-fixed top-0 start-50 translate-middle-x p-3"></div>
+
     <script src="/assets/js/jquery.min.js?v=3.7.1"></script>
     <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/md5.js?v=2.2"></script>
     <script src="/assets/js/utils.js?v=2.1.0"></script>
-    <script src="/assets/js/donate.js?v=2.1.5"></script>
+    <script src="/assets/js/donate.js?v=3.0.3"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
 

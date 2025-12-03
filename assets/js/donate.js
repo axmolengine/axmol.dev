@@ -1,104 +1,244 @@
-const amountInput = document.getElementById('amount-input');
+// Define constant for individual sponsorship limit
+const INDIVIDUAL_MAX_AMOUNT = 500;
 
+
+// Individual tiers mapping
+const individualTiers = {
+  t01: { prod_id: "d101", title: "Backer", amount: 5 },
+  t02: { prod_id: "d102", title: "Bronze", amount: 25 },
+  t03: { prod_id: "d103", title: "Silver", amount: 50 },
+  t04: { prod_id: "d104", title: "Gold", amount: 100 },
+  t05: { prod_id: "d105", title: "Platinum", amount: 250 }
+  // Reserved Diamond: { prod_id: "d106", title: "Diamond", amount: 500 }
+};
+
+// Corporate tiers mapping
+const corporateTiers = {
+  t01: { prod_id: "d1001", title: "Bronze", amount: 128, osc_teir: 'sponsors-69888' },
+  t02: { prod_id: "d1002", title: "Silver", amount: 256, osc_teir: 'silver-96259' },
+  t03: { prod_id: "d1003", title: "Gold", amount: 1000, osc_teir: 'gold-96260' },
+  t04: { prod_id: "d1004", title: "Platinum", amount: 3000, osc_teir: 'platinum-96261' },
+  t05: { prod_id: "d1005", title: "Diamond", amount: 6000, osc_teir: 'diamond-96262' }
+};
+
+const VALID_CHANNELS = new Map([
+  ["paypal", "PayPal"],
+  ["github", "GitHub Sponsors"],
+  ["osc", "Open Source Collective"]
+]);
+
+// Unified amount validation function
+function verifyDonateInput(amount, sponsor_channel, is_corporate, on_verified) {
+  const channelSelect = document.getElementById("channel-options");
+  const channel = channelSelect ? channelSelect.value : "";
+
+  const value = parseCurrency(amount);
+
+  // Empty check
+  if (!amount || amount.trim() === "") {
+    showModal("Missing Amount", "Please input amount before confirming sponsorship.");
+    return;
+  }
+
+  // Must be >= 1
+  if (isNaN(value) || value < 1) {
+    showModal("Invalid Amount", "Please enter a valid amount greater than 0.");
+    return;
+  }
+
+  if (!VALID_CHANNELS.has(sponsor_channel)) {
+    showModal("Invalid Channel", `Unsupported sponsor channel: ${sponsor_channel}`);
+    return;
+  }
+
+  // Limit check
+  if (!(is_corporate && channel === "osc") && value > INDIVIDUAL_MAX_AMOUNT) {
+    if (is_corporate) {
+      const modalEl = document.getElementById("channelWarning");
+
+      const bodyEl = modalEl.querySelector(".modal-body");
+      bodyEl.innerHTML = `
+        For corporate sponsorships <strong>≥ USD $${INDIVIDUAL_MAX_AMOUNT}</strong>,
+        we recommend using <strong>Open Source Collective</strong> for transparency and compliance.<br>
+        PayPal/GitHub are intended for individual backers and not suitable for large payments.
+      `;
+
+      const modal = new bootstrap.Modal(modalEl);
+      
+      modalEl.querySelector(".btn-secondary").onclick = () => {
+        modal.hide();
+        modalEl.addEventListener("hidden.bs.modal", () => {
+          if (typeof on_verified === "function") on_verified(sponsor_channel);
+        }, { once: true });
+      };
+
+      modalEl.querySelector(".btn-primary").onclick = () => {
+        if (channelSelect) {
+          channelSelect.value = "osc";
+          showToast('Channel switched to Open Source Collective.', 'info');
+        }
+        modal.hide();
+        modalEl.addEventListener("hidden.bs.modal", () => {
+          if (typeof on_verified === "function") on_verified("osc");
+        }, { once: true });
+      };
+
+      modal.show();
+    } else {
+      showModal(
+        "Limit Exceeded",
+        `Individual sponsorship cannot exceed USD $${INDIVIDUAL_MAX_AMOUNT}. Please adjust your amount.`
+      );
+    }
+    return;
+  }
+
+  // verified
+  if (typeof on_verified === "function") {
+    on_verified(sponsor_channel);
+  }
+}
+
+/**
+ * Parse currency string like "USD$5,220.33" into number
+ * Supports currency symbols, thousand separators, and decimals
+ */
+function parseCurrency(input) {
+  if (!input) return NaN;
+
+  // Remove everything except digits, comma, and dot
+  const cleaned = input.replace(/[^0-9.,]/g, "");
+
+  // Remove commas (thousand separators)
+  const normalized = cleaned.replace(/,/g, "");
+
+  // Convert to float
+  const value = parseFloat(normalized);
+
+  return isNaN(value) ? NaN : value
+}
+
+const amountInput = document.getElementById('amount-input');
 amountInput.addEventListener('input', formatCurrency);
 
 function formatCurrency(e) {
-    let caretPos = e.target.selectionStart;
-    const originalLen = e.target.value.length;
+  let caretPos = e.target.selectionStart;
+  const originalLen = e.target.value.length;
 
-    let value = e.target.value
-        .replace(/[^0-9.]/g, '')
-        .replace(/(\..*)\./g, '$1')
-        .replace(/(\.\d{2}).*/g, '$1')
-        .replace(/^0+(\d)/, '$1');
+  let value = e.target.value
+    .replace(/[^0-9.]/g, '')
+    .replace(/(\..*)\./g, '$1')
+    .replace(/(\.\d{2}).*/g, '$1')
+    .replace(/^0+(\d)/, '$1');
 
-    let [integer, decimal] = value.split('.');
-    decimal = decimal ? '.' + decimal.slice(0, 2) : '';
+  let [integer, decimal] = value.split('.');
+  decimal = decimal ? '.' + decimal.slice(0, 2) : '';
 
-    if (integer) {
-        integer = integer.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    }
+  if (integer) {
+    integer = integer.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
 
-    const newValue = (integer || '0') + (decimal || '');
-    e.target.value = newValue;
-    const newLen = newValue.length;
-    caretPos = newLen - (originalLen - caretPos);
-    e.target.setSelectionRange(caretPos, caretPos);
+  const newValue = (integer || '0') + (decimal || '');
+  e.target.value = newValue;
+  const newLen = newValue.length;
+  caretPos = newLen - (originalLen - caretPos);
+  e.target.setSelectionRange(caretPos, caretPos);
 }
 
 amountInput.addEventListener('focus', (e) => {
-    document.getElementById('custom').checked = true;
-    document.querySelectorAll('.currency-symbol').forEach(el => el.style.opacity = 1);
+  document.getElementById('custom').checked = true;
+  document.querySelectorAll('.currency-symbol').forEach(el => el.style.opacity = 1);
 });
 
 amountInput.addEventListener('blur', (e) => {
-    let numericValue = e.target.value.replace(/,/g, '');
-    if (numericValue != '') {
-        let val = parseFloat(numericValue);
-        if (val < 1) { numericValue = '1.00'; }
-    }
+  let numericValue = e.target.value.replace(/,/g, '');
+  if (numericValue != '') {
+    let val = parseCurrency(numericValue);
+    if (val < 1) { numericValue = '1.00'; }
+  }
 
-    if (numericValue && !isNaN(numericValue)) {
-        let formatted = parseFloat(numericValue).toFixed(2)
-            .replace(/\d(?=(\d{3})+\.)/g, '$&,');
+  if (numericValue && !isNaN(numericValue)) {
+    let formatted = parseCurrency(numericValue).toFixed(2)
+      .replace(/\d(?=(\d{3})+\.)/g, '$&,');
 
-        const [integerPart, decimalPart] = formatted.split('.');
-        e.target.value = `${integerPart.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.${decimalPart}`;
-    }
+    const [integerPart, decimalPart] = formatted.split('.');
+    e.target.value = `${integerPart.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.${decimalPart}`;
+  }
 
-    if (!e.target.value) {
-        document.querySelectorAll('.currency-symbol').forEach(el => el.style.opacity = 0);
-    }
+  if (!e.target.value) {
+    document.querySelectorAll('.currency-symbol').forEach(el => el.style.opacity = 0);
+  }
 });
 
 
 const sandbox = window.location.host.includes('local.') || window.location.host.includes('test.');
 
-document.querySelector('#submit-btn').addEventListener('click', () => {
-    const selected = document.querySelector('input[name="sponsor"]:checked');
-    const isMonthly = document.getElementById('monthly').checked;
+document.querySelector('#confirm-btn').addEventListener('click', (e) => {
+  e.preventDefault();
+  const selected = document.querySelector('input[name="sponsor"]:checked');
+  const isMonthly = document.getElementById('monthly').checked;
 
-    if (selected) {
-        const amount = selected.id === 'custom'
-            ? document.querySelector('.amount-input').value
-            : selected.value;
+  if (selected) {
+    const is_custom = selected.id === 'custom';
+    const amount_str = is_custom
+      ? document.querySelector('.amount-input').value
+      : selected.value;
 
-        if (amount == '') {
-            window.alert('Please input amount!');
-            return;
-        }
+    const is_corporate = document.getElementById("btn-corporate-tiers").classList.contains("active");
+    const channel = document.getElementById("channel-options").value;
+    verifyDonateInput(amount_str, channel, is_corporate, (verified_channel) => {
+      if ((window.cv_sel_amount !== amount_str) || (window.cv_is_mouthly !== isMonthly)) {
+        window.cv_sel_amount = amount_str;
+        window.cv_is_mouthly = isMonthly;
+        window.cv_orderid = genOrderId();
+      }
 
-        if ((window.cv_sel_amount !== amount) || (window.cv_is_mouthly !== isMonthly)) {
-            window.cv_sel_amount = amount;
-            window.cv_is_mouthly = isMonthly;
-            window.cv_orderid = genOrderId();
-        }
+      console.log(`Amount: $${amount_str}${isMonthly ? '/month' : ''}`);
 
-        console.log(`Amount: $${amount}${isMonthly ? '/month' : ''}`);
+      const amount = parseCurrency(amount_str);
+      const teir_info = is_corporate ? corporateTiers[selected.id] : individualTiers[selected.id];
 
-        const f_amount = parseFloat(amount);
-        const paypal_fee = (0.043 * f_amount) + 0.30;
-        const gh_fee = 0.15 * f_amount;
-
-        if (paypal_fee < gh_fee) {
-          let baseUrl = !sandbox ? 'simdsoft.com' : 'local.simdsoft.com';
-          const actionUrl = `https://${baseUrl}/onlinepay/uniorder.php`;
-          var form = $('#unipayment');
-          form.attr('action', actionUrl);
-          form.children('#WIDprod').attr('value', selected.id);
-          form.children('#WIDout_trade_no').attr('value', window.cv_orderid);
-          form.children('#WIDmonthly').attr('value', isMonthly ? '1' : '0');
-          form.children('#WIDamount').attr('value', amount.toString());
-          form.submit();
+      if (verified_channel == 'paypal') {
+        let baseUrl = !sandbox ? 'simdsoft.com' : 'local.simdsoft.com';
+        const actionUrl = `https://${baseUrl}/onlinepay/uniorder.php`;
+        var form = $('#unipayment');
+        form.attr('action', actionUrl);
+        form.children('#WIDprod').attr('value', teir_info.prod_id);
+        form.children('#WIDout_trade_no').attr('value', window.cv_orderid);
+        form.children('#WIDmonthly').attr('value', isMonthly ? '1' : '0');
+        form.children('#WIDamount').attr('value', amount.toString());
+        form.submit();
+      }
+      else if (verified_channel == 'github') {
+        const gh_freq = isMonthly ? 'recurring' : 'one-time';
+        const actionUrl = `https://github.com/sponsors/axmolengine/sponsorships?preview=false&frequency=${gh_freq}&amount=${amount}`;
+        window.open(actionUrl, '_blank');
+      }
+      else if (verified_channel == 'osc') {
+        let actionUrl = '#';
+        if (is_corporate) {
+          if (isMonthly) {
+            const osc_teir = teir_info.osc_teir;
+            isPresetTeir = true;
+            actionUrl = `https://opencollective.com/axmol/contribute/${osc_teir}/checkout?interval=month&amount=${amount}&contributeAs=me`;
+          }
         }
         else {
-          const gh_freq = isMonthly ?  'recurring' : 'one-time';
-          const actionUrl = `https://github.com/sponsors/axmolengine/sponsorships?preview=false&frequency=${gh_freq}&amount=${amount}`;
-          window.open(actionUrl, '_blank');
+          if (isMonthly) {
+            isPresetTeir = true;
+            actionUrl = `https://opencollective.com/axmol/contribute/backers-69887/checkout?interval=month&amount=${amount}&contributeAs=me`;
+          }
         }
-    } else {
-        window.alert('Please select a tier!');
-    }
+        if (actionUrl == '#') { // means no preset teir, use osc custom card
+          const osc_interval = isMonthly ? 'month' : 'oneTime';
+          actionUrl = `https://opencollective.com/axmol/donate?interval=${osc_interval}&amount=${amount}&contributeAs=me`;
+        }
+        window.open(actionUrl, '_blank');
+      }
+    });
+  } else {
+    showModal("Missing Tier", "Please select a tier before confirming sponsorship.");
+  }
 });
 
 // sponsor transactions
@@ -267,7 +407,7 @@ document.getElementById("prevBtn").addEventListener("click", () => {
   if (currentPage > 1) {
     loadData(currentPage - 1);
   } else {
-    alert("Already on the first page");
+    showToast('Already on the first page', 'info');
   }
 });
 
@@ -276,7 +416,7 @@ document.getElementById("nextBtn").addEventListener("click", () => {
   if (currentPage < totalPages) {
     loadData(currentPage + 1);
   } else {
-    alert("Already on the last page");
+    showToast('Already on the last page', 'info');
   }
 });
 
@@ -307,7 +447,7 @@ async function loadWalletData() {
       document.getElementById("usdTotalRaised").textContent = `$${wallet.total_raised}`;
       document.getElementById("usdTotalSpent").textContent = `$${wallet.total_spent}`;
       document.getElementById("usdTotalFees").textContent = `$${wallet.total_fees}`;
-      
+
       const total_contributed = (parseFloat(wallet.total_raised) + parseFloat(wallet.total_fees)).toFixed(2);
       const newTitle = `Total net amount available to spend after fees.\nTotal contributed before fees: $${total_contributed}, it's often appears higher than the amount shown on OpenCollective, since OpenCollective reports figures after Stripe transaction fees are deducted.`;
       document.getElementById("usdTotalRaisedTooltip").setAttribute("data-bs-original-title", newTitle);
@@ -324,3 +464,192 @@ async function loadWalletData() {
 }
 
 loadWalletData();
+
+//// ---------------- Sponsor Teir Type and Sponsor Channel control
+
+document.addEventListener("DOMContentLoaded", function () {
+  const btnIndividual = document.getElementById("btn-individual-tiers");
+  const btnCorporate = document.getElementById("btn-corporate-tiers");
+  const channelSelect = document.getElementById("channel-options");
+
+  // Update all sponsor cards based on mapping
+  function updateTiers(dataMap) {
+    // Step 1: record currently selected radio id
+    const currentSelected = document.querySelector(".sponsor-radio:checked");
+    const selectedId = currentSelected ? currentSelected.id : null;
+
+    // Step 2: update card content
+    Object.keys(dataMap).forEach(key => {
+      const radio = document.getElementById(key); // card id is fixed (t01~t05)
+      if (!radio) return;
+      const tier = dataMap[key];
+      const titleEl = radio.closest("label").querySelector(".tier-title");
+      const priceEl = radio.closest("label").querySelector(".price");
+
+      // Update radio attributes and card content
+      radio.dataset.prod_id = tier.prod_id; // store sponsor id in data attribute
+      radio.value = tier.amount;
+      titleEl.textContent = tier.title;
+      priceEl.textContent = `USD$${tier.amount}`;
+    });
+
+    // Step 3: restore previous selection if possible, otherwise select the first radio
+    if (selectedId) {
+      const restoredRadio = document.getElementById(selectedId);
+      if (restoredRadio) {
+        restoredRadio.checked = true;
+      } else {
+        const firstRadio = document.querySelector(".sponsor-radio");
+        if (firstRadio) firstRadio.checked = true;
+      }
+    } else {
+      const firstRadio = document.querySelector(".sponsor-radio");
+      if (firstRadio) firstRadio.checked = true;
+    }
+  }
+
+  // Switch to Individual tiers
+  btnIndividual.addEventListener("click", () => {
+    btnIndividual.classList.add("active");
+    btnCorporate.classList.remove("active");
+    updateTiers(individualTiers);
+  });
+
+  // Switch to Corporate tiers
+  btnCorporate.addEventListener("click", () => {
+    btnCorporate.classList.add("active");
+    btnIndividual.classList.remove("active");
+    updateTiers(corporateTiers);
+
+    // Auto switch channel to OSC
+    if (channelSelect && channelSelect.value != 'osc') {
+      channelSelect.value = "osc";
+      showToast("Channel automatically switched to Open Source Collective.", "info");
+    }
+  });
+
+  // Channel change warning for Corporate mode
+  channelSelect.addEventListener("change", (e) => {
+    const channel = e.target.value;
+    const isCorporate = btnCorporate.classList.contains("active");
+
+    if (isCorporate && (channel === "paypal" || channel === "github")) {
+      // Show Bootstrap modal warning
+      const modalEl = document.getElementById("channelWarning");
+      const modal = new bootstrap.Modal(modalEl);
+      const bodyEl = modalEl.querySelector(".modal-body");
+      bodyEl.innerHTML = `
+        For corporate sponsorship, we recommend using <strong>Open Source
+        Collective</strong>
+        for transparency and compliance. PayPal/GitHub are intended for
+        individual backers.
+      `;
+      modal.show();
+    }
+  });
+
+  const modalEl = document.getElementById("channelWarning");
+  // update focus when hide
+  modalEl.addEventListener("hide.bs.modal", () => {
+    document.getElementById("confirm-btn").focus();
+  });
+
+  // disable interaction when hidden
+  modalEl.addEventListener("hidden.bs.modal", () => {
+    modalEl.setAttribute("inert", "");
+  });
+
+  // enable interaction when show
+  modalEl.addEventListener("show.bs.modal", () => {
+    modalEl.removeAttribute("inert");
+  });
+});
+
+// Helper function to switch back to OSC from modal
+function switchToOSC() {
+  const channelSelect = document.getElementById("channel-options");
+  if (channelSelect) {
+    channelSelect.value = "osc";
+    const modalEl = document.getElementById("channelWarning");
+    bootstrap.Modal.getInstance(modalEl).hide();
+    showToast('Channel switched to Open Source Collective.', 'info');
+  }
+}
+
+// Toast factory function
+function showToast(message, type = "primary") {
+  // Create toast element dynamically
+  const toastContainer = document.querySelector(".toast-container") || createToastContainer();
+  const toastId = "toast-" + Date.now();
+
+  const toastEl = document.createElement("div");
+  toastEl.id = toastId;
+  toastEl.className = `toast align-items-center text-bg-${type} border-0`;
+  toastEl.setAttribute("role", "alert");
+  toastEl.setAttribute("aria-live", "assertive");
+  toastEl.setAttribute("aria-atomic", "true");
+
+  toastEl.innerHTML = `
+    <div class="d-flex">
+      <div class="toast-body">${message}</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" 
+        data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  `;
+
+  toastContainer.appendChild(toastEl);
+
+  // Show toast using Bootstrap API
+  const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+  toast.show();
+
+  // Auto remove after hidden
+  toastEl.addEventListener("hidden.bs.toast", () => {
+    toastEl.remove();
+  });
+}
+
+// Show a common modal with dynamic content
+function showModal(title, message, options = {}) {
+  // Get modal elements
+  const modalTitle = document.getElementById("commonModalTitle");
+  const modalBody = document.getElementById("commonModalBody");
+  const modalFooter = document.getElementById("commonModalFooter");
+  const modalEl = document.getElementById("commonModal");
+
+  // Update title and body
+  modalTitle.textContent = title;
+  modalBody.innerHTML = message;
+
+  // Clear old footer buttons
+  modalFooter.innerHTML = "";
+
+  // Default button if no options provided
+  if (!options.buttons || options.buttons.length === 0) {
+    const defaultBtn = document.createElement("button");
+    defaultBtn.type = "button";
+    defaultBtn.className = "btn btn-primary";
+    defaultBtn.setAttribute("data-bs-dismiss", "modal");
+    defaultBtn.textContent = "OK";
+    modalFooter.appendChild(defaultBtn);
+  } else {
+    // Create custom buttons
+    options.buttons.forEach(btn => {
+      const buttonEl = document.createElement("button");
+      buttonEl.type = "button";
+      buttonEl.className = `btn ${btn.class || "btn-secondary"}`;
+      if (btn.dismiss) {
+        buttonEl.setAttribute("data-bs-dismiss", "modal");
+      }
+      buttonEl.textContent = btn.text;
+      if (typeof btn.onClick === "function") {
+        buttonEl.addEventListener("click", btn.onClick);
+      }
+      modalFooter.appendChild(buttonEl);
+    });
+  }
+
+  // Show modal
+  const modal = new bootstrap.Modal(modalEl);
+  modal.show();
+}

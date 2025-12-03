@@ -29,6 +29,31 @@
   --bs-btn-primary-hover-border-color: #8ea1f2;
 }
 
+/* Override Bootstrap's btn-secondary */
+.btn-secondary {
+  /* Base color: lighter than primary blue, still clickable */
+  background-color: var(--btn-secondary-bg);
+  color: var(--btn-secondary-color);
+  border-color: var(--btn-secondary-border);
+}
+
+/* Hover state: slightly darker to emphasize interactivity */
+.btn-secondary:hover {
+  background-color: var(--btn-secondary-bg-hover);
+  border-color: var(--btn-secondary-border-hover);
+  color: var(--btn-secondary-color-hover);
+}
+
+/* Focus state: add visible outline for accessibility */
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(100, 150, 255, 0.4);
+}
+
+/* Disabled state: reduce opacity */
+.btn-secondary:disabled {
+  opacity: 0.65;
+}
+
 /* Make dropdown full-width on mobile */
 @media (max-width: 991.98px) {
   .navbar .dropdown-menu {
