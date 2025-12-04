@@ -52,6 +52,42 @@ function formatDateDay(ts) {
   return { dayStr, timeHint: `Local Time: ${localStr}&#10;UTC Time: ${utcStr}` };
 }
 
+function formatAmount(value, currency) {
+  if (value == null) return "";
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: currency,
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2
+  }).format(value);
+}
+
+function formatAmountAndTootip(r) {
+  const grossStr = formatAmount(r.mc_gross, r.currency);
+  const feeStr = formatAmount(r.mc_fee, r.currency);
+  const hostFeeStr = formatAmount(r.host_fee, r.currency);
+
+  let parts = [];
+
+  // First line: only show processor fee part if > 0
+  if (r.mc_fee != 0) {
+    parts.push(`${grossStr} - ${feeStr} (payment processor fee)`);
+  } else {
+    parts.push(grossStr);
+  }
+
+  // Extra lines: only include if > 0
+  if (r.mc_fee != 0) {
+    parts.push(`This transaction includes ${feeStr} payment processor fees`);
+  }
+  if (r.host_fee != 0) {
+    parts.push(`This transaction includes ${hostFeeStr} host fees`);
+  }
+
+  let amountTooltip = parts.join("\n");
+  return { grossStr, amountTooltip };
+}
+
 function maskName(name, currency) {
   if (currency !== 'CNY' || !name) return name;
   const chars = Array.from(name);
@@ -407,15 +443,27 @@ async function loadData(page = 1) {
 
     data.forEach(r => {
       const { dayStr, timeHint } = formatDateDay(r.mc_time);
-      const grossStr = new Intl.NumberFormat("en-US", { style: "currency", currency: r.currency }).format(r.mc_gross);
+      const { grossStr, amountTooltip } = formatAmountAndTootip(r);
+
       const tr = document.createElement("tr");
-      tr.innerHTML = `
-        <td><span role="button" data-bs-toggle="tooltip" title="${timeHint}">${dayStr}</span></td>
+      if (amountTooltip) {
+        tr.innerHTML = `
+        <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${timeHint}">${dayStr}</span></td>
         <td>${maskName(r.contrib_name, r.currency)}</td>
-        <td><strong>${grossStr}</strong></td>
+        <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${amountTooltip}"><strong>${grossStr}</strong>&nbsp;<svg class="bi"
+                  fill="currentColor"><use href="/assets/icons.svg#info-circle"></use></svg></span></td>
         <td>${channelName(r.channel)}</td>
         <td>${r.memo ?? ""}</td>
       `;
+      } else {
+        tr.innerHTML = `
+      <td><span role="button" data-bs-toggle="tooltip" data-bs-placement="right" title="${timeHint}">${dayStr}</span></td>
+      <td>${maskName(r.contrib_name, r.currency)}</td>
+      <td><strong>${grossStr}</strong></td>
+      <td>${channelName(r.channel)}</td>
+      <td>${r.memo ?? ""}</td>
+      `;
+      }
       tbody.appendChild(tr);
     });
 
