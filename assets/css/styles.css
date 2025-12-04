@@ -453,7 +453,7 @@ section {
 .nav-donate:hover,
 .nav-donate:focus {
   background-color: var(--bs-primary);
-  color: #fff;
+  color: #fff !important;;
   text-decoration: none;
 }
 
