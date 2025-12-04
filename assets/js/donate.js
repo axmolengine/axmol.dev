@@ -12,11 +12,11 @@ const individualTiers = {
 };
 
 const corporateTiers = {
-  t01: { prod_id: "d1001", title: "Bronze", amount: 128, osc_teir: 'sponsors-69888' },
-  t02: { prod_id: "d1002", title: "Silver", amount: 256, osc_teir: 'silver-96259' },
-  t03: { prod_id: "d1003", title: "Gold", amount: 1000, osc_teir: 'gold-96260' },
-  t04: { prod_id: "d1004", title: "Platinum", amount: 3000, osc_teir: 'platinum-96261' },
-  t05: { prod_id: "d1005", title: "Diamond", amount: 6000, osc_teir: 'diamond-96262' }
+  t01: { prod_id: "d1001", title: "Bronze", amount: 128, osc_tier: 'sponsors-69888' },
+  t02: { prod_id: "d1002", title: "Silver", amount: 256, osc_tier: 'silver-96259' },
+  t03: { prod_id: "d1003", title: "Gold", amount: 1000, osc_tier: 'gold-96260' },
+  t04: { prod_id: "d1004", title: "Platinum", amount: 3000, osc_tier: 'platinum-96261' },
+  t05: { prod_id: "d1005", title: "Diamond", amount: 6000, osc_tier: 'diamond-96262' }
 };
 
 const VALID_CHANNELS = {
