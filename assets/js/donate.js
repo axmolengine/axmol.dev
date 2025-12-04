@@ -215,7 +215,7 @@ function initEventHandlers() {
     }
     const is_custom = selected.id === 'custom';
     const amount_str = is_custom ? document.querySelector('.amount-input').value : selected.value;
-    const is_monthly = is_custom ? document.querySelector('input[name="custom-cycle"]:checked').value === 'monthly' : true;
+    const is_monthly = is_custom ? document.getElementById('custom-montly').checked : true;
     const is_corporate = document.getElementById("btn-corporate-tiers").classList.contains("active");
     const channel = document.getElementById("channel-options").value;
 
@@ -328,7 +328,7 @@ function initEventHandlers() {
   // Auto select Custom card when interacting with its inputs
   const customRadio = document.getElementById("custom");
   const customInputs = document.querySelectorAll(
-    ".amount-input, input[name='custom-cycle']"
+    ".amount-input, input[id='custom-montly']"
   );
 
   customInputs.forEach(el => {

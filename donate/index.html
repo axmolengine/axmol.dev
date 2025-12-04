@@ -267,23 +267,19 @@ PayPal and GitHub Sponsors are intended for individual backers.
           <input id="custom" class="sponsor-radio" type="radio" name="sponsor">
           <div class="sponsor-card">
             <h3>Custom</h3>
-            <div class="amount-wrapper">
-              <input id="amount-input" class="amount-input" inputmode="decimal"
-                placeholder="Enter amount (USD)" min="1"
-                step="1" required>
-              <div id="amount-prefix" class="currency-symbol">$</div>
-              <div id="amount-suffix" class="currency-symbol">USD</div>
-            </div>
-
-            <!-- Payment cycle selector -->
-            <div class="cycle-wrapper">
-              <label class="cycle-option">
-                <input type="radio" name="custom-cycle" value="monthly" checked>
-                Monthly
-              </label>
-              <label class="cycle-option">
-                <input type="radio" name="custom-cycle" value="onetime">
-                One-time
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <div class="amount-wrapper">
+                <input id="amount-input" class="amount-input"
+                  inputmode="decimal"
+                  placeholder="Enter amount (USD)" min="1"
+                  step="1" required>
+                <div id="amount-prefix" class="currency-symbol">$</div>
+                <div id="amount-suffix" class="currency-symbol">USD</div>
+              </div>
+              <!-- Monthly checkbox -->
+              <label class="checkbox-label mb-0">
+                <input type="checkbox" id="custom-montly" checked>
+                <span class="checkbox"></span>Monthly
               </label>
             </div>
           </div>
@@ -522,9 +518,12 @@ PayPal and GitHub Sponsors are intended for individual backers.
               <div class="accordion-body">
                 At present, Axmol Engine does not operate its own nonprofit
                 entity.
-                Instead, we rely on the <strong><a href="https://opencollective.com/opensource">Open Source Collective</a>
+                Instead, we rely on the <strong><a
+                    href="https://opencollective.com/opensource">Open Source
+                    Collective</a>
                   (OSC)</strong>, a
-                U.S.-registered 501(c)(6) nonprofit fiscal host dedicated to supporting
+                U.S.-registered 501(c)(6) nonprofit fiscal host dedicated to
+                supporting
                 open source
                 projects.<br><br>
                 By sponsoring Axmol through OSC, Corporate contributors benefit
