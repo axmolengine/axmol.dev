@@ -103,7 +103,7 @@ function createToastContainer() {
 }
 
 // ---------------- Donation Logic ----------------
-function verifyDonateInput(amount, sponsor_channel, is_corporate, triggerEl, on_verified) {
+function verifyDonateInputs(amount, sponsor_channel, is_corporate, triggerEl, on_verified) {
   const channelSelect = document.getElementById("channel-options");
   const channel = channelSelect ? channelSelect.value : "";
   const value = parseCurrency(amount);
@@ -183,7 +183,7 @@ function initEventHandlers() {
     const is_corporate = document.getElementById("btn-corporate-tiers").classList.contains("active");
     const channel = document.getElementById("channel-options").value;
 
-    verifyDonateInput(amount_str, channel, is_corporate, e.currentTarget, (verified_channel) => {
+    verifyDonateInputs(amount_str, channel, is_corporate, e.currentTarget, (verified_channel) => {
       // Generate order id if amount or cycle changed
       if ((window.cv_sel_amount !== amount_str) || (window.cv_is_monthly !== is_monthly)) {
         window.cv_sel_amount = amount_str;
@@ -194,7 +194,16 @@ function initEventHandlers() {
       console.log(`Amount: $${amount_str}${is_monthly ? '/month' : ''}, Channel: ${verified_channel}`);
 
       const amount = parseCurrency(amount_str);
-      const tier_info = is_corporate ? corporateTiers[selected.id] : individualTiers[selected.id];
+      let prod_id = null;
+      let osc_tier = null;
+      if (!is_custom) {
+        const tier_info = is_corporate ? corporateTiers[selected.id] : individualTiers[selected.id];
+        prod_id = tier_info.prod_id;
+        osc_tier = tier_info.osc_tier;
+      }
+      else {
+        prod_id = 'custom';
+      }
 
       // Payment redirect logic
       if (verified_channel === 'paypal') {
@@ -202,7 +211,7 @@ function initEventHandlers() {
         const actionUrl = `https://${baseUrl}/onlinepay/uniorder.php`;
         const form = $('#unipayment');
         form.attr('action', actionUrl);
-        form.children('#WIDprod').attr('value', tier_info.prod_id);
+        form.children('#WIDprod').attr('value', prod_id);
         form.children('#WIDout_trade_no').attr('value', window.cv_orderid);
         form.children('#WIDmonthly').attr('value', is_monthly ? '1' : '0');
         form.children('#WIDamount').attr('value', amount.toString());
@@ -214,8 +223,7 @@ function initEventHandlers() {
       } else if (verified_channel === 'osc') {
         let actionUrl = '#';
         if (is_corporate) {
-          if (is_monthly) {
-            const osc_tier = tier_info.osc_teir;
+          if (osc_tier !== null) {
             actionUrl = `https://opencollective.com/axmol/contribute/${osc_tier}/checkout?interval=month&amount=${amount}&contributeAs=me`;
           }
         } else {
@@ -320,6 +328,63 @@ function initEventHandlers() {
   document.getElementById("perPageSelect").addEventListener("change", (e) => {
     perPage = parseInt(e.target.value, 10);
     loadData(1);
+  });
+
+  // ---------------- Custom amount formatting ----------------
+  const amountInput = document.getElementById('amount-input');
+
+  // Format while typing
+  function formatCurrency(e) {
+    let caretPos = e.target.selectionStart;
+    const originalLen = e.target.value.length;
+
+    let value = e.target.value
+      .replace(/[^0-9.]/g, '')           // remove non-numeric
+      .replace(/(\..*)\./g, '$1')        // only one decimal point
+      .replace(/(\.\d{2}).*/g, '$1')     // max two decimals
+      .replace(/^0+(\d)/, '$1');         // no leading zeros
+
+    let [integer, decimal] = value.split('.');
+    decimal = decimal ? '.' + decimal.slice(0, 2) : '';
+
+    if (integer) {
+      integer = integer.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+
+    const newValue = (integer || '0') + (decimal || '');
+    e.target.value = newValue;
+
+    // restore caret position
+    const newLen = newValue.length;
+    caretPos = newLen - (originalLen - caretPos);
+    e.target.setSelectionRange(caretPos, caretPos);
+  }
+
+  amountInput.addEventListener('input', formatCurrency);
+
+  // Auto select Custom card when focusing input
+  amountInput.addEventListener('focus', () => {
+    document.getElementById('custom').checked = true;
+    document.querySelectorAll('.currency-symbol').forEach(el => el.style.opacity = 1);
+  });
+
+  // Format on blur
+  amountInput.addEventListener('blur', (e) => {
+    let numericValue = e.target.value.replace(/,/g, '');
+    if (numericValue !== '') {
+      let val = parseCurrency(numericValue);
+      if (val < 1) { numericValue = '1.00'; }
+    }
+
+    if (numericValue && !isNaN(numericValue)) {
+      let formatted = parseCurrency(numericValue).toFixed(2)
+        .replace(/\d(?=(\d{3})+\.)/g, '$&,');
+      e.target.value = formatted;
+    }
+
+    if (!e.target.value) {
+      document.querySelectorAll('.currency-symbol').forEach(el => el.style.opacity = 0);
+    }
   });
 }
 
