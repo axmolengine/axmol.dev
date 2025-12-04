@@ -28,26 +28,28 @@ const VALID_CHANNELS = new Map([
 ]);
 
 // Unified amount validation function
-function verifyDonateInput(amount, sponsor_channel, is_corporate, on_verified) {
+function verifyDonateInput(amount, sponsor_channel, is_corporate, trigger, on_verified) {
   const channelSelect = document.getElementById("channel-options");
   const channel = channelSelect ? channelSelect.value : "";
 
   const value = parseCurrency(amount);
 
+  const modal_options = { triggerEl: trigger };
+
   // Empty check
   if (!amount || amount.trim() === "") {
-    showModal("Missing Amount", "Please input amount before confirming sponsorship.");
+    showModal("Missing Amount", "Please input amount before confirming sponsorship.", modal_options);
     return;
   }
 
   // Must be >= 1
   if (isNaN(value) || value < 1) {
-    showModal("Invalid Amount", "Please enter a valid amount greater than 0.");
+    showModal("Invalid Amount", "Please enter a valid amount greater than 0.", modal_options);
     return;
   }
 
   if (!VALID_CHANNELS.has(sponsor_channel)) {
-    showModal("Invalid Channel", `Unsupported sponsor channel: ${sponsor_channel}`);
+    showModal("Invalid Channel", `Unsupported sponsor channel: ${sponsor_channel}`, modal_options);
     return;
   }
 
@@ -58,13 +60,15 @@ function verifyDonateInput(amount, sponsor_channel, is_corporate, on_verified) {
 
       const bodyEl = modalEl.querySelector(".modal-body");
       bodyEl.innerHTML = `
-        For corporate sponsorships <strong>≥ USD $${INDIVIDUAL_MAX_AMOUNT}</strong>,
+        For corporate sponsorships <strong>&gt; USD$${INDIVIDUAL_MAX_AMOUNT}</strong>,
         we recommend using <strong>Open Source Collective</strong> for transparency and compliance.<br>
         PayPal/GitHub are intended for individual backers and not suitable for large payments.
       `;
 
+      modalEl.dataset.triggerId = trigger.id;
+
       const modal = new bootstrap.Modal(modalEl);
-      
+
       modalEl.querySelector(".btn-secondary").onclick = () => {
         modal.hide();
         modalEl.addEventListener("hidden.bs.modal", () => {
@@ -87,7 +91,8 @@ function verifyDonateInput(amount, sponsor_channel, is_corporate, on_verified) {
     } else {
       showModal(
         "Limit Exceeded",
-        `Individual sponsorship cannot exceed USD $${INDIVIDUAL_MAX_AMOUNT}. Please adjust your amount.`
+        `Individual sponsorship cannot exceed USD$${INDIVIDUAL_MAX_AMOUNT}. Please adjust your amount.`,
+        modal_options
       );
     }
     return;
@@ -175,8 +180,9 @@ const sandbox = window.location.host.includes('local.') || window.location.host.
 
 document.querySelector('#confirm-btn').addEventListener('click', (e) => {
   e.preventDefault();
+
+  // selected sponosr teir card
   const selected = document.querySelector('input[name="sponsor"]:checked');
-  const isMonthly = document.getElementById('monthly').checked;
 
   if (selected) {
     const is_custom = selected.id === 'custom';
@@ -184,16 +190,20 @@ document.querySelector('#confirm-btn').addEventListener('click', (e) => {
       ? document.querySelector('.amount-input').value
       : selected.value;
 
+    const is_monthly = is_custom
+      ? document.querySelector('input[name="custom-cycle"]:checked').value === 'monthly'
+      : true;
+
     const is_corporate = document.getElementById("btn-corporate-tiers").classList.contains("active");
     const channel = document.getElementById("channel-options").value;
-    verifyDonateInput(amount_str, channel, is_corporate, (verified_channel) => {
-      if ((window.cv_sel_amount !== amount_str) || (window.cv_is_mouthly !== isMonthly)) {
+    verifyDonateInput(amount_str, channel, is_corporate, e.currentTarget, (verified_channel) => {
+      if ((window.cv_sel_amount !== amount_str) || (window.cv_is_mouthly !== is_monthly)) {
         window.cv_sel_amount = amount_str;
-        window.cv_is_mouthly = isMonthly;
+        window.cv_is_mouthly = is_monthly;
         window.cv_orderid = genOrderId();
       }
 
-      console.log(`Amount: $${amount_str}${isMonthly ? '/month' : ''}`);
+      console.log(`Amount: $${amount_str}${is_monthly ? '/month' : ''}`);
 
       const amount = parseCurrency(amount_str);
       const teir_info = is_corporate ? corporateTiers[selected.id] : individualTiers[selected.id];
@@ -205,39 +215,39 @@ document.querySelector('#confirm-btn').addEventListener('click', (e) => {
         form.attr('action', actionUrl);
         form.children('#WIDprod').attr('value', teir_info.prod_id);
         form.children('#WIDout_trade_no').attr('value', window.cv_orderid);
-        form.children('#WIDmonthly').attr('value', isMonthly ? '1' : '0');
+        form.children('#WIDmonthly').attr('value', is_monthly ? '1' : '0');
         form.children('#WIDamount').attr('value', amount.toString());
         form.submit();
       }
       else if (verified_channel == 'github') {
-        const gh_freq = isMonthly ? 'recurring' : 'one-time';
+        const gh_freq = is_monthly ? 'recurring' : 'one-time';
         const actionUrl = `https://github.com/sponsors/axmolengine/sponsorships?preview=false&frequency=${gh_freq}&amount=${amount}`;
         window.open(actionUrl, '_blank');
       }
       else if (verified_channel == 'osc') {
         let actionUrl = '#';
         if (is_corporate) {
-          if (isMonthly) {
+          if (is_monthly) {
             const osc_teir = teir_info.osc_teir;
             isPresetTeir = true;
             actionUrl = `https://opencollective.com/axmol/contribute/${osc_teir}/checkout?interval=month&amount=${amount}&contributeAs=me`;
           }
         }
         else {
-          if (isMonthly) {
+          if (is_monthly) {
             isPresetTeir = true;
             actionUrl = `https://opencollective.com/axmol/contribute/backers-69887/checkout?interval=month&amount=${amount}&contributeAs=me`;
           }
         }
         if (actionUrl == '#') { // means no preset teir, use osc custom card
-          const osc_interval = isMonthly ? 'month' : 'oneTime';
+          const osc_interval = is_monthly ? 'month' : 'oneTime';
           actionUrl = `https://opencollective.com/axmol/donate?interval=${osc_interval}&amount=${amount}&contributeAs=me`;
         }
         window.open(actionUrl, '_blank');
       }
     });
   } else {
-    showModal("Missing Tier", "Please select a tier before confirming sponsorship.");
+    showModal("Missing Tier", "Please select a tier before confirming sponsorship.", { triggerEl: e.currentTarget });
   }
 });
 
@@ -490,7 +500,7 @@ document.addEventListener("DOMContentLoaded", function () {
       radio.dataset.prod_id = tier.prod_id; // store sponsor id in data attribute
       radio.value = tier.amount;
       titleEl.textContent = tier.title;
-      priceEl.textContent = `USD$${tier.amount}`;
+      priceEl.textContent = `USD$${tier.amount}/month`;
     });
 
     // Step 3: restore previous selection if possible, otherwise select the first radio
@@ -537,6 +547,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Show Bootstrap modal warning
       const modalEl = document.getElementById("channelWarning");
       const modal = new bootstrap.Modal(modalEl);
+      modalEl.dataset.triggerId = e.currentTarget.id;
       const bodyEl = modalEl.querySelector(".modal-body");
       bodyEl.innerHTML = `
         For corporate sponsorship, we recommend using <strong>Open Source
@@ -548,21 +559,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const modalEl = document.getElementById("channelWarning");
-  // update focus when hide
-  modalEl.addEventListener("hide.bs.modal", () => {
-    document.getElementById("confirm-btn").focus();
+  // handle focus when modal dlgs hide
+  const modalDlgs = ['channelWarning', 'commonModal'];
+  modalDlgs.forEach(name => {
+    const modalEl = document.getElementById(name);
+    if (!modalEl) return;
+
+    // Store the trigger element when modal is shown
+    modalEl.addEventListener("show.bs.modal", event => {
+      // Bootstrap passes the trigger element in event.relatedTarget
+      modalEl.removeAttribute("inert");
+    });
+
+    // Restore focus to the trigger element when modal is about to hide
+    modalEl.addEventListener("hide.bs.modal", () => {
+      const triggerId = modalEl.dataset.triggerId;
+      if (triggerId) {
+        document.getElementById(triggerId)?.focus();
+      }
+    });
+
+    // Disable interaction when modal is fully hidden
+    modalEl.addEventListener("hidden.bs.modal", () => {
+      modalEl.setAttribute("inert", "");
+    });
   });
 
-  // disable interaction when hidden
-  modalEl.addEventListener("hidden.bs.modal", () => {
-    modalEl.setAttribute("inert", "");
-  });
-
-  // enable interaction when show
-  modalEl.addEventListener("show.bs.modal", () => {
-    modalEl.removeAttribute("inert");
-  });
 });
 
 // Helper function to switch back to OSC from modal
@@ -611,20 +633,15 @@ function showToast(message, type = "primary") {
 
 // Show a common modal with dynamic content
 function showModal(title, message, options = {}) {
-  // Get modal elements
   const modalTitle = document.getElementById("commonModalTitle");
   const modalBody = document.getElementById("commonModalBody");
   const modalFooter = document.getElementById("commonModalFooter");
   const modalEl = document.getElementById("commonModal");
 
-  // Update title and body
   modalTitle.textContent = title;
   modalBody.innerHTML = message;
-
-  // Clear old footer buttons
   modalFooter.innerHTML = "";
 
-  // Default button if no options provided
   if (!options.buttons || options.buttons.length === 0) {
     const defaultBtn = document.createElement("button");
     defaultBtn.type = "button";
@@ -633,7 +650,6 @@ function showModal(title, message, options = {}) {
     defaultBtn.textContent = "OK";
     modalFooter.appendChild(defaultBtn);
   } else {
-    // Create custom buttons
     options.buttons.forEach(btn => {
       const buttonEl = document.createElement("button");
       buttonEl.type = "button";
@@ -649,7 +665,12 @@ function showModal(title, message, options = {}) {
     });
   }
 
-  // Show modal
+  // Store trigger element if provided
+  if (options.triggerEl) {
+    modalEl.dataset.triggerId = options.triggerEl.id || "";
+  }
+
   const modal = new bootstrap.Modal(modalEl);
   modal.show();
 }
+

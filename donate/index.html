@@ -176,7 +176,7 @@ GitHub (Open Source Collective): %5(Stripe transaction fee) + 10%(fiscal hosting
       </h4> -->
       <div class="d-flex justify-content-between align-items-center mb-3">
         <!-- Sponsor Type Tabs -->
-        <div class="d-flex gap-3">
+        <div class="d-flex gap-2">
           <button id="btn-individual-tiers" type="button"
             class="btn btn-outline-primary active">
             Individual Tiers
@@ -203,7 +203,7 @@ PayPal and GitHub Sponsors are intended for individual backers.
         </div>
 
         <!-- Sponsor Channel Dropdown -->
-        <div class="d-flex align-items-center gap-2">
+        <div class="d-flex align-items-center gap-1">
           <label for="channel-options" class="form-label mb-0">Sponsor
             Channel:</label>
           <select id="channel-options"
@@ -222,7 +222,7 @@ PayPal and GitHub Sponsors are intended for individual backers.
             value="5">
           <div class="sponsor-card">
             <h3 class="tier-title">Backer</h3>
-            <div class="price">USD$5</div>
+            <div class="price">USD$5/month</div>
           </div>
         </label>
 
@@ -231,7 +231,7 @@ PayPal and GitHub Sponsors are intended for individual backers.
             value="25">
           <div class="sponsor-card">
             <h3 class="tier-title">Bronze</h3>
-            <div class="price">USD$25</div>
+            <div class="price">USD$25/month</div>
           </div>
         </label>
 
@@ -240,7 +240,7 @@ PayPal and GitHub Sponsors are intended for individual backers.
             value="50">
           <div class="sponsor-card">
             <h3 class="tier-title">Silver</h3>
-            <div class="price">USD$50</div>
+            <div class="price">USD$50/month</div>
           </div>
         </label>
 
@@ -249,7 +249,7 @@ PayPal and GitHub Sponsors are intended for individual backers.
             value="100">
           <div class="sponsor-card">
             <h3 class="tier-title">Gold</h3>
-            <div class="price">USD$100</div>
+            <div class="price">USD$100/month</div>
           </div>
         </label>
 
@@ -258,22 +258,33 @@ PayPal and GitHub Sponsors are intended for individual backers.
             value="250">
           <div class="sponsor-card">
             <h3 class="tier-title">Platinum</h3>
-            <div class="price">USD$250</div>
+            <div class="price">USD$250/month</div>
           </div>
         </label>
 
-        <!-- Other Amount -->
+        <!-- Custom Teir -->
         <label>
           <input id="custom" class="sponsor-radio" type="radio" name="sponsor">
           <div class="sponsor-card">
-            <h3>Other Amount</h3>
-            <!-- <label for="currency-amount" id="amount-label" class="css-1mjr5kl-label-text_field_label_sm" data-ppui="true">输入金额</label> -->
+            <h3>Custom</h3>
             <div class="amount-wrapper">
               <input id="amount-input" class="amount-input" inputmode="decimal"
                 placeholder="Enter amount (USD)" min="1"
                 step="1" required>
               <div id="amount-prefix" class="currency-symbol">$</div>
               <div id="amount-suffix" class="currency-symbol">USD</div>
+            </div>
+
+            <!-- Payment cycle selector -->
+            <div class="cycle-wrapper">
+              <label class="cycle-option">
+                <input type="radio" name="custom-cycle" value="monthly" checked>
+                Monthly
+              </label>
+              <label class="cycle-option">
+                <input type="radio" name="custom-cycle" value="onetime">
+                One-time
+              </label>
             </div>
           </div>
         </label>
@@ -285,11 +296,6 @@ PayPal and GitHub Sponsors are intended for individual backers.
         <button type="submit" class="btn btn-primary btn-lg" id="confirm-btn">
           💖 Confirm Sponsorship
         </button>
-        <!-- Monthly checkbox -->
-        <label class="checkbox-label mb-0">
-          <input type="checkbox" id="monthly">
-          <span class="checkbox"></span>Monthly
-        </label>
       </div>
 
       <hr />
@@ -593,7 +599,7 @@ PayPal and GitHub Sponsors are intended for individual backers.
     <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/md5.js?v=2.2"></script>
     <script src="/assets/js/utils.js?v=2.1.0"></script>
-    <script src="/assets/js/donate.js?v=3.0.3"></script>
+    <script src="/assets/js/donate.js?v=3.1.0"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
 
