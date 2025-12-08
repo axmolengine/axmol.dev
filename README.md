@@ -1,6 +1,6 @@
 # axmol.dev
 
-The source of axmol home page, based on bootstrap 5.x
+The source of axmol home page, based on bootstrap 5.3.8
 
 ## https://axmol.dev Deployment Flow
 
