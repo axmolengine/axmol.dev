@@ -209,8 +209,8 @@ PayPal and GitHub Sponsors are intended for individual backers.
             Channel:</label>
           <select id="channel-options"
             class="form-select form-select-sm w-auto">
-            <option value="paypal">PayPal</option>
             <option value="github">GitHub Sponsors</option>
+            <option value="paypal">PayPal</option>
             <option value="osc">Open Source Collective</option>
           </select>
         </div>
@@ -409,40 +409,8 @@ PayPal and GitHub Sponsors are intended for individual backers.
                 href="/assets/icons.svg#info-circle"></use></svg>
           </span>
         </div>
-        <div class="row g-3">
-          <!-- USD Wallet -->
-          <div class="col-md-6">
-            <div class="card h-100 shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">USD Wallet</h5>
-                <p class="card-text mb-1">
-                  <span id="usdWalletTooltip" role="button"
-                    class="dotted-underline" data-bs-html="true"
-                    data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="---"><strong>Balance:</strong></span>
-                  <span id="usdBalance" class="fw-semibold">--</span>
-                </p>
-                <p class="card-text mb-1">
-                  <span id="usdTotalRaisedTooltip" role="button"
-                    class="dotted-underline" data-bs-toggle="tooltip"
-                    data-bs-placement="right" title="---"><strong>Total
-                      raised:</strong></span>
-                  <span id="usdTotalRaised" class="fw-semibold">--</span>
-                </p>
-                <p class="card-text mb-1">
-                  <strong>Total disbursed:</strong>
-                  <span id="usdTotalSpent" class="fw-semibold">--</span>
-                </p>
-                <p class="card-text">
-                  <span role="button" class="dotted-underline"
-                    data-bs-toggle="tooltip" data-bs-placement="right"
-                    title="Total fees include transaction fees and fiscal host fees."><strong>Total
-                      fees:</strong></span>
-                  <span id="usdTotalFees" class="fw-semibold">--</span>
-                </p>
-              </div>
-            </div>
-          </div>
+        <div id="wallet-list" class="row g-3">
+          
         </div>
       </div>
     </section>

@@ -346,7 +346,7 @@ function initEventHandlers() {
   // Pagination controls
   document.getElementById("prevBtn").addEventListener("click", () => {
     if (currentPage > 1) {
-      loadData(currentPage - 1);
+      loadTransactions(currentPage - 1);
     } else {
       showToast("Already on the first page", "info");
     }
@@ -354,7 +354,7 @@ function initEventHandlers() {
 
   document.getElementById("nextBtn").addEventListener("click", () => {
     if (currentPage < totalPages) {
-      loadData(currentPage + 1);
+      loadTransactions(currentPage + 1);
     } else {
       showToast("Already on the last page", "info");
     }
@@ -363,7 +363,7 @@ function initEventHandlers() {
   // Per-page selection
   document.getElementById("perPageSelect").addEventListener("change", (e) => {
     perPage = parseInt(e.target.value, 10);
-    loadData(1);
+    loadTransactions(1);
   });
 
   // ---------------- Custom amount formatting ----------------
@@ -429,7 +429,7 @@ let currentPage = 1;
 let perPage = 10;
 let totalPages = 1;
 
-async function loadData(page = 1) {
+async function loadTransactions(page = 1) {
   const url = `${API_BASE_URL}?action=query-records&per_page=${perPage}&page=${page}`;
   try {
     const res = await fetch(url);
@@ -474,30 +474,96 @@ async function loadData(page = 1) {
   }
 }
 
-async function loadWalletData() {
-  const url = `${API_BASE_URL}?action=query-wallet&oss_id=axmol&currency=USD`;
-  try {
-    const res = await fetch(url);
-    const result = await res.json();
-    if (result.ret === 0 && result.wallet_info) {
-      const wallet = result.wallet_info;
-      document.getElementById("usdBalance").textContent = `$${wallet.balance}`;
-      document.getElementById("usdTotalRaised").textContent = `$${wallet.total_raised}`;
-      document.getElementById("usdTotalSpent").textContent = `$${wallet.total_spent}`;
-      document.getElementById("usdTotalFees").textContent = `$${wallet.total_fees}`;
-      const total_contributed = (parseFloat(wallet.total_raised) + parseFloat(wallet.total_fees)).toFixed(2);
-      document.getElementById("usdTotalRaisedTooltip").setAttribute("data-bs-original-title", `Total contributed before fees: $${total_contributed}`);
-      const { timeHint } = formatDateDay(wallet.last_updated);
-      document.getElementById("usdWalletTooltip").setAttribute("data-bs-original-title", `Last updated:\n ${timeHint}`);
+function updateTooltip(el, html) {
+  // Dispose old tooltip instance if exists
+  const existing = bootstrap.Tooltip.getInstance(el);
+  if (existing) existing.dispose();
+
+  // Set new content and allow HTML
+  el.setAttribute('data-bs-html', 'true');
+  el.setAttribute('title', html);
+
+  // Re-initialize tooltip with updated content
+  new bootstrap.Tooltip(el, { trigger: 'hover focus', container: 'body' });
+}
+
+function createWalletCard(currency) {
+  const col = document.createElement("div");
+  col.className = "col-md-6";
+  col.innerHTML = `
+    <div class="card h-100 shadow-sm">
+      <div class="card-body">
+        <h5 class="card-title">${currency} Wallet</h5>
+        <p class="card-text mb-1">
+          <span id="${currency}-wallet-tip" role="button"
+            class="dotted-underline" data-bs-toggle="tooltip"
+            data-bs-placement="right"><strong>Balance:</strong></span>
+          <span id="${currency}-balance" class="fw-semibold">--</span>
+        </p>
+        <p class="card-text mb-1">
+          <span id="${currency}-raised-tip" role="button"
+            class="dotted-underline" data-bs-toggle="tooltip"
+            data-bs-placement="right"><strong>Total raised:</strong></span>
+          <span id="${currency}-raised" class="fw-semibold">--</span>
+        </p>
+        <p class="card-text mb-1">
+          <strong>Total disbursed:</strong>
+          <span id="${currency}-spent" class="fw-semibold">--</span>
+        </p>
+        <p class="card-text">
+          <span id="${currency}-fees-tip" role="button"
+            class="dotted-underline" data-bs-toggle="tooltip"
+            data-bs-placement="right"><strong>Total fees:</strong></span>
+          <span id="${currency}-fees" class="fw-semibold">--</span>
+        </p>
+      </div>
+    </div>
+  `;
+  return col;
+}
+
+async function loadWallets(currencies = ['USD']) {
+  const walletList = document.getElementById("wallet-list");
+  walletList.innerHTML = ""; // Clear old content
+
+  for (const currency of currencies) {
+    const col = createWalletCard(currency);
+    walletList.appendChild(col);
+
+    const url = `${API_BASE_URL}?action=query-wallet&oss_id=axmol&currency=${currency}`;
+    try {
+      const res = await fetch(url);
+      const result = await res.json();
+      if (result.ret === 0 && result.wallet_info) {
+        const w = result.wallet_info;
+
+        // Update numbers
+        document.getElementById(`${currency}-balance`).textContent = formatAmount(w.balance, currency);
+        document.getElementById(`${currency}-raised`).textContent  = formatAmount(w.total_raised, currency);
+        document.getElementById(`${currency}-spent`).textContent   = formatAmount(w.total_spent, currency);
+        document.getElementById(`${currency}-fees`).textContent    = formatAmount(w.total_fees, currency);
+
+        // Update tooltips
+        const totalContrib = (parseFloat(w.total_raised) + parseFloat(w.total_fees)).toFixed(2);
+        updateTooltip(document.getElementById(`${currency}-raised-tip`),
+          `Total contributed before fees: ${formatAmount(totalContrib, currency)}`);
+
+        const { timeHint } = formatDateDay(w.last_updated);
+        updateTooltip(document.getElementById(`${currency}-wallet-tip`),
+          `Last updated:<br>${timeHint.replace(/&#10;/g, '<br>')}`);
+
+        updateTooltip(document.getElementById(`${currency}-fees-tip`),
+          `Total fees include transaction fees and fiscal host fees.`);
+      }
+    } catch (err) {
+      console.error(`Failed to load ${currency} wallet:`, err);
     }
-  } catch (err) {
-    console.error("Failed to load wallet data:", err);
   }
 }
 
 // ---------------- Init ----------------
 document.addEventListener("DOMContentLoaded", () => {
   initEventHandlers();
-  loadData();
-  loadWalletData();
+  loadTransactions();
+  loadWallets(['USD', 'HKD', 'CNY']);
 });
