@@ -526,39 +526,58 @@ async function loadWallets(currencies = ['USD']) {
   const walletList = document.getElementById("wallet-list");
   walletList.innerHTML = ""; // Clear old content
 
-  for (const currency of currencies) {
+  // Fetch all wallets first
+  const results = await Promise.all(
+    currencies.map(async (currency) => {
+      const url = `${API_BASE_URL}?action=query-wallet&oss_id=axmol&currency=${currency}`;
+      try {
+        const res = await fetch(url);
+        const result = await res.json();
+        if (result.ret === 0 && result.wallet_info) {
+          return { currency, wallet: result.wallet_info };
+        }
+      } catch (err) {
+        console.warn(`Failed to load ${currency} wallet:`, err);
+      }
+      return null; // mark as failed
+    })
+  );
+
+  // Filter successful wallets
+  const successWallets = results.filter(r => r !== null);
+
+  if (successWallets.length === 0) {
+    // Hide wallet list if all failed
+    walletList.style.display = "none";
+    return;
+  }
+
+  // Show wallet list if at least one succeeded
+  walletList.style.display = "";
+
+  // Create cards only for successful wallets
+  successWallets.forEach(({ currency, wallet: w }) => {
     const col = createWalletCard(currency);
     walletList.appendChild(col);
 
-    const url = `${API_BASE_URL}?action=query-wallet&oss_id=axmol&currency=${currency}`;
-    try {
-      const res = await fetch(url);
-      const result = await res.json();
-      if (result.ret === 0 && result.wallet_info) {
-        const w = result.wallet_info;
+    // Update numbers
+    document.getElementById(`${currency}-balance`).textContent = formatAmount(w.balance, currency);
+    document.getElementById(`${currency}-raised`).textContent  = formatAmount(w.total_raised, currency);
+    document.getElementById(`${currency}-spent`).textContent   = formatAmount(w.total_spent, currency);
+    document.getElementById(`${currency}-fees`).textContent    = formatAmount(w.total_fees, currency);
 
-        // Update numbers
-        document.getElementById(`${currency}-balance`).textContent = formatAmount(w.balance, currency);
-        document.getElementById(`${currency}-raised`).textContent  = formatAmount(w.total_raised, currency);
-        document.getElementById(`${currency}-spent`).textContent   = formatAmount(w.total_spent, currency);
-        document.getElementById(`${currency}-fees`).textContent    = formatAmount(w.total_fees, currency);
+    // Update tooltips
+    const totalContrib = (parseFloat(w.total_raised) + parseFloat(w.total_fees)).toFixed(2);
+    updateTooltip(document.getElementById(`${currency}-raised-tip`),
+      `Total contributed before fees: ${formatAmount(totalContrib, currency)}`);
 
-        // Update tooltips
-        const totalContrib = (parseFloat(w.total_raised) + parseFloat(w.total_fees)).toFixed(2);
-        updateTooltip(document.getElementById(`${currency}-raised-tip`),
-          `Total contributed before fees: ${formatAmount(totalContrib, currency)}`);
+    const { timeHint } = formatDateDay(w.last_updated);
+    updateTooltip(document.getElementById(`${currency}-wallet-tip`),
+      `Last updated:<br>${timeHint.replace(/&#10;/g, '<br>')}`);
 
-        const { timeHint } = formatDateDay(w.last_updated);
-        updateTooltip(document.getElementById(`${currency}-wallet-tip`),
-          `Last updated:<br>${timeHint.replace(/&#10;/g, '<br>')}`);
-
-        updateTooltip(document.getElementById(`${currency}-fees-tip`),
-          `Total fees include transaction fees and fiscal host fees.`);
-      }
-    } catch (err) {
-      console.error(`Failed to load ${currency} wallet:`, err);
-    }
-  }
+    updateTooltip(document.getElementById(`${currency}-fees-tip`),
+      `Total fees include transaction fees and fiscal host fees.`);
+  });
 }
 
 // ---------------- Init ----------------
