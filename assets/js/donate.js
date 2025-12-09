@@ -548,7 +548,7 @@ async function loadWallets(currencies = ['USD']) {
 
   if (successWallets.length === 0) {
     // Hide wallet list if all failed
-    walletList.style.display = "none";
+    document.getElementById('stats-area').style.display = "none";
     return;
   }
 
