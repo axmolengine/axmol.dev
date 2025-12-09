@@ -546,14 +546,12 @@ async function loadWallets(currencies = ['USD']) {
   // Filter successful wallets
   const successWallets = results.filter(r => r !== null);
 
+  const statsAreaEl = document.getElementById('stats-area')
   if (successWallets.length === 0) {
-    // Hide wallet list if all failed
-    document.getElementById('stats-area').style.display = "none";
+    statsAreaEl.setAttribute('hidden', '');
     return;
   }
-
-  // Show wallet list if at least one succeeded
-  walletList.style.display = "";
+  statsAreaEl.removeAttribute('hidden');
 
   // Create cards only for successful wallets
   successWallets.forEach(({ currency, wallet: w }) => {
