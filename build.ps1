@@ -29,7 +29,6 @@ if ($axmol_src) {
 }
 
 # step.3 build wasm preview site
-
 if ($wasm_artifact_dir) {
   Copy-Item $(Join-Path $PSScriptRoot 'wasm') $site_dist -Recurse -Force
 
