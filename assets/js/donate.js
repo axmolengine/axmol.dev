@@ -344,27 +344,27 @@ function initEventHandlers() {
   });
 
   // Pagination controls
-  document.getElementById("prevBtn").addEventListener("click", () => {
-    if (currentPage > 1) {
-      loadTransactions(currentPage - 1);
-    } else {
-      showToast("Already on the first page", "info");
-    }
-  });
+  // document.getElementById("prevBtn").addEventListener("click", () => {
+  //   if (currentPage > 1) {
+  //     loadTransactions(currentPage - 1);
+  //   } else {
+  //     showToast("Already on the first page", "info");
+  //   }
+  // });
 
-  document.getElementById("nextBtn").addEventListener("click", () => {
-    if (currentPage < totalPages) {
-      loadTransactions(currentPage + 1);
-    } else {
-      showToast("Already on the last page", "info");
-    }
-  });
+  // document.getElementById("nextBtn").addEventListener("click", () => {
+  //   if (currentPage < totalPages) {
+  //     loadTransactions(currentPage + 1);
+  //   } else {
+  //     showToast("Already on the last page", "info");
+  //   }
+  // });
 
-  // Per-page selection
-  document.getElementById("perPageSelect").addEventListener("change", (e) => {
-    perPage = parseInt(e.target.value, 10);
-    loadTransactions(1);
-  });
+  // // Per-page selection
+  // document.getElementById("perPageSelect").addEventListener("change", (e) => {
+  //   perPage = parseInt(e.target.value, 10);
+  //   loadTransactions(1);
+  // });
 
   // ---------------- Custom amount formatting ----------------
   const amountInput = document.getElementById('amount-input');
@@ -439,6 +439,9 @@ async function loadTransactions(page = 1) {
     currentPage = result.page || page;
 
     const tbody = document.querySelector("#recordsTable tbody");
+    if (tbody == null) {
+      return;
+    }
     tbody.innerHTML = "";
 
     data.forEach(r => {
