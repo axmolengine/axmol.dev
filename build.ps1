@@ -24,7 +24,7 @@ Copy-Item (Join-Path $PSScriptRoot 'donate') $site_dist -Recurse -Force
 
 # step.2 build docs to main site manual
 if ($axmol_src) {
-  $build_docs_script = Join-Path $axmol_src 'tools/cmdline/build-docs.ps1'
+  $build_docs_script = Join-Path $axmol_src 'tools/cmdline/plugins/build-docs.ps1'
   &$build_docs_script $site_dist -min_ver $min_doc_ver
 }
 
