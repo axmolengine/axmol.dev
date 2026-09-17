@@ -1,127 +1,74 @@
-<!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Axmol | A Multi-platform Engine for Mobile, Desktop, WebAssembly and
-      Xbox</title>
-    <meta name="description"
-      content="Axmol Engine (Axmol) — open-source C++ multi-platform game engine with modern rendering, rich tooling, and an active community.">
+    <title>Axmol 3 | Modern C++ game development across platforms</title>
+    <meta name="description" content="Axmol is an open-source, code-first C++ game engine for mobile, desktop, Xbox and WebAssembly. Explore Axmol 3.0 beta.">
     <meta name="color-scheme" content="light dark">
-    <link rel="preconnect" href="https://img.shields.io" crossorigin>
-    <link rel="preconnect" href="https://github.com" crossorigin>
-    <script>
-      (function () {
-        var saved = null;
-        try { saved = localStorage.getItem("axmol-theme"); } catch (e) {}
-        var sys = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-        document.documentElement.setAttribute(
-          "data-bs-theme",
-          (saved === "light" || saved === "dark") ? saved : sys
-        );
-      })();
-    </script>
+    <link rel="canonical" href="https://axmol.dev/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Axmol 3 | Modern C++ game development across platforms">
+    <meta property="og:description" content="A modern, open-source C++ engine for mobile, desktop, Xbox and WebAssembly.">
+    <meta property="og:url" content="https://axmol.dev/">
+    <meta property="og:image" content="https://axmol.dev/assets/img/splash_black.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Axmol 3 | Modern C++ game development across platforms">
+    <meta name="twitter:description" content="A modern, open-source C++ engine for mobile, desktop, Xbox and WebAssembly.">
+    <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
+    <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=2.1.3" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.2" rel="stylesheet">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Axmol","applicationCategory":"GameDevelopmentFramework","operatingSystem":"Windows, Linux, macOS, iOS, Android, Xbox, WebAssembly","url":"https://axmol.dev/","license":"https://github.com/axmolengine/axmol/blob/dev/LICENSE","codeRepository":"https://github.com/axmolengine/axmol"}</script>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top glass-nav">
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="Primary navigation">
       <div class="container">
-        <!-- Brand -->
-        <a class="navbar-brand d-flex align-items-center" href="/" aria-label="Axmol home">
-          <img src="/assets/img/logo.png" alt="Axmol" height="28">
+        <a class="navbar-brand" href="/" aria-label="Axmol home">
+          <img src="/assets/img/logo.png" alt="Axmol" height="30">
         </a>
-
-        <!-- Collapse button for mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#nav">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
         </button>
-
-        <!-- Navigation links -->
-        <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav me-auto">
+        <div class="collapse navbar-collapse" id="primary-nav">
+          <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link active" href="/">Home</a>
+              <a class="nav-link" href="https://axmol.dev/manual">Docs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"
-                href="https://axmol.dev/manual" target="_blank">API
-                Documentation</a>
+              <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">Wiki</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"
-                href="https://github.com/axmolengine/axmol/wiki"
-                target="_blank">Wiki</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-donate" href="/sponsor/">Sponsor Axmol ❤️</a>
+              <a class="nav-link nav-donate" href="/sponsor/">Sponsor</a>
             </li>
           </ul>
-
-          <!-- Right side: GitHub + Theme dropdown -->
-          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-            <!-- GitHub icon -->
+          <ul class="navbar-nav flex-row align-items-center gap-2">
             <li class="nav-item">
-              <a
-                class="nav-link d-flex align-items-center justify-content-center"
-                href="https://github.com/axmolengine/axmol"
-                target="_blank" rel="noopener" aria-label="GitHub repository">
-                <svg class="github-icon" width="24" height="24" aria-hidden="true">
-                  <use href="/assets/icons.svg#github-icon"></use>
+              <a class="nav-link d-flex" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="Axmol GitHub repository">
+                <svg class="github-icon" width="22" height="22" aria-hidden="true">
+                  <use href="/assets/icons.svg#github-icon">
+                  </use>
                 </svg>
               </a>
             </li>
-
-            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
-              <div
-                class="vr d-none d-lg-flex h-100 mx-lg-2 text-white">
-              </div>
-              <hr
-                class="d-lg-none my-2 text-white-50">
-            </li>
-
-            <!-- Theme dropdown -->
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle d-flex align-items-center justify-content-left"
-                href="#" id="themeDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false"
-                aria-label="Theme">
-                <svg class="theme-icon" width="24" height="24"
-                  fill="currentColor">
-                  <use href="/assets/icons.svg#circle-half"></use>
+              <button class="btn btn-link nav-link dropdown-toggle" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme">
+                <svg class="theme-icon" width="20" height="20" aria-hidden="true">
+                  <use href="/assets/icons.svg#circle-half">
+                  </use>
                 </svg>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end"
-                aria-labelledby="themeDropdown">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
                 <li>
-                  <button class="dropdown-item d-flex align-items-center"
-                    data-theme-option="light"
-                    onclick="AxmolTheme.saveTheme('light')">
-                    <svg width="16" height="16" fill="currentColor">
-                      <use href="/assets/icons.svg#sun-fill"></use>
-                    </svg> &nbsp;Light
-                  </button>
+                  <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">Light</button>
                 </li>
                 <li>
-                  <button class="dropdown-item d-flex align-items-center"
-                    data-theme-option="dark"
-                    onclick="AxmolTheme.saveTheme('dark')">
-                    <svg width="16" height="16" fill="currentColor">
-                      <use href="/assets/icons.svg#moon-stars-fill"></use>
-                    </svg> &nbsp;Dark
-                  </button>
+                  <button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">Dark</button>
                 </li>
                 <li>
-                  <button class="dropdown-item d-flex align-items-center"
-                    data-theme-option="auto"
-                    onclick="AxmolTheme.saveTheme('auto')">
-                    <svg width="16" height="16" fill="currentColor">
-                      <use href="/assets/icons.svg#circle-half"></use>
-                    </svg> &nbsp;Auto
-                  </button>
+                  <button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">Auto</button>
                 </li>
               </ul>
             </li>
@@ -129,503 +76,263 @@
         </div>
       </div>
     </nav>
-
-    <!-- Hero -->
-    <header class="hero hero-gradient position-relative overflow-hidden">
-      <!-- Decorative energy rings -->
-      <div class="energy energy-a"></div>
-      <div class="energy energy-b"></div>
-
-      <div class="container py-5 py-lg-6 position-relative">
-        <div class="row align-items-center gy-5">
-          <div class="col-lg-6 text-center text-lg-start">
-            <h1
-              class="display-4 fw-bold mb-3 text-glow d-flex align-items-center gap-3 justify-content-center justify-content-lg-start">
-              <img src="/assets/img/logo.png" alt="Axmol logo" width="512"
-                height="512" class="hero-logo" loading="eager">
-              <span>Axmol</span>
-            </h1>
-            <p class="lead mb-4">
-              A multi-platform C++ engine for mobile, desktop, WebAssembly and
-              Xbox — modern rendering, a lean core, and a code-first workflow.
-            </p>
-
-            <div
-              class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
-              <a href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md"
-                target="_blank" rel="noopener"
-                class="btn btn-primary btn-lg">Get Started</a>
-              <a href="https://axmol.dev/manual" target="_blank" rel="noopener"
-                class="btn btn-accent btn-lg">Documentation</a>
-            </div>
-
-            <div
-              class="d-flex flex-wrap align-items-center gap-2 justify-content-center justify-content-lg-start">
-              <a href="https://github.com/axmolengine/axmol/releases">
-                <img
-                  src="https://img.shields.io/github/v/release/axmolengine/axmol?include_prereleases&label=release"
-                  alt="Release badge" class="img-fluid" loading="lazy">
-              </a>
-              <a href="https://github.com/axmolengine/axmol">
-                <img
-                  src="https://img.shields.io/github/stars/axmolengine/axmol?style=plastic"
-                  alt="Stars badge" class="img-fluid" loading="lazy">
-              </a>
-              <a href="https://github.com/axmolengine/axmol/blob/dev/LICENSE">
-                <img src="https://img.shields.io/badge/license-MIT-blue.svg"
-                  alt="License badge" class="img-fluid" loading="lazy">
-              </a>
-              <a href="/sponsor/">
-                <img
-                  src="https://img.shields.io/badge/Sponsor%20Axmol%20%E2%9D%A4%EF%B8%8F-pink.svg"
-                  alt="Sponsor Axmol" loading="lazy">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="code-card">
-              <div class="code-head">
-                <span class="code-dot red"></span>
-                <span class="code-dot yellow"></span>
-                <span class="code-dot green"></span>
-                <span class="code-title">hello_axmol.cpp</span>
-              </div>
-              <code class="code-block"><span class="c-cmt">// one C++ codebase, every platform</span>
-<span class="c-key">auto</span> scene = ax::Scene::<span class="c-fn">create</span>();
-<span class="c-key">auto</span> player = ax::Sprite::<span class="c-fn">create</span>(<span class="c-str">"player.png"</span>);
-player-&gt;setPosition(ax::Vec2(240, 160));
-scene-&gt;<span class="c-fn">addChild</span>(player);
-
-<span class="c-cmt">// iOS · Android · Windows · macOS
-// Linux · Xbox · WebAssembly</span></code>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- What is axmol -->
-    <section class="py-5" id="what">
-      <div class="container">
-        <h2 class="mb-3">What is Axmol?</h2>
-        <p class="lead mb-4">
-          Axmol (also known as Axmol Engine) is an open-source, C++ multi-platform engine for mobile,
-          desktop, Xbox and WebAssembly — well-suited for 2D game development,
-          and also supports 3D.
-        </p>
-
-        <div class="row g-3 mb-4">
-          <div class="col-sm-6 col-lg-3">
-            <div class="platform-card p-3">
-              <div class="platform-icon fs-4 mb-2">📱</div>
-              <h3 class="h6 mb-1">Mobile</h3>
-              <p class="small text-body-secondary mb-0">iOS · Android</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="platform-card p-3">
-              <div class="platform-icon fs-4 mb-2">💻</div>
-              <h3 class="h6 mb-1">Desktop</h3>
-              <p class="small text-body-secondary mb-0">Windows · macOS · Linux
-                · tvOS</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="platform-card p-3">
-              <div class="platform-icon fs-4 mb-2">🎮</div>
-              <h3 class="h6 mb-1">Console</h3>
-              <p class="small text-body-secondary mb-0">Xbox (UWP)</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-3">
-            <div class="platform-card p-3">
-              <div class="platform-icon fs-4 mb-2">🌐</div>
-              <h3 class="h6 mb-1">Web</h3>
-              <p class="small text-body-secondary mb-0">WebAssembly (preview):
-                <a href="/wasm/cpp-tests/cpp-tests">cpp-tests</a> ·
-                <a href="/wasm/fairygui-tests/fairygui-tests">fairygui-tests</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row g-3">
-          <div class="col-lg-4">
-            <h3 class="h6 fw-bold mb-2">Download</h3>
-            <div class="d-flex flex-column gap-2">
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol/releases">Latest
-                Release</a>
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md">How
-                to install</a>
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol/wiki/Cocos2d%E2%80%90x-migration-guide">Migration
-                guide (Cocos2d-x)</a>
-            </div>
-            <h3 class="h6 fw-bold mt-4 mb-2">Languages</h3>
-            <div class="d-flex gap-2">
-              <span class="badge bg-primary">C++</span>
-              <span class="badge bg-success">Lua</span>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <h3 class="h6 fw-bold mb-2">Important links</h3>
-            <div class="d-flex flex-column gap-2">
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol">GitHub</a>
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol/blob/dev/LICENSE">Licence
-                MIT</a>
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol/wiki/Extensions">Available
-                extensions</a>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <h3 class="h6 fw-bold mb-2">Learn &amp; docs</h3>
-            <div class="d-flex flex-column gap-2">
-              <a class="quick-link"
-                href="https://axmol.dev/manual/latest/">API Documentation</a>
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol/wiki">Axmol Wiki</a>
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol/wiki/Tutorials">Tutorials</a>
-              <a class="quick-link"
-                href="https://github.com/axmolengine/axmol/wiki/FAQ">FAQ</a>
-            </div>
-            <h3 class="h6 fw-bold mt-4 mb-2">Projects</h3>
-            <p class="small text-body-secondary mb-0">
-              Check the <a
-                href="https://github.com/axmolengine/axmol/wiki/Made-in-Axmol">Made
-                in Axmol</a> wiki page for games, extensions and tutorials.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5" id="who">
-      <div class="container">
-        <h2 class="mb-4">Who is Axmol for</h2>
-        <div class="row g-3">
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">🌍</div>
-              <p class="mb-0">Any game creator in need of a multi-platform
-                engine.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">💻</div>
-              <p class="mb-0">Those who want to program mainly in C++.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">⌨️</div>
-              <p class="mb-0">Those who prefer a code-only engine, without a
-                graphical user interface.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">⚡</div>
-              <p class="mb-0">Those requiring a lightweight, stable, proven
-                solution compatible with older hardware.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">🔄</div>
-              <p class="mb-0">Developers who need to update their Cocos2d-x
-                projects.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">📲</div>
-              <p class="mb-0">Developers who want to port their Sprite Kit
-                projects to Android.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5" id="advantages">
-      <div class="container">
-        <h2 class="mb-4">Advantages of Axmol</h2>
-        <div class="row g-3">
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">💸</div>
-              <h3 class="h6 mb-2">Free</h3>
-              <p class="small text-body-secondary mb-0">No cost, no licensing
-                friction.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">👐</div>
-              <h3 class="h6 mb-2">Open source</h3>
-              <p class="small text-body-secondary mb-0">Developed openly with contributions from the community.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">🧪</div>
-              <h3 class="h6 mb-2">Tested &amp; stable</h3>
-              <p class="small text-body-secondary mb-0">Evolving since 2011, a
-                proven codebase.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">🤝</div>
-              <h3 class="h6 mb-2">Actively maintained</h3>
-              <p class="small text-body-secondary mb-0">A lively community of
-                contributors.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">📚</div>
-              <h3 class="h6 mb-2">Abundant docs</h3>
-              <p class="small text-body-secondary mb-0">Much existing
-                Cocos2d-x documentation applies with minimal changes.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">⚙️</div>
-              <h3 class="h6 mb-2">Modern graphics</h3>
-              <p class="small text-body-secondary mb-0">OpenGL, Metal,
-                Direct3D 11/12, and Vulkan.</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="feature-card p-4">
-              <div class="feature-icon fs-4 mb-3">🛠️</div>
-              <h3 class="h6 mb-2">Powerful build system</h3>
-              <p class="small text-body-secondary mb-0">Cross-platform builds
-                via the Axmol command line.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5" id="community">
-      <div class="container">
-        <h2 class="mb-4">Axmol community</h2>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"><a
-              href="https://github.com/axmolengine/axmol/discussions">GitHub
-              Discussions</a></li>
-          <li class="list-group-item"><a
-              href="https://discord.gg/TvY2nwPbQR">Discord</a></li>
-          <li class="list-group-item"><a
-              href="https://www.reddit.com/r/axmol/">Reddit</a></li>
-          <li class="list-group-item"><a title="Click to join"
-              href="https://jq.qq.com/?_wv=1027&k=nvNmzOIY">QQGroup</a></li>
-          <li class="list-group-item"><a
-              href="https://blog.csdn.net/xseekerj/category_12322250.html">CSDN
-              Blog</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="py-5" id="improvements">
-      <div class="container">
-        <h2 class="mb-4">Improvements</h2>
-        <p>Some improvements over Cocos2d-x v4.0</p>
-        <ul>
-          <li>Supports the latest Android SDK out of the box</li>
-          <li>Uses C++20 instead C++11 or older</li>
-          <li>x86_64 and Apple Silicon support</li>
-          <li>Supports UWP (Xbox portability)</li>
-          <li>New MediaPlayer via videotexture streaming render</li>
-          <li>Lot of new extensions</li>
-        </ul>
-
-        <p>
-          <a
-            href="https://github.com/axmolengine/axmol/blob/dev/CHANGELOG.md">Read
-            the full improvements list here</a>
-        </p>
-      </div>
-    </section>
-
-    <section class="py-5" id="faq">
-      <div class="container">
-        <h2 class="mb-4">FAQ</h2>
-        <div class="accordion" id="faqAccordion">
-
-          <!-- Q1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading1">
-              <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faqCollapse1"
-                aria-expanded="false" aria-controls="faqCollapse1">
-                Why Axmol was born (Why a fork of Cocos2d-x)
-              </button>
-            </h2>
-            <div id="faqCollapse1" class="accordion-collapse collapse"
-              aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Cocos2d-x has not received updates since 2019, and it has been
-                confirmed that it will no longer receive further updates,
-                as all Cocos resources have been directed to Cocos Creator.
-                Axmol serves as the solution for those who wish to continue
-                working with Cocos2d-x in an updated manner, compatible with
-                newer hardware.
-              </div>
-            </div>
-          </div>
-
-          <!-- Q2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading2">
-              <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faqCollapse2"
-                aria-expanded="false" aria-controls="faqCollapse2">
-                What does the engine name Axmol stand for?
-              </button>
-            </h2>
-            <div id="faqCollapse2" class="accordion-collapse collapse"
-              aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                <ul>
-                  <li><strong>Word structure:</strong> <code>a</code> = one,
-                    <code>x</code> = unknown / from cocos2d-x, <code>mol</code>
-                    = molecule</li>
-                  <li><strong>Pronunciation:</strong>
-                    <code>/æksmoʊl/</code></li>
-                  <li><strong>Slug:</strong>
-                    <ul>
-                      <li>Axmol is a fork of Cocos2d-x v4.0</li>
-                      <li>Axmol is an engine with various low-level
-                        capabilities, like molecules in our real world</li>
-                      <li>Axmol is a multi-platform engine for desktop, Xbox
-                        (UWP), and mobile games</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Q3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="faqHeading3">
-              <button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faqCollapse3"
-                aria-expanded="false" aria-controls="faqCollapse3">
-                How to contribute?
-              </button>
-            </h2>
-            <div id="faqCollapse3" class="accordion-collapse collapse"
-              aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                <ul>
-                  <li>Suggestions, bug fixes, and improvements are highly
-                    appreciated!</li>
-                  <li>
-                    <a
-                      href="https://github.com/axmolengine/axmol/blob/dev/CONTRIBUTING.md">
-                      Instructions
-                      for contributing
-                    </a>
-                  </li>
-                  <li><a
-                      href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md">Collaborators
-                      list</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <p>
-          For more questions, please check our <a
-            href="https://github.com/axmolengine/axmol/wiki/FAQ">
-            complete
-            FAQ
-          </a> and <a href="https://github.com/axmolengine/axmol/wiki">visit our
-            Wiki page</a>.
-        </p>
-      </div>
-    </section>
-
-    <section class="container py-5">
-      <h1>Axmol Supporters</h1>
-      <h3 id="platinum">Corporate Diamond</h3>
-      <p align="left">
-        <a href="https://scorewarrior.com/?utm_source=axmol.dev" target=_blank>
-          <img
-            src="https://cdn.prod.website-files.com/633da33305ac754156026dd8/63566f1edf5f0712f94f7f1b_sw-triangle-821890.svg"
-            height="200" loading="lazy" />
+    <main id="main-content">
+      <div class="release-banner" role="status">
+        <div class="container d-flex flex-wrap align-items-center justify-content-center gap-2">
+          <span class="release-dot" aria-hidden="true">
+          </span>
+          <span>Axmol 3.0.0-beta1 is coming</span>
+          <a href="/v3/">Explore the beta preview <svg class="icon-inline" aria-hidden="true">
+          <use href="/assets/icons.svg#arrow-right">
+          </use>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <header class="hero hero-gradient position-relative overflow-hidden">
+    <div class="energy energy-a" aria-hidden="true">
+    </div>
+    <div class="energy energy-b" aria-hidden="true">
+    </div>
+    <div class="container hero-inner py-5 py-lg-6 position-relative">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6">
+          <p class="eyebrow">OPEN SOURCE · CODE FIRST · CROSS PLATFORM</p>
+          <h1 class="display-3 fw-bold text-glow mb-3">Axmol</h1>
+          <p class="hero-lead mb-4">Modern C++ game development for mobile, desktop, Xbox and WebAssembly.</p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a class="btn btn-primary btn-lg" href="/v3/">Explore Axmol 3 Beta</a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/releases?q=v2.11&expanded=true#release-v2.11.4" target="_blank" rel="noopener">Download 2.11.4 LTS</a>
+            <a class="btn btn-link btn-lg px-0" href="https://axmol.dev/manual">Documentation <svg class="icon-inline" aria-hidden="true">
+            <use href="/assets/icons.svg#arrow-right">
+            </use>
+          </svg>
         </a>
-      </p>
-      <h3>Platinum</h3>
-      <p>
-        peterkharitonov, Alain-Serge Nagni
-      </p>
-
-      <h3>Backers</h3>
-      <p>
-        bingsoo, DUONG, thienphuoc
-      </p>
-    </section>
-
-    <!-- Footer -->
-    <footer class="border-top mt-5">
-      <div class="container py-4">
-        <div class="row gy-3 align-items-center">
-          <!-- Left: Copyright -->
-          <div class="col-md text-center text-md-start">
-            <div class="text-body-secondary">
-              © 2019–present <a
-                href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
-                target="_blank" rel="noopener">Simdsoft Limited and other Axmol contributors</a>. <br />
-              Led and maintained by <a
-                href="https://simdsoft.com/?lang=en" target="_blank"
-                rel="noopener">Simdsoft Limited</a> (深圳司脉科技有限公司), with contributions from the community. <br />
-              Hosted on <a href="https://www.netlify.com/">Netlify</a> · Source
-              code available on <a
-                href="https://github.com/axmolengine/axmol.dev" target="_blank"
-                rel="noopener">GitHub</a>.
-            </div>
-          </div>
-
-          <!-- Right: Related Links -->
-          <div class="col-md">
-            <div class="text-center text-md-end">
-              <h6 class="text-body-secondary mb-2">Related Links</h6>
-              <div
-                class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
-                <a class="text-body-secondary"
-                  href="https://github.com/axmolengine/axmol/discussions"
-                  target="_blank" rel="noopener">GitHub Discussions</a>
-                <a class="text-body-secondary"
-                  href="https://discord.gg/TvY2nwPbQR" target="_blank"
-                  rel="noopener">Discord</a>
-                <a class="text-body-secondary"
-                  href="https://www.reddit.com/r/axmol/" target="_blank"
-                  rel="noopener">Reddit</a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </footer>
+      <div class="version-pills" aria-label="Release channels">
+        <span class="badge rounded-pill text-bg-primary">3.0.0-beta1 · Public beta</span>
+        <span class="badge rounded-pill text-bg-secondary">2.11.x · Stable LTS</span>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="code-card" aria-label="Axmol C++ example">
+        <div class="code-head">
+          <span class="code-dot red">
+          </span>
+          <span class="code-dot yellow">
+          </span>
+          <span class="code-dot green">
+          </span>
+          <span class="code-title">hello_axmol.cpp</span>
+        </div>
+        <code class="code-block">
+          <span class="c-cmt">// one C++ codebase, every platform</span>
+          <span class="c-key">auto</span> scene = ax::Scene::<span class="c-fn">create</span>();
+          <span class="c-key">auto</span> player = ax::Sprite::<span class="c-fn">create</span>(<span class="c-str">"player.png"</span>);
+          player-&gt;<span class="c-fn">setPosition</span>(ax::Vec2(240, 160));
+          scene-&gt;<span class="c-fn">addChild</span>(player);
 
-    <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
-    <script src="/assets/js/theme.js?v=2.1.0"></script>
-  </body>
+          <span class="c-cmt">// iOS · Android · Windows · Linux · WebAssembly</span>
+        </code>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<section class="section-tight" id="v3-highlights">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">WHY V3</p>
+      <h2>One engine, a wider frontier.</h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <article class="story-card">
+          <svg class="story-icon" aria-hidden="true">
+            <use href="/assets/icons.svg#palette2">
+            </use>
+          </svg>
+          <h3>Modern graphics</h3>
+          <p>Write HLSL once and target Dynamic RHI across D3D11, D3D12, Vulkan, Metal and OpenGL.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="story-card">
+          <svg class="story-icon" aria-hidden="true">
+            <use href="/assets/icons.svg#code">
+            </use>
+          </svg>
+          <h3>Modern C++</h3>
+          <p>Move to C++23 with a refreshed core, build tooling and production-oriented workflow.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="story-card">
+          <svg class="story-icon" aria-hidden="true">
+            <use href="/assets/icons.svg#globe2">
+            </use>
+          </svg>
+          <h3>More platforms</h3>
+          <p>Reach ARM desktops, OpenXR devices, mobile, Xbox and WebAssembly from one codebase.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-panel" id="render-pipeline">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="eyebrow">A CLEARER RENDERING PATH</p>
+        <h2>Keep the shader. Change the backend.</h2>
+        <p class="text-body-secondary">Axmol 3 makes the rendering path easier to reason about: one HLSL source flows through axslcc and reaches the backend that fits the target device.</p>
+        <a class="btn btn-outline-primary" href="/v3/">See what changed in v3 <svg class="icon-inline" aria-hidden="true">
+        <use href="/assets/icons.svg#arrow-right">
+        </use>
+      </svg>
+    </a>
+  </div>
+  <div class="col-lg-6">
+    <div class="pipeline-diagram" role="img" aria-label="HLSL source flows through axslcc to multiple render hardware interfaces">
+      <div class="pipeline-node pipeline-source">HLSL source</div>
+      <div class="pipeline-arrow">↓</div>
+      <div class="pipeline-node pipeline-tool">axslcc</div>
+      <div class="pipeline-arrow">↓</div>
+      <div class="pipeline-targets">
+        <span>D3D11</span>
+        <span>D3D12</span>
+        <span>Vulkan</span>
+        <span>Metal</span>
+        <span>OpenGL</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<section class="section-tight" id="try-it">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">SEE IT RUN</p>
+      <h2>Start with a working example.</h2>
+      <p class="text-body-secondary">Try the live WebAssembly previews when available, then move to the setup guide when you are ready to build locally.</p>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <a class="demo-card" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener">
+          <span class="demo-label">CPP-TESTS</span>
+          <strong>Explore the engine testbed</strong>
+          <span>View source while preview builds <svg class="icon-inline" aria-hidden="true">
+          <use href="/assets/icons.svg#arrow-right">
+          </use>
+        </svg>
+      </span>
+    </a>
+  </div>
+  <div class="col-md-6">
+    <a class="demo-card" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener">
+      <span class="demo-label">FAIRYGUI</span>
+      <strong>See UI and extension samples</strong>
+      <span>View source while preview builds <svg class="icon-inline" aria-hidden="true">
+      <use href="/assets/icons.svg#arrow-right">
+      </use>
+    </svg>
+  </span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section-panel" id="migration">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <p class="eyebrow">MOVING TO V3</p>
+        <h2>Bring your project forward.</h2>
+        <p class="text-body-secondary mb-0">The v3 page collects the breaking changes and migration paths for Axmol 2, Cocos2d-x, shaders, input and physics.</p>
+      </div>
+      <div class="col-lg-5 d-flex flex-column gap-2">
+        <a class="quick-link" href="/v3/#migration">Axmol 2 → Axmol 3 <svg class="icon-inline" aria-hidden="true">
+        <use href="/assets/icons.svg#arrow-right">
+        </use>
+      </svg>
+    </a>
+    <a class="quick-link" href="https://github.com/axmolengine/axmol/wiki/Cocos2d%E2%80%90x-migration-guide" target="_blank" rel="noopener">Cocos2d-x → Axmol <svg class="icon-inline" aria-hidden="true">
+    <use href="/assets/icons.svg#arrow-right">
+    </use>
+  </svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section-panel support-strip">
+  <div class="container">
+    <div class="section-heading mb-4">
+      <p class="eyebrow">SUPPORTED IN THE OPEN</p>
+      <h2 class="h4 mb-0">Long-term support for Axmol.</h2>
+    </div>
+    <div class="supporter-grid">
+      <article class="supporter-card">
+        <div class="supporter-tier">CORPORATE DIAMOND</div>
+        <a class="supporter-logo" href="https://scorewarrior.com/?utm_source=axmol.dev" target="_blank" rel="noopener">
+          <img src="/assets/img/scorewarrior.svg" alt="Scorewarrior">
+        </a>
+        <h3 class="h5">Scorewarrior</h3>
+        <p class="text-body-secondary">Long-term financial support for Axmol development.</p>
+        <a class="supporter-link" href="https://scorewarrior.com/?utm_source=axmol.dev" target="_blank" rel="noopener">Visit website <svg class="icon-inline" aria-hidden="true">
+        <use href="/assets/icons.svg#arrow-right">
+        </use>
+      </svg>
+    </a>
+  </article>
+</div>
+<div class="support-footer">
+  <a class="btn btn-outline-primary" href="/sponsor/">View all supporters <svg class="icon-inline" aria-hidden="true">
+  <use href="/assets/icons.svg#arrow-right">
+  </use>
+</svg>
+</a>
+</div>
+</div>
+</section>
+<section class="section-tight" id="community">
+  <div class="container">
+    <div class="community-row">
+      <div>
+        <p class="eyebrow">OPEN SOURCE, OPEN DOORS</p>
+        <h2>Build in the open with us.</h2>
+        <p class="text-body-secondary mb-0">Ask questions, share projects and help shape the next release.</p>
+      </div>
+      <div class="community-links">
+        <a href="https://github.com/axmolengine/axmol/discussions" target="_blank" rel="noopener">Discussions</a>
+        <a href="https://discord.gg/TvY2nwPbQR" target="_blank" rel="noopener">Discord</a>
+        <a href="https://www.reddit.com/r/axmol/" target="_blank" rel="noopener">Reddit</a>
+        <a href="https://github.com/axmolengine/axmol/wiki/Made-in-Axmol" target="_blank" rel="noopener">Made in Axmol</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="border-top">
+  <div class="container py-4">
+    <div class="row gy-3 align-items-center">
+      <div class="col-md text-center text-md-start">
+        <div class="text-body-secondary small">© 2019–present <a href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md" target="_blank" rel="noopener">Simdsoft Limited and other Axmol contributors</a>.<br>Led and maintained by <a href="https://simdsoft.com/?lang=en" target="_blank" rel="noopener">Simdsoft Limited</a> with contributions from the community.<br>Source code on <a href="https://github.com/axmolengine/axmol.dev" target="_blank" rel="noopener">GitHub</a> · Hosted on <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>.</div>
+      </div>
+      <div class="col-md text-center text-md-end">
+        <a class="footer-cta" href="/sponsor/">Support Axmol’s long-term maintenance <svg class="icon-inline" aria-hidden="true">
+        <use href="/assets/icons.svg#arrow-right">
+        </use>
+      </svg>
+    </a>
+  </div>
+</div>
+</div>
+</footer>
+<script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8">
+</script>
+<script src="/assets/js/theme.js?v=2.1.0">
+</script>
+</body>
 </html>
