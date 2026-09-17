@@ -14,7 +14,7 @@
 - The homepage may show selected corporate support, but it must use a reusable `supporter-card` structure so additional companies can be added without a special-case layout.
 - Show only selected supporters on the homepage and provide a link to `/sponsor/` for the complete supporter page.
 - Use factual wording for Scorewarrior, such as “long-term financial support” or “Corporate Diamond supporter”. Avoid implying a partner, partnership, or corporate-sponsorship relationship.
-- Use local company logos with accurate `alt` text. Do not add third-party image hotlinks.
+- Use company logos with accurate `alt` text. For third-party brand assets, prefer the brand owner's official CDN when requested or when licensing is unclear; do not store an unauthorized copy in this repository.
 - Do not modify Sponsor payment, transaction, amount-statistics, or API logic. Only change its navigation or presentation copy when explicitly requested.
 
 ## Build and assets
