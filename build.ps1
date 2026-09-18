@@ -24,6 +24,7 @@ Copy-Item (Join-Path $PSScriptRoot 'robots.txt') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'assets') $site_dist -Recurse -Force
 Copy-Item (Join-Path $PSScriptRoot 'sponsor') $site_dist -Recurse -Force
 Copy-Item (Join-Path $PSScriptRoot 'v3') $site_dist -Recurse -Force
+Copy-Item (Join-Path $PSScriptRoot 'zh') $site_dist -Recurse -Force
 
 # step.2 build docs to main site manual
 if ($axmol_src) {

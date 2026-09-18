@@ -10,7 +10,7 @@ on:
       - .github/workflows/build.yml
       - '**/*.html'
       - 'assets'
-      - 'donate'
+      - 'sponsor'
       - 'wasm'
       - '_headers'
   repository_dispatch:

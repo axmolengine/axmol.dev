@@ -2,7 +2,7 @@
 
 ## Pages and content
 
-- During the beta1 phase, the public site is English-first. Do not expand the Chinese pages or introduce an SPA, CMS, or new front-end framework in this phase.
+- The public site provides English and Simplified Chinese versions under separate paths. Do not introduce an SPA, CMS, or new front-end framework for localization.
 - The homepage is a concise decision page. Do not restore encyclopedia-style copy, FAQ sections, full supporter lists, or duplicate version cards.
 - The homepage and `/v3/` must each contain exactly one `<h1>`, plus `<main>`, a skip link, canonical metadata, Open Graph, Twitter Card, and JSON-LD metadata.
 - Do not add `Home` or temporary version labels such as `V3 beta` to the primary navigation. The logo returns home; keep Docs, Wiki, Sponsor, GitHub, and theme controls.

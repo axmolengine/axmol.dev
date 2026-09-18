@@ -4,11 +4,11 @@ const sandbox = window.location.host.includes('local.') || window.location.host.
 const API_BASE_URL = !sandbox ? "https://portal.simdsoft.com/sponsors/" : "https://local.simdsoft.com/sponsors/";
 
 const individualTiers = {
-  t01: { prod_id: "d101", title: "Backer", amount: 5 },
-  t02: { prod_id: "d102", title: "Bronze", amount: 25 },
-  t03: { prod_id: "d103", title: "Silver", amount: 50 },
-  t04: { prod_id: "d104", title: "Gold", amount: 100 },
-  t05: { prod_id: "d105", title: "Platinum", amount: 250 }
+  t01: { prod_id: "s101", title: "Backer", amount: 5 },
+  t02: { prod_id: "s102", title: "Bronze", amount: 25 },
+  t03: { prod_id: "s103", title: "Silver", amount: 50 },
+  t04: { prod_id: "s104", title: "Gold", amount: 100 },
+  t05: { prod_id: "s105", title: "Platinum", amount: 250 }
 };
 
 const VALID_CHANNELS = {
@@ -130,8 +130,8 @@ function createToastContainer() {
   return container;
 }
 
-// ---------------- Donation Logic ----------------
-function verifyDonateInputs(amount, sponsor_channel, triggerEl, on_verified) {
+// ---------------- Sponsor Logic ----------------
+function verifySponsorInputs(amount, sponsor_channel, triggerEl, on_verified) {
   const value = parseCurrency(amount);
 
   const commonModal = new ModalManager("commonModal");
@@ -195,7 +195,7 @@ function initEventHandlers() {
     const is_monthly = is_custom ? document.getElementById('custom-montly').checked : true;
     const channel = document.getElementById("channel-options").value;
 
-    verifyDonateInputs(amount_str, channel, e.currentTarget, (verified_channel) => {
+    verifySponsorInputs(amount_str, channel, e.currentTarget, (verified_channel) => {
       // Generate order id if amount or cycle changed
       if ((window.cv_sel_amount !== amount_str) || (window.cv_is_monthly !== is_monthly)) {
         window.cv_sel_amount = amount_str;
@@ -223,6 +223,7 @@ function initEventHandlers() {
         form.children('#WIDprod').attr('value', prod_id);
         form.children('#WIDout_trade_no').attr('value', window.cv_orderid);
         form.children('#WIDmonthly').attr('value', is_monthly ? '1' : '0');
+        form.children('#WIDsponsor').attr('value', 'Axmol');
         form.children('#WIDamount').attr('value', amount.toString());
         form.submit();
       } else if (verified_channel === 'github') {

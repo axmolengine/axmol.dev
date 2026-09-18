@@ -2,5 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://axmol.dev/</loc></url>
   <url><loc>https://axmol.dev/v3/</loc></url>
+  <url><loc>https://axmol.dev/zh/</loc></url>
+  <url><loc>https://axmol.dev/zh/v3/</loc></url>
   <url><loc>https://axmol.dev/sponsor/</loc></url>
+  <url><loc>https://axmol.dev/zh/sponsor/</loc></url>
 </urlset>
