@@ -19,7 +19,7 @@
       })();
     </script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.10" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.12" rel="stylesheet">
   </head>
   <body class="sponsor-page">
     <a class="visually-hidden-focusable skip-link" href="#main-content">跳到正文</a>
@@ -156,7 +156,28 @@
           <p class="text-body-secondary">Axmol 由 <a href="https://simdsoft.com/?lang=zh" target="_blank" rel="noopener">Simdsoft Limited</a> 领导和维护，并由社区共同贡献。</p>
         </div>
 
-        <div class="mb-4">
+        <nav class="sponsor-path-grid" aria-label="支持 Axmol 的方式">
+          <a class="sponsor-path-card" href="#individual-sponsorship">
+            <span class="sponsor-path-index">01 / 个人支持</span>
+            <h3>个人赞助</h3>
+            <p>选择支付通道和月度或一次性赞助方式。</p>
+            <span class="sponsor-path-action">选择赞助方式 <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="sponsor-path-card" href="mailto:info@simdsoft.com">
+            <span class="sponsor-path-index">02 / 企业支持</span>
+            <h3>企业赞助</h3>
+            <p>联系维护团队，沟通对 Axmol 的支持方式。</p>
+            <span class="sponsor-path-action">info@simdsoft.com <span aria-hidden="true">→</span></span>
+          </a>
+          <a class="sponsor-path-card" href="#supporters">
+            <span class="sponsor-path-index">03 / 公开致谢</span>
+            <h3>公开致谢</h3>
+            <p>查看公开列出的组织与个人支持者。</p>
+            <span class="sponsor-path-action">查看公开支持者 <span aria-hidden="true">→</span></span>
+          </a>
+        </nav>
+
+        <div class="sponsor-individual-panel" id="individual-sponsorship" tabindex="-1">
           <form id="unipayment" method="post" target="_blank" hidden>
             <input id="WIDout_trade_no" name="WIDout_trade_no" type="hidden">
             <input id="WIDprod" name="WIDprod" type="hidden">
@@ -167,15 +188,29 @@
             <input id="WIDlang" name="WIDlang" type="hidden" value="zh">
           </form>
           <h3 class="h4">个人赞助</h3>
-          <p class="text-body-secondary">先选择支付通道，再选择月度赞助档位。</p>
+          <p class="text-body-secondary" data-sponsor-channel-help>先选择支付通道，再选择月度赞助档位。</p>
           <label class="sponsor-channel-select mb-3" for="sponsor-channel-zh">
             <span>支付通道</span>
             <select id="sponsor-channel-zh" data-sponsor-channel>
               <option value="paypal" selected>PayPal</option>
               <option value="github">GitHub Sponsors</option>
               <option value="osc">Open Source Collective</option>
+              <option value="alipay">支付宝</option>
+              <option value="wechat">微信支付</option>
             </select>
           </label>
+          <section class="sponsor-qr-panel" data-sponsor-qr-panel hidden aria-live="polite">
+            <div class="sponsor-qr-copy">
+              <p class="eyebrow mb-2">一次性赞助</p>
+              <h4 data-sponsor-qr-title>支付宝</h4>
+              <p class="text-body-secondary mb-2" data-sponsor-qr-instruction>扫码后，请在支付 App 内输入任意金额。</p>
+              <p class="small text-body-secondary mb-3" data-sponsor-qr-note>请备注：赞助 Axmol</p>
+              <button type="button" class="btn btn-primary" data-sponsor-qr-open>放大二维码</button>
+            </div>
+            <button type="button" class="sponsor-qr-image-button" data-sponsor-qr-open aria-label="放大支付宝二维码">
+              <img data-sponsor-qr-image src="/assets/img/alipay.jpg" alt="支付宝赞助二维码">
+            </button>
+          </section>
           <div class="sponsor-tier-grid" data-sponsor-tiers>
             <button type="button" class="sponsor-tier-card" data-tier-amount="5"><span>支持者</span><strong>USD $5<small>/ 月</small></strong></button>
             <button type="button" class="sponsor-tier-card" data-tier-amount="25"><span>青铜</span><strong>USD $25<small>/ 月</small></strong></button>
@@ -196,25 +231,10 @@
             </div>
           </div>
         </div>
-        <div class="row g-3">
-          <div class="col-lg-7">
-            <article class="story-card h-100">
-              <h3>私下支持沟通</h3>
-              <p>企业赞助和个人支持均由维护者直接安排，不代表对 Axmol 项目或技术方向拥有所有权或控制权。</p>
-              <a class="btn btn-outline-primary align-self-start" href="mailto:info@simdsoft.com">info@simdsoft.com</a>
-            </article>
-          </div>
-          <div class="col-lg-5">
-            <article class="story-card h-100">
-              <h3>公开致谢</h3>
-              <p class="mb-0">支持者名单由 Axmol 维护团队整理。如需更正或更新公开信息，请联系我们。</p>
-            </article>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section class="section-tight support-strip">
+    <section class="section-tight support-strip" id="supporters">
       <div class="container">
         <div class="section-heading"><p class="eyebrow">公开支持者</p><h2>在公开协作中获得支持。</h2><p class="text-body-secondary">感谢以下组织与个人对 Axmol 长期维护的支持。</p></div>
         <div class="row g-3 justify-content-center supporter-featured-row"><div class="col-md-8 col-lg-5"><article class="supporter-card supporter-featured h-100"><div class="supporter-tier">企业钻石</div><a class="supporter-logo" href="https://scorewarrior.com/?utm_source=axmol.dev" target="_blank" rel="noopener"><img src="https://cdn.prod.website-files.com/633da33305ac754156026dd8/63566f1edf5f0712f94f7f1b_sw-triangle-821890.svg" alt="Scorewarrior"></a><h3 class="h5">Scorewarrior</h3><p class="text-body-secondary mb-0">为 Axmol 开发提供长期资金支持。</p></article></div></div>
@@ -331,7 +351,7 @@
     </footer>
 
     <!-- Common modal -->
-    <div class="modal fade" id="commonModal" tabindex="-1" aria-hidden="true">
+    <div class="modal fade" id="commonModal" tabindex="-1" aria-labelledby="commonModalTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
@@ -349,6 +369,22 @@
       </div>
     </div>
 
+    <div class="modal fade" id="sponsorQrModal" tabindex="-1" aria-labelledby="sponsorQrModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content sponsor-qr-modal-content">
+          <div class="modal-header">
+            <h5 id="sponsorQrModalTitle" class="modal-title" data-sponsor-qr-modal-title>支付宝二维码</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img class="sponsor-qr-modal-image" data-sponsor-qr-modal-image src="/assets/img/alipay.jpg" alt="支付宝赞助二维码">
+            <p class="text-body-secondary mt-3 mb-1" data-sponsor-qr-modal-instruction>扫码后，请在支付 App 内输入任意金额。</p>
+            <p class="text-body-secondary mb-0" data-sponsor-qr-modal-note>请备注：赞助 Axmol</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Common toast container -->
     <div
       class="toast-container position-fixed top-0 start-50 translate-middle-x p-3"></div>
@@ -356,7 +392,7 @@
     <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/md5.js?v=2.2"></script>
     <script src="/assets/js/utils.js?v=2.1.0"></script>
-    <script src="/assets/js/sponsor-tiers.js?v=1.1.1"></script>
+    <script src="/assets/js/sponsor-tiers.js?v=1.1.4"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
 
