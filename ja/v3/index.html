@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="ja" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Axmol 3.0.0-beta1 | What’s new</title>
-    <meta name="description" content="Explore the Axmol 3.0.0-beta1 preview: C++23, modern RHIs, HLSL shaders, ARM, OpenXR, new physics and Pointer Events.">
+    <title>Axmol 3.0.0-beta1｜新機能</title>
+    <meta name="description" content="Axmol 3.0.0-beta1 プレビュー：C++23、モダン RHI、HLSL シェーダー、ARM、OpenXR、新しい物理演算と Pointer Events。">
     <meta name="color-scheme" content="light dark">
-    <link rel="canonical" href="https://axmol.dev/v3/">
+    <link rel="canonical" href="https://axmol.dev/ja/v3/">
     <link rel="alternate" hreflang="en" href="https://axmol.dev/v3/">
     <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/v3/">
     <link rel="alternate" hreflang="ja" href="https://axmol.dev/ja/v3/">
@@ -16,7 +16,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Axmol 3.0.0-beta1 | What’s new">
     <meta property="og:description" content="A public preview of the next Axmol generation.">
-    <meta property="og:url" content="https://axmol.dev/v3/">
+    <meta property="og:url" content="https://axmol.dev/ja/v3/">
     <meta property="og:image" content="https://axmol.dev/assets/img/splash_black.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Axmol 3.0.0-beta1 | What’s new">
@@ -25,22 +25,22 @@
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
     <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Axmol 3.0.0-beta1","url":"https://axmol.dev/v3/","isPartOf":{"@type":"WebSite","name":"Axmol","url":"https://axmol.dev/"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Axmol 3.0.0-beta1","url":"https://axmol.dev/ja/v3/","isPartOf":{"@type":"WebSite","name":"Axmol","url":"https://axmol.dev/"}}</script>
   </head>
   <body>
-    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
-    <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="Primary navigation">
+    <a class="visually-hidden-focusable skip-link" href="#main-content">本文へ移動</a>
+    <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="メインナビゲーション">
       <div class="container">
-        <a class="navbar-brand" href="/" aria-label="Axmol home">
+        <a class="navbar-brand" href="/ja/" aria-label="Axmol ホーム">
           <img src="/assets/img/logo.png" alt="Axmol" height="30">
         </a>
         <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
           <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">English</button>
+            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="言語">日本語</button>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
-              <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">English</a></li>
+              <li><a class="dropdown-item" href="/v3/" lang="en">English</a></li>
               <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">中文</a></li>
-              <li><a class="dropdown-item" href="/ja/v3/" lang="ja">日本語</a></li>
+              <li><a class="dropdown-item active" href="/ja/v3/" lang="ja" aria-current="page">日本語</a></li>
               <li><a class="dropdown-item" href="/es/v3/" lang="es">Español</a></li>
               <li><a class="dropdown-item" href="/ru/v3/" lang="ru">Русский</a></li>
             </ul>
@@ -53,22 +53,22 @@
         <div class="collapse navbar-collapse" id="primary-nav">
           <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link" href="https://axmol.dev/manual">API Reference</a>
+              <a class="nav-link" href="https://axmol.dev/manual">API リファレンス</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">Wiki</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-sponsor" href="/sponsor/">Support Axmol</a>
+              <a class="nav-link nav-sponsor" href="/ja/sponsor/">Axmol を支援</a>
             </li>
           </ul>
           <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
             <li class="nav-item dropdown d-none d-lg-block">
-              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">English</button>
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">日本語</button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">English</a></li>
+                <li><a class="dropdown-item" href="/v3/" lang="en">English</a></li>
                 <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">中文</a></li>
-                <li><a class="dropdown-item" href="/ja/v3/" lang="ja">日本語</a></li>
+                <li><a class="dropdown-item active" href="/ja/v3/" lang="ja" aria-current="page">日本語</a></li>
                 <li><a class="dropdown-item" href="/es/v3/" lang="es">Español</a></li>
                 <li><a class="dropdown-item" href="/ru/v3/" lang="ru">Русский</a></li>
               </ul>
@@ -83,7 +83,7 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme">
+              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="テーマ">
                 <svg class="theme-icon" width="20" height="20" aria-hidden="true">
                   <use href="/assets/icons.svg#circle-half">
                   </use>
@@ -92,13 +92,13 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
                 <li>
-                  <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">Light</button>
+                  <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">ライト</button>
                 </li>
                 <li>
-                  <button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">Dark</button>
+                  <button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">ダーク</button>
                 </li>
                 <li>
-                  <button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">Auto</button>
+                  <button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">自動</button>
                 </li>
               </ul>
             </li>
@@ -109,13 +109,13 @@
     <main id="main-content">
       <header class="v3-hero hero-gradient">
         <div class="container py-5 py-lg-6">
-          <p class="eyebrow">PUBLIC PREVIEW · 3.0.0-BETA1</p>
-          <h1>Axmol 3 is coming.</h1>
-          <p class="hero-lead">A modernized engine core, rendering stack and platform story for the next generation of cross-platform games.</p>
+          <p class="eyebrow">パブリックプレビュー · 3.0.0-BETA1</p>
+          <h1>Axmol 3 が登場します。</h1>
+          <p class="hero-lead">次世代のクロスプラットフォームゲームに向けた、刷新されたエンジンコア、レンダリングスタック、プラットフォーム対応。</p>
           <div class="d-flex flex-wrap gap-3">
-            <a class="btn btn-primary btn-lg" href="https://github.com/axmolengine/axmol/discussions/2650" target="_blank" rel="noopener">View the roadmap</a>
-            <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">Read setup guide</a>
-            <a class="btn btn-link btn-lg px-0" href="#migration">Plan your migration <svg class="icon-inline" aria-hidden="true">
+            <a class="btn btn-primary btn-lg" href="https://github.com/axmolengine/axmol/discussions/2650" target="_blank" rel="noopener">ロードマップを見る</a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">セットアップガイドを読む</a>
+            <a class="btn btn-link btn-lg px-0" href="#migration">移行を計画する <svg class="icon-inline" aria-hidden="true">
                 <use href="/assets/icons.svg#arrow-right">
                 </use>
               </svg>
@@ -127,13 +127,13 @@
         <div class="container">
           <div class="release-state">
             <div>
-              <span class="badge text-bg-primary">Coming soon</span>
+              <span class="badge text-bg-primary">まもなく公開</span>
               <h2 class="h4 mt-3 mb-1">3.0.0-beta1</h2>
-              <p class="text-body-secondary mb-0">This page is ready for the release announcement. The download link will be added only after the official tag is published.</p>
+              <p class="text-body-secondary mb-0">このページはリリース発表の準備ができています。公式タグの公開後にのみダウンロードリンクを追加します。</p>
             </div>
             <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions/3129" target="_blank" rel="noopener">Follow release discussion</a>
-              <a class="btn btn-link" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">Build guide</a>
+              <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions/3129" target="_blank" rel="noopener">リリースの議論をフォロー</a>
+              <a class="btn btn-link" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">ビルドガイド</a>
             </div>
           </div>
         </div>
@@ -141,8 +141,8 @@
       <section class="section-panel">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">WHAT’S NEW</p>
-            <h2>The v3 foundation.</h2>
+            <p class="eyebrow">新機能</p>
+            <h2>v3 の基盤。</h2>
           </div>
           <div class="row g-3">
             <div class="col-md-6 col-lg-4">
@@ -152,7 +152,7 @@
                   </use>
                 </svg>
                 <h3>C++23</h3>
-                <p>The language baseline moves forward with a refreshed engine core and toolchain.</p>
+                <p>刷新されたエンジンコアとツールチェーンにより、言語の基準を C++23 へ進めます。</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -162,7 +162,7 @@
                   </use>
                 </svg>
                 <h3>Modern RHI</h3>
-                <p>D3D11, D3D12 and Vulkan join Metal and OpenGL, with Dynamic RHI selection.</p>
+                <p>Dynamic RHI 選択により、Metal と OpenGL に D3D11、D3D12、Vulkan が加わります。</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -171,8 +171,8 @@
                   <use href="/assets/icons.svg#braces">
                   </use>
                 </svg>
-                <h3>HLSL shaders</h3>
-                <p>Maintain one shader source and compile it for each supported render backend.</p>
+                <h3>HLSL シェーダー</h3>
+                <p>1つのシェーダーソースを維持し、対応する各レンダリングバックエンド向けにコンパイルします。</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -182,7 +182,7 @@
                   </use>
                 </svg>
                 <h3>ARM + OpenXR</h3>
-                <p>Windows and Linux ARM support arrives alongside OpenXR scene composition and controller input.</p>
+                <p>OpenXR のシーン構成とコントローラー入力に加え、Windows と Linux の ARM 対応を提供します。</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -191,8 +191,8 @@
                   <use href="/assets/icons.svg#box-seam">
                   </use>
                 </svg>
-                <h3>New physics</h3>
-                <p>Box2D 3.x powers 2D physics while JoltPhysics 5.x supports 3D scenes.</p>
+                <h3>新しい物理演算</h3>
+                <p>2D 物理には Box2D 3.x、3D シーンには JoltPhysics 5.x を使用します。</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -201,8 +201,8 @@
                   <use href="/assets/icons.svg#lightning-charge-fill">
                   </use>
                 </svg>
-                <h3>Input + profiling</h3>
-                <p>Pointer Events and compile-time selectable Tracy profiling improve the development loop.</p>
+                <h3>入力とプロファイリング</h3>
+                <p>Pointer Events とコンパイル時に選べる Tracy プロファイリングで開発サイクルを改善します。</p>
               </article>
             </div>
           </div>
@@ -211,38 +211,38 @@
       <section class="section-tight">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">PLATFORM MATRIX</p>
-            <h2>Choose the backend that fits the device.</h2>
+            <p class="eyebrow">プラットフォーム一覧</p>
+            <h2>デバイスに合うバックエンドを選択。</h2>
           </div>
           <div class="table-responsive">
             <table class="table align-middle platform-table">
               <thead>
                 <tr>
-                  <th scope="col">Target</th>
-                  <th scope="col">Primary RHI options</th>
-                  <th scope="col">Status</th>
+                  <th scope="col">対象</th>
+                  <th scope="col">主な RHI</th>
+                  <th scope="col">状態</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">Windows / UWP</th>
                   <td>D3D12 · D3D11 · Vulkan · OpenGL</td>
-                  <td>v3 preview</td>
+                  <td>v3 プレビュー</td>
                 </tr>
                 <tr>
                   <th scope="row">Linux</th>
                   <td>Vulkan · OpenGL</td>
-                  <td>v3 preview</td>
+                  <td>v3 プレビュー</td>
                 </tr>
                 <tr>
                   <th scope="row">Android</th>
                   <td>Vulkan · OpenGL ES</td>
-                  <td>v3 preview</td>
+                  <td>v3 プレビュー</td>
                 </tr>
                 <tr>
-                  <th scope="row">Apple platforms</th>
+                  <th scope="row">Apple プラットフォーム</th>
                   <td>Metal · OpenGL ES</td>
-                  <td>v3 preview</td>
+                  <td>v3 プレビュー</td>
                 </tr>
                 <tr>
                   <th scope="row">WebAssembly</th>
@@ -257,33 +257,33 @@
       <section class="section-panel" id="migration">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">MIGRATION</p>
-            <h2>Prepare before you switch.</h2>
-            <p class="text-body-secondary">Axmol 3 removes deprecated APIs and changes several core systems. Start with the relevant path below.</p>
+            <p class="eyebrow">移行</p>
+            <h2>切り替える前に準備しよう。</h2>
+            <p class="text-body-secondary">Axmol 3 では非推奨 API を削除し、複数のコアシステムを変更します。該当する移行手順から始めてください。</p>
           </div>
           <div class="row g-3">
             <div class="col-md-6 col-lg-3">
               <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/axmol-v3-migrate-guide" target="_blank" rel="noopener">
                 <strong>Axmol 2 → 3</strong>
-                <small>Renamed and removed APIs</small>
+                <small>名前変更・削除された API</small>
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Cocos2d%E2%80%90x-migration-guide" target="_blank" rel="noopener">
                 <strong>Cocos2d-x → Axmol</strong>
-                <small>Namespace and project migration</small>
+                <small>名前空間とプロジェクトの移行</small>
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Shaders-in-Axmol3" target="_blank" rel="noopener">
-                <strong>Shader migration</strong>
-                <small>Move from GLSL workflows to HLSL</small>
+                <strong>シェーダー移行</strong>
+                <small>GLSL ワークフローから HLSL へ移行</small>
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Migration-Guide-for-PR-3173" target="_blank" rel="noopener">
-                <strong>Input migration</strong>
-                <small>Adopt Pointer Events</small>
+                <strong>入力の移行</strong>
+                <small>Pointer Events を採用</small>
               </a>
             </div>
           </div>
@@ -293,18 +293,18 @@
         <div class="container">
           <div class="row g-4">
             <div class="col-lg-6">
-              <h2 class="h4">Beta means feedback.</h2>
-              <p class="text-body-secondary">Use the preview for evaluation and migration work. Report regressions through GitHub Issues and discuss design questions in Discussions.</p>
+              <h2 class="h4">ベータ版にはフィードバックを。</h2>
+              <p class="text-body-secondary">評価と移行作業にプレビューを使用してください。回帰は GitHub Issues で報告し、設計に関する質問は Discussions で話し合えます。</p>
               <div class="d-flex flex-wrap gap-2">
-                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/issues" target="_blank" rel="noopener">Report an issue</a>
-                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions" target="_blank" rel="noopener">Join discussions</a>
+                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/issues" target="_blank" rel="noopener">問題を報告</a>
+                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions" target="_blank" rel="noopener">議論に参加</a>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="notice-card">
-                <strong>Need the conservative production baseline?</strong>
-                <p class="mb-3">Use Axmol 2.11.x LTS while your project is being validated against v3.</p>
-                <a href="https://github.com/axmolengine/axmol/releases?q=v2.11&expanded=true#release-v2.11.4" target="_blank" rel="noopener">Download stable releases <svg class="icon-inline">
+                <strong>安定した本番環境向けの基準が必要ですか？</strong>
+                <p class="mb-3">プロジェクトの v3 検証中は Axmol 2.11.x LTS を使用してください。</p>
+                <a href="https://github.com/axmolengine/axmol/releases?q=v2.11&expanded=true#release-v2.11.4" target="_blank" rel="noopener">安定版をダウンロード <svg class="icon-inline">
                     <use href="/assets/icons.svg#arrow-right">
                     </use>
                   </svg>
@@ -323,9 +323,9 @@
             <div class="text-body-secondary small">
               © 2019–present
               <a href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
-                target="_blank" rel="noopener">Simdsoft Limited and other Axmol contributors</a>.<br>
-              Source code on <a href="https://github.com/axmolengine/axmol.dev"
-                target="_blank" rel="noopener">GitHub</a> · Hosted on
+                target="_blank" rel="noopener">Simdsoft Limited およびその他の Axmol コントリビューター</a>.<br>
+              ソースコード： <a href="https://github.com/axmolengine/axmol.dev"
+                target="_blank" rel="noopener">GitHub</a> · ホスティング：
               <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>.
             </div>
           </div>
@@ -333,7 +333,7 @@
           <!-- Right: Community -->
           <div class="col-md">
             <div class="text-center text-md-end">
-              <h6 class="text-body-secondary mb-2">Community</h6>
+              <h6 class="text-body-secondary mb-2">コミュニティ</h6>
               <div
                 class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
                 <a class="text-body-secondary"

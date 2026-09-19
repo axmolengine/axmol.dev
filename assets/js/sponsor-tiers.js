@@ -1,17 +1,75 @@
 (() => {
   const maxIndividualAmount = 500;
   const paypalProducts = { 5: "s101", 25: "s102", 50: "s103", 100: "s104", 250: "s105" };
-  const isChinese = document.documentElement.lang.toLowerCase().startsWith("zh");
+  const locale = document.documentElement.lang.toLowerCase().split("-")[0];
+  const sponsorText = {
+    en: {
+      alipay: "Alipay", wechat: "WeChat Pay",
+      alipayAlt: "Alipay sponsorship QR code", wechatAlt: "WeChat Pay sponsorship QR code",
+      limitMessage: (amount) => `Individual sponsorship is limited to USD ${amount}. Please adjust the amount and try again.`,
+      limitTitle: "Sponsorship amount limit", ok: "OK",
+      qrHelp: "Scan the QR code and enter any amount in your payment app.",
+      tierHelp: (amount) => `Choose a payment channel and contribution amount. Individual sponsorship through PayPal, GitHub Sponsors, and OSC is limited to USD ${amount}.`,
+      enlarge: (name) => `Enlarge ${name} QR code`,
+      note: "Please add the note: Sponsor Axmol",
+      qrTitle: (name) => `${name} QR code`
+    },
+    zh: {
+      alipay: "支付宝", wechat: "微信支付",
+      alipayAlt: "支付宝赞助二维码", wechatAlt: "微信支付赞助二维码",
+      limitMessage: (amount) => `个人赞助金额最高为 USD ${amount}。请调整金额后重试。`,
+      limitTitle: "赞助金额提示", ok: "知道了",
+      qrHelp: "扫码后，请在支付 App 内输入任意金额。",
+      tierHelp: (amount) => `选择支付通道和赞助金额。PayPal、GitHub Sponsors 和 OSC 的个人赞助上限为 USD ${amount}。`,
+      enlarge: (name) => `放大${name}二维码`,
+      note: "请备注：赞助 Axmol",
+      qrTitle: (name) => `${name}二维码`
+    },
+    ja: {
+      alipay: "Alipay", wechat: "WeChat Pay",
+      alipayAlt: "Alipay 支援用 QR コード", wechatAlt: "WeChat Pay 支援用 QR コード",
+      limitMessage: (amount) => `個人スポンサーは USD ${amount} までです。金額を調整してもう一度お試しください。`,
+      limitTitle: "スポンサー金額の上限", ok: "OK",
+      qrHelp: "QR コードを読み取り、決済アプリで任意の金額を入力してください。",
+      tierHelp: (amount) => `支払い方法と支援額を選択してください。PayPal、GitHub Sponsors、OSC の個人スポンサーは USD ${amount} までです。`,
+      enlarge: (name) => `${name} の QR コードを拡大`,
+      note: "備考欄に「Sponsor Axmol」とご記入ください。",
+      qrTitle: (name) => `${name} QR コード`
+    },
+    es: {
+      alipay: "Alipay", wechat: "WeChat Pay",
+      alipayAlt: "Código QR de patrocinio de Alipay", wechatAlt: "Código QR de patrocinio de WeChat Pay",
+      limitMessage: (amount) => `El patrocinio individual está limitado a USD ${amount}. Ajusta el importe e inténtalo de nuevo.`,
+      limitTitle: "Límite de patrocinio", ok: "Aceptar",
+      qrHelp: "Escanea el código QR e introduce cualquier importe en tu aplicación de pago.",
+      tierHelp: (amount) => `Elige un canal de pago y un importe. El patrocinio individual mediante PayPal, GitHub Sponsors y OSC está limitado a USD ${amount}.`,
+      enlarge: (name) => `Ampliar código QR de ${name}`,
+      note: "Añade la nota: Sponsor Axmol",
+      qrTitle: (name) => `Código QR de ${name}`
+    },
+    ru: {
+      alipay: "Alipay", wechat: "WeChat Pay",
+      alipayAlt: "QR-код для поддержки через Alipay", wechatAlt: "QR-код для поддержки через WeChat Pay",
+      limitMessage: (amount) => `Индивидуальная поддержка ограничена USD ${amount}. Измените сумму и повторите попытку.`,
+      limitTitle: "Лимит суммы поддержки", ok: "OK",
+      qrHelp: "Отсканируйте QR-код и укажите любую сумму в приложении для оплаты.",
+      tierHelp: (amount) => `Выберите способ оплаты и сумму. Индивидуальная поддержка через PayPal, GitHub Sponsors и OSC ограничена USD ${amount}.`,
+      enlarge: (name) => `Увеличить QR-код ${name}`,
+      note: "Добавьте примечание: Sponsor Axmol",
+      qrTitle: (name) => `QR-код ${name}`
+    }
+  };
+  const text = sponsorText[locale] || sponsorText.en;
   const qrChannels = {
     alipay: {
-      name: isChinese ? "支付宝" : "Alipay",
+      name: text.alipay,
       image: "/assets/img/alipay.jpg",
-      alt: isChinese ? "支付宝赞助二维码" : "Alipay sponsorship QR code"
+      alt: text.alipayAlt
     },
     wechat: {
-      name: isChinese ? "微信支付" : "WeChat Pay",
+      name: text.wechat,
       image: "/assets/img/wxpay.jpg",
-      alt: isChinese ? "微信支付赞助二维码" : "WeChat Pay sponsorship QR code"
+      alt: text.wechatAlt
     }
   };
   const githubUrl = (amount, monthly = true) => `https://github.com/sponsors/axmolengine/sponsorships?preview=false&frequency=${monthly ? "recurring" : "one-time"}&amount=${amount}`;
@@ -23,9 +81,7 @@
     const title = document.getElementById("commonModalTitle");
     const body = document.getElementById("commonModalBody");
     const footer = document.getElementById("commonModalFooter");
-    const message = isChinese
-      ? `个人赞助金额最高为 USD ${maxIndividualAmount}。请调整金额后重试。`
-      : `Individual sponsorship is limited to USD ${maxIndividualAmount}. Please adjust the amount and try again.`;
+    const message = text.limitMessage(maxIndividualAmount);
 
     if (!modalElement || !title || !body || !footer || !window.bootstrap?.Modal) {
       window.alert(message);
@@ -33,7 +89,7 @@
       return;
     }
 
-    title.textContent = isChinese ? "赞助金额提示" : "Sponsorship amount limit";
+    title.textContent = text.limitTitle;
     body.textContent = message;
     footer.replaceChildren();
 
@@ -41,7 +97,7 @@
     closeButton.type = "button";
     closeButton.className = "btn btn-primary";
     closeButton.dataset.bsDismiss = "modal";
-    closeButton.textContent = isChinese ? "知道了" : "OK";
+    closeButton.textContent = text.ok;
     footer.append(closeButton);
 
     modalElement.addEventListener("hidden.bs.modal", () => input?.focus(), { once: true });
@@ -70,30 +126,22 @@
       qrPanel.hidden = !qr;
       tierGrid.hidden = Boolean(qr);
       if (channelHelp) {
-        channelHelp.textContent = qr
-          ? (isChinese ? "扫码后请在支付 App 内输入任意金额。" : "Scan the QR code and enter any amount in your payment app.")
-          : (isChinese
-            ? `选择支付通道和赞助金额。PayPal、GitHub Sponsors 和 OSC 的个人赞助上限为 USD ${maxIndividualAmount}。`
-            : `Choose a payment channel and contribution amount. Individual sponsorship through PayPal, GitHub Sponsors, and OSC is limited to USD ${maxIndividualAmount}.`);
+        channelHelp.textContent = qr ? text.qrHelp : text.tierHelp(maxIndividualAmount);
       }
       if (!qr) return;
       qrTitle.textContent = qr.name;
       qrImage.src = qr.image;
       qrImage.alt = qr.alt;
-      qrOpenButtons.forEach((button) => button.setAttribute("aria-label", isChinese ? `放大${qr.name}二维码` : `Enlarge ${qr.name} QR code`));
-      if (qrInstruction) qrInstruction.textContent = isChinese
-        ? "扫码后，请在支付 App 内输入任意金额。"
-        : "Scan the QR code and enter any amount in your payment app.";
-      if (qrNote) qrNote.textContent = isChinese ? "请备注：赞助 Axmol" : "Please add the note: Sponsor Axmol";
-      if (qrModalTitle) qrModalTitle.textContent = isChinese ? `${qr.name}二维码` : `${qr.name} QR code`;
+      qrOpenButtons.forEach((button) => button.setAttribute("aria-label", text.enlarge(qr.name)));
+      if (qrInstruction) qrInstruction.textContent = text.qrHelp;
+      if (qrNote) qrNote.textContent = text.note;
+      if (qrModalTitle) qrModalTitle.textContent = text.qrTitle(qr.name);
       if (qrModalImage) {
         qrModalImage.src = qr.image;
         qrModalImage.alt = qr.alt;
       }
-      if (qrModalInstruction) qrModalInstruction.textContent = isChinese
-        ? "扫码后，请在支付 App 内输入任意金额。"
-        : "Scan the QR code and enter any amount in your payment app.";
-      if (qrModalNote) qrModalNote.textContent = isChinese ? "请备注：赞助 Axmol" : "Please add the note: Sponsor Axmol";
+      if (qrModalInstruction) qrModalInstruction.textContent = text.qrHelp;
+      if (qrModalNote) qrModalNote.textContent = text.note;
     };
 
     channelSelect?.addEventListener("change", updateQrPanel);

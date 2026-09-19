@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="es" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Axmol 3.0.0-beta1 | What’s new</title>
-    <meta name="description" content="Explore the Axmol 3.0.0-beta1 preview: C++23, modern RHIs, HLSL shaders, ARM, OpenXR, new physics and Pointer Events.">
+    <title>Axmol 3.0.0-beta1 | Novedades</title>
+    <meta name="description" content="Vista previa de Axmol 3.0.0-beta1: C++23, RHI modernos, shaders HLSL, ARM, OpenXR, nueva física y Pointer Events.">
     <meta name="color-scheme" content="light dark">
-    <link rel="canonical" href="https://axmol.dev/v3/">
+    <link rel="canonical" href="https://axmol.dev/es/v3/">
     <link rel="alternate" hreflang="en" href="https://axmol.dev/v3/">
     <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/v3/">
     <link rel="alternate" hreflang="ja" href="https://axmol.dev/ja/v3/">
@@ -16,7 +16,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Axmol 3.0.0-beta1 | What’s new">
     <meta property="og:description" content="A public preview of the next Axmol generation.">
-    <meta property="og:url" content="https://axmol.dev/v3/">
+    <meta property="og:url" content="https://axmol.dev/es/v3/">
     <meta property="og:image" content="https://axmol.dev/assets/img/splash_black.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Axmol 3.0.0-beta1 | What’s new">
@@ -25,23 +25,23 @@
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
     <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Axmol 3.0.0-beta1","url":"https://axmol.dev/v3/","isPartOf":{"@type":"WebSite","name":"Axmol","url":"https://axmol.dev/"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Axmol 3.0.0-beta1","url":"https://axmol.dev/es/v3/","isPartOf":{"@type":"WebSite","name":"Axmol","url":"https://axmol.dev/"}}</script>
   </head>
   <body>
-    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
-    <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="Primary navigation">
+    <a class="visually-hidden-focusable skip-link" href="#main-content">Ir al contenido</a>
+    <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="Navegación principal">
       <div class="container">
-        <a class="navbar-brand" href="/" aria-label="Axmol home">
+        <a class="navbar-brand" href="/es/" aria-label="Inicio de Axmol">
           <img src="/assets/img/logo.png" alt="Axmol" height="30">
         </a>
         <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
           <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">English</button>
+            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Idioma">Español</button>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
-              <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">English</a></li>
+              <li><a class="dropdown-item" href="/v3/" lang="en">English</a></li>
               <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">中文</a></li>
               <li><a class="dropdown-item" href="/ja/v3/" lang="ja">日本語</a></li>
-              <li><a class="dropdown-item" href="/es/v3/" lang="es">Español</a></li>
+              <li><a class="dropdown-item active" href="/es/v3/" lang="es" aria-current="page">Español</a></li>
               <li><a class="dropdown-item" href="/ru/v3/" lang="ru">Русский</a></li>
             </ul>
           </li>
@@ -53,23 +53,23 @@
         <div class="collapse navbar-collapse" id="primary-nav">
           <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link" href="https://axmol.dev/manual">API Reference</a>
+              <a class="nav-link" href="https://axmol.dev/manual">Referencia de API</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">Wiki</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-sponsor" href="/sponsor/">Support Axmol</a>
+              <a class="nav-link nav-sponsor" href="/es/sponsor/">Apoyar Axmol</a>
             </li>
           </ul>
           <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
             <li class="nav-item dropdown d-none d-lg-block">
-              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">English</button>
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">Español</button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">English</a></li>
+                <li><a class="dropdown-item" href="/v3/" lang="en">English</a></li>
                 <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">中文</a></li>
                 <li><a class="dropdown-item" href="/ja/v3/" lang="ja">日本語</a></li>
-                <li><a class="dropdown-item" href="/es/v3/" lang="es">Español</a></li>
+                <li><a class="dropdown-item active" href="/es/v3/" lang="es" aria-current="page">Español</a></li>
                 <li><a class="dropdown-item" href="/ru/v3/" lang="ru">Русский</a></li>
               </ul>
             </li>
@@ -83,7 +83,7 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme">
+              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Tema">
                 <svg class="theme-icon" width="20" height="20" aria-hidden="true">
                   <use href="/assets/icons.svg#circle-half">
                   </use>
@@ -92,13 +92,13 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
                 <li>
-                  <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">Light</button>
+                  <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">Claro</button>
                 </li>
                 <li>
-                  <button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">Dark</button>
+                  <button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">Oscuro</button>
                 </li>
                 <li>
-                  <button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">Auto</button>
+                  <button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">Automático</button>
                 </li>
               </ul>
             </li>
@@ -109,13 +109,13 @@
     <main id="main-content">
       <header class="v3-hero hero-gradient">
         <div class="container py-5 py-lg-6">
-          <p class="eyebrow">PUBLIC PREVIEW · 3.0.0-BETA1</p>
-          <h1>Axmol 3 is coming.</h1>
-          <p class="hero-lead">A modernized engine core, rendering stack and platform story for the next generation of cross-platform games.</p>
+          <p class="eyebrow">VISTA PREVIA PÚBLICA · 3.0.0-BETA1</p>
+          <h1>Axmol 3 está por llegar.</h1>
+          <p class="hero-lead">Un núcleo de motor, una pila de renderizado y soporte de plataformas modernizados para la próxima generación de juegos multiplataforma.</p>
           <div class="d-flex flex-wrap gap-3">
-            <a class="btn btn-primary btn-lg" href="https://github.com/axmolengine/axmol/discussions/2650" target="_blank" rel="noopener">View the roadmap</a>
-            <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">Read setup guide</a>
-            <a class="btn btn-link btn-lg px-0" href="#migration">Plan your migration <svg class="icon-inline" aria-hidden="true">
+            <a class="btn btn-primary btn-lg" href="https://github.com/axmolengine/axmol/discussions/2650" target="_blank" rel="noopener">Ver la hoja de ruta</a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">Leer la guía de configuración</a>
+            <a class="btn btn-link btn-lg px-0" href="#migration">Planificar la migración <svg class="icon-inline" aria-hidden="true">
                 <use href="/assets/icons.svg#arrow-right">
                 </use>
               </svg>
@@ -127,13 +127,13 @@
         <div class="container">
           <div class="release-state">
             <div>
-              <span class="badge text-bg-primary">Coming soon</span>
+              <span class="badge text-bg-primary">Próximamente</span>
               <h2 class="h4 mt-3 mb-1">3.0.0-beta1</h2>
-              <p class="text-body-secondary mb-0">This page is ready for the release announcement. The download link will be added only after the official tag is published.</p>
+              <p class="text-body-secondary mb-0">Esta página está lista para el anuncio de lanzamiento. El enlace de descarga se añadirá solo después de publicar la etiqueta oficial.</p>
             </div>
             <div class="d-flex flex-wrap gap-2">
-              <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions/3129" target="_blank" rel="noopener">Follow release discussion</a>
-              <a class="btn btn-link" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">Build guide</a>
+              <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions/3129" target="_blank" rel="noopener">Seguir la conversación del lanzamiento</a>
+              <a class="btn btn-link" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">Guía de compilación</a>
             </div>
           </div>
         </div>
@@ -141,8 +141,8 @@
       <section class="section-panel">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">WHAT’S NEW</p>
-            <h2>The v3 foundation.</h2>
+            <p class="eyebrow">NOVEDADES</p>
+            <h2>La base de v3.</h2>
           </div>
           <div class="row g-3">
             <div class="col-md-6 col-lg-4">
@@ -152,7 +152,7 @@
                   </use>
                 </svg>
                 <h3>C++23</h3>
-                <p>The language baseline moves forward with a refreshed engine core and toolchain.</p>
+                <p>La base del lenguaje avanza a C++23 con un núcleo y una cadena de herramientas renovados.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -162,7 +162,7 @@
                   </use>
                 </svg>
                 <h3>Modern RHI</h3>
-                <p>D3D11, D3D12 and Vulkan join Metal and OpenGL, with Dynamic RHI selection.</p>
+                <p>D3D11, D3D12 y Vulkan se unen a Metal y OpenGL, con selección Dynamic RHI.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -171,8 +171,8 @@
                   <use href="/assets/icons.svg#braces">
                   </use>
                 </svg>
-                <h3>HLSL shaders</h3>
-                <p>Maintain one shader source and compile it for each supported render backend.</p>
+                <h3>Shaders HLSL</h3>
+                <p>Mantén una fuente de shader y compílala para cada backend de renderizado compatible.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -182,7 +182,7 @@
                   </use>
                 </svg>
                 <h3>ARM + OpenXR</h3>
-                <p>Windows and Linux ARM support arrives alongside OpenXR scene composition and controller input.</p>
+                <p>Compatibilidad ARM para Windows y Linux junto con composición de escenas OpenXR y entrada de controladores.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -191,8 +191,8 @@
                   <use href="/assets/icons.svg#box-seam">
                   </use>
                 </svg>
-                <h3>New physics</h3>
-                <p>Box2D 3.x powers 2D physics while JoltPhysics 5.x supports 3D scenes.</p>
+                <h3>Nueva física</h3>
+                <p>Box2D 3.x impulsa la física 2D y JoltPhysics 5.x admite escenas 3D.</p>
               </article>
             </div>
             <div class="col-md-6 col-lg-4">
@@ -201,8 +201,8 @@
                   <use href="/assets/icons.svg#lightning-charge-fill">
                   </use>
                 </svg>
-                <h3>Input + profiling</h3>
-                <p>Pointer Events and compile-time selectable Tracy profiling improve the development loop.</p>
+                <h3>Entrada y perfilado</h3>
+                <p>Pointer Events y el perfilado Tracy seleccionable en tiempo de compilación mejoran el ciclo de desarrollo.</p>
               </article>
             </div>
           </div>
@@ -211,38 +211,38 @@
       <section class="section-tight">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">PLATFORM MATRIX</p>
-            <h2>Choose the backend that fits the device.</h2>
+            <p class="eyebrow">MATRIZ DE PLATAFORMAS</p>
+            <h2>Elige el backend adecuado para el dispositivo.</h2>
           </div>
           <div class="table-responsive">
             <table class="table align-middle platform-table">
               <thead>
                 <tr>
-                  <th scope="col">Target</th>
-                  <th scope="col">Primary RHI options</th>
-                  <th scope="col">Status</th>
+                  <th scope="col">Destino</th>
+                  <th scope="col">Opciones de RHI principales</th>
+                  <th scope="col">Estado</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">Windows / UWP</th>
                   <td>D3D12 · D3D11 · Vulkan · OpenGL</td>
-                  <td>v3 preview</td>
+                  <td>Vista previa v3</td>
                 </tr>
                 <tr>
                   <th scope="row">Linux</th>
                   <td>Vulkan · OpenGL</td>
-                  <td>v3 preview</td>
+                  <td>Vista previa v3</td>
                 </tr>
                 <tr>
                   <th scope="row">Android</th>
                   <td>Vulkan · OpenGL ES</td>
-                  <td>v3 preview</td>
+                  <td>Vista previa v3</td>
                 </tr>
                 <tr>
-                  <th scope="row">Apple platforms</th>
+                  <th scope="row">Plataformas Apple</th>
                   <td>Metal · OpenGL ES</td>
-                  <td>v3 preview</td>
+                  <td>Vista previa v3</td>
                 </tr>
                 <tr>
                   <th scope="row">WebAssembly</th>
@@ -257,33 +257,33 @@
       <section class="section-panel" id="migration">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">MIGRATION</p>
-            <h2>Prepare before you switch.</h2>
-            <p class="text-body-secondary">Axmol 3 removes deprecated APIs and changes several core systems. Start with the relevant path below.</p>
+            <p class="eyebrow">MIGRACIÓN</p>
+            <h2>Prepárate antes de cambiar.</h2>
+            <p class="text-body-secondary">Axmol 3 elimina API obsoletas y cambia varios sistemas principales. Empieza por la ruta adecuada.</p>
           </div>
           <div class="row g-3">
             <div class="col-md-6 col-lg-3">
               <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/axmol-v3-migrate-guide" target="_blank" rel="noopener">
                 <strong>Axmol 2 → 3</strong>
-                <small>Renamed and removed APIs</small>
+                <small>API renombradas y eliminadas</small>
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Cocos2d%E2%80%90x-migration-guide" target="_blank" rel="noopener">
                 <strong>Cocos2d-x → Axmol</strong>
-                <small>Namespace and project migration</small>
+                <small>Migración de espacio de nombres y proyecto</small>
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Shaders-in-Axmol3" target="_blank" rel="noopener">
-                <strong>Shader migration</strong>
-                <small>Move from GLSL workflows to HLSL</small>
+                <strong>Migración de shaders</strong>
+                <small>Pasar de flujos GLSL a HLSL</small>
               </a>
             </div>
             <div class="col-md-6 col-lg-3">
               <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Migration-Guide-for-PR-3173" target="_blank" rel="noopener">
-                <strong>Input migration</strong>
-                <small>Adopt Pointer Events</small>
+                <strong>Migración de entrada</strong>
+                <small>Adoptar Pointer Events</small>
               </a>
             </div>
           </div>
@@ -293,18 +293,18 @@
         <div class="container">
           <div class="row g-4">
             <div class="col-lg-6">
-              <h2 class="h4">Beta means feedback.</h2>
-              <p class="text-body-secondary">Use the preview for evaluation and migration work. Report regressions through GitHub Issues and discuss design questions in Discussions.</p>
+              <h2 class="h4">Beta significa comentarios.</h2>
+              <p class="text-body-secondary">Usa la vista previa para evaluación y migración. Informa regresiones mediante GitHub Issues y comenta dudas de diseño en Discussions.</p>
               <div class="d-flex flex-wrap gap-2">
-                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/issues" target="_blank" rel="noopener">Report an issue</a>
-                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions" target="_blank" rel="noopener">Join discussions</a>
+                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/issues" target="_blank" rel="noopener">Informar un problema</a>
+                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions" target="_blank" rel="noopener">Unirse a las discusiones</a>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="notice-card">
-                <strong>Need the conservative production baseline?</strong>
-                <p class="mb-3">Use Axmol 2.11.x LTS while your project is being validated against v3.</p>
-                <a href="https://github.com/axmolengine/axmol/releases?q=v2.11&expanded=true#release-v2.11.4" target="_blank" rel="noopener">Download stable releases <svg class="icon-inline">
+                <strong>¿Necesitas una base de producción conservadora?</strong>
+                <p class="mb-3">Usa Axmol 2.11.x LTS mientras validas tu proyecto con v3.</p>
+                <a href="https://github.com/axmolengine/axmol/releases?q=v2.11&expanded=true#release-v2.11.4" target="_blank" rel="noopener">Descargar versiones estables <svg class="icon-inline">
                     <use href="/assets/icons.svg#arrow-right">
                     </use>
                   </svg>
@@ -323,9 +323,9 @@
             <div class="text-body-secondary small">
               © 2019–present
               <a href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
-                target="_blank" rel="noopener">Simdsoft Limited and other Axmol contributors</a>.<br>
-              Source code on <a href="https://github.com/axmolengine/axmol.dev"
-                target="_blank" rel="noopener">GitHub</a> · Hosted on
+                target="_blank" rel="noopener">Simdsoft Limited y otros colaboradores de Axmol</a>.<br>
+              Código fuente en <a href="https://github.com/axmolengine/axmol.dev"
+                target="_blank" rel="noopener">GitHub</a> · Alojado en
               <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>.
             </div>
           </div>
@@ -333,7 +333,7 @@
           <!-- Right: Community -->
           <div class="col-md">
             <div class="text-center text-md-end">
-              <h6 class="text-body-secondary mb-2">Community</h6>
+              <h6 class="text-body-secondary mb-2">Comunidad</h6>
               <div
                 class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
                 <a class="text-body-secondary"

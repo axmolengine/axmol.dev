@@ -7,6 +7,12 @@
     <meta name="description" content="Support the long-term maintenance of Axmol.">
     <meta name="color-scheme" content="light dark">
     <link rel="canonical" href="https://axmol.dev/zh/sponsor/">
+    <link rel="alternate" hreflang="en" href="https://axmol.dev/sponsor/">
+    <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/sponsor/">
+    <link rel="alternate" hreflang="ja" href="https://axmol.dev/ja/sponsor/">
+    <link rel="alternate" hreflang="es" href="https://axmol.dev/es/sponsor/">
+    <link rel="alternate" hreflang="ru" href="https://axmol.dev/ru/sponsor/">
+    <link rel="alternate" hreflang="x-default" href="https://axmol.dev/sponsor/">
     <script>
       (function () {
         var saved = null;
@@ -19,7 +25,7 @@
       })();
     </script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.14" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
   </head>
   <body class="sponsor-page">
     <a class="visually-hidden-focusable skip-link" href="#main-content">跳到正文</a>
@@ -30,7 +36,18 @@
         <a class="navbar-brand d-flex align-items-center" href="/zh/" aria-label="Axmol 首页">
           <img src="/assets/img/logo.png" alt="Axmol" height="28">
         </a>
-        <a class="navbar-lang-switch d-lg-none" href="/sponsor/" lang="en">English</a>
+        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="语言">中文</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
+              <li><a class="dropdown-item" href="/sponsor/" lang="en">English</a></li>
+              <li><a class="dropdown-item active" href="/zh/sponsor/" lang="zh-CN" aria-current="page">中文</a></li>
+              <li><a class="dropdown-item" href="/ja/sponsor/" lang="ja">日本語</a></li>
+              <li><a class="dropdown-item" href="/es/sponsor/" lang="es">Español</a></li>
+              <li><a class="dropdown-item" href="/ru/sponsor/" lang="ru">Русский</a></li>
+            </ul>
+          </li>
+        </ul>
 
         <!-- Collapse button for mobile -->
         <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
@@ -42,13 +59,11 @@
         <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link"
-                href="https://axmol.dev/manual" target="_blank">API 手册</a>
+              <a class="nav-link" href="https://axmol.dev/manual">API 手册</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"
-                href="https://github.com/axmolengine/axmol/wiki"
-                target="_blank">Wiki</a>
+              <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki"
+                target="_blank" rel="noopener">Wiki</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-sponsor" href="/zh/sponsor/">支持 Axmol</a>
@@ -58,8 +73,15 @@
           <!-- Right side: GitHub + 主题 dropdown -->
           <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
             <!-- Language switch -->
-            <li class="nav-item d-none d-lg-block">
-              <a class="nav-link" href="/sponsor/" lang="en">English</a>
+            <li class="nav-item dropdown d-none d-lg-block">
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">中文</button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="/sponsor/" lang="en">English</a></li>
+                <li><a class="dropdown-item active" href="/zh/sponsor/" lang="zh-CN" aria-current="page">中文</a></li>
+                <li><a class="dropdown-item" href="/ja/sponsor/" lang="ja">日本語</a></li>
+                <li><a class="dropdown-item" href="/es/sponsor/" lang="es">Español</a></li>
+                <li><a class="dropdown-item" href="/ru/sponsor/" lang="ru">Русский</a></li>
+              </ul>
             </li>
 
             <!-- GitHub icon -->
@@ -342,7 +364,7 @@
         <div class="row gy-3 align-items-center">
           <!-- Left: Copyright -->
           <div class="col-md text-center text-md-start">
-            <div class="text-body-secondary">
+            <div class="text-body-secondary small">
               © 2019–present <a
                 href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
                 target="_blank" rel="noopener">Simdsoft Limited 与其他 Axmol 贡献者</a>。<br />
@@ -356,10 +378,10 @@
             </div>
           </div>
 
-          <!-- Right: 相关链接 -->
+          <!-- Right: Community -->
           <div class="col-md">
             <div class="text-center text-md-end">
-              <h6 class="text-body-secondary mb-2">相关链接</h6>
+              <h6 class="text-body-secondary mb-2">社区</h6>
               <div
                 class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
                 <a class="text-body-secondary"
@@ -371,6 +393,9 @@
                 <a class="text-body-secondary"
                   href="https://www.reddit.com/r/axmol/" target="_blank"
                   rel="noopener">Reddit</a>
+                <a class="text-body-secondary"
+                  href="https://github.com/axmolengine/axmol/wiki/Made-in-Axmol"
+                  target="_blank" rel="noopener">Made in Axmol</a>
               </div>
             </div>
           </div>
@@ -405,6 +430,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭"></button>
           </div>
           <div class="modal-body text-center">
+
             <img class="sponsor-qr-modal-image" data-sponsor-qr-modal-image src="/assets/img/alipay.jpg" alt="支付宝赞助二维码">
             <p class="text-body-secondary mt-3 mb-1" data-sponsor-qr-modal-instruction>扫码后，请在支付 App 内输入任意金额。</p>
             <p class="text-body-secondary mb-0" data-sponsor-qr-modal-note>请备注：赞助 Axmol</p>
@@ -414,8 +440,7 @@
     </div>
 
     <!-- Common toast container -->
-    <div
-      class="toast-container position-fixed top-0 start-50 translate-middle-x p-3"></div>
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3"></div>
 
     <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/md5.js?v=2.2"></script>
@@ -423,5 +448,4 @@
     <script src="/assets/js/sponsor-tiers.js?v=1.1.4"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
-
 </html>

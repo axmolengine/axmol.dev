@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="ja" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Axmol 3 | Modern C++ game development across platforms</title>
-    <meta name="description" content="Axmol is an open-source, code-first C++ game engine for mobile, desktop, Xbox and WebAssembly. Explore Axmol 3.0 beta.">
+    <title>Axmol｜モダンなクロスプラットフォーム C++ ゲーム開発</title>
+    <meta name="description" content="Axmol は、モバイル、デスクトップ、Xbox、WebAssembly 向けのモダンでオープンソース、コードファーストな C++ ゲームエンジンです。">
     <meta name="color-scheme" content="light dark">
-    <link rel="canonical" href="https://axmol.dev/">
+    <link rel="canonical" href="https://axmol.dev/ja/">
     <link rel="alternate" hreflang="en" href="https://axmol.dev/">
     <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/">
     <link rel="alternate" hreflang="ja" href="https://axmol.dev/ja/">
@@ -14,33 +14,33 @@
     <link rel="alternate" hreflang="ru" href="https://axmol.dev/ru/">
     <link rel="alternate" hreflang="x-default" href="https://axmol.dev/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Axmol 3 | Modern C++ game development across platforms">
-    <meta property="og:description" content="A modern, open-source C++ engine for mobile, desktop, Xbox and WebAssembly.">
-    <meta property="og:url" content="https://axmol.dev/">
+    <meta property="og:title" content="Axmol 3｜モダンなクロスプラットフォーム C++ ゲーム開発">
+    <meta property="og:description" content="モバイル、デスクトップ、Xbox、WebAssembly 向けのモダンなオープンソース C++ エンジン。">
+    <meta property="og:url" content="https://axmol.dev/ja/">
     <meta property="og:image" content="https://axmol.dev/assets/img/splash_black.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Axmol 3 | Modern C++ game development across platforms">
-    <meta name="twitter:description" content="A modern, open-source C++ engine for mobile, desktop, Xbox and WebAssembly.">
+    <meta name="twitter:title" content="Axmol 3｜モダンなクロスプラットフォーム C++ ゲーム開発">
+    <meta name="twitter:description" content="モバイル、デスクトップ、Xbox、WebAssembly 向けのモダンなオープンソース C++ エンジン。">
     <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
     <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Axmol","applicationCategory":"GameDevelopmentFramework","operatingSystem":"Windows, Linux, macOS, iOS, Android, Xbox, WebAssembly","url":"https://axmol.dev/","license":"https://github.com/axmolengine/axmol/blob/dev/LICENSE","codeRepository":"https://github.com/axmolengine/axmol"}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Axmol","applicationCategory":"GameDevelopmentFramework","operatingSystem":"Windows, Linux, macOS, iOS, Android, Xbox, WebAssembly","url":"https://axmol.dev/ja/","license":"https://github.com/axmolengine/axmol/blob/dev/LICENSE","codeRepository":"https://github.com/axmolengine/axmol"}</script>
   </head>
   <body>
-    <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
-    <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="Primary navigation">
+    <a class="visually-hidden-focusable skip-link" href="#main-content">本文へ移動</a>
+    <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="メインナビゲーション">
       <div class="container">
-        <a class="navbar-brand" href="/" aria-label="Axmol home">
+        <a class="navbar-brand" href="/" aria-label="Axmol ホーム">
           <img src="/assets/img/logo.png" alt="Axmol" height="30">
         </a>
         <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
           <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">English</button>
+            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="言語">日本語</button>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
-              <li><a class="dropdown-item active" href="/" lang="en" aria-current="page">English</a></li>
+              <li><a class="dropdown-item" href="/" lang="en">English</a></li>
               <li><a class="dropdown-item" href="/zh/" lang="zh-CN">中文</a></li>
-              <li><a class="dropdown-item" href="/ja/" lang="ja">日本語</a></li>
+              <li><a class="dropdown-item active" href="/ja/" lang="ja" aria-current="page">日本語</a></li>
               <li><a class="dropdown-item" href="/es/" lang="es">Español</a></li>
               <li><a class="dropdown-item" href="/ru/" lang="ru">Русский</a></li>
             </ul>
@@ -53,22 +53,22 @@
         <div class="collapse navbar-collapse" id="primary-nav">
           <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1">
             <li class="nav-item">
-              <a class="nav-link" href="https://axmol.dev/manual">API Reference</a>
+              <a class="nav-link" href="https://axmol.dev/manual">API リファレンス</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">Wiki</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-sponsor" href="/sponsor/">Support Axmol</a>
+              <a class="nav-link nav-sponsor" href="/ja/sponsor/">Axmol を支援</a>
             </li>
           </ul>
           <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
             <li class="nav-item dropdown d-none d-lg-block">
-              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">English</button>
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">日本語</button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item active" href="/" lang="en" aria-current="page">English</a></li>
+                <li><a class="dropdown-item" href="/" lang="en">English</a></li>
                 <li><a class="dropdown-item" href="/zh/" lang="zh-CN">中文</a></li>
-                <li><a class="dropdown-item" href="/ja/" lang="ja">日本語</a></li>
+                <li><a class="dropdown-item active" href="/ja/" lang="ja" aria-current="page">日本語</a></li>
                 <li><a class="dropdown-item" href="/es/" lang="es">Español</a></li>
                 <li><a class="dropdown-item" href="/ru/" lang="ru">Русский</a></li>
               </ul>
@@ -83,7 +83,7 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme">
+              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="テーマ">
                 <svg class="theme-icon" width="20" height="20" aria-hidden="true">
                   <use href="/assets/icons.svg#circle-half">
                   </use>
@@ -92,13 +92,13 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
                 <li>
-                  <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">Light</button>
+                  <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">ライト</button>
                 </li>
                 <li>
-                  <button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">Dark</button>
+                  <button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">ダーク</button>
                 </li>
                 <li>
-                  <button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">Auto</button>
+                  <button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">自動</button>
                 </li>
               </ul>
             </li>
@@ -111,8 +111,8 @@
         <div class="container d-flex flex-wrap align-items-center justify-content-center gap-2">
           <span class="release-dot" aria-hidden="true">
           </span>
-          <span>Axmol 3.0.0-beta1 is coming</span>
-          <a href="/v3/">Explore the beta preview <svg class="icon-inline" aria-hidden="true">
+          <span>Axmol 3.0.0-beta1 はまもなく公開予定です</span>
+          <a href="/ja/v3/">ベータプレビューを見る <svg class="icon-inline" aria-hidden="true">
               <use href="/assets/icons.svg#arrow-right">
               </use>
             </svg>
@@ -127,13 +127,13 @@
         <div class="container hero-inner py-5 py-lg-6 position-relative">
           <div class="row align-items-center gy-5">
             <div class="col-lg-6">
-              <p class="eyebrow">OPEN SOURCE · CODE FIRST · CROSS PLATFORM</p>
+              <p class="eyebrow">オープンソース · コードファースト · クロスプラットフォーム</p>
               <h1 class="display-3 fw-bold text-glow mb-3">Axmol</h1>
-              <p class="hero-lead mb-4">Modern C++ game development for mobile, desktop, Xbox and WebAssembly.</p>
+              <p class="hero-lead mb-4">モバイル、デスクトップ、Xbox、WebAssembly 向けのモダンな C++ ゲーム開発。</p>
               <div class="d-flex flex-wrap gap-3 mb-4">
-                <a class="btn btn-primary btn-lg" href="/v3/">Explore Axmol 3 Beta</a>
-                <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/releases?q=v2.11&expanded=true#release-v2.11.4" target="_blank" rel="noopener">Download 2.11.4 LTS</a>
-                <a class="btn btn-link btn-lg px-0" href="https://deepwiki.com/axmolengine/axmol" target="_blank" rel="noopener">Documentation <svg class="icon-inline" aria-hidden="true">
+                <a class="btn btn-primary btn-lg" href="/ja/v3/">Axmol 3 Beta を見る</a>
+                <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/releases?q=v2.11&expanded=true#release-v2.11.4" target="_blank" rel="noopener">2.11.4 LTS をダウンロード</a>
+                <a class="btn btn-link btn-lg px-0" href="https://deepwiki.com/axmolengine/axmol" target="_blank" rel="noopener">ドキュメント <svg class="icon-inline" aria-hidden="true">
                     <use href="/assets/icons.svg#arrow-right">
                     </use>
                   </svg>
@@ -171,8 +171,8 @@
       <section class="section-tight" id="v3-highlights">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">WHY V3</p>
-            <h2>One engine, a wider frontier.</h2>
+            <p class="eyebrow">V3 の理由</p>
+            <h2>1つのエンジンで、さらに広がる可能性。</h2>
           </div>
           <div class="row g-3">
             <div class="col-md-4">
@@ -181,8 +181,8 @@
                   <use href="/assets/icons.svg#palette2">
                   </use>
                 </svg>
-                <h3>Modern graphics</h3>
-                <p>Write HLSL once and target Dynamic RHI across D3D11, D3D12, Vulkan, Metal and OpenGL.</p>
+                <h3>モダンなグラフィックス</h3>
+                <p>HLSL を一度書くだけで、D3D11、D3D12、Vulkan、Metal、OpenGL の Dynamic RHI を対象にできます。</p>
               </article>
             </div>
             <div class="col-md-4">
@@ -191,8 +191,8 @@
                   <use href="/assets/icons.svg#code">
                   </use>
                 </svg>
-                <h3>Modern C++</h3>
-                <p>Move to C++23 with a refreshed core, build tooling and production-oriented workflow.</p>
+                <h3>モダンな C++</h3>
+                <p>C++23 と刷新されたコア、ビルドツール、実運用を意識したワークフローへ。</p>
               </article>
             </div>
             <div class="col-md-4">
@@ -201,8 +201,8 @@
                   <use href="/assets/icons.svg#globe2">
                   </use>
                 </svg>
-                <h3>More platforms</h3>
-                <p>Reach ARM desktops, OpenXR devices, mobile, Xbox and WebAssembly from one codebase.</p>
+                <h3>より多くのプラットフォーム</h3>
+                <p>1つのコードベースから、ARM デスクトップ、OpenXR デバイス、モバイル、Xbox、WebAssembly へ展開できます。</p>
               </article>
             </div>
           </div>
@@ -212,10 +212,10 @@
         <div class="container">
           <div class="row align-items-center g-5">
             <div class="col-lg-6">
-              <p class="eyebrow">A CLEARER RENDERING PATH</p>
-              <h2>Write shaders once. Target multiple backends.</h2>
-              <p class="text-body-secondary">Write HLSL once, then use axslcc to compile it for D3D11, D3D12, Vulkan, Metal, and OpenGL.</p>
-              <a class="btn btn-outline-primary" href="/v3/">See what changed in v3 <svg class="icon-inline" aria-hidden="true">
+              <p class="eyebrow">より明快なレンダリングパス</p>
+              <h2>シェーダーを一度書き、複数のバックエンドへ。</h2>
+              <p class="text-body-secondary">HLSL を一度書き、axslcc で D3D11、D3D12、Vulkan、Metal、OpenGL 用にコンパイルします。</p>
+              <a class="btn btn-outline-primary" href="/ja/v3/">v3 の変更を見る <svg class="icon-inline" aria-hidden="true">
                   <use href="/assets/icons.svg#arrow-right">
                   </use>
                 </svg>
@@ -242,16 +242,16 @@
       <section class="section-tight" id="try-it">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">SEE IT RUN</p>
-            <h2>Start with a working example.</h2>
-            <p class="text-body-secondary">Try the live WebAssembly previews when available, then move to the setup guide when you are ready to build locally.</p>
+            <p class="eyebrow">動作を確認</p>
+            <h2>動くサンプルから始めよう。</h2>
+            <p class="text-body-secondary">利用可能な WebAssembly ライブプレビューを試し、ローカルビルドの準備ができたらセットアップガイドへ進んでください。</p>
           </div>
           <div class="row g-3">
             <div class="col-md-6 col-lg-4">
               <a class="demo-card" href="/wasm/cpp-tests/cpp-tests.html" target="_blank" rel="noopener">
                 <span class="demo-label">CPP-TESTS</span>
-                <strong>Explore the engine testbed</strong>
-                <span>Open live demo <svg class="icon-inline" aria-hidden="true">
+                <strong>エンジンのテスト環境を見る</strong>
+                <span>ライブデモを開く <svg class="icon-inline" aria-hidden="true">
                     <use href="/assets/icons.svg#arrow-right">
                     </use>
                   </svg>
@@ -261,8 +261,8 @@
             <div class="col-md-6 col-lg-4">
               <a class="demo-card" href="/wasm/fairygui-tests/fairygui-tests.html" target="_blank" rel="noopener">
                 <span class="demo-label">FAIRYGUI</span>
-                <strong>See UI and extension samples</strong>
-                <span>Open live demo <svg class="icon-inline" aria-hidden="true">
+                <strong>UI と拡張機能のサンプルを見る</strong>
+                <span>ライブデモを開く <svg class="icon-inline" aria-hidden="true">
                     <use href="/assets/icons.svg#arrow-right">
                     </use>
                   </svg>
@@ -272,8 +272,8 @@
             <div class="col-md-6 col-lg-4">
               <a class="demo-card" href="/wasm/lua-tests/lua-tests.html" target="_blank" rel="noopener">
                 <span class="demo-label">LUA-TESTS</span>
-                <strong>Run Lua on WebAssembly</strong>
-                <span>Open live demo <svg class="icon-inline" aria-hidden="true">
+                <strong>WebAssembly で Lua を実行</strong>
+                <span>ライブデモを開く <svg class="icon-inline" aria-hidden="true">
                     <use href="/assets/icons.svg#arrow-right">
                     </use>
                   </svg>
@@ -287,9 +287,9 @@
         <div class="container">
           <div class="row align-items-center g-4">
             <div class="col-lg-7">
-              <p class="eyebrow">MOVING TO V3</p>
-              <h2>Bring your project forward.</h2>
-              <p class="text-body-secondary mb-0">The v3 page collects the breaking changes and migration paths for Axmol 2, Cocos2d-x, shaders, input and physics.</p>
+              <p class="eyebrow">V3 への移行</p>
+              <h2>プロジェクトを次へ進めよう。</h2>
+              <p class="text-body-secondary mb-0">v3 ページには Axmol 2、Cocos2d-x、シェーダー、入力、物理演算の破壊的変更と移行手順をまとめています。</p>
             </div>
             <div class="col-lg-5 d-flex flex-column gap-2">
               <a class="quick-link" href="/v3/#migration">Axmol 2 → Axmol 3 <svg class="icon-inline" aria-hidden="true">
@@ -309,18 +309,18 @@
       <section class="section-panel support-strip">
         <div class="container">
           <div class="section-heading mb-4">
-            <p class="eyebrow">SUPPORTED IN THE OPEN</p>
-            <h2 class="h4 mb-0">Long-term support for Axmol.</h2>
+            <p class="eyebrow">オープンな支援</p>
+            <h2 class="h4 mb-0">Axmol の長期的な支援。</h2>
           </div>
           <div class="supporter-grid">
             <article class="supporter-card">
-              <div class="supporter-tier">CORPORATE DIAMOND</div>
+              <div class="supporter-tier">法人ダイヤモンド</div>
               <a class="supporter-logo" href="https://scorewarrior.com/?utm_source=axmol.dev" target="_blank" rel="noopener">
                 <img src="https://cdn.prod.website-files.com/633da33305ac754156026dd8/63566f1edf5f0712f94f7f1b_sw-triangle-821890.svg" alt="Scorewarrior">
               </a>
               <h3 class="h5">Scorewarrior</h3>
-              <p class="text-body-secondary">Long-term financial support for Axmol development.</p>
-              <a class="supporter-link" href="https://scorewarrior.com/?utm_source=axmol.dev" target="_blank" rel="noopener">Visit website <svg class="icon-inline" aria-hidden="true">
+              <p class="text-body-secondary">Axmol 開発への長期的な資金支援。</p>
+              <a class="supporter-link" href="https://scorewarrior.com/?utm_source=axmol.dev" target="_blank" rel="noopener">ウェブサイトを開く <svg class="icon-inline" aria-hidden="true">
                   <use href="/assets/icons.svg#arrow-right">
                   </use>
                 </svg>
@@ -328,7 +328,7 @@
             </article>
           </div>
           <div class="support-footer">
-            <a class="btn btn-outline-primary" href="/sponsor/">View all supporters <svg class="icon-inline" aria-hidden="true">
+            <a class="btn btn-outline-primary" href="/ja/sponsor/">すべての支援者を見る <svg class="icon-inline" aria-hidden="true">
                 <use href="/assets/icons.svg#arrow-right">
                 </use>
               </svg>
@@ -345,12 +345,12 @@
             <div class="text-body-secondary small">
               © 2019–present
               <a href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
-                target="_blank" rel="noopener">Simdsoft Limited and other Axmol contributors</a>.<br>
-              Led and maintained by
+                target="_blank" rel="noopener">Simdsoft Limited およびその他の Axmol コントリビューター</a>.<br>
+              主導・保守：
               <a href="https://simdsoft.com/?lang=en" target="_blank" rel="noopener">Simdsoft Limited</a>
-              with contributions from the community.<br>
-              Source code on <a href="https://github.com/axmolengine/axmol.dev"
-                target="_blank" rel="noopener">GitHub</a> · Hosted on
+              コミュニティも貢献しています。<br>
+              ソースコード： <a href="https://github.com/axmolengine/axmol.dev"
+                target="_blank" rel="noopener">GitHub</a> · ホスティング：
               <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>.
             </div>
           </div>
@@ -358,7 +358,7 @@
           <!-- Right: Community -->
           <div class="col-md">
             <div class="text-center text-md-end">
-              <h6 class="text-body-secondary mb-2">Community</h6>
+              <h6 class="text-body-secondary mb-2">コミュニティ</h6>
               <div
                 class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
                 <a class="text-body-secondary"

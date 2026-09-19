@@ -8,9 +8,12 @@
     <link rel="canonical" href="https://axmol.dev/zh/v3/">
     <link rel="alternate" hreflang="en" href="https://axmol.dev/v3/">
     <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/v3/">
+    <link rel="alternate" hreflang="ja" href="https://axmol.dev/ja/v3/">
+    <link rel="alternate" hreflang="es" href="https://axmol.dev/es/v3/">
+    <link rel="alternate" hreflang="ru" href="https://axmol.dev/ru/v3/">
     <link rel="alternate" hreflang="x-default" href="https://axmol.dev/v3/">
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.14" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
   </head>
   <body>
     <a class="visually-hidden-focusable skip-link" href="#main-content">跳到正文</a>
@@ -19,7 +22,18 @@
         <a class="navbar-brand" href="/zh/" aria-label="Axmol 首页">
           <img src="/assets/img/logo.png" alt="Axmol" height="30">
         </a>
-        <a class="navbar-lang-switch d-lg-none" href="/v3/" lang="en">English</a>
+        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="语言">中文</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
+              <li><a class="dropdown-item" href="/v3/" lang="en">English</a></li>
+              <li><a class="dropdown-item active" href="/zh/v3/" lang="zh-CN" aria-current="page">中文</a></li>
+              <li><a class="dropdown-item" href="/ja/v3/" lang="ja">日本語</a></li>
+              <li><a class="dropdown-item" href="/es/v3/" lang="es">Español</a></li>
+              <li><a class="dropdown-item" href="/ru/v3/" lang="ru">Русский</a></li>
+            </ul>
+          </li>
+        </ul>
         <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
           data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false"
           aria-label="展开导航">
@@ -39,8 +53,15 @@
             </li>
           </ul>
           <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
-            <li class="nav-item d-none d-lg-block">
-              <a class="nav-link" href="/v3/" lang="en">English</a>
+            <li class="nav-item dropdown d-none d-lg-block">
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Language">中文</button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item" href="/v3/" lang="en">English</a></li>
+                <li><a class="dropdown-item active" href="/zh/v3/" lang="zh-CN" aria-current="page">中文</a></li>
+                <li><a class="dropdown-item" href="/ja/v3/" lang="ja">日本語</a></li>
+                <li><a class="dropdown-item" href="/es/v3/" lang="es">Español</a></li>
+                <li><a class="dropdown-item" href="/ru/v3/" lang="ru">Русский</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link d-flex align-items-center" href="https://github.com/axmolengine/axmol"
@@ -271,17 +292,42 @@
         </div>
       </section>
     </main>
-    <footer class="border-top">
+    <footer class="border-top mt-5">
       <div class="container py-4">
-        <div class="text-body-secondary small">
-          © 2019–present
-          <a href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
-            target="_blank" rel="noopener">Simdsoft Limited 与其他 Axmol 贡献者</a>。<br>
-          源码位于 <a href="https://github.com/axmolengine/axmol.dev"
-            target="_blank" rel="noopener">GitHub</a> · 托管于
-          <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>。<br>
-          <a href="/zh/">返回中文首页</a> · <a href="/v3/">English</a> ·
-          <a href="/zh/sponsor/">支持 Axmol 的长期维护</a>
+        <div class="row gy-3 align-items-center">
+          <!-- Left: Copyright -->
+          <div class="col-md text-center text-md-start">
+            <div class="text-body-secondary small">
+
+              <a href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
+                target="_blank" rel="noopener">Simdsoft Limited 与其他 Axmol 贡献者</a>。<br>
+              源码位于 <a href="https://github.com/axmolengine/axmol.dev"
+                target="_blank" rel="noopener">GitHub</a> · 托管于
+              <a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a>。
+            </div>
+          </div>
+
+          <!-- Right: Community -->
+          <div class="col-md">
+            <div class="text-center text-md-end">
+              <h6 class="text-body-secondary mb-2">社区</h6>
+              <div
+                class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
+                <a class="text-body-secondary"
+                  href="https://github.com/axmolengine/axmol/discussions"
+                  target="_blank" rel="noopener">GitHub Discussions</a>
+                <a class="text-body-secondary"
+                  href="https://discord.gg/TvY2nwPbQR" target="_blank"
+                  rel="noopener">Discord</a>
+                <a class="text-body-secondary"
+                  href="https://www.reddit.com/r/axmol/" target="_blank"
+                  rel="noopener">Reddit</a>
+                <a class="text-body-secondary"
+                  href="https://github.com/axmolengine/axmol/wiki/Made-in-Axmol"
+                  target="_blank" rel="noopener">Made in Axmol</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

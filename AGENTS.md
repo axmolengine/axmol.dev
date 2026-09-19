@@ -2,7 +2,9 @@
 
 ## Pages and content
 
-- The public site provides English and Simplified Chinese versions under separate paths. Do not introduce an SPA, CMS, or new front-end framework for localization.
+- The public site provides English, Simplified Chinese, Japanese, Spanish, and Russian versions under separate static paths. Do not introduce an SPA, CMS, or new front-end framework for localization.
+- Localization applies to exactly three public page types: the homepage, the `/v3/` release page, and the `/sponsor/` page. Keep each language's navigation, page metadata, canonical URL, and internal links aligned with its counterpart.
+- English remains at the root paths (`/`, `/v3/`, and `/sponsor/`). Every non-English language uses its ISO 639-1 two-letter lowercase code as the directory name: `/zh/`, `/ja/`, `/es/`, and `/ru/`, with matching `/v3/` and `/sponsor/` subpaths. Do not introduce long-form, locale, or inconsistent language directory names.
 - The homepage is a concise decision page. Do not restore encyclopedia-style copy, FAQ sections, full supporter lists, or duplicate version cards.
 - The homepage and `/v3/` must each contain exactly one `<h1>`, plus `<main>`, a skip link, canonical metadata, Open Graph, Twitter Card, and JSON-LD metadata.
 - Do not add `Home` or temporary version labels such as `V3 beta` to the primary navigation. The logo returns home; keep Docs, Wiki, Sponsor, GitHub, and theme controls.
