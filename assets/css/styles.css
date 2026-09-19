@@ -288,14 +288,25 @@
 }
 
 .code-block {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 1.25rem;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 0.85rem;
   line-height: 1.6;
   color: #e9ecef;
+  text-align: left;
   white-space: pre;
   overflow-x: auto;
+}
+
+.code-block .code-line {
+  white-space: pre;
+}
+
+.code-block .code-line-spaced {
+  margin-top: 1rem;
 }
 
 .code-block .c-key  { color: #c792ea; }
