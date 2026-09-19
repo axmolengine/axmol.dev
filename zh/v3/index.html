@@ -9,11 +9,65 @@
   <link rel="alternate" hreflang="en" href="https://axmol.dev/v3/">
   <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/v3/">
   <link rel="alternate" hreflang="x-default" href="https://axmol.dev/v3/">
-<link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet"><link href="/assets/css/styles.css?v=3.0.12" rel="stylesheet">
+<link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet"><link href="/assets/css/styles.css?v=3.0.13" rel="stylesheet">
 </head>
 <body>
   <a class="visually-hidden-focusable skip-link" href="#main-content">跳到正文</a>
-<nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="主导航"><div class="container"><a class="navbar-brand" href="/zh/" aria-label="Axmol 首页"><img src="/assets/img/logo.png" alt="Axmol" height="30"></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="展开导航"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="primary-nav"><ul class="navbar-nav me-auto align-items-lg-center gap-lg-1"><li class="nav-item"><a class="nav-link" href="https://axmol.dev/manual">API 手册</a></li><li class="nav-item"><a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">Wiki</a></li><li class="nav-item"><a class="nav-link nav-sponsor" href="/zh/sponsor/">支持 Axmol</a></li></ul><ul class="navbar-nav flex-row align-items-center gap-2"><li class="nav-item"><a class="nav-link" href="/v3/">English</a></li><li class="nav-item"><a class="nav-link d-flex" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="Axmol GitHub 仓库"><svg class="github-icon" width="22" height="22" aria-hidden="true"><use href="/assets/icons.svg#github-icon"></use></svg></a></li><li class="nav-item dropdown"><button class="btn btn-link nav-link dropdown-toggle" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="主题"><svg class="theme-icon" width="20" height="20" aria-hidden="true"><use href="/assets/icons.svg#circle-half"></use></svg></button><ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown"><li><button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">浅色</button></li><li><button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">深色</button></li><li><button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">跟随系统</button></li></ul></li></ul></div></div></nav>
+<nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="主导航">
+  <div class="container">
+    <a class="navbar-brand" href="/zh/" aria-label="Axmol 首页">
+      <img src="/assets/img/logo.png" alt="Axmol" height="30">
+    </a>
+    <a class="navbar-lang-switch d-lg-none" href="/v3/" lang="en">English</a>
+    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+      data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false"
+      aria-label="展开导航">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="primary-nav">
+      <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item">
+          <a class="nav-link" href="https://axmol.dev/manual">API 手册</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki"
+            target="_blank" rel="noopener">Wiki</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-sponsor" href="/zh/sponsor/">支持 Axmol</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link" href="/v3/" lang="en">English</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="https://github.com/axmolengine/axmol"
+            target="_blank" rel="noopener" aria-label="Axmol GitHub 仓库">
+            <svg class="github-icon" width="22" height="22" aria-hidden="true">
+              <use href="/assets/icons.svg#github-icon"></use>
+            </svg>
+            <span class="d-lg-none ms-2">GitHub</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown"
+            type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="主题">
+            <svg class="theme-icon" width="20" height="20" aria-hidden="true">
+              <use href="/assets/icons.svg#circle-half"></use>
+            </svg>
+            <span class="d-lg-none ms-2">主题</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+            <li><button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">浅色</button></li>
+            <li><button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">深色</button></li>
+            <li><button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">跟随系统</button></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
   <main id="main-content">
     <header class="v3-hero hero-gradient"><div class="container py-5 py-lg-6"><p class="eyebrow">公开预览 · 3.0.0-BETA1</p><h1>Axmol 3 即将到来。</h1><p class="hero-lead">焕新的引擎核心、渲染栈与平台能力，为下一代跨平台游戏而来。</p><div class="d-flex flex-wrap gap-3"><a class="btn btn-primary btn-lg" href="https://github.com/axmolengine/axmol/discussions/2650" target="_blank" rel="noopener">查看路线图</a><a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">阅读构建指南</a><a class="btn btn-link btn-lg px-0" href="#migration">规划迁移</a></div></div></header>
     <section class="section-tight"><div class="container"><div class="release-state"><div><span class="badge text-bg-primary">即将发布</span><h2 class="h4 mt-3 mb-1">3.0.0-beta1</h2><p class="text-body-secondary mb-0">正式 tag 发布后，我们才会在这里加入下载链接。</p></div><a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions/3129" target="_blank" rel="noopener">关注发布讨论</a></div></div></section>

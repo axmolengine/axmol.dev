@@ -18,7 +18,7 @@
     <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-  <link href="/assets/css/styles.css?v=3.0.12" rel="stylesheet">
+  <link href="/assets/css/styles.css?v=3.0.13" rel="stylesheet">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Axmol","applicationCategory":"GameDevelopmentFramework","operatingSystem":"Windows, Linux, macOS, iOS, Android, Xbox, WebAssembly","url":"https://axmol.dev/","license":"https://github.com/axmolengine/axmol/blob/dev/LICENSE","codeRepository":"https://github.com/axmolengine/axmol"}</script>
   </head>
   <body>
@@ -28,7 +28,8 @@
         <a class="navbar-brand" href="/" aria-label="Axmol home">
           <img src="/assets/img/logo.png" alt="Axmol" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-lang-switch d-lg-none" href="/zh/" lang="zh-CN">中文</a>
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon">
           </span>
         </button>
@@ -44,24 +45,26 @@
               <a class="nav-link nav-sponsor" href="/sponsor/">Support Axmol</a>
             </li>
           </ul>
-          <ul class="navbar-nav flex-row align-items-center gap-2">
+          <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
             <li class="nav-item">
-              <a class="nav-link" href="/zh/">中文</a>
+              <a class="nav-link d-none d-lg-flex" href="/zh/" lang="zh-CN">中文</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="Axmol GitHub repository">
+              <a class="nav-link d-flex align-items-center" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="Axmol GitHub repository">
                 <svg class="github-icon" width="22" height="22" aria-hidden="true">
                   <use href="/assets/icons.svg#github-icon">
                   </use>
                 </svg>
+                <span class="d-lg-none ms-2">GitHub</span>
               </a>
             </li>
             <li class="nav-item dropdown">
-              <button class="btn btn-link nav-link dropdown-toggle" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme">
+              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Theme">
                 <svg class="theme-icon" width="20" height="20" aria-hidden="true">
                   <use href="/assets/icons.svg#circle-half">
                   </use>
                 </svg>
+                <span class="d-lg-none ms-2">Theme</span>
               </button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
                 <li>

@@ -10,21 +10,50 @@
   <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/">
   <link rel="alternate" hreflang="x-default" href="https://axmol.dev/">
   <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-  <link href="/assets/css/styles.css?v=3.0.12" rel="stylesheet">
+  <link href="/assets/css/styles.css?v=3.0.13" rel="stylesheet">
 </head>
 <body>
   <a class="visually-hidden-focusable skip-link" href="#main-content">跳到正文</a>
   <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="主导航">
     <div class="container">
       <a class="navbar-brand" href="/zh/" aria-label="Axmol 首页"><img src="/assets/img/logo.png" alt="Axmol" height="30"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="展开导航"><span class="navbar-toggler-icon"></span></button>
+      <a class="navbar-lang-switch d-lg-none" href="/" lang="en">English</a>
+      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="展开导航"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="primary-nav">
         <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1">
           <li class="nav-item"><a class="nav-link" href="https://axmol.dev/manual">API 手册</a></li>
           <li class="nav-item"><a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">Wiki</a></li>
           <li class="nav-item"><a class="nav-link nav-sponsor" href="/zh/sponsor/">支持 Axmol</a></li>
         </ul>
-        <ul class="navbar-nav flex-row align-items-center gap-2"><li class="nav-item"><a class="nav-link" href="/">English</a></li><li class="nav-item"><a class="nav-link d-flex" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="Axmol GitHub 仓库"><svg class="github-icon" width="22" height="22" aria-hidden="true"><use href="/assets/icons.svg#github-icon"></use></svg></a></li><li class="nav-item dropdown"><button class="btn btn-link nav-link dropdown-toggle" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="主题"><svg class="theme-icon" width="20" height="20" aria-hidden="true"><use href="/assets/icons.svg#circle-half"></use></svg></button><ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown"><li><button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">浅色</button></li><li><button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">深色</button></li><li><button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">跟随系统</button></li></ul></li></ul>
+        <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="/" lang="en">English</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="https://github.com/axmolengine/axmol"
+              target="_blank" rel="noopener" aria-label="Axmol GitHub 仓库">
+              <svg class="github-icon" width="22" height="22" aria-hidden="true">
+                <use href="/assets/icons.svg#github-icon"></use>
+              </svg>
+              <span class="d-lg-none ms-2">GitHub</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+              id="themeDropdown" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false" aria-label="主题">
+              <svg class="theme-icon" width="20" height="20" aria-hidden="true">
+                <use href="/assets/icons.svg#circle-half"></use>
+              </svg>
+              <span class="d-lg-none ms-2">主题</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+              <li><button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">浅色</button></li>
+              <li><button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">深色</button></li>
+              <li><button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">跟随系统</button></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
