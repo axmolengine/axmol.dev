@@ -281,7 +281,7 @@
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
     "v3_dynamic_rhi_desc": {
-      "value": "以 HLSL 为核心，通过 Dynamic RHI 覆盖 D3D、Vulkan、Metal 与 OpenGL。",
+      "value": "统一的 C++ 渲染API，全平台图形后端兼容（D3D11, D3D12, Vulkan, Metal, OpenGL），支持启动时按需选择最优渲染后端。",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
     "v3_highlights_card_title_modern_c": {
