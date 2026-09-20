@@ -5,27 +5,27 @@
   },
   "home": {
     "seo_title": {
-      "value": "Axmol | Desarrollo de juegos C++ moderno y multiplataforma",
+      "value": "Axmol | Desarrollo de videojuegos multiplataforma en C++ Moderno",
       "context": "html > head > title"
     },
     "seo_description": {
-      "value": "Axmol es un motor de juegos C++ moderno, de código abierto y centrado en el código para móviles, escritorio, Xbox y WebAssembly.",
+      "value": "Axmol es un motor de videojuego de código abierto en C++ Moderno, centrado en el desarrollo para móviles, escritorio, Xbox y WebAssembly.",
       "context": "html > head > meta [content]"
     },
     "seo_og_title": {
-      "value": "Axmol 3 | Desarrollo de juegos C++ moderno y multiplataforma",
+      "value": "Axmol 3 | Desarrollo de videojuegos multiplataforma en C++ Moderno",
       "context": "html > head > meta [content]"
     },
     "seo_og_description": {
-      "value": "Un motor C++ moderno y de código abierto para móviles, escritorio, Xbox y WebAssembly.",
+      "value": "Un motor de código abierto en C++ Moderno para móviles, escritorio, Xbox y WebAssembly.",
       "context": "html > head > meta [content]"
     },
     "seo_twitter_title": {
-      "value": "Axmol 3 | Desarrollo de juegos C++ moderno y multiplataforma",
+      "value": "Axmol 3 | Desarrollo de videojuegos multiplataforma en C++ moderno",
       "context": "html > head > meta [content]"
     },
     "seo_twitter_description": {
-      "value": "Un motor C++ moderno y de código abierto para móviles, escritorio, Xbox y WebAssembly.",
+      "value": "Un motor de código abierto en C++ Moderno para móviles, escritorio, Xbox y WebAssembly.",
       "context": "html > head > meta [content]"
     },
     "site_visually_hidden_focusable_skip_to_content": {
@@ -37,7 +37,7 @@
       "context": "html > body > nav.navbar [aria-label]"
     },
     "nav_aria_label_axmol_home": {
-      "value": "Inicio de Axmol",
+      "value": "Inicio",
       "context": "html > body > nav.navbar > div.container > a.navbar-brand [aria-label]"
     },
     "nav_alt_axmol": {
@@ -77,7 +77,7 @@
       "context": "html > body > nav.navbar > div.container > button.navbar-toggler [aria-label]"
     },
     "nav_nav_link_api_reference": {
-      "value": "Referencia de API",
+      "value": "Referencia de la API",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_nav_link_wiki": {
@@ -85,7 +85,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_nav_link_support_axmol": {
-      "value": "Apoyar Axmol",
+      "value": "Apóyanos",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_aria_label_language_2": {
@@ -145,7 +145,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
     "release_banner_span_axmol_3_0_0_beta1": {
-      "value": "Axmol 3.0.0-beta1 llegará pronto",
+      "value": "Axmol 3.0.0-beta1 llegará pronto.",
       "context": "html > body > main#main-content > div.release-banner > div.container > span"
     },
     "release_banner_link_explore_the_beta_preview": {
@@ -153,7 +153,7 @@
       "context": "html > body > main#main-content > div.release-banner > div.container > a"
     },
     "hero_eyebrow_open_source_code_first_cross": {
-      "value": "CÓDIGO ABIERTO · CODE FIRST · MULTIPLATAFORMA",
+      "value": "CÓDIGO ABIERTO · ORIENTADO AL CÓDIGO · MULTIPLATAFORMA",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.eyebrow"
     },
     "hero_display_3_axmol": {
@@ -161,7 +161,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
     },
     "hero_hero_lead_modern_c_game_development_for": {
-      "value": "Desarrollo de juegos C++ moderno para móviles, escritorio, Xbox y WebAssembly.",
+      "value": "Desarrollo en C++ moderno de videojuegos para móviles, escritorio, Xbox y WebAssembly.",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
     },
     "hero_link_explore_axmol_3_beta": {
@@ -273,7 +273,7 @@
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.section-heading > p.eyebrow"
     },
     "v3_highlights_heading_one_engine_a_wider_frontier": {
-      "value": "Un motor, un horizonte más amplio.",
+      "value": "Un motor para ir más allá.",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.section-heading > h2"
     },
     "v3_highlights_card_title_modern_graphics": {
@@ -281,15 +281,15 @@
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
     "v3_highlights_copy_write_hlsl_once_and_target": {
-      "value": "Escribe HLSL una vez y usa Dynamic RHI en D3D11, D3D12, Vulkan, Metal y OpenGL.",
+      "value": "Con RHI Dinámico en D3D11, D3D12, Vulkan, Metal y OpenGL solo hay que escribir HLSL una vez.",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
     "v3_highlights_card_title_modern_c": {
-      "value": "C++ moderno",
+      "value": "C++ Moderno",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
     "v3_highlights_copy_move_to_c_23_with": {
-      "value": "Pasa a C++23 con un núcleo renovado, herramientas de compilación y un flujo de trabajo orientado a producción.",
+      "value": "Pasamos a C++23 con un núcleo renovado, herramientas de compilación y un flujo de trabajo orientado a producción.",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
     "v3_highlights_card_title_more_platforms": {
@@ -297,7 +297,7 @@
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
     "v3_highlights_copy_reach_arm_desktops_openxr_devices": {
-      "value": "Llega a escritorios ARM, dispositivos OpenXR, móviles, Xbox y WebAssembly desde una sola base de código.",
+      "value": "Con Axmol se puede exportar a dispositivos ARM, OpenXR, móviles, Xbox y WebAssembly desde una sola base de código.",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
     "render_pipeline_eyebrow_a_clearer_rendering_path": {
@@ -305,15 +305,15 @@
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > p.eyebrow"
     },
     "render_pipeline_heading_write_shaders_once_target_multiple": {
-      "value": "Escribe shaders una vez. Apunta a varios backends.",
+      "value": "Escribe shaders una vez. Llega a varios backends.",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > h2"
     },
     "render_pipeline_copy_write_hlsl_once_then_use": {
-      "value": "Escribe HLSL una vez y usa axslcc para compilarlo para D3D11, D3D12, Vulkan, Metal y OpenGL.",
+      "value": "Escribe HLSL una vez, y usa axslcc para compilarlo para D3D11, D3D12, Vulkan, Metal y OpenGL.",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > p.text-body-secondary"
     },
     "render_pipeline_link_see_what_changed_in_v3": {
-      "value": "Ver cambios en v3",
+      "value": "Ver qué ha cambiado en la v3",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > a.btn"
     },
     "render_pipeline_aria_label_hlsl_source_flows_through_axslcc": {
@@ -357,7 +357,7 @@
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
     },
     "try_it_eyebrow_see_it_run": {
-      "value": "VERLO EN ACCIÓN",
+      "value": "MÍRALO EN ACCIÓN",
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.eyebrow"
     },
     "try_it_heading_start_with_a_working_example": {
@@ -365,7 +365,7 @@
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > h2"
     },
     "try_it_copy_try_the_live_webassembly_previews": {
-      "value": "Prueba las vistas previas en vivo de WebAssembly cuando estén disponibles y consulta la guía de configuración cuando quieras compilar localmente.",
+      "value": "Prueba las vistas previas disponibles en WebAssembly, y consulta la guía de configuración cuando quieras compilar en local.",
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.text-body-secondary"
     },
     "try_it_demo_label_cpp_tests": {
@@ -373,11 +373,11 @@
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
     },
     "try_it_strong_explore_the_engine_testbed": {
-      "value": "Explorar el banco de pruebas del motor",
+      "value": "Explorar el banco de pruebas de Axmol",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
     },
     "try_it_span_open_live_demo": {
-      "value": "Abrir demo en vivo",
+      "value": "Abrir la demo",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
     },
     "try_it_demo_label_fairygui": {
@@ -389,7 +389,7 @@
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
     },
     "try_it_span_open_live_demo_2": {
-      "value": "Abrir demo en vivo",
+      "value": "Abrir la vivo",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
     },
     "try_it_demo_label_lua_tests": {
@@ -401,7 +401,7 @@
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
     },
     "try_it_span_open_live_demo_3": {
-      "value": "Abrir demo en vivo",
+      "value": "Abrir la demo",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
     },
     "migration_eyebrow_moving_to_v3": {
@@ -409,11 +409,11 @@
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.eyebrow"
     },
     "migration_heading_bring_your_project_forward": {
-      "value": "Lleva tu proyecto adelante.",
+      "value": "Lleva tu proyecto más allá.",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > h2"
     },
     "migration_copy_the_v3_page_collects_the": {
-      "value": "La página de v3 reúne los cambios incompatibles y las rutas de migración para Axmol 2, Cocos2d-x, shaders, entrada y física.",
+      "value": "La página de la v3 compila las incompatibilidades y las rutas de migración para Axmol 2 y Cocos2d-x, además de shaders, fuentes de entrada y físicas.",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.text-body-secondary"
     },
     "migration_quick_link_axmol_2_axmol_3": {
@@ -433,7 +433,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
     },
     "home_content_supporter_tier_corporate_diamond": {
-      "value": "DIAMANTE CORPORATIVO",
+      "value": "DIAMANTE",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
     },
     "home_content_alt_scorewarrior": {
@@ -449,7 +449,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > p.text-body-secondary"
     },
     "home_content_supporter_link_visit_website": {
-      "value": "Visitar sitio web",
+      "value": "Visitar la página web",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > a.supporter-link"
     },
     "home_content_link_view_all_supporters": {
@@ -461,7 +461,7 @@
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
     "footer_link_simdsoft_limited_and_other_axmol": {
-      "value": "Simdsoft Limited y otros colaboradores de Axmol",
+      "value": "Simdsoft Limited y colaboradores de Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
     "footer_div_text_body_secondary_copy": {
@@ -527,7 +527,7 @@
       "context": "html > head > title"
     },
     "seo_description": {
-      "value": "Vista previa de Axmol 3.0.0-beta1: C++23, RHI modernos, shaders HLSL, ARM, OpenXR, nueva física y Pointer Events.",
+      "value": "Vista previa de Axmol 3.0.0-beta1: C++23, RHIs modernos, shaders HLSL, ARM, OpenXR, nuevas físicas y Pointer Events.",
       "context": "html > head > meta [content]"
     },
     "seo_og_title": {
@@ -555,7 +555,7 @@
       "context": "html > body > nav.navbar [aria-label]"
     },
     "nav_aria_label_axmol_home": {
-      "value": "Inicio de Axmol",
+      "value": "Inicio",
       "context": "html > body > nav.navbar > div.container > a.navbar-brand [aria-label]"
     },
     "nav_alt_axmol": {
@@ -595,7 +595,7 @@
       "context": "html > body > nav.navbar > div.container > button.navbar-toggler [aria-label]"
     },
     "nav_nav_link_api_reference": {
-      "value": "Referencia de API",
+      "value": "Referencia de la API",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_nav_link_wiki": {
@@ -603,7 +603,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_nav_link_support_axmol": {
-      "value": "Apoyar Axmol",
+      "value": "Apóyanos",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_aria_label_language_2": {
@@ -667,11 +667,11 @@
       "context": "html > body > main#main-content > header.v3-hero > div.container > p.eyebrow"
     },
     "site_title_axmol_3_is_coming": {
-      "value": "Axmol 3 está por llegar.",
+      "value": "Axmol 3 está al llegar.",
       "context": "html > body > main#main-content > header.v3-hero > div.container > h1"
     },
     "site_hero_lead_a_modernized_engine_core_rendering": {
-      "value": "Un núcleo de motor, una pila de renderizado y soporte de plataformas modernizados para la próxima generación de juegos multiplataforma.",
+      "value": "Un nuevo núcleo para el motor, una nueva pila de renderizado y soporte de plataformas modernas para la próxima generación de juegos multiplataforma.",
       "context": "html > body > main#main-content > header.v3-hero > div.container > p.hero-lead"
     },
     "site_link_view_the_roadmap": {
@@ -695,11 +695,11 @@
       "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > h2.h4"
     },
     "release_content_copy_this_page_is_ready_for": {
-      "value": "Esta página está lista para el anuncio de lanzamiento. El enlace de descarga se añadirá solo después de publicar la etiqueta oficial.",
+      "value": "Esta página está preparada para el anuncio de lanzamiento. El enlace de descarga se añadirá después de la publicación oficial.",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > p.text-body-secondary"
     },
     "release_content_link_follow_release_discussion": {
-      "value": "Seguir la conversación del lanzamiento",
+      "value": "Hilo de discusión del lanzamiento",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div.d-flex > a.btn"
     },
     "release_content_link_build_guide": {
@@ -711,7 +711,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
     },
     "release_content_heading_the_v3_foundation": {
-      "value": "La base de v3.",
+      "value": "La base de la v3.",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2"
     },
     "release_content_card_title_c_23": {
@@ -719,15 +719,15 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
     "release_content_copy_the_language_baseline_moves_forward": {
-      "value": "La base del lenguaje avanza a C++23 con un núcleo y una cadena de herramientas renovados.",
+      "value": "Axmol adopta C++23 con un núcleo y herramientas renovadas.",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
     "release_content_card_title_modern_rhi": {
-      "value": "Modern RHI",
+      "value": "RHI Moderno",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
     "release_content_copy_d3d11_d3d12_and_vulkan_join": {
-      "value": "D3D11, D3D12 y Vulkan se unen a Metal y OpenGL, con selección Dynamic RHI.",
+      "value": "D3D11, D3D12 y Vulkan se unen a Metal y OpenGL gracias al nuevo RHI dinámico.",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
     "release_content_card_title_hlsl_shaders": {
@@ -735,7 +735,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
     "release_content_copy_maintain_one_shader_source_and": {
-      "value": "Mantén una fuente de shader y compílala para cada backend de renderizado compatible.",
+      "value": "Una sola base de código para los shaders que se puede compliar para todos los backend compatibles.",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
     "release_content_card_title_arm_openxr": {
@@ -743,31 +743,31 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
     "release_content_copy_windows_and_linux_arm_support": {
-      "value": "Compatibilidad ARM para Windows y Linux junto con composición de escenas OpenXR y entrada de controladores.",
+      "value": "Se añade soporte para ARM en Windows y Linux, junto con composición de escenas OpenXR y controladores dompatibñes.",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
     "release_content_card_title_new_physics": {
-      "value": "Nueva física",
+      "value": "Nuevas físicas",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
     "release_content_copy_box2d_3_x_powers_2d": {
-      "value": "Box2D 3.x impulsa la física 2D y JoltPhysics 5.x admite escenas 3D.",
+      "value": "Box2D 3.x potencia las físicas en 2D, y JoltPhysics 5.x hace lo mismo con las 3D.",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
     "release_content_card_title_input_profiling": {
-      "value": "Entrada y perfilado",
+      "value": "Eventos de entrada y profiling",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
     "release_content_copy_pointer_events_and_compile_time": {
-      "value": "Pointer Events y el perfilado Tracy seleccionable en tiempo de compilación mejoran el ciclo de desarrollo.",
+      "value": "Mejora el ciclo de desarrollo con Pointer Events y el profiling con Tracy (seleccionable durante la compilación).",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
     "release_content_eyebrow_platform_matrix": {
-      "value": "MATRIZ DE PLATAFORMAS",
+      "value": "PLATAFORMAS",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.section-heading > p.eyebrow"
     },
     "release_content_heading_choose_the_backend_that_fits": {
-      "value": "Elige el backend adecuado para el dispositivo.",
+      "value": "Elige el backend adecuado para cada dispositivo.",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.section-heading > h2"
     },
     "release_content_th_target": {
@@ -775,7 +775,7 @@
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
     },
     "release_content_th_primary_rhi_options": {
-      "value": "Opciones de RHI principales",
+      "value": "Opciones de RHI",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
     },
     "release_content_th_status": {
@@ -791,7 +791,7 @@
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
     "release_content_td_v3_preview": {
-      "value": "Vista previa v3",
+      "value": "v3 preview",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
     "release_content_th_linux": {
@@ -803,7 +803,7 @@
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
     "release_content_td_v3_preview_2": {
-      "value": "Vista previa v3",
+      "value": "v3 preview",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
     "release_content_th_android": {
@@ -815,7 +815,7 @@
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
     "release_content_td_v3_preview_3": {
-      "value": "Vista previa v3",
+      "value": "v3 preview",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
     "release_content_th_apple_platforms": {
@@ -827,7 +827,7 @@
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
     "release_content_td_v3_preview_4": {
-      "value": "Vista previa v3",
+      "value": "v3 preview",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
     "release_content_th_webassembly": {
@@ -847,11 +847,11 @@
       "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.eyebrow"
     },
     "migration_heading_prepare_before_you_switch": {
-      "value": "Prepárate antes de cambiar.",
+      "value": "Prepárate antes del cambio.",
       "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > h2"
     },
     "migration_copy_axmol_3_removes_deprecated_apis": {
-      "value": "Axmol 3 elimina API obsoletas y cambia varios sistemas principales. Empieza por la ruta adecuada.",
+      "value": "Axmol 3 elimina APIs obsoletas y cambia varios sistemas principales. Selecciona la ruta apropiada.",
       "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.text-body-secondary"
     },
     "migration_strong_axmol_2_3": {
@@ -867,7 +867,7 @@
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
     },
     "migration_small_namespace_and_project_migration": {
-      "value": "Migración de espacio de nombres y proyecto",
+      "value": "Migración de namespaces y del proyecto",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
     },
     "migration_strong_shader_migration": {
@@ -875,23 +875,23 @@
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
     },
     "migration_small_move_from_glsl_workflows_to": {
-      "value": "Pasar de flujos GLSL a HLSL",
+      "value": "Paso de GLSL a HLSL",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
     },
     "migration_strong_input_migration": {
-      "value": "Migración de entrada",
+      "value": "Migración de la entrada",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
     },
     "migration_small_adopt_pointer_events": {
-      "value": "Adoptar Pointer Events",
+      "value": "Adopción de Pointer Events",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
     },
     "release_content_h4_beta_means_feedback": {
-      "value": "Beta significa comentarios.",
+      "value": "Esperamos vuestros comentarios sobre la beta.",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > h2.h4"
     },
     "release_content_copy_use_the_preview_for_evaluation": {
-      "value": "Usa la vista previa para evaluación y migración. Informa regresiones mediante GitHub Issues y comenta dudas de diseño en Discussions.",
+      "value": "La v3 preview está disponible para evaluación y migración. Infórmanos de problemas mediante GitHub Issues y comenta dudas en Discussions.",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > p.text-body-secondary"
     },
     "release_content_link_report_an_issue": {
@@ -899,11 +899,11 @@
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "release_content_link_join_discussions": {
-      "value": "Unirse a las discusiones",
+      "value": "Unirse a la discusión",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "release_content_strong_need_the_conservative_production_bas": {
-      "value": "¿Necesitas una base de producción conservadora?",
+      "value": "¿Necesitas un motor estable?",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > strong"
     },
     "release_content_copy_use_axmol_2_11_x": {
@@ -969,7 +969,7 @@
   },
   "sponsor": {
     "seo_title": {
-      "value": "Apoya Axmol | Apoyo al código abierto",
+      "value": "Apoya Axmol | Apoya el código abierto",
       "context": "html > head > title"
     },
     "seo_description": {
@@ -1017,7 +1017,7 @@
       "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
     "nav_nav_link_api_reference": {
-      "value": "Referencia de API",
+      "value": "Referencia de la API",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_nav_link_wiki": {
@@ -1025,7 +1025,7 @@
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_nav_link_support_axmol": {
-      "value": "Apoyar Axmol",
+      "value": "Apóyanos",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "nav_aria_label_language_2": {
@@ -1081,11 +1081,11 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
     },
     "hero_display_4_support_axmol": {
-      "value": "Apoya Axmol.",
+      "value": "Apóyanos con Axmol.",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "hero_hero_lead_we_are_a_global_community": {
-      "value": "Somos una comunidad global de fans y desarrolladores de Axmol que lo construye y mantiene con pasión.",
+      "value": "Somos una comunidad global de fans y desarrolladores que construye y mantiene Axmol con pasión.",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.hero-lead"
     },
     "hero_copy_axmol_is_free_and_open": {
@@ -1101,7 +1101,7 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
     "hero_copy_your_support_helps_us_accelerate": {
-      "value": "Tu apoyo nos ayuda a acelerar el desarrollo, priorizar funciones importantes y mantener Axmol en crecimiento para todos.",
+      "value": "Tu apoyo nos ayuda a acelerar el desarrollo, priorizar funciones importantes y mantener Axmol activo y en crecimiento.",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.mb-0"
     },
     "support_intro_eyebrow_how_to_help": {
@@ -1109,11 +1109,11 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
     },
     "support_intro_heading_keep_the_work_sustainable": {
-      "value": "Mantén el trabajo sostenible.",
+      "value": "Manteniendo el trabajo en Axmol sostenible.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > h2"
     },
     "support_intro_copy_axmol_is_led_and_maintained": {
-      "value": "Axmol es dirigido y mantenido por",
+      "value": "Axmol está dirigido y mantenido por",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary"
     },
     "support_intro_link_simdsoft_limited": {
@@ -1129,7 +1129,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid [aria-label]"
     },
     "nav_sponsor_path_index_01_individual": {
-      "value": "01 / PATROCINIO INDIVIDUAL",
+      "value": "01 / INDIVIDUAL",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_individual_sponsorship": {
@@ -1149,7 +1149,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
     "nav_sponsor_path_index_02_corporate": {
-      "value": "02 / APOYO CORPORATIVO",
+      "value": "02 / CORPORATIVO",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_corporate_support": {
@@ -1157,7 +1157,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
     },
     "nav_copy_contact_the_maintainers_to_discuss": {
-      "value": "Contacta a los responsables para hablar del apoyo a Axmol.",
+      "value": "Contacta con los responsables para hablar de cómo apoyar a Axmol.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
     },
     "nav_sponsor_path_action_info_simdsoft_com": {
@@ -1169,7 +1169,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
     "nav_sponsor_path_index_03_recognition": {
-      "value": "03 / RECONOCIMIENTO PÚBLICO",
+      "value": "03 / RECONOCIMIENTO",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_public_recognition": {
@@ -1177,7 +1177,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
     },
     "nav_copy_see_the_organizations_and_individual": {
-      "value": "Consulta las organizaciones y personas reconocidas por apoyar Axmol.",
+      "value": "Consulta las organizaciones y personas que apoyan Axmol.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
     },
     "nav_sponsor_path_action_view_public_supporters": {
@@ -1193,7 +1193,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > h3.h4"
     },
     "support_intro_copy_choose_a_payment_channel_then": {
-      "value": "Elige un canal de pago y después un nivel mensual.",
+      "value": "Elige un canal de pago y una cantidad mensual.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_span_payment_channel": {
@@ -1229,7 +1229,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > h4"
     },
     "support_intro_copy_scan_the_qr_code_and": {
-      "value": "Escanea el código QR e introduce cualquier importe en tu aplicación de pago.",
+      "value": "Escanea el código QR e introduce el importe que prefieras en tu aplicación de pago.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.text-body-secondary"
     },
     "support_intro_copy_please_add_the_note_sponsor": {
@@ -1237,11 +1237,11 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.small"
     },
     "support_intro_button_enlarge_qr_code": {
-      "value": "Ampliar código QR",
+      "value": "Ampliar el código QR",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > button.btn"
     },
     "support_intro_aria_label_enlarge_alipay_qr_code": {
-      "value": "Ampliar código QR Alipay",
+      "value": "Ampliar el código QR Alipay",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > button.sponsor-qr-image-button [aria-label]"
     },
     "support_intro_alt_alipay_sponsorship_qr_code": {
@@ -1341,15 +1341,15 @@
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.eyebrow"
     },
     "supporters_heading_supported_in_the_open": {
-      "value": "Apoyado en abierto.",
+      "value": "Apoyos abiertos.",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2"
     },
     "supporters_copy_we_thank_the_organizations_and": {
-      "value": "Agradecemos a las organizaciones y personas que apoyan el mantenimiento a largo plazo de Axmol.",
+      "value": "Nuestro agradecimiento a las organizaciones y personas que apoyan el mantenimiento a largo plazo de Axmol.",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
     },
     "supporters_supporter_tier_corporate_diamond": {
-      "value": "DIAMANTE CORPORATIVO",
+      "value": "DIAMANTE",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
     },
     "supporters_alt_scorewarrior": {
@@ -1401,7 +1401,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading1 > button.accordion-button"
     },
     "faq_div_accordion_body_the_supporter_list_is_maintained": {
-      "value": "La lista de apoyos es mantenida por el equipo de Axmol. Contacta con",
+      "value": "La lista de apoyos está mantenida por el equipo de Axmol. Por favor, contacta con",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
     },
     "faq_link_oss_simdsoft_com": {
@@ -1409,7 +1409,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > a"
     },
     "faq_div_accordion_body_to_correct_or_update_a": {
-      "value": "para corregir o actualizar una publicación pública.",
+      "value": "para corregir o actualizar un apoyo público.",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
     },
     "faq_button_how_can_companies_support_axmol": {
@@ -1433,7 +1433,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
     },
     "faq_div_accordion_body_for_a_private_discussion_support": {
-      "value": "para una conversación privada. El apoyo no concede propiedad ni control sobre la dirección técnica de Axmol.",
+      "value": "para acordar una conversación. El apoyo no concede propiedad ni control sobre la dirección técnica de Axmol.",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_button_can_i_choose_whether_my": {
@@ -1449,7 +1449,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body > a"
     },
     "faq_div_accordion_body_and_we_ll_update_your": {
-      "value": "y actualizaremos tu listado.",
+      "value": "y actualizaremos el listado.",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
     },
     "footer_div_text_body_secondary_2019_present": {
@@ -1559,7 +1559,7 @@
     "ok": "Aceptar",
     "qrHelp": "Escanea el código QR e introduce cualquier importe en tu aplicación de pago.",
     "tierHelp": "Elige un canal de pago y un importe. El patrocinio individual mediante PayPal, GitHub Sponsors y OSC está limitado a USD {amount}.",
-    "enlarge": "Ampliar código QR de {name}",
+    "enlarge": "Ampliar el código QR de {name}",
     "note": "Añade la nota: Sponsor Axmol",
     "qrTitle": "Código QR de {name}"
   }
