@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="{{i18n:site.htmlLang}}" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{i18n:v3.seo_title}}</title>
+    <meta name="description" content="{{i18n:v3.seo_description}}">
+    <meta name="color-scheme" content="light dark">
+    <link rel="canonical" href="{{route:current}}">
+    <link rel="alternate" hreflang="en" href="https://axmol.dev/v3/">
+    <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/v3/">
+    <link rel="alternate" hreflang="ja" href="https://axmol.dev/ja/v3/">
+    <link rel="alternate" hreflang="es" href="https://axmol.dev/es/v3/">
+    <link rel="alternate" hreflang="ru" href="https://axmol.dev/ru/v3/">
+    <link rel="alternate" hreflang="x-default" href="{{route:english}}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{i18n:v3.seo_og_title}}">
+    <meta property="og:description" content="{{i18n:v3.seo_og_description}}">
+    <meta property="og:url" content="{{route:current}}">
+    <meta property="og:image" content="https://axmol.dev/assets/img/splash_black.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{i18n:v3.seo_twitter_title}}">
+    <meta name="twitter:description" content="{{i18n:v3.seo_twitter_description}}">
+    <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
+    <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
+    <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Axmol 3.0.0-beta1","url":"https://axmol.dev/v3/","isPartOf":{"@type":"WebSite","name":"Axmol","url":"https://axmol.dev/"}}</script>
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#main-content">{{i18n:v3.site_visually_hidden_focusable_skip_to_content}}</a>
+    <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="{{i18n:v3.nav_aria_label_primary_navigation}}">
+      <div class="container">
+        <a class="navbar-brand" href="/" aria-label="{{i18n:v3.nav_aria_label_axmol_home}}">
+          <img src="/assets/img/logo.png" alt="{{i18n:v3.nav_alt_axmol}}" height="30">
+        </a>
+        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.nav_aria_label_language}}">{{i18n:v3.nav_button_english}}</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
+              <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">{{i18n:v3.nav_dropdown_item_english}}</a></li>
+              <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">{{i18n:v3.nav_dropdown_item_copy}}</a></li>
+              <li><a class="dropdown-item" href="/ja/v3/" lang="ja">{{i18n:v3.nav_dropdown_item_copy_2}}</a></li>
+              <li><a class="dropdown-item" href="/es/v3/" lang="es">{{i18n:v3.nav_dropdown_item_espanol}}</a></li>
+              <li><a class="dropdown-item" href="/ru/v3/" lang="ru">{{i18n:v3.nav_dropdown_item_copy_3}}</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="{{i18n:v3.nav_aria_label_toggle_navigation}}">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="primary-nav">
+          <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link" href="https://axmol.dev/manual">{{i18n:v3.nav_nav_link_api_reference}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">{{i18n:v3.nav_nav_link_wiki}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-sponsor" href="/sponsor/">{{i18n:v3.nav_nav_link_support_axmol}}</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+            <li class="nav-item dropdown d-none d-lg-block">
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.nav_aria_label_language_2}}">{{i18n:v3.nav_button_english_2}}</button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">{{i18n:v3.nav_dropdown_item_english_2}}</a></li>
+                <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">{{i18n:v3.nav_dropdown_item_copy_4}}</a></li>
+                <li><a class="dropdown-item" href="/ja/v3/" lang="ja">{{i18n:v3.nav_dropdown_item_copy_5}}</a></li>
+                <li><a class="dropdown-item" href="/es/v3/" lang="es">{{i18n:v3.nav_dropdown_item_espanol_2}}</a></li>
+                <li><a class="dropdown-item" href="/ru/v3/" lang="ru">{{i18n:v3.nav_dropdown_item_copy_6}}</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="{{i18n:v3.nav_aria_label_axmol_github_repository}}">
+                <svg class="github-icon" width="22" height="22" aria-hidden="true">
+                  <use href="/assets/icons.svg#github-icon">
+                  </use>
+                </svg>
+                <span class="d-lg-none ms-2">{{i18n:v3.nav_d_lg_none_github}}</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.nav_aria_label_theme}}">
+                <svg class="theme-icon" width="20" height="20" aria-hidden="true">
+                  <use href="/assets/icons.svg#circle-half">
+                  </use>
+                </svg>
+                <span class="d-lg-none ms-2">{{i18n:v3.nav_d_lg_none_theme}}</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+                <li>
+                  <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">{{i18n:v3.nav_dropdown_item_light}}</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" data-theme-option="dark" onclick="AxmolTheme.saveTheme('dark')">{{i18n:v3.nav_dropdown_item_dark}}</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" data-theme-option="auto" onclick="AxmolTheme.saveTheme('auto')">{{i18n:v3.nav_dropdown_item_auto}}</button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main id="main-content">
+      <header class="v3-hero hero-gradient">
+        <div class="container py-5 py-lg-6">
+          <p class="eyebrow">{{i18n:v3.site_eyebrow_public_preview_3_0_0}}</p>
+          <h1>{{i18n:v3.site_title_axmol_3_is_coming}}</h1>
+          <p class="hero-lead">{{i18n:v3.site_hero_lead_a_modernized_engine_core_rendering}}</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-primary btn-lg" href="https://github.com/axmolengine/axmol/discussions/2650" target="_blank" rel="noopener">{{i18n:v3.site_link_view_the_roadmap}}</a>
+            <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">{{i18n:v3.site_link_read_setup_guide}}</a>
+            <a class="btn btn-link btn-lg px-0" href="#migration">{{i18n:v3.site_link_plan_your_migration}} <svg class="icon-inline" aria-hidden="true">
+                <use href="/assets/icons.svg#arrow-right">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+      <section class="section-tight">
+        <div class="container">
+          <div class="release-state">
+            <div>
+              <span class="badge text-bg-primary">{{i18n:v3.release_content_badge_coming_soon}}</span>
+              <h2 class="h4 mt-3 mb-1">{{i18n:v3.release_content_h4_3_0_0_beta1}}</h2>
+              <p class="text-body-secondary mb-0">{{i18n:v3.release_content_copy_this_page_is_ready_for}}</p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions/3129" target="_blank" rel="noopener">{{i18n:v3.release_content_link_follow_release_discussion}}</a>
+              <a class="btn btn-link" href="https://github.com/axmolengine/axmol/blob/dev/docs/DevSetup.md" target="_blank" rel="noopener">{{i18n:v3.release_content_link_build_guide}}</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-panel">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">{{i18n:v3.release_content_eyebrow_what_s_new}}</p>
+            <h2>{{i18n:v3.release_content_heading_the_v3_foundation}}</h2>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <article class="story-card">
+                <svg class="story-icon" aria-hidden="true">
+                  <use href="/assets/icons.svg#code">
+                  </use>
+                </svg>
+                <h3>{{i18n:v3.release_content_card_title_c_23}}</h3>
+                <p>{{i18n:v3.release_content_copy_the_language_baseline_moves_forward}}</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="story-card">
+                <svg class="story-icon" aria-hidden="true">
+                  <use href="/assets/icons.svg#palette2">
+                  </use>
+                </svg>
+                <h3>{{i18n:v3.release_content_card_title_modern_rhi}}</h3>
+                <p>{{i18n:v3.release_content_copy_d3d11_d3d12_and_vulkan_join}}</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="story-card">
+                <svg class="story-icon" aria-hidden="true">
+                  <use href="/assets/icons.svg#braces">
+                  </use>
+                </svg>
+                <h3>{{i18n:v3.release_content_card_title_hlsl_shaders}}</h3>
+                <p>{{i18n:v3.release_content_copy_maintain_one_shader_source_and}}</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="story-card">
+                <svg class="story-icon" aria-hidden="true">
+                  <use href="/assets/icons.svg#globe2">
+                  </use>
+                </svg>
+                <h3>{{i18n:v3.release_content_card_title_arm_openxr}}</h3>
+                <p>{{i18n:v3.release_content_copy_windows_and_linux_arm_support}}</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="story-card">
+                <svg class="story-icon" aria-hidden="true">
+                  <use href="/assets/icons.svg#box-seam">
+                  </use>
+                </svg>
+                <h3>{{i18n:v3.release_content_card_title_new_physics}}</h3>
+                <p>{{i18n:v3.release_content_copy_box2d_3_x_powers_2d}}</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="story-card">
+                <svg class="story-icon" aria-hidden="true">
+                  <use href="/assets/icons.svg#lightning-charge-fill">
+                  </use>
+                </svg>
+                <h3>{{i18n:v3.release_content_card_title_input_profiling}}</h3>
+                <p>{{i18n:v3.release_content_copy_pointer_events_and_compile_time}}</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-tight">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">{{i18n:v3.release_content_eyebrow_platform_matrix}}</p>
+            <h2>{{i18n:v3.release_content_heading_choose_the_backend_that_fits}}</h2>
+          </div>
+          <div class="table-responsive">
+            <table class="table align-middle platform-table">
+              <thead>
+                <tr>
+                  <th scope="col">{{i18n:v3.release_content_th_target}}</th>
+                  <th scope="col">{{i18n:v3.release_content_th_primary_rhi_options}}</th>
+                  <th scope="col">{{i18n:v3.release_content_th_status}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">{{i18n:v3.release_content_th_windows_uwp}}</th>
+                  <td>{{i18n:v3.release_content_td_d3d12_d3d11_vulkan_opengl}}</td>
+                  <td>{{i18n:v3.release_content_td_v3_preview}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{i18n:v3.release_content_th_linux}}</th>
+                  <td>{{i18n:v3.release_content_td_vulkan_opengl}}</td>
+                  <td>{{i18n:v3.release_content_td_v3_preview_2}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{i18n:v3.release_content_th_android}}</th>
+                  <td>{{i18n:v3.release_content_td_vulkan_opengl_es}}</td>
+                  <td>{{i18n:v3.release_content_td_v3_preview_3}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{i18n:v3.release_content_th_apple_platforms}}</th>
+                  <td>{{i18n:v3.release_content_td_metal_opengl_es}}</td>
+                  <td>{{i18n:v3.release_content_td_v3_preview_4}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">{{i18n:v3.release_content_th_webassembly}}</th>
+                  <td>{{i18n:v3.release_content_td_webgl_2}}</td>
+                  <td>{{i18n:v3.release_content_td_preview}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section class="section-panel" id="migration">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">{{i18n:v3.migration_eyebrow_migration}}</p>
+            <h2>{{i18n:v3.migration_heading_prepare_before_you_switch}}</h2>
+            <p class="text-body-secondary">{{i18n:v3.migration_copy_axmol_3_removes_deprecated_apis}}</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+              <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/axmol-v3-migrate-guide" target="_blank" rel="noopener">
+                <strong>{{i18n:v3.migration_strong_axmol_2_3}}</strong>
+                <small>{{i18n:v3.migration_small_renamed_and_removed_apis}}</small>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Cocos2d%E2%80%90x-migration-guide" target="_blank" rel="noopener">
+                <strong>{{i18n:v3.migration_strong_cocos2d_x_axmol}}</strong>
+                <small>{{i18n:v3.migration_small_namespace_and_project_migration}}</small>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Shaders-in-Axmol3" target="_blank" rel="noopener">
+                <strong>{{i18n:v3.migration_strong_shader_migration}}</strong>
+                <small>{{i18n:v3.migration_small_move_from_glsl_workflows_to}}</small>
+              </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <a class="quick-link h-100" href="https://github.com/axmolengine/axmol/wiki/Migration-Guide-for-PR-3173" target="_blank" rel="noopener">
+                <strong>{{i18n:v3.migration_strong_input_migration}}</strong>
+                <small>{{i18n:v3.migration_small_adopt_pointer_events}}</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-tight">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <h2 class="h4">{{i18n:v3.release_content_h4_beta_means_feedback}}</h2>
+              <p class="text-body-secondary">{{i18n:v3.release_content_copy_use_the_preview_for_evaluation}}</p>
+              <div class="d-flex flex-wrap gap-2">
+                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/issues" target="_blank" rel="noopener">{{i18n:v3.release_content_link_report_an_issue}}</a>
+                <a class="btn btn-outline-primary" href="https://github.com/axmolengine/axmol/discussions" target="_blank" rel="noopener">{{i18n:v3.release_content_link_join_discussions}}</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="notice-card">
+                <strong>{{i18n:v3.release_content_strong_need_the_conservative_production_bas}}</strong>
+                <p class="mb-3">{{i18n:v3.release_content_copy_use_axmol_2_11_x}}</p>
+                <a href="https://github.com/axmolengine/axmol/releases?q=v2.11&expanded=true#release-v2.11.4" target="_blank" rel="noopener">{{i18n:v3.release_content_link_download_stable_releases}} <svg class="icon-inline">
+                    <use href="/assets/icons.svg#arrow-right">
+                    </use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-top mt-5">
+      <div class="container py-4">
+        <div class="row gy-3 align-items-center">
+          <!-- Left: Copyright -->
+          <div class="col-md text-center text-md-start">
+            <div class="text-body-secondary small">
+              {{i18n:v3.footer_div_text_body_secondary_2019_present}}
+              <a href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
+                target="_blank" rel="noopener">{{i18n:v3.footer_link_simdsoft_limited_and_other_axmol}}</a>{{i18n:v3.footer_div_text_body_secondary_copy}}<br>
+              {{i18n:v3.footer_div_text_body_secondary_source_code_on}} <a href="https://github.com/axmolengine/axmol.dev"
+                target="_blank" rel="noopener">{{i18n:v3.footer_link_github}}</a> {{i18n:v3.footer_div_text_body_secondary_hosted_on}}
+              <a href="https://www.netlify.com/" target="_blank" rel="noopener">{{i18n:v3.footer_link_netlify}}</a>{{i18n:v3.footer_div_text_body_secondary_copy_2}}
+            </div>
+          </div>
+
+          <!-- Right: Community -->
+          <div class="col-md">
+            <div class="text-center text-md-end">
+              <h6 class="text-body-secondary mb-2">{{i18n:v3.footer_h6_text_body_secondary_community}}</h6>
+              <div
+                class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
+                <a class="text-body-secondary"
+                  href="https://github.com/axmolengine/axmol/discussions"
+                  target="_blank" rel="noopener">{{i18n:v3.footer_link_github_discussions}}</a>
+                <a class="text-body-secondary"
+                  href="https://discord.gg/TvY2nwPbQR" target="_blank"
+                  rel="noopener">{{i18n:v3.footer_link_discord}}</a>
+                <a class="text-body-secondary"
+                  href="https://www.reddit.com/r/axmol/" target="_blank"
+                  rel="noopener">{{i18n:v3.footer_link_reddit}}</a>
+                <a class="text-body-secondary"
+                  href="https://github.com/axmolengine/axmol/wiki/Made-in-Axmol"
+                  target="_blank" rel="noopener">{{i18n:v3.footer_link_made_in_axmol}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
+    <script src="/assets/js/theme.js?v=2.1.0"></script>
+  </body>
+</html>

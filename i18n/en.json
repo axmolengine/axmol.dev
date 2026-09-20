@@ -1,0 +1,1566 @@
+{
+  "site": {
+    "htmlLang": "en",
+    "simdsoftUrl": "https://simdsoft.com/?lang=en"
+  },
+  "home": {
+    "seo_title": {
+      "value": "Axmol 3 | Modern C++ game development across platforms",
+      "context": "html > head > title"
+    },
+    "seo_description": {
+      "value": "Axmol is an open-source, code-first C++ game engine for mobile, desktop, Xbox and WebAssembly. Explore Axmol 3.0 beta.",
+      "context": "html > head > meta [content]"
+    },
+    "seo_og_title": {
+      "value": "Axmol 3 | Modern C++ game development across platforms",
+      "context": "html > head > meta [content]"
+    },
+    "seo_og_description": {
+      "value": "A modern, open-source C++ engine for mobile, desktop, Xbox and WebAssembly.",
+      "context": "html > head > meta [content]"
+    },
+    "seo_twitter_title": {
+      "value": "Axmol 3 | Modern C++ game development across platforms",
+      "context": "html > head > meta [content]"
+    },
+    "seo_twitter_description": {
+      "value": "A modern, open-source C++ engine for mobile, desktop, Xbox and WebAssembly.",
+      "context": "html > head > meta [content]"
+    },
+    "site_visually_hidden_focusable_skip_to_content": {
+      "value": "Skip to content",
+      "context": "html > body > a.visually-hidden-focusable"
+    },
+    "nav_aria_label_primary_navigation": {
+      "value": "Primary navigation",
+      "context": "html > body > nav.navbar [aria-label]"
+    },
+    "nav_aria_label_axmol_home": {
+      "value": "Axmol home",
+      "context": "html > body > nav.navbar > div.container > a.navbar-brand [aria-label]"
+    },
+    "nav_alt_axmol": {
+      "value": "Axmol",
+      "context": "html > body > nav.navbar > div.container > a.navbar-brand > img [alt]"
+    },
+    "nav_aria_label_language": {
+      "value": "Language",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
+    },
+    "nav_button_english": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
+    },
+    "nav_dropdown_item_english": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy": {
+      "value": "中文",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_2": {
+      "value": "日本語",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol": {
+      "value": "Español",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_3": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_toggle_navigation": {
+      "value": "Toggle navigation",
+      "context": "html > body > nav.navbar > div.container > button.navbar-toggler [aria-label]"
+    },
+    "nav_nav_link_api_reference": {
+      "value": "API Reference",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_wiki": {
+      "value": "Wiki",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_support_axmol": {
+      "value": "Support Axmol",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_aria_label_language_2": {
+      "value": "Language",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
+    },
+    "nav_button_english_2": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
+    },
+    "nav_dropdown_item_english_2": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_4": {
+      "value": "中文",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_5": {
+      "value": "日本語",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol_2": {
+      "value": "Español",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_6": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_axmol_github_repository": {
+      "value": "Axmol GitHub repository",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
+    },
+    "nav_d_lg_none_github": {
+      "value": "GitHub",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link > span.d-lg-none"
+    },
+    "nav_aria_label_theme": {
+      "value": "Theme",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown [aria-label]"
+    },
+    "nav_d_lg_none_theme": {
+      "value": "Theme",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown > span.d-lg-none"
+    },
+    "nav_dropdown_item_light": {
+      "value": "Light",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_dark": {
+      "value": "Dark",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_auto": {
+      "value": "Auto",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "release_banner_span_axmol_3_0_0_beta1": {
+      "value": "Axmol 3.0.0-beta1 is coming",
+      "context": "html > body > main#main-content > div.release-banner > div.container > span"
+    },
+    "release_banner_link_explore_the_beta_preview": {
+      "value": "Explore the beta preview",
+      "context": "html > body > main#main-content > div.release-banner > div.container > a"
+    },
+    "hero_eyebrow_open_source_code_first_cross": {
+      "value": "OPEN SOURCE · CODE FIRST · CROSS PLATFORM",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.eyebrow"
+    },
+    "hero_display_3_axmol": {
+      "value": "Axmol",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
+    },
+    "hero_hero_lead_modern_c_game_development_for": {
+      "value": "Modern C++ game development for mobile, desktop, Xbox and WebAssembly.",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
+    },
+    "hero_link_explore_axmol_3_beta": {
+      "value": "Explore Axmol 3 Beta",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "hero_link_download_2_11_4_lts": {
+      "value": "Download 2.11.4 LTS",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "hero_link_documentation": {
+      "value": "Documentation",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "hero_aria_label_release_channels": {
+      "value": "Release channels",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills [aria-label]"
+    },
+    "hero_badge_3_0_0_beta1_public": {
+      "value": "3.0.0-beta1 · Public beta",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills > span.badge"
+    },
+    "hero_badge_2_11_x_stable_lts": {
+      "value": "2.11.x · Stable LTS",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills > span.badge"
+    },
+    "hero_aria_label_axmol_c_example": {
+      "value": "Axmol C++ example",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card [aria-label]"
+    },
+    "hero_code_title_hello_axmol_cpp": {
+      "value": "hello_axmol.cpp",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > div.code-head > span.code-title"
+    },
+    "hero_c_cmt_one_c_codebase_every_platform": {
+      "value": "// one C++ codebase, every platform",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-cmt"
+    },
+    "hero_c_key_auto": {
+      "value": "auto",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-key"
+    },
+    "hero_code_line_scene_ax_scene": {
+      "value": "scene = ax::Scene::",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_fn_create": {
+      "value": "create",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
+    },
+    "hero_code_line_copy": {
+      "value": "();",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_key_auto_2": {
+      "value": "auto",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-key"
+    },
+    "hero_code_line_player_ax_sprite": {
+      "value": "player = ax::Sprite::",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_fn_create_2": {
+      "value": "create",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
+    },
+    "hero_code_line_copy_2": {
+      "value": "(",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_str_player_png": {
+      "value": "\"player.png\"",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-str"
+    },
+    "hero_code_line_copy_3": {
+      "value": ");",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_code_line_player": {
+      "value": "player->",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_fn_setposition": {
+      "value": "setPosition",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
+    },
+    "hero_code_line_ax_vec2_240_160": {
+      "value": "(ax::Vec2(240, 160));",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_code_line_scene": {
+      "value": "scene->",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_fn_addchild": {
+      "value": "addChild",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
+    },
+    "hero_code_line_player_2": {
+      "value": "(player);",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_cmt_ios_android_windows_linux_webassembl": {
+      "value": "// iOS · Android · Windows · Linux · WebAssembly",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-cmt"
+    },
+    "v3_highlights_eyebrow_why_v3": {
+      "value": "WHY V3",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.section-heading > p.eyebrow"
+    },
+    "v3_highlights_heading_one_engine_a_wider_frontier": {
+      "value": "One engine, a wider frontier.",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.section-heading > h2"
+    },
+    "v3_highlights_card_title_modern_graphics": {
+      "value": "Modern graphics",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
+    },
+    "v3_highlights_copy_write_hlsl_once_and_target": {
+      "value": "Write HLSL once and target Dynamic RHI across D3D11, D3D12, Vulkan, Metal and OpenGL.",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
+    },
+    "v3_highlights_card_title_modern_c": {
+      "value": "Modern C++",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
+    },
+    "v3_highlights_copy_move_to_c_23_with": {
+      "value": "Move to C++23 with a refreshed core, build tooling and production-oriented workflow.",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
+    },
+    "v3_highlights_card_title_more_platforms": {
+      "value": "More platforms",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
+    },
+    "v3_highlights_copy_reach_arm_desktops_openxr_devices": {
+      "value": "Reach ARM desktops, OpenXR devices, mobile, Xbox and WebAssembly from one codebase.",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
+    },
+    "render_pipeline_eyebrow_a_clearer_rendering_path": {
+      "value": "A CLEARER RENDERING PATH",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > p.eyebrow"
+    },
+    "render_pipeline_heading_write_shaders_once_target_multiple": {
+      "value": "Write shaders once. Target multiple backends.",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > h2"
+    },
+    "render_pipeline_copy_write_hlsl_once_then_use": {
+      "value": "Write HLSL once, then use axslcc to compile it for D3D11, D3D12, Vulkan, Metal, and OpenGL.",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > p.text-body-secondary"
+    },
+    "render_pipeline_link_see_what_changed_in_v3": {
+      "value": "See what changed in v3",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > a.btn"
+    },
+    "render_pipeline_aria_label_hlsl_source_flows_through_axslcc": {
+      "value": "HLSL source flows through axslcc to multiple render hardware interfaces",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram [aria-label]"
+    },
+    "render_pipeline_pipeline_node_hlsl_source": {
+      "value": "HLSL source",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-node"
+    },
+    "render_pipeline_pipeline_arrow_copy": {
+      "value": "↓",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-arrow"
+    },
+    "render_pipeline_pipeline_node_axslcc": {
+      "value": "axslcc",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-node"
+    },
+    "render_pipeline_pipeline_arrow_copy_2": {
+      "value": "↓",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-arrow"
+    },
+    "render_pipeline_span_d3d11": {
+      "value": "D3D11",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "render_pipeline_span_d3d12": {
+      "value": "D3D12",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "render_pipeline_span_vulkan": {
+      "value": "Vulkan",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "render_pipeline_span_metal": {
+      "value": "Metal",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "render_pipeline_span_opengl": {
+      "value": "OpenGL",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "try_it_eyebrow_see_it_run": {
+      "value": "SEE IT RUN",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.eyebrow"
+    },
+    "try_it_heading_start_with_a_working_example": {
+      "value": "Start with a working example.",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > h2"
+    },
+    "try_it_copy_try_the_live_webassembly_previews": {
+      "value": "Try the live WebAssembly previews when available, then move to the setup guide when you are ready to build locally.",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "try_it_demo_label_cpp_tests": {
+      "value": "CPP-TESTS",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
+    },
+    "try_it_strong_explore_the_engine_testbed": {
+      "value": "Explore the engine testbed",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
+    },
+    "try_it_span_open_live_demo": {
+      "value": "Open live demo",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
+    },
+    "try_it_demo_label_fairygui": {
+      "value": "FAIRYGUI",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
+    },
+    "try_it_strong_see_ui_and_extension_samples": {
+      "value": "See UI and extension samples",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
+    },
+    "try_it_span_open_live_demo_2": {
+      "value": "Open live demo",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
+    },
+    "try_it_demo_label_lua_tests": {
+      "value": "LUA-TESTS",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
+    },
+    "try_it_strong_run_lua_on_webassembly": {
+      "value": "Run Lua on WebAssembly",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
+    },
+    "try_it_span_open_live_demo_3": {
+      "value": "Open live demo",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
+    },
+    "migration_eyebrow_moving_to_v3": {
+      "value": "MOVING TO V3",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.eyebrow"
+    },
+    "migration_heading_bring_your_project_forward": {
+      "value": "Bring your project forward.",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > h2"
+    },
+    "migration_copy_the_v3_page_collects_the": {
+      "value": "The v3 page collects the breaking changes and migration paths for Axmol 2, Cocos2d-x, shaders, input and physics.",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.text-body-secondary"
+    },
+    "migration_quick_link_axmol_2_axmol_3": {
+      "value": "Axmol 2 → Axmol 3",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-5 > a.quick-link"
+    },
+    "migration_quick_link_cocos2d_x_axmol": {
+      "value": "Cocos2d-x → Axmol",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-5 > a.quick-link"
+    },
+    "home_content_eyebrow_supported_in_the_open": {
+      "value": "SUPPORTED IN THE OPEN",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
+    },
+    "home_content_h4_long_term_support_for_axmol": {
+      "value": "Long-term support for Axmol.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
+    },
+    "home_content_supporter_tier_corporate_diamond": {
+      "value": "CORPORATE DIAMOND",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
+    },
+    "home_content_alt_scorewarrior": {
+      "value": "Scorewarrior",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > a.supporter-logo > img [alt]"
+    },
+    "home_content_h5_scorewarrior": {
+      "value": "Scorewarrior",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > h3.h5"
+    },
+    "home_content_copy_long_term_financial_support_for": {
+      "value": "Long-term financial support for Axmol development.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > p.text-body-secondary"
+    },
+    "home_content_supporter_link_visit_website": {
+      "value": "Visit website",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > a.supporter-link"
+    },
+    "home_content_link_view_all_supporters": {
+      "value": "View all supporters",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.support-footer > a.btn"
+    },
+    "footer_div_text_body_secondary_2019_present": {
+      "value": "© 2019–present",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited_and_other_axmol": {
+      "value": "Simdsoft Limited and other Axmol contributors",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy": {
+      "value": ".",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_led_and_maintained_by": {
+      "value": "Led and maintained by",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited": {
+      "value": "Simdsoft Limited",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_with_contributions_from_the_communit": {
+      "value": "with contributions from the community.",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_source_code_on": {
+      "value": "Source code on",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_github": {
+      "value": "GitHub",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_hosted_on": {
+      "value": "· Hosted on",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_netlify": {
+      "value": "Netlify",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy_2": {
+      "value": ".",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_h6_text_body_secondary_community": {
+      "value": "Community",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
+    },
+    "footer_link_github_discussions": {
+      "value": "GitHub Discussions",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_discord": {
+      "value": "Discord",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_reddit": {
+      "value": "Reddit",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_made_in_axmol": {
+      "value": "Made in Axmol",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    }
+  },
+  "v3": {
+    "seo_title": {
+      "value": "Axmol 3.0.0-beta1 | What’s new",
+      "context": "html > head > title"
+    },
+    "seo_description": {
+      "value": "Explore the Axmol 3.0.0-beta1 preview: C++23, modern RHIs, HLSL shaders, ARM, OpenXR, new physics and Pointer Events.",
+      "context": "html > head > meta [content]"
+    },
+    "seo_og_title": {
+      "value": "Axmol 3.0.0-beta1 | What’s new",
+      "context": "html > head > meta [content]"
+    },
+    "seo_og_description": {
+      "value": "A public preview of the next Axmol generation.",
+      "context": "html > head > meta [content]"
+    },
+    "seo_twitter_title": {
+      "value": "Axmol 3.0.0-beta1 | What’s new",
+      "context": "html > head > meta [content]"
+    },
+    "seo_twitter_description": {
+      "value": "A public preview of the next Axmol generation.",
+      "context": "html > head > meta [content]"
+    },
+    "site_visually_hidden_focusable_skip_to_content": {
+      "value": "Skip to content",
+      "context": "html > body > a.visually-hidden-focusable"
+    },
+    "nav_aria_label_primary_navigation": {
+      "value": "Primary navigation",
+      "context": "html > body > nav.navbar [aria-label]"
+    },
+    "nav_aria_label_axmol_home": {
+      "value": "Axmol home",
+      "context": "html > body > nav.navbar > div.container > a.navbar-brand [aria-label]"
+    },
+    "nav_alt_axmol": {
+      "value": "Axmol",
+      "context": "html > body > nav.navbar > div.container > a.navbar-brand > img [alt]"
+    },
+    "nav_aria_label_language": {
+      "value": "Language",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
+    },
+    "nav_button_english": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
+    },
+    "nav_dropdown_item_english": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy": {
+      "value": "中文",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_2": {
+      "value": "日本語",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol": {
+      "value": "Español",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_3": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_toggle_navigation": {
+      "value": "Toggle navigation",
+      "context": "html > body > nav.navbar > div.container > button.navbar-toggler [aria-label]"
+    },
+    "nav_nav_link_api_reference": {
+      "value": "API Reference",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_wiki": {
+      "value": "Wiki",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_support_axmol": {
+      "value": "Support Axmol",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_aria_label_language_2": {
+      "value": "Language",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
+    },
+    "nav_button_english_2": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
+    },
+    "nav_dropdown_item_english_2": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_4": {
+      "value": "中文",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_5": {
+      "value": "日本語",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol_2": {
+      "value": "Español",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_6": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_axmol_github_repository": {
+      "value": "Axmol GitHub repository",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
+    },
+    "nav_d_lg_none_github": {
+      "value": "GitHub",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link > span.d-lg-none"
+    },
+    "nav_aria_label_theme": {
+      "value": "Theme",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown [aria-label]"
+    },
+    "nav_d_lg_none_theme": {
+      "value": "Theme",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown > span.d-lg-none"
+    },
+    "nav_dropdown_item_light": {
+      "value": "Light",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_dark": {
+      "value": "Dark",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_auto": {
+      "value": "Auto",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "site_eyebrow_public_preview_3_0_0": {
+      "value": "PUBLIC PREVIEW · 3.0.0-BETA1",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > p.eyebrow"
+    },
+    "site_title_axmol_3_is_coming": {
+      "value": "Axmol 3 is coming.",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > h1"
+    },
+    "site_hero_lead_a_modernized_engine_core_rendering": {
+      "value": "A modernized engine core, rendering stack and platform story for the next generation of cross-platform games.",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > p.hero-lead"
+    },
+    "site_link_view_the_roadmap": {
+      "value": "View the roadmap",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
+    },
+    "site_link_read_setup_guide": {
+      "value": "Read setup guide",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
+    },
+    "site_link_plan_your_migration": {
+      "value": "Plan your migration",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
+    },
+    "release_content_badge_coming_soon": {
+      "value": "Coming soon",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > span.badge"
+    },
+    "release_content_h4_3_0_0_beta1": {
+      "value": "3.0.0-beta1",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > h2.h4"
+    },
+    "release_content_copy_this_page_is_ready_for": {
+      "value": "This page is ready for the release announcement. The download link will be added only after the official tag is published.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > p.text-body-secondary"
+    },
+    "release_content_link_follow_release_discussion": {
+      "value": "Follow release discussion",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div.d-flex > a.btn"
+    },
+    "release_content_link_build_guide": {
+      "value": "Build guide",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div.d-flex > a.btn"
+    },
+    "release_content_eyebrow_what_s_new": {
+      "value": "WHAT’S NEW",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
+    },
+    "release_content_heading_the_v3_foundation": {
+      "value": "The v3 foundation.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2"
+    },
+    "release_content_card_title_c_23": {
+      "value": "C++23",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_the_language_baseline_moves_forward": {
+      "value": "The language baseline moves forward with a refreshed engine core and toolchain.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_modern_rhi": {
+      "value": "Modern RHI",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_d3d11_d3d12_and_vulkan_join": {
+      "value": "D3D11, D3D12 and Vulkan join Metal and OpenGL, with Dynamic RHI selection.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_hlsl_shaders": {
+      "value": "HLSL shaders",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_maintain_one_shader_source_and": {
+      "value": "Maintain one shader source and compile it for each supported render backend.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_arm_openxr": {
+      "value": "ARM + OpenXR",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_windows_and_linux_arm_support": {
+      "value": "Windows and Linux ARM support arrives alongside OpenXR scene composition and controller input.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_new_physics": {
+      "value": "New physics",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_box2d_3_x_powers_2d": {
+      "value": "Box2D 3.x powers 2D physics while JoltPhysics 5.x supports 3D scenes.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_input_profiling": {
+      "value": "Input + profiling",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_pointer_events_and_compile_time": {
+      "value": "Pointer Events and compile-time selectable Tracy profiling improve the development loop.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_eyebrow_platform_matrix": {
+      "value": "PLATFORM MATRIX",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.section-heading > p.eyebrow"
+    },
+    "release_content_heading_choose_the_backend_that_fits": {
+      "value": "Choose the backend that fits the device.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.section-heading > h2"
+    },
+    "release_content_th_target": {
+      "value": "Target",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
+    },
+    "release_content_th_primary_rhi_options": {
+      "value": "Primary RHI options",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
+    },
+    "release_content_th_status": {
+      "value": "Status",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
+    },
+    "release_content_th_windows_uwp": {
+      "value": "Windows / UWP",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_d3d12_d3d11_vulkan_opengl": {
+      "value": "D3D12 · D3D11 · Vulkan · OpenGL",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_v3_preview": {
+      "value": "v3 preview",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_th_linux": {
+      "value": "Linux",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_vulkan_opengl": {
+      "value": "Vulkan · OpenGL",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_v3_preview_2": {
+      "value": "v3 preview",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_th_android": {
+      "value": "Android",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_vulkan_opengl_es": {
+      "value": "Vulkan · OpenGL ES",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_v3_preview_3": {
+      "value": "v3 preview",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_th_apple_platforms": {
+      "value": "Apple platforms",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_metal_opengl_es": {
+      "value": "Metal · OpenGL ES",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_v3_preview_4": {
+      "value": "v3 preview",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_th_webassembly": {
+      "value": "WebAssembly",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_webgl_2": {
+      "value": "WebGL 2",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_preview": {
+      "value": "Preview",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "migration_eyebrow_migration": {
+      "value": "MIGRATION",
+      "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.eyebrow"
+    },
+    "migration_heading_prepare_before_you_switch": {
+      "value": "Prepare before you switch.",
+      "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > h2"
+    },
+    "migration_copy_axmol_3_removes_deprecated_apis": {
+      "value": "Axmol 3 removes deprecated APIs and changes several core systems. Start with the relevant path below.",
+      "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "migration_strong_axmol_2_3": {
+      "value": "Axmol 2 → 3",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
+    },
+    "migration_small_renamed_and_removed_apis": {
+      "value": "Renamed and removed APIs",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
+    },
+    "migration_strong_cocos2d_x_axmol": {
+      "value": "Cocos2d-x → Axmol",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
+    },
+    "migration_small_namespace_and_project_migration": {
+      "value": "Namespace and project migration",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
+    },
+    "migration_strong_shader_migration": {
+      "value": "Shader migration",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
+    },
+    "migration_small_move_from_glsl_workflows_to": {
+      "value": "Move from GLSL workflows to HLSL",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
+    },
+    "migration_strong_input_migration": {
+      "value": "Input migration",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
+    },
+    "migration_small_adopt_pointer_events": {
+      "value": "Adopt Pointer Events",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
+    },
+    "release_content_h4_beta_means_feedback": {
+      "value": "Beta means feedback.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > h2.h4"
+    },
+    "release_content_copy_use_the_preview_for_evaluation": {
+      "value": "Use the preview for evaluation and migration work. Report regressions through GitHub Issues and discuss design questions in Discussions.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > p.text-body-secondary"
+    },
+    "release_content_link_report_an_issue": {
+      "value": "Report an issue",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "release_content_link_join_discussions": {
+      "value": "Join discussions",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "release_content_strong_need_the_conservative_production_bas": {
+      "value": "Need the conservative production baseline?",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > strong"
+    },
+    "release_content_copy_use_axmol_2_11_x": {
+      "value": "Use Axmol 2.11.x LTS while your project is being validated against v3.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > p.mb-3"
+    },
+    "release_content_link_download_stable_releases": {
+      "value": "Download stable releases",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > a"
+    },
+    "footer_div_text_body_secondary_2019_present": {
+      "value": "© 2019–present",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited_and_other_axmol": {
+      "value": "Simdsoft Limited and other Axmol contributors",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy": {
+      "value": ".",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_source_code_on": {
+      "value": "Source code on",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_github": {
+      "value": "GitHub",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_hosted_on": {
+      "value": "· Hosted on",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_netlify": {
+      "value": "Netlify",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy_2": {
+      "value": ".",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_h6_text_body_secondary_community": {
+      "value": "Community",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
+    },
+    "footer_link_github_discussions": {
+      "value": "GitHub Discussions",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_discord": {
+      "value": "Discord",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_reddit": {
+      "value": "Reddit",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_made_in_axmol": {
+      "value": "Made in Axmol",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    }
+  },
+  "sponsor": {
+    "seo_title": {
+      "value": "Sponsor Axmol | Open-source support",
+      "context": "html > head > title"
+    },
+    "seo_description": {
+      "value": "Support the long-term maintenance of Axmol.",
+      "context": "html > head > meta [content]"
+    },
+    "site_visually_hidden_focusable_skip_to_content": {
+      "value": "Skip to content",
+      "context": "html > body.sponsor-page > a.visually-hidden-focusable"
+    },
+    "nav_aria_label_axmol_home": {
+      "value": "Axmol home",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > a.navbar-brand [aria-label]"
+    },
+    "nav_alt_axmol": {
+      "value": "Axmol",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > a.navbar-brand > img [alt]"
+    },
+    "nav_aria_label_language": {
+      "value": "Language",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
+    },
+    "nav_button_english": {
+      "value": "English",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
+    },
+    "nav_dropdown_item_english": {
+      "value": "English",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy": {
+      "value": "中文",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_2": {
+      "value": "日本語",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol": {
+      "value": "Español",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_3": {
+      "value": "Русский",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_nav_link_api_reference": {
+      "value": "API Reference",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_wiki": {
+      "value": "Wiki",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_support_axmol": {
+      "value": "Support Axmol",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_aria_label_language_2": {
+      "value": "Language",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
+    },
+    "nav_button_english_2": {
+      "value": "English",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
+    },
+    "nav_dropdown_item_english_2": {
+      "value": "English",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_4": {
+      "value": "中文",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_5": {
+      "value": "日本語",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol_2": {
+      "value": "Español",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_6": {
+      "value": "Русский",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_github_repository": {
+      "value": "GitHub repository",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
+    },
+    "nav_aria_label_theme": {
+      "value": "Theme",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a#themeDropdown [aria-label]"
+    },
+    "nav_dropdown_item_light": {
+      "value": " Light",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_dark": {
+      "value": " Dark",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_auto": {
+      "value": " Auto",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "hero_eyebrow_supported_in_the_open": {
+      "value": "SUPPORTED IN THE OPEN",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
+    },
+    "hero_display_4_support_axmol": {
+      "value": "Support Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
+    },
+    "hero_hero_lead_we_are_a_global_community": {
+      "value": "We are a global community of Axmol fans and developers, building and maintaining it with passion.",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.hero-lead"
+    },
+    "hero_copy_axmol_is_free_and_open": {
+      "value": "Axmol is free and open-source, led and maintained by",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
+    },
+    "hero_link_simdsoft_limited": {
+      "value": "Simdsoft Limited",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p > a"
+    },
+    "hero_copy_with_contributions_from_the_communit": {
+      "value": ",\n                  with contributions from the community. Every bug fix, improvement, and new feature takes time and effort.",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
+    },
+    "hero_copy_your_support_helps_us_accelerate": {
+      "value": "Your support helps us accelerate development, prioritize important features, and keep Axmol thriving for everyone.",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.mb-0"
+    },
+    "support_intro_eyebrow_how_to_help": {
+      "value": "HOW TO HELP",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
+    },
+    "support_intro_heading_keep_the_work_sustainable": {
+      "value": "Keep the work sustainable.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > h2"
+    },
+    "support_intro_copy_axmol_is_led_and_maintained": {
+      "value": "Axmol is led and maintained by",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "support_intro_link_simdsoft_limited": {
+      "value": "Simdsoft Limited",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary > a"
+    },
+    "support_intro_copy_with_contributions_from_the_communit": {
+      "value": ", with contributions from the community.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "nav_aria_label_ways_to_support_axmol": {
+      "value": "Ways to support Axmol",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid [aria-label]"
+    },
+    "nav_sponsor_path_index_01_individual": {
+      "value": "01 / INDIVIDUAL",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
+    },
+    "nav_card_title_individual_sponsorship": {
+      "value": "Individual sponsorship",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
+    },
+    "nav_copy_choose_a_payment_channel_and": {
+      "value": "Choose a payment channel and a monthly or one-time contribution.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
+    },
+    "nav_sponsor_path_action_choose_a_way_to_give": {
+      "value": "Choose a way to give",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
+    },
+    "nav_span_copy": {
+      "value": "→",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
+    },
+    "nav_sponsor_path_index_02_corporate": {
+      "value": "02 / CORPORATE",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
+    },
+    "nav_card_title_corporate_support": {
+      "value": "Corporate support",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
+    },
+    "nav_copy_contact_the_maintainers_to_discuss": {
+      "value": "Contact the maintainers to discuss support for Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
+    },
+    "nav_sponsor_path_action_info_simdsoft_com": {
+      "value": "info@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
+    },
+    "nav_span_copy_2": {
+      "value": "→",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
+    },
+    "nav_sponsor_path_index_03_recognition": {
+      "value": "03 / RECOGNITION",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
+    },
+    "nav_card_title_public_recognition": {
+      "value": "Public recognition",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
+    },
+    "nav_copy_see_the_organizations_and_individual": {
+      "value": "See the organizations and individuals recognized for supporting Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
+    },
+    "nav_sponsor_path_action_view_public_supporters": {
+      "value": "View public supporters",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
+    },
+    "nav_span_copy_3": {
+      "value": "→",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
+    },
+    "support_intro_h4_individual_sponsorship": {
+      "value": "Individual sponsorship",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > h3.h4"
+    },
+    "support_intro_copy_choose_a_payment_channel_then": {
+      "value": "Choose a payment channel, then select a monthly tier.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+    },
+    "support_intro_span_payment_channel": {
+      "value": "Payment channel",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > span"
+    },
+    "support_intro_option_paypal": {
+      "value": "PayPal",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_option_github_sponsors": {
+      "value": "GitHub Sponsors",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_option_open_source_collective": {
+      "value": "Open Source Collective",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_option_alipay_china": {
+      "value": "Alipay (China)",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_option_wechat_pay_china": {
+      "value": "WeChat Pay (China)",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_eyebrow_one_time_support": {
+      "value": "ONE-TIME SUPPORT",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.eyebrow"
+    },
+    "support_intro_h4_alipay": {
+      "value": "Alipay",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > h4"
+    },
+    "support_intro_copy_scan_the_qr_code_and": {
+      "value": "Scan the QR code and enter any amount in your payment app.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.text-body-secondary"
+    },
+    "support_intro_copy_please_add_the_note_sponsor": {
+      "value": "Please add the note: Sponsor Axmol",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.small"
+    },
+    "support_intro_button_enlarge_qr_code": {
+      "value": "Enlarge QR code",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > button.btn"
+    },
+    "support_intro_aria_label_enlarge_alipay_qr_code": {
+      "value": "Enlarge Alipay QR code",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > button.sponsor-qr-image-button [aria-label]"
+    },
+    "support_intro_alt_alipay_sponsorship_qr_code": {
+      "value": "Alipay sponsorship QR code",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > button.sponsor-qr-image-button > img [alt]"
+    },
+    "support_intro_span_backer": {
+      "value": "Backer",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_5": {
+      "value": "USD $5",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month": {
+      "value": "/ month",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_span_bronze": {
+      "value": "Bronze",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_25": {
+      "value": "USD $25",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month_2": {
+      "value": "/ month",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_span_silver": {
+      "value": "Silver",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_50": {
+      "value": "USD $50",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month_3": {
+      "value": "/ month",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_span_gold": {
+      "value": "Gold",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_100": {
+      "value": "USD $100",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month_4": {
+      "value": "/ month",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_span_platinum": {
+      "value": "Platinum",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_250": {
+      "value": "USD $250",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month_5": {
+      "value": "/ month",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_h4_custom": {
+      "value": "Custom",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > h4"
+    },
+    "support_intro_currency_prefix_copy": {
+      "value": "$",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > span.currency-prefix"
+    },
+    "support_intro_placeholder_enter_amount_usd": {
+      "value": "Enter amount (USD)",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > input#custom-amount-en [placeholder]"
+    },
+    "support_intro_aria_label_custom_amount_in_united_states": {
+      "value": "Custom amount in United States dollars",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > input#custom-amount-en [aria-label]"
+    },
+    "support_intro_currency_suffix_usd": {
+      "value": "USD",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > span.currency-suffix"
+    },
+    "support_intro_custom_monthly_label_monthly": {
+      "value": "Monthly",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > label.custom-monthly-label"
+    },
+    "support_intro_button_continue": {
+      "value": "Continue",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > button.btn"
+    },
+    "supporters_eyebrow_public_supporters": {
+      "value": "PUBLIC SUPPORTERS",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.eyebrow"
+    },
+    "supporters_heading_supported_in_the_open": {
+      "value": "Supported in the open.",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2"
+    },
+    "supporters_copy_we_thank_the_organizations_and": {
+      "value": "We thank the organizations and individuals supporting Axmol’s long-term maintenance.",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "supporters_supporter_tier_corporate_diamond": {
+      "value": "CORPORATE DIAMOND",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
+    },
+    "supporters_alt_scorewarrior": {
+      "value": "Scorewarrior",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"
+    },
+    "supporters_h5_scorewarrior": {
+      "value": "Scorewarrior",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > h3.h5"
+    },
+    "supporters_copy_long_term_financial_support_for": {
+      "value": "Long-term financial support for Axmol development.",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > p.text-body-secondary"
+    },
+    "supporters_card_title_other_public_supporters": {
+      "value": "Other public supporters",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > h3"
+    },
+    "supporters_dt_platinum": {
+      "value": "Platinum",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+    },
+    "supporters_dd_peterkharitonov_alain_serge_nagni": {
+      "value": "peterkharitonov, Alain-Serge Nagni",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+    },
+    "supporters_dt_backers": {
+      "value": "Backers",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+    },
+    "supporters_dd_duong_thienphuoc_paulocoutinhox_clvs": {
+      "value": "DUONG, thienphuoc, paulocoutinhox, clvs7-gh",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+    },
+    "supporters_dt_contributors": {
+      "value": "Contributors",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+    },
+    "supporters_dd_explorer_turky_mohammed_paul_gardine": {
+      "value": "Explorer, 蚊子别跑, 午餐界, 椰子, 零, Turky Mohammed, Paul Gardiner, Julien, Javier Barros, Paulo Coutinho, deal11, bingsoo",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+    },
+    "faq_heading_faq": {
+      "value": "FAQ",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > h2.mb-4"
+    },
+    "faq_button_how_is_public_support_represented": {
+      "value": "How is public support represented?",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading1 > button.accordion-button"
+    },
+    "faq_div_accordion_body_the_supporter_list_is_maintained": {
+      "value": "The supporter list is maintained by the Axmol team. Contact",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    },
+    "faq_link_oss_simdsoft_com": {
+      "value": "oss@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > a"
+    },
+    "faq_div_accordion_body_to_correct_or_update_a": {
+      "value": "to\n                  correct or update a public listing.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    },
+    "faq_button_how_can_companies_support_axmol": {
+      "value": "How can companies support Axmol?",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
+    },
+    "faq_div_accordion_body_corporate_support_is_handled_directl": {
+      "value": "Corporate support is handled directly by",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+    },
+    "faq_link_simdsoft": {
+      "value": "Simdsoft",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+    },
+    "faq_div_accordion_body_contact": {
+      "value": ".\n                  Contact",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+    },
+    "faq_link_info_simdsoft_com": {
+      "value": "info@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+    },
+    "faq_div_accordion_body_for_a_private_discussion_support": {
+      "value": "for a private discussion. Support does not grant ownership or\n                  control over Axmol’s technical direction.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+    },
+    "faq_button_can_i_choose_whether_my": {
+      "value": "Can I choose whether my name appears in the sponsor list?",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading4 > button.accordion-button"
+    },
+    "faq_div_accordion_body_yes_all_sponsor_names_are": {
+      "value": "Yes. All sponsor names are added manually. If you prefer to\n                  remain anonymous, please email us at",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
+    },
+    "faq_link_oss_simdsoft_com_2": {
+      "value": "oss@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body > a"
+    },
+    "faq_div_accordion_body_and_we_ll_update_your": {
+      "value": "and we’ll update your listing accordingly.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
+    },
+    "footer_div_text_body_secondary_2019_present": {
+      "value": "© 2019–present",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited_and_other_axmol": {
+      "value": "Simdsoft Limited and other Axmol contributors",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy": {
+      "value": ".",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_led_and_maintained_by": {
+      "value": "Led and maintained by",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited": {
+      "value": "Simdsoft Limited",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_with_contributions_from_the_communit": {
+      "value": "(深圳司脉科技有限公司), with contributions from the community.",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_hosted_on": {
+      "value": "Hosted on",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_netlify": {
+      "value": "Netlify",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_source_code_available_on": {
+      "value": "· Source\n              code available on",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_github": {
+      "value": "GitHub",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy_2": {
+      "value": ".",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_h6_text_body_secondary_community": {
+      "value": "Community",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
+    },
+    "footer_link_github_discussions": {
+      "value": "GitHub Discussions",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_discord": {
+      "value": "Discord",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_reddit": {
+      "value": "Reddit",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_made_in_axmol": {
+      "value": "Made in Axmol",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "common_modal_h5_commonmodaltitle_title": {
+      "value": "Title",
+      "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div.modal-header > h5#commonModalTitle"
+    },
+    "common_modal_aria_label_close": {
+      "value": "Close",
+      "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div.modal-header > button.btn-close [aria-label]"
+    },
+    "common_modal_div_commonmodalbody_message_goes_here": {
+      "value": "Message goes here.",
+      "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div#commonModalBody"
+    },
+    "qr_modal_h5_sponsorqrmodaltitle_alipay_qr_code": {
+      "value": "Alipay QR code",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-header > h5#sponsorQrModalTitle"
+    },
+    "qr_modal_aria_label_close": {
+      "value": "Close",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-header > button.btn-close [aria-label]"
+    },
+    "qr_modal_alt_alipay_sponsorship_qr_code": {
+      "value": "Alipay sponsorship QR code",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > img.sponsor-qr-modal-image [alt]"
+    },
+    "qr_modal_copy_scan_the_qr_code_and": {
+      "value": "Scan the QR code and enter any amount in your payment app.",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
+    },
+    "qr_modal_copy_please_add_the_note_sponsor": {
+      "value": "Please add the note: Sponsor Axmol",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
+    }
+  },
+  "sponsorRuntime": {
+    "alipay": "Alipay",
+    "wechat": "WeChat Pay",
+    "alipayAlt": "Alipay sponsorship QR code",
+    "wechatAlt": "WeChat Pay sponsorship QR code",
+    "limitMessage": "Individual sponsorship is limited to USD {amount}. Please adjust the amount and try again.",
+    "limitTitle": "Sponsorship amount limit",
+    "ok": "OK",
+    "qrHelp": "Scan the QR code and enter any amount in your payment app.",
+    "tierHelp": "Choose a payment channel and contribution amount. Individual sponsorship through PayPal, GitHub Sponsors, and OSC is limited to USD {amount}.",
+    "enlarge": "Enlarge {name} QR code",
+    "note": "Please add the note: Sponsor Axmol",
+    "qrTitle": "{name} QR code"
+  }
+}

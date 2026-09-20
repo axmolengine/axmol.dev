@@ -1,0 +1,1566 @@
+{
+  "site": {
+    "htmlLang": "ru",
+    "simdsoftUrl": "https://simdsoft.com/?lang=en"
+  },
+  "home": {
+    "seo_title": {
+      "value": "Axmol | Современная кроссплатформенная разработка игр на C++",
+      "context": "html > head > title"
+    },
+    "seo_description": {
+      "value": "Axmol — современный открытый игровой движок C++ для мобильных устройств, настольных систем, Xbox и WebAssembly, ориентированный на код.",
+      "context": "html > head > meta [content]"
+    },
+    "seo_og_title": {
+      "value": "Axmol 3 | Современная кроссплатформенная разработка игр на C++",
+      "context": "html > head > meta [content]"
+    },
+    "seo_og_description": {
+      "value": "Современный открытый движок C++ для мобильных устройств, настольных систем, Xbox и WebAssembly.",
+      "context": "html > head > meta [content]"
+    },
+    "seo_twitter_title": {
+      "value": "Axmol 3 | Современная кроссплатформенная разработка игр на C++",
+      "context": "html > head > meta [content]"
+    },
+    "seo_twitter_description": {
+      "value": "Современный открытый движок C++ для мобильных устройств, настольных систем, Xbox и WebAssembly.",
+      "context": "html > head > meta [content]"
+    },
+    "site_visually_hidden_focusable_skip_to_content": {
+      "value": "Перейти к содержанию",
+      "context": "html > body > a.visually-hidden-focusable"
+    },
+    "nav_aria_label_primary_navigation": {
+      "value": "Основная навигация",
+      "context": "html > body > nav.navbar [aria-label]"
+    },
+    "nav_aria_label_axmol_home": {
+      "value": "Главная Axmol",
+      "context": "html > body > nav.navbar > div.container > a.navbar-brand [aria-label]"
+    },
+    "nav_alt_axmol": {
+      "value": "Axmol",
+      "context": "html > body > nav.navbar > div.container > a.navbar-brand > img [alt]"
+    },
+    "nav_aria_label_language": {
+      "value": "Язык",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
+    },
+    "nav_button_english": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
+    },
+    "nav_dropdown_item_english": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy": {
+      "value": "中文",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_2": {
+      "value": "日本語",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol": {
+      "value": "Español",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_3": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_toggle_navigation": {
+      "value": "Toggle navigation",
+      "context": "html > body > nav.navbar > div.container > button.navbar-toggler [aria-label]"
+    },
+    "nav_nav_link_api_reference": {
+      "value": "Справочник API",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_wiki": {
+      "value": "Wiki",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_support_axmol": {
+      "value": "Поддержать Axmol",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_aria_label_language_2": {
+      "value": "Language",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
+    },
+    "nav_button_english_2": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
+    },
+    "nav_dropdown_item_english_2": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_4": {
+      "value": "中文",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_5": {
+      "value": "日本語",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol_2": {
+      "value": "Español",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_6": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_axmol_github_repository": {
+      "value": "Axmol GitHub repository",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
+    },
+    "nav_d_lg_none_github": {
+      "value": "GitHub",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link > span.d-lg-none"
+    },
+    "nav_aria_label_theme": {
+      "value": "Тема",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown [aria-label]"
+    },
+    "nav_d_lg_none_theme": {
+      "value": "Theme",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown > span.d-lg-none"
+    },
+    "nav_dropdown_item_light": {
+      "value": "Светлая",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_dark": {
+      "value": "Тёмная",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_auto": {
+      "value": "Авто",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "release_banner_span_axmol_3_0_0_beta1": {
+      "value": "Axmol 3.0.0-beta1 скоро выйдет",
+      "context": "html > body > main#main-content > div.release-banner > div.container > span"
+    },
+    "release_banner_link_explore_the_beta_preview": {
+      "value": "Посмотреть бета-версию",
+      "context": "html > body > main#main-content > div.release-banner > div.container > a"
+    },
+    "hero_eyebrow_open_source_code_first_cross": {
+      "value": "ОТКРЫТЫЙ КОД · CODE FIRST · КРОССПЛАТФОРМЕННОСТЬ",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.eyebrow"
+    },
+    "hero_display_3_axmol": {
+      "value": "Axmol",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
+    },
+    "hero_hero_lead_modern_c_game_development_for": {
+      "value": "Современная разработка игр на C++ для мобильных устройств, настольных компьютеров, Xbox и WebAssembly.",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
+    },
+    "hero_link_explore_axmol_3_beta": {
+      "value": "Посмотреть Axmol 3 Beta",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "hero_link_download_2_11_4_lts": {
+      "value": "Скачать 2.11.4 LTS",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "hero_link_documentation": {
+      "value": "Документация",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "hero_aria_label_release_channels": {
+      "value": "Release channels",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills [aria-label]"
+    },
+    "hero_badge_3_0_0_beta1_public": {
+      "value": "3.0.0-beta1 · Public beta",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills > span.badge"
+    },
+    "hero_badge_2_11_x_stable_lts": {
+      "value": "2.11.x · Stable LTS",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills > span.badge"
+    },
+    "hero_aria_label_axmol_c_example": {
+      "value": "Axmol C++ example",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card [aria-label]"
+    },
+    "hero_code_title_hello_axmol_cpp": {
+      "value": "hello_axmol.cpp",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > div.code-head > span.code-title"
+    },
+    "hero_c_cmt_one_c_codebase_every_platform": {
+      "value": "// one C++ codebase, every platform",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-cmt"
+    },
+    "hero_c_key_auto": {
+      "value": "auto",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-key"
+    },
+    "hero_code_line_scene_ax_scene": {
+      "value": "scene = ax::Scene::",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_fn_create": {
+      "value": "create",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
+    },
+    "hero_code_line_copy": {
+      "value": "();",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_key_auto_2": {
+      "value": "auto",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-key"
+    },
+    "hero_code_line_player_ax_sprite": {
+      "value": "player = ax::Sprite::",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_fn_create_2": {
+      "value": "create",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
+    },
+    "hero_code_line_copy_2": {
+      "value": "(",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_str_player_png": {
+      "value": "\"player.png\"",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-str"
+    },
+    "hero_code_line_copy_3": {
+      "value": ");",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_code_line_player": {
+      "value": "player->",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_fn_setposition": {
+      "value": "setPosition",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
+    },
+    "hero_code_line_ax_vec2_240_160": {
+      "value": "(ax::Vec2(240, 160));",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_code_line_scene": {
+      "value": "scene->",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_fn_addchild": {
+      "value": "addChild",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
+    },
+    "hero_code_line_player_2": {
+      "value": "(player);",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
+    },
+    "hero_c_cmt_ios_android_windows_linux_webassembl": {
+      "value": "// iOS · Android · Windows · Linux · WebAssembly",
+      "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-cmt"
+    },
+    "v3_highlights_eyebrow_why_v3": {
+      "value": "ПОЧЕМУ V3",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.section-heading > p.eyebrow"
+    },
+    "v3_highlights_heading_one_engine_a_wider_frontier": {
+      "value": "Один движок — больше возможностей.",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.section-heading > h2"
+    },
+    "v3_highlights_card_title_modern_graphics": {
+      "value": "Современная графика",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
+    },
+    "v3_highlights_copy_write_hlsl_once_and_target": {
+      "value": "Напишите HLSL один раз и используйте Dynamic RHI для D3D11, D3D12, Vulkan, Metal и OpenGL.",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
+    },
+    "v3_highlights_card_title_modern_c": {
+      "value": "Современный C++",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
+    },
+    "v3_highlights_copy_move_to_c_23_with": {
+      "value": "Переходите на C++23 с обновлённым ядром, инструментами сборки и производственным рабочим процессом.",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
+    },
+    "v3_highlights_card_title_more_platforms": {
+      "value": "Больше платформ",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
+    },
+    "v3_highlights_copy_reach_arm_desktops_openxr_devices": {
+      "value": "Единая кодовая база для ARM-настольных систем, устройств OpenXR, мобильных платформ, Xbox и WebAssembly.",
+      "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
+    },
+    "render_pipeline_eyebrow_a_clearer_rendering_path": {
+      "value": "БОЛЕЕ ПОНЯТНЫЙ ПУТЬ РЕНДЕРИНГА",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > p.eyebrow"
+    },
+    "render_pipeline_heading_write_shaders_once_target_multiple": {
+      "value": "Один шейдер. Несколько графических бэкендов.",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > h2"
+    },
+    "render_pipeline_copy_write_hlsl_once_then_use": {
+      "value": "Напишите HLSL один раз, а затем используйте axslcc что бы скомпилировать его для D3D11, D3D12, Vulkan, Metal и OpenGL.",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > p.text-body-secondary"
+    },
+    "render_pipeline_link_see_what_changed_in_v3": {
+      "value": "Что изменилось в v3",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > a.btn"
+    },
+    "render_pipeline_aria_label_hlsl_source_flows_through_axslcc": {
+      "value": "HLSL source flows through axslcc to multiple render hardware interfaces",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram [aria-label]"
+    },
+    "render_pipeline_pipeline_node_hlsl_source": {
+      "value": "HLSL source",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-node"
+    },
+    "render_pipeline_pipeline_arrow_copy": {
+      "value": "↓",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-arrow"
+    },
+    "render_pipeline_pipeline_node_axslcc": {
+      "value": "axslcc",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-node"
+    },
+    "render_pipeline_pipeline_arrow_copy_2": {
+      "value": "↓",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-arrow"
+    },
+    "render_pipeline_span_d3d11": {
+      "value": "D3D11",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "render_pipeline_span_d3d12": {
+      "value": "D3D12",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "render_pipeline_span_vulkan": {
+      "value": "Vulkan",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "render_pipeline_span_metal": {
+      "value": "Metal",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "render_pipeline_span_opengl": {
+      "value": "OpenGL",
+      "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
+    },
+    "try_it_eyebrow_see_it_run": {
+      "value": "ПОСМОТРЕТЬ В РАБОТЕ",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.eyebrow"
+    },
+    "try_it_heading_start_with_a_working_example": {
+      "value": "Начните с готового примера.",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > h2"
+    },
+    "try_it_copy_try_the_live_webassembly_previews": {
+      "value": "Попробуйте интерактивные превью WebAssembly, когда они доступны, затем перейдите к руководству по настройке для локальной сборки.",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "try_it_demo_label_cpp_tests": {
+      "value": "CPP-TESTS",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
+    },
+    "try_it_strong_explore_the_engine_testbed": {
+      "value": "Откройте тестовый стенд движка",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
+    },
+    "try_it_span_open_live_demo": {
+      "value": "Открыть демо",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
+    },
+    "try_it_demo_label_fairygui": {
+      "value": "FAIRYGUI",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
+    },
+    "try_it_strong_see_ui_and_extension_samples": {
+      "value": "Посмотрите примеры UI и расширений",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
+    },
+    "try_it_span_open_live_demo_2": {
+      "value": "Открыть демо",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
+    },
+    "try_it_demo_label_lua_tests": {
+      "value": "LUA-TESTS",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
+    },
+    "try_it_strong_run_lua_on_webassembly": {
+      "value": "Запустите Lua в WebAssembly",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
+    },
+    "try_it_span_open_live_demo_3": {
+      "value": "Открыть демо",
+      "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
+    },
+    "migration_eyebrow_moving_to_v3": {
+      "value": "ПЕРЕХОД НА V3",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.eyebrow"
+    },
+    "migration_heading_bring_your_project_forward": {
+      "value": "Развивайте свой проект дальше.",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > h2"
+    },
+    "migration_copy_the_v3_page_collects_the": {
+      "value": "Страница v3 содержит несовместимые изменения и пути миграции для Axmol 2, Cocos2d-x, шейдеров, ввода и физики.",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.text-body-secondary"
+    },
+    "migration_quick_link_axmol_2_axmol_3": {
+      "value": "Axmol 2 → Axmol 3",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-5 > a.quick-link"
+    },
+    "migration_quick_link_cocos2d_x_axmol": {
+      "value": "Cocos2d-x → Axmol",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-5 > a.quick-link"
+    },
+    "home_content_eyebrow_supported_in_the_open": {
+      "value": "ОТКРЫТАЯ ПОДДЕРЖКА",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
+    },
+    "home_content_h4_long_term_support_for_axmol": {
+      "value": "Долгосрочная поддержка Axmol.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
+    },
+    "home_content_supporter_tier_corporate_diamond": {
+      "value": "КОРПОРАТИВНЫЙ БРИЛЛИАНТ",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
+    },
+    "home_content_alt_scorewarrior": {
+      "value": "Scorewarrior",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > a.supporter-logo > img [alt]"
+    },
+    "home_content_h5_scorewarrior": {
+      "value": "Scorewarrior",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > h3.h5"
+    },
+    "home_content_copy_long_term_financial_support_for": {
+      "value": "Долгосрочная финансовая поддержка разработки Axmol.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > p.text-body-secondary"
+    },
+    "home_content_supporter_link_visit_website": {
+      "value": "Открыть сайт",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > a.supporter-link"
+    },
+    "home_content_link_view_all_supporters": {
+      "value": "Все поддерживающие",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.support-footer > a.btn"
+    },
+    "footer_div_text_body_secondary_2019_present": {
+      "value": "© 2019–present",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited_and_other_axmol": {
+      "value": "Simdsoft Limited и другие участники Axmol",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy": {
+      "value": ".",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_led_and_maintained_by": {
+      "value": "Развивается и поддерживается",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited": {
+      "value": "Simdsoft Limited",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_with_contributions_from_the_communit": {
+      "value": "при участии сообщества.",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_source_code_on": {
+      "value": "Исходный код на",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_github": {
+      "value": "GitHub",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_hosted_on": {
+      "value": "· Хостинг:",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_netlify": {
+      "value": "Netlify",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy_2": {
+      "value": ".",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_h6_text_body_secondary_community": {
+      "value": "Сообщество",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
+    },
+    "footer_link_github_discussions": {
+      "value": "GitHub Discussions",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_discord": {
+      "value": "Discord",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_reddit": {
+      "value": "Reddit",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_made_in_axmol": {
+      "value": "Made in Axmol",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    }
+  },
+  "v3": {
+    "seo_title": {
+      "value": "Axmol 3.0.0-beta1 | Что нового",
+      "context": "html > head > title"
+    },
+    "seo_description": {
+      "value": "Предварительная версия Axmol 3.0.0-beta1: C++23, современные RHI, HLSL-шейдеры, ARM, OpenXR, новая физика и Pointer Events.",
+      "context": "html > head > meta [content]"
+    },
+    "seo_og_title": {
+      "value": "Axmol 3.0.0-beta1 | What’s new",
+      "context": "html > head > meta [content]"
+    },
+    "seo_og_description": {
+      "value": "A public preview of the next Axmol generation.",
+      "context": "html > head > meta [content]"
+    },
+    "seo_twitter_title": {
+      "value": "Axmol 3.0.0-beta1 | What’s new",
+      "context": "html > head > meta [content]"
+    },
+    "seo_twitter_description": {
+      "value": "A public preview of the next Axmol generation.",
+      "context": "html > head > meta [content]"
+    },
+    "site_visually_hidden_focusable_skip_to_content": {
+      "value": "Перейти к содержанию",
+      "context": "html > body > a.visually-hidden-focusable"
+    },
+    "nav_aria_label_primary_navigation": {
+      "value": "Основная навигация",
+      "context": "html > body > nav.navbar [aria-label]"
+    },
+    "nav_aria_label_axmol_home": {
+      "value": "Главная Axmol",
+      "context": "html > body > nav.navbar > div.container > a.navbar-brand [aria-label]"
+    },
+    "nav_alt_axmol": {
+      "value": "Axmol",
+      "context": "html > body > nav.navbar > div.container > a.navbar-brand > img [alt]"
+    },
+    "nav_aria_label_language": {
+      "value": "Язык",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
+    },
+    "nav_button_english": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
+    },
+    "nav_dropdown_item_english": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy": {
+      "value": "中文",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_2": {
+      "value": "日本語",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol": {
+      "value": "Español",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_3": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_toggle_navigation": {
+      "value": "Toggle navigation",
+      "context": "html > body > nav.navbar > div.container > button.navbar-toggler [aria-label]"
+    },
+    "nav_nav_link_api_reference": {
+      "value": "Справочник API",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_wiki": {
+      "value": "Wiki",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_support_axmol": {
+      "value": "Поддержать Axmol",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_aria_label_language_2": {
+      "value": "Language",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
+    },
+    "nav_button_english_2": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
+    },
+    "nav_dropdown_item_english_2": {
+      "value": "English",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_4": {
+      "value": "中文",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_5": {
+      "value": "日本語",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol_2": {
+      "value": "Español",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_6": {
+      "value": "Русский",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_axmol_github_repository": {
+      "value": "Axmol GitHub repository",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
+    },
+    "nav_d_lg_none_github": {
+      "value": "GitHub",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link > span.d-lg-none"
+    },
+    "nav_aria_label_theme": {
+      "value": "Тема",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown [aria-label]"
+    },
+    "nav_d_lg_none_theme": {
+      "value": "Theme",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown > span.d-lg-none"
+    },
+    "nav_dropdown_item_light": {
+      "value": "Светлая",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_dark": {
+      "value": "Тёмная",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_auto": {
+      "value": "Авто",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "site_eyebrow_public_preview_3_0_0": {
+      "value": "ПУБЛИЧНОЕ ПРЕВЬЮ · 3.0.0-BETA1",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > p.eyebrow"
+    },
+    "site_title_axmol_3_is_coming": {
+      "value": "Axmol 3 скоро выйдет.",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > h1"
+    },
+    "site_hero_lead_a_modernized_engine_core_rendering": {
+      "value": "Модернизированные ядро движка, стек рендеринга и поддержка платформ для следующего поколения кроссплатформенных игр.",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > p.hero-lead"
+    },
+    "site_link_view_the_roadmap": {
+      "value": "Посмотреть дорожную карту",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
+    },
+    "site_link_read_setup_guide": {
+      "value": "Открыть руководство по настройке",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
+    },
+    "site_link_plan_your_migration": {
+      "value": "Спланировать миграцию",
+      "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
+    },
+    "release_content_badge_coming_soon": {
+      "value": "Скоро",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > span.badge"
+    },
+    "release_content_h4_3_0_0_beta1": {
+      "value": "3.0.0-beta1",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > h2.h4"
+    },
+    "release_content_copy_this_page_is_ready_for": {
+      "value": "Страница готова к анонсу релиза. Ссылка на скачивание будет добавлена только после публикации официального тега.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > p.text-body-secondary"
+    },
+    "release_content_link_follow_release_discussion": {
+      "value": "Следить за обсуждением релиза",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div.d-flex > a.btn"
+    },
+    "release_content_link_build_guide": {
+      "value": "Руководство по сборке",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div.d-flex > a.btn"
+    },
+    "release_content_eyebrow_what_s_new": {
+      "value": "ЧТО НОВОГО",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
+    },
+    "release_content_heading_the_v3_foundation": {
+      "value": "Основа v3.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2"
+    },
+    "release_content_card_title_c_23": {
+      "value": "C++23",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_the_language_baseline_moves_forward": {
+      "value": "Базовый стандарт языка переходит на C++23 с обновлённым ядром движка и инструментами.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_modern_rhi": {
+      "value": "Modern RHI",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_d3d11_d3d12_and_vulkan_join": {
+      "value": "D3D11, D3D12 и Vulkan присоединяются к Metal и OpenGL с выбором Dynamic RHI.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_hlsl_shaders": {
+      "value": "HLSL-шейдеры",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_maintain_one_shader_source_and": {
+      "value": "Поддерживайте единый исходный код шейдера и компилируйте его для каждого поддерживаемого бэкенда рендеринга.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_arm_openxr": {
+      "value": "ARM + OpenXR",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_windows_and_linux_arm_support": {
+      "value": "Поддержка ARM для Windows и Linux вместе с компоновкой сцен OpenXR и вводом с контроллеров.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_new_physics": {
+      "value": "Новая физика",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_box2d_3_x_powers_2d": {
+      "value": "Box2D 3.x обеспечивает 2D-физику, а JoltPhysics 5.x поддерживает 3D-сцены.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_card_title_input_profiling": {
+      "value": "Ввод и профилирование",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
+    },
+    "release_content_copy_pointer_events_and_compile_time": {
+      "value": "Pointer Events и выбираемое при компиляции профилирование Tracy улучшают процесс разработки.",
+      "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
+    },
+    "release_content_eyebrow_platform_matrix": {
+      "value": "МАТРИЦА ПЛАТФОРМ",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.section-heading > p.eyebrow"
+    },
+    "release_content_heading_choose_the_backend_that_fits": {
+      "value": "Выберите бэкенд для нужного устройства.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.section-heading > h2"
+    },
+    "release_content_th_target": {
+      "value": "Цель",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
+    },
+    "release_content_th_primary_rhi_options": {
+      "value": "Основные варианты RHI",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
+    },
+    "release_content_th_status": {
+      "value": "Статус",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
+    },
+    "release_content_th_windows_uwp": {
+      "value": "Windows / UWP",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_d3d12_d3d11_vulkan_opengl": {
+      "value": "D3D12 · D3D11 · Vulkan · OpenGL",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_v3_preview": {
+      "value": "Предпросмотр v3",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_th_linux": {
+      "value": "Linux",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_vulkan_opengl": {
+      "value": "Vulkan · OpenGL",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_v3_preview_2": {
+      "value": "Предпросмотр v3",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_th_android": {
+      "value": "Android",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_vulkan_opengl_es": {
+      "value": "Vulkan · OpenGL ES",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_v3_preview_3": {
+      "value": "Предпросмотр v3",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_th_apple_platforms": {
+      "value": "Платформы Apple",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_metal_opengl_es": {
+      "value": "Metal · OpenGL ES",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_v3_preview_4": {
+      "value": "Предпросмотр v3",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_th_webassembly": {
+      "value": "WebAssembly",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
+    },
+    "release_content_td_webgl_2": {
+      "value": "WebGL 2",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "release_content_td_preview": {
+      "value": "Preview",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
+    },
+    "migration_eyebrow_migration": {
+      "value": "МИГРАЦИЯ",
+      "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.eyebrow"
+    },
+    "migration_heading_prepare_before_you_switch": {
+      "value": "Подготовьтесь перед переходом.",
+      "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > h2"
+    },
+    "migration_copy_axmol_3_removes_deprecated_apis": {
+      "value": "Axmol 3 удаляет устаревшие API и меняет несколько основных систем. Начните с подходящего пути ниже.",
+      "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "migration_strong_axmol_2_3": {
+      "value": "Axmol 2 → 3",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
+    },
+    "migration_small_renamed_and_removed_apis": {
+      "value": "Переименованные и удалённые API",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
+    },
+    "migration_strong_cocos2d_x_axmol": {
+      "value": "Cocos2d-x → Axmol",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
+    },
+    "migration_small_namespace_and_project_migration": {
+      "value": "Миграция пространства имён и проекта",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
+    },
+    "migration_strong_shader_migration": {
+      "value": "Миграция шейдеров",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
+    },
+    "migration_small_move_from_glsl_workflows_to": {
+      "value": "Переход с GLSL на HLSL",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
+    },
+    "migration_strong_input_migration": {
+      "value": "Миграция ввода",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
+    },
+    "migration_small_adopt_pointer_events": {
+      "value": "Перейти на Pointer Events",
+      "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
+    },
+    "release_content_h4_beta_means_feedback": {
+      "value": "Бета-версия означает обратную связь.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > h2.h4"
+    },
+    "release_content_copy_use_the_preview_for_evaluation": {
+      "value": "Используйте предварительную версию для оценки и миграции. Сообщайте о регрессиях через GitHub Issues и обсуждайте вопросы дизайна в Discussions.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > p.text-body-secondary"
+    },
+    "release_content_link_report_an_issue": {
+      "value": "Сообщить о проблеме",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "release_content_link_join_discussions": {
+      "value": "Присоединиться к обсуждению",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
+    },
+    "release_content_strong_need_the_conservative_production_bas": {
+      "value": "Нужна консервативная основа для продакшена?",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > strong"
+    },
+    "release_content_copy_use_axmol_2_11_x": {
+      "value": "Используйте Axmol 2.11.x LTS, пока проверяете свой проект с v3.",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > p.mb-3"
+    },
+    "release_content_link_download_stable_releases": {
+      "value": "Скачать стабильные версии",
+      "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > a"
+    },
+    "footer_div_text_body_secondary_2019_present": {
+      "value": "© 2019–present",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited_and_other_axmol": {
+      "value": "Simdsoft Limited и другие участники Axmol",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy": {
+      "value": ".",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_source_code_on": {
+      "value": "Исходный код на",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_github": {
+      "value": "GitHub",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_hosted_on": {
+      "value": "· Хостинг:",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_netlify": {
+      "value": "Netlify",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy_2": {
+      "value": ".",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_h6_text_body_secondary_community": {
+      "value": "Сообщество",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
+    },
+    "footer_link_github_discussions": {
+      "value": "GitHub Discussions",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_discord": {
+      "value": "Discord",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_reddit": {
+      "value": "Reddit",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_made_in_axmol": {
+      "value": "Made in Axmol",
+      "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    }
+  },
+  "sponsor": {
+    "seo_title": {
+      "value": "Поддержать Axmol | Поддержка открытого кода",
+      "context": "html > head > title"
+    },
+    "seo_description": {
+      "value": "Поддержите долгосрочное развитие Axmol.",
+      "context": "html > head > meta [content]"
+    },
+    "site_visually_hidden_focusable_skip_to_content": {
+      "value": "Перейти к содержанию",
+      "context": "html > body.sponsor-page > a.visually-hidden-focusable"
+    },
+    "nav_aria_label_axmol_home": {
+      "value": "Главная Axmol",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > a.navbar-brand [aria-label]"
+    },
+    "nav_alt_axmol": {
+      "value": "Axmol",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > a.navbar-brand > img [alt]"
+    },
+    "nav_aria_label_language": {
+      "value": "Язык",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
+    },
+    "nav_button_english": {
+      "value": "Русский",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
+    },
+    "nav_dropdown_item_english": {
+      "value": "English",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy": {
+      "value": "中文",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_2": {
+      "value": "日本語",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol": {
+      "value": "Español",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_3": {
+      "value": "Русский",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_nav_link_api_reference": {
+      "value": "Справочник API",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_wiki": {
+      "value": "Wiki",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_nav_link_support_axmol": {
+      "value": "Поддержать Axmol",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "nav_aria_label_language_2": {
+      "value": "Language",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
+    },
+    "nav_button_english_2": {
+      "value": "Русский",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
+    },
+    "nav_dropdown_item_english_2": {
+      "value": "English",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_4": {
+      "value": "中文",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_5": {
+      "value": "日本語",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_espanol_2": {
+      "value": "Español",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_dropdown_item_copy_6": {
+      "value": "Русский",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
+    },
+    "nav_aria_label_github_repository": {
+      "value": "GitHub repository",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
+    },
+    "nav_aria_label_theme": {
+      "value": "Тема",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a#themeDropdown [aria-label]"
+    },
+    "nav_dropdown_item_light": {
+      "value": " Light",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_dark": {
+      "value": " Dark",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "nav_dropdown_item_auto": {
+      "value": " Auto",
+      "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
+    },
+    "hero_eyebrow_supported_in_the_open": {
+      "value": "ОТКРЫТАЯ ПОДДЕРЖКА",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
+    },
+    "hero_display_4_support_axmol": {
+      "value": "Поддержите Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
+    },
+    "hero_hero_lead_we_are_a_global_community": {
+      "value": "Мы — мировое сообщество поклонников и разработчиков Axmol, которое с энтузиазмом развивает и поддерживает проект.",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.hero-lead"
+    },
+    "hero_copy_axmol_is_free_and_open": {
+      "value": "Axmol — свободный проект с открытым исходным кодом, которым руководит и который поддерживает",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
+    },
+    "hero_link_simdsoft_limited": {
+      "value": "Simdsoft Limited",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p > a"
+    },
+    "hero_copy_with_contributions_from_the_communit": {
+      "value": "при участии сообщества. Каждое исправление, улучшение и новая функция требуют времени и усилий.",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
+    },
+    "hero_copy_your_support_helps_us_accelerate": {
+      "value": "Ваша поддержка помогает ускорять разработку, расставлять приоритеты для важных функций и развивать Axmol для всех.",
+      "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.mb-0"
+    },
+    "support_intro_eyebrow_how_to_help": {
+      "value": "КАК ПОМОЧЬ",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
+    },
+    "support_intro_heading_keep_the_work_sustainable": {
+      "value": "Сделаем работу устойчивой.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > h2"
+    },
+    "support_intro_copy_axmol_is_led_and_maintained": {
+      "value": "Axmol развивается и поддерживается",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "support_intro_link_simdsoft_limited": {
+      "value": "Simdsoft Limited",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary > a"
+    },
+    "support_intro_copy_with_contributions_from_the_communit": {
+      "value": "при участии сообщества.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "nav_aria_label_ways_to_support_axmol": {
+      "value": "Ways to support Axmol",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid [aria-label]"
+    },
+    "nav_sponsor_path_index_01_individual": {
+      "value": "01 / ИНДИВИДУАЛЬНАЯ ПОДДЕРЖКА",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
+    },
+    "nav_card_title_individual_sponsorship": {
+      "value": "Индивидуальная поддержка",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
+    },
+    "nav_copy_choose_a_payment_channel_and": {
+      "value": "Выберите способ оплаты и ежемесячный или разовый взнос.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
+    },
+    "nav_sponsor_path_action_choose_a_way_to_give": {
+      "value": "Выбрать способ поддержки",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
+    },
+    "nav_span_copy": {
+      "value": "→",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
+    },
+    "nav_sponsor_path_index_02_corporate": {
+      "value": "02 / КОРПОРАТИВНАЯ ПОДДЕРЖКА",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
+    },
+    "nav_card_title_corporate_support": {
+      "value": "Корпоративная поддержка",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
+    },
+    "nav_copy_contact_the_maintainers_to_discuss": {
+      "value": "Свяжитесь с сопровождающими, чтобы обсудить поддержку Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
+    },
+    "nav_sponsor_path_action_info_simdsoft_com": {
+      "value": "info@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
+    },
+    "nav_span_copy_2": {
+      "value": "→",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
+    },
+    "nav_sponsor_path_index_03_recognition": {
+      "value": "03 / ПУБЛИЧНОЕ ПРИЗНАНИЕ",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
+    },
+    "nav_card_title_public_recognition": {
+      "value": "Публичное признание",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
+    },
+    "nav_copy_see_the_organizations_and_individual": {
+      "value": "Посмотрите организации и людей, отмеченных за поддержку Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
+    },
+    "nav_sponsor_path_action_view_public_supporters": {
+      "value": "Публичные сторонники",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
+    },
+    "nav_span_copy_3": {
+      "value": "→",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
+    },
+    "support_intro_h4_individual_sponsorship": {
+      "value": "Индивидуальная поддержка",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > h3.h4"
+    },
+    "support_intro_copy_choose_a_payment_channel_then": {
+      "value": "Выберите способ оплаты, затем ежемесячный уровень.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+    },
+    "support_intro_span_payment_channel": {
+      "value": "Способ оплаты",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > span"
+    },
+    "support_intro_option_paypal": {
+      "value": "PayPal",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_option_github_sponsors": {
+      "value": "GitHub Sponsors",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_option_open_source_collective": {
+      "value": "Open Source Collective",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_option_alipay_china": {
+      "value": "Alipay (Китай)",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_option_wechat_pay_china": {
+      "value": "WeChat Pay (Китай)",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
+    },
+    "support_intro_eyebrow_one_time_support": {
+      "value": "РАЗОВАЯ ПОДДЕРЖКА",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.eyebrow"
+    },
+    "support_intro_h4_alipay": {
+      "value": "Alipay",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > h4"
+    },
+    "support_intro_copy_scan_the_qr_code_and": {
+      "value": "Отсканируйте QR-код и укажите любую сумму в приложении для оплаты.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.text-body-secondary"
+    },
+    "support_intro_copy_please_add_the_note_sponsor": {
+      "value": "Добавьте примечание: Sponsor Axmol",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.small"
+    },
+    "support_intro_button_enlarge_qr_code": {
+      "value": "Увеличить QR-код",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > button.btn"
+    },
+    "support_intro_aria_label_enlarge_alipay_qr_code": {
+      "value": "Увеличить QR-код Alipay",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > button.sponsor-qr-image-button [aria-label]"
+    },
+    "support_intro_alt_alipay_sponsorship_qr_code": {
+      "value": "QR Alipay (Китай)",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > button.sponsor-qr-image-button > img [alt]"
+    },
+    "support_intro_span_backer": {
+      "value": "Сторонник",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_5": {
+      "value": "USD $5",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month": {
+      "value": "/ месяц",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_span_bronze": {
+      "value": "Бронза",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_25": {
+      "value": "USD $25",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month_2": {
+      "value": "/ месяц",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_span_silver": {
+      "value": "Серебро",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_50": {
+      "value": "USD $50",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month_3": {
+      "value": "/ месяц",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_span_gold": {
+      "value": "Золото",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_100": {
+      "value": "USD $100",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month_4": {
+      "value": "/ месяц",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_span_platinum": {
+      "value": "Платина",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+    },
+    "support_intro_strong_usd_250": {
+      "value": "USD $250",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+    },
+    "support_intro_small_month_5": {
+      "value": "/ месяц",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+    },
+    "support_intro_h4_custom": {
+      "value": "Другая сумма",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > h4"
+    },
+    "support_intro_currency_prefix_copy": {
+      "value": "$",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > span.currency-prefix"
+    },
+    "support_intro_placeholder_enter_amount_usd": {
+      "value": "Введите сумму (USD)",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > input#custom-amount-en [placeholder]"
+    },
+    "support_intro_aria_label_custom_amount_in_united_states": {
+      "value": "Введите сумму (USD)",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > input#custom-amount-en [aria-label]"
+    },
+    "support_intro_currency_suffix_usd": {
+      "value": "USD",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > span.currency-suffix"
+    },
+    "support_intro_custom_monthly_label_monthly": {
+      "value": "Ежемесячно",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > label.custom-monthly-label"
+    },
+    "support_intro_button_continue": {
+      "value": "Продолжить",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > button.btn"
+    },
+    "supporters_eyebrow_public_supporters": {
+      "value": "ПУБЛИЧНЫЕ СТОРОННИКИ",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.eyebrow"
+    },
+    "supporters_heading_supported_in_the_open": {
+      "value": "Поддержано открыто.",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2"
+    },
+    "supporters_copy_we_thank_the_organizations_and": {
+      "value": "Мы благодарим организации и людей, поддерживающих долгосрочное развитие Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
+    },
+    "supporters_supporter_tier_corporate_diamond": {
+      "value": "КОРПОРАТИВНЫЙ БРИЛЛИАНТ",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
+    },
+    "supporters_alt_scorewarrior": {
+      "value": "Scorewarrior",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"
+    },
+    "supporters_h5_scorewarrior": {
+      "value": "Scorewarrior",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > h3.h5"
+    },
+    "supporters_copy_long_term_financial_support_for": {
+      "value": "Долгосрочная финансовая поддержка разработки Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > p.text-body-secondary"
+    },
+    "supporters_card_title_other_public_supporters": {
+      "value": "Другие публичные сторонники",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > h3"
+    },
+    "supporters_dt_platinum": {
+      "value": "Платина",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+    },
+    "supporters_dd_peterkharitonov_alain_serge_nagni": {
+      "value": "peterkharitonov, Alain-Serge Nagni",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+    },
+    "supporters_dt_backers": {
+      "value": "Сторонники",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+    },
+    "supporters_dd_duong_thienphuoc_paulocoutinhox_clvs": {
+      "value": "DUONG, thienphuoc, paulocoutinhox, clvs7-gh",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+    },
+    "supporters_dt_contributors": {
+      "value": "Участники",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+    },
+    "supporters_dd_explorer_turky_mohammed_paul_gardine": {
+      "value": "Explorer, 蚊子别跑, 午餐界, 椰子, 零, Turky Mohammed, Paul Gardiner, Julien, Javier Barros, Paulo Coutinho, deal11, bingsoo",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+    },
+    "faq_heading_faq": {
+      "value": "Частые вопросы",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > h2.mb-4"
+    },
+    "faq_button_how_is_public_support_represented": {
+      "value": "Как отображается публичная поддержка?",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading1 > button.accordion-button"
+    },
+    "faq_div_accordion_body_the_supporter_list_is_maintained": {
+      "value": "Список сторонников ведёт команда Axmol. Чтобы исправить или обновить публичную запись, напишите на",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    },
+    "faq_link_oss_simdsoft_com": {
+      "value": "oss@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > a"
+    },
+    "faq_div_accordion_body_to_correct_or_update_a": {
+      "value": ".",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    },
+    "faq_button_how_can_companies_support_axmol": {
+      "value": "Как компании могут поддержать Axmol?",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
+    },
+    "faq_div_accordion_body_corporate_support_is_handled_directl": {
+      "value": "Корпоративная поддержка обрабатывается",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+    },
+    "faq_link_simdsoft": {
+      "value": "Simdsoft",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+    },
+    "faq_div_accordion_body_contact": {
+      "value": "напрямую. Для частного обсуждения напишите на",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+    },
+    "faq_link_info_simdsoft_com": {
+      "value": "info@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+    },
+    "faq_div_accordion_body_for_a_private_discussion_support": {
+      "value": ". Поддержка не даёт права собственности или контроля над техническим развитием Axmol.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+    },
+    "faq_button_can_i_choose_whether_my": {
+      "value": "Можно ли выбрать, будет ли моё имя в списке спонсоров?",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading4 > button.accordion-button"
+    },
+    "faq_div_accordion_body_yes_all_sponsor_names_are": {
+      "value": "Да. Все имена спонсоров добавляются вручную. Если вы хотите остаться анонимным, напишите на",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
+    },
+    "faq_link_oss_simdsoft_com_2": {
+      "value": "oss@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body > a"
+    },
+    "faq_div_accordion_body_and_we_ll_update_your": {
+      "value": ", и мы обновим отображение.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
+    },
+    "footer_div_text_body_secondary_2019_present": {
+      "value": "© 2019–present",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited_and_other_axmol": {
+      "value": "Simdsoft Limited и другие участники Axmol",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy": {
+      "value": ".",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_led_and_maintained_by": {
+      "value": "Развивается и поддерживается",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_simdsoft_limited": {
+      "value": "Simdsoft Limited",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_with_contributions_from_the_communit": {
+      "value": "(深圳司脉科技有限公司), при участии сообщества.",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_div_text_body_secondary_hosted_on": {
+      "value": "Хостинг:",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_netlify": {
+      "value": "Netlify",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_source_code_available_on": {
+      "value": "· Исходный код доступен на",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_link_github": {
+      "value": "GitHub",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
+    },
+    "footer_div_text_body_secondary_copy_2": {
+      "value": ".",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
+    },
+    "footer_h6_text_body_secondary_community": {
+      "value": "Сообщество",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
+    },
+    "footer_link_github_discussions": {
+      "value": "GitHub Discussions",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_discord": {
+      "value": "Discord",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_reddit": {
+      "value": "Reddit",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "footer_link_made_in_axmol": {
+      "value": "Made in Axmol",
+      "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "common_modal_h5_commonmodaltitle_title": {
+      "value": "Закрыть",
+      "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div.modal-header > h5#commonModalTitle"
+    },
+    "common_modal_aria_label_close": {
+      "value": "Закрыть",
+      "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div.modal-header > button.btn-close [aria-label]"
+    },
+    "common_modal_div_commonmodalbody_message_goes_here": {
+      "value": "Здесь будет сообщение.",
+      "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div#commonModalBody"
+    },
+    "qr_modal_h5_sponsorqrmodaltitle_alipay_qr_code": {
+      "value": "Alipay (Китай) QR",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-header > h5#sponsorQrModalTitle"
+    },
+    "qr_modal_aria_label_close": {
+      "value": "Закрыть",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-header > button.btn-close [aria-label]"
+    },
+    "qr_modal_alt_alipay_sponsorship_qr_code": {
+      "value": "QR Alipay (Китай)",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > img.sponsor-qr-modal-image [alt]"
+    },
+    "qr_modal_copy_scan_the_qr_code_and": {
+      "value": "Отсканируйте QR-код и укажите любую сумму в приложении для оплаты.",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
+    },
+    "qr_modal_copy_please_add_the_note_sponsor": {
+      "value": "Добавьте примечание: Sponsor Axmol",
+      "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
+    }
+  },
+  "sponsorRuntime": {
+    "alipay": "Alipay",
+    "wechat": "WeChat Pay",
+    "alipayAlt": "QR-код для поддержки через Alipay",
+    "wechatAlt": "QR-код для поддержки через WeChat Pay",
+    "limitMessage": "Индивидуальная поддержка ограничена USD {amount}. Измените сумму и повторите попытку.",
+    "limitTitle": "Лимит суммы поддержки",
+    "ok": "OK",
+    "qrHelp": "Отсканируйте QR-код и укажите любую сумму в приложении для оплаты.",
+    "tierHelp": "Выберите способ оплаты и сумму. Индивидуальная поддержка через PayPal, GitHub Sponsors и OSC ограничена USD {amount}.",
+    "enlarge": "Увеличить QR-код {name}",
+    "note": "Добавьте примечание: Sponsor Axmol",
+    "qrTitle": "QR-код {name}"
+  }
+}

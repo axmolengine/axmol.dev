@@ -9,9 +9,13 @@ on:
     paths:
       - .github/workflows/build.yml
       - '**/*.html'
-      - 'assets'
-      - 'sponsor'
-      - 'wasm'
+      - 'assets/**'
+      - 'i18n/**'
+      - 'templates/**'
+      - 'render-i18n.ps1'
+      - 'build.ps1'
+      - 'sponsor/**'
+      - 'wasm/**'
       - '_headers'
   repository_dispatch:
     types: [forward-push]

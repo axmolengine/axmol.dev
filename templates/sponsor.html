@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="{{i18n:site.htmlLang}}" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{i18n:sponsor.seo_title}}</title>
+    <meta name="description" content="{{i18n:sponsor.seo_description}}">
+    <meta name="color-scheme" content="light dark">
+    <link rel="canonical" href="{{route:current}}">
+    <link rel="alternate" hreflang="en" href="https://axmol.dev/sponsor/">
+    <link rel="alternate" hreflang="zh-CN" href="https://axmol.dev/zh/sponsor/">
+    <link rel="alternate" hreflang="ja" href="https://axmol.dev/ja/sponsor/">
+    <link rel="alternate" hreflang="es" href="https://axmol.dev/es/sponsor/">
+    <link rel="alternate" hreflang="ru" href="https://axmol.dev/ru/sponsor/">
+    <link rel="alternate" hreflang="x-default" href="{{route:english}}">
+    <script>
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem("axmol-theme"); } catch (e) {}
+        var sys = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.setAttribute(
+          "data-bs-theme",
+          (saved === "light" || saved === "dark") ? saved : sys
+        );
+      })();
+    </script>
+    <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
+  </head>
+  <body class="sponsor-page">
+    <a class="visually-hidden-focusable skip-link" href="#main-content">{{i18n:sponsor.site_visually_hidden_focusable_skip_to_content}}</a>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top glass-nav">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="/" aria-label="{{i18n:sponsor.nav_aria_label_axmol_home}}">
+          <img src="/assets/img/logo.png" alt="{{i18n:sponsor.nav_alt_axmol}}" height="28">
+        </a>
+        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:sponsor.nav_aria_label_language}}">{{i18n:sponsor.nav_button_english}}</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
+              <li><a class="dropdown-item active" href="/sponsor/" lang="en" aria-current="page">{{i18n:sponsor.nav_dropdown_item_english}}</a></li>
+              <li><a class="dropdown-item" href="/zh/sponsor/" lang="zh-CN">{{i18n:sponsor.nav_dropdown_item_copy}}</a></li>
+              <li><a class="dropdown-item" href="/ja/sponsor/" lang="ja">{{i18n:sponsor.nav_dropdown_item_copy_2}}</a></li>
+              <li><a class="dropdown-item" href="/es/sponsor/" lang="es">{{i18n:sponsor.nav_dropdown_item_espanol}}</a></li>
+              <li><a class="dropdown-item" href="/ru/sponsor/" lang="ru">{{i18n:sponsor.nav_dropdown_item_copy_3}}</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Collapse button for mobile -->
+        <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://axmol.dev/manual">{{i18n:sponsor.nav_nav_link_api_reference}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki"
+                target="_blank" rel="noopener">{{i18n:sponsor.nav_nav_link_wiki}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-sponsor" href="/sponsor/">{{i18n:sponsor.nav_nav_link_support_axmol}}</a>
+            </li>
+          </ul>
+
+          <!-- Right side: GitHub + Theme dropdown -->
+          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <!-- Language switch -->
+            <li class="nav-item dropdown d-none d-lg-block">
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:sponsor.nav_aria_label_language_2}}">{{i18n:sponsor.nav_button_english_2}}</button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item active" href="/sponsor/" lang="en" aria-current="page">{{i18n:sponsor.nav_dropdown_item_english_2}}</a></li>
+                <li><a class="dropdown-item" href="/zh/sponsor/" lang="zh-CN">{{i18n:sponsor.nav_dropdown_item_copy_4}}</a></li>
+                <li><a class="dropdown-item" href="/ja/sponsor/" lang="ja">{{i18n:sponsor.nav_dropdown_item_copy_5}}</a></li>
+                <li><a class="dropdown-item" href="/es/sponsor/" lang="es">{{i18n:sponsor.nav_dropdown_item_espanol_2}}</a></li>
+                <li><a class="dropdown-item" href="/ru/sponsor/" lang="ru">{{i18n:sponsor.nav_dropdown_item_copy_6}}</a></li>
+              </ul>
+            </li>
+
+            <!-- GitHub icon -->
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center justify-content-center"
+                href="https://github.com/axmolengine/axmol"
+                target="_blank" rel="noopener" aria-label="{{i18n:sponsor.nav_aria_label_github_repository}}">
+                <svg class="github-icon" width="24" height="24"
+                  aria-hidden="true">
+                  <use href="/assets/icons.svg#github-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div
+                class="vr d-none d-lg-flex h-100 mx-lg-2 text-white">
+              </div>
+              <hr
+              class="d-lg-none my-2 text-white-50">
+            </li>
+
+            <!-- Theme dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle d-flex align-items-center justify-content-left"
+                href="#" id="themeDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-label="{{i18n:sponsor.nav_aria_label_theme}}">
+                <svg class="theme-icon" width="24" height="24"
+                  fill="currentColor">
+                  <use href="/assets/icons.svg#circle-half"></use>
+                </svg>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="themeDropdown">
+                <li>
+                  <button class="dropdown-item d-flex align-items-center"
+                    data-theme-option="light"
+                    onclick="AxmolTheme.saveTheme('light')">
+                    <svg width="16" height="16" fill="currentColor">
+                      <use href="/assets/icons.svg#sun-fill"></use>
+                    </svg> {{i18n:sponsor.nav_dropdown_item_light}}
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center"
+                    data-theme-option="dark"
+                    onclick="AxmolTheme.saveTheme('dark')">
+                    <svg width="16" height="16" fill="currentColor">
+                      <use href="/assets/icons.svg#moon-stars-fill"></use>
+                    </svg> {{i18n:sponsor.nav_dropdown_item_dark}}
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item d-flex align-items-center"
+                    data-theme-option="auto"
+                    onclick="AxmolTheme.saveTheme('auto')">
+                    <svg width="16" height="16" fill="currentColor">
+                      <use href="/assets/icons.svg#circle-half"></use>
+                    </svg> {{i18n:sponsor.nav_dropdown_item_auto}}
+                  </button>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <!-- Hero -->
+      <header class="hero hero-gradient">
+        <div class="container py-5 py-lg-6">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-12">
+              <div class="sponsor-hero-copy text-center">
+                <p class="eyebrow">{{i18n:sponsor.hero_eyebrow_supported_in_the_open}}</p>
+                <h1 class="display-4 fw-bold text-glow mb-3">{{i18n:sponsor.hero_display_4_support_axmol}}</h1>
+                <p class="hero-lead">{{i18n:sponsor.hero_hero_lead_we_are_a_global_community}}</p>
+                <p>
+                  {{i18n:sponsor.hero_copy_axmol_is_free_and_open}}
+                  <a href="{{i18n:site.simdsoftUrl}}" target="_blank" rel="noopener">{{i18n:sponsor.hero_link_simdsoft_limited}}</a>{{i18n:sponsor.hero_copy_with_contributions_from_the_communit}}
+                </p>
+                <p class="mb-0">{{i18n:sponsor.hero_copy_your_support_helps_us_accelerate}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section-panel">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">{{i18n:sponsor.support_intro_eyebrow_how_to_help}}</p>
+            <h2>{{i18n:sponsor.support_intro_heading_keep_the_work_sustainable}}</h2>
+            <p class="text-body-secondary">{{i18n:sponsor.support_intro_copy_axmol_is_led_and_maintained}} <a href="{{i18n:site.simdsoftUrl}}" target="_blank" rel="noopener">{{i18n:sponsor.support_intro_link_simdsoft_limited}}</a>{{i18n:sponsor.support_intro_copy_with_contributions_from_the_communit}}</p>
+          </div>
+
+          <nav class="sponsor-path-grid" aria-label="{{i18n:sponsor.nav_aria_label_ways_to_support_axmol}}">
+            <a class="sponsor-path-card" href="#individual-sponsorship">
+              <span class="sponsor-path-index">{{i18n:sponsor.nav_sponsor_path_index_01_individual}}</span>
+              <h3>{{i18n:sponsor.nav_card_title_individual_sponsorship}}</h3>
+              <p>{{i18n:sponsor.nav_copy_choose_a_payment_channel_and}}</p>
+              <span class="sponsor-path-action">{{i18n:sponsor.nav_sponsor_path_action_choose_a_way_to_give}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy}}</span></span>
+            </a>
+            <a class="sponsor-path-card" href="mailto:info@simdsoft.com">
+              <span class="sponsor-path-index">{{i18n:sponsor.nav_sponsor_path_index_02_corporate}}</span>
+              <h3>{{i18n:sponsor.nav_card_title_corporate_support}}</h3>
+              <p>{{i18n:sponsor.nav_copy_contact_the_maintainers_to_discuss}}</p>
+              <span class="sponsor-path-action">{{i18n:sponsor.nav_sponsor_path_action_info_simdsoft_com}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy_2}}</span></span>
+            </a>
+            <a class="sponsor-path-card" href="#supporters">
+              <span class="sponsor-path-index">{{i18n:sponsor.nav_sponsor_path_index_03_recognition}}</span>
+              <h3>{{i18n:sponsor.nav_card_title_public_recognition}}</h3>
+              <p>{{i18n:sponsor.nav_copy_see_the_organizations_and_individual}}</p>
+              <span class="sponsor-path-action">{{i18n:sponsor.nav_sponsor_path_action_view_public_supporters}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy_3}}</span></span>
+            </a>
+          </nav>
+
+          <div class="sponsor-individual-panel" id="individual-sponsorship" tabindex="-1">
+            <form id="unipayment" method="post" target="_blank" hidden>
+              <input id="WIDout_trade_no" name="WIDout_trade_no" type="hidden">
+              <input id="WIDprod" name="WIDprod" type="hidden">
+              <input id="WIDamount" name="WIDamount" type="hidden">
+              <input id="WIDsponsor" name="WIDsponsor" type="hidden" value="Axmol">
+              <input id="WIDchannel" name="WIDchannel" type="hidden" value="3">
+              <input id="WIDmonthly" name="WIDmonthly" type="hidden">
+              <input id="WIDlang" name="WIDlang" type="hidden" value="en">
+            </form>
+            <h3 class="h4">{{i18n:sponsor.support_intro_h4_individual_sponsorship}}</h3>
+            <p class="text-body-secondary" data-sponsor-channel-help>{{i18n:sponsor.support_intro_copy_choose_a_payment_channel_then}}</p>
+            <label class="sponsor-channel-select mb-3" for="sponsor-channel-en">
+              <span>{{i18n:sponsor.support_intro_span_payment_channel}}</span>
+              <select id="sponsor-channel-en" data-sponsor-channel>
+                <option value="paypal" selected>{{i18n:sponsor.support_intro_option_paypal}}</option>
+                <option value="github">{{i18n:sponsor.support_intro_option_github_sponsors}}</option>
+                <option value="osc">{{i18n:sponsor.support_intro_option_open_source_collective}}</option>
+                <option value="alipay">{{i18n:sponsor.support_intro_option_alipay_china}}</option>
+                <option value="wechat">{{i18n:sponsor.support_intro_option_wechat_pay_china}}</option>
+              </select>
+            </label>
+            <section class="sponsor-qr-panel" data-sponsor-qr-panel hidden aria-live="polite">
+              <div class="sponsor-qr-copy">
+                <p class="eyebrow mb-2">{{i18n:sponsor.support_intro_eyebrow_one_time_support}}</p>
+                <h4 data-sponsor-qr-title>{{i18n:sponsor.support_intro_h4_alipay}}</h4>
+                <p class="text-body-secondary mb-2" data-sponsor-qr-instruction>{{i18n:sponsor.support_intro_copy_scan_the_qr_code_and}}</p>
+                <p class="small text-body-secondary mb-3" data-sponsor-qr-note>{{i18n:sponsor.support_intro_copy_please_add_the_note_sponsor}}</p>
+                <button type="button" class="btn btn-primary" data-sponsor-qr-open>{{i18n:sponsor.support_intro_button_enlarge_qr_code}}</button>
+              </div>
+              <button type="button" class="sponsor-qr-image-button" data-sponsor-qr-open aria-label="{{i18n:sponsor.support_intro_aria_label_enlarge_alipay_qr_code}}">
+                <img data-sponsor-qr-image src="/assets/img/alipay.jpg" alt="{{i18n:sponsor.support_intro_alt_alipay_sponsorship_qr_code}}">
+              </button>
+            </section>
+            <div class="sponsor-tier-grid" data-sponsor-tiers>
+              <button type="button" class="sponsor-tier-card" data-tier-amount="5"><span>{{i18n:sponsor.support_intro_span_backer}}</span><strong>{{i18n:sponsor.support_intro_strong_usd_5}}<small>{{i18n:sponsor.support_intro_small_month}}</small></strong></button>
+              <button type="button" class="sponsor-tier-card" data-tier-amount="25"><span>{{i18n:sponsor.support_intro_span_bronze}}</span><strong>{{i18n:sponsor.support_intro_strong_usd_25}}<small>{{i18n:sponsor.support_intro_small_month_2}}</small></strong></button>
+              <button type="button" class="sponsor-tier-card" data-tier-amount="50"><span>{{i18n:sponsor.support_intro_span_silver}}</span><strong>{{i18n:sponsor.support_intro_strong_usd_50}}<small>{{i18n:sponsor.support_intro_small_month_3}}</small></strong></button>
+              <button type="button" class="sponsor-tier-card" data-tier-amount="100"><span>{{i18n:sponsor.support_intro_span_gold}}</span><strong>{{i18n:sponsor.support_intro_strong_usd_100}}<small>{{i18n:sponsor.support_intro_small_month_4}}</small></strong></button>
+              <button type="button" class="sponsor-tier-card" data-tier-amount="250"><span>{{i18n:sponsor.support_intro_span_platinum}}</span><strong>{{i18n:sponsor.support_intro_strong_usd_250}}<small>{{i18n:sponsor.support_intro_small_month_5}}</small></strong></button>
+              <div class="sponsor-tier-card sponsor-tier-custom">
+                <h4>{{i18n:sponsor.support_intro_h4_custom}}</h4>
+                <div class="custom-tier-action">
+                  <div class="custom-tier-input-wrap">
+                    <span class="currency-prefix" aria-hidden="true">{{i18n:sponsor.support_intro_currency_prefix_copy}}</span>
+                    <input id="custom-amount-en" class="custom-tier-input" data-custom-amount type="number" min="1" max="500" step="0.01" inputmode="decimal" placeholder="{{i18n:sponsor.support_intro_placeholder_enter_amount_usd}}" aria-label="{{i18n:sponsor.support_intro_aria_label_custom_amount_in_united_states}}">
+                    <span class="currency-suffix" aria-hidden="true">{{i18n:sponsor.support_intro_currency_suffix_usd}}</span>
+                  </div>
+                  <label class="custom-monthly-label"><input type="checkbox" data-custom-monthly checked><span aria-hidden="true"></span>{{i18n:sponsor.support_intro_custom_monthly_label_monthly}}</label>
+                </div>
+                <button type="button" class="btn btn-outline-primary align-self-start" data-tier-amount="custom">{{i18n:sponsor.support_intro_button_continue}}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tight support-strip" id="supporters">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">{{i18n:sponsor.supporters_eyebrow_public_supporters}}</p>
+            <h2>{{i18n:sponsor.supporters_heading_supported_in_the_open}}</h2>
+            <p class="text-body-secondary">{{i18n:sponsor.supporters_copy_we_thank_the_organizations_and}}</p>
+          </div>
+          <div class="row g-3 justify-content-center supporter-featured-row">
+            <div class="col-md-8 col-lg-5">
+              <article class="supporter-card supporter-featured h-100">
+                <div class="supporter-tier">{{i18n:sponsor.supporters_supporter_tier_corporate_diamond}}</div>
+                <a class="supporter-logo" href="https://scorewarrior.com/?utm_source=axmol.dev"
+                  target="_blank" rel="noopener">
+                  <img src="https://cdn.prod.website-files.com/633da33305ac754156026dd8/63566f1edf5f0712f94f7f1b_sw-triangle-821890.svg"
+                  alt="{{i18n:sponsor.supporters_alt_scorewarrior}}">
+                </a>
+                <h3 class="h5">{{i18n:sponsor.supporters_h5_scorewarrior}}</h3>
+                <p class="text-body-secondary mb-0">{{i18n:sponsor.supporters_copy_long_term_financial_support_for}}</p>
+              </article>
+            </div>
+          </div>
+          <article class="story-card supporter-names mt-3">
+            <h3>{{i18n:sponsor.supporters_card_title_other_public_supporters}}</h3>
+            <dl class="mb-0">
+              <dt>{{i18n:sponsor.supporters_dt_platinum}}</dt>
+              <dd>{{i18n:sponsor.supporters_dd_peterkharitonov_alain_serge_nagni}}</dd>
+              <dt>{{i18n:sponsor.supporters_dt_backers}}</dt>
+              <dd>{{i18n:sponsor.supporters_dd_duong_thienphuoc_paulocoutinhox_clvs}}</dd>
+              <dt>{{i18n:sponsor.supporters_dt_contributors}}</dt>
+              <dd>{{i18n:sponsor.supporters_dd_explorer_turky_mohammed_paul_gardine}}</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="py-5" id="faq">
+        <div class="container">
+          <h2 class="mb-4">{{i18n:sponsor.faq_heading_faq}}</h2>
+          <div class="accordion" id="faqAccordion">
+
+            <!-- Q1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading1">
+                <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faqCollapse1"
+                  aria-expanded="false" aria-controls="faqCollapse1">
+                  {{i18n:sponsor.faq_button_how_is_public_support_represented}}
+                </button>
+              </h2>
+              <div id="faqCollapse1" class="accordion-collapse collapse"
+                aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  {{i18n:sponsor.faq_div_accordion_body_the_supporter_list_is_maintained}}
+                  <a href="mailto:oss@simdsoft.com">{{i18n:sponsor.faq_link_oss_simdsoft_com}}</a> {{i18n:sponsor.faq_div_accordion_body_to_correct_or_update_a}}
+                </div>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading2">
+                <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faqCollapse2"
+                  aria-expanded="false" aria-controls="faqCollapse2">
+                  {{i18n:sponsor.faq_button_how_can_companies_support_axmol}}
+                </button>
+              </h2>
+              <div id="faqCollapse2" class="accordion-collapse collapse"
+                aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  {{i18n:sponsor.faq_div_accordion_body_corporate_support_is_handled_directl}}
+                  <a href="{{i18n:site.simdsoftUrl}}" target="_blank" rel="noopener">{{i18n:sponsor.faq_link_simdsoft}}</a>{{i18n:sponsor.faq_div_accordion_body_contact}} <a href="mailto:info@simdsoft.com">{{i18n:sponsor.faq_link_info_simdsoft_com}}</a>
+                  {{i18n:sponsor.faq_div_accordion_body_for_a_private_discussion_support}}
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faqHeading4">
+                <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#faqCollapse4"
+                  aria-expanded="false" aria-controls="faqCollapse4">
+                  {{i18n:sponsor.faq_button_can_i_choose_whether_my}}
+                </button>
+              </h2>
+              <div id="faqCollapse4" class="accordion-collapse collapse"
+                aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  {{i18n:sponsor.faq_div_accordion_body_yes_all_sponsor_names_are}}
+                  <a href="mailto:oss@simdsoft.com">{{i18n:sponsor.faq_link_oss_simdsoft_com_2}}</a>
+                  {{i18n:sponsor.faq_div_accordion_body_and_we_ll_update_your}}
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-top mt-5">
+      <div class="container py-4">
+        <div class="row gy-3 align-items-center">
+          <!-- Left: Copyright -->
+          <div class="col-md text-center text-md-start">
+            <div class="text-body-secondary small">
+              {{i18n:sponsor.footer_div_text_body_secondary_2019_present}} <a
+                href="https://github.com/axmolengine/axmol/blob/dev/AUTHORS.md"
+                target="_blank" rel="noopener">{{i18n:sponsor.footer_link_simdsoft_limited_and_other_axmol}}</a>{{i18n:sponsor.footer_div_text_body_secondary_copy}} <br />
+              {{i18n:sponsor.footer_div_text_body_secondary_led_and_maintained_by}} <a
+                href="{{i18n:site.simdsoftUrl}}" target="_blank"
+                rel="noopener">{{i18n:sponsor.footer_link_simdsoft_limited}}</a> {{i18n:sponsor.footer_div_text_body_secondary_with_contributions_from_the_communit}} <br />
+              {{i18n:sponsor.footer_div_text_body_secondary_hosted_on}} <a href="https://www.netlify.com/">{{i18n:sponsor.footer_link_netlify}}</a> {{i18n:sponsor.footer_div_text_body_secondary_source_code_available_on}} <a
+                href="https://github.com/axmolengine/axmol.dev" target="_blank"
+                rel="noopener">{{i18n:sponsor.footer_link_github}}</a>{{i18n:sponsor.footer_div_text_body_secondary_copy_2}}
+            </div>
+          </div>
+
+          <!-- Right: Community -->
+          <div class="col-md">
+            <div class="text-center text-md-end">
+              <h6 class="text-body-secondary mb-2">{{i18n:sponsor.footer_h6_text_body_secondary_community}}</h6>
+              <div
+                class="d-flex flex-wrap justify-content-center justify-content-md-end gap-3">
+                <a class="text-body-secondary"
+                  href="https://github.com/axmolengine/axmol/discussions"
+                  target="_blank" rel="noopener">{{i18n:sponsor.footer_link_github_discussions}}</a>
+                <a class="text-body-secondary"
+                  href="https://discord.gg/TvY2nwPbQR" target="_blank"
+                  rel="noopener">{{i18n:sponsor.footer_link_discord}}</a>
+                <a class="text-body-secondary"
+                  href="https://www.reddit.com/r/axmol/" target="_blank"
+                  rel="noopener">{{i18n:sponsor.footer_link_reddit}}</a>
+                <a class="text-body-secondary"
+                  href="https://github.com/axmolengine/axmol/wiki/Made-in-Axmol"
+                  target="_blank" rel="noopener">{{i18n:sponsor.footer_link_made_in_axmol}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Common modal -->
+    <div class="modal fade" id="commonModal" tabindex="-1" aria-labelledby="commonModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="commonModalTitle" class="modal-title">{{i18n:sponsor.common_modal_h5_commonmodaltitle_title}}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="{{i18n:sponsor.common_modal_aria_label_close}}"></button>
+          </div>
+          <div id="commonModalBody" class="modal-body">
+            {{i18n:sponsor.common_modal_div_commonmodalbody_message_goes_here}}
+          </div>
+          <div id="commonModalFooter" class="modal-footer">
+            <!-- Buttons will be injected dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="sponsorQrModal" tabindex="-1" aria-labelledby="sponsorQrModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content sponsor-qr-modal-content">
+          <div class="modal-header">
+            <h5 id="sponsorQrModalTitle" class="modal-title" data-sponsor-qr-modal-title>{{i18n:sponsor.qr_modal_h5_sponsorqrmodaltitle_alipay_qr_code}}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{i18n:sponsor.qr_modal_aria_label_close}}"></button>
+          </div>
+          <div class="modal-body text-center">
+
+            <img class="sponsor-qr-modal-image" data-sponsor-qr-modal-image src="/assets/img/alipay.jpg" alt="{{i18n:sponsor.qr_modal_alt_alipay_sponsorship_qr_code}}">
+            <p class="text-body-secondary mt-3 mb-1" data-sponsor-qr-modal-instruction>{{i18n:sponsor.qr_modal_copy_scan_the_qr_code_and}}</p>
+            <p class="text-body-secondary mb-0" data-sponsor-qr-modal-note>{{i18n:sponsor.qr_modal_copy_please_add_the_note_sponsor}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Common toast container -->
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3"></div>
+
+    <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
+    <script src="/assets/js/md5.js?v=2.2"></script>
+    <script src="/assets/js/utils.js?v=2.1.0"></script>
+    {{i18n:sponsorRuntime}}
+    <script src="/assets/js/sponsor-tiers.js?v=1.1.5"></script>
+    <script src="/assets/js/theme.js?v=2.1.0"></script>
+  </body>
+</html>

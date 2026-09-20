@@ -17,17 +17,11 @@ $site_dist = Join-Path $PSScriptRoot 'dist/'
 mkdirs $site_dist
 
 # step.1 build main site
-Copy-Item (Join-Path $PSScriptRoot 'index.html') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'favicon.ico') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'sitemap.xml') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'robots.txt') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'assets') $site_dist -Recurse -Force
-Copy-Item (Join-Path $PSScriptRoot 'sponsor') $site_dist -Recurse -Force
-Copy-Item (Join-Path $PSScriptRoot 'v3') $site_dist -Recurse -Force
-Copy-Item (Join-Path $PSScriptRoot 'zh') $site_dist -Recurse -Force
-Copy-Item (Join-Path $PSScriptRoot 'ja') $site_dist -Recurse -Force
-Copy-Item (Join-Path $PSScriptRoot 'es') $site_dist -Recurse -Force
-Copy-Item (Join-Path $PSScriptRoot 'ru') $site_dist -Recurse -Force
+& (Join-Path $PSScriptRoot 'render-i18n.ps1') -OutputPath $site_dist
 
 # step.2 build docs to main site manual
 if ($axmol_src) {
@@ -56,7 +50,4 @@ if ($wasm_artifact_dir) {
   copy_tree_if $cpp_tests_dir $site_wasm_dir
   copy_tree_if $(Join-Path $wasm_artifact_dir 'fairygui-tests') $site_wasm_dir
   copy_tree_if $(Join-Path $wasm_artifact_dir 'lua-tests') $site_wasm_dir
-} elseif (Test-Path (Join-Path $site_dist 'wasm')) {
-  # Avoid publishing stale demo files when this build has no WASM artifact.
-  Remove-Item -LiteralPath (Join-Path $site_dist 'wasm') -Recurse -Force
 }
