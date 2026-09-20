@@ -280,7 +280,7 @@
       "value": "现代图形",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
-    "v3_highlights_copy_write_hlsl_once_and_target": {
+    "v3_dynamic_rhi_desc": {
       "value": "以 HLSL 为核心，通过 Dynamic RHI 覆盖 D3D、Vulkan、Metal 与 OpenGL。",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },

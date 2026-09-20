@@ -280,8 +280,8 @@
       "value": "Modern graphics",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
-    "v3_highlights_copy_write_hlsl_once_and_target": {
-      "value": "Write HLSL once and target Dynamic RHI across D3D11, D3D12, Vulkan, Metal and OpenGL.",
+    "v3_dynamic_rhi_desc": {
+      "value": "Unified C++ API with Dynamic RHI across D3D11, D3D12, Vulkan, Metal and OpenGL.",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
     "v3_highlights_card_title_modern_c": {

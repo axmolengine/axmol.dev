@@ -280,7 +280,7 @@
       "value": "Современная графика",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
-    "v3_highlights_copy_write_hlsl_once_and_target": {
+    "v3_dynamic_rhi_desc": {
       "value": "Напишите HLSL один раз и используйте Dynamic RHI для D3D11, D3D12, Vulkan, Metal и OpenGL.",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
