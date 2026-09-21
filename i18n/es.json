@@ -21,7 +21,7 @@
       "context": "html > head > meta [content]"
     },
     "seo_twitter_title": {
-      "value": "Axmol 3 | Desarrollo de videojuegos multiplataforma en C++ moderno",
+      "value": "Axmol 3 | Desarrollo de videojuegos multiplataforma en C++ Moderno",
       "context": "html > head > meta [content]"
     },
     "seo_twitter_description": {
@@ -161,7 +161,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
     },
     "hero_hero_lead_modern_c_game_development_for": {
-      "value": "Desarrollo en C++ moderno de videojuegos para móviles, escritorio, Xbox y WebAssembly.",
+      "value": "Desarrollo en C++ Moderno de videojuegos para móviles, escritorio, Xbox y WebAssembly.",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
     },
     "hero_link_explore_axmol_3_beta": {
@@ -281,7 +281,7 @@
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
     "v3_dynamic_rhi_desc": {
-      "value": "Con RHI Dinámico en D3D11, D3D12, Vulkan, Metal y OpenGL solo hay que escribir HLSL una vez.",
+      "value": "API unificada en C++ con RHI Dinámico para D3D11, D3D12, Vulkan, Metal y OpenGL.",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
     "v3_highlights_card_title_modern_c": {
@@ -361,7 +361,7 @@
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.eyebrow"
     },
     "try_it_heading_start_with_a_working_example": {
-      "value": "Empieza con un ejemplo funcional.",
+      "value": "Ejemplos funcionales para empezar.",
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > h2"
     },
     "try_it_copy_try_the_live_webassembly_previews": {
@@ -389,7 +389,7 @@
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
     },
     "try_it_span_open_live_demo_2": {
-      "value": "Abrir la vivo",
+      "value": "Abrir la demo",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
     },
     "try_it_demo_label_lua_tests": {
@@ -413,7 +413,7 @@
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > h2"
     },
     "migration_copy_the_v3_page_collects_the": {
-      "value": "La página de la v3 compila las incompatibilidades y las rutas de migración para Axmol 2 y Cocos2d-x, además de shaders, fuentes de entrada y físicas.",
+      "value": "La página de la v3 recopila las rutas de migración e incompatibilidades para Axmol 2 y Cocos2d-x, además de las nuevas físicas, shaders y fuentes de entrada.",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.text-body-secondary"
     },
     "migration_quick_link_axmol_2_axmol_3": {
@@ -433,7 +433,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
     },
     "home_content_supporter_tier_corporate_diamond": {
-      "value": "DIAMANTE",
+      "value": "DIAMANTE CORPORATIVO",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
     },
     "home_content_alt_scorewarrior": {
@@ -527,7 +527,7 @@
       "context": "html > head > title"
     },
     "seo_description": {
-      "value": "Vista previa de Axmol 3.0.0-beta1: C++23, RHIs modernos, shaders HLSL, ARM, OpenXR, nuevas físicas y Pointer Events.",
+      "value": "Preview de Axmol 3.0.0-beta1: C++23, RHI Moderno, shaders HLSL, ARM, OpenXR, nuevas físicas y Pointer Events.",
       "context": "html > head > meta [content]"
     },
     "seo_og_title": {
@@ -663,7 +663,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
     "site_eyebrow_public_preview_3_0_0": {
-      "value": "VISTA PREVIA PÚBLICA · 3.0.0-BETA1",
+      "value": "PREVIEW PÚBLICA · 3.0.0-BETA1",
       "context": "html > body > main#main-content > header.v3-hero > div.container > p.eyebrow"
     },
     "site_title_axmol_3_is_coming": {
@@ -743,7 +743,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
     "release_content_copy_windows_and_linux_arm_support": {
-      "value": "Se añade soporte para ARM en Windows y Linux, junto con composición de escenas OpenXR y controladores dompatibñes.",
+      "value": "Se añade soporte para ARM en Windows y Linux, junto con composición de escenas OpenXR y controladores compatibles.",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
     "release_content_card_title_new_physics": {
@@ -851,7 +851,7 @@
       "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > h2"
     },
     "migration_copy_axmol_3_removes_deprecated_apis": {
-      "value": "Axmol 3 elimina APIs obsoletas y cambia varios sistemas principales. Selecciona la ruta apropiada.",
+      "value": "Axmol 3 elimina APIs obsoletas y cambia varios de sus sistemas principales. Selecciona la ruta apropiada para tu proyecto.",
       "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.text-body-secondary"
     },
     "migration_strong_axmol_2_3": {
@@ -1097,7 +1097,7 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p > a"
     },
     "hero_copy_with_contributions_from_the_communit": {
-      "value": ", con contribuciones de la comunidad. Cada corrección, mejora y nueva función requiere tiempo y esfuerzo.",
+      "value": ", con contribuciones de la comunidad. Cada corrección, mejora y nueva función requiere de tiempo y esfuerzo.",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
     "hero_copy_your_support_helps_us_accelerate": {
@@ -1349,7 +1349,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
     },
     "supporters_supporter_tier_corporate_diamond": {
-      "value": "DIAMANTE",
+      "value": "DIAMANTE CORPORATIVO",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
     },
     "supporters_alt_scorewarrior": {
@@ -1417,7 +1417,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
     },
     "faq_div_accordion_body_corporate_support_is_handled_directl": {
-      "value": "El apoyo corporativo es gestionado directamente por",
+      "value": "El apoyo corporativo está gestionado directamente por",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_link_simdsoft": {
@@ -1433,7 +1433,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
     },
     "faq_div_accordion_body_for_a_private_discussion_support": {
-      "value": "para acordar una conversación. El apoyo no concede propiedad ni control sobre la dirección técnica de Axmol.",
+      "value": "para acordar una conversación privada. El apoyo no concede propiedad ni control sobre la dirección técnica de Axmol.",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_button_can_i_choose_whether_my": {
