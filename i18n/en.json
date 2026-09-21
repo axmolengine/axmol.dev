@@ -365,7 +365,7 @@
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > h2"
     },
     "try_it_copy_try_the_live_webassembly_previews": {
-      "value": "Try the live WebAssembly previews when available, then move to the setup guide when you are ready to build locally.",
+      "value": "Try the live WebAssembly previews.",
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.text-body-secondary"
     },
     "try_it_demo_label_cpp_tests": {
