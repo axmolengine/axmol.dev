@@ -297,7 +297,7 @@
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
     "v3_highlights_copy_reach_arm_desktops_openxr_devices": {
-      "value": "Единая кодовая база для ARM-настольных систем, устройств OpenXR, мобильных платформ, Xbox и WebAssembly.",
+      "value": "Единая кодовая база для ARM настольных компьютеров, устройств OpenXR, мобильных платформ, Xbox и WebAssembly.",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
     "render_pipeline_eyebrow_a_clearer_rendering_path": {
