@@ -1128,8 +1128,8 @@
       "value": "Ways to support Axmol",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid [aria-label]"
     },
-    "nav_sponsor_path_index_01_individual": {
-      "value": "01 / 個人スポンサー",
+    "nav_sponsor_path_label_individual": {
+      "value": "個人スポンサー",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_individual_sponsorship": {
@@ -1148,8 +1148,8 @@
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "nav_sponsor_path_index_02_corporate": {
-      "value": "02 / 法人による支援",
+    "nav_sponsor_path_label_corporate": {
+      "value": "法人による支援",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_corporate_support": {
@@ -1168,8 +1168,8 @@
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "nav_sponsor_path_index_03_recognition": {
-      "value": "03 / 公開での謝辞",
+    "nav_sponsor_path_label_recognition": {
+      "value": "公開での謝辞",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_public_recognition": {
@@ -1194,6 +1194,18 @@
     },
     "support_intro_copy_choose_a_payment_channel_then": {
       "value": "支払い方法を選択してから、月額プランを選んでください。",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+    },
+    "support_intro_copy_public_recognition_before_email": {
+      "value": "支払い前に別途申し出がない限り、スポンサーシップを完了することで、スポンサー関係の確認と公開謝辞のために氏名（または名称）および該当する場合はロゴを axmol.dev、simdsoft.com、またはその両方に掲載することに同意したものとみなされます。掲載を希望しない場合は、支払い前に",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+    },
+    "support_intro_link_oss_simdsoft_com": {
+      "value": "oss@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary > a"
+    },
+    "support_intro_copy_public_recognition_after_email": {
+      "value": "までご連絡ください。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_span_payment_channel": {
@@ -1396,61 +1408,85 @@
       "value": "よくある質問",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > h2.mb-4"
     },
-    "faq_button_how_is_public_support_represented": {
-      "value": "公開支援はどのように表示されますか？",
+    "faq_button_how_can_i_cancel_my_recurring_sponsorship": {
+      "value": "継続中のスポンサー支援を解約するには？",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading1 > button.accordion-button"
     },
-    "faq_div_accordion_body_the_supporter_list_is_maintained": {
-      "value": "支援者リストは Axmol チームが管理しています。公開情報の修正または更新は",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    "faq_copy_cancel_osc_before_link": {
+      "value": "Open Source Collective（OSC）で継続支援を行っている場合は、アカウントにログインし、Dashboard > Contributions を開いて、支払いに使用したアカウントに切り替えてから、",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_link_osc_dashboard": {
+      "value": "OSC の継続支援一覧",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p > a"
+    },
+    "faq_copy_cancel_osc_after_link": {
+      "value": "で Axmol への継続支援をキャンセルしてください。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_paypal_before_link": {
+      "value": "PayPal の場合は",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_paypal_after_link": {
+      "value": "にログインし、Settings > Automatic Payments > Manage Automatic Payments の順に開き、Axmol Sponsors と表示された自動支払いをキャンセルしてください。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_github_before_link": {
+      "value": "GitHub Sponsors の場合は",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_github_after_link": {
+      "value": "にアクセスし、Your Sponsorships を開いて Axmol を探し、オプションメニューから Cancel Sponsorship を選択してください。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_help_before_email": {
+      "value": "お困りの場合は",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_help_after_email": {
+      "value": "までご連絡ください。必要に応じて、PayPal または GitHub のアカウントに登録したメールアドレスと現在の支援プランをお知らせください。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_button_how_will_my_sponsorship_be_acknowledged": {
+      "value": "スポンサーシップはどのように公表されますか？",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
+    },
+    "faq_copy_sponsorship_acknowledgement_before_email": {
+      "value": "支払い前に別途申し出がない限り、スポンサーシップを完了することで、スポンサー関係の確認と支援への公の謝意を示す目的に限り、氏名（または名称）および該当する場合はロゴを axmol.dev、simdsoft.com、またはその両方に掲載することに同意したものとみなされます。匿名を希望する場合は、支払い前に",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_link_oss_simdsoft_com": {
       "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
     },
-    "faq_div_accordion_body_to_correct_or_update_a": {
-      "value": "までご連絡ください。",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    "faq_copy_sponsorship_acknowledgement_after_email": {
+      "value": "までご連絡ください。掲載内容の修正または削除は、後からいつでもご依頼いただけます。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_button_how_can_companies_support_axmol": {
       "value": "企業はどのように Axmol を支援できますか？",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading3 > button.accordion-button"
     },
     "faq_div_accordion_body_corporate_support_is_handled_directl": {
       "value": "法人による支援は",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "faq_link_simdsoft": {
       "value": "Simdsoft",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body > a"
     },
     "faq_div_accordion_body_contact": {
       "value": "が直接対応します。個別のご相談は",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "faq_link_info_simdsoft_com": {
       "value": "info@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body > a"
     },
     "faq_div_accordion_body_for_a_private_discussion_support": {
       "value": "までご連絡ください。支援によって Axmol の所有権や技術方針の決定権が与えられることはありません。",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
-    },
-    "faq_button_can_i_choose_whether_my": {
-      "value": "スポンサー一覧に名前を表示するか選べますか？",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading4 > button.accordion-button"
-    },
-    "faq_div_accordion_body_yes_all_sponsor_names_are": {
-      "value": "はい。すべてのスポンサー名は手作業で追加しています。匿名を希望する場合は",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
-    },
-    "faq_link_oss_simdsoft_com_2": {
-      "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body > a"
-    },
-    "faq_div_accordion_body_and_we_ll_update_your": {
-      "value": "までご連絡ください。ご希望に合わせて掲載情報を更新します。",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "footer_div_text_body_secondary_2019_present": {
       "value": "© 2019–present",

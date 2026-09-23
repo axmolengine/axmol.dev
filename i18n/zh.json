@@ -1128,8 +1128,8 @@
       "value": "支持 Axmol 的方式",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid [aria-label]"
     },
-    "nav_sponsor_path_index_01_individual": {
-      "value": "01 / 个人支持",
+    "nav_sponsor_path_label_individual": {
+      "value": "个人支持",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_individual_sponsorship": {
@@ -1148,8 +1148,8 @@
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "nav_sponsor_path_index_02_corporate": {
-      "value": "02 / 企业支持",
+    "nav_sponsor_path_label_corporate": {
+      "value": "企业支持",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_corporate_support": {
@@ -1168,8 +1168,8 @@
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "nav_sponsor_path_index_03_recognition": {
-      "value": "03 / 公开致谢",
+    "nav_sponsor_path_label_recognition": {
+      "value": "公开致谢",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_public_recognition": {
@@ -1194,6 +1194,18 @@
     },
     "support_intro_copy_choose_a_payment_channel_then": {
       "value": "先选择支付通道，再选择月度赞助档位。",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+    },
+    "support_intro_copy_public_recognition_before_email": {
+      "value": "除非你在付款前另行说明，否则完成赞助即表示你同意我们为确认赞助关系及公开致谢，在 axmol.dev、simdsoft.com 或两者同时展示你的名称及适用情况下的 Logo。如需不公开，请联系",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+    },
+    "support_intro_link_oss_simdsoft_com": {
+      "value": "oss@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary > a"
+    },
+    "support_intro_copy_public_recognition_after_email": {
+      "value": "。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_span_payment_channel": {
@@ -1396,61 +1408,85 @@
       "value": "常见问题",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > h2.mb-4"
     },
-    "faq_button_how_is_public_support_represented": {
-      "value": "公开支持如何展示？",
+    "faq_button_how_can_i_cancel_my_recurring_sponsorship": {
+      "value": "如何取消周期性赞助？",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading1 > button.accordion-button"
     },
-    "faq_div_accordion_body_the_supporter_list_is_maintained": {
-      "value": "支持者名单由 Axmol 维护团队整理。如需更正或更新公开信息，请联系",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    "faq_copy_cancel_osc_before_link": {
+      "value": "如通过 Open Source Collective（OSC）进行周期赞助，请登录账户，进入 Dashboard > Contributions，切换到付款所用账户，然后前往",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_link_osc_dashboard": {
+      "value": "OSC 账户页面",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p > a"
+    },
+    "faq_copy_cancel_osc_after_link": {
+      "value": "，取消对 Axmol 的周期捐助。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_paypal_before_link": {
+      "value": "如通过 PayPal 赞助，请登录",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_paypal_after_link": {
+      "value": "，依次进入 Settings > Automatic Payments > Manage Automatic Payments，然后取消名称为 Axmol Sponsors 的自动付款。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_github_before_link": {
+      "value": "如通过 GitHub Sponsors 赞助，请访问",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_github_after_link": {
+      "value": "，点击 Your Sponsorships，找到 Axmol，然后在选项菜单中选择 Cancel Sponsorship。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_help_before_email": {
+      "value": "如需帮助，请联系",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_help_after_email": {
+      "value": "，并提供对应的 PayPal 或 GitHub 账户邮箱，以及当前赞助档位（如适用）。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_button_how_will_my_sponsorship_be_acknowledged": {
+      "value": "赞助信息会如何公开展示？",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
+    },
+    "faq_copy_sponsorship_acknowledgement_before_email": {
+      "value": "如未在付款前另行说明，完成赞助即表示你同意我们仅为确认赞助关系及公开致谢之目的，在 axmol.dev、simdsoft.com 或两者同时展示你的名称及适用情况下的 Logo。如希望匿名，请在付款前联系",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_link_oss_simdsoft_com": {
       "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
     },
-    "faq_div_accordion_body_to_correct_or_update_a": {
-      "value": "。",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    "faq_copy_sponsorship_acknowledgement_after_email": {
+      "value": "；后续如需更正或撤下公开信息，也可随时联系我们。",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_button_how_can_companies_support_axmol": {
       "value": "企业如何支持 Axmol？",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading3 > button.accordion-button"
     },
     "faq_div_accordion_body_corporate_support_is_handled_directl": {
       "value": "企业支持由",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "faq_link_simdsoft": {
       "value": "Simdsoft",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body > a"
     },
     "faq_div_accordion_body_contact": {
       "value": "直接处理。\n                  请联系",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "faq_link_info_simdsoft_com": {
       "value": "info@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body > a"
     },
     "faq_div_accordion_body_for_a_private_discussion_support": {
       "value": "进行私下沟通。\n                  企业支持不代表对 Axmol 技术方向拥有所有权或控制权。",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
-    },
-    "faq_button_can_i_choose_whether_my": {
-      "value": "可以选择不公开名称吗？",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading4 > button.accordion-button"
-    },
-    "faq_div_accordion_body_yes_all_sponsor_names_are": {
-      "value": "可以。支持者名称由人工维护。如果希望保持匿名，请发送邮件至",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
-    },
-    "faq_link_oss_simdsoft_com_2": {
-      "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body > a"
-    },
-    "faq_div_accordion_body_and_we_ll_update_your": {
-      "value": "，我们会更新公开信息。",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "footer_div_text_body_secondary_2019_present": {
       "value": "© 2019–present",

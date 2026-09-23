@@ -184,19 +184,19 @@
 
           <nav class="sponsor-path-grid" aria-label="{{i18n:sponsor.nav_aria_label_ways_to_support_axmol}}">
             <a class="sponsor-path-card" href="#individual-sponsorship">
-              <span class="sponsor-path-index">{{i18n:sponsor.nav_sponsor_path_index_01_individual}}</span>
+              <span class="sponsor-path-label">{{i18n:sponsor.nav_sponsor_path_label_individual}}</span>
               <h3>{{i18n:sponsor.nav_card_title_individual_sponsorship}}</h3>
               <p>{{i18n:sponsor.nav_copy_choose_a_payment_channel_and}}</p>
               <span class="sponsor-path-action">{{i18n:sponsor.nav_sponsor_path_action_choose_a_way_to_give}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy}}</span></span>
             </a>
             <a class="sponsor-path-card" href="mailto:info@simdsoft.com">
-              <span class="sponsor-path-index">{{i18n:sponsor.nav_sponsor_path_index_02_corporate}}</span>
+              <span class="sponsor-path-label">{{i18n:sponsor.nav_sponsor_path_label_corporate}}</span>
               <h3>{{i18n:sponsor.nav_card_title_corporate_support}}</h3>
               <p>{{i18n:sponsor.nav_copy_contact_the_maintainers_to_discuss}}</p>
               <span class="sponsor-path-action">{{i18n:sponsor.nav_sponsor_path_action_info_simdsoft_com}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy_2}}</span></span>
             </a>
             <a class="sponsor-path-card" href="#supporters">
-              <span class="sponsor-path-index">{{i18n:sponsor.nav_sponsor_path_index_03_recognition}}</span>
+              <span class="sponsor-path-label">{{i18n:sponsor.nav_sponsor_path_label_recognition}}</span>
               <h3>{{i18n:sponsor.nav_card_title_public_recognition}}</h3>
               <p>{{i18n:sponsor.nav_copy_see_the_organizations_and_individual}}</p>
               <span class="sponsor-path-action">{{i18n:sponsor.nav_sponsor_path_action_view_public_supporters}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy_3}}</span></span>
@@ -215,6 +215,10 @@
             </form>
             <h3 class="h4">{{i18n:sponsor.support_intro_h4_individual_sponsorship}}</h3>
             <p class="text-body-secondary" data-sponsor-channel-help>{{i18n:sponsor.support_intro_copy_choose_a_payment_channel_then}}</p>
+            <p class="small text-body-secondary mb-3">
+              {{i18n:sponsor.support_intro_copy_public_recognition_before_email}}
+              <a href="mailto:oss@simdsoft.com">{{i18n:sponsor.support_intro_link_oss_simdsoft_com}}</a>{{i18n:sponsor.support_intro_copy_public_recognition_after_email}}
+            </p>
             <label class="sponsor-channel-select mb-3" for="sponsor-channel-en">
               <span>{{i18n:sponsor.support_intro_span_payment_channel}}</span>
               <select id="sponsor-channel-en" data-sponsor-channel>
@@ -306,14 +310,28 @@
                 <button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faqCollapse1"
                   aria-expanded="false" aria-controls="faqCollapse1">
-                  {{i18n:sponsor.faq_button_how_is_public_support_represented}}
+                  {{i18n:sponsor.faq_button_how_can_i_cancel_my_recurring_sponsorship}}
                 </button>
               </h2>
               <div id="faqCollapse1" class="accordion-collapse collapse"
                 aria-labelledby="faqHeading1" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  {{i18n:sponsor.faq_div_accordion_body_the_supporter_list_is_maintained}}
-                  <a href="mailto:oss@simdsoft.com">{{i18n:sponsor.faq_link_oss_simdsoft_com}}</a> {{i18n:sponsor.faq_div_accordion_body_to_correct_or_update_a}}
+                  <p>
+                    {{i18n:sponsor.faq_copy_cancel_osc_before_link}}
+                    <a href="https://opencollective.com/dashboard/outgoing-contributions" target="_blank" rel="noopener">{{i18n:sponsor.faq_link_osc_dashboard}}</a>{{i18n:sponsor.faq_copy_cancel_osc_after_link}}
+                  </p>
+                  <p>
+                    {{i18n:sponsor.faq_copy_cancel_paypal_before_link}}
+                    <a href="https://www.paypal.com/" target="_blank" rel="noopener">paypal.com</a>{{i18n:sponsor.faq_copy_cancel_paypal_after_link}}
+                  </p>
+                  <p>
+                    {{i18n:sponsor.faq_copy_cancel_github_before_link}}
+                    <a href="https://github.com/sponsors" target="_blank" rel="noopener">github.com/sponsors</a>{{i18n:sponsor.faq_copy_cancel_github_after_link}}
+                  </p>
+                  <p>
+                    {{i18n:sponsor.faq_copy_cancel_help_before_email}}
+                    <a href="mailto:oss@simdsoft.com">oss@simdsoft.com</a>{{i18n:sponsor.faq_copy_cancel_help_after_email}}
+                  </p>
                 </div>
               </div>
             </div>
@@ -324,34 +342,34 @@
                 <button class="accordion-button collapsed" type="button"
                   data-bs-toggle="collapse" data-bs-target="#faqCollapse2"
                   aria-expanded="false" aria-controls="faqCollapse2">
-                  {{i18n:sponsor.faq_button_how_can_companies_support_axmol}}
+                  {{i18n:sponsor.faq_button_how_will_my_sponsorship_be_acknowledged}}
                 </button>
               </h2>
               <div id="faqCollapse2" class="accordion-collapse collapse"
                 aria-labelledby="faqHeading2" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  {{i18n:sponsor.faq_div_accordion_body_corporate_support_is_handled_directl}}
-                  <a href="{{i18n:site.simdsoftUrl}}" target="_blank" rel="noopener">{{i18n:sponsor.faq_link_simdsoft}}</a>{{i18n:sponsor.faq_div_accordion_body_contact}} <a href="mailto:info@simdsoft.com">{{i18n:sponsor.faq_link_info_simdsoft_com}}</a>
-                  {{i18n:sponsor.faq_div_accordion_body_for_a_private_discussion_support}}
+                  {{i18n:sponsor.faq_copy_sponsorship_acknowledgement_before_email}}
+                  <a href="mailto:oss@simdsoft.com">{{i18n:sponsor.faq_link_oss_simdsoft_com}}</a>
+                  {{i18n:sponsor.faq_copy_sponsorship_acknowledgement_after_email}}
                 </div>
               </div>
             </div>
 
             <!-- Q3 -->
             <div class="accordion-item">
-              <h2 class="accordion-header" id="faqHeading4">
+              <h2 class="accordion-header" id="faqHeading3">
                 <button class="accordion-button collapsed" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#faqCollapse4"
-                  aria-expanded="false" aria-controls="faqCollapse4">
-                  {{i18n:sponsor.faq_button_can_i_choose_whether_my}}
+                  data-bs-toggle="collapse" data-bs-target="#faqCollapse3"
+                  aria-expanded="false" aria-controls="faqCollapse3">
+                  {{i18n:sponsor.faq_button_how_can_companies_support_axmol}}
                 </button>
               </h2>
-              <div id="faqCollapse4" class="accordion-collapse collapse"
-                aria-labelledby="faqHeading4" data-bs-parent="#faqAccordion">
+              <div id="faqCollapse3" class="accordion-collapse collapse"
+                aria-labelledby="faqHeading3" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  {{i18n:sponsor.faq_div_accordion_body_yes_all_sponsor_names_are}}
-                  <a href="mailto:oss@simdsoft.com">{{i18n:sponsor.faq_link_oss_simdsoft_com_2}}</a>
-                  {{i18n:sponsor.faq_div_accordion_body_and_we_ll_update_your}}
+                  {{i18n:sponsor.faq_div_accordion_body_corporate_support_is_handled_directl}}
+                  <a href="{{i18n:site.simdsoftUrl}}" target="_blank" rel="noopener">{{i18n:sponsor.faq_link_simdsoft}}</a>{{i18n:sponsor.faq_div_accordion_body_contact}} <a href="mailto:info@simdsoft.com">{{i18n:sponsor.faq_link_info_simdsoft_com}}</a>
+                  {{i18n:sponsor.faq_div_accordion_body_for_a_private_discussion_support}}
                 </div>
               </div>
             </div>

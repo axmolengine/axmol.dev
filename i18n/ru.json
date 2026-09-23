@@ -1128,8 +1128,8 @@
       "value": "Ways to support Axmol",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid [aria-label]"
     },
-    "nav_sponsor_path_index_01_individual": {
-      "value": "01 / ИНДИВИДУАЛЬНАЯ ПОДДЕРЖКА",
+    "nav_sponsor_path_label_individual": {
+      "value": "ИНДИВИДУАЛЬНАЯ ПОДДЕРЖКА",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_individual_sponsorship": {
@@ -1148,8 +1148,8 @@
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "nav_sponsor_path_index_02_corporate": {
-      "value": "02 / КОРПОРАТИВНАЯ ПОДДЕРЖКА",
+    "nav_sponsor_path_label_corporate": {
+      "value": "КОРПОРАТИВНАЯ ПОДДЕРЖКА",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_corporate_support": {
@@ -1168,8 +1168,8 @@
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "nav_sponsor_path_index_03_recognition": {
-      "value": "03 / ПУБЛИЧНОЕ ПРИЗНАНИЕ",
+    "nav_sponsor_path_label_recognition": {
+      "value": "ПУБЛИЧНОЕ ПРИЗНАНИЕ",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
     "nav_card_title_public_recognition": {
@@ -1194,6 +1194,18 @@
     },
     "support_intro_copy_choose_a_payment_channel_then": {
       "value": "Выберите способ оплаты, затем ежемесячный уровень.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+    },
+    "support_intro_copy_public_recognition_before_email": {
+      "value": "Завершая спонсорский платёж, вы соглашаетесь на размещение вашего имени и, если применимо, логотипа на axmol.dev, simdsoft.com или на обоих сайтах для подтверждения спонсорства и публичной благодарности за поддержку, если до оплаты вы не сообщили об ином. Чтобы отказаться от публикации, свяжитесь с",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+    },
+    "support_intro_link_oss_simdsoft_com": {
+      "value": "oss@simdsoft.com",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary > a"
+    },
+    "support_intro_copy_public_recognition_after_email": {
+      "value": ".",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_span_payment_channel": {
@@ -1396,61 +1408,85 @@
       "value": "Частые вопросы",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > h2.mb-4"
     },
-    "faq_button_how_is_public_support_represented": {
-      "value": "Как отображается публичная поддержка?",
+    "faq_button_how_can_i_cancel_my_recurring_sponsorship": {
+      "value": "Как отменить регулярную спонсорскую поддержку?",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading1 > button.accordion-button"
     },
-    "faq_div_accordion_body_the_supporter_list_is_maintained": {
-      "value": "Список сторонников ведёт команда Axmol. Чтобы исправить или обновить публичную запись, напишите на",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    "faq_copy_cancel_osc_before_link": {
+      "value": "Чтобы отменить регулярный взнос через Open Source Collective (OSC), войдите в аккаунт, откройте Dashboard > Contributions, переключитесь на аккаунт, с которого производится оплата, и отмените регулярный взнос Axmol в",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_link_osc_dashboard": {
+      "value": "панели OSC",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p > a"
+    },
+    "faq_copy_cancel_osc_after_link": {
+      "value": ".",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_paypal_before_link": {
+      "value": "Для PayPal войдите на сайт",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_paypal_after_link": {
+      "value": ", откройте Settings > Automatic Payments > Manage Automatic Payments и отмените автоматический платёж с названием Axmol Sponsors.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_github_before_link": {
+      "value": "Для GitHub Sponsors перейдите на страницу",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_github_after_link": {
+      "value": ", откройте Your Sponsorships, найдите Axmol и выберите Cancel Sponsorship в меню параметров.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_help_before_email": {
+      "value": "Если вам нужна помощь, напишите на",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_copy_cancel_help_after_email": {
+      "value": ", указав адрес электронной почты аккаунта PayPal или GitHub и текущий уровень поддержки, если применимо.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
+    },
+    "faq_button_how_will_my_sponsorship_be_acknowledged": {
+      "value": "Как будет публично отмечена моя спонсорская поддержка?",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
+    },
+    "faq_copy_sponsorship_acknowledgement_before_email": {
+      "value": "Если вы не сообщите об ином до оплаты, завершение спонсорского платежа означает ваше согласие на размещение вашего имени и, если применимо, логотипа на axmol.dev, simdsoft.com или на обоих сайтах исключительно для подтверждения спонсорских отношений и публичной благодарности за поддержку. Чтобы сохранить анонимность, свяжитесь с",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_link_oss_simdsoft_com": {
       "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqAccordion > div#faqCollapse2 > div.accordion-body > a"
     },
-    "faq_div_accordion_body_to_correct_or_update_a": {
-      "value": ".",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body"
+    "faq_copy_sponsorship_acknowledgement_after_email": {
+      "value": "до оплаты. Вы также можете в любое время обратиться к нам, чтобы исправить или удалить существующую публикацию.",
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
     "faq_button_how_can_companies_support_axmol": {
       "value": "Как компании могут поддержать Axmol?",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading3 > button.accordion-button"
     },
     "faq_div_accordion_body_corporate_support_is_handled_directl": {
       "value": "Корпоративная поддержка обрабатывается",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "faq_link_simdsoft": {
       "value": "Simdsoft",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body > a"
     },
     "faq_div_accordion_body_contact": {
       "value": "напрямую. Для частного обсуждения напишите на",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "faq_link_info_simdsoft_com": {
       "value": "info@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body > a"
     },
     "faq_div_accordion_body_for_a_private_discussion_support": {
       "value": ". Поддержка не даёт права собственности или контроля над техническим развитием Axmol.",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
-    },
-    "faq_button_can_i_choose_whether_my": {
-      "value": "Можно ли выбрать, будет ли моё имя в списке спонсоров?",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading4 > button.accordion-button"
-    },
-    "faq_div_accordion_body_yes_all_sponsor_names_are": {
-      "value": "Да. Все имена спонсоров добавляются вручную. Если вы хотите остаться анонимным, напишите на",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
-    },
-    "faq_link_oss_simdsoft_com_2": {
-      "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body > a"
-    },
-    "faq_div_accordion_body_and_we_ll_update_your": {
-      "value": ", и мы обновим отображение.",
-      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse4 > div.accordion-body"
+      "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
     "footer_div_text_body_secondary_2019_present": {
       "value": "© 2019–present",
