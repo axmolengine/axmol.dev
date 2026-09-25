@@ -1364,6 +1364,42 @@
       "value": "法人ダイヤモンド",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
     },
+    "supporters_button_view_corporate_tiers": {
+      "value": "法人スポンサーのランクを見る",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.supporter-card > button"
+    },
+    "supporters_modal_title_corporate_sponsorship_tiers": {
+      "value": "法人スポンサーのランク",
+      "context": "法人サポートレベルのダイアログタイトル"
+    },
+    "supporters_modal_copy_minimum_monthly_contribution": {
+      "value": "月額の最低支援額",
+      "context": "法人サポートレベルのダイアログ説明"
+    },
+    "supporters_month": {
+      "value": "か月",
+      "context": "法人サポート金額の月単位"
+    },
+    "supporters_tier_bronze": {
+      "value": "ブロンズ",
+      "context": "法人サポートレベル"
+    },
+    "supporters_tier_silver": {
+      "value": "シルバー",
+      "context": "法人サポートレベル"
+    },
+    "supporters_tier_gold": {
+      "value": "ゴールド",
+      "context": "法人サポートレベル"
+    },
+    "supporters_tier_platinum": {
+      "value": "プラチナ",
+      "context": "法人サポートレベル"
+    },
+    "supporters_tier_diamond": {
+      "value": "ダイヤモンド",
+      "context": "法人サポートレベル"
+    },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"

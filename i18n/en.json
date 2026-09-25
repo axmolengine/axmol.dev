@@ -1364,6 +1364,42 @@
       "value": "CORPORATE DIAMOND",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
     },
+    "supporters_button_view_corporate_tiers": {
+      "value": "View sponsorship tiers",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.supporter-card > button"
+    },
+    "supporters_modal_title_corporate_sponsorship_tiers": {
+      "value": "Corporate sponsorship tiers",
+      "context": "Corporate level dialog title"
+    },
+    "supporters_modal_copy_minimum_monthly_contribution": {
+      "value": "Minimum monthly contribution",
+      "context": "Corporate level dialog introduction"
+    },
+    "supporters_month": {
+      "value": "month",
+      "context": "Monthly corporate support amount unit"
+    },
+    "supporters_tier_bronze": {
+      "value": "Bronze",
+      "context": "Corporate support level"
+    },
+    "supporters_tier_silver": {
+      "value": "Silver",
+      "context": "Corporate support level"
+    },
+    "supporters_tier_gold": {
+      "value": "Gold",
+      "context": "Corporate support level"
+    },
+    "supporters_tier_platinum": {
+      "value": "Platinum",
+      "context": "Corporate support level"
+    },
+    "supporters_tier_diamond": {
+      "value": "Diamond",
+      "context": "Corporate support level"
+    },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"

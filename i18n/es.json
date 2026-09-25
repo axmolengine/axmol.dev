@@ -1364,6 +1364,42 @@
       "value": "DIAMANTE CORPORATIVO",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
     },
+    "supporters_button_view_corporate_tiers": {
+      "value": "Ver categorías de patrocinio corporativo",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.supporter-card > button"
+    },
+    "supporters_modal_title_corporate_sponsorship_tiers": {
+      "value": "Categorías de patrocinio corporativo",
+      "context": "Título del diálogo de niveles corporativos"
+    },
+    "supporters_modal_copy_minimum_monthly_contribution": {
+      "value": "Aportación mensual mínima",
+      "context": "Introducción del diálogo de niveles corporativos"
+    },
+    "supporters_month": {
+      "value": "mes",
+      "context": "Unidad mensual de los importes de apoyo corporativo"
+    },
+    "supporters_tier_bronze": {
+      "value": "Bronce",
+      "context": "Nivel de apoyo corporativo"
+    },
+    "supporters_tier_silver": {
+      "value": "Plata",
+      "context": "Nivel de apoyo corporativo"
+    },
+    "supporters_tier_gold": {
+      "value": "Oro",
+      "context": "Nivel de apoyo corporativo"
+    },
+    "supporters_tier_platinum": {
+      "value": "Platino",
+      "context": "Nivel de apoyo corporativo"
+    },
+    "supporters_tier_diamond": {
+      "value": "Diamante",
+      "context": "Nivel de apoyo corporativo"
+    },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"

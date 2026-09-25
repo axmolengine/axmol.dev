@@ -1364,6 +1364,42 @@
       "value": "企业钻石",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
     },
+    "supporters_button_view_corporate_tiers": {
+      "value": "查看企业赞助档位",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.supporter-card > button"
+    },
+    "supporters_modal_title_corporate_sponsorship_tiers": {
+      "value": "企业赞助档位",
+      "context": "企业赞助等级弹窗标题"
+    },
+    "supporters_modal_copy_minimum_monthly_contribution": {
+      "value": "月度最低赞助金额",
+      "context": "企业赞助等级弹窗说明"
+    },
+    "supporters_month": {
+      "value": "月",
+      "context": "企业赞助金额的月度单位"
+    },
+    "supporters_tier_bronze": {
+      "value": "青铜",
+      "context": "企业赞助等级"
+    },
+    "supporters_tier_silver": {
+      "value": "白银",
+      "context": "企业赞助等级"
+    },
+    "supporters_tier_gold": {
+      "value": "黄金",
+      "context": "企业赞助等级"
+    },
+    "supporters_tier_platinum": {
+      "value": "白金",
+      "context": "企业赞助等级"
+    },
+    "supporters_tier_diamond": {
+      "value": "钻石",
+      "context": "企业赞助等级"
+    },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"

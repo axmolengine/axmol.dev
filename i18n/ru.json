@@ -1364,6 +1364,42 @@
       "value": "КОРПОРАТИВНЫЙ БРИЛЛИАНТ",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
     },
+    "supporters_button_view_corporate_tiers": {
+      "value": "Категории корпоративного спонсорства",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.supporter-card > button"
+    },
+    "supporters_modal_title_corporate_sponsorship_tiers": {
+      "value": "Категории корпоративного спонсорства",
+      "context": "Заголовок диалога с корпоративными уровнями"
+    },
+    "supporters_modal_copy_minimum_monthly_contribution": {
+      "value": "Минимальный ежемесячный взнос",
+      "context": "Вводный текст диалога с корпоративными уровнями"
+    },
+    "supporters_month": {
+      "value": "месяц",
+      "context": "Единица измерения ежемесячной корпоративной поддержки"
+    },
+    "supporters_tier_bronze": {
+      "value": "Бронза",
+      "context": "Уровень корпоративной поддержки"
+    },
+    "supporters_tier_silver": {
+      "value": "Серебро",
+      "context": "Уровень корпоративной поддержки"
+    },
+    "supporters_tier_gold": {
+      "value": "Золото",
+      "context": "Уровень корпоративной поддержки"
+    },
+    "supporters_tier_platinum": {
+      "value": "Платина",
+      "context": "Уровень корпоративной поддержки"
+    },
+    "supporters_tier_diamond": {
+      "value": "Бриллиант",
+      "context": "Уровень корпоративной поддержки"
+    },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"

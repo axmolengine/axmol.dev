@@ -189,12 +189,18 @@
               <p>{{i18n:sponsor.nav_copy_choose_a_payment_channel_and}}</p>
               <span class="sponsor-path-action">{{i18n:sponsor.nav_sponsor_path_action_choose_a_way_to_give}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy}}</span></span>
             </a>
-            <a class="sponsor-path-card" href="mailto:info@simdsoft.com">
+            <div class="sponsor-path-card">
               <span class="sponsor-path-label">{{i18n:sponsor.nav_sponsor_path_label_corporate}}</span>
               <h3>{{i18n:sponsor.nav_card_title_corporate_support}}</h3>
               <p>{{i18n:sponsor.nav_copy_contact_the_maintainers_to_discuss}}</p>
-              <span class="sponsor-path-action">{{i18n:sponsor.nav_sponsor_path_action_info_simdsoft_com}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy_2}}</span></span>
-            </a>
+              <div class="sponsor-path-card-actions">
+                <a class="sponsor-path-action" href="mailto:info@simdsoft.com">{{i18n:sponsor.nav_sponsor_path_action_info_simdsoft_com}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy_2}}</span></a>
+                <button type="button" class="sponsor-path-action sponsor-path-button" data-bs-toggle="modal"
+                  data-bs-target="#corporateTiersModal">
+                  {{i18n:sponsor.supporters_button_view_corporate_tiers}} <span aria-hidden="true">{{i18n:sponsor.nav_span_copy_2}}</span>
+                </button>
+              </div>
+            </div>
             <a class="sponsor-path-card" href="#supporters">
               <span class="sponsor-path-label">{{i18n:sponsor.nav_sponsor_path_label_recognition}}</span>
               <h3>{{i18n:sponsor.nav_card_title_public_recognition}}</h3>
@@ -455,6 +461,28 @@
             <img class="sponsor-qr-modal-image" data-sponsor-qr-modal-image src="/assets/img/alipay.jpg" alt="{{i18n:sponsor.qr_modal_alt_alipay_sponsorship_qr_code}}">
             <p class="text-body-secondary mt-3 mb-1" data-sponsor-qr-modal-instruction>{{i18n:sponsor.qr_modal_copy_scan_the_qr_code_and}}</p>
             <p class="text-body-secondary mb-0" data-sponsor-qr-modal-note>{{i18n:sponsor.qr_modal_copy_please_add_the_note_sponsor}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="corporateTiersModal" tabindex="-1" aria-labelledby="corporateTiersModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 id="corporateTiersModalTitle" class="modal-title fs-5">{{i18n:sponsor.supporters_modal_title_corporate_sponsorship_tiers}}</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="{{i18n:sponsor.common_modal_aria_label_close}}"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-body-secondary">{{i18n:sponsor.supporters_modal_copy_minimum_monthly_contribution}}</p>
+            <dl class="corporate-tier-list mb-0">
+              <div><dt>{{i18n:sponsor.supporters_tier_bronze}}</dt><dd>USD 128 / {{i18n:sponsor.supporters_month}}</dd></div>
+              <div><dt>{{i18n:sponsor.supporters_tier_silver}}</dt><dd>USD 256 / {{i18n:sponsor.supporters_month}}</dd></div>
+              <div><dt>{{i18n:sponsor.supporters_tier_gold}}</dt><dd>USD 1,000 / {{i18n:sponsor.supporters_month}}</dd></div>
+              <div><dt>{{i18n:sponsor.supporters_tier_platinum}}</dt><dd>USD 3,000 / {{i18n:sponsor.supporters_month}}</dd></div>
+              <div><dt>{{i18n:sponsor.supporters_tier_diamond}}</dt><dd>USD 6,000 / {{i18n:sponsor.supporters_month}}</dd></div>
+            </dl>
           </div>
         </div>
       </div>
