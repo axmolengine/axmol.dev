@@ -168,8 +168,8 @@
       "value": "探索 Axmol 3 Beta",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
-    "hero_link_download_2_11_4_lts": {
-      "value": "下载 2.11.4 LTS",
+    "hero_link_download_v2_lts": {
+      "value": "下载 2.11.5 LTS",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "hero_link_documentation": {

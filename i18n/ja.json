@@ -168,8 +168,8 @@
       "value": "Axmol 3 Beta を見る",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
-    "hero_link_download_2_11_4_lts": {
-      "value": "2.11.4 LTS をダウンロード",
+    "hero_link_download_v2_lts": {
+      "value": "2.11.5 LTS をダウンロード",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "hero_link_documentation": {
