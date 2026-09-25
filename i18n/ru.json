@@ -1085,11 +1085,11 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "hero_hero_lead_we_are_a_global_community": {
-      "value": "Мы — мировое сообщество поклонников и разработчиков Axmol, которое с энтузиазмом развивает и поддерживает проект.",
+      "value": "Мы — глобальное сообщество поклонников и разработчиков Axmol, которым нравится использовать проект и вносить вклад в его развитие.",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.hero-lead"
     },
     "hero_copy_axmol_is_free_and_open": {
-      "value": "Axmol — свободный проект с открытым исходным кодом, которым руководит и который поддерживает",
+      "value": "Axmol — свободный независимый проект с открытым исходным кодом, которым руководит и который поддерживает",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
     "hero_link_simdsoft_limited": {
@@ -1198,15 +1198,15 @@
     },
     "support_intro_copy_public_recognition_before_email": {
       "value": "Завершая спонсорский платёж, вы соглашаетесь на размещение вашего имени и, если применимо, логотипа на axmol.dev, simdsoft.com или на обоих сайтах для подтверждения спонсорства и публичной благодарности за поддержку, если до оплаты вы не сообщили об ином. Чтобы отказаться от публикации, свяжитесь с",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
       "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary > a"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
       "value": ".",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
       "value": "Способ оплаты",
@@ -1399,6 +1399,74 @@
     "supporters_tier_diamond": {
       "value": "Бриллиант",
       "context": "Уровень корпоративной поддержки"
+    },
+    "benefits_heading_sponsorship_benefits": {
+      "value": "Преимущества спонсорства",
+      "context": "Заголовок раздела о преимуществах на странице Sponsor"
+    },
+    "benefits_heading_individual_sponsors": {
+      "value": "Индивидуальные спонсоры",
+      "context": "Подзаголовок краткого описания преимуществ"
+    },
+    "benefits_copy_individual_sponsors": {
+      "value": "Поддержите разработку Axmol и получите признание в соответствии с уровнем спонсорства.",
+      "context": "Краткое описание преимуществ для индивидуальных спонсоров"
+    },
+    "benefits_heading_corporate_sponsors": {
+      "value": "Корпоративные спонсоры",
+      "context": "Подзаголовок краткого описания преимуществ"
+    },
+    "benefits_copy_corporate_sponsors": {
+      "value": "Корпоративное признание и, в зависимости от уровня спонсорства, возможность приоритетной связи, технических консультаций и доступа к основной команде Axmol.",
+      "context": "Краткое описание преимуществ для корпоративных спонсоров"
+    },
+    "benefits_note_sponsor_benefits_are_provided": {
+      "value": "Преимущества предоставляются в применимых случаях с учетом доступности команды и приоритетов разработки и поддержки Axmol.",
+      "context": "Общее примечание о преимуществах спонсорства"
+    },
+    "benefits_corporate_bronze_recognition": {
+      "value": "Признание корпоративного спонсора",
+      "context": "Преимущество корпоративного уровня Бронза"
+    },
+    "benefits_corporate_silver_recognition": {
+      "value": "Расширенное признание спонсора",
+      "context": "Преимущество корпоративного уровня Серебро"
+    },
+    "benefits_corporate_gold_communication": {
+      "value": "Приоритетная связь",
+      "context": "Преимущество корпоративного уровня Золото"
+    },
+    "benefits_corporate_gold_guidance": {
+      "value": "Ограниченные технические консультации",
+      "context": "Преимущество корпоративного уровня Золото"
+    },
+    "benefits_corporate_platinum_team_communication": {
+      "value": "Прямая связь с основной командой Axmol",
+      "context": "Преимущество корпоративного уровня Платина"
+    },
+    "benefits_corporate_platinum_guidance": {
+      "value": "Приоритетные технические консультации",
+      "context": "Преимущество корпоративного уровня Платина"
+    },
+    "benefits_corporate_diamond_recognition": {
+      "value": "Наивысший уровень признания спонсора",
+      "context": "Преимущество корпоративного уровня Бриллиант"
+    },
+    "benefits_corporate_diamond_team_access": {
+      "value": "Приоритетный доступ к основной команде Axmol",
+      "context": "Преимущество корпоративного уровня Бриллиант"
+    },
+    "benefits_corporate_diamond_discussion_priority": {
+      "value": "Наивысший приоритет в технических обсуждениях проекта",
+      "context": "Преимущество корпоративного уровня Бриллиант"
+    },
+    "benefits_contact_before_email": {
+      "value": "Заинтересованы в корпоративном спонсорстве? Напишите нам: ",
+      "context": "Призыв связаться по вопросам корпоративного спонсорства до ссылки на почту"
+    },
+    "benefits_contact_after_email": {
+      "value": ".",
+      "context": "Призыв связаться по вопросам корпоративного спонсорства после ссылки на почту"
     },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",

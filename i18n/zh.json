@@ -1085,11 +1085,11 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "hero_hero_lead_we_are_a_global_community": {
-      "value": "我们是由 Axmol 用户与开发者组成的全球社区，满怀热情地共同构建和维护 Axmol。",
+      "value": "我们是由 Axmol 用户与开发者组成的全球社区，热爱使用 Axmol 并为其发展贡献力量。",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.hero-lead"
     },
     "hero_copy_axmol_is_free_and_open": {
-      "value": "Axmol 免费且开源，由",
+      "value": "Axmol 是一个自由、独立发展的开源项目，由",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
     "hero_link_simdsoft_limited": {
@@ -1198,15 +1198,15 @@
     },
     "support_intro_copy_public_recognition_before_email": {
       "value": "除非你在付款前另行说明，否则完成赞助即表示你同意我们为确认赞助关系及公开致谢，在 axmol.dev、simdsoft.com 或两者同时展示你的名称及适用情况下的 Logo。如需不公开，请联系",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
       "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary > a"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
       "value": "。",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
       "value": "支付通道",
@@ -1399,6 +1399,74 @@
     "supporters_tier_diamond": {
       "value": "钻石",
       "context": "企业赞助等级"
+    },
+    "benefits_heading_sponsorship_benefits": {
+      "value": "赞助权益",
+      "context": "Sponsor 页面赞助权益区标题"
+    },
+    "benefits_heading_individual_sponsors": {
+      "value": "个人赞助者",
+      "context": "权益摘要小标题"
+    },
+    "benefits_copy_individual_sponsors": {
+      "value": "支持 Axmol 开发，并根据赞助档位获得致谢。",
+      "context": "个人赞助权益摘要"
+    },
+    "benefits_heading_corporate_sponsors": {
+      "value": "企业赞助者",
+      "context": "权益摘要小标题"
+    },
+    "benefits_copy_corporate_sponsors": {
+      "value": "获得企业致谢；视赞助档位，也可能获得优先沟通、技术指导以及与 Axmol 核心团队沟通的机会。",
+      "context": "企业赞助权益摘要"
+    },
+    "benefits_note_sponsor_benefits_are_provided": {
+      "value": "赞助权益将在适用情况下提供，并取决于团队可用时间以及 Axmol 的开发和维护优先级。",
+      "context": "统一赞助权益说明"
+    },
+    "benefits_corporate_bronze_recognition": {
+      "value": "企业赞助者致谢",
+      "context": "企业青铜档位权益"
+    },
+    "benefits_corporate_silver_recognition": {
+      "value": "增强版赞助者致谢",
+      "context": "企业白银档位权益"
+    },
+    "benefits_corporate_gold_communication": {
+      "value": "优先沟通",
+      "context": "企业黄金档位权益"
+    },
+    "benefits_corporate_gold_guidance": {
+      "value": "有限的技术指导",
+      "context": "企业黄金档位权益"
+    },
+    "benefits_corporate_platinum_team_communication": {
+      "value": "与 Axmol 核心团队直接沟通",
+      "context": "企业白金档位权益"
+    },
+    "benefits_corporate_platinum_guidance": {
+      "value": "优先技术指导",
+      "context": "企业白金档位权益"
+    },
+    "benefits_corporate_diamond_recognition": {
+      "value": "最高级别的赞助者致谢",
+      "context": "企业钻石档位权益"
+    },
+    "benefits_corporate_diamond_team_access": {
+      "value": "优先联系 Axmol 核心团队",
+      "context": "企业钻石档位权益"
+    },
+    "benefits_corporate_diamond_discussion_priority": {
+      "value": "项目相关技术讨论中的最高赞助优先级",
+      "context": "企业钻石档位权益"
+    },
+    "benefits_contact_before_email": {
+      "value": "有意进行企业赞助？请联系：",
+      "context": "企业赞助联系行动号召，邮箱链接前文案"
+    },
+    "benefits_contact_after_email": {
+      "value": "。",
+      "context": "企业赞助联系行动号召，邮箱链接后文案"
     },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",
