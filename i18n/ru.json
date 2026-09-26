@@ -1197,7 +1197,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_copy_public_recognition_before_email": {
-      "value": "Если до оплаты вы не попросите об обратном, завершение спонсорского платежа означает ваше согласие на размещение имени и, если применимо, логотипа на axmol.dev, simdsoft.com или на обоих сайтах для подтверждения спонсорства и благодарности за поддержку. Чтобы отказаться от публикации, свяжитесь с",
+      "value": "Завершая спонсорский платёж, вы соглашаетесь на размещение вашего имени и, если применимо, логотипа на axmol.dev, simdsoft.com или на обоих сайтах для подтверждения спонсорства и благодарности за поддержку, если только вы не свяжетесь с нами",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
@@ -1205,7 +1205,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
-      "value": ". Спонсорство помогает развивать Axmol. В зависимости от уровня корпоративное спонсорство также может включать приоритетную связь и технические консультации с учетом доступности команды и приоритетов разработки и сопровождения Axmol.",
+      "value": " до оплаты, чтобы отказаться от публикации. Позже вы также можете попросить исправить или удалить сведения о себе. Корпоративные уровни могут включать приоритетную связь и технические консультации с учетом доступности команды и приоритетов разработки и сопровождения Axmol.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
@@ -1376,6 +1376,10 @@
       "value": "Минимальный ежемесячный взнос",
       "context": "Вводный текст диалога с корпоративными уровнями"
     },
+    "supporters_modal_copy_every_tier_includes_logo_recognition": {
+      "value": "Каждый корпоративный уровень включает благодарность с размещением логотипа; на каждом следующем уровне его размер увеличивается.",
+      "context": "Объясняет признание каждого корпоративного уровня с постепенным увеличением размера логотипа"
+    },
     "supporters_month": {
       "value": "месяц",
       "context": "Единица измерения ежемесячной корпоративной поддержки"
@@ -1404,13 +1408,9 @@
       "value": "Преимущества предоставляются в применимых случаях с учетом доступности команды и приоритетов разработки и поддержки Axmol.",
       "context": "Общее примечание о преимуществах спонсорства"
     },
-    "benefits_corporate_bronze_recognition": {
-      "value": "Признание корпоративного спонсора",
-      "context": "Преимущество корпоративного уровня Бронза"
-    },
-    "benefits_corporate_silver_recognition": {
-      "value": "Расширенное признание спонсора",
-      "context": "Преимущество корпоративного уровня Серебро"
+    "benefits_corporate_logo_recognition": {
+      "value": "Благодарность с размещением логотипа компании",
+      "context": "Преимущество с размещением логотипа для всех корпоративных уровней"
     },
     "benefits_corporate_gold_communication": {
       "value": "Приоритетная связь",
@@ -1428,16 +1428,12 @@
       "value": "Приоритетные технические консультации",
       "context": "Преимущество корпоративного уровня Платина"
     },
-    "benefits_corporate_diamond_recognition": {
-      "value": "Наивысший уровень признания спонсора",
+    "benefits_corporate_diamond_priority_consideration": {
+      "value": "Приоритетное рассмотрение основной командой Axmol технических вопросов, связанных с проектом",
       "context": "Преимущество корпоративного уровня Бриллиант"
     },
-    "benefits_corporate_diamond_team_access": {
+    "benefits_corporate_diamond_team_attention": {
       "value": "Приоритетное внимание основной команды Axmol (с учетом ее доступности)",
-      "context": "Преимущество корпоративного уровня Бриллиант"
-    },
-    "benefits_corporate_diamond_discussion_priority": {
-      "value": "Наивысший приоритет в технических обсуждениях проекта",
       "context": "Преимущество корпоративного уровня Бриллиант"
     },
     "benefits_contact_before_email": {

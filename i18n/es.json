@@ -1197,7 +1197,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_copy_public_recognition_before_email": {
-      "value": "Salvo que lo solicites antes del pago, al completar un patrocinio aceptas que tu nombre y, cuando corresponda, tu logotipo puedan mostrarse en axmol.dev, simdsoft.com o ambos para confirmar el patrocinio y agradecer tu apoyo. Para solicitar que no se publique, contacta con",
+      "value": "Al completar un patrocinio, aceptas que tu nombre y, cuando corresponda, tu logotipo puedan mostrarse en axmol.dev, simdsoft.com o ambos para confirmar el patrocinio y agradecer tu apoyo, salvo que contactes con",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
@@ -1205,7 +1205,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
-      "value": ". El patrocinio apoya el desarrollo de Axmol. Según el nivel, el patrocinio corporativo también puede incluir comunicación prioritaria y orientación técnica, sujetas a la disponibilidad del equipo y a las prioridades de desarrollo y mantenimiento de Axmol.",
+      "value": " antes del pago para solicitar que no se publique. Después puedes pedir que se corrija o retire tu información. Los niveles corporativos también pueden incluir comunicación prioritaria y orientación técnica, sujetas a la disponibilidad del equipo y a las prioridades de desarrollo y mantenimiento de Axmol.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
@@ -1376,6 +1376,10 @@
       "value": "Aportación mensual mínima",
       "context": "Introducción del diálogo de niveles corporativos"
     },
+    "supporters_modal_copy_every_tier_includes_logo_recognition": {
+      "value": "Todos los niveles corporativos incluyen reconocimiento mediante el logotipo, cuyo tamaño aumenta con cada nivel superior.",
+      "context": "Explica que todos los niveles corporativos reciben reconocimiento con logotipo de tamaño progresivamente mayor"
+    },
     "supporters_month": {
       "value": "mes",
       "context": "Unidad mensual de los importes de apoyo corporativo"
@@ -1404,13 +1408,9 @@
       "value": "Los beneficios se proporcionan cuando corresponda, sujetos a la disponibilidad del equipo y a las prioridades de desarrollo y mantenimiento de Axmol.",
       "context": "Nota común sobre los beneficios del patrocinio"
     },
-    "benefits_corporate_bronze_recognition": {
-      "value": "Reconocimiento como patrocinador corporativo",
-      "context": "Beneficio del nivel corporativo Bronce"
-    },
-    "benefits_corporate_silver_recognition": {
-      "value": "Reconocimiento destacado como patrocinador",
-      "context": "Beneficio del nivel corporativo Plata"
+    "benefits_corporate_logo_recognition": {
+      "value": "Reconocimiento con el logotipo corporativo",
+      "context": "Beneficio de reconocimiento mediante logotipo para todos los niveles corporativos"
     },
     "benefits_corporate_gold_communication": {
       "value": "Comunicación prioritaria",
@@ -1428,16 +1428,12 @@
       "value": "Orientación técnica prioritaria",
       "context": "Beneficio del nivel corporativo Platino"
     },
-    "benefits_corporate_diamond_recognition": {
-      "value": "El máximo nivel de reconocimiento como patrocinador",
+    "benefits_corporate_diamond_priority_consideration": {
+      "value": "Consideración prioritaria por parte del equipo central de Axmol para conversaciones técnicas relacionadas con el proyecto",
       "context": "Beneficio del nivel corporativo Diamante"
     },
-    "benefits_corporate_diamond_team_access": {
-      "value": "Atención prioritaria del equipo central de Axmol (sujeta a su disponibilidad)",
-      "context": "Beneficio del nivel corporativo Diamante"
-    },
-    "benefits_corporate_diamond_discussion_priority": {
-      "value": "Máxima prioridad para conversaciones técnicas relacionadas con el proyecto",
+    "benefits_corporate_diamond_team_attention": {
+      "value": "Atención prioritaria del equipo central de Axmol (sujeta a la disponibilidad del equipo)",
       "context": "Beneficio del nivel corporativo Diamante"
     },
     "benefits_contact_before_email": {

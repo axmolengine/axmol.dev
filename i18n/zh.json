@@ -1197,7 +1197,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_copy_public_recognition_before_email": {
-      "value": "除非你在付款前另行说明，否则完成赞助即表示你同意我们为确认赞助关系并致谢，在 axmol.dev、simdsoft.com 或两者同时展示你的名称及适用情况下的 Logo。如需退出公开展示，请联系",
+      "value": "完成赞助即表示你同意我们在 axmol.dev、simdsoft.com 或两者同时展示你的名称及适用情况下的 Logo，以确认赞助关系并致谢；如需选择不公开，请在付款前联系",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
@@ -1205,7 +1205,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
-      "value": "。赞助将支持 Axmol 的开发。企业赞助还可能根据档位提供优先沟通和技术指导，具体视团队可用时间及 Axmol 的开发和维护优先级而定。",
+      "value": "。之后也可随时申请更正或撤下相关信息。企业赞助档位还可能包含优先沟通和技术指导，具体视团队可用时间及 Axmol 的开发和维护优先级而定。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
@@ -1376,6 +1376,10 @@
       "value": "月度最低赞助金额",
       "context": "企业赞助等级弹窗说明"
     },
+    "supporters_modal_copy_every_tier_includes_logo_recognition": {
+      "value": "所有企业赞助档位均包含 Logo 致谢，且档位越高，Logo 展示尺寸越大。",
+      "context": "说明每个企业赞助档位均有 Logo 致谢，且展示尺寸逐级增加"
+    },
     "supporters_month": {
       "value": "月",
       "context": "企业赞助金额的月度单位"
@@ -1404,13 +1408,9 @@
       "value": "赞助权益将在适用情况下提供，并取决于团队可用时间以及 Axmol 的开发和维护优先级。",
       "context": "统一赞助权益说明"
     },
-    "benefits_corporate_bronze_recognition": {
-      "value": "企业赞助者致谢",
-      "context": "企业青铜档位权益"
-    },
-    "benefits_corporate_silver_recognition": {
-      "value": "增强版赞助者致谢",
-      "context": "企业白银档位权益"
+    "benefits_corporate_logo_recognition": {
+      "value": "展示企业 Logo 并致谢",
+      "context": "所有企业赞助档位均包含的 Logo 致谢权益"
     },
     "benefits_corporate_gold_communication": {
       "value": "优先沟通",
@@ -1428,16 +1428,12 @@
       "value": "优先技术指导",
       "context": "企业白金档位权益"
     },
-    "benefits_corporate_diamond_recognition": {
-      "value": "最高级别的赞助者致谢",
+    "benefits_corporate_diamond_priority_consideration": {
+      "value": "Axmol 核心团队优先考虑项目相关的技术讨论",
       "context": "企业钻石档位权益"
     },
-    "benefits_corporate_diamond_team_access": {
-      "value": "优先获得 Axmol 核心团队关注（视团队时间安排而定）",
-      "context": "企业钻石档位权益"
-    },
-    "benefits_corporate_diamond_discussion_priority": {
-      "value": "项目相关技术讨论中的最高赞助优先级",
+    "benefits_corporate_diamond_team_attention": {
+      "value": "优先获得 Axmol 核心团队关注（视团队可用时间而定）",
       "context": "企业钻石档位权益"
     },
     "benefits_contact_before_email": {

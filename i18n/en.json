@@ -1197,7 +1197,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_copy_public_recognition_before_email": {
-      "value": "Unless you request otherwise before payment, completing a sponsorship means you agree that your name and, where applicable, logo may be displayed on axmol.dev and/or simdsoft.com to confirm your sponsorship and acknowledge your support. To opt out, contact",
+      "value": "By completing a sponsorship, you agree that your name and, where applicable, logo may appear on axmol.dev, simdsoft.com, or both to confirm your sponsorship and acknowledge your support, unless you contact",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
@@ -1205,7 +1205,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
-      "value": ". Sponsorship supports Axmol's development. Depending on the sponsorship tier, corporate sponsorship may also include priority communication and technical guidance, subject to team availability and Axmol's development and maintenance priorities.",
+      "value": " before payment to opt out. You may request a correction or removal later. Corporate tiers may also include priority communication and technical guidance, subject to team availability and Axmol's development and maintenance priorities.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
@@ -1376,6 +1376,10 @@
       "value": "Minimum monthly contribution",
       "context": "Corporate level dialog introduction"
     },
+    "supporters_modal_copy_every_tier_includes_logo_recognition": {
+      "value": "Every corporate tier includes logo acknowledgment, with display size increasing at each higher tier.",
+      "context": "Explains that all corporate tiers receive logo recognition at progressively larger display sizes"
+    },
     "supporters_month": {
       "value": "month",
       "context": "Monthly corporate support amount unit"
@@ -1404,13 +1408,9 @@
       "value": "Sponsor benefits are provided as applicable, subject to team availability and Axmol's development and maintenance priorities.",
       "context": "Unified sponsorship benefits boundary note"
     },
-    "benefits_corporate_bronze_recognition": {
-      "value": "Corporate sponsor recognition",
-      "context": "Benefit for corporate Bronze tier"
-    },
-    "benefits_corporate_silver_recognition": {
-      "value": "Enhanced sponsor recognition",
-      "context": "Benefit for corporate Silver tier"
+    "benefits_corporate_logo_recognition": {
+      "value": "Corporate logo acknowledgment",
+      "context": "Logo recognition benefit for all corporate tiers"
     },
     "benefits_corporate_gold_communication": {
       "value": "Priority communication",
@@ -1428,16 +1428,12 @@
       "value": "Priority technical guidance",
       "context": "Benefit for corporate Platinum tier"
     },
-    "benefits_corporate_diamond_recognition": {
-      "value": "Highest-level sponsor recognition",
+    "benefits_corporate_diamond_priority_consideration": {
+      "value": "Priority consideration for project-related technical discussions with the Axmol core team",
       "context": "Benefit for corporate Diamond tier"
     },
-    "benefits_corporate_diamond_team_access": {
+    "benefits_corporate_diamond_team_attention": {
       "value": "Priority attention from the Axmol core team (subject to team availability)",
-      "context": "Benefit for corporate Diamond tier"
-    },
-    "benefits_corporate_diamond_discussion_priority": {
-      "value": "Highest sponsor priority for project-related technical discussions",
       "context": "Benefit for corporate Diamond tier"
     },
     "benefits_contact_before_email": {
