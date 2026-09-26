@@ -1197,7 +1197,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_copy_public_recognition_before_email": {
-      "value": "By completing a sponsorship, you agree that your name and, where applicable, logo may be displayed on axmol.dev and/or simdsoft.com for sponsorship confirmation and public recognition, unless you request otherwise before payment. To opt out, contact",
+      "value": "Unless you request otherwise before payment, completing a sponsorship means you agree that your name and, where applicable, logo may be displayed on axmol.dev and/or simdsoft.com to confirm your sponsorship and acknowledge your support. To opt out, contact",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
@@ -1205,7 +1205,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
-      "value": ".",
+      "value": ". Sponsorship supports Axmol's development. Depending on the sponsorship tier, corporate sponsorship may also include priority communication and technical guidance, subject to team availability and Axmol's development and maintenance priorities.",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
@@ -1400,26 +1400,6 @@
       "value": "Diamond",
       "context": "Corporate sponsorship tier"
     },
-    "benefits_heading_sponsorship_benefits": {
-      "value": "Sponsorship Benefits",
-      "context": "Main Sponsor page benefits section heading"
-    },
-    "benefits_heading_individual_sponsors": {
-      "value": "Individual Sponsors",
-      "context": "Benefits summary subheading"
-    },
-    "benefits_copy_individual_sponsors": {
-      "value": "Support Axmol development and receive recognition based on sponsorship level.",
-      "context": "Benefits summary for individual sponsors"
-    },
-    "benefits_heading_corporate_sponsors": {
-      "value": "Corporate Sponsors",
-      "context": "Benefits summary subheading"
-    },
-    "benefits_copy_corporate_sponsors": {
-      "value": "Receive corporate recognition and, depending on sponsorship level, may also receive priority communication, technical guidance, and access to the Axmol core team.",
-      "context": "Benefits summary for corporate sponsors"
-    },
     "benefits_note_sponsor_benefits_are_provided": {
       "value": "Sponsor benefits are provided as applicable, subject to team availability and Axmol's development and maintenance priorities.",
       "context": "Unified sponsorship benefits boundary note"
@@ -1441,7 +1421,7 @@
       "context": "Benefit for corporate Gold tier"
     },
     "benefits_corporate_platinum_team_communication": {
-      "value": "Direct communication with the Axmol core team",
+      "value": "Direct communication with the Axmol core team (best-effort response, subject to team availability)",
       "context": "Benefit for corporate Platinum tier"
     },
     "benefits_corporate_platinum_guidance": {
@@ -1453,7 +1433,7 @@
       "context": "Benefit for corporate Diamond tier"
     },
     "benefits_corporate_diamond_team_access": {
-      "value": "Priority access to the Axmol core team",
+      "value": "Priority attention from the Axmol core team (subject to team availability)",
       "context": "Benefit for corporate Diamond tier"
     },
     "benefits_corporate_diamond_discussion_priority": {
