@@ -1,1682 +1,1682 @@
 {
   "site": {
-    "htmlLang": "zh-CN",
-    "simdsoftUrl": "https://simdsoft.com/?lang=zh"
+    "S001": "zh-CN",
+    "S002": "https://simdsoft.com/?lang=zh"
   },
   "home": {
-    "seo_title": {
+    "H106": {
       "value": "Axmol｜现代跨平台 C++ 游戏开发",
       "context": "html > head > title"
     },
-    "seo_description": {
+    "H103": {
       "value": "Axmol 是现代、开源、代码优先的跨平台 C++ 游戏开发框架。",
       "context": "html > head > meta [content]"
     },
-    "seo_og_title": {
+    "H105": {
       "value": "Axmol｜现代跨平台 C++ 游戏开发",
       "context": "html > head > meta [content]"
     },
-    "seo_og_description": {
+    "H104": {
       "value": "Axmol 是现代、开源、代码优先的跨平台 C++ 游戏开发框架。",
       "context": "html > head > meta [content]"
     },
-    "seo_twitter_title": {
+    "H108": {
       "value": "Axmol｜现代跨平台 C++ 游戏开发",
       "context": "html > head > meta [content]"
     },
-    "seo_twitter_description": {
+    "H107": {
       "value": "Axmol 是现代、开源、代码优先的跨平台 C++ 游戏开发框架。",
       "context": "html > head > meta [content]"
     },
-    "site_visually_hidden_focusable_skip_to_content": {
+    "H109": {
       "value": "跳到正文",
       "context": "html > body > a.visually-hidden-focusable"
     },
-    "nav_aria_label_primary_navigation": {
+    "H064": {
       "value": "主导航",
       "context": "html > body > nav.navbar [aria-label]"
     },
-    "nav_aria_label_axmol_home": {
+    "H061": {
       "value": "Axmol 首页",
       "context": "html > body > nav.navbar > div.container > a.navbar-brand [aria-label]"
     },
-    "nav_alt_axmol": {
+    "H059": {
       "value": "Axmol",
       "context": "html > body > nav.navbar > div.container > a.navbar-brand > img [alt]"
     },
-    "nav_aria_label_language": {
+    "H062": {
       "value": "语言",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
     },
-    "nav_button_english": {
+    "H067": {
       "value": "中文",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
     },
-    "nav_dropdown_item_english": {
+    "H079": {
       "value": "English",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy": {
+    "H072": {
       "value": "中文",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_2": {
+    "H073": {
       "value": "日本語",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_espanol": {
+    "H081": {
       "value": "Español",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_3": {
+    "H074": {
       "value": "Русский",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_aria_label_toggle_navigation": {
+    "H066": {
       "value": "展开导航",
       "context": "html > body > nav.navbar > div.container > button.navbar-toggler [aria-label]"
     },
-    "nav_nav_link_api_reference": {
+    "H084": {
       "value": "API 手册",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_nav_link_wiki": {
+    "H086": {
       "value": "Wiki",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_nav_link_support_axmol": {
+    "H085": {
       "value": "支持 Axmol",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_aria_label_language_2": {
+    "H063": {
       "value": "Language",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
     },
-    "nav_button_english_2": {
+    "H068": {
       "value": "中文",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
     },
-    "nav_dropdown_item_english_2": {
+    "H080": {
       "value": "English",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_4": {
+    "H075": {
       "value": "中文",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_5": {
+    "H076": {
       "value": "日本語",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_espanol_2": {
+    "H082": {
       "value": "Español",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_6": {
+    "H077": {
       "value": "Русский",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_aria_label_axmol_github_repository": {
+    "H060": {
       "value": "Axmol GitHub 仓库",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
     },
-    "nav_d_lg_none_github": {
+    "H069": {
       "value": "GitHub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link > span.d-lg-none"
     },
-    "nav_aria_label_theme": {
+    "H065": {
       "value": "主题",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown [aria-label]"
     },
-    "nav_d_lg_none_theme": {
+    "H070": {
       "value": "主题",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown > span.d-lg-none"
     },
-    "nav_dropdown_item_light": {
+    "H083": {
       "value": "浅色",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "nav_dropdown_item_dark": {
+    "H078": {
       "value": "深色",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "nav_dropdown_item_auto": {
+    "H071": {
       "value": "跟随系统",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "release_banner_span_axmol_3_0_0_beta1": {
+    "H088": {
       "value": "Axmol 3.0.0-beta1 即将发布",
       "context": "html > body > main#main-content > div.release-banner > div.container > span"
     },
-    "release_banner_link_explore_the_beta_preview": {
+    "H087": {
       "value": "了解 v3 预览",
       "context": "html > body > main#main-content > div.release-banner > div.container > a"
     },
-    "hero_eyebrow_open_source_code_first_cross": {
+    "H041": {
       "value": "开源 · 代码优先 · 跨平台",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.eyebrow"
     },
-    "hero_display_3_axmol": {
+    "H040": {
       "value": "Axmol",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
     },
-    "hero_hero_lead_modern_c_game_development_for": {
+    "H042": {
       "value": "面向移动端、桌面端、Xbox 与 WebAssembly 的现代 C++ 游戏开发。",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
     },
-    "hero_link_explore_axmol_3_beta": {
+    "H045": {
       "value": "探索 Axmol 3 Beta",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
-    "hero_link_download_v2_lts": {
+    "H044": {
       "value": "下载 2.11.5 LTS",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
-    "hero_link_documentation": {
+    "H043": {
       "value": "查看文档",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
-    "hero_aria_label_release_channels": {
+    "H018": {
       "value": "版本通道",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills [aria-label]"
     },
-    "hero_badge_3_0_0_beta1_public": {
+    "H020": {
       "value": "3.0.0-beta1 · 公开预览",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills > span.badge"
     },
-    "hero_badge_2_11_x_stable_lts": {
+    "H019": {
       "value": "2.11.x · 稳定 LTS",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.version-pills > span.badge"
     },
-    "hero_aria_label_axmol_c_example": {
+    "H017": {
       "value": "Axmol C++ 示例",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card [aria-label]"
     },
-    "hero_code_title_hello_axmol_cpp": {
+    "H039": {
       "value": "hello_axmol.cpp",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > div.code-head > span.code-title"
     },
-    "hero_c_cmt_one_c_codebase_every_platform": {
+    "H022": {
       "value": "// 一套 C++ 代码，运行在多个平台",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-cmt"
     },
-    "hero_c_key_auto": {
+    "H027": {
       "value": "auto",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-key"
     },
-    "hero_code_line_scene_ax_scene": {
+    "H038": {
       "value": "scene = ax::Scene::",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_c_fn_create": {
+    "H024": {
       "value": "create",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
     },
-    "hero_code_line_copy": {
+    "H031": {
       "value": "();",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_c_key_auto_2": {
+    "H028": {
       "value": "auto",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-key"
     },
-    "hero_code_line_player_ax_sprite": {
+    "H036": {
       "value": "player = ax::Sprite::",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_c_fn_create_2": {
+    "H025": {
       "value": "create",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
     },
-    "hero_code_line_copy_2": {
+    "H032": {
       "value": "(",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_c_str_player_png": {
+    "H029": {
       "value": "\"player.png\"",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-str"
     },
-    "hero_code_line_copy_3": {
+    "H033": {
       "value": ");",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_code_line_player": {
+    "H034": {
       "value": "player->",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_c_fn_setposition": {
+    "H026": {
       "value": "setPosition",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
     },
-    "hero_code_line_ax_vec2_240_160": {
+    "H030": {
       "value": "(ax::Vec2(240, 160));",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_code_line_scene": {
+    "H037": {
       "value": "scene->",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_c_fn_addchild": {
+    "H023": {
       "value": "addChild",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-fn"
     },
-    "hero_code_line_player_2": {
+    "H035": {
       "value": "(player);",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line"
     },
-    "hero_c_cmt_ios_android_windows_linux_webassembl": {
+    "H021": {
       "value": "// iOS · Android · Windows · Linux · WebAssembly",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.code-card > code.code-block > span.code-line > span.c-cmt"
     },
-    "v3_highlights_eyebrow_why_v3": {
+    "H128": {
       "value": "为什么选择 v3",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.section-heading > p.eyebrow"
     },
-    "v3_highlights_heading_one_engine_a_wider_frontier": {
+    "H129": {
       "value": "一套引擎，拓展更多边界。",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.section-heading > h2"
     },
-    "v3_highlights_card_title_modern_graphics": {
+    "H124": {
       "value": "现代图形",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
-    "v3_dynamic_rhi_desc": {
+    "H122": {
       "value": "统一的 C++ 渲染API，全平台图形后端兼容（D3D11, D3D12, Vulkan, Metal, OpenGL），支持启动时按需选择最优渲染后端。",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
-    "v3_highlights_card_title_modern_c": {
+    "H123": {
       "value": "现代 C++",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
-    "v3_highlights_copy_move_to_c_23_with": {
+    "H126": {
       "value": "采用 C++23，更新核心、构建工具链和开发工作流。",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
-    "v3_highlights_card_title_more_platforms": {
+    "H125": {
       "value": "更多平台",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > h3"
     },
-    "v3_highlights_copy_reach_arm_desktops_openxr_devices": {
+    "H127": {
       "value": "支持 ARM、OpenXR、移动端、桌面端、Xbox 与 WebAssembly。",
       "context": "html > body > main#main-content > section#v3-highlights > div.container > div.row > div.col-md-4 > article.story-card > p"
     },
-    "render_pipeline_eyebrow_a_clearer_rendering_path": {
+    "H091": {
       "value": "清晰的渲染路径",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > p.eyebrow"
     },
-    "render_pipeline_heading_write_shaders_once_target_multiple": {
+    "H092": {
       "value": "一套着色器，适配多个图形后端。",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > h2"
     },
-    "render_pipeline_copy_write_hlsl_once_then_use": {
+    "H090": {
       "value": "只需编写一份 HLSL，再由 axslcc 编译为 D3D11、D3D12、Vulkan、Metal 和 OpenGL 所需的着色器。",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > p.text-body-secondary"
     },
-    "render_pipeline_link_see_what_changed_in_v3": {
+    "H093": {
       "value": "查看 v3 的变化",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > a.btn"
     },
-    "render_pipeline_aria_label_hlsl_source_flows_through_axslcc": {
+    "H089": {
       "value": "HLSL 源码经过 axslcc 流向多个渲染硬件接口",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram [aria-label]"
     },
-    "render_pipeline_pipeline_node_hlsl_source": {
+    "H097": {
       "value": "HLSL 源码",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-node"
     },
-    "render_pipeline_pipeline_arrow_copy": {
+    "H094": {
       "value": "↓",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-arrow"
     },
-    "render_pipeline_pipeline_node_axslcc": {
+    "H096": {
       "value": "axslcc",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-node"
     },
-    "render_pipeline_pipeline_arrow_copy_2": {
+    "H095": {
       "value": "↓",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-arrow"
     },
-    "render_pipeline_span_d3d11": {
+    "H098": {
       "value": "D3D11",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
     },
-    "render_pipeline_span_d3d12": {
+    "H099": {
       "value": "D3D12",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
     },
-    "render_pipeline_span_vulkan": {
+    "H102": {
       "value": "Vulkan",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
     },
-    "render_pipeline_span_metal": {
+    "H100": {
       "value": "Metal",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
     },
-    "render_pipeline_span_opengl": {
+    "H101": {
       "value": "OpenGL",
       "context": "html > body > main#main-content > section#render-pipeline > div.container > div.row > div.col-lg-6 > div.pipeline-diagram > div.pipeline-targets > span"
     },
-    "try_it_eyebrow_see_it_run": {
+    "H114": {
       "value": "立即运行",
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.eyebrow"
     },
-    "try_it_heading_start_with_a_working_example": {
+    "H115": {
       "value": "从可运行的示例开始。",
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > h2"
     },
-    "try_it_copy_try_the_live_webassembly_previews": {
+    "H110": {
       "value": "先试用 WebAssembly 在线预览，再按需阅读构建指南，在本地开始开发。",
       "context": "html > body > main#main-content > section#try-it > div.container > div.section-heading > p.text-body-secondary"
     },
-    "try_it_demo_label_cpp_tests": {
+    "H111": {
       "value": "CPP-TESTS",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
     },
-    "try_it_strong_explore_the_engine_testbed": {
+    "H119": {
       "value": "探索引擎测试场",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
     },
-    "try_it_span_open_live_demo": {
+    "H116": {
       "value": "打开在线示例",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
     },
-    "try_it_demo_label_fairygui": {
+    "H112": {
       "value": "FAIRYGUI",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
     },
-    "try_it_strong_see_ui_and_extension_samples": {
+    "H121": {
       "value": "查看 UI 与扩展示例",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
     },
-    "try_it_span_open_live_demo_2": {
+    "H117": {
       "value": "打开在线示例",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
     },
-    "try_it_demo_label_lua_tests": {
+    "H113": {
       "value": "LUA-TESTS",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span.demo-label"
     },
-    "try_it_strong_run_lua_on_webassembly": {
+    "H120": {
       "value": "在 WebAssembly 中运行 Lua",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > strong"
     },
-    "try_it_span_open_live_demo_3": {
+    "H118": {
       "value": "打开在线示例",
       "context": "html > body > main#main-content > section#try-it > div.container > div.row > div.col-md-6 > a.demo-card > span"
     },
-    "migration_eyebrow_moving_to_v3": {
+    "H055": {
       "value": "迁移到 v3",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.eyebrow"
     },
-    "migration_heading_bring_your_project_forward": {
+    "H056": {
       "value": "让项目迈向下一阶段。",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > h2"
     },
-    "migration_copy_the_v3_page_collects_the": {
+    "H054": {
       "value": "v3 页面汇总 Axmol 2、Cocos2d-x、Shader、Input 和 Physics 的破坏性变更与迁移路径。",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-7 > p.text-body-secondary"
     },
-    "migration_quick_link_axmol_2_axmol_3": {
+    "H057": {
       "value": "Axmol 2 → Axmol 3",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-5 > a.quick-link"
     },
-    "migration_quick_link_cocos2d_x_axmol": {
+    "H058": {
       "value": "Cocos2d-x → Axmol",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-lg-5 > a.quick-link"
     },
-    "home_content_eyebrow_supported_in_the_open": {
+    "H048": {
       "value": "公开支持",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
     },
-    "home_content_h4_long_term_support_for_axmol": {
+    "H049": {
       "value": "长期支持 Axmol。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
     },
-    "home_content_supporter_tier_corporate_diamond": {
+    "H053": {
       "value": "CORPORATE DIAMOND",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
     },
-    "home_content_alt_scorewarrior": {
+    "H046": {
       "value": "Scorewarrior",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > a.supporter-logo > img [alt]"
     },
-    "home_content_h5_scorewarrior": {
+    "H050": {
       "value": "Scorewarrior",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > h3.h5"
     },
-    "home_content_copy_long_term_financial_support_for": {
+    "H047": {
       "value": "为 Axmol 开发提供长期资金支持。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > p.text-body-secondary"
     },
-    "home_content_supporter_link_visit_website": {
+    "H052": {
       "value": "访问官网",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > a.supporter-link"
     },
-    "home_content_link_view_all_supporters": {
+    "H051": {
       "value": "查看全部支持者",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.support-footer > a.btn"
     },
-    "footer_div_text_body_secondary_2019_present": {
+    "H001": {
       "value": "© 2019–present",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_simdsoft_limited_and_other_axmol": {
+    "H016": {
       "value": "Simdsoft Limited 与其他 Axmol 贡献者",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_copy": {
+    "H002": {
       "value": "。",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_div_text_body_secondary_led_and_maintained_by": {
+    "H005": {
       "value": "由",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_simdsoft_limited": {
+    "H015": {
       "value": "Simdsoft Limited",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_with_contributions_from_the_communit": {
+    "H007": {
       "value": "维护，社区共同参与。",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_div_text_body_secondary_source_code_on": {
+    "H006": {
       "value": "源码位于",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_github": {
+    "H010": {
       "value": "GitHub",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_hosted_on": {
+    "H004": {
       "value": "· 托管于",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_netlify": {
+    "H013": {
       "value": "Netlify",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_copy_2": {
+    "H003": {
       "value": "。",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_h6_text_body_secondary_community": {
+    "H008": {
       "value": "社区",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
     },
-    "footer_link_github_discussions": {
+    "H011": {
       "value": "GitHub Discussions",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_discord": {
+    "H009": {
       "value": "Discord",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_reddit": {
+    "H014": {
       "value": "Reddit",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_made_in_axmol": {
+    "H012": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     }
   },
   "v3": {
-    "seo_title": {
+    "V102": {
       "value": "Axmol 3.0.0-beta1｜版本预览",
       "context": "html > head > title"
     },
-    "seo_description": {
+    "V099": {
       "value": "Axmol 3.0.0-beta1 预览：C++23、现代 RHI、HLSL、ARM、OpenXR、新物理系统和 Pointer Events。",
       "context": "html > head > meta [content]"
     },
-    "seo_og_title": {
+    "V101": {
       "value": "Axmol 3.0.0-beta1｜版本预览",
       "context": "html > head > meta [content]"
     },
-    "seo_og_description": {
+    "V100": {
       "value": "Axmol 3.0.0-beta1 预览：C++23、现代 RHI、HLSL、ARM、OpenXR、新物理系统和 Pointer Events。",
       "context": "html > head > meta [content]"
     },
-    "seo_twitter_title": {
+    "V104": {
       "value": "Axmol 3.0.0-beta1｜版本预览",
       "context": "html > head > meta [content]"
     },
-    "seo_twitter_description": {
+    "V103": {
       "value": "Axmol 3.0.0-beta1 预览：C++23、现代 RHI、HLSL、ARM、OpenXR、新物理系统和 Pointer Events。",
       "context": "html > head > meta [content]"
     },
-    "site_visually_hidden_focusable_skip_to_content": {
+    "V111": {
       "value": "跳到正文",
       "context": "html > body > a.visually-hidden-focusable"
     },
-    "nav_aria_label_primary_navigation": {
+    "V030": {
       "value": "主导航",
       "context": "html > body > nav.navbar [aria-label]"
     },
-    "nav_aria_label_axmol_home": {
+    "V027": {
       "value": "Axmol 首页",
       "context": "html > body > nav.navbar > div.container > a.navbar-brand [aria-label]"
     },
-    "nav_alt_axmol": {
+    "V025": {
       "value": "Axmol",
       "context": "html > body > nav.navbar > div.container > a.navbar-brand > img [alt]"
     },
-    "nav_aria_label_language": {
+    "V028": {
       "value": "语言",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
     },
-    "nav_button_english": {
+    "V033": {
       "value": "中文",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
     },
-    "nav_dropdown_item_english": {
+    "V045": {
       "value": "English",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy": {
+    "V038": {
       "value": "中文",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_2": {
+    "V039": {
       "value": "日本語",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_espanol": {
+    "V047": {
       "value": "Español",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_3": {
+    "V040": {
       "value": "Русский",
       "context": "html > body > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_aria_label_toggle_navigation": {
+    "V032": {
       "value": "展开导航",
       "context": "html > body > nav.navbar > div.container > button.navbar-toggler [aria-label]"
     },
-    "nav_nav_link_api_reference": {
+    "V050": {
       "value": "API 手册",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_nav_link_wiki": {
+    "V052": {
       "value": "Wiki",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_nav_link_support_axmol": {
+    "V051": {
       "value": "支持 Axmol",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_aria_label_language_2": {
+    "V029": {
       "value": "Language",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
     },
-    "nav_button_english_2": {
+    "V034": {
       "value": "中文",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
     },
-    "nav_dropdown_item_english_2": {
+    "V046": {
       "value": "English",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_4": {
+    "V041": {
       "value": "中文",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_5": {
+    "V042": {
       "value": "日本語",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_espanol_2": {
+    "V048": {
       "value": "Español",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_6": {
+    "V043": {
       "value": "Русский",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_aria_label_axmol_github_repository": {
+    "V026": {
       "value": "Axmol GitHub 仓库",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
     },
-    "nav_d_lg_none_github": {
+    "V035": {
       "value": "GitHub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link > span.d-lg-none"
     },
-    "nav_aria_label_theme": {
+    "V031": {
       "value": "主题",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown [aria-label]"
     },
-    "nav_d_lg_none_theme": {
+    "V036": {
       "value": "主题",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > button#themeDropdown > span.d-lg-none"
     },
-    "nav_dropdown_item_light": {
+    "V049": {
       "value": "浅色",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "nav_dropdown_item_dark": {
+    "V044": {
       "value": "深色",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "nav_dropdown_item_auto": {
+    "V037": {
       "value": "跟随系统",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "site_eyebrow_public_preview_3_0_0": {
+    "V105": {
       "value": "公开预览 · 3.0.0-BETA1",
       "context": "html > body > main#main-content > header.v3-hero > div.container > p.eyebrow"
     },
-    "site_title_axmol_3_is_coming": {
+    "V110": {
       "value": "Axmol 3 即将到来。",
       "context": "html > body > main#main-content > header.v3-hero > div.container > h1"
     },
-    "site_hero_lead_a_modernized_engine_core_rendering": {
+    "V106": {
       "value": "焕新的引擎核心、渲染栈与平台能力，为下一代跨平台游戏而来。",
       "context": "html > body > main#main-content > header.v3-hero > div.container > p.hero-lead"
     },
-    "site_link_view_the_roadmap": {
+    "V109": {
       "value": "查看路线图",
       "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
     },
-    "site_link_read_setup_guide": {
+    "V108": {
       "value": "阅读构建指南",
       "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
     },
-    "site_link_plan_your_migration": {
+    "V107": {
       "value": "规划迁移",
       "context": "html > body > main#main-content > header.v3-hero > div.container > div.d-flex > a.btn"
     },
-    "release_content_badge_coming_soon": {
+    "V053": {
       "value": "即将发布",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > span.badge"
     },
-    "release_content_h4_3_0_0_beta1": {
+    "V071": {
       "value": "3.0.0-beta1",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > h2.h4"
     },
-    "release_content_copy_this_page_is_ready_for": {
+    "V065": {
       "value": "正式 tag 发布后，我们才会在这里加入下载链接。",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div > p.text-body-secondary"
     },
-    "release_content_link_follow_release_discussion": {
+    "V077": {
       "value": "关注发布讨论",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div.d-flex > a.btn"
     },
-    "release_content_link_build_guide": {
+    "V075": {
       "value": "阅读构建指南",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.release-state > div.d-flex > a.btn"
     },
-    "release_content_eyebrow_what_s_new": {
+    "V070": {
       "value": "核心升级",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
     },
-    "release_content_heading_the_v3_foundation": {
+    "V074": {
       "value": "为下一代项目打好基础。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2"
     },
-    "release_content_card_title_c_23": {
+    "V055": {
       "value": "C++23",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
-    "release_content_copy_the_language_baseline_moves_forward": {
+    "V064": {
       "value": "更新语言基线、引擎核心与工具链。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
-    "release_content_card_title_modern_rhi": {
+    "V058": {
       "value": "现代 RHI",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
-    "release_content_copy_d3d11_d3d12_and_vulkan_join": {
+    "V061": {
       "value": "通过 Dynamic RHI 统一 D3D11、D3D12、Vulkan、Metal 与 OpenGL。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
-    "release_content_card_title_hlsl_shaders": {
+    "V056": {
       "value": "HLSL Shader",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
-    "release_content_copy_maintain_one_shader_source_and": {
+    "V062": {
       "value": "维护一份 Shader 源码，为不同渲染后端编译。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
-    "release_content_card_title_arm_openxr": {
+    "V054": {
       "value": "ARM 与 OpenXR",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
-    "release_content_copy_windows_and_linux_arm_support": {
+    "V068": {
       "value": "覆盖 ARM 桌面系统、OpenXR 场景和控制器输入。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
-    "release_content_card_title_new_physics": {
+    "V059": {
       "value": "新物理系统",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
-    "release_content_copy_box2d_3_x_powers_2d": {
+    "V060": {
       "value": "Box2D 3.x 支持 2D，JoltPhysics 5.x 支持 3D 场景。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
-    "release_content_card_title_input_profiling": {
+    "V057": {
       "value": "输入与性能分析",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > h3"
     },
-    "release_content_copy_pointer_events_and_compile_time": {
+    "V063": {
       "value": "Pointer Events 与 Tracy profiling 改善开发体验。",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.row > div.col-md-6 > article.story-card > p"
     },
-    "release_content_eyebrow_platform_matrix": {
+    "V069": {
       "value": "平台矩阵",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.section-heading > p.eyebrow"
     },
-    "release_content_heading_choose_the_backend_that_fits": {
+    "V073": {
       "value": "按目标平台选择合适的后端。",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.section-heading > h2"
     },
-    "release_content_th_target": {
+    "V096": {
       "value": "目标平台",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
     },
-    "release_content_th_primary_rhi_options": {
+    "V094": {
       "value": "主要 RHI 选项",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
     },
-    "release_content_th_status": {
+    "V095": {
       "value": "状态",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > thead > tr > th"
     },
-    "release_content_th_windows_uwp": {
+    "V098": {
       "value": "Windows / UWP",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
     },
-    "release_content_td_d3d12_d3d11_vulkan_opengl": {
+    "V081": {
       "value": "D3D12 · D3D11 · Vulkan · OpenGL",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_td_v3_preview": {
+    "V084": {
       "value": "v3 预览",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_th_linux": {
+    "V093": {
       "value": "Linux",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
     },
-    "release_content_td_vulkan_opengl": {
+    "V088": {
       "value": "Vulkan · OpenGL",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_td_v3_preview_2": {
+    "V085": {
       "value": "v3 预览",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_th_android": {
+    "V091": {
       "value": "Android",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
     },
-    "release_content_td_vulkan_opengl_es": {
+    "V089": {
       "value": "Vulkan · OpenGL ES",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_td_v3_preview_3": {
+    "V086": {
       "value": "v3 预览",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_th_apple_platforms": {
+    "V092": {
       "value": "Apple 平台",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
     },
-    "release_content_td_metal_opengl_es": {
+    "V082": {
       "value": "Metal · OpenGL ES",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_td_v3_preview_4": {
+    "V087": {
       "value": "v3 预览",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_th_webassembly": {
+    "V097": {
       "value": "WebAssembly",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > th"
     },
-    "release_content_td_webgl_2": {
+    "V090": {
       "value": "WebGL 2",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "release_content_td_preview": {
+    "V083": {
       "value": "预览",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.table-responsive > table.table > tbody > tr > td"
     },
-    "migration_eyebrow_migration": {
+    "V015": {
       "value": "迁移指南",
       "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.eyebrow"
     },
-    "migration_heading_prepare_before_you_switch": {
+    "V016": {
       "value": "迁移前先了解变化。",
       "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > h2"
     },
-    "migration_copy_axmol_3_removes_deprecated_apis": {
+    "V014": {
       "value": "从 Axmol 2、Cocos2d-x、Shader、Input 和 Physics 迁移，请查看对应索引。",
       "context": "html > body > main#main-content > section#migration > div.container > div.section-heading > p.text-body-secondary"
     },
-    "migration_strong_axmol_2_3": {
+    "V021": {
       "value": "Axmol 2 → 3",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
     },
-    "migration_small_renamed_and_removed_apis": {
+    "V020": {
       "value": "重命名与移除的 API",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
     },
-    "migration_strong_cocos2d_x_axmol": {
+    "V022": {
       "value": "Cocos2d-x → Axmol",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
     },
-    "migration_small_namespace_and_project_migration": {
+    "V019": {
       "value": "命名空间与项目迁移",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
     },
-    "migration_strong_shader_migration": {
+    "V024": {
       "value": "Shader 迁移",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
     },
-    "migration_small_move_from_glsl_workflows_to": {
+    "V018": {
       "value": "从 GLSL 工作流迁移到 HLSL",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
     },
-    "migration_strong_input_migration": {
+    "V023": {
       "value": "Input 迁移",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > strong"
     },
-    "migration_small_adopt_pointer_events": {
+    "V017": {
       "value": "采用 Pointer Events",
       "context": "html > body > main#main-content > section#migration > div.container > div.row > div.col-md-6 > a.quick-link > small"
     },
-    "release_content_h4_beta_means_feedback": {
+    "V072": {
       "value": "一起把 v3 做得更好。",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > h2.h4"
     },
-    "release_content_copy_use_the_preview_for_evaluation": {
+    "V067": {
       "value": "Beta 版本需要真实项目验证。请通过 Issues 报告问题，或在 Discussions 分享反馈与迁移经验。",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > p.text-body-secondary"
     },
-    "release_content_link_report_an_issue": {
+    "V079": {
       "value": "报告问题",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
-    "release_content_link_join_discussions": {
+    "V078": {
       "value": "参与讨论",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
-    "release_content_strong_need_the_conservative_production_bas": {
+    "V080": {
       "value": "需要更稳妥的生产基线？",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > strong"
     },
-    "release_content_copy_use_axmol_2_11_x": {
+    "V066": {
       "value": "在项目针对 v3 完成验证前，请继续使用 Axmol 2.11.x LTS。",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > p.mb-3"
     },
-    "release_content_link_download_stable_releases": {
+    "V076": {
       "value": "下载稳定版本",
       "context": "html > body > main#main-content > section.section-tight > div.container > div.row > div.col-lg-6 > div.notice-card > a"
     },
-    "footer_div_text_body_secondary_2019_present": {
+    "V001": {
       "value": "© 2019–present",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_simdsoft_limited_and_other_axmol": {
+    "V013": {
       "value": "Simdsoft Limited 与其他 Axmol 贡献者",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_copy": {
+    "V002": {
       "value": "。",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_div_text_body_secondary_source_code_on": {
+    "V005": {
       "value": "源码位于",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_github": {
+    "V008": {
       "value": "GitHub",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_hosted_on": {
+    "V004": {
       "value": "· 托管于",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_netlify": {
+    "V011": {
       "value": "Netlify",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_copy_2": {
+    "V003": {
       "value": "。",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_h6_text_body_secondary_community": {
+    "V006": {
       "value": "社区",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
     },
-    "footer_link_github_discussions": {
+    "V009": {
       "value": "GitHub Discussions",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_discord": {
+    "V007": {
       "value": "Discord",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_reddit": {
+    "V012": {
       "value": "Reddit",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_made_in_axmol": {
+    "V010": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     }
   },
   "sponsor": {
-    "seo_title": {
+    "P104": {
       "value": "赞助 Axmol | Open-source support",
       "context": "html > head > title"
     },
-    "seo_description": {
+    "P103": {
       "value": "Support the long-term maintenance of Axmol.",
       "context": "html > head > meta [content]"
     },
-    "site_visually_hidden_focusable_skip_to_content": {
+    "P105": {
       "value": "跳到正文",
       "context": "html > body.sponsor-page > a.visually-hidden-focusable"
     },
-    "nav_aria_label_axmol_home": {
+    "P059": {
       "value": "Axmol 首页",
       "context": "html > body.sponsor-page > nav.navbar > div.container > a.navbar-brand [aria-label]"
     },
-    "nav_alt_axmol": {
+    "P058": {
       "value": "Axmol",
       "context": "html > body.sponsor-page > nav.navbar > div.container > a.navbar-brand > img [alt]"
     },
-    "nav_aria_label_language": {
+    "P061": {
       "value": "语言",
       "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile [aria-label]"
     },
-    "nav_button_english": {
+    "P065": {
       "value": "中文",
       "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > button#languageDropdownMobile"
     },
-    "nav_dropdown_item_english": {
+    "P081": {
       "value": "English",
       "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy": {
+    "P074": {
       "value": "中文",
       "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_2": {
+    "P075": {
       "value": "日本語",
       "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_espanol": {
+    "P083": {
       "value": "Español",
       "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_3": {
+    "P076": {
       "value": "Русский",
       "context": "html > body.sponsor-page > nav.navbar > div.container > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_nav_link_api_reference": {
+    "P086": {
       "value": "API 手册",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_nav_link_wiki": {
+    "P088": {
       "value": "Wiki",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_nav_link_support_axmol": {
+    "P087": {
       "value": "支持 Axmol",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "nav_aria_label_language_2": {
+    "P062": {
       "value": "Language",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > button#languageDropdown [aria-label]"
     },
-    "nav_button_english_2": {
+    "P066": {
       "value": "中文",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > button#languageDropdown"
     },
-    "nav_dropdown_item_english_2": {
+    "P082": {
       "value": "English",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_4": {
+    "P077": {
       "value": "中文",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_5": {
+    "P078": {
       "value": "日本語",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_espanol_2": {
+    "P084": {
       "value": "Español",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_dropdown_item_copy_6": {
+    "P079": {
       "value": "Русский",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > a.dropdown-item"
     },
-    "nav_aria_label_github_repository": {
+    "P060": {
       "value": "GitHub repository",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link [aria-label]"
     },
-    "nav_aria_label_theme": {
+    "P063": {
       "value": "主题",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a#themeDropdown [aria-label]"
     },
-    "nav_dropdown_item_light": {
+    "P085": {
       "value": " 浅色",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "nav_dropdown_item_dark": {
+    "P080": {
       "value": " 深色",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "nav_dropdown_item_auto": {
+    "P073": {
       "value": " 跟随系统",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > ul.dropdown-menu > li > button.dropdown-item"
     },
-    "hero_eyebrow_supported_in_the_open": {
+    "P055": {
       "value": "公开支持",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
     },
-    "hero_display_4_support_axmol": {
+    "P054": {
       "value": "支持 Axmol.",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
-    "hero_hero_lead_we_are_a_global_community": {
+    "P056": {
       "value": "我们是由 Axmol 用户与开发者组成的全球社区，热爱使用 Axmol 并为其发展贡献力量。",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.hero-lead"
     },
-    "hero_copy_axmol_is_free_and_open": {
+    "P051": {
       "value": "Axmol 是一个自由、独立发展的开源项目，由",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
-    "hero_link_simdsoft_limited": {
+    "P057": {
       "value": "Simdsoft Limited",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p > a"
     },
-    "hero_copy_with_contributions_from_the_communit": {
+    "P052": {
       "value": "领导和维护，并由社区共同贡献。每一次缺陷修复、改进和新功能开发都需要时间与投入。",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
-    "hero_copy_your_support_helps_us_accelerate": {
+    "P053": {
       "value": "你的支持帮助我们加快开发、优先处理重要功能，让 Axmol 持续服务整个社区。",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.mb-0"
     },
-    "support_intro_eyebrow_how_to_help": {
+    "P121": {
       "value": "如何支持",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.eyebrow"
     },
-    "support_intro_heading_keep_the_work_sustainable": {
+    "P126": {
       "value": "让长期维护更加稳健。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > h2"
     },
-    "support_intro_copy_axmol_is_led_and_maintained": {
+    "P111": {
       "value": "Axmol 由",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary"
     },
-    "support_intro_link_simdsoft_limited": {
+    "P128": {
       "value": "Simdsoft Limited",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary > a"
     },
-    "support_intro_copy_with_contributions_from_the_communit": {
+    "P117": {
       "value": "领导和维护，并由社区共同贡献。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary"
     },
-    "nav_aria_label_ways_to_support_axmol": {
+    "P064": {
       "value": "支持 Axmol 的方式",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid [aria-label]"
     },
-    "nav_sponsor_path_label_individual": {
+    "P096": {
       "value": "个人支持",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
-    "nav_card_title_individual_sponsorship": {
+    "P068": {
       "value": "个人赞助",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
     },
-    "nav_copy_choose_a_payment_channel_and": {
+    "P070": {
       "value": "选择支付通道和月度或一次性赞助方式。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
     },
-    "nav_sponsor_path_action_choose_a_way_to_give": {
+    "P092": {
       "value": "选择赞助方式",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
     },
-    "nav_span_copy": {
+    "P089": {
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "nav_sponsor_path_label_corporate": {
+    "P095": {
       "value": "企业支持",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
-    "nav_card_title_corporate_support": {
+    "P067": {
       "value": "企业赞助",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
     },
-    "nav_copy_contact_the_maintainers_to_discuss": {
+    "P071": {
       "value": "联系维护团队，沟通对 Axmol 的支持方式。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
     },
-    "nav_sponsor_path_action_info_simdsoft_com": {
+    "P093": {
       "value": "info@simdsoft.com",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
     },
-    "nav_span_copy_2": {
+    "P090": {
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "nav_sponsor_path_label_recognition": {
+    "P097": {
       "value": "公开致谢",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-index"
     },
-    "nav_card_title_public_recognition": {
+    "P069": {
       "value": "公开致谢",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > h3"
     },
-    "nav_copy_see_the_organizations_and_individual": {
+    "P072": {
       "value": "查看公开列出的组织与个人支持者。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > p"
     },
-    "nav_sponsor_path_action_view_public_supporters": {
+    "P094": {
       "value": "查看公开支持者",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action"
     },
-    "nav_span_copy_3": {
+    "P091": {
       "value": "→",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > nav.sponsor-path-grid > a.sponsor-path-card > span.sponsor-path-action > span"
     },
-    "support_intro_h4_individual_sponsorship": {
+    "P125": {
       "value": "个人赞助",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > h3.h4"
     },
-    "support_intro_copy_choose_a_payment_channel_then": {
+    "P112": {
       "value": "先选择支付通道，再选择月度赞助档位。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
-    "support_intro_copy_public_recognition_before_email": {
+    "P115": {
       "value": "完成赞助即表示你同意我们在 axmol.dev、simdsoft.com 或两者同时展示你的名称及适用情况下的 Logo，以确认赞助关系并致谢；如需选择不公开，请在付款前联系",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
-    "support_intro_link_oss_simdsoft_com": {
+    "P127": {
       "value": "oss@simdsoft.com",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
-    "support_intro_copy_public_recognition_after_email": {
+    "P114": {
       "value": "。之后也可随时申请更正或撤下相关信息。企业赞助档位还可能包含优先沟通和技术指导，具体视团队可用时间及 Axmol 的开发和维护优先级而定。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
-    "support_intro_span_payment_channel": {
+    "P143": {
       "value": "支付通道",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > span"
     },
-    "support_intro_option_paypal": {
+    "P132": {
       "value": "PayPal",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
     },
-    "support_intro_option_github_sponsors": {
+    "P130": {
       "value": "GitHub Sponsors",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
     },
-    "support_intro_option_open_source_collective": {
+    "P131": {
       "value": "Open Source Collective",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
     },
-    "support_intro_option_alipay_china": {
+    "P129": {
       "value": "支付宝",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
     },
-    "support_intro_option_wechat_pay_china": {
+    "P133": {
       "value": "微信支付",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > label.sponsor-channel-select > select#sponsor-channel-en > option"
     },
-    "support_intro_eyebrow_one_time_support": {
+    "P122": {
       "value": "一次性赞助",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.eyebrow"
     },
-    "support_intro_h4_alipay": {
+    "P123": {
       "value": "支付宝",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > h4"
     },
-    "support_intro_copy_scan_the_qr_code_and": {
+    "P116": {
       "value": "扫码后，请在支付 App 内输入任意金额。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.text-body-secondary"
     },
-    "support_intro_copy_please_add_the_note_sponsor": {
+    "P113": {
       "value": "请备注：赞助 Axmol",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > p.small"
     },
-    "support_intro_button_enlarge_qr_code": {
+    "P110": {
       "value": "放大二维码",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > div.sponsor-qr-copy > button.btn"
     },
-    "support_intro_aria_label_enlarge_alipay_qr_code": {
+    "P108": {
       "value": "放大支付宝二维码",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > button.sponsor-qr-image-button [aria-label]"
     },
-    "support_intro_alt_alipay_sponsorship_qr_code": {
+    "P106": {
       "value": "支付宝赞助二维码",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > button.sponsor-qr-image-button > img [alt]"
     },
-    "support_intro_span_backer": {
+    "P140": {
       "value": "支持者",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
     },
-    "support_intro_strong_usd_5": {
+    "P149": {
       "value": "USD $5",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
     },
-    "support_intro_small_month": {
+    "P135": {
       "value": "/ 月",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
     },
-    "support_intro_span_bronze": {
+    "P141": {
       "value": "青铜",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
     },
-    "support_intro_strong_usd_25": {
+    "P147": {
       "value": "USD $25",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
     },
-    "support_intro_small_month_2": {
+    "P136": {
       "value": "/ 月",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
     },
-    "support_intro_span_silver": {
+    "P145": {
       "value": "白银",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
     },
-    "support_intro_strong_usd_50": {
+    "P150": {
       "value": "USD $50",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
     },
-    "support_intro_small_month_3": {
+    "P137": {
       "value": "/ 月",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
     },
-    "support_intro_span_gold": {
+    "P142": {
       "value": "黄金",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
     },
-    "support_intro_strong_usd_100": {
+    "P146": {
       "value": "USD $100",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
     },
-    "support_intro_small_month_4": {
+    "P138": {
       "value": "/ 月",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
     },
-    "support_intro_span_platinum": {
+    "P144": {
       "value": "白金",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
     },
-    "support_intro_strong_usd_250": {
+    "P148": {
       "value": "USD $250",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
     },
-    "support_intro_small_month_5": {
+    "P139": {
       "value": "/ 月",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
     },
-    "support_intro_h4_custom": {
+    "P124": {
       "value": "自定义",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > h4"
     },
-    "support_intro_currency_prefix_copy": {
+    "P118": {
       "value": "$",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > span.currency-prefix"
     },
-    "support_intro_placeholder_enter_amount_usd": {
+    "P134": {
       "value": "自定义美元金额",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > input#custom-amount-en [placeholder]"
     },
-    "support_intro_aria_label_custom_amount_in_united_states": {
+    "P107": {
       "value": "输入金额（USD）",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > input#custom-amount-en [aria-label]"
     },
-    "support_intro_currency_suffix_usd": {
+    "P119": {
       "value": "USD",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > div.custom-tier-input-wrap > span.currency-suffix"
     },
-    "support_intro_custom_monthly_label_monthly": {
+    "P120": {
       "value": "月度",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > div.custom-tier-action > label.custom-monthly-label"
     },
-    "support_intro_button_continue": {
+    "P109": {
       "value": "继续",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > button.btn"
     },
-    "supporters_eyebrow_public_supporters": {
+    "P162": {
       "value": "公开支持者",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.eyebrow"
     },
-    "supporters_heading_supported_in_the_open": {
+    "P164": {
       "value": "在公开协作中获得支持。",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2"
     },
-    "supporters_copy_we_thank_the_organizations_and": {
+    "P155": {
       "value": "感谢以下组织与个人对 Axmol 长期维护的支持。",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
     },
-    "supporters_supporter_tier_corporate_diamond": {
+    "P169": {
       "value": "企业钻石",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
     },
-    "supporters_button_view_corporate_tiers": {
+    "P152": {
       "value": "查看企业赞助档位",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.supporter-card > button"
     },
-    "supporters_modal_title_corporate_sponsorship_tiers": {
+    "P167": {
       "value": "企业赞助档位",
       "context": "企业赞助等级弹窗标题"
     },
-    "supporters_modal_copy_minimum_monthly_contribution": {
+    "P166": {
       "value": "月度最低赞助金额",
       "context": "企业赞助等级弹窗说明"
     },
-    "supporters_modal_copy_every_tier_includes_logo_recognition": {
+    "P165": {
       "value": "所有企业赞助档位均包含 Logo 致谢，且档位越高，Logo 展示尺寸越大。",
       "context": "说明每个企业赞助档位均有 Logo 致谢，且展示尺寸逐级增加"
     },
-    "supporters_month": {
+    "P168": {
       "value": "月",
       "context": "企业赞助金额的月度单位"
     },
-    "supporters_tier_bronze": {
+    "P170": {
       "value": "青铜",
       "context": "企业赞助等级"
     },
-    "supporters_tier_silver": {
+    "P174": {
       "value": "白银",
       "context": "企业赞助等级"
     },
-    "supporters_tier_gold": {
+    "P172": {
       "value": "黄金",
       "context": "企业赞助等级"
     },
-    "supporters_tier_platinum": {
+    "P173": {
       "value": "白金",
       "context": "企业赞助等级"
     },
-    "supporters_tier_diamond": {
+    "P171": {
       "value": "钻石",
       "context": "企业赞助等级"
     },
-    "benefits_note_sponsor_benefits_are_provided": {
+    "P010": {
       "value": "赞助权益将在适用情况下提供，并取决于团队可用时间以及 Axmol 的开发和维护优先级。",
       "context": "统一赞助权益说明"
     },
-    "benefits_corporate_logo_recognition": {
+    "P007": {
       "value": "展示企业 Logo 并致谢",
       "context": "所有企业赞助档位均包含的 Logo 致谢权益"
     },
-    "benefits_corporate_gold_communication": {
+    "P005": {
       "value": "优先沟通",
       "context": "企业黄金档位权益"
     },
-    "benefits_corporate_gold_guidance": {
+    "P006": {
       "value": "有限的技术指导",
       "context": "企业黄金档位权益"
     },
-    "benefits_corporate_platinum_team_communication": {
+    "P009": {
       "value": "与 Axmol 核心团队直接沟通（团队将视时间安排尽力回复）",
       "context": "企业白金档位权益"
     },
-    "benefits_corporate_platinum_guidance": {
+    "P008": {
       "value": "优先技术指导",
       "context": "企业白金档位权益"
     },
-    "benefits_corporate_diamond_priority_consideration": {
+    "P003": {
       "value": "Axmol 核心团队优先考虑项目相关的技术讨论",
       "context": "企业钻石档位权益"
     },
-    "benefits_corporate_diamond_team_attention": {
+    "P004": {
       "value": "优先获得 Axmol 核心团队关注（视团队可用时间而定）",
       "context": "企业钻石档位权益"
     },
-    "benefits_contact_before_email": {
+    "P002": {
       "value": "有意进行企业赞助？请联系：",
       "context": "企业赞助联系行动号召，邮箱链接前文案"
     },
-    "benefits_contact_after_email": {
+    "P001": {
       "value": "。",
       "context": "企业赞助联系行动号召，邮箱链接后文案"
     },
-    "supporters_alt_scorewarrior": {
+    "P151": {
       "value": "Scorewarrior",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"
     },
-    "supporters_h5_scorewarrior": {
+    "P163": {
       "value": "Scorewarrior",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > h3.h5"
     },
-    "supporters_copy_long_term_financial_support_for": {
+    "P154": {
       "value": "为 Axmol 开发提供长期资金支持。",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > p.text-body-secondary"
     },
-    "supporters_card_title_other_public_supporters": {
+    "P153": {
       "value": "其他公开支持者",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > h3"
     },
-    "supporters_dt_platinum": {
+    "P161": {
       "value": "白金",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
     },
-    "supporters_dd_peterkharitonov_alain_serge_nagni": {
+    "P158": {
       "value": "peterkharitonov、Alain-Serge Nagni",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
     },
-    "supporters_dt_backers": {
+    "P159": {
       "value": "支持者",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
     },
-    "supporters_dd_duong_thienphuoc_paulocoutinhox_clvs": {
+    "P156": {
       "value": "DUONG、thienphuoc、paulocoutinhox、clvs7-gh",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
     },
-    "supporters_dt_contributors": {
+    "P160": {
       "value": "贡献者",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
     },
-    "supporters_dd_explorer_turky_mohammed_paul_gardine": {
+    "P157": {
       "value": "Explorer、蚊子别跑、午餐界、椰子、零、Turky Mohammed、Paul Gardiner、Julien、Javier Barros、Paulo Coutinho、deal11、bingsoo",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
     },
-    "faq_heading_faq": {
+    "P030": {
       "value": "常见问题",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > h2.mb-4"
     },
-    "faq_button_how_can_i_cancel_my_recurring_sponsorship": {
+    "P015": {
       "value": "如何取消周期性赞助？",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading1 > button.accordion-button"
     },
-    "faq_copy_cancel_osc_before_link": {
+    "P022": {
       "value": "如通过 Open Source Collective（OSC）进行周期赞助，请登录账户，进入 Dashboard > Contributions，切换到付款所用账户，然后前往",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
     },
-    "faq_link_osc_dashboard": {
+    "P032": {
       "value": "OSC 账户页面",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p > a"
     },
-    "faq_copy_cancel_osc_after_link": {
+    "P021": {
       "value": "，取消对 Axmol 的周期捐助。",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
     },
-    "faq_copy_cancel_paypal_before_link": {
+    "P024": {
       "value": "如通过 PayPal 赞助，请登录",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
     },
-    "faq_copy_cancel_paypal_after_link": {
+    "P023": {
       "value": "，依次进入 Settings > Automatic Payments > Manage Automatic Payments，然后取消名称为 Axmol Sponsors 的自动付款。",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
     },
-    "faq_copy_cancel_github_before_link": {
+    "P018": {
       "value": "如通过 GitHub Sponsors 赞助，请访问",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
     },
-    "faq_copy_cancel_github_after_link": {
+    "P017": {
       "value": "，点击 Your Sponsorships，找到 Axmol，然后在选项菜单中选择 Cancel Sponsorship。",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
     },
-    "faq_copy_cancel_help_before_email": {
+    "P020": {
       "value": "如需帮助，请联系",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
     },
-    "faq_copy_cancel_help_after_email": {
+    "P019": {
       "value": "，并提供对应的 PayPal 或 GitHub 账户邮箱，以及当前赞助档位（如适用）。",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse1 > div.accordion-body > p"
     },
-    "faq_button_how_will_my_sponsorship_be_acknowledged": {
+    "P016": {
       "value": "赞助信息会如何公开展示？",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading2 > button.accordion-button"
     },
-    "faq_copy_sponsorship_acknowledgement_before_email": {
+    "P026": {
       "value": "如未在付款前另行说明，完成赞助即表示你同意我们仅为确认赞助关系及公开致谢之目的，在 axmol.dev、simdsoft.com 或两者同时展示你的名称及适用情况下的 Logo。如希望匿名，请在付款前联系",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
-    "faq_link_oss_simdsoft_com": {
+    "P033": {
       "value": "oss@simdsoft.com",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body > a"
     },
-    "faq_copy_sponsorship_acknowledgement_after_email": {
+    "P025": {
       "value": "；后续如需更正或撤下公开信息，也可随时联系我们。",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse2 > div.accordion-body"
     },
-    "faq_button_how_can_companies_support_axmol": {
+    "P014": {
       "value": "企业如何支持 Axmol？",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > h2#faqHeading3 > button.accordion-button"
     },
-    "faq_div_accordion_body_corporate_support_is_handled_directl": {
+    "P028": {
       "value": "企业支持由",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
-    "faq_link_simdsoft": {
+    "P034": {
       "value": "Simdsoft",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body > a"
     },
-    "faq_div_accordion_body_contact": {
+    "P027": {
       "value": "直接处理。\n                  请联系",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
-    "faq_link_info_simdsoft_com": {
+    "P031": {
       "value": "info@simdsoft.com",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body > a"
     },
-    "faq_div_accordion_body_for_a_private_discussion_support": {
+    "P029": {
       "value": "进行私下沟通。\n                  企业支持不代表对 Axmol 技术方向拥有所有权或控制权。",
       "context": "html > body.sponsor-page > main#main-content > section#faq > div.container > div#faqAccordion > div.accordion-item > div#faqCollapse3 > div.accordion-body"
     },
-    "footer_div_text_body_secondary_2019_present": {
+    "P035": {
       "value": "© 2019–present",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_simdsoft_limited_and_other_axmol": {
+    "P050": {
       "value": "Simdsoft Limited 与其他 Axmol 贡献者",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_copy": {
+    "P036": {
       "value": "。",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_div_text_body_secondary_led_and_maintained_by": {
+    "P039": {
       "value": "由",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_simdsoft_limited": {
+    "P049": {
       "value": "Simdsoft Limited",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_with_contributions_from_the_communit": {
+    "P041": {
       "value": "(深圳司脉科技有限公司), 维护，社区共同参与。",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_div_text_body_secondary_hosted_on": {
+    "P038": {
       "value": "托管于",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_netlify": {
+    "P047": {
       "value": "Netlify",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_source_code_available_on": {
+    "P040": {
       "value": "· Source\n              code available on",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_link_github": {
+    "P044": {
       "value": "GitHub",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary > a"
     },
-    "footer_div_text_body_secondary_copy_2": {
+    "P037": {
       "value": "。",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-body-secondary"
     },
-    "footer_h6_text_body_secondary_community": {
+    "P042": {
       "value": "社区",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > h6.text-body-secondary"
     },
-    "footer_link_github_discussions": {
+    "P045": {
       "value": "GitHub Discussions",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_discord": {
+    "P043": {
       "value": "Discord",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_reddit": {
+    "P048": {
       "value": "Reddit",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "footer_link_made_in_axmol": {
+    "P046": {
       "value": "Made in Axmol",
       "context": "html > body.sponsor-page > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
-    "common_modal_h5_commonmodaltitle_title": {
+    "P013": {
       "value": "Title",
       "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div.modal-header > h5#commonModalTitle"
     },
-    "common_modal_aria_label_close": {
+    "P011": {
       "value": "Close",
       "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div.modal-header > button.btn-close [aria-label]"
     },
-    "common_modal_div_commonmodalbody_message_goes_here": {
+    "P012": {
       "value": "Message goes here.",
       "context": "html > body.sponsor-page > div#commonModal > div.modal-dialog > div.modal-content > div#commonModalBody"
     },
-    "qr_modal_h5_sponsorqrmodaltitle_alipay_qr_code": {
+    "P102": {
       "value": "支付宝二维码",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-header > h5#sponsorQrModalTitle"
     },
-    "qr_modal_aria_label_close": {
+    "P099": {
       "value": "关闭",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-header > button.btn-close [aria-label]"
     },
-    "qr_modal_alt_alipay_sponsorship_qr_code": {
+    "P098": {
       "value": "支付宝赞助二维码",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > img.sponsor-qr-modal-image [alt]"
     },
-    "qr_modal_copy_scan_the_qr_code_and": {
+    "P101": {
       "value": "扫码后，请在支付 App 内输入任意金额。",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
     },
-    "qr_modal_copy_please_add_the_note_sponsor": {
+    "P100": {
       "value": "请备注：赞助 Axmol",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
     }
   },
   "sponsorRuntime": {
-    "alipay": "支付宝",
-    "wechat": "微信支付",
-    "alipayAlt": "支付宝赞助二维码",
-    "wechatAlt": "微信支付赞助二维码",
-    "limitMessage": "个人赞助金额最高为 USD {amount}。请调整金额后重试。",
-    "limitTitle": "赞助金额提示",
-    "ok": "知道了",
-    "qrHelp": "扫码后，请在支付 App 内输入任意金额。",
-    "tierHelp": "选择支付通道和赞助金额。PayPal、GitHub Sponsors 和 OSC 的个人赞助上限为 USD {amount}。",
-    "enlarge": "放大{name}二维码",
-    "note": "请备注：赞助 Axmol",
-    "qrTitle": "{name}二维码"
+    "R001": "支付宝",
+    "R011": "微信支付",
+    "R002": "支付宝赞助二维码",
+    "R012": "微信支付赞助二维码",
+    "R004": "个人赞助金额最高为 USD {amount}。请调整金额后重试。",
+    "R005": "赞助金额提示",
+    "R007": "知道了",
+    "R008": "扫码后，请在支付 App 内输入任意金额。",
+    "R010": "选择支付通道和赞助金额。PayPal、GitHub Sponsors 和 OSC 的个人赞助上限为 USD {amount}。",
+    "R003": "放大{name}二维码",
+    "R006": "请备注：赞助 Axmol",
+    "R009": "{name}二维码"
   }
 }

@@ -3,17 +3,31 @@
   const paypalProducts = { 5: "s101", 25: "s102", 50: "s103", 100: "s104", 250: "s105" };
   const i18nConfig = document.getElementById("axmol-i18n-config");
   const text = JSON.parse(i18nConfig?.textContent || "{}");
+  const runtimeText = {
+    alipay: text.R001,
+    alipayAlt: text.R002,
+    enlarge: text.R003,
+    limitMessage: text.R004,
+    limitTitle: text.R005,
+    note: text.R006,
+    ok: text.R007,
+    qrHelp: text.R008,
+    qrTitle: text.R009,
+    tierHelp: text.R010,
+    wechat: text.R011,
+    wechatAlt: text.R012
+  };
   const format = (template, values) => template.replace(/\{(\w+)\}/g, (_, key) => values[key] ?? "");
   const qrChannels = {
     alipay: {
-      name: text.alipay,
+      name: runtimeText.alipay,
       image: "/assets/img/alipay.jpg",
-      alt: text.alipayAlt
+      alt: runtimeText.alipayAlt
     },
     wechat: {
-      name: text.wechat,
+      name: runtimeText.wechat,
       image: "/assets/img/wxpay.jpg",
-      alt: text.wechatAlt
+      alt: runtimeText.wechatAlt
     }
   };
   const githubUrl = (amount, monthly = true) => `https://github.com/sponsors/axmolengine/sponsorships?preview=false&frequency=${monthly ? "recurring" : "one-time"}&amount=${amount}`;
@@ -25,7 +39,7 @@
     const title = document.getElementById("commonModalTitle");
     const body = document.getElementById("commonModalBody");
     const footer = document.getElementById("commonModalFooter");
-    const message = format(text.limitMessage, { amount: maxIndividualAmount });
+    const message = format(runtimeText.limitMessage, { amount: maxIndividualAmount });
 
     if (!modalElement || !title || !body || !footer || !window.bootstrap?.Modal) {
       window.alert(message);
@@ -33,7 +47,7 @@
       return;
     }
 
-    title.textContent = text.limitTitle;
+    title.textContent = runtimeText.limitTitle;
     body.textContent = message;
     footer.replaceChildren();
 
@@ -41,7 +55,7 @@
     closeButton.type = "button";
     closeButton.className = "btn btn-primary";
     closeButton.dataset.bsDismiss = "modal";
-    closeButton.textContent = text.ok;
+    closeButton.textContent = runtimeText.ok;
     footer.append(closeButton);
 
     modalElement.addEventListener("hidden.bs.modal", () => input?.focus(), { once: true });
@@ -70,22 +84,22 @@
       qrPanel.hidden = !qr;
       tierGrid.hidden = Boolean(qr);
       if (channelHelp) {
-        channelHelp.textContent = qr ? text.qrHelp : format(text.tierHelp, { amount: maxIndividualAmount });
+        channelHelp.textContent = qr ? runtimeText.qrHelp : format(runtimeText.tierHelp, { amount: maxIndividualAmount });
       }
       if (!qr) return;
       qrTitle.textContent = qr.name;
       qrImage.src = qr.image;
       qrImage.alt = qr.alt;
-      qrOpenButtons.forEach((button) => button.setAttribute("aria-label", format(text.enlarge, { name: qr.name })));
-      if (qrInstruction) qrInstruction.textContent = text.qrHelp;
-      if (qrNote) qrNote.textContent = text.note;
-      if (qrModalTitle) qrModalTitle.textContent = format(text.qrTitle, { name: qr.name });
+      qrOpenButtons.forEach((button) => button.setAttribute("aria-label", format(runtimeText.enlarge, { name: qr.name })));
+      if (qrInstruction) qrInstruction.textContent = runtimeText.qrHelp;
+      if (qrNote) qrNote.textContent = runtimeText.note;
+      if (qrModalTitle) qrModalTitle.textContent = format(runtimeText.qrTitle, { name: qr.name });
       if (qrModalImage) {
         qrModalImage.src = qr.image;
         qrModalImage.alt = qr.alt;
       }
-      if (qrModalInstruction) qrModalInstruction.textContent = text.qrHelp;
-      if (qrModalNote) qrModalNote.textContent = text.note;
+      if (qrModalInstruction) qrModalInstruction.textContent = runtimeText.qrHelp;
+      if (qrModalNote) qrModalNote.textContent = runtimeText.note;
     };
 
     channelSelect?.addEventListener("change", updateQrPanel);

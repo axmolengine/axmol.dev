@@ -4,7 +4,7 @@ The source of axmol home page, based on bootstrap 5.3.8
 
 ## Localized pages
 
-The homepage, V3 page, and Sponsor page use three shared readable HTML templates: `templates/home.html`, `templates/v3.html`, and `templates/sponsor.html`. Every locale renders from the same template for its page type. Human-facing text is stored in one JSON dictionary per language under `i18n/`, using ISO 639-1 file codes (`en`, `zh`, `ja`, `es`, `ru`) and matching semantic keys.
+The homepage, V3 page, and Sponsor page use three shared readable HTML templates: `templates/home.html`, `templates/v3.html`, and `templates/sponsor.html`. Every locale renders from the same template for its page type. Human-facing text is stored in one JSON dictionary per language under `i18n/`, using ISO 639-1 file codes (`en`, `zh`, `ja`, `es`, `ru`) and matching globally unique four-character keys. Translation review should locate entries by their `value` and `context`, not by the opaque key.
 
 To render or preview changes to localized copy or page templates, run `./build.ps1` with no arguments. This generates the static localized pages under `dist/`; documentation and WebAssembly artifacts are built only in CI when their explicit arguments are supplied.
 

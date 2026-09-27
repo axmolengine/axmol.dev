@@ -7,6 +7,13 @@ $ErrorActionPreference = 'Stop'
 $siteRoot = $PSScriptRoot
 $outputRoot = [System.IO.Path]::GetFullPath($OutputPath)
 $locales = @('en', 'zh', 'ja', 'es', 'ru')
+$groupPrefixes = @{
+  site = 'S'
+  home = 'H'
+  v3 = 'V'
+  sponsor = 'P'
+  sponsorRuntime = 'R'
+}
 $pages = @(
   @{ Name = 'home'; Template = 'home.html'; Route = 'index.html'; UrlRoute = '' },
   @{ Name = 'v3'; Template = 'v3.html'; Route = 'v3/index.html'; UrlRoute = 'v3/' },
@@ -47,8 +54,18 @@ foreach ($locale in $locales) {
   $dictionaries[$locale] = Get-Content -LiteralPath $dictionaryPath -Raw -Encoding UTF8 | ConvertFrom-Json -AsHashtable
 }
 
+$globalCodes = @{}
 foreach ($group in @('site', 'home', 'v3', 'sponsor', 'sponsorRuntime')) {
   $referenceKeys = @($dictionaries.en[$group].Keys | Sort-Object)
+  foreach ($key in $referenceKeys) {
+    if ($key -notmatch "^$($groupPrefixes[$group])[0-9]{3}$") {
+      throw "Invalid FourCC key '$key' in group '$group'."
+    }
+    if ($globalCodes.ContainsKey($key)) {
+      throw "FourCC key '$key' is not globally unique."
+    }
+    $globalCodes[$key] = $group
+  }
   foreach ($locale in $locales | Where-Object { $_ -ne 'en' }) {
     $localeKeys = @($dictionaries[$locale][$group].Keys | Sort-Object)
     if (($referenceKeys -join "`n") -ne ($localeKeys -join "`n")) {
