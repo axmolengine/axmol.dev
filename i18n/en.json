@@ -1085,11 +1085,11 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "hero_hero_lead_we_are_a_global_community": {
-      "value": "We are a global community of Axmol fans and developers, building and maintaining it with passion.",
+      "value": "We are a global community of Axmol fans and developers, passionate about using Axmol and contributing to its growth.",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.hero-lead"
     },
     "hero_copy_axmol_is_free_and_open": {
-      "value": "Axmol is free and open-source, led and maintained by",
+      "value": "Axmol is a free, independent, open-source project led and maintained by",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
     "hero_link_simdsoft_limited": {
@@ -1197,16 +1197,16 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_copy_public_recognition_before_email": {
-      "value": "By completing a sponsorship, you agree that your name and, where applicable, logo may be displayed on axmol.dev and/or simdsoft.com for sponsorship confirmation and public recognition, unless you request otherwise before payment. To opt out, contact",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+      "value": "By completing a sponsorship, you agree that your name and, where applicable, logo may appear on axmol.dev, simdsoft.com, or both to confirm your sponsorship and acknowledge your support, unless you contact",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
       "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary > a"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
-      "value": ".",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+      "value": " before payment to opt out. You may request a correction or removal later. Corporate tiers may also include priority communication and technical guidance, subject to team availability and Axmol's development and maintenance priorities.",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
       "value": "Payment channel",
@@ -1370,11 +1370,15 @@
     },
     "supporters_modal_title_corporate_sponsorship_tiers": {
       "value": "Corporate sponsorship tiers",
-      "context": "Corporate level dialog title"
+      "context": "Corporate sponsorship tier dialog title"
     },
     "supporters_modal_copy_minimum_monthly_contribution": {
       "value": "Minimum monthly contribution",
       "context": "Corporate level dialog introduction"
+    },
+    "supporters_modal_copy_every_tier_includes_logo_recognition": {
+      "value": "Every corporate tier includes logo acknowledgment, with display size increasing at each higher tier.",
+      "context": "Explains that all corporate tiers receive logo recognition at progressively larger display sizes"
     },
     "supporters_month": {
       "value": "month",
@@ -1382,23 +1386,63 @@
     },
     "supporters_tier_bronze": {
       "value": "Bronze",
-      "context": "Corporate support level"
+      "context": "Corporate sponsorship tier"
     },
     "supporters_tier_silver": {
       "value": "Silver",
-      "context": "Corporate support level"
+      "context": "Corporate sponsorship tier"
     },
     "supporters_tier_gold": {
       "value": "Gold",
-      "context": "Corporate support level"
+      "context": "Corporate sponsorship tier"
     },
     "supporters_tier_platinum": {
       "value": "Platinum",
-      "context": "Corporate support level"
+      "context": "Corporate sponsorship tier"
     },
     "supporters_tier_diamond": {
       "value": "Diamond",
-      "context": "Corporate support level"
+      "context": "Corporate sponsorship tier"
+    },
+    "benefits_note_sponsor_benefits_are_provided": {
+      "value": "Sponsor benefits are provided as applicable, subject to team availability and Axmol's development and maintenance priorities.",
+      "context": "Unified sponsorship benefits boundary note"
+    },
+    "benefits_corporate_logo_recognition": {
+      "value": "Corporate logo acknowledgment",
+      "context": "Logo recognition benefit for all corporate tiers"
+    },
+    "benefits_corporate_gold_communication": {
+      "value": "Priority communication",
+      "context": "Benefit for corporate Gold tier"
+    },
+    "benefits_corporate_gold_guidance": {
+      "value": "Limited technical guidance",
+      "context": "Benefit for corporate Gold tier"
+    },
+    "benefits_corporate_platinum_team_communication": {
+      "value": "Direct communication with the Axmol core team (best-effort response, subject to team availability)",
+      "context": "Benefit for corporate Platinum tier"
+    },
+    "benefits_corporate_platinum_guidance": {
+      "value": "Priority technical guidance",
+      "context": "Benefit for corporate Platinum tier"
+    },
+    "benefits_corporate_diamond_priority_consideration": {
+      "value": "Priority consideration for project-related technical discussions with the Axmol core team",
+      "context": "Benefit for corporate Diamond tier"
+    },
+    "benefits_corporate_diamond_team_attention": {
+      "value": "Priority attention from the Axmol core team (subject to team availability)",
+      "context": "Benefit for corporate Diamond tier"
+    },
+    "benefits_contact_before_email": {
+      "value": "Interested in corporate sponsorship? Contact us at ",
+      "context": "Corporate sponsorship contact call to action before email link"
+    },
+    "benefits_contact_after_email": {
+      "value": ".",
+      "context": "Corporate sponsorship contact call to action after email link"
     },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",

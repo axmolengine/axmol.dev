@@ -1085,11 +1085,11 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "hero_hero_lead_we_are_a_global_community": {
-      "value": "私たちは、情熱をもって Axmol を開発・保守する、ファンと開発者のグローバルコミュニティです。",
+      "value": "私たちは Axmol を愛用し、その発展に情熱を持って貢献するファンと開発者のグローバルコミュニティです。",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.hero-lead"
     },
     "hero_copy_axmol_is_free_and_open": {
-      "value": "Axmol は自由でオープンソースです。",
+      "value": "Axmol は独立して発展する自由なオープンソースプロジェクトで、",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
     "hero_link_simdsoft_limited": {
@@ -1197,16 +1197,16 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
     },
     "support_intro_copy_public_recognition_before_email": {
-      "value": "支払い前に別途申し出がない限り、スポンサーシップを完了することで、スポンサー関係の確認と公開謝辞のために氏名（または名称）および該当する場合はロゴを axmol.dev、simdsoft.com、またはその両方に掲載することに同意したものとみなされます。掲載を希望しない場合は、支払い前に",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+      "value": "スポンサーシップを完了すると、スポンサー関係の確認と謝意を示す目的で、氏名（または名称）および該当する場合はロゴを axmol.dev、simdsoft.com、またはその両方に掲載することに同意したものとみなされます。非公開をご希望の場合は、支払い前に",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_link_oss_simdsoft_com": {
       "value": "oss@simdsoft.com",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary > a"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice > a"
     },
     "support_intro_copy_public_recognition_after_email": {
-      "value": "までご連絡ください。",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > p.text-body-secondary"
+      "value": "までご連絡ください。その後も掲載内容の修正や削除をご依頼いただけます。法人スポンサーの特典には、ティアに応じて優先的な連絡や技術的な助言が含まれる場合があります。提供はチームの対応状況と Axmol の開発・保守上の優先事項に応じます。",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > p.sponsorship-recognition-notice"
     },
     "support_intro_span_payment_channel": {
       "value": "支払い方法",
@@ -1376,6 +1376,10 @@
       "value": "月額の最低支援額",
       "context": "法人サポートレベルのダイアログ説明"
     },
+    "supporters_modal_copy_every_tier_includes_logo_recognition": {
+      "value": "すべての法人スポンサーランクにロゴの謝意表示が含まれ、ランクが上がるほど表示サイズも大きくなります。",
+      "context": "すべての法人ランクでロゴを掲載し、上位ランクほど表示サイズが大きいことを説明"
+    },
     "supporters_month": {
       "value": "か月",
       "context": "法人サポート金額の月単位"
@@ -1399,6 +1403,46 @@
     "supporters_tier_diamond": {
       "value": "ダイヤモンド",
       "context": "法人サポートレベル"
+    },
+    "benefits_note_sponsor_benefits_are_provided": {
+      "value": "スポンサー特典は該当する場合に提供され、チームの対応状況と Axmol の開発・保守上の優先事項に従います。",
+      "context": "スポンサー特典に関する共通注記"
+    },
+    "benefits_corporate_logo_recognition": {
+      "value": "企業ロゴの掲載と謝意の表明",
+      "context": "すべての法人スポンサーランクに含まれるロゴ掲載の特典"
+    },
+    "benefits_corporate_gold_communication": {
+      "value": "優先的な連絡",
+      "context": "法人ゴールドティアの特典"
+    },
+    "benefits_corporate_gold_guidance": {
+      "value": "限定的な技術的助言",
+      "context": "法人ゴールドティアの特典"
+    },
+    "benefits_corporate_platinum_team_communication": {
+      "value": "Axmol コアチームとの直接連絡（回答はベストエフォートで、チームの対応状況によります）",
+      "context": "法人プラチナティアの特典"
+    },
+    "benefits_corporate_platinum_guidance": {
+      "value": "優先的な技術的助言",
+      "context": "法人プラチナティアの特典"
+    },
+    "benefits_corporate_diamond_priority_consideration": {
+      "value": "Axmol コアチームによるプロジェクト関連の技術的な議論への優先的な検討",
+      "context": "法人ダイヤモンドティアの特典"
+    },
+    "benefits_corporate_diamond_team_attention": {
+      "value": "Axmol コアチームによる優先的な対応（チームの対応状況によります）",
+      "context": "法人ダイヤモンドティアの特典"
+    },
+    "benefits_contact_before_email": {
+      "value": "法人スポンサーにご関心がありますか？こちらまでご連絡ください：",
+      "context": "法人スポンサー問い合わせ案内、メールリンク前"
+    },
+    "benefits_contact_after_email": {
+      "value": "。",
+      "context": "法人スポンサー問い合わせ案内、メールリンク後"
     },
     "supporters_alt_scorewarrior": {
       "value": "Scorewarrior",

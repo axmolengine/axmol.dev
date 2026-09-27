@@ -209,6 +209,10 @@
             </a>
           </nav>
 
+          <p class="small text-body-secondary mb-3 sponsorship-recognition-notice">
+            {{i18n:sponsor.support_intro_copy_public_recognition_before_email}}
+            <a href="mailto:oss@simdsoft.com">{{i18n:sponsor.support_intro_link_oss_simdsoft_com}}</a>{{i18n:sponsor.support_intro_copy_public_recognition_after_email}}
+          </p>
           <div class="sponsor-individual-panel" id="individual-sponsorship" tabindex="-1">
             <form id="unipayment" method="post" target="_blank" hidden>
               <input id="WIDout_trade_no" name="WIDout_trade_no" type="hidden">
@@ -221,10 +225,6 @@
             </form>
             <h3 class="h4">{{i18n:sponsor.support_intro_h4_individual_sponsorship}}</h3>
             <p class="text-body-secondary" data-sponsor-channel-help>{{i18n:sponsor.support_intro_copy_choose_a_payment_channel_then}}</p>
-            <p class="small text-body-secondary mb-3">
-              {{i18n:sponsor.support_intro_copy_public_recognition_before_email}}
-              <a href="mailto:oss@simdsoft.com">{{i18n:sponsor.support_intro_link_oss_simdsoft_com}}</a>{{i18n:sponsor.support_intro_copy_public_recognition_after_email}}
-            </p>
             <label class="sponsor-channel-select mb-3" for="sponsor-channel-en">
               <span>{{i18n:sponsor.support_intro_span_payment_channel}}</span>
               <select id="sponsor-channel-en" data-sponsor-channel>
@@ -467,7 +467,7 @@
     </div>
 
     <div class="modal fade" id="corporateTiersModal" tabindex="-1" aria-labelledby="corporateTiersModalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
             <h2 id="corporateTiersModalTitle" class="modal-title fs-5">{{i18n:sponsor.supporters_modal_title_corporate_sponsorship_tiers}}</h2>
@@ -476,13 +476,43 @@
           </div>
           <div class="modal-body">
             <p class="text-body-secondary">{{i18n:sponsor.supporters_modal_copy_minimum_monthly_contribution}}</p>
-            <dl class="corporate-tier-list mb-0">
-              <div><dt>{{i18n:sponsor.supporters_tier_bronze}}</dt><dd>USD 128 / {{i18n:sponsor.supporters_month}}</dd></div>
-              <div><dt>{{i18n:sponsor.supporters_tier_silver}}</dt><dd>USD 256 / {{i18n:sponsor.supporters_month}}</dd></div>
-              <div><dt>{{i18n:sponsor.supporters_tier_gold}}</dt><dd>USD 1,000 / {{i18n:sponsor.supporters_month}}</dd></div>
-              <div><dt>{{i18n:sponsor.supporters_tier_platinum}}</dt><dd>USD 3,000 / {{i18n:sponsor.supporters_month}}</dd></div>
-              <div><dt>{{i18n:sponsor.supporters_tier_diamond}}</dt><dd>USD 6,000 / {{i18n:sponsor.supporters_month}}</dd></div>
-            </dl>
+            <p class="small text-body-secondary">{{i18n:sponsor.supporters_modal_copy_every_tier_includes_logo_recognition}}</p>
+            <div class="corporate-tier-list">
+              <section class="corporate-tier-item">
+                <h3>{{i18n:sponsor.supporters_tier_bronze}} <span>USD 500 / {{i18n:sponsor.supporters_month}}</span></h3>
+                <ul><li>{{i18n:sponsor.benefits_corporate_logo_recognition}}</li></ul>
+              </section>
+              <section class="corporate-tier-item">
+                <h3>{{i18n:sponsor.supporters_tier_silver}} <span>USD 1,000 / {{i18n:sponsor.supporters_month}}</span></h3>
+                <ul><li>{{i18n:sponsor.benefits_corporate_logo_recognition}}</li></ul>
+              </section>
+              <section class="corporate-tier-item">
+                <h3>{{i18n:sponsor.supporters_tier_gold}} <span>USD 2,000 / {{i18n:sponsor.supporters_month}}</span></h3>
+                <ul>
+                  <li>{{i18n:sponsor.benefits_corporate_logo_recognition}}</li>
+                  <li>{{i18n:sponsor.benefits_corporate_gold_communication}}</li>
+                  <li>{{i18n:sponsor.benefits_corporate_gold_guidance}}</li>
+                </ul>
+              </section>
+              <section class="corporate-tier-item">
+                <h3>{{i18n:sponsor.supporters_tier_platinum}} <span>USD 3,000 / {{i18n:sponsor.supporters_month}}</span></h3>
+                <ul>
+                  <li>{{i18n:sponsor.benefits_corporate_logo_recognition}}</li>
+                  <li>{{i18n:sponsor.benefits_corporate_platinum_team_communication}}</li>
+                  <li>{{i18n:sponsor.benefits_corporate_platinum_guidance}}</li>
+                </ul>
+              </section>
+              <section class="corporate-tier-item">
+                <h3>{{i18n:sponsor.supporters_tier_diamond}} <span>USD 6,000 / {{i18n:sponsor.supporters_month}}</span></h3>
+                <ul>
+                  <li>{{i18n:sponsor.benefits_corporate_logo_recognition}}</li>
+                  <li>{{i18n:sponsor.benefits_corporate_diamond_team_attention}}</li>
+                  <li>{{i18n:sponsor.benefits_corporate_diamond_priority_consideration}}</li>
+                </ul>
+              </section>
+            </div>
+            <p class="small text-body-secondary sponsorship-benefits-note">{{i18n:sponsor.benefits_note_sponsor_benefits_are_provided}}</p>
+            <p class="mb-0">{{i18n:sponsor.benefits_contact_before_email}}<a href="mailto:info@simdsoft.com">info@simdsoft.com</a>{{i18n:sponsor.benefits_contact_after_email}}</p>
           </div>
         </div>
       </div>
