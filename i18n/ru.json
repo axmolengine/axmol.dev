@@ -161,7 +161,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
     },
     "H042": {
-      "value": "Современная разработка игр на C++ для мобильных устройств, настольных компьютеров, Xbox и WebAssembly.",
+      "value": "Современный игровой движок на C++ для мобильных устройств, настольных компьютеров, Xbox и WebAssembly, распространяемый по лицензии MIT.",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
     },
     "H045": {

@@ -161,7 +161,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
     },
     "H042": {
-      "value": "面向移动端、桌面端、Xbox 与 WebAssembly 的现代 C++ 游戏开发。",
+      "value": "面向移动端、桌面端、Xbox 和 WebAssembly，采用 MIT 许可证发布的现代 C++ 游戏引擎。",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
     },
     "H045": {

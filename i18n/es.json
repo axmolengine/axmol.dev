@@ -161,7 +161,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
     },
     "H042": {
-      "value": "Desarrollo en C++ Moderno de videojuegos para móviles, escritorio, Xbox y WebAssembly.",
+      "value": "Un motor de videojuegos moderno en C++ para móviles, escritorio, Xbox y WebAssembly, publicado bajo la licencia MIT.",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
     },
     "H045": {

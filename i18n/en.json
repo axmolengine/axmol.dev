@@ -161,7 +161,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > h1.display-3"
     },
     "H042": {
-      "value": "Modern C++ game development for mobile, desktop, Xbox and WebAssembly.",
+      "value": "A modern C++ game engine for mobile, desktop, Xbox, and WebAssembly, released under the MIT License.",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > p.hero-lead"
     },
     "H045": {
