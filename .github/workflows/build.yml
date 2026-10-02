@@ -13,6 +13,8 @@ on:
       - 'i18n/**'
       - 'templates/**'
       - 'render-i18n.ps1'
+      - 'generate-releases.ps1'
+      - 'versions/**'
       - 'build.ps1'
       - 'sponsor/**'
       - 'wasm/**'
@@ -53,6 +55,9 @@ jobs:
     
     - name: Build HTML site
       shell: pwsh
+      env:
+        # Raises the GitHub Releases API rate limit for the version registry step.
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         ls -r tmp/wasm
         git clone https://github.com/axmolengine/axmol.git tmp/axmol-src
@@ -60,6 +65,23 @@ jobs:
         $min_doc_ver = '${{ github.event.inputs.min_doc_ver }}'
         if (!$min_doc_ver) { $min_doc_ver = '${{ env.DEFAULT_MIN_DOC_VER }}'}
         ./build.ps1 tmp/axmol-src tmp/wasm -min_doc_ver $min_doc_ver
+
+    # dist is force-orphaned onto the publish branch, so a silently missing registry
+    # would delete it from the live site. Fail before publishing instead.
+    - name: Verify version registry
+      shell: pwsh
+      run: |
+        if (!(Test-Path ./dist/versions/index.json -PathType Leaf)) { throw 'dist/versions/index.json missing' }
+        $registry = Get-Content ./dist/versions/index.json -Raw | ConvertFrom-Json
+        if (!@($registry.versions).Count) { throw 'dist/versions/index.json has no versions' }
+        if (!(Test-Path ./dist/versions/schema/v1.json -PathType Leaf)) { throw 'version schema missing' }
+        # The pages bake this link at build time, so assert it actually landed in the HTML.
+        $latest = $registry.channels.lts.latest
+        $homeHtml = Get-Content ./dist/index.html -Raw
+        if (!$homeHtml.Contains("releases/tag/v$latest")) { throw "homepage is missing the baked v$latest release link" }
+        if ($homeHtml.Contains('{version}') -or $homeHtml -match '\{\{release:') { throw 'homepage has unresolved tokens' }
+        if (Test-Path ./dist/assets/js/latest-stable.js) { throw 'latest-stable.js should no longer be published' }
+        Write-Host "Registry ok: $latest ($(@($registry.versions).Count) versions), baked into dist/index.html"
     
     # Commit html site pages to repo: axmolengine/axmol.dev.dist
     - name: Commit HTML site pages

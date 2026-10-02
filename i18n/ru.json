@@ -169,7 +169,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H044": {
-      "value": "Скачать 2.11.x LTS",
+      "value": "Скачать {version} LTS",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H043": {

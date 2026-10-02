@@ -2,3 +2,14 @@
   Access-Control-Allow-Origin: *
   Cross-Origin-Embedder-Policy: require-corp
   Cross-Origin-Opener-Policy: same-origin
+
+# Release registry rewritten on every publish, so never cache it as immutable.
+# NOTE: '*' does not cross '/', so this rule does NOT match /versions/schema/v1.json.
+/versions/*.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300, must-revalidate
+
+# JSON Schema contract artifact; versioned filename, safe to cache longer.
+/versions/schema/*.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400

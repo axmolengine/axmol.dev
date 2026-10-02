@@ -21,7 +21,18 @@ Copy-Item (Join-Path $PSScriptRoot 'favicon.ico') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'sitemap.xml') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'robots.txt') $site_dist
 Copy-Item (Join-Path $PSScriptRoot 'assets') $site_dist -Recurse -Force
-& (Join-Path $PSScriptRoot 'render-i18n.ps1') -OutputPath $site_dist
+Copy-Item (Join-Path $PSScriptRoot 'versions') $site_dist -Recurse -Force
+
+# Netlify only reads _headers, and it must always be published: the /versions/*
+# rules below apply even when no wasm artifact is supplied.
+Copy-Item (Join-Path $PSScriptRoot '_headers') $site_dist
+
+# step.1b build release registry for tooling such as Axmol Hub. It runs before
+# rendering because the pages bake the latest LTS link and version into the markup.
+$release_index = Join-Path $site_dist 'versions/index.json'
+& (Join-Path $PSScriptRoot 'gen-verlist.ps1') -OutputPath $release_index
+
+& (Join-Path $PSScriptRoot 'render-i18n.ps1') -OutputPath $site_dist -ReleaseIndex $release_index
 
 # step.2 build docs to main site manual
 if ($axmol_src) {
@@ -33,9 +44,6 @@ if ($axmol_src) {
 if ($wasm_artifact_dir) {
   Copy-Item $(Join-Path $PSScriptRoot 'wasm') $site_dist -Recurse -Force
 
-  # add headers config for wasm pthread support, current netlify support
-  # github pages not support configure custom headers
-  Copy-Item $(Join-Path $PSScriptRoot '_headers') $site_dist
   $site_wasm_dir = Join-Path $site_dist 'wasm/'
   function copy_tree_if($source, $dest) {
     if (Test-Path $source) {
