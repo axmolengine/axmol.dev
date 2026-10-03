@@ -75,13 +75,18 @@ jobs:
         $registry = Get-Content ./dist/versions/index.json -Raw | ConvertFrom-Json
         if (!@($registry.versions).Count) { throw 'dist/versions/index.json has no versions' }
         if (!(Test-Path ./dist/versions/schema/v1.json -PathType Leaf)) { throw 'version schema missing' }
-        # The pages bake this link at build time, so assert it actually landed in the HTML.
+        # The download and v3 pages bake the latest LTS release link at build time
+        # (via {{release:latestUrl}}); assert it actually landed in the HTML. The
+        # homepage links to /download/ instead of baking a direct release link.
         $latest = $registry.channels.lts.latest
-        $homeHtml = Get-Content ./dist/index.html -Raw
-        if (!$homeHtml.Contains("releases/tag/v$latest")) { throw "homepage is missing the baked v$latest release link" }
-        if ($homeHtml.Contains('{version}') -or $homeHtml -match '\{\{release:') { throw 'homepage has unresolved tokens' }
+        $downloadHtml = Get-Content ./dist/download/index.html -Raw
+        if (!$downloadHtml.Contains("releases/tag/v$latest")) { throw "download page is missing the baked v$latest release link" }
+        foreach ($html in (Get-ChildItem ./dist -Filter index.html -Recurse)) {
+          $content = Get-Content $html.FullName -Raw
+          if ($content.Contains('{version}') -or $content -match '\{\{release:') { throw "$($html.FullName) has unresolved tokens" }
+        }
         if (Test-Path ./dist/assets/js/latest-stable.js) { throw 'latest-stable.js should no longer be published' }
-        Write-Host "Registry ok: $latest ($(@($registry.versions).Count) versions), baked into dist/index.html"
+        Write-Host "Registry ok: $latest ($(@($registry.versions).Count) versions), baked into dist/download/index.html"
     
     # Commit html site pages to repo: axmolengine/axmol.dev.dist
     - name: Commit HTML site pages
