@@ -85,7 +85,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H085": {
-      "value": "Axmol を支援",
+      "value": "スポンサー",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H063": {
@@ -607,7 +607,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V051": {
-      "value": "Axmol を支援",
+      "value": "スポンサー",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V029": {
@@ -1033,7 +1033,7 @@
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P087": {
-      "value": "Axmol を支援",
+      "value": "スポンサー",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P062": {
@@ -1089,7 +1089,7 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
     },
     "P054": {
-      "value": "Axmol を支援。",
+      "value": "スポンサーになる",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "P056": {
@@ -1720,7 +1720,7 @@
     "U026": "自動",
     "U027": "API リファレンス",
     "U028": "Wiki",
-    "U030": "Axmol を支援",
+    "U030": "スポンサー",
     "U104": "© 2019–present",
     "U105": "Simdsoft Limited およびその他の Axmol コントリビューター",
     "U106": ".",
@@ -1974,6 +1974,8 @@
     "U144": "Axmol Hub は、エンジンのリリース・ツールチェーン・ビルドターゲットをインストールして管理する公式コンパニオンツールです。",
     "U145": "無料のコード署名は ",
     "U146": " により提供され、証明書は ",
-    "U147": "Axmol"
+    "U147": "Axmol",
+    "U148": "アーリーアクセス",
+    "U149": "Axmol Hub はアーリーアクセス版です。1.0 に向けて未完成な部分や破壊的な変更が含まれる可能性があります。"
   }
 }

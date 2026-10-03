@@ -25,7 +25,7 @@
       })();
     </script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.18" rel="stylesheet">
   </head>
   <body class="sponsor-page">
     <a class="visually-hidden-focusable skip-link" href="#main-content">{{i18n:sponsor.P105}}</a>
@@ -36,18 +36,8 @@
         <a class="navbar-brand d-flex align-items-center" href="/" aria-label="{{i18n:sponsor.P059}}">
           <img src="/assets/img/logo.png" alt="{{i18n:sponsor.P058}}" height="28">
         </a>
-        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
-          <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:sponsor.P061}}">{{i18n:sponsor.P065}}</button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
-              <li><a class="dropdown-item active" href="/sponsor/" lang="en" aria-current="page">{{i18n:sponsor.P081}}</a></li>
-              <li><a class="dropdown-item" href="/zh/sponsor/" lang="zh-CN">{{i18n:sponsor.P074}}</a></li>
-              <li><a class="dropdown-item" href="/ja/sponsor/" lang="ja">{{i18n:sponsor.P075}}</a></li>
-              <li><a class="dropdown-item" href="/es/sponsor/" lang="es">{{i18n:sponsor.P083}}</a></li>
-              <li><a class="dropdown-item" href="/ru/sponsor/" lang="ru">{{i18n:sponsor.P076}}</a></li>
-            </ul>
-          </li>
-          <li class="nav-item d-flex align-items-center ms-2">
+        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-actions">
+          <li class="nav-item d-flex align-items-center">
             <a class="nav-link nav-sponsor-solid" href="/sponsor/"><span class="nav-sponsor-heart" aria-hidden="true">❤</span> {{i18n:sponsor.P087}}</a>
           </li>
         </ul>
@@ -74,27 +64,15 @@
           </ul>
 
           <!-- Right side: GitHub + Theme dropdown -->
-          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <ul class="navbar-nav flex-lg-row flex-wrap ms-lg-auto">
             <!-- Support button -->
             <li class="nav-item d-none d-lg-flex align-items-center me-lg-2">
               <a class="nav-link nav-sponsor-solid" href="/sponsor/"><span class="nav-sponsor-heart" aria-hidden="true">❤</span> {{i18n:sponsor.P087}}</a>
             </li>
-            <!-- Language switch -->
-            <li class="nav-item dropdown d-none d-lg-block">
-              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:sponsor.P062}}">{{i18n:sponsor.P066}}</button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item active" href="/sponsor/" lang="en" aria-current="page">{{i18n:sponsor.P082}}</a></li>
-                <li><a class="dropdown-item" href="/zh/sponsor/" lang="zh-CN">{{i18n:sponsor.P077}}</a></li>
-                <li><a class="dropdown-item" href="/ja/sponsor/" lang="ja">{{i18n:sponsor.P078}}</a></li>
-                <li><a class="dropdown-item" href="/es/sponsor/" lang="es">{{i18n:sponsor.P084}}</a></li>
-                <li><a class="dropdown-item" href="/ru/sponsor/" lang="ru">{{i18n:sponsor.P079}}</a></li>
-              </ul>
-            </li>
-
             <!-- GitHub icon -->
             <li class="nav-item">
               <a
-                class="nav-link d-flex align-items-center justify-content-center"
+                class="nav-link d-flex align-items-center justify-content-lg-center"
                 href="https://github.com/axmolengine/axmol"
                 target="_blank" rel="noopener" aria-label="{{i18n:sponsor.P060}}">
                 <svg class="github-icon" width="24" height="24"
@@ -111,6 +89,18 @@
               </div>
               <hr
               class="d-lg-none my-2 text-white-50">
+            </li>
+
+            <!-- Language switch -->
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:sponsor.P062}}">{{i18n:sponsor.P066}}</button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item active" href="/sponsor/" lang="en" aria-current="page">{{i18n:sponsor.P082}}</a></li>
+                <li><a class="dropdown-item" href="/zh/sponsor/" lang="zh-CN">{{i18n:sponsor.P077}}</a></li>
+                <li><a class="dropdown-item" href="/ja/sponsor/" lang="ja">{{i18n:sponsor.P078}}</a></li>
+                <li><a class="dropdown-item" href="/es/sponsor/" lang="es">{{i18n:sponsor.P084}}</a></li>
+                <li><a class="dropdown-item" href="/ru/sponsor/" lang="ru">{{i18n:sponsor.P079}}</a></li>
+              </ul>
             </li>
 
             <!-- Theme dropdown -->

@@ -85,7 +85,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H085": {
-      "value": "Поддержать Axmol",
+      "value": "Спонсорство",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H063": {
@@ -607,7 +607,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V051": {
-      "value": "Поддержать Axmol",
+      "value": "Спонсорство",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V029": {
@@ -1033,7 +1033,7 @@
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P087": {
-      "value": "Поддержать Axmol",
+      "value": "Спонсорство",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P062": {
@@ -1089,7 +1089,7 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
     },
     "P054": {
-      "value": "Поддержите Axmol.",
+      "value": "Станьте спонсором",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "P056": {
@@ -1720,7 +1720,7 @@
     "U026": "Авто",
     "U027": "Справочник API",
     "U028": "Wiki",
-    "U030": "Поддержать Axmol",
+    "U030": "Спонсорство",
     "U104": "© 2019–present",
     "U105": "Simdsoft Limited и другие участники Axmol",
     "U106": ".",
@@ -1974,6 +1974,8 @@
     "U144": "Axmol Hub — официальный инструмент для установки и управления версиями движка, toolchain и целями сборки.",
     "U145": "Бесплатная подпись кода предоставляется ",
     "U146": ", сертификат выдаёт ",
-    "U147": "Axmol"
+    "U147": "Axmol",
+    "U148": "Ранний доступ",
+    "U149": "Axmol Hub находится на стадии раннего доступа: до версии 1.0 возможны недоработки и несовместимые изменения."
   }
 }

@@ -24,7 +24,7 @@
     <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.18" rel="stylesheet">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Axmol","url":"https://axmol.dev/download/","isPartOf":{"@type":"WebSite","name":"Axmol","url":"https://axmol.dev/"}}</script>
   </head>
   <body>
@@ -34,18 +34,8 @@
         <a class="navbar-brand" href="/" aria-label="{{i18n:hub.U004}}">
           <img src="/assets/img/logo.png" alt="{{i18n:hub.U003}}" height="30">
         </a>
-        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
-          <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:hub.U005}}">{{i18n:hub.U006}}</button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
-              <li><a class="dropdown-item active" href="/download/" lang="en" aria-current="page">{{i18n:hub.U015}}</a></li>
-              <li><a class="dropdown-item" href="/zh/download/" lang="zh-CN">{{i18n:hub.U016}}</a></li>
-              <li><a class="dropdown-item" href="/ja/download/" lang="ja">{{i18n:hub.U017}}</a></li>
-              <li><a class="dropdown-item" href="/es/download/" lang="es">{{i18n:hub.U018}}</a></li>
-              <li><a class="dropdown-item" href="/ru/download/" lang="ru">{{i18n:hub.U019}}</a></li>
-            </ul>
-          </li>
-          <li class="nav-item d-flex align-items-center ms-2">
+        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-actions">
+          <li class="nav-item d-flex align-items-center">
             <a class="nav-link nav-sponsor-solid" href="/sponsor/"><span class="nav-sponsor-heart" aria-hidden="true">❤</span> {{i18n:hub.U030}}</a>
           </li>
         </ul>
@@ -65,22 +55,12 @@
               <a class="nav-link" href="/download/">{{i18n:hub.U118}}</a>
             </li>
           </ul>
-          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <ul class="navbar-nav flex-lg-row flex-wrap ms-lg-auto">
             <li class="nav-item d-none d-lg-flex align-items-center me-lg-2">
               <a class="nav-link nav-sponsor-solid" href="/sponsor/"><span class="nav-sponsor-heart" aria-hidden="true">❤</span> {{i18n:hub.U030}}</a>
             </li>
-            <li class="nav-item dropdown d-none d-lg-block">
-              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:hub.U008}}">{{i18n:hub.U009}}</button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item active" href="/download/" lang="en" aria-current="page">{{i18n:hub.U010}}</a></li>
-                <li><a class="dropdown-item" href="/zh/download/" lang="zh-CN">{{i18n:hub.U011}}</a></li>
-                <li><a class="dropdown-item" href="/ja/download/" lang="ja">{{i18n:hub.U012}}</a></li>
-                <li><a class="dropdown-item" href="/es/download/" lang="es">{{i18n:hub.U013}}</a></li>
-                <li><a class="dropdown-item" href="/ru/download/" lang="ru">{{i18n:hub.U014}}</a></li>
-              </ul>
-            </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center justify-content-center" href="https://github.com/axmolengine/axmol-hub" target="_blank" rel="noopener" aria-label="{{i18n:hub.U020}}">
+              <a class="nav-link d-flex align-items-center justify-content-lg-center" href="https://github.com/axmolengine/axmol-hub" target="_blank" rel="noopener" aria-label="{{i18n:hub.U020}}">
                 <svg class="github-icon" width="24" height="24" aria-hidden="true">
                   <use href="/assets/icons.svg#github-icon"></use>
                 </svg>
@@ -91,6 +71,16 @@
               <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white">
               </div>
               <hr class="d-lg-none my-2 text-white-50">
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:hub.U008}}">{{i18n:hub.U009}}</button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item active" href="/download/" lang="en" aria-current="page">{{i18n:hub.U010}}</a></li>
+                <li><a class="dropdown-item" href="/zh/download/" lang="zh-CN">{{i18n:hub.U011}}</a></li>
+                <li><a class="dropdown-item" href="/ja/download/" lang="ja">{{i18n:hub.U012}}</a></li>
+                <li><a class="dropdown-item" href="/es/download/" lang="es">{{i18n:hub.U013}}</a></li>
+                <li><a class="dropdown-item" href="/ru/download/" lang="ru">{{i18n:hub.U014}}</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-left" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:hub.U022}}">
@@ -129,8 +119,9 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">{{i18n:hub.U141}}</p>
-            <h2>{{i18n:hub.U142}}</h2>
+            <h2>{{i18n:hub.U142}} <span class="badge text-bg-primary align-middle">{{i18n:hub.U148}}</span></h2>
             <p class="text-body-secondary">{{i18n:hub.U144}}</p>
+            <p class="text-body-secondary small mb-0">{{i18n:hub.U149}}</p>
           </div>
           <div class="row g-4">
             <div class="col-md-4">

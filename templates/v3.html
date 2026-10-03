@@ -24,7 +24,7 @@
     <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.17" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.18" rel="stylesheet">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Axmol 3.0.0-beta1","url":"https://axmol.dev/v3/","isPartOf":{"@type":"WebSite","name":"Axmol","url":"https://axmol.dev/"}}</script>
   </head>
   <body>
@@ -34,18 +34,8 @@
         <a class="navbar-brand" href="/" aria-label="{{i18n:v3.V027}}">
           <img src="/assets/img/logo.png" alt="{{i18n:v3.V025}}" height="30">
         </a>
-        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-language">
-          <li class="nav-item dropdown">
-            <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdownMobile" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.V028}}">{{i18n:v3.V033}}</button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
-              <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">{{i18n:v3.V045}}</a></li>
-              <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">{{i18n:v3.V038}}</a></li>
-              <li><a class="dropdown-item" href="/ja/v3/" lang="ja">{{i18n:v3.V039}}</a></li>
-              <li><a class="dropdown-item" href="/es/v3/" lang="es">{{i18n:v3.V047}}</a></li>
-              <li><a class="dropdown-item" href="/ru/v3/" lang="ru">{{i18n:v3.V040}}</a></li>
-            </ul>
-          </li>
-          <li class="nav-item d-flex align-items-center ms-2">
+        <ul class="navbar-nav d-lg-none ms-auto flex-row align-items-center navbar-mobile-actions">
+          <li class="nav-item d-flex align-items-center">
             <a class="nav-link nav-sponsor-solid" href="/sponsor/"><span class="nav-sponsor-heart" aria-hidden="true">❤</span> {{i18n:v3.V051}}</a>
           </li>
         </ul>
@@ -65,22 +55,12 @@
               <a class="nav-link" href="/download/">{{i18n:v3.V112}}</a>
             </li>
           </ul>
-          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          <ul class="navbar-nav flex-lg-row flex-wrap ms-lg-auto">
             <li class="nav-item d-none d-lg-flex align-items-center me-lg-2">
               <a class="nav-link nav-sponsor-solid" href="/sponsor/"><span class="nav-sponsor-heart" aria-hidden="true">❤</span> {{i18n:v3.V051}}</a>
             </li>
-            <li class="nav-item dropdown d-none d-lg-block">
-              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.V029}}">{{i18n:v3.V034}}</button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">{{i18n:v3.V046}}</a></li>
-                <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">{{i18n:v3.V041}}</a></li>
-                <li><a class="dropdown-item" href="/ja/v3/" lang="ja">{{i18n:v3.V042}}</a></li>
-                <li><a class="dropdown-item" href="/es/v3/" lang="es">{{i18n:v3.V048}}</a></li>
-                <li><a class="dropdown-item" href="/ru/v3/" lang="ru">{{i18n:v3.V043}}</a></li>
-              </ul>
-            </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center justify-content-center" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="{{i18n:v3.V026}}">
+              <a class="nav-link d-flex align-items-center justify-content-lg-center" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="{{i18n:v3.V026}}">
                 <svg class="github-icon" width="24" height="24" aria-hidden="true">
                   <use href="/assets/icons.svg#github-icon"></use>
                 </svg>
@@ -91,6 +71,16 @@
               <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white">
               </div>
               <hr class="d-lg-none my-2 text-white-50">
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.V029}}">{{i18n:v3.V034}}</button>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                <li><a class="dropdown-item active" href="/v3/" lang="en" aria-current="page">{{i18n:v3.V046}}</a></li>
+                <li><a class="dropdown-item" href="/zh/v3/" lang="zh-CN">{{i18n:v3.V041}}</a></li>
+                <li><a class="dropdown-item" href="/ja/v3/" lang="ja">{{i18n:v3.V042}}</a></li>
+                <li><a class="dropdown-item" href="/es/v3/" lang="es">{{i18n:v3.V048}}</a></li>
+                <li><a class="dropdown-item" href="/ru/v3/" lang="ru">{{i18n:v3.V043}}</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-left" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.V031}}">

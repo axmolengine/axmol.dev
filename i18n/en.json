@@ -85,7 +85,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H085": {
-      "value": "Support Axmol",
+      "value": "Sponsor",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H063": {
@@ -607,7 +607,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V051": {
-      "value": "Support Axmol",
+      "value": "Sponsor",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V029": {
@@ -1033,7 +1033,7 @@
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P087": {
-      "value": "Support Axmol",
+      "value": "Sponsor",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P062": {
@@ -1089,7 +1089,7 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
     },
     "P054": {
-      "value": "Support Axmol.",
+      "value": "Sponsor Us",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "P056": {
@@ -1720,7 +1720,7 @@
     "U026": "Auto",
     "U027": "API Reference",
     "U028": "Wiki",
-    "U030": "Support Axmol",
+    "U030": "Sponsor",
     "U104": "© 2019–present",
     "U105": "Simdsoft Limited and other Axmol contributors",
     "U106": ".",
@@ -2047,6 +2047,8 @@
     "U144": "Axmol Hub is the official companion tool that installs and manages engine releases, toolchains, and build targets.",
     "U145": "Free code signing provided by ",
     "U146": ", certificate by ",
-    "U147": "Axmol"
+    "U147": "Axmol",
+    "U148": "Early Access",
+    "U149": "Axmol Hub is in early access: expect rough edges and breaking changes before 1.0."
   }
 }

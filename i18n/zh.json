@@ -85,7 +85,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H085": {
-      "value": "支持 Axmol",
+      "value": "赞助",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H063": {
@@ -607,7 +607,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V051": {
-      "value": "支持 Axmol",
+      "value": "赞助",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V029": {
@@ -1033,7 +1033,7 @@
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P087": {
-      "value": "支持 Axmol",
+      "value": "赞助",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P062": {
@@ -1089,7 +1089,7 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
     },
     "P054": {
-      "value": "支持 Axmol.",
+      "value": "赞助我们",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "P056": {
@@ -1720,7 +1720,7 @@
     "U026": "跟随系统",
     "U027": "API 手册",
     "U028": "Wiki",
-    "U030": "支持 Axmol",
+    "U030": "赞助",
     "U104": "© 2019–present",
     "U105": "Simdsoft Limited 与其他 Axmol 贡献者",
     "U106": "。",
@@ -1974,6 +1974,8 @@
     "U144": "Axmol Hub 是官方配套工具，用于安装和管理引擎版本、工具链与构建目标。",
     "U145": "免费代码签名由 ",
     "U146": " 提供，证书由 ",
-    "U147": "Axmol"
+    "U147": "Axmol",
+    "U148": "抢先体验",
+    "U149": "Axmol Hub 目前处于抢先体验阶段，1.0 正式版之前可能存在不完善之处与破坏性变更。"
   }
 }

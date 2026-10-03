@@ -85,7 +85,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H085": {
-      "value": "Apóyanos",
+      "value": "Patrocinio",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "H063": {
@@ -607,7 +607,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V051": {
-      "value": "Apóyanos",
+      "value": "Patrocinio",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "V029": {
@@ -1033,7 +1033,7 @@
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P087": {
-      "value": "Apóyanos",
+      "value": "Patrocinio",
       "context": "html > body.sponsor-page > nav.navbar > div.container > div#nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P062": {
@@ -1089,7 +1089,7 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p.eyebrow"
     },
     "P054": {
-      "value": "Apóyanos con Axmol.",
+      "value": "Patrocínanos",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > h1.display-4"
     },
     "P056": {
@@ -1720,7 +1720,7 @@
     "U026": "Automático",
     "U027": "Referencia de la API",
     "U028": "Wiki",
-    "U030": "Apóyanos",
+    "U030": "Patrocinio",
     "U104": "© 2019–present",
     "U105": "Simdsoft Limited y otros colaboradores de Axmol",
     "U106": ".",
@@ -1974,6 +1974,8 @@
     "U144": "Axmol Hub es la herramienta oficial que instala y gestiona versiones del motor, toolchains y objetivos de compilación.",
     "U145": "Firma de código gratuita proporcionada por ",
     "U146": ", certificado por ",
-    "U147": "Axmol"
+    "U147": "Axmol",
+    "U148": "Acceso anticipado",
+    "U149": "Axmol Hub está en acceso anticipado: antes de la 1.0 puede haber imperfecciones y cambios que rompan la compatibilidad."
   }
 }
