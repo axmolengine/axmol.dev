@@ -169,7 +169,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H044": {
-      "value": "{version} LTS をダウンロード",
+      "value": "ダウンロード",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H043": {
@@ -519,6 +519,10 @@
     "H012": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "H130": {
+      "value": "ダウンロード",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "v3": {
@@ -965,6 +969,10 @@
     "V010": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "V112": {
+      "value": "ダウンロード",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "sponsor": {
@@ -1663,6 +1671,10 @@
     "P100": {
       "value": "備考欄に「Sponsor Axmol」とご記入ください。",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
+    },
+    "P175": {
+      "value": "ダウンロード",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "sponsorRuntime": {
@@ -1678,5 +1690,290 @@
     "R003": "{name} の QR コードを拡大",
     "R006": "備考欄に「Sponsor Axmol」とご記入ください。",
     "R009": "{name} QR コード"
+  },
+  "hub": {
+    "U001": "本文へ移動",
+    "U002": "メインナビゲーション",
+    "U003": "Axmol",
+    "U004": "Axmol ホーム",
+    "U005": "言語",
+    "U006": "日本語",
+    "U007": "Toggle navigation",
+    "U008": "Language",
+    "U009": "日本語",
+    "U010": "English",
+    "U011": "中文",
+    "U012": "日本語",
+    "U013": "Español",
+    "U014": "Русский",
+    "U015": "English",
+    "U016": "中文",
+    "U017": "日本語",
+    "U018": "Español",
+    "U019": "Русский",
+    "U020": "Axmol GitHub repository",
+    "U021": "GitHub",
+    "U022": "テーマ",
+    "U023": "Theme",
+    "U024": "ライト",
+    "U025": "ダーク",
+    "U026": "自動",
+    "U027": "API リファレンス",
+    "U028": "Wiki",
+    "U030": "Axmol を支援",
+    "U104": "© 2019–present",
+    "U105": "Simdsoft Limited およびその他の Axmol コントリビューター",
+    "U106": ".",
+    "U107": "ソースコード：",
+    "U108": "GitHub",
+    "U109": "· ホスティング：",
+    "U110": "Netlify",
+    "U111": ".",
+    "U112": "コミュニティ",
+    "U113": "GitHub Discussions",
+    "U114": "Discord",
+    "U115": "Reddit",
+    "U116": "Made in Axmol",
+    "U029": "Hub",
+    "U031": {
+      "value": "Axmol Hub | エンジン・プロジェクト・ビルド管理"
+    },
+    "U032": {
+      "value": "Axmol Hub は Axmol エンジンのインストール、ビルドツールチェーンの準備、プロジェクト作成、ビルドと実行を担うデスクトップアプリです。GUI のほか --json CLI や MCP からも利用できます。"
+    },
+    "U033": {
+      "value": "Axmol Hub"
+    },
+    "U034": {
+      "value": "エンジンのインストール、ツールチェーンの準備、プロジェクト作成、ビルドと実行を 1 つのデスクトップアプリで。--json CLI と MCP にも対応。"
+    },
+    "U035": {
+      "value": "Axmol Hub — エンジン・プロジェクト・ビルド管理"
+    },
+    "U036": {
+      "value": "Axmol のエンジン、ツールチェーン、プロジェクト、ビルド、実行を 1 つのデスクトップアプリで。自動化のための --json CLI と MCP を同梱。"
+    },
+    "U037": {
+      "value": "ツール"
+    },
+    "U038": {
+      "value": "Axmol Hub"
+    },
+    "U039": {
+      "value": "Axmol のエンジン、プロジェクト、ビルドツールチェーンを管理するデスクトップアプリ。PATH や SDK バージョン、CMake フラグを手で直すことなく、新しいマシンからビルドの実行までたどり着けます。"
+    },
+    "U040": {
+      "value": "ソースを取得"
+    },
+    "U041": {
+      "value": "CLI と自動化"
+    },
+    "U042": {
+      "value": "できることを見る"
+    },
+    "U043": {
+      "value": "アーリーアクセス"
+    },
+    "U044": {
+      "value": "現在の状況"
+    },
+    "U045": {
+      "value": "Axmol Hub v0.2.1 は Windows ファーストで開発中です。Windows x64 のループはエンドツーエンドで検証済み、Android と WebAssembly のビルドは Windows 上で検証済み、macOS と Linux ホストは未検証です。インストーラーはまだ公開されていないため、現時点ではソースからビルドしてください。"
+    },
+    "U046": {
+      "value": "ソースからビルド"
+    },
+    "U047": {
+      "value": "エンジンバージョン選択の一覧を表示する Axmol Hub のメインウィンドウ"
+    },
+    "U048": {
+      "value": "機能"
+    },
+    "U049": {
+      "value": "できること"
+    },
+    "U050": {
+      "value": "エンジン管理"
+    },
+    "U051": {
+      "value": "axmol.dev のインデックスから任意のバージョンをインストール、ローカルソースツリーの取り込み、既定に設定、バックアップ付き修復、アンインストール。各バージョンは Hub のストレージに独立して保持されます。"
+    },
+    "U052": {
+      "value": "プロジェクト管理"
+    },
+    "U053": {
+      "value": "Axmol 本体の CLI を通じて C++ または C++ + Lua プロジェクトを作成。エンジンバージョンとスクリプト種別を固定し、プロジェクトディレクトリとエディターを指定できます。"
+    },
+    "U054": {
+      "value": "ビルドと実行"
+    },
+    "U055": {
+      "value": "ビルド時にプラットフォームと Debug / Release を選択。フェーズやコンパイル単位の進行と経過時間を表示し、途中でキャンセルでき、成功したら成果物を起動します。"
+    },
+    "U056": {
+      "value": "ツールチェーン状態"
+    },
+    "U057": {
+      "value": "期待されるバージョンはエンジン自身の 1k/build.profiles から取得し、検索順序もエンジンに合わせます。インストールはエンジンの setup.ps1 に委譲され、Hub が独自のロジックを持つことはありません。"
+    },
+    "U058": {
+      "value": "エンジンの事前ビルドライブラリ"
+    },
+    "U059": {
+      "value": "プロジェクトをエンジンのビルドディレクトリに向けると、Hub はエンジンのコマンドライン経由で AX_PREBUILT_DIR を渡し、成果物が一致していればエンジンの再ビルドを省きます。"
+    },
+    "U060": {
+      "value": "ログと言語"
+    },
+    "U061": {
+      "value": "ビルドと実行のログはアプリ内にもディスクにも残り、UI は中国語と英語をいつでも切り替えられます。"
+    },
+    "U062": {
+      "value": "プラットフォーム"
+    },
+    "U063": {
+      "value": "ターゲットプラットフォーム"
+    },
+    "U064": {
+      "value": "ゲームのターゲット"
+    },
+    "U065": {
+      "value": "必要なホスト"
+    },
+    "U066": {
+      "value": "状況"
+    },
+    "U067": {
+      "value": "Windows x64"
+    },
+    "U068": {
+      "value": "Windows"
+    },
+    "U069": {
+      "value": "Debug / Release ビルドと Hello World の実行を検証済み"
+    },
+    "U070": {
+      "value": "Android ARM64 / x64"
+    },
+    "U071": {
+      "value": "Windows、Linux、macOS"
+    },
+    "U072": {
+      "value": "署名付き APK / AAB ビルドを Windows 上で検証済み。実機での実行は未検証"
+    },
+    "U073": {
+      "value": "WebAssembly（wasm32）"
+    },
+    "U074": {
+      "value": "Windows、Linux、macOS"
+    },
+    "U075": {
+      "value": "実際のビルドとローカル HTTP プレビューを検証済み。ブラウザー上のシーンは未検証"
+    },
+    "U076": {
+      "value": "Linux x64"
+    },
+    "U077": {
+      "value": "Linux"
+    },
+    "U078": {
+      "value": "ビルドと実行の入口は接続済み。ネイティブホストは未検証"
+    },
+    "U079": {
+      "value": "macOS、iOS、tvOS"
+    },
+    "U080": {
+      "value": "macOS"
+    },
+    "U081": {
+      "value": "Xcode ビルドの入口は接続済み。署名と実機での実行は未検証"
+    },
+    "U082": {
+      "value": "自動化"
+    },
+    "U083": {
+      "value": "1 つの実装、3 つのクライアント"
+    },
+    "U084": {
+      "value": "すべての機能は AxmolHub.Core に一度だけ定義され、バージョン付きの --json 契約で公開されます。GUI、CLI、MCP サーバーが同じコードを動かすため、スクリプトやエージェントが画面の挙動からずれることはありません。"
+    },
+    "U085": {
+      "value": "--json 対応 CLI"
+    },
+    "U086": {
+      "value": "12 の動詞が {ok, exitCode, data, log, artifacts} を返します。stdout はデータ、stderr はログです。"
+    },
+    "U087": {
+      "value": "MCP サーバー"
+    },
+    "U088": {
+      "value": "次のステップは同じツール群を MCP 経由で公開し、コーディングエージェントが Hub を直接動かせるようにすることです。"
+    },
+    "U089": {
+      "value": "スクリプトと CI"
+    },
+    "U090": {
+      "value": "シェルスクリプトと CI パイプラインから Hub を駆動。stdout には構造化された JSON、安定した終了コードの契約、失敗も機械可読な形で返るため、stderr を推測する必要はありません。"
+    },
+    "U091": {
+      "value": "はじめる"
+    },
+    "U092": {
+      "value": "ソースからビルドするには .NET 10 SDK が必要です。エンジンと開発ツールは同梱されず、必要に応じてダウンロードされます。"
+    },
+    "U093": {
+      "value": "GitHub リポジトリ"
+    },
+    "U094": {
+      "value": "ソース・Issue・ディスカッション"
+    },
+    "U095": {
+      "value": "ソースからビルド"
+    },
+    "U096": {
+      "value": "OS ごとの .NET 10 SDK 手順と検証フラグ"
+    },
+    "U097": {
+      "value": "CLI と自動化"
+    },
+    "U098": {
+      "value": "CI・スクリプト・AI アシスタントから Hub を駆動"
+    },
+    "U099": {
+      "value": "設計判断"
+    },
+    "U100": {
+      "value": "ビルドとツールチェーンをエンジンに委譲する理由"
+    },
+    "U101": {
+      "value": "インストーラーは未公開"
+    },
+    "U102": {
+      "value": "GitHub リリースは存在しますが、インストーラー資産はまだありません。Windows インストーラーの公開後は、SignPath Foundation のオープンソース向け無料プログラムで署名し、コード署名ポリシーをこのページで公開します。"
+    },
+    "U103": {
+      "value": "リリースをウォッチ"
+    },
+    "U118": "ダウンロード",
+    "U119": "Windows、macOS、Linux 向けの最新 Axmol Hub をダウンロード。",
+    "U121": "Windows",
+    "U122": "macOS",
+    "U123": "Linux",
+    "U127": "ダウンロード",
+    "U128": "すべてのリリース",
+    "U131": "Windows 10/11、x64",
+    "U132": "macOS 12 以上、両アーキテクチャ対応",
+    "U133": "Apple Silicon",
+    "U134": "Intel",
+    "U135": "Linux x64（AppImage）",
+    "U139": "{version} LTS をダウンロード",
+    "U140": "すべてのエンジンリリース",
+    "U141": "ツール",
+    "U142": "Axmol Hub",
+    "U143": "ダウンロード",
+    "U144": "Axmol Hub は、エンジンのリリース・ツールチェーン・ビルドターゲットをインストールして管理する公式コンパニオンツールです。",
+    "U145": "無料のコード署名は ",
+    "U146": " により提供され、証明書は ",
+    "U147": "Axmol"
   }
 }

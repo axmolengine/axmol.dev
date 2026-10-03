@@ -2,17 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://axmol.dev/</loc></url>
   <url><loc>https://axmol.dev/v3/</loc></url>
+  <url><loc>https://axmol.dev/download/</loc></url>
   <url><loc>https://axmol.dev/zh/</loc></url>
   <url><loc>https://axmol.dev/zh/v3/</loc></url>
+  <url><loc>https://axmol.dev/zh/download/</loc></url>
   <url><loc>https://axmol.dev/sponsor/</loc></url>
   <url><loc>https://axmol.dev/zh/sponsor/</loc></url>
   <url><loc>https://axmol.dev/ja/</loc></url>
   <url><loc>https://axmol.dev/ja/v3/</loc></url>
+  <url><loc>https://axmol.dev/ja/download/</loc></url>
   <url><loc>https://axmol.dev/ja/sponsor/</loc></url>
   <url><loc>https://axmol.dev/es/</loc></url>
   <url><loc>https://axmol.dev/es/v3/</loc></url>
+  <url><loc>https://axmol.dev/es/download/</loc></url>
   <url><loc>https://axmol.dev/es/sponsor/</loc></url>
   <url><loc>https://axmol.dev/ru/</loc></url>
   <url><loc>https://axmol.dev/ru/v3/</loc></url>
+  <url><loc>https://axmol.dev/ru/download/</loc></url>
   <url><loc>https://axmol.dev/ru/sponsor/</loc></url>
 </urlset>

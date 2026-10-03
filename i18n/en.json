@@ -169,7 +169,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H044": {
-      "value": "Download {version} LTS",
+      "value": "Download",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H043": {
@@ -519,6 +519,10 @@
     "H012": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "H130": {
+      "value": "Download",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "v3": {
@@ -965,6 +969,10 @@
     "V010": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "V112": {
+      "value": "Download",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "sponsor": {
@@ -1663,6 +1671,10 @@
     "P100": {
       "value": "Please add the note: Sponsor Axmol",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
+    },
+    "P175": {
+      "value": "Download",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "sponsorRuntime": {
@@ -1678,5 +1690,363 @@
     "R003": "Enlarge {name} QR code",
     "R006": "Please add the note: Sponsor Axmol",
     "R009": "{name} QR code"
+  },
+  "hub": {
+    "U001": "Skip to content",
+    "U002": "Primary navigation",
+    "U003": "Axmol",
+    "U004": "Axmol home",
+    "U005": "Language",
+    "U006": "English",
+    "U007": "Toggle navigation",
+    "U008": "Language",
+    "U009": "English",
+    "U010": "English",
+    "U011": "中文",
+    "U012": "日本語",
+    "U013": "Español",
+    "U014": "Русский",
+    "U015": "English",
+    "U016": "中文",
+    "U017": "日本語",
+    "U018": "Español",
+    "U019": "Русский",
+    "U020": "Axmol GitHub repository",
+    "U021": "GitHub",
+    "U022": "Theme",
+    "U023": "Theme",
+    "U024": "Light",
+    "U025": "Dark",
+    "U026": "Auto",
+    "U027": "API Reference",
+    "U028": "Wiki",
+    "U030": "Support Axmol",
+    "U104": "© 2019–present",
+    "U105": "Simdsoft Limited and other Axmol contributors",
+    "U106": ".",
+    "U107": "Source code on",
+    "U108": "GitHub",
+    "U109": "· Hosted on",
+    "U110": "Netlify",
+    "U111": ".",
+    "U112": "Community",
+    "U113": "GitHub Discussions",
+    "U114": "Discord",
+    "U115": "Reddit",
+    "U116": "Made in Axmol",
+    "U029": "Hub",
+    "U031": {
+      "value": "Axmol Hub | Engines, projects and builds",
+      "context": "html > head > title"
+    },
+    "U032": {
+      "value": "Axmol Hub installs Axmol engines, prepares build toolchains, creates projects, and builds and runs them - from one desktop app, a --json CLI, or MCP.",
+      "context": "html > head > meta [content]"
+    },
+    "U033": {
+      "value": "Axmol Hub",
+      "context": "html > head > meta[property=og:title] [content]"
+    },
+    "U034": {
+      "value": "Install engines, prepare toolchains, create projects, build and run - from one desktop app, a --json CLI, or MCP.",
+      "context": "html > head > meta[property=og:description] [content]"
+    },
+    "U035": {
+      "value": "Axmol Hub | Engine, project and build management",
+      "context": "html > head > meta[name=twitter:title] [content]"
+    },
+    "U036": {
+      "value": "One desktop app for Axmol engines, toolchains, projects, builds and runs - plus a --json CLI and MCP for automation.",
+      "context": "html > head > meta[name=twitter:description] [content]"
+    },
+    "U037": {
+      "value": "TOOLING",
+      "context": "html > body > main > header > p.eyebrow"
+    },
+    "U038": {
+      "value": "Axmol Hub",
+      "context": "html > body > main > header > h1"
+    },
+    "U039": {
+      "value": "A desktop app that manages Axmol engines, projects and build toolchains - so a fresh machine can reach a running build without hand-editing PATHs, SDK versions or CMake flags.",
+      "context": "html > body > main > header > p.hero-lead"
+    },
+    "U040": {
+      "value": "Get the source",
+      "context": "html > body > main > header > div > a.btn-primary"
+    },
+    "U041": {
+      "value": "CLI & automation",
+      "context": "html > body > main > header > div > a.btn-outline-light"
+    },
+    "U042": {
+      "value": "See what it does",
+      "context": "html > body > main > header > div > a.btn-link"
+    },
+    "U043": {
+      "value": "Early access",
+      "context": "html > body > main > section > div > div.release-state > div > span.badge"
+    },
+    "U044": {
+      "value": "Where it stands",
+      "context": "html > body > main > section > div > div.release-state > div > h2"
+    },
+    "U045": {
+      "value": "Axmol Hub v0.2.1 is Windows-first and under active development: the Windows x64 loop is verified end to end, Android and WebAssembly builds are verified on Windows, and macOS and Linux hosts are not yet validated. No installer packages are published yet - build from source for now.",
+      "context": "html > body > main > section > div > div.release-state > div > p"
+    },
+    "U046": {
+      "value": "Build from source",
+      "context": "html > body > main > section > div > div.release-state > div.d-flex > a"
+    },
+    "U047": {
+      "value": "Axmol Hub main window showing the engine version picker",
+      "context": "html > body > main > section > div > figure > img [alt]"
+    },
+    "U048": {
+      "value": "CAPABILITIES",
+      "context": "html > body > main > section#capabilities > div > div.section-heading > p.eyebrow"
+    },
+    "U049": {
+      "value": "What it does",
+      "context": "html > body > main > section#capabilities > div > div.section-heading > h2"
+    },
+    "U050": {
+      "value": "Engine management",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
+    },
+    "U051": {
+      "value": "Install any version from the axmol.dev index, import a local source tree, set the default, repair with a backup, or uninstall - each version stays independent in Hub storage.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
+    },
+    "U052": {
+      "value": "Project management",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
+    },
+    "U053": {
+      "value": "Create C++ or C++ + Lua projects through Axmol's own CLI, pinned to the engine version and script kind you choose, with your project directory and editor.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
+    },
+    "U054": {
+      "value": "Build and run",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
+    },
+    "U055": {
+      "value": "Pick a platform and Debug or Release at build time, watch phases and compile steps with elapsed time, cancel mid-build, and launch the produced binary.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
+    },
+    "U056": {
+      "value": "Toolchain status",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
+    },
+    "U057": {
+      "value": "Expected versions come from the engine's own 1k/build.profiles, and the lookup order mirrors the engine. Installing is delegated to the engine's setup.ps1 - Hub never forks that logic.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
+    },
+    "U058": {
+      "value": "Prebuilt engine libraries",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
+    },
+    "U059": {
+      "value": "Point a project at an engine build directory and Hub wires AX_PREBUILT_DIR through the engine command line, skipping engine recompilation when the artifacts match.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
+    },
+    "U060": {
+      "value": "Logs and languages",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
+    },
+    "U061": {
+      "value": "Build and run logs stay in the app and on disk, and the interface switches between Chinese and English at any time.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
+    },
+    "U062": {
+      "value": "PLATFORMS",
+      "context": "html > body > main > section > div > div.section-heading > p.eyebrow"
+    },
+    "U063": {
+      "value": "Target platforms",
+      "context": "html > body > main > section > div > div.section-heading > h2"
+    },
+    "U064": {
+      "value": "Game target",
+      "context": "html > body > main > section > div > div.table-responsive > table > thead > tr > th"
+    },
+    "U065": {
+      "value": "Required host",
+      "context": "html > body > main > section > div > div.table-responsive > table > thead > tr > th"
+    },
+    "U066": {
+      "value": "Status",
+      "context": "html > body > main > section > div > div.table-responsive > table > thead > tr > th"
+    },
+    "U067": {
+      "value": "Windows x64",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
+    },
+    "U068": {
+      "value": "Windows",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U069": {
+      "value": "Debug and Release builds and Hello World runs verified",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U070": {
+      "value": "Android ARM64 / x64",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
+    },
+    "U071": {
+      "value": "Windows, Linux, macOS",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U072": {
+      "value": "Signed APK / AAB builds verified on Windows; on-device runs pending",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U073": {
+      "value": "WebAssembly (wasm32)",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
+    },
+    "U074": {
+      "value": "Windows, Linux, macOS",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U075": {
+      "value": "Real builds and local HTTP preview verified; browser scenes pending",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U076": {
+      "value": "Linux x64",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
+    },
+    "U077": {
+      "value": "Linux",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U078": {
+      "value": "Build and run entry points wired; native host pending",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U079": {
+      "value": "macOS, iOS, tvOS",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
+    },
+    "U080": {
+      "value": "macOS",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U081": {
+      "value": "Xcode build entry points wired; signing and device runs pending",
+      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
+    },
+    "U082": {
+      "value": "AUTOMATION",
+      "context": "html > body > main > section > div > div.section-heading > p.eyebrow"
+    },
+    "U083": {
+      "value": "One implementation, three clients",
+      "context": "html > body > main > section > div > div.section-heading > h2"
+    },
+    "U084": {
+      "value": "Every capability is defined once in AxmolHub.Core and exposed through a versioned --json contract. The GUI, the CLI, and an MCP server all drive the same code, so scripts and agents never drift from what you see on screen.",
+      "context": "html > body > main > section > div > div.section-heading > p.text-body-secondary"
+    },
+    "U085": {
+      "value": "CLI with --json",
+      "context": "html > body > main > section > div > div.row > div > article.story-card > h3"
+    },
+    "U086": {
+      "value": "Twelve verbs return {ok, exitCode, data, log, artifacts}, with stdout for data and stderr for logs.",
+      "context": "html > body > main > section > div > div.row > div > article.story-card > p"
+    },
+    "U087": {
+      "value": "MCP server",
+      "context": "html > body > main > section > div > div.row > div > article.story-card > h3"
+    },
+    "U088": {
+      "value": "The next step: expose the same tools over MCP so coding agents can drive Hub directly.",
+      "context": "html > body > main > section > div > div.row > div > article.story-card > p"
+    },
+    "U089": {
+      "value": "Scripts & CI",
+      "context": "html > body > main > section > div > div.row > div > article.story-card > h3"
+    },
+    "U090": {
+      "value": "Drive the Hub from shell scripts and CI pipelines: structured JSON on stdout, a stable exit-code contract, and errors that are machine-readable instead of guessing at stderr.",
+      "context": "html > body > main > section > div > div.row > div > article.story-card > p"
+    },
+    "U091": {
+      "value": "Get started",
+      "context": "html > body > main > section > div > div.section-heading > h2"
+    },
+    "U092": {
+      "value": "Building Axmol Hub from source needs a .NET 10 SDK; engines and dev tools are downloaded on demand, not bundled.",
+      "context": "html > body > main > section > div > div.section-heading > p.text-body-secondary"
+    },
+    "U093": {
+      "value": "GitHub repository",
+      "context": "html > body > main > section > div > div.row > div > a.quick-link > strong"
+    },
+    "U094": {
+      "value": "Source, issues and discussions",
+      "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
+    },
+    "U095": {
+      "value": "Build from source",
+      "context": "html > body > main > section > div > div.row > div > a.quick-link > strong"
+    },
+    "U096": {
+      "value": "Per-OS .NET 10 SDK steps and verification flags",
+      "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
+    },
+    "U097": {
+      "value": "CLI & automation",
+      "context": "html > body > main > section > div > div.row > div > a.quick-link > strong"
+    },
+    "U098": {
+      "value": "Drive the Hub from CI, scripts, and AI assistants",
+      "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
+    },
+    "U099": {
+      "value": "Design decisions",
+      "context": "html > body > main > section > div > div.row > div > a.quick-link > strong"
+    },
+    "U100": {
+      "value": "Why builds and toolchains are delegated to the engine",
+      "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
+    },
+    "U101": {
+      "value": "No installer yet",
+      "context": "html > body > main > section > div > div.row > div > div.notice-card > strong"
+    },
+    "U102": {
+      "value": "GitHub releases exist but carry no installer assets yet. Once Windows installers ship, they will be code-signed through SignPath Foundation's free program for open-source projects, and the code signing policy will be published on this page.",
+      "context": "html > body > main > section > div > div.row > div > div.notice-card > p"
+    },
+    "U103": {
+      "value": "Watch release packages",
+      "context": "html > body > main > section > div > div.row > div > div.notice-card > a"
+    },
+    "U118": "Download",
+    "U119": "Download the latest Axmol Hub release for Windows, macOS, or Linux.",
+    "U121": "Windows",
+    "U122": "macOS",
+    "U123": "Linux",
+    "U127": "Download",
+    "U128": "All releases",
+    "U131": "Windows 10/11, x64",
+    "U132": "macOS 12+, universal support",
+    "U133": "Apple Silicon",
+    "U134": "Intel",
+    "U135": "Linux x64 (AppImage)",
+    "U139": "Download {version} LTS",
+    "U140": "All engine releases",
+    "U141": "Tools",
+    "U142": "Axmol Hub",
+    "U143": "DOWNLOADS",
+    "U144": "Axmol Hub is the official companion tool that installs and manages engine releases, toolchains, and build targets.",
+    "U145": "Free code signing provided by ",
+    "U146": ", certificate by ",
+    "U147": "Axmol"
   }
 }

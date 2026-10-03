@@ -169,7 +169,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H044": {
-      "value": "Descargar {version} LTS",
+      "value": "Descargar",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H043": {
@@ -519,6 +519,10 @@
     "H012": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "H130": {
+      "value": "Descargar",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "v3": {
@@ -965,6 +969,10 @@
     "V010": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "V112": {
+      "value": "Descargar",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "sponsor": {
@@ -1663,6 +1671,10 @@
     "P100": {
       "value": "Añade la nota: Sponsor Axmol",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
+    },
+    "P175": {
+      "value": "Descargar",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "sponsorRuntime": {
@@ -1678,5 +1690,290 @@
     "R003": "Ampliar el código QR de {name}",
     "R006": "Añade la nota: Sponsor Axmol",
     "R009": "Código QR de {name}"
+  },
+  "hub": {
+    "U001": "Ir al contenido",
+    "U002": "Navegación principal",
+    "U003": "Axmol",
+    "U004": "Inicio",
+    "U005": "Idioma",
+    "U006": "Español",
+    "U007": "Toggle navigation",
+    "U008": "Language",
+    "U009": "Español",
+    "U010": "English",
+    "U011": "中文",
+    "U012": "日本語",
+    "U013": "Español",
+    "U014": "Русский",
+    "U015": "English",
+    "U016": "中文",
+    "U017": "日本語",
+    "U018": "Español",
+    "U019": "Русский",
+    "U020": "Axmol GitHub repository",
+    "U021": "GitHub",
+    "U022": "Tema",
+    "U023": "Theme",
+    "U024": "Claro",
+    "U025": "Oscuro",
+    "U026": "Automático",
+    "U027": "Referencia de la API",
+    "U028": "Wiki",
+    "U030": "Apóyanos",
+    "U104": "© 2019–present",
+    "U105": "Simdsoft Limited y otros colaboradores de Axmol",
+    "U106": ".",
+    "U107": "Código fuente en",
+    "U108": "GitHub",
+    "U109": "· Alojado en",
+    "U110": "Netlify",
+    "U111": ".",
+    "U112": "Comunidad",
+    "U113": "GitHub Discussions",
+    "U114": "Discord",
+    "U115": "Reddit",
+    "U116": "Made in Axmol",
+    "U029": "Hub",
+    "U031": {
+      "value": "Axmol Hub | Motores, proyectos y compilaciones"
+    },
+    "U032": {
+      "value": "Axmol Hub instala motores de Axmol, prepara las cadenas de herramientas, crea proyectos y los compila y ejecuta: desde una app de escritorio, una CLI con --json o MCP."
+    },
+    "U033": {
+      "value": "Axmol Hub"
+    },
+    "U034": {
+      "value": "Instala motores, prepara toolchains, crea proyectos, compila y ejecuta: una sola app de escritorio, con CLI --json y MCP."
+    },
+    "U035": {
+      "value": "Axmol Hub | Gestión de motores, proyectos y compilaciones"
+    },
+    "U036": {
+      "value": "Una app de escritorio para motores, toolchains, proyectos, compilación y ejecución de Axmol, con CLI --json y MCP para automatización."
+    },
+    "U037": {
+      "value": "HERRAMIENTAS"
+    },
+    "U038": {
+      "value": "Axmol Hub"
+    },
+    "U039": {
+      "value": "Una app de escritorio que gestiona los motores, proyectos y cadenas de herramientas de Axmol, para que una máquina recién estrenada llegue a una compilación en ejecución sin editar a mano PATH, versiones de SDK ni flags de CMake."
+    },
+    "U040": {
+      "value": "Obtener el código"
+    },
+    "U041": {
+      "value": "CLI y automatización"
+    },
+    "U042": {
+      "value": "Ver qué hace"
+    },
+    "U043": {
+      "value": "Acceso anticipado"
+    },
+    "U044": {
+      "value": "Estado actual"
+    },
+    "U045": {
+      "value": "Axmol Hub v0.2.1 es Windows-first y sigue en desarrollo activo: el ciclo de Windows x64 está verificado de extremo a extremo, las compilaciones de Android y WebAssembly están verificadas en Windows, y los anfitriones de macOS y Linux aún no están validados. Todavía no hay paquetes instaladores publicados: por ahora, compila desde el código fuente."
+    },
+    "U046": {
+      "value": "Compilar desde el código"
+    },
+    "U047": {
+      "value": "Ventana principal de Axmol Hub con la lista de selección de versión del motor"
+    },
+    "U048": {
+      "value": "CAPACIDADES"
+    },
+    "U049": {
+      "value": "Qué hace"
+    },
+    "U050": {
+      "value": "Gestión de motores"
+    },
+    "U051": {
+      "value": "Instala cualquier versión desde el índice de axmol.dev, importa un árbol de fuentes local, fija la versión predeterminada, repara con copia de seguridad o desinstala: cada versión vive de forma independiente en el almacenamiento de Hub."
+    },
+    "U052": {
+      "value": "Gestión de proyectos"
+    },
+    "U053": {
+      "value": "Crea proyectos en C++ o C++ + Lua mediante la propia CLI de Axmol, fijando la versión del motor y el tipo de script, con tu directorio de proyecto y tu editor."
+    },
+    "U054": {
+      "value": "Compilar y ejecutar"
+    },
+    "U055": {
+      "value": "Elige plataforma y Debug o Release en el momento de compilar, observa fases y pasos de compilación con el tiempo transcurrido, cancela a mitad de compilación y lanza el binario resultante."
+    },
+    "U056": {
+      "value": "Estado de la toolchain"
+    },
+    "U057": {
+      "value": "Las versiones esperadas vienen del 1k/build.profiles del propio motor y el orden de búsqueda imita al motor. La instalación se delega en el setup.ps1 del motor: Hub nunca duplica esa lógica."
+    },
+    "U058": {
+      "value": "Librerías precompiladas del motor"
+    },
+    "U059": {
+      "value": "Apunta un proyecto al directorio de compilación del motor y Hub conecta AX_PREBUILT_DIR a través de la línea de comandos del motor, evitando recompilar el motor cuando los artefactos coinciden."
+    },
+    "U060": {
+      "value": "Registros e idiomas"
+    },
+    "U061": {
+      "value": "Los registros de compilación y ejecución se muestran en la app y se guardan en disco, y la interfaz alterna entre chino e inglés en cualquier momento."
+    },
+    "U062": {
+      "value": "PLATAFORMAS"
+    },
+    "U063": {
+      "value": "Plataformas destino"
+    },
+    "U064": {
+      "value": "Plataforma del juego"
+    },
+    "U065": {
+      "value": "Anfitrión necesario"
+    },
+    "U066": {
+      "value": "Estado"
+    },
+    "U067": {
+      "value": "Windows x64"
+    },
+    "U068": {
+      "value": "Windows"
+    },
+    "U069": {
+      "value": "Compilaciones Debug y Release y ejecución de Hello World verificadas"
+    },
+    "U070": {
+      "value": "Android ARM64 / x64"
+    },
+    "U071": {
+      "value": "Windows, Linux, macOS"
+    },
+    "U072": {
+      "value": "Compilaciones APK / AAB firmadas verificadas en Windows; ejecución en dispositivo pendiente"
+    },
+    "U073": {
+      "value": "WebAssembly (wasm32)"
+    },
+    "U074": {
+      "value": "Windows, Linux, macOS"
+    },
+    "U075": {
+      "value": "Compilaciones reales y vista previa HTTP local verificadas; escenas en el navegador pendientes"
+    },
+    "U076": {
+      "value": "Linux x64"
+    },
+    "U077": {
+      "value": "Linux"
+    },
+    "U078": {
+      "value": "Puntos de entrada de compilación y ejecución conectados; anfitrión nativo pendiente"
+    },
+    "U079": {
+      "value": "macOS, iOS, tvOS"
+    },
+    "U080": {
+      "value": "macOS"
+    },
+    "U081": {
+      "value": "Puntos de entrada de compilación con Xcode conectados; firma y ejecución en dispositivo pendientes"
+    },
+    "U082": {
+      "value": "AUTOMATIZACIÓN"
+    },
+    "U083": {
+      "value": "Una implementación, tres clientes"
+    },
+    "U084": {
+      "value": "Toda capacidad se define una sola vez en AxmolHub.Core y se expone mediante un contrato --json con versiones. La GUI, la CLI y un servidor MCP ejecutan el mismo código, de modo que los scripts y agentes nunca se desvían de lo que ves en pantalla."
+    },
+    "U085": {
+      "value": "CLI con --json"
+    },
+    "U086": {
+      "value": "Doce verbos devuelven {ok, exitCode, data, log, artifacts}, con stdout para datos y stderr para registros."
+    },
+    "U087": {
+      "value": "Servidor MCP"
+    },
+    "U088": {
+      "value": "El siguiente paso: exponer las mismas herramientas por MCP para que los agentes de código manejen Hub directamente."
+    },
+    "U089": {
+      "value": "Scripts y CI"
+    },
+    "U090": {
+      "value": "Controla Hub desde scripts de shell y pipelines de CI: JSON estructurado en stdout, un contrato estable de códigos de salida y errores legibles por máquina en lugar de adivinar el stderr."
+    },
+    "U091": {
+      "value": "Para empezar"
+    },
+    "U092": {
+      "value": "Compilar Axmol Hub desde el código necesita un SDK de .NET 10; los motores y las herramientas se descargan a demanda, no vienen incluidos."
+    },
+    "U093": {
+      "value": "Repositorio en GitHub"
+    },
+    "U094": {
+      "value": "Código, issues y discusiones"
+    },
+    "U095": {
+      "value": "Compilar desde el código"
+    },
+    "U096": {
+      "value": "Pasos del SDK de .NET 10 por sistema operativo y flags de verificación"
+    },
+    "U097": {
+      "value": "CLI y automatización"
+    },
+    "U098": {
+      "value": "Controla Hub desde CI, scripts y asistentes de IA"
+    },
+    "U099": {
+      "value": "Decisiones de diseño"
+    },
+    "U100": {
+      "value": "Por qué las compilaciones y las toolchains se delegan en el motor"
+    },
+    "U101": {
+      "value": "Aún no hay instalador"
+    },
+    "U102": {
+      "value": "Las versiones de GitHub existen, pero todavía no incluyen instaladores. Cuando se publiquen los instaladores de Windows, se firmarán mediante el programa gratuito de SignPath Foundation para proyectos de código abierto, y la política de firma de código se publicará en esta página."
+    },
+    "U103": {
+      "value": "Seguir los paquetes de versión"
+    },
+    "U118": "Descargar",
+    "U119": "Descarga la última versión de Axmol Hub para Windows, macOS o Linux.",
+    "U121": "Windows",
+    "U122": "macOS",
+    "U123": "Linux",
+    "U127": "Descargar",
+    "U128": "Todas las versiones",
+    "U131": "Windows 10/11, x64",
+    "U132": "macOS 12+, compatible con ambas arquitecturas",
+    "U133": "Apple Silicon",
+    "U134": "Intel",
+    "U135": "Linux x64 (AppImage)",
+    "U139": "Descargar {version} LTS",
+    "U140": "Todas las versiones del motor",
+    "U141": "Herramientas",
+    "U142": "Axmol Hub",
+    "U143": "DESCARGAS",
+    "U144": "Axmol Hub es la herramienta oficial que instala y gestiona versiones del motor, toolchains y objetivos de compilación.",
+    "U145": "Firma de código gratuita proporcionada por ",
+    "U146": ", certificado por ",
+    "U147": "Axmol"
   }
 }

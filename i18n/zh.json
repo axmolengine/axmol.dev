@@ -169,7 +169,7 @@
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H044": {
-      "value": "下载 {version} LTS",
+      "value": "下载",
       "context": "html > body > main#main-content > header.hero > div.container > div.row > div.col-lg-6 > div.d-flex > a.btn"
     },
     "H043": {
@@ -519,6 +519,10 @@
     "H012": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "H130": {
+      "value": "下载",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "v3": {
@@ -965,6 +969,10 @@
     "V010": {
       "value": "Made in Axmol",
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
+    },
+    "V112": {
+      "value": "下载",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "sponsor": {
@@ -1663,6 +1671,10 @@
     "P100": {
       "value": "请备注：赞助 Axmol",
       "context": "html > body.sponsor-page > div#sponsorQrModal > div.modal-dialog > div.modal-content > div.modal-body > p.text-body-secondary"
+    },
+    "P175": {
+      "value": "下载",
+      "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     }
   },
   "sponsorRuntime": {
@@ -1678,5 +1690,290 @@
     "R003": "放大{name}二维码",
     "R006": "请备注：赞助 Axmol",
     "R009": "{name}二维码"
+  },
+  "hub": {
+    "U001": "跳到正文",
+    "U002": "主导航",
+    "U003": "Axmol",
+    "U004": "Axmol 首页",
+    "U005": "语言",
+    "U006": "中文",
+    "U007": "展开导航",
+    "U008": "Language",
+    "U009": "中文",
+    "U010": "English",
+    "U011": "中文",
+    "U012": "日本語",
+    "U013": "Español",
+    "U014": "Русский",
+    "U015": "English",
+    "U016": "中文",
+    "U017": "日本語",
+    "U018": "Español",
+    "U019": "Русский",
+    "U020": "Axmol GitHub 仓库",
+    "U021": "GitHub",
+    "U022": "主题",
+    "U023": "主题",
+    "U024": "浅色",
+    "U025": "深色",
+    "U026": "跟随系统",
+    "U027": "API 手册",
+    "U028": "Wiki",
+    "U030": "支持 Axmol",
+    "U104": "© 2019–present",
+    "U105": "Simdsoft Limited 与其他 Axmol 贡献者",
+    "U106": "。",
+    "U107": "源码位于",
+    "U108": "GitHub",
+    "U109": "· 托管于",
+    "U110": "Netlify",
+    "U111": "。",
+    "U112": "社区",
+    "U113": "GitHub Discussions",
+    "U114": "Discord",
+    "U115": "Reddit",
+    "U116": "Made in Axmol",
+    "U029": "Hub",
+    "U031": {
+      "value": "Axmol Hub | 引擎、项目与构建管理"
+    },
+    "U032": {
+      "value": "Axmol Hub 安装 Axmol 引擎、准备构建工具链、创建项目并完成构建与运行 —— 同一套能力可通过桌面应用、--json CLI 或 MCP 使用。"
+    },
+    "U033": {
+      "value": "Axmol Hub"
+    },
+    "U034": {
+      "value": "安装引擎、准备工具链、创建项目、构建并运行 —— 一个桌面应用，外加 --json CLI 与 MCP。"
+    },
+    "U035": {
+      "value": "Axmol Hub —— 引擎、项目与构建管理"
+    },
+    "U036": {
+      "value": "一个桌面应用搞定 Axmol 引擎、工具链、项目、构建与运行，并提供 --json CLI 与 MCP 供自动化使用。"
+    },
+    "U037": {
+      "value": "工具链"
+    },
+    "U038": {
+      "value": "Axmol Hub"
+    },
+    "U039": {
+      "value": "一个管理 Axmol 引擎、项目与构建工具链的桌面应用 —— 新机器不用再手改 PATH、SDK 版本或 CMake 参数，就能一路走到跑起来的构建。"
+    },
+    "U040": {
+      "value": "获取源码"
+    },
+    "U041": {
+      "value": "CLI 与自动化"
+    },
+    "U042": {
+      "value": "看看它能做什么"
+    },
+    "U043": {
+      "value": "早期版本"
+    },
+    "U044": {
+      "value": "当前状态"
+    },
+    "U045": {
+      "value": "Axmol Hub v0.2.1 以 Windows 为先，仍在积极开发中：Windows x64 闭环已端到端验证，Android 与 WebAssembly 构建已在 Windows 上验证，macOS 与 Linux 宿主尚未验证。安装包尚未发布 —— 目前请从源码构建。"
+    },
+    "U046": {
+      "value": "从源码构建"
+    },
+    "U047": {
+      "value": "Axmol Hub 主窗口，显示引擎版本选择列表"
+    },
+    "U048": {
+      "value": "能力"
+    },
+    "U049": {
+      "value": "它能做什么"
+    },
+    "U050": {
+      "value": "引擎管理"
+    },
+    "U051": {
+      "value": "从 axmol.dev 索引安装任意版本、导入本地源码树、设为默认、带备份修复或卸载 —— 每个版本在 Hub 存储中相互独立。"
+    },
+    "U052": {
+      "value": "项目管理"
+    },
+    "U053": {
+      "value": "通过 Axmol 自己的 CLI 创建 C++ 或 C++ + Lua 项目，锁定你选择的引擎版本与脚本类型，并可指定项目目录与编辑器。"
+    },
+    "U054": {
+      "value": "构建与运行"
+    },
+    "U055": {
+      "value": "构建时选择平台与 Debug / Release，查看阶段、编译步骤与耗时，构建中途可取消，成功后直接启动产物。"
+    },
+    "U056": {
+      "value": "工具链状态"
+    },
+    "U057": {
+      "value": "期望版本来自引擎自己的 1k/build.profiles，查找顺序也与引擎一致。安装交给引擎的 setup.ps1 —— Hub 绝不另写一套逻辑。"
+    },
+    "U058": {
+      "value": "预编译引擎库"
+    },
+    "U059": {
+      "value": "把项目指向引擎的构建目录，Hub 会经引擎命令行接好 AX_PREBUILT_DIR，产物匹配时跳过引擎重编译。"
+    },
+    "U060": {
+      "value": "日志与语言"
+    },
+    "U061": {
+      "value": "构建与运行日志在应用内展示并落盘，界面可随时在中英文之间切换。"
+    },
+    "U062": {
+      "value": "平台"
+    },
+    "U063": {
+      "value": "目标平台"
+    },
+    "U064": {
+      "value": "游戏目标平台"
+    },
+    "U065": {
+      "value": "所需宿主"
+    },
+    "U066": {
+      "value": "状态"
+    },
+    "U067": {
+      "value": "Windows x64"
+    },
+    "U068": {
+      "value": "Windows"
+    },
+    "U069": {
+      "value": "Debug 与 Release 构建及 Hello World 运行已验证"
+    },
+    "U070": {
+      "value": "Android ARM64 / x64"
+    },
+    "U071": {
+      "value": "Windows、Linux、macOS"
+    },
+    "U072": {
+      "value": "签名 APK / AAB 构建已在 Windows 上验证；真机运行待验证"
+    },
+    "U073": {
+      "value": "WebAssembly（wasm32）"
+    },
+    "U074": {
+      "value": "Windows、Linux、macOS"
+    },
+    "U075": {
+      "value": "真实构建与本地 HTTP 预览已验证；浏览器场景待验证"
+    },
+    "U076": {
+      "value": "Linux x64"
+    },
+    "U077": {
+      "value": "Linux"
+    },
+    "U078": {
+      "value": "构建与运行入口已接好；原生宿主待验证"
+    },
+    "U079": {
+      "value": "macOS、iOS、tvOS"
+    },
+    "U080": {
+      "value": "macOS"
+    },
+    "U081": {
+      "value": "Xcode 构建入口已接好；签名与真机运行待验证"
+    },
+    "U082": {
+      "value": "自动化"
+    },
+    "U083": {
+      "value": "一份实现，三种客户端"
+    },
+    "U084": {
+      "value": "所有能力只在 AxmolHub.Core 定义一次，通过带版本的 --json 契约暴露。GUI、CLI 与 MCP 服务器驱动的是同一份代码，脚本与 agent 永远不会和屏幕上看到的行为分叉。"
+    },
+    "U085": {
+      "value": "支持 --json 的 CLI"
+    },
+    "U086": {
+      "value": "12 个动词返回 {ok, exitCode, data, log, artifacts}，stdout 出数据、stderr 出日志。"
+    },
+    "U087": {
+      "value": "MCP 服务器"
+    },
+    "U088": {
+      "value": "下一步是把同一套工具经 MCP 暴露，让编码 agent 直接驱动 Hub。"
+    },
+    "U089": {
+      "value": "脚本与 CI"
+    },
+    "U090": {
+      "value": "用 shell 脚本与 CI 流水线驱动 Hub：stdout 输出结构化 JSON、稳定的退出码契约，失败也以机器可读的形式返回，无需去猜 stderr。"
+    },
+    "U091": {
+      "value": "开始使用"
+    },
+    "U092": {
+      "value": "从源码构建 Axmol Hub 需要 .NET 10 SDK；引擎与开发工具按需下载，不随 Hub 捆绑。"
+    },
+    "U093": {
+      "value": "GitHub 仓库"
+    },
+    "U094": {
+      "value": "源码、Issue 与讨论"
+    },
+    "U095": {
+      "value": "从源码构建"
+    },
+    "U096": {
+      "value": "各系统 .NET 10 SDK 安装步骤与验证开关"
+    },
+    "U097": {
+      "value": "CLI 与自动化"
+    },
+    "U098": {
+      "value": "从 CI、脚本与 AI 助手驱动 Hub"
+    },
+    "U099": {
+      "value": "设计决策"
+    },
+    "U100": {
+      "value": "为什么构建与工具链交给引擎"
+    },
+    "U101": {
+      "value": "安装包尚未发布"
+    },
+    "U102": {
+      "value": "GitHub Release 已存在但还没有安装包资产。Windows 安装包发布后，将通过 SignPath Foundation 的开源免费计划签名，代码签名政策会在本页公布。"
+    },
+    "U103": {
+      "value": "关注发布包"
+    },
+    "U118": "下载",
+    "U119": "下载适用于 Windows、macOS 或 Linux 的最新 Axmol Hub 版本。",
+    "U121": "Windows",
+    "U122": "macOS",
+    "U123": "Linux",
+    "U127": "下载",
+    "U128": "全部版本",
+    "U131": "Windows 10/11，x64",
+    "U132": "macOS 12 及以上，支持两种架构",
+    "U133": "Apple Silicon",
+    "U134": "Intel",
+    "U135": "Linux x64（AppImage）",
+    "U139": "下载 {version} LTS",
+    "U140": "全部引擎版本",
+    "U141": "工具",
+    "U142": "Axmol Hub",
+    "U143": "下载",
+    "U144": "Axmol Hub 是官方配套工具，用于安装和管理引擎版本、工具链与构建目标。",
+    "U145": "免费代码签名由 ",
+    "U146": " 提供，证书由 ",
+    "U147": "Axmol"
   }
 }

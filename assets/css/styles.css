@@ -133,6 +133,29 @@
   text-decoration: none;
 }
 
+/* Solid sponsor button (navbar, right side) */
+.nav-sponsor-solid {
+  border: 1px solid var(--bs-primary);
+  border-radius: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  background-color: var(--bs-primary);
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.nav-sponsor-solid:hover,
+.nav-sponsor-solid:focus {
+  filter: brightness(1.1);
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.nav-sponsor-heart {
+  color: #ed4245;
+}
+
 /* ---------------------------------------------------------------------------
  * 3. Hero
  * ------------------------------------------------------------------------- */

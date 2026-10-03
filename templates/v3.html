@@ -45,13 +45,16 @@
               <li><a class="dropdown-item" href="/ru/v3/" lang="ru">{{i18n:v3.V040}}</a></li>
             </ul>
           </li>
+          <li class="nav-item d-flex align-items-center ms-2">
+            <a class="nav-link nav-sponsor-solid" href="/sponsor/"><span class="nav-sponsor-heart" aria-hidden="true">❤</span> {{i18n:v3.V051}}</a>
+          </li>
         </ul>
         <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#primary-nav" aria-controls="primary-nav" aria-expanded="false" aria-label="{{i18n:v3.V032}}">
           <span class="navbar-toggler-icon">
           </span>
         </button>
         <div class="collapse navbar-collapse" id="primary-nav">
-          <ul class="navbar-nav me-auto align-items-lg-center gap-lg-1">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link" href="https://axmol.dev/manual">{{i18n:v3.V050}}</a>
             </li>
@@ -59,10 +62,13 @@
               <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">{{i18n:v3.V052}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-sponsor" href="/sponsor/">{{i18n:v3.V051}}</a>
+              <a class="nav-link" href="/download/">{{i18n:v3.V112}}</a>
             </li>
           </ul>
-          <ul class="navbar-nav flex-column flex-lg-row align-items-start align-items-lg-center gap-1 gap-lg-2">
+          <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+            <li class="nav-item d-none d-lg-flex align-items-center me-lg-2">
+              <a class="nav-link nav-sponsor-solid" href="/sponsor/"><span class="nav-sponsor-heart" aria-hidden="true">❤</span> {{i18n:v3.V051}}</a>
+            </li>
             <li class="nav-item dropdown d-none d-lg-block">
               <button class="btn btn-link nav-link dropdown-toggle" id="languageDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.V029}}">{{i18n:v3.V034}}</button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
@@ -74,22 +80,24 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="{{i18n:v3.V026}}">
-                <svg class="github-icon" width="22" height="22" aria-hidden="true">
-                  <use href="/assets/icons.svg#github-icon">
-                  </use>
+              <a class="nav-link d-flex align-items-center justify-content-center" href="https://github.com/axmolengine/axmol" target="_blank" rel="noopener" aria-label="{{i18n:v3.V026}}">
+                <svg class="github-icon" width="24" height="24" aria-hidden="true">
+                  <use href="/assets/icons.svg#github-icon"></use>
                 </svg>
                 <span class="ms-2">{{i18n:v3.V035}}</span>
               </a>
             </li>
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white">
+              </div>
+              <hr class="d-lg-none my-2 text-white-50">
+            </li>
             <li class="nav-item dropdown">
-              <button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center" id="themeDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.V031}}">
-                <svg class="theme-icon" width="20" height="20" aria-hidden="true">
-                  <use href="/assets/icons.svg#circle-half">
-                  </use>
+              <a class="nav-link dropdown-toggle d-flex align-items-center justify-content-left" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:v3.V031}}">
+                <svg class="theme-icon" width="24" height="24" fill="currentColor">
+                  <use href="/assets/icons.svg#circle-half"></use>
                 </svg>
-                <span class="d-lg-none ms-2">{{i18n:v3.V036}}</span>
-              </button>
+              </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
                 <li>
                   <button class="dropdown-item" data-theme-option="light" onclick="AxmolTheme.saveTheme('light')">{{i18n:v3.V049}}</button>

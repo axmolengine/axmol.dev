@@ -17,11 +17,13 @@ $groupPrefixes = @{
   v3 = 'V'
   sponsor = 'P'
   sponsorRuntime = 'R'
+  hub = 'U'
 }
 $pages = @(
   @{ Name = 'home'; Template = 'home.html'; Route = 'index.html'; UrlRoute = '' },
   @{ Name = 'v3'; Template = 'v3.html'; Route = 'v3/index.html'; UrlRoute = 'v3/' },
-  @{ Name = 'sponsor'; Template = 'sponsor.html'; Route = 'sponsor/index.html'; UrlRoute = 'sponsor/' }
+  @{ Name = 'sponsor'; Template = 'sponsor.html'; Route = 'sponsor/index.html'; UrlRoute = 'sponsor/' },
+  @{ Name = 'download'; Template = 'download.html'; Route = 'download/index.html'; UrlRoute = 'download/' }
 )
 
 $releaseIndexPath = [System.IO.Path]::GetFullPath($ReleaseIndex)
@@ -76,17 +78,18 @@ foreach ($locale in $locales) {
   $dictionaries[$locale] = Get-Content -LiteralPath $dictionaryPath -Raw -Encoding UTF8 | ConvertFrom-Json -AsHashtable
 }
 
-# The hero download button's copy carries the baked version, so every locale must
-# keep the {version} token; a translated literal would silently freeze the number.
+# The engine download button's copy (download page) carries the baked version,
+# so every locale must keep the {version} token; a translated literal would
+# silently freeze the number.
 foreach ($locale in $locales) {
-  $heroLabel = [string]$dictionaries[$locale].home.H044.value
-  if ($heroLabel -notmatch '\{version\}') {
-    throw "i18n/$locale.json home.H044 is missing the {version} token: '$heroLabel'"
+  $engineLabel = [string]$dictionaries[$locale].hub.U139
+  if ($engineLabel -notmatch '\{version\}') {
+    throw "i18n/$locale.json hub.U139 is missing the {version} token: '$engineLabel'"
   }
 }
 
 $globalCodes = @{}
-foreach ($group in @('site', 'home', 'v3', 'sponsor', 'sponsorRuntime')) {
+foreach ($group in @('site', 'home', 'v3', 'sponsor', 'sponsorRuntime', 'hub')) {
   $referenceKeys = @($dictionaries.en[$group].Keys | Sort-Object)
   foreach ($key in $referenceKeys) {
     if ($key -notmatch "^$($groupPrefixes[$group])[0-9]{3}$") {
@@ -163,7 +166,7 @@ foreach ($locale in $locales) {
           $hrefMatch = [regex]::Match($attributes, '\bhref="(/[^\"]*)"')
           if ($hrefMatch.Success) {
             $path = $hrefMatch.Groups[1].Value
-            if ($path -eq '/' -or $path -match '^/(?:v3|sponsor)/(?:#.*)?$') {
+            if ($path -eq '/' -or $path -match '^/(?:v3|sponsor|download)/(?:#.*)?$') {
               $localizedHref = 'href="/' + $locale + $path + '"'
               $attributes = $attributes.Substring(0, $hrefMatch.Index) + $localizedHref + $attributes.Substring($hrefMatch.Index + $hrefMatch.Length)
             }
@@ -221,4 +224,4 @@ foreach ($locale in $locales) {
   }
 }
 
-Write-Host "Rendered 15 localized pages to $outputRoot"
+Write-Host "Rendered 20 localized pages to $outputRoot"
