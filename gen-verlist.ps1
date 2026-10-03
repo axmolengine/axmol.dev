@@ -56,6 +56,37 @@ $picked = @(
       continue
     }
 
+    $version = $tag.Substring(1)
+
+    # Every release ships a single zip bundle such as axmol-2.11.5.zip. The API
+    # exposes its content digest as "sha256:<hex>", so consumers never have to
+    # download 240 MB just to verify it. Prefer the asset whose name carries this
+    # exact version, then tie-break on name, so the pick stays deterministic even
+    # if a release one day carries several zip files.
+    $zipAssets = @($release.assets | Where-Object {
+      $_.state -eq 'uploaded' -and [string]$_.name -like '*.zip'
+    })
+    $zipAsset = $null
+    if ($zipAssets.Count -gt 0) {
+      $versionedZipAssets = @($zipAssets | Where-Object { [string]$_.name -like "*$version*.zip" })
+      $candidates = if ($versionedZipAssets.Count -gt 0) { $versionedZipAssets } else { $zipAssets }
+      $zipAsset = $candidates | Sort-Object -Property Name | Select-Object -First 1
+    } else {
+      Write-Warning "Release $tag has no uploaded zip asset; its artifacts[] will be empty."
+    }
+
+    $zipSha256 = $null
+    if ($zipAsset) {
+      $digest = [string]$zipAsset.digest
+      if ($digest -match '^sha256:([a-f0-9]{64})$') {
+        $zipSha256 = $Matches[1]
+      } else {
+        # Older assets uploaded before GitHub started publishing digests have no
+        # digest at all; anything else is unexpected and worth surfacing.
+        Write-Warning "Release $tag zip asset '$($zipAsset.name)' exposes no usable sha256 digest (digest: '$digest')."
+      }
+    }
+
     $published = $release.published_at
     if (!$published) {
       $published = $release.created_at
@@ -65,12 +96,15 @@ $picked = @(
     # endpoints; keep stable codeload archives so consumers need no redirect handling.
     [pscustomobject]@{
       Patch = [int]$match.Groups[1].Value
-      Version = $tag.Substring(1)
+      Version = $version
       Tag = $tag
       ReleaseDate = ([datetime]$published).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
       ReleaseUrl = [string]$release.html_url
       ZipArchive = 'https://github.com/{0}/archive/refs/tags/{1}.zip' -f $Repository, $tag
       TarballArchive = 'https://github.com/{0}/archive/refs/tags/{1}.tar.gz' -f $Repository, $tag
+      ZipAssetUrl = if ($zipAsset) { [string]$zipAsset.browser_download_url } else { $null }
+      ZipAssetSize = if ($zipAsset) { [int64]$zipAsset.size } else { 0 }
+      ZipSha256 = $zipSha256
     }
   }
 )
@@ -85,6 +119,25 @@ $latest = $ordered[0].Version
 
 $versions = @(
   foreach ($entry in $ordered) {
+    # The release zip bundle is the artifact tooling actually downloads. Its sha256
+    # comes from the API asset digest; older assets without a digest omit the field
+    # rather than advertising an empty or approximate value.
+    $artifacts = @(
+      if ($entry.ZipAssetUrl) {
+        $zipArtifact = [ordered]@{
+          platform = 'source'
+          arch = 'any'
+          kind = 'zip'
+          url = $entry.ZipAssetUrl
+          size = $entry.ZipAssetSize
+        }
+        if ($entry.ZipSha256) {
+          $zipArtifact['sha256'] = $entry.ZipSha256
+        }
+        $zipArtifact
+      }
+    )
+
     [ordered]@{
       version = $entry.Version
       tag = $entry.Tag
@@ -97,8 +150,8 @@ $versions = @(
         zip = $entry.ZipArchive
         tarball = $entry.TarballArchive
       }
-      # Reserved for per-platform artifacts; always empty in schema 1.0.
-      artifacts = @()
+      # Release zip bundle with its GitHub asset digest, when the API exposes one.
+      artifacts = $artifacts
     }
   }
 )
@@ -154,6 +207,20 @@ foreach ($version in @($check.versions)) {
   if ($version.channel -ne $Channel) {
     throw "Unexpected channel: $($version.channel)"
   }
+  foreach ($artifact in @($version.artifacts)) {
+    if ($artifact.url -notmatch '^https://') {
+      throw "Artifact without https url in $($version.version): $($artifact.url)"
+    }
+    $artifactSha256 = [string]$artifact.sha256
+    if ($artifactSha256 -and $artifactSha256 -notmatch '^[a-f0-9]{64}$') {
+      throw "Malformed artifact sha256 in $($version.version): $artifactSha256"
+    }
+  }
+}
+
+$missingChecksum = @($check.versions | Where-Object { @($_.artifacts).Count -eq 0 })
+if ($missingChecksum.Count -gt 0) {
+  Write-Warning "$($missingChecksum.Count) version(s) ship no zip artifact: $($missingChecksum.version -join ', ')"
 }
 $latestHits = @($check.versions | Where-Object { $_.version -eq $check.channels.$Channel.latest })
 if ($latestHits.Count -ne 1) {

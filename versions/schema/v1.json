@@ -142,7 +142,7 @@
           },
           "artifacts": {
             "type": "array",
-            "description": "Reserved for per-platform artifacts. Always empty in schema v1.0; consumers must tolerate an empty array and may ignore unknown entries added later.",
+            "description": "Release artifacts other than the source archives. Populated with the release zip bundle (platform: source, kind: zip) including size and the sha256 published as the GitHub asset digest. Entries whose asset predates asset digests omit sha256; a release without a zip asset yields an empty array, which consumers must tolerate.",
             "items": {
               "type": "object",
               "additionalProperties": false,
