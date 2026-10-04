@@ -44,6 +44,10 @@ if ($latestLtsUrl -notmatch '^https://') {
   throw "Release registry entry $latestLtsVersion has no usable releaseUrl."
 }
 
+# Axmol Hub version baked into the download page links. This is statically
+# substituted below; bump it here whenever a new Hub release ships.
+$hubVersion = '0.2.4'
+
 function Get-ResourceValue($resource, [string]$path) {
   $value = $resource
   foreach ($part in $path.Split('.')) {
@@ -157,6 +161,9 @@ foreach ($locale in $locales) {
       $html = $html.Replace($token.Value, $replacement)
     }
 
+    # Statically substitute the Axmol Hub version placeholder (download page links).
+    $html = $html.Replace('{hubVersion}', $hubVersion)
+
     $html = [regex]::Replace($html, '<a(?=\s)(?<attributes>[^>]*)>', [System.Text.RegularExpressions.MatchEvaluator]{
       param($match)
       $attributes = $match.Groups['attributes'].Value
@@ -204,6 +211,9 @@ foreach ($locale in $locales) {
     }
     if ($html -match '\{version\}') {
       throw "Unresolved {version} token in $templatePath"
+    }
+    if ($html -match '\{hubVersion\}') {
+      throw "Unresolved {hubVersion} token in $templatePath"
     }
 
     $relativePath = if ($locale -eq 'en') {
