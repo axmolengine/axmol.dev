@@ -1945,15 +1945,6 @@
     "U100": {
       "value": "Por qué las compilaciones y las toolchains se delegan en el motor"
     },
-    "U101": {
-      "value": "Aún no hay instalador"
-    },
-    "U102": {
-      "value": "Las versiones de GitHub existen, pero todavía no incluyen instaladores. Cuando se publiquen los instaladores de Windows, se firmarán mediante el programa gratuito de SignPath Foundation para proyectos de código abierto, y la política de firma de código se publicará en esta página."
-    },
-    "U103": {
-      "value": "Seguir los paquetes de versión"
-    },
     "U118": "Descargar",
     "U119": "Descarga la última versión de Axmol Hub para Windows, macOS o Linux.",
     "U121": "Windows",
@@ -1972,8 +1963,6 @@
     "U142": "Axmol Hub",
     "U143": "DESCARGAS",
     "U144": "Axmol Hub es la herramienta oficial que instala y gestiona versiones del motor, toolchains y objetivos de compilación.",
-    "U145": "Firma de código gratuita proporcionada por ",
-    "U146": ", certificado por ",
     "U147": "Axmol",
     "U148": "Acceso anticipado",
     "U149": "Axmol Hub está en acceso anticipado: antes de la 1.0 puede haber imperfecciones y cambios que rompan la compatibilidad."

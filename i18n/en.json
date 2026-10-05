@@ -2015,18 +2015,6 @@
       "value": "Why builds and toolchains are delegated to the engine",
       "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
     },
-    "U101": {
-      "value": "No installer yet",
-      "context": "html > body > main > section > div > div.row > div > div.notice-card > strong"
-    },
-    "U102": {
-      "value": "GitHub releases exist but carry no installer assets yet. Once Windows installers ship, they will be code-signed through SignPath Foundation's free program for open-source projects, and the code signing policy will be published on this page.",
-      "context": "html > body > main > section > div > div.row > div > div.notice-card > p"
-    },
-    "U103": {
-      "value": "Watch release packages",
-      "context": "html > body > main > section > div > div.row > div > div.notice-card > a"
-    },
     "U118": "Download",
     "U119": "Download the latest Axmol Hub release for Windows, macOS, or Linux.",
     "U121": "Windows",
@@ -2045,8 +2033,6 @@
     "U142": "Axmol Hub",
     "U143": "DOWNLOADS",
     "U144": "Axmol Hub is the official companion tool that installs and manages engine releases, toolchains, and build targets.",
-    "U145": "Free code signing provided by ",
-    "U146": ", certificate by ",
     "U147": "Axmol",
     "U148": "Early Access",
     "U149": "Axmol Hub is in early access: expect rough edges and breaking changes before 1.0."
