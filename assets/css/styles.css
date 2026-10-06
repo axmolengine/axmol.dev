@@ -19,6 +19,9 @@
   --ax-accent-rgb: 0, 200, 150;
   --ax-card-bg: #ffffff;
   --ax-card-border: #e9ecef;
+  --ax-early-bg: #ffca2c;
+  --ax-early-fg: #3d3000;
+  --ax-early-border: rgba(61, 48, 0, 0.18);
 }
 
 [data-bs-theme="dark"] {
@@ -37,6 +40,9 @@
   --ax-accent-rgb: 0, 200, 150;
   --ax-card-bg: #1a1a20;
   --ax-card-border: rgba(255, 255, 255, 0.08);
+  --ax-early-bg: #7a5c0b;
+  --ax-early-fg: #ffe08a;
+  --ax-early-border: rgba(255, 224, 138, 0.28);
 }
 
 /* ---------------------------------------------------------------------------
@@ -609,6 +615,7 @@ svg.bi {
 .section-panel { padding: 5rem 0; background: rgba(var(--bs-primary-rgb), .045); border-top: 1px solid var(--ax-card-border); border-bottom: 1px solid var(--ax-card-border); }
 .section-heading { max-width: 44rem; margin-bottom: 2rem; }
 .section-heading h2 { margin-bottom: .75rem; }
+.badge-early-access { color: var(--ax-early-fg); background-color: var(--ax-early-bg); border: 1px solid var(--ax-early-border); font-size: .68rem; font-weight: 700; letter-spacing: .06em; }
 .story-card { height: 100%; padding: 1.5rem; border: 1px solid var(--ax-card-border); border-radius: .9rem; background: var(--ax-card-bg); }
 .story-card h3 { margin: 1.1rem 0 .5rem; font-size: 1.05rem; }
 .story-card p { margin-bottom: 0; color: var(--bs-secondary); }
