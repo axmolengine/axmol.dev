@@ -2,3 +2,4 @@
 dist
 tmp
 .DS_Store
+.agents
