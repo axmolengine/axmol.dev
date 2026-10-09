@@ -1736,22 +1736,27 @@
     "U116": "Made in Axmol",
     "U029": "Hub",
     "U031": {
-      "value": "Axmol Hub | エンジン・プロジェクト・ビルド管理"
+      "value": "Axmol Hub | エンジン・プロジェクト・ビルドと組み込みコーディングエージェント",
+      "context": "html > head > title"
     },
     "U032": {
-      "value": "Axmol Hub は Axmol エンジンのインストール、ビルドツールチェーンの準備、プロジェクト作成、ビルドと実行を担うデスクトップアプリです。GUI のほか --json CLI や MCP からも利用できます。"
+      "value": "Axmol Hub は Axmol のエンジン、プロジェクト、ビルドツールチェーンを管理し、コードを読んで編集し、ビルドが通るまで実行する汎用コーディングエージェントを備えています。",
+      "context": "html > head > meta [content]"
     },
     "U033": {
       "value": "Axmol Hub"
     },
     "U034": {
-      "value": "エンジンのインストール、ツールチェーンの準備、プロジェクト作成、ビルドと実行を 1 つのデスクトップアプリで。--json CLI と MCP にも対応。"
+      "value": "Axmol のワークベンチ — エンジン、プロジェクト、ビルドツールチェーンを任せられ、汎用コーディングエージェントも標準搭載。",
+      "context": "html > head > meta[property=og:description] [content]"
     },
     "U035": {
-      "value": "Axmol Hub — エンジン・プロジェクト・ビルド管理"
+      "value": "Axmol Hub — Axmol ワークベンチ",
+      "context": "html > head > meta[name=twitter:title] [content]"
     },
     "U036": {
-      "value": "Axmol のエンジン、ツールチェーン、プロジェクト、ビルド、実行を 1 つのデスクトップアプリで。自動化のための --json CLI と MCP を同梱。"
+      "value": "エンジン、プロジェクト、ビルドツールチェーンの管理に加え、コードを読んで編集しビルドまで行う AI アシスタントを搭載。",
+      "context": "html > head > meta[name=twitter:description] [content]"
     },
     "U037": {
       "value": "ツール"
@@ -1760,31 +1765,19 @@
       "value": "Axmol Hub"
     },
     "U039": {
-      "value": "Axmol のエンジン、プロジェクト、ビルドツールチェーンを管理するデスクトップアプリ。PATH や SDK バージョン、CMake フラグを手で直すことなく、新しいマシンからビルドの実行までたどり着けます。"
+      "value": "Axmol のワークベンチ — エンジン、プロジェクト、ビルドツールチェーンを任せられ、汎用コーディングエージェントも標準搭載されています。",
+      "context": "html > body > main > header > p.hero-lead"
     },
     "U040": {
-      "value": "ソースを取得"
+      "value": "ダウンロード",
+      "context": "html > body > main > header > div > a.btn-primary"
     },
     "U041": {
-      "value": "CLI と自動化"
-    },
-    "U042": {
-      "value": "できることを見る"
-    },
-    "U043": {
-      "value": "アーリーアクセス"
-    },
-    "U044": {
-      "value": "現在の状況"
-    },
-    "U045": {
-      "value": "Axmol Hub v0.2.1 は Windows ファーストで開発中です。Windows x64 のループはエンドツーエンドで検証済み、Android と WebAssembly のビルドは Windows 上で検証済み、macOS と Linux ホストは未検証です。インストーラーはまだ公開されていないため、現時点ではソースからビルドしてください。"
+      "value": "GitHub で見る",
+      "context": "html > body > main > header > div > a.btn-outline-light"
     },
     "U046": {
       "value": "ソースからビルド"
-    },
-    "U047": {
-      "value": "エンジンバージョン選択の一覧を表示する Axmol Hub のメインウィンドウ"
     },
     "U048": {
       "value": "機能"
@@ -1793,157 +1786,32 @@
       "value": "できること"
     },
     "U050": {
-      "value": "エンジン管理"
+      "value": "ワークベンチ",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U051": {
-      "value": "axmol.dev のインデックスから任意のバージョンをインストール、ローカルソースツリーの取り込み、既定に設定、バックアップ付き修復、アンインストール。各バージョンは Hub のストレージに独立して保持されます。"
-    },
-    "U052": {
-      "value": "プロジェクト管理"
-    },
-    "U053": {
-      "value": "Axmol 本体の CLI を通じて C++ または C++ + Lua プロジェクトを作成。エンジンバージョンとスクリプト種別を固定し、プロジェクトディレクトリとエディターを指定できます。"
-    },
-    "U054": {
-      "value": "ビルドと実行"
-    },
-    "U055": {
-      "value": "ビルド時にプラットフォームと Debug / Release を選択。フェーズやコンパイル単位の進行と経過時間を表示し、途中でキャンセルでき、成功したら成果物を起動します。"
+      "value": "エンジンの導入、プロジェクト作成、ビルドと実行。",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U056": {
-      "value": "ツールチェーン状態"
+      "value": "ツールチェーン",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U057": {
-      "value": "期待されるバージョンはエンジン自身の 1k/build.profiles から取得し、検索順序もエンジンに合わせます。インストールはエンジンの setup.ps1 に委譲され、Hub が独自のロジックを持つことはありません。"
+      "value": "バージョンはエンジン自身の 1k/build.profiles から取得し、導入は setup.ps1 に委譲。",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U058": {
-      "value": "エンジンの事前ビルドライブラリ"
+      "value": "AI アシスタント",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U059": {
-      "value": "プロジェクトをエンジンのビルドディレクトリに向けると、Hub はエンジンのコマンドライン経由で AX_PREBUILT_DIR を渡し、成果物が一致していればエンジンの再ビルドを省きます。"
+      "value": "Ask / Plan / Agent の 3 モード。プラン承認とツール承認付き。",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U060": {
-      "value": "ログと言語"
-    },
-    "U061": {
-      "value": "ビルドと実行のログはアプリ内にもディスクにも残り、UI は中国語と英語をいつでも切り替えられます。"
-    },
-    "U062": {
-      "value": "プラットフォーム"
-    },
-    "U063": {
-      "value": "ターゲットプラットフォーム"
-    },
-    "U064": {
-      "value": "ゲームのターゲット"
-    },
-    "U065": {
-      "value": "必要なホスト"
-    },
-    "U066": {
-      "value": "状況"
-    },
-    "U067": {
-      "value": "Windows x64"
-    },
-    "U068": {
-      "value": "Windows"
-    },
-    "U069": {
-      "value": "Debug / Release ビルドと Hello World の実行を検証済み"
-    },
-    "U070": {
-      "value": "Android ARM64 / x64"
-    },
-    "U071": {
-      "value": "Windows、Linux、macOS"
-    },
-    "U072": {
-      "value": "署名付き APK / AAB ビルドを Windows 上で検証済み。実機での実行は未検証"
-    },
-    "U073": {
-      "value": "WebAssembly（wasm32）"
-    },
-    "U074": {
-      "value": "Windows、Linux、macOS"
-    },
-    "U075": {
-      "value": "実際のビルドとローカル HTTP プレビューを検証済み。ブラウザー上のシーンは未検証"
-    },
-    "U076": {
-      "value": "Linux x64"
-    },
-    "U077": {
-      "value": "Linux"
-    },
-    "U078": {
-      "value": "ビルドと実行の入口は接続済み。ネイティブホストは未検証"
-    },
-    "U079": {
-      "value": "macOS、iOS、tvOS"
-    },
-    "U080": {
-      "value": "macOS"
-    },
-    "U081": {
-      "value": "Xcode ビルドの入口は接続済み。署名と実機での実行は未検証"
-    },
-    "U082": {
-      "value": "自動化"
-    },
-    "U083": {
-      "value": "1 つの実装、3 つのクライアント"
-    },
-    "U084": {
-      "value": "すべての機能は AxmolHub.Core に一度だけ定義され、バージョン付きの --json 契約で公開されます。GUI、CLI、MCP サーバーが同じコードを動かすため、スクリプトやエージェントが画面の挙動からずれることはありません。"
-    },
-    "U085": {
-      "value": "--json 対応 CLI"
-    },
-    "U086": {
-      "value": "12 の動詞が {ok, exitCode, data, log, artifacts} を返します。stdout はデータ、stderr はログです。"
-    },
-    "U087": {
-      "value": "MCP サーバー"
-    },
-    "U088": {
-      "value": "次のステップは同じツール群を MCP 経由で公開し、コーディングエージェントが Hub を直接動かせるようにすることです。"
-    },
-    "U089": {
-      "value": "スクリプトと CI"
-    },
-    "U090": {
-      "value": "シェルスクリプトと CI パイプラインから Hub を駆動。stdout には構造化された JSON、安定した終了コードの契約、失敗も機械可読な形で返るため、stderr を推測する必要はありません。"
-    },
-    "U091": {
-      "value": "はじめる"
-    },
-    "U092": {
-      "value": "ソースからビルドするには .NET 10 SDK が必要です。エンジンと開発ツールは同梱されず、必要に応じてダウンロードされます。"
-    },
-    "U093": {
-      "value": "GitHub リポジトリ"
-    },
-    "U094": {
-      "value": "ソース・Issue・ディスカッション"
-    },
-    "U095": {
-      "value": "ソースからビルド"
-    },
-    "U096": {
-      "value": "OS ごとの .NET 10 SDK 手順と検証フラグ"
-    },
-    "U097": {
-      "value": "CLI と自動化"
-    },
-    "U098": {
-      "value": "CI・スクリプト・AI アシスタントから Hub を駆動"
-    },
-    "U099": {
-      "value": "設計判断"
-    },
-    "U100": {
-      "value": "ビルドとツールチェーンをエンジンに委譲する理由"
+      "value": "中国語 / 英語",
+      "context": "html > body > main > header > p.small"
     },
     "U118": "ダウンロード",
     "U119": "Windows、macOS、Linux 向けの最新 Axmol Hub をダウンロード。",
@@ -1965,6 +1833,18 @@
     "U144": "Axmol Hub は、エンジンのリリース・ツールチェーン・ビルドターゲットをインストールして管理する公式コンパニオンツールです。",
     "U147": "Axmol",
     "U148": "アーリーアクセス",
-    "U149": "Axmol Hub はアーリーアクセス版です。1.0 に向けて未完成な部分や破壊的な変更が含まれる可能性があります。"
+    "U149": "Axmol Hub はアーリーアクセス版です。1.0 に向けて未完成な部分や破壊的な変更が含まれる可能性があります。",
+    "U150": {
+      "value": "コードを読み、編集し、ビルドが通るまで実行し続けます。",
+      "context": "html > body > main > header > p.fw-semibold"
+    },
+    "U152": {
+      "value": "Windows インストーラーには .NET ランタイム同梱",
+      "context": "html > body > main > header > p.small"
+    },
+    "U153": {
+      "value": "MIT ライセンス · テレメトリなし",
+      "context": "html > body > main > header > p.small"
+    }
   }
 }

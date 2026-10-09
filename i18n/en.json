@@ -1736,11 +1736,11 @@
     "U116": "Made in Axmol",
     "U029": "Hub",
     "U031": {
-      "value": "Axmol Hub | Engines, projects and builds",
+      "value": "Axmol Hub | Engines, projects, builds and a built-in coding agent",
       "context": "html > head > title"
     },
     "U032": {
-      "value": "Axmol Hub installs Axmol engines, prepares build toolchains, creates projects, and builds and runs them - from one desktop app, a --json CLI, or MCP.",
+      "value": "Axmol Hub manages Axmol engines, projects and build toolchains, and ships with a general-purpose coding agent that reads your code, edits it and runs the build.",
       "context": "html > head > meta [content]"
     },
     "U033": {
@@ -1748,15 +1748,15 @@
       "context": "html > head > meta[property=og:title] [content]"
     },
     "U034": {
-      "value": "Install engines, prepare toolchains, create projects, build and run - from one desktop app, a --json CLI, or MCP.",
+      "value": "The Axmol workbench - engines, projects, and build toolchains managed for you, with a general-purpose coding agent built in.",
       "context": "html > head > meta[property=og:description] [content]"
     },
     "U035": {
-      "value": "Axmol Hub | Engine, project and build management",
+      "value": "Axmol Hub | The Axmol workbench",
       "context": "html > head > meta[name=twitter:title] [content]"
     },
     "U036": {
-      "value": "One desktop app for Axmol engines, toolchains, projects, builds and runs - plus a --json CLI and MCP for automation.",
+      "value": "Engines, projects and build toolchains managed for you, plus an AI assistant that reads your code, edits it and runs the build.",
       "context": "html > head > meta[name=twitter:description] [content]"
     },
     "U037": {
@@ -1768,40 +1768,20 @@
       "context": "html > body > main > header > h1"
     },
     "U039": {
-      "value": "A desktop app that manages Axmol engines, projects and build toolchains - so a fresh machine can reach a running build without hand-editing PATHs, SDK versions or CMake flags.",
+      "value": "The Axmol workbench - engines, projects, and build toolchains managed for you, with a general-purpose coding agent built in.",
       "context": "html > body > main > header > p.hero-lead"
     },
     "U040": {
-      "value": "Get the source",
+      "value": "Download",
       "context": "html > body > main > header > div > a.btn-primary"
     },
     "U041": {
-      "value": "CLI & automation",
+      "value": "View on GitHub",
       "context": "html > body > main > header > div > a.btn-outline-light"
-    },
-    "U042": {
-      "value": "See what it does",
-      "context": "html > body > main > header > div > a.btn-link"
-    },
-    "U043": {
-      "value": "Early access",
-      "context": "html > body > main > section > div > div.release-state > div > span.badge"
-    },
-    "U044": {
-      "value": "Where it stands",
-      "context": "html > body > main > section > div > div.release-state > div > h2"
-    },
-    "U045": {
-      "value": "Axmol Hub v0.2.1 is Windows-first and under active development: the Windows x64 loop is verified end to end, Android and WebAssembly builds are verified on Windows, and macOS and Linux hosts are not yet validated. No installer packages are published yet - build from source for now.",
-      "context": "html > body > main > section > div > div.release-state > div > p"
     },
     "U046": {
       "value": "Build from source",
       "context": "html > body > main > section > div > div.release-state > div.d-flex > a"
-    },
-    "U047": {
-      "value": "Axmol Hub main window showing the engine version picker",
-      "context": "html > body > main > section > div > figure > img [alt]"
     },
     "U048": {
       "value": "CAPABILITIES",
@@ -1812,208 +1792,32 @@
       "context": "html > body > main > section#capabilities > div > div.section-heading > h2"
     },
     "U050": {
-      "value": "Engine management",
+      "value": "Workbench",
       "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U051": {
-      "value": "Install any version from the axmol.dev index, import a local source tree, set the default, repair with a backup, or uninstall - each version stays independent in Hub storage.",
-      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
-    },
-    "U052": {
-      "value": "Project management",
-      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
-    },
-    "U053": {
-      "value": "Create C++ or C++ + Lua projects through Axmol's own CLI, pinned to the engine version and script kind you choose, with your project directory and editor.",
-      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
-    },
-    "U054": {
-      "value": "Build and run",
-      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
-    },
-    "U055": {
-      "value": "Pick a platform and Debug or Release at build time, watch phases and compile steps with elapsed time, cancel mid-build, and launch the produced binary.",
+      "value": "Install engines, create projects, build and run.",
       "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U056": {
-      "value": "Toolchain status",
+      "value": "Toolchain",
       "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U057": {
-      "value": "Expected versions come from the engine's own 1k/build.profiles, and the lookup order mirrors the engine. Installing is delegated to the engine's setup.ps1 - Hub never forks that logic.",
+      "value": "Versions from the engine's own 1k/build.profiles, installed by its setup.ps1.",
       "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U058": {
-      "value": "Prebuilt engine libraries",
+      "value": "AI assistant",
       "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U059": {
-      "value": "Point a project at an engine build directory and Hub wires AX_PREBUILT_DIR through the engine command line, skipping engine recompilation when the artifacts match.",
+      "value": "Ask / Plan / Agent modes with plan and tool approval.",
       "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U060": {
-      "value": "Logs and languages",
-      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
-    },
-    "U061": {
-      "value": "Build and run logs stay in the app and on disk, and the interface switches between Chinese and English at any time.",
-      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
-    },
-    "U062": {
-      "value": "PLATFORMS",
-      "context": "html > body > main > section > div > div.section-heading > p.eyebrow"
-    },
-    "U063": {
-      "value": "Target platforms",
-      "context": "html > body > main > section > div > div.section-heading > h2"
-    },
-    "U064": {
-      "value": "Game target",
-      "context": "html > body > main > section > div > div.table-responsive > table > thead > tr > th"
-    },
-    "U065": {
-      "value": "Required host",
-      "context": "html > body > main > section > div > div.table-responsive > table > thead > tr > th"
-    },
-    "U066": {
-      "value": "Status",
-      "context": "html > body > main > section > div > div.table-responsive > table > thead > tr > th"
-    },
-    "U067": {
-      "value": "Windows x64",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
-    },
-    "U068": {
-      "value": "Windows",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U069": {
-      "value": "Debug and Release builds and Hello World runs verified",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U070": {
-      "value": "Android ARM64 / x64",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
-    },
-    "U071": {
-      "value": "Windows, Linux, macOS",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U072": {
-      "value": "Signed APK / AAB builds verified on Windows; on-device runs pending",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U073": {
-      "value": "WebAssembly (wasm32)",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
-    },
-    "U074": {
-      "value": "Windows, Linux, macOS",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U075": {
-      "value": "Real builds and local HTTP preview verified; browser scenes pending",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U076": {
-      "value": "Linux x64",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
-    },
-    "U077": {
-      "value": "Linux",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U078": {
-      "value": "Build and run entry points wired; native host pending",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U079": {
-      "value": "macOS, iOS, tvOS",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > th"
-    },
-    "U080": {
-      "value": "macOS",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U081": {
-      "value": "Xcode build entry points wired; signing and device runs pending",
-      "context": "html > body > main > section > div > div.table-responsive > table > tbody > tr > td"
-    },
-    "U082": {
-      "value": "AUTOMATION",
-      "context": "html > body > main > section > div > div.section-heading > p.eyebrow"
-    },
-    "U083": {
-      "value": "One implementation, three clients",
-      "context": "html > body > main > section > div > div.section-heading > h2"
-    },
-    "U084": {
-      "value": "Every capability is defined once in AxmolHub.Core and exposed through a versioned --json contract. The GUI, the CLI, and an MCP server all drive the same code, so scripts and agents never drift from what you see on screen.",
-      "context": "html > body > main > section > div > div.section-heading > p.text-body-secondary"
-    },
-    "U085": {
-      "value": "CLI with --json",
-      "context": "html > body > main > section > div > div.row > div > article.story-card > h3"
-    },
-    "U086": {
-      "value": "Twelve verbs return {ok, exitCode, data, log, artifacts}, with stdout for data and stderr for logs.",
-      "context": "html > body > main > section > div > div.row > div > article.story-card > p"
-    },
-    "U087": {
-      "value": "MCP server",
-      "context": "html > body > main > section > div > div.row > div > article.story-card > h3"
-    },
-    "U088": {
-      "value": "The next step: expose the same tools over MCP so coding agents can drive Hub directly.",
-      "context": "html > body > main > section > div > div.row > div > article.story-card > p"
-    },
-    "U089": {
-      "value": "Scripts & CI",
-      "context": "html > body > main > section > div > div.row > div > article.story-card > h3"
-    },
-    "U090": {
-      "value": "Drive the Hub from shell scripts and CI pipelines: structured JSON on stdout, a stable exit-code contract, and errors that are machine-readable instead of guessing at stderr.",
-      "context": "html > body > main > section > div > div.row > div > article.story-card > p"
-    },
-    "U091": {
-      "value": "Get started",
-      "context": "html > body > main > section > div > div.section-heading > h2"
-    },
-    "U092": {
-      "value": "Building Axmol Hub from source needs a .NET 10 SDK; engines and dev tools are downloaded on demand, not bundled.",
-      "context": "html > body > main > section > div > div.section-heading > p.text-body-secondary"
-    },
-    "U093": {
-      "value": "GitHub repository",
-      "context": "html > body > main > section > div > div.row > div > a.quick-link > strong"
-    },
-    "U094": {
-      "value": "Source, issues and discussions",
-      "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
-    },
-    "U095": {
-      "value": "Build from source",
-      "context": "html > body > main > section > div > div.row > div > a.quick-link > strong"
-    },
-    "U096": {
-      "value": "Per-OS .NET 10 SDK steps and verification flags",
-      "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
-    },
-    "U097": {
-      "value": "CLI & automation",
-      "context": "html > body > main > section > div > div.row > div > a.quick-link > strong"
-    },
-    "U098": {
-      "value": "Drive the Hub from CI, scripts, and AI assistants",
-      "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
-    },
-    "U099": {
-      "value": "Design decisions",
-      "context": "html > body > main > section > div > div.row > div > a.quick-link > strong"
-    },
-    "U100": {
-      "value": "Why builds and toolchains are delegated to the engine",
-      "context": "html > body > main > section > div > div.row > div > a.quick-link > small"
+      "value": "Chinese / English",
+      "context": "html > body > main > header > p.small"
     },
     "U118": "Download",
     "U119": "Download the latest Axmol Hub release for Windows, macOS, or Linux.",
@@ -2035,6 +1839,18 @@
     "U144": "Axmol Hub is the official companion tool that installs and manages engine releases, toolchains, and build targets.",
     "U147": "Axmol",
     "U148": "Early Access",
-    "U149": "Axmol Hub is in early access: expect rough edges and breaking changes before 1.0."
+    "U149": "Axmol Hub is in early access: expect rough edges and breaking changes before 1.0.",
+    "U150": {
+      "value": "It reads your code, edits it, and runs the build until it passes.",
+      "context": "html > body > main > header > p.fw-semibold"
+    },
+    "U152": {
+      "value": "Windows installer with the .NET runtime bundled",
+      "context": "html > body > main > header > p.small"
+    },
+    "U153": {
+      "value": "MIT licensed · no telemetry",
+      "context": "html > body > main > header > p.small"
+    }
   }
 }

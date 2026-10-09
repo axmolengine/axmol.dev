@@ -23,7 +23,8 @@ $pages = @(
   @{ Name = 'home'; Template = 'home.html'; Route = 'index.html'; UrlRoute = '' },
   @{ Name = 'v3'; Template = 'v3.html'; Route = 'v3/index.html'; UrlRoute = 'v3/' },
   @{ Name = 'sponsor'; Template = 'sponsor.html'; Route = 'sponsor/index.html'; UrlRoute = 'sponsor/' },
-  @{ Name = 'download'; Template = 'download.html'; Route = 'download/index.html'; UrlRoute = 'download/' }
+  @{ Name = 'download'; Template = 'download.html'; Route = 'download/index.html'; UrlRoute = 'download/' },
+  @{ Name = 'hub'; Template = 'hub.html'; Route = 'hub/index.html'; UrlRoute = 'hub/' }
 )
 
 $releaseIndexPath = [System.IO.Path]::GetFullPath($ReleaseIndex)
@@ -173,7 +174,7 @@ foreach ($locale in $locales) {
           $hrefMatch = [regex]::Match($attributes, '\bhref="(/[^\"]*)"')
           if ($hrefMatch.Success) {
             $path = $hrefMatch.Groups[1].Value
-            if ($path -eq '/' -or $path -match '^/(?:v3|sponsor|download)/(?:#.*)?$') {
+            if ($path -eq '/' -or $path -match '^/(?:v3|sponsor|download|hub)/(?:#.*)?$') {
               $localizedHref = 'href="/' + $locale + $path + '"'
               $attributes = $attributes.Substring(0, $hrefMatch.Index) + $localizedHref + $attributes.Substring($hrefMatch.Index + $hrefMatch.Length)
             }
@@ -234,4 +235,4 @@ foreach ($locale in $locales) {
   }
 }
 
-Write-Host "Rendered 20 localized pages to $outputRoot"
+Write-Host "Rendered $($locales.Count * $pages.Count) localized pages to $outputRoot"

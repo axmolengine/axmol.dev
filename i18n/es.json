@@ -1736,22 +1736,27 @@
     "U116": "Made in Axmol",
     "U029": "Hub",
     "U031": {
-      "value": "Axmol Hub | Motores, proyectos y compilaciones"
+      "value": "Axmol Hub | Motores, proyectos, compilaciones y un agente de código integrado",
+      "context": "html > head > title"
     },
     "U032": {
-      "value": "Axmol Hub instala motores de Axmol, prepara las cadenas de herramientas, crea proyectos y los compila y ejecuta: desde una app de escritorio, una CLI con --json o MCP."
+      "value": "Axmol Hub gestiona los motores, proyectos y toolchains de Axmol e incluye un agente de código de propósito general que lee tu código, lo edita y ejecuta la compilación.",
+      "context": "html > head > meta [content]"
     },
     "U033": {
       "value": "Axmol Hub"
     },
     "U034": {
-      "value": "Instala motores, prepara toolchains, crea proyectos, compila y ejecuta: una sola app de escritorio, con CLI --json y MCP."
+      "value": "El workbench de Axmol: motores, proyectos y toolchains que la app gestiona por ti, con un agente de código de propósito general integrado.",
+      "context": "html > head > meta[property=og:description] [content]"
     },
     "U035": {
-      "value": "Axmol Hub | Gestión de motores, proyectos y compilaciones"
+      "value": "Axmol Hub | El workbench de Axmol",
+      "context": "html > head > meta[name=twitter:title] [content]"
     },
     "U036": {
-      "value": "Una app de escritorio para motores, toolchains, proyectos, compilación y ejecución de Axmol, con CLI --json y MCP para automatización."
+      "value": "Gestiona motores, proyectos y toolchains por ti, y añade un asistente de IA que lee tu código, lo edita y compila.",
+      "context": "html > head > meta[name=twitter:description] [content]"
     },
     "U037": {
       "value": "HERRAMIENTAS"
@@ -1760,31 +1765,19 @@
       "value": "Axmol Hub"
     },
     "U039": {
-      "value": "Una app de escritorio que gestiona los motores, proyectos y cadenas de herramientas de Axmol, para que una máquina recién estrenada llegue a una compilación en ejecución sin editar a mano PATH, versiones de SDK ni flags de CMake."
+      "value": "El workbench de Axmol: motores, proyectos y toolchains que la app gestiona por ti, con un agente de código de propósito general integrado.",
+      "context": "html > body > main > header > p.hero-lead"
     },
     "U040": {
-      "value": "Obtener el código"
+      "value": "Descargar",
+      "context": "html > body > main > header > div > a.btn-primary"
     },
     "U041": {
-      "value": "CLI y automatización"
-    },
-    "U042": {
-      "value": "Ver qué hace"
-    },
-    "U043": {
-      "value": "Acceso anticipado"
-    },
-    "U044": {
-      "value": "Estado actual"
-    },
-    "U045": {
-      "value": "Axmol Hub v0.2.1 es Windows-first y sigue en desarrollo activo: el ciclo de Windows x64 está verificado de extremo a extremo, las compilaciones de Android y WebAssembly están verificadas en Windows, y los anfitriones de macOS y Linux aún no están validados. Todavía no hay paquetes instaladores publicados: por ahora, compila desde el código fuente."
+      "value": "Ver en GitHub",
+      "context": "html > body > main > header > div > a.btn-outline-light"
     },
     "U046": {
       "value": "Compilar desde el código"
-    },
-    "U047": {
-      "value": "Ventana principal de Axmol Hub con la lista de selección de versión del motor"
     },
     "U048": {
       "value": "CAPACIDADES"
@@ -1793,157 +1786,32 @@
       "value": "Qué hace"
     },
     "U050": {
-      "value": "Gestión de motores"
+      "value": "Workbench",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U051": {
-      "value": "Instala cualquier versión desde el índice de axmol.dev, importa un árbol de fuentes local, fija la versión predeterminada, repara con copia de seguridad o desinstala: cada versión vive de forma independiente en el almacenamiento de Hub."
-    },
-    "U052": {
-      "value": "Gestión de proyectos"
-    },
-    "U053": {
-      "value": "Crea proyectos en C++ o C++ + Lua mediante la propia CLI de Axmol, fijando la versión del motor y el tipo de script, con tu directorio de proyecto y tu editor."
-    },
-    "U054": {
-      "value": "Compilar y ejecutar"
-    },
-    "U055": {
-      "value": "Elige plataforma y Debug o Release en el momento de compilar, observa fases y pasos de compilación con el tiempo transcurrido, cancela a mitad de compilación y lanza el binario resultante."
+      "value": "Instala motores, crea proyectos, compila y ejecuta.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U056": {
-      "value": "Estado de la toolchain"
+      "value": "Toolchain",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U057": {
-      "value": "Las versiones esperadas vienen del 1k/build.profiles del propio motor y el orden de búsqueda imita al motor. La instalación se delega en el setup.ps1 del motor: Hub nunca duplica esa lógica."
+      "value": "Versiones del 1k/build.profiles del motor, instaladas por su setup.ps1.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U058": {
-      "value": "Librerías precompiladas del motor"
+      "value": "Asistente de IA",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > h3"
     },
     "U059": {
-      "value": "Apunta un proyecto al directorio de compilación del motor y Hub conecta AX_PREBUILT_DIR a través de la línea de comandos del motor, evitando recompilar el motor cuando los artefactos coinciden."
+      "value": "Modos Ask, Plan y Agent con aprobación de plan y de herramientas.",
+      "context": "html > body > main > section#capabilities > div > div.row > div > article.story-card > p"
     },
     "U060": {
-      "value": "Registros e idiomas"
-    },
-    "U061": {
-      "value": "Los registros de compilación y ejecución se muestran en la app y se guardan en disco, y la interfaz alterna entre chino e inglés en cualquier momento."
-    },
-    "U062": {
-      "value": "PLATAFORMAS"
-    },
-    "U063": {
-      "value": "Plataformas destino"
-    },
-    "U064": {
-      "value": "Plataforma del juego"
-    },
-    "U065": {
-      "value": "Anfitrión necesario"
-    },
-    "U066": {
-      "value": "Estado"
-    },
-    "U067": {
-      "value": "Windows x64"
-    },
-    "U068": {
-      "value": "Windows"
-    },
-    "U069": {
-      "value": "Compilaciones Debug y Release y ejecución de Hello World verificadas"
-    },
-    "U070": {
-      "value": "Android ARM64 / x64"
-    },
-    "U071": {
-      "value": "Windows, Linux, macOS"
-    },
-    "U072": {
-      "value": "Compilaciones APK / AAB firmadas verificadas en Windows; ejecución en dispositivo pendiente"
-    },
-    "U073": {
-      "value": "WebAssembly (wasm32)"
-    },
-    "U074": {
-      "value": "Windows, Linux, macOS"
-    },
-    "U075": {
-      "value": "Compilaciones reales y vista previa HTTP local verificadas; escenas en el navegador pendientes"
-    },
-    "U076": {
-      "value": "Linux x64"
-    },
-    "U077": {
-      "value": "Linux"
-    },
-    "U078": {
-      "value": "Puntos de entrada de compilación y ejecución conectados; anfitrión nativo pendiente"
-    },
-    "U079": {
-      "value": "macOS, iOS, tvOS"
-    },
-    "U080": {
-      "value": "macOS"
-    },
-    "U081": {
-      "value": "Puntos de entrada de compilación con Xcode conectados; firma y ejecución en dispositivo pendientes"
-    },
-    "U082": {
-      "value": "AUTOMATIZACIÓN"
-    },
-    "U083": {
-      "value": "Una implementación, tres clientes"
-    },
-    "U084": {
-      "value": "Toda capacidad se define una sola vez en AxmolHub.Core y se expone mediante un contrato --json con versiones. La GUI, la CLI y un servidor MCP ejecutan el mismo código, de modo que los scripts y agentes nunca se desvían de lo que ves en pantalla."
-    },
-    "U085": {
-      "value": "CLI con --json"
-    },
-    "U086": {
-      "value": "Doce verbos devuelven {ok, exitCode, data, log, artifacts}, con stdout para datos y stderr para registros."
-    },
-    "U087": {
-      "value": "Servidor MCP"
-    },
-    "U088": {
-      "value": "El siguiente paso: exponer las mismas herramientas por MCP para que los agentes de código manejen Hub directamente."
-    },
-    "U089": {
-      "value": "Scripts y CI"
-    },
-    "U090": {
-      "value": "Controla Hub desde scripts de shell y pipelines de CI: JSON estructurado en stdout, un contrato estable de códigos de salida y errores legibles por máquina en lugar de adivinar el stderr."
-    },
-    "U091": {
-      "value": "Para empezar"
-    },
-    "U092": {
-      "value": "Compilar Axmol Hub desde el código necesita un SDK de .NET 10; los motores y las herramientas se descargan a demanda, no vienen incluidos."
-    },
-    "U093": {
-      "value": "Repositorio en GitHub"
-    },
-    "U094": {
-      "value": "Código, issues y discusiones"
-    },
-    "U095": {
-      "value": "Compilar desde el código"
-    },
-    "U096": {
-      "value": "Pasos del SDK de .NET 10 por sistema operativo y flags de verificación"
-    },
-    "U097": {
-      "value": "CLI y automatización"
-    },
-    "U098": {
-      "value": "Controla Hub desde CI, scripts y asistentes de IA"
-    },
-    "U099": {
-      "value": "Decisiones de diseño"
-    },
-    "U100": {
-      "value": "Por qué las compilaciones y las toolchains se delegan en el motor"
+      "value": "Chino / inglés",
+      "context": "html > body > main > header > p.small"
     },
     "U118": "Descargar",
     "U119": "Descarga la última versión de Axmol Hub para Windows, macOS o Linux.",
@@ -1965,6 +1833,18 @@
     "U144": "Axmol Hub es la herramienta oficial que instala y gestiona versiones del motor, toolchains y objetivos de compilación.",
     "U147": "Axmol",
     "U148": "Acceso anticipado",
-    "U149": "Axmol Hub está en acceso anticipado: antes de la 1.0 puede haber imperfecciones y cambios que rompan la compatibilidad."
+    "U149": "Axmol Hub está en acceso anticipado: antes de la 1.0 puede haber imperfecciones y cambios que rompan la compatibilidad.",
+    "U150": {
+      "value": "Lee tu código, lo edita y compila hasta que pasa.",
+      "context": "html > body > main > header > p.fw-semibold"
+    },
+    "U152": {
+      "value": "El instalador de Windows ya incluye el runtime de .NET",
+      "context": "html > body > main > header > p.small"
+    },
+    "U153": {
+      "value": "Licencia MIT · sin telemetría",
+      "context": "html > body > main > header > p.small"
+    }
   }
 }
