@@ -1765,7 +1765,7 @@
       "value": "Axmol Hub"
     },
     "U039": {
-      "value": "Axmol のワークベンチ — エンジン、プロジェクト、ビルドツールチェーンを任せられ、汎用コーディングエージェントも標準搭載されています。",
+      "value": "Axmol のワークベンチ — エンジン、プロジェクト、ビルドツールチェーンと、汎用コーディングエージェントを標準搭載しています。",
       "context": "html > body > main > header > p.hero-lead"
     },
     "U040": {
@@ -1834,10 +1834,6 @@
     "U147": "Axmol",
     "U148": "アーリーアクセス",
     "U149": "Axmol Hub はアーリーアクセス版です。1.0 に向けて未完成な部分や破壊的な変更が含まれる可能性があります。",
-    "U150": {
-      "value": "コードを読み、編集し、ビルドが通るまで実行し続けます。",
-      "context": "html > body > main > header > p.fw-semibold"
-    },
     "U152": {
       "value": "Windows インストーラーには .NET ランタイム同梱",
       "context": "html > body > main > header > p.small"

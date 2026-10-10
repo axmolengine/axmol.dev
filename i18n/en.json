@@ -1768,7 +1768,7 @@
       "context": "html > body > main > header > h1"
     },
     "U039": {
-      "value": "The Axmol workbench - engines, projects, and build toolchains managed for you, with a general-purpose coding agent built in.",
+      "value": "The Axmol workbench - engines, projects, and build toolchains, with a general-purpose coding agent built in.",
       "context": "html > body > main > header > p.hero-lead"
     },
     "U040": {
@@ -1840,10 +1840,6 @@
     "U147": "Axmol",
     "U148": "Early Access",
     "U149": "Axmol Hub is in early access: expect rough edges and breaking changes before 1.0.",
-    "U150": {
-      "value": "It reads your code, edits it, and runs the build until it passes.",
-      "context": "html > body > main > header > p.fw-semibold"
-    },
     "U152": {
       "value": "Windows installer with the .NET runtime bundled",
       "context": "html > body > main > header > p.small"

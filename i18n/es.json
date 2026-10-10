@@ -1765,7 +1765,7 @@
       "value": "Axmol Hub"
     },
     "U039": {
-      "value": "El workbench de Axmol: motores, proyectos y toolchains que la app gestiona por ti, con un agente de código de propósito general integrado.",
+      "value": "El workbench de Axmol: motores, proyectos y toolchains, con un agente de código de propósito general integrado.",
       "context": "html > body > main > header > p.hero-lead"
     },
     "U040": {
@@ -1834,10 +1834,6 @@
     "U147": "Axmol",
     "U148": "Acceso anticipado",
     "U149": "Axmol Hub está en acceso anticipado: antes de la 1.0 puede haber imperfecciones y cambios que rompan la compatibilidad.",
-    "U150": {
-      "value": "Lee tu código, lo edita y compila hasta que pasa.",
-      "context": "html > body > main > header > p.fw-semibold"
-    },
     "U152": {
       "value": "El instalador de Windows ya incluye el runtime de .NET",
       "context": "html > body > main > header > p.small"

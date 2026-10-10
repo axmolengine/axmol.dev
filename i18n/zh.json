@@ -1765,7 +1765,7 @@
       "value": "Axmol Hub"
     },
     "U039": {
-      "value": "Axmol 工作台——引擎、项目与构建工具链由它代管，并内置通用编程智能体。",
+      "value": "Axmol 工作台——引擎、项目与构建工具链，并内置通用编程智能体。",
       "context": "html > body > main > header > p.hero-lead"
     },
     "U040": {
@@ -1834,10 +1834,6 @@
     "U147": "Axmol",
     "U148": "抢先体验",
     "U149": "Axmol Hub 目前处于抢先体验阶段，1.0 正式版之前可能存在不完善之处与破坏性变更。",
-    "U150": {
-      "value": "它读懂你的代码，直接动手修改，并把构建跑到通过为止。",
-      "context": "html > body > main > header > p.fw-semibold"
-    },
     "U152": {
       "value": "Windows 安装包已内置 .NET 运行时",
       "context": "html > body > main > header > p.small"
