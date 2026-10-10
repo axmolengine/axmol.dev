@@ -1827,7 +1827,7 @@
     "U127": "Download",
     "U128": "All releases",
     "U131": "Windows 10/11, x64",
-    "U132": "macOS 12+, universal support",
+    "U132": "macOS 12 or later",
     "U133": "Apple Silicon",
     "U134": "Intel",
     "U135": "Linux x64 (AppImage)",
@@ -1847,6 +1847,17 @@
     "U153": {
       "value": "MIT licensed · no telemetry",
       "context": "html > body > main > header > p.small"
-    }
+    },
+    "U154": "Download desktop",
+    "U155": "Download for Windows",
+    "U156": "Download for macOS (Apple silicon)",
+    "U157": "Download for macOS (Intel)",
+    "U158": "Download for Linux",
+    "U159": "Choose a download platform",
+    "U160": "Install Axmol with Axmol Hub",
+    "U161": "Install the latest {version} LTS release in Axmol Hub.",
+    "U162": "Install from GitHub",
+    "U163": "Install from AtomGit",
+    "U164": "If you have an older version of Axmol Hub installed, uninstall it before installing this version."
   }
 }

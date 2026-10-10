@@ -47,7 +47,7 @@ if ($latestLtsUrl -notmatch '^https://') {
 
 # Axmol Hub version baked into the download page links. This is statically
 # substituted below; bump it here whenever a new Hub release ships.
-$hubVersion = '0.6.0'
+$hubVersion = '0.9.0'
 
 function Get-ResourceValue($resource, [string]$path) {
   $value = $resource
@@ -127,10 +127,13 @@ foreach ($locale in $locales) {
       $namespace = $token.Groups['namespace'].Value
       $key = $token.Groups['key'].Value
       if ($namespace -eq 'release') {
-        if ($key -ne 'latestUrl') {
+        if ($key -eq 'latestUrl') {
+          $replacement = $latestLtsUrl
+        } elseif ($key -eq 'latestVersion') {
+          $replacement = [System.Net.WebUtility]::HtmlEncode($latestLtsVersion)
+        } else {
           throw "Unknown release token '$($token.Value)' in $templatePath"
         }
-        $replacement = $latestLtsUrl
         $html = $html.Replace($token.Value, $replacement)
         continue
       }

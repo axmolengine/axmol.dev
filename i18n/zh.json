@@ -1821,7 +1821,7 @@
     "U127": "下载",
     "U128": "全部版本",
     "U131": "Windows 10/11，x64",
-    "U132": "macOS 12 及以上，支持两种架构",
+    "U132": "macOS 12 及以上",
     "U133": "Apple Silicon",
     "U134": "Intel",
     "U135": "Linux x64（AppImage）",
@@ -1841,6 +1841,17 @@
     "U153": {
       "value": "MIT 许可 · 无遥测",
       "context": "html > body > main > header > p.small"
-    }
+    },
+    "U154": "下载桌面版",
+    "U155": "下载 Windows 版",
+    "U156": "下载 macOS 版（Apple 芯片）",
+    "U157": "下载 macOS 版（Intel）",
+    "U158": "下载 Linux 版",
+    "U159": "选择下载平台",
+    "U160": "使用 Axmol Hub 安装 Axmol 引擎",
+    "U161": "在 Axmol Hub 中安装最新的 {version} LTS 版本。",
+    "U162": "从 GitHub 安装",
+    "U163": "从 AtomGit 安装",
+    "U164": "如果已安装旧版 Axmol Hub，请先卸载旧版，再安装此版本。"
   }
 }
