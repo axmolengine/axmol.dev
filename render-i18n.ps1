@@ -47,7 +47,7 @@ if ($latestLtsUrl -notmatch '^https://') {
 
 # Axmol Hub version baked into the download page links. This is statically
 # substituted below; bump it here whenever a new Hub release ships.
-$hubVersion = '0.10.4'
+$hubVersion = '0.11.1'
 
 function Get-ResourceValue($resource, [string]$path) {
   $value = $resource
