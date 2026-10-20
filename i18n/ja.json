@@ -521,8 +521,20 @@
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
     "H130": {
-      "value": "ダウンロード",
+      "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "H131": {
+      "value": "Axmol のワークベンチ",
+      "context": "homepage > Axmol Hub feature section eyebrow"
+    },
+    "H132": {
+      "value": "Axmol Hub を見る",
+      "context": "homepage > Axmol Hub feature section link"
+    },
+    "H133": {
+      "value": "Axmol Hub デスクトップアプリのウィンドウ",
+      "context": "homepage > Axmol Hub screenshot alt text"
     }
   },
   "v3": {
@@ -1827,8 +1839,8 @@
     "U135": "Linux x64（AppImage）",
     "U139": "{version} LTS をダウンロード",
     "U140": "すべてのエンジンリリース",
-    "U141": "ツール",
-    "U142": "Axmol Hub",
+    "U141": "ダウンロード",
+    "U142": "Axmol Hub をダウンロード",
     "U143": "ダウンロード",
     "U144": "Axmol Hub は、エンジンのリリース・ツールチェーン・ビルドターゲットをインストールして管理する公式コンパニオンツールです。",
     "U147": "Axmol",
@@ -1852,6 +1864,7 @@
     "U161": "Axmol Hub で最新の {version} LTS をインストールします。",
     "U162": "GitHub からインストール",
     "U163": "AtomGit からインストール",
-    "U164": "古い Axmol Hub がインストールされている場合は、先にアンインストールしてから、このバージョンをインストールしてください。"
+    "U164": "古い Axmol Hub がインストールされている場合は、先にアンインストールしてから、このバージョンをインストールしてください。",
+    "U165": "現在のバージョン："
   }
 }

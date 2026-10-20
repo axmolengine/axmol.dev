@@ -4,9 +4,9 @@ The source of axmol home page, based on bootstrap 5.3.8
 
 ## Localized pages
 
-The homepage, V3 page, and Sponsor page use three shared readable HTML templates: `templates/home.html`, `templates/v3.html`, and `templates/sponsor.html`. Every locale renders from the same template for its page type. Human-facing text is stored in one JSON dictionary per language under `i18n/`, using ISO 639-1 file codes (`en`, `zh`, `ja`, `es`, `ru`) and matching globally unique four-character keys. Translation review should locate entries by their `value` and `context`, not by the opaque key.
+The homepage, V3 page, Sponsor page, and Axmol Hub page use four shared readable HTML templates: `templates/home.html`, `templates/v3.html`, `templates/sponsor.html`, and `templates/hub.html`. Every locale renders from the same template for its page type. Human-facing text is stored in one JSON dictionary per language under `i18n/`, using ISO 639-1 file codes (`en`, `zh`, `ja`, `es`, `ru`) and matching globally unique four-character keys. Translation review should locate entries by their `value` and `context`, not by the opaque key. Hub information and desktop downloads are on `/hub/`; the homepage engine download links directly to the latest LTS GitHub Release.
 
-To render or preview changes to localized copy or page templates, run `./build.ps1` with no arguments. This generates the static localized pages under `dist/`; documentation and WebAssembly artifacts are built only in CI when their explicit arguments are supplied.
+To render or preview changes to localized copy or page templates, run `./build.ps1` with no arguments. This generates the static localized pages under `dist/`; documentation and WebAssembly artifacts are built only in CI when their explicit arguments are supplied. Each build reads the newest Axmol Hub release, including pre-releases, from GitHub's Releases Atom feed and bakes that version into the Hub page and installer links without using the Releases API.
 
 ## https://axmol.dev Deployment Flow
 

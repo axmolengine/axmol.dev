@@ -52,7 +52,7 @@
               <a class="nav-link" href="https://github.com/axmolengine/axmol/wiki" target="_blank" rel="noopener">{{i18n:hub.U028}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/download/">{{i18n:hub.U118}}</a>
+              <a class="nav-link" href="/hub/">{{i18n:home.H130}}</a>
             </li>
           </ul>
           <ul class="navbar-nav flex-lg-row flex-wrap ms-lg-auto">
@@ -105,54 +105,69 @@
       </div>
     </nav>
     <main id="main-content">
-      <header class="v3-hero hero-gradient">
+      <header class="hero hero-gradient text-center">
         <div class="container py-5 py-lg-6">
           <p class="eyebrow">{{i18n:hub.U037}}</p>
-          <h1>{{i18n:hub.U038}} <span class="badge badge-early-access align-middle">{{i18n:hub.U148}}</span></h1>
-          <p class="hero-lead">{{i18n:hub.U039}}</p>
-          <div class="d-flex flex-wrap gap-3">
-            <a class="btn btn-primary btn-lg" href="/download/">{{i18n:hub.U040}}</a>
-            <a class="btn btn-outline-light btn-lg" href="https://github.com/axmolengine/axmol-hub" target="_blank" rel="noopener">{{i18n:hub.U041}}</a>
+          <h1 class="display-4 fw-bold text-glow mb-3">{{i18n:hub.U038}} <span class="badge badge-early-access align-middle">{{i18n:hub.U148}}</span></h1>
+          <p class="hero-lead mx-auto">{{i18n:hub.U039}}</p>
+          <div class="d-flex flex-column align-items-center gap-3 mt-4" id="downloads">
+            <p class="text-body-secondary small mb-0">{{i18n:hub.U165}} v{hubVersion}</p>
+            <div class="btn-group" role="group" aria-label="{{i18n:hub.U159}}">
+              <button class="btn btn-primary btn-lg" id="hub-primary-download" type="button" disabled>{{i18n:hub.U154}}</button>
+              <button class="btn btn-primary btn-lg dropdown-toggle dropdown-toggle-split" id="hub-download-options" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:hub.U159}}">
+                <span class="visually-hidden">{{i18n:hub.U159}}</span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="hub-download-options">
+                <li>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-win-x64.exe" data-hub-target="windows-x64" data-download-label="{{i18n:hub.U155}}">
+                    <span class="d-block">{{i18n:hub.U121}} (64-bit)</span>
+                    <span class="d-block small text-body-secondary">{{i18n:hub.U131}}</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-osx-arm64.pkg" data-hub-target="macos-arm64" data-download-label="{{i18n:hub.U156}}">
+                    <span class="d-block">{{i18n:hub.U122}} ({{i18n:hub.U133}})</span>
+                    <span class="d-block small text-body-secondary">{{i18n:hub.U132}}</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-osx-x64.pkg" data-hub-target="macos-x64" data-download-label="{{i18n:hub.U157}}">
+                    <span class="d-block">{{i18n:hub.U122}} ({{i18n:hub.U134}})</span>
+                    <span class="d-block small text-body-secondary">{{i18n:hub.U132}}</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-linux-x64.AppImage" data-hub-target="linux-x64" data-download-label="{{i18n:hub.U158}}">
+                    <span class="d-block">{{i18n:hub.U123}} x64</span>
+                    <span class="d-block small text-body-secondary">{{i18n:hub.U135}}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="text-body-secondary small mb-0">{{i18n:hub.U060}} · {{i18n:hub.U153}}</p>
+            <p class="text-body-secondary small mb-0">{{i18n:hub.U164}}</p>
           </div>
-          <p class="text-body-secondary small mb-0">{{i18n:hub.U152}} · {{i18n:hub.U060}} · {{i18n:hub.U153}}</p>
+          <div class="mt-3 d-flex flex-wrap justify-content-center align-items-center gap-3 small">
+            <a href="https://github.com/axmolengine/axmol-hub/releases" target="_blank" rel="noopener">{{i18n:hub.U128}} <svg class="icon-inline" aria-hidden="true">
+                <use href="/assets/icons.svg#arrow-right"></use>
+              </svg>
+            </a>
+            <a href="https://github.com/axmolengine/axmol-hub/blob/master/docs/building-from-source.md" target="_blank" rel="noopener">{{i18n:hub.U046}} <svg class="icon-inline" aria-hidden="true">
+                <use href="/assets/icons.svg#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </header>
-      <section class="section-tight" id="capabilities">
+      <section class="section-tight" id="preview">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">{{i18n:hub.U048}}</p>
-            <h2>{{i18n:hub.U049}}</h2>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-4">
-              <article class="story-card">
-                <svg class="story-icon" aria-hidden="true">
-                  <use href="/assets/icons.svg#box-seam">
-                  </use>
-                </svg>
-                <h3>{{i18n:hub.U050}}</h3>
-                <p>{{i18n:hub.U051}}</p>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="story-card">
-                <svg class="story-icon" aria-hidden="true">
-                  <use href="/assets/icons.svg#magic">
-                  </use>
-                </svg>
-                <h3>{{i18n:hub.U058}}</h3>
-                <p>{{i18n:hub.U059}}</p>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="story-card">
-                <svg class="story-icon" aria-hidden="true">
-                  <use href="/assets/icons.svg#tools">
-                  </use>
-                </svg>
-                <h3>{{i18n:hub.U056}}</h3>
-                <p>{{i18n:hub.U057}}</p>
-              </article>
+          <img class="img-fluid rounded-4 shadow-lg d-block mx-auto" src="/assets/img/hub_main_window.png?v=0.9.1" alt="{{i18n:hub.U038}}" loading="lazy">
+          <div class="mt-5 text-center">
+            <h2>{{i18n:hub.U160}}</h2>
+            <p class="text-body-secondary">{{i18n:hub.U161}}</p>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <a class="btn btn-primary" href="axmolhub://install?version={{release:latestVersion}}&amp;source=github">{{i18n:hub.U162}}</a>
+              <a class="btn btn-outline-primary" href="axmolhub://install?version={{release:latestVersion}}&amp;source=atomgit">{{i18n:hub.U163}}</a>
             </div>
           </div>
         </div>

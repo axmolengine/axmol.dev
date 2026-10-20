@@ -27,12 +27,52 @@ Copy-Item (Join-Path $PSScriptRoot 'versions') $site_dist -Recurse -Force
 # rules below apply even when no wasm artifact is supplied.
 Copy-Item (Join-Path $PSScriptRoot '_headers') $site_dist
 
-# step.1b build release registry for tooling such as Axmol Hub. It runs before
-# rendering because the pages bake the latest LTS link and version into the markup.
+# Resolve the newest public Hub release from GitHub's Atom feed. The release
+# feed includes pre-releases and does not consume the REST API's anonymous quota.
+try {
+  $hub_feed_response = Invoke-WebRequest `
+    -Uri 'https://github.com/axmolengine/axmol-hub/releases.atom' `
+    -Headers @{ 'User-Agent' = 'axmol.dev-build' } `
+    -TimeoutSec 30 `
+    -UseBasicParsing
+  [xml]$hub_feed = $hub_feed_response.Content
+  $hub_feed_namespaces = [System.Xml.XmlNamespaceManager]::new($hub_feed.NameTable)
+  $hub_feed_namespaces.AddNamespace('atom', 'http://www.w3.org/2005/Atom')
+  $latest_hub_entry = $hub_feed.SelectSingleNode('/atom:feed/atom:entry[1]', $hub_feed_namespaces)
+  if ($null -eq $latest_hub_entry) {
+    throw 'The Axmol Hub release feed has no entries.'
+  }
+
+  $latest_hub_link = $latest_hub_entry.SelectSingleNode('atom:link[@rel="alternate"]', $hub_feed_namespaces)
+  if ($null -eq $latest_hub_link) {
+    throw 'The latest Axmol Hub feed entry has no release link.'
+  }
+
+  $latest_hub_release_uri = [System.Uri]$latest_hub_link.GetAttribute('href')
+  if ($latest_hub_release_uri.Host -ne 'github.com' -or $latest_hub_release_uri.AbsolutePath -notmatch '^/axmolengine/axmol-hub/releases/tag/') {
+    throw "Unexpected Axmol Hub release link: $($latest_hub_release_uri.AbsoluteUri)"
+  }
+
+  $hub_tag_match = [regex]::Match(
+    $latest_hub_release_uri.AbsolutePath,
+    '^/axmolengine/axmol-hub/releases/tag/v?(?<version>[0-9]+\.[0-9]+\.[0-9]+(?:-[0-9A-Za-z.-]+)?(?:\+[0-9A-Za-z.-]+)?)$'
+  )
+  if (!$hub_tag_match.Success) {
+    throw "Latest Axmol Hub release tag is not a supported version: $($latest_hub_release_uri.AbsolutePath)"
+  }
+  $hub_version = $hub_tag_match.Groups['version'].Value
+} catch {
+  throw "Failed to fetch the latest Axmol Hub release from GitHub's Atom feed: $($_.Exception.Message)"
+}
+
+Write-Host "Latest Axmol Hub version: v$hub_version"
+
+# Generate the Axmol release registry before rendering because the pages bake
+# the latest LTS link and version into the markup.
 $release_index = Join-Path $site_dist 'versions/index.json'
 & (Join-Path $PSScriptRoot 'gen-verlist.ps1') -OutputPath $release_index
 
-& (Join-Path $PSScriptRoot 'render-i18n.ps1') -OutputPath $site_dist -ReleaseIndex $release_index
+& (Join-Path $PSScriptRoot 'render-i18n.ps1') -OutputPath $site_dist -ReleaseIndex $release_index -HubVersion $hub_version
 
 # step.2 build docs to main site manual
 if ($axmol_src) {

@@ -521,8 +521,20 @@
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
     "H130": {
-      "value": "Скачать",
+      "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "H131": {
+      "value": "Рабочая среда Axmol",
+      "context": "homepage > Axmol Hub feature section eyebrow"
+    },
+    "H132": {
+      "value": "Подробнее об Axmol Hub",
+      "context": "homepage > Axmol Hub feature section link"
+    },
+    "H133": {
+      "value": "Окно настольного приложения Axmol Hub",
+      "context": "homepage > Axmol Hub screenshot alt text"
     }
   },
   "v3": {
@@ -1827,8 +1839,8 @@
     "U135": "Linux x64 (AppImage)",
     "U139": "Скачать {version} LTS",
     "U140": "Все версии движка",
-    "U141": "Инструменты",
-    "U142": "Axmol Hub",
+    "U141": "ЗАГРУЗКИ",
+    "U142": "Скачать Axmol Hub",
     "U143": "ЗАГРУЗКИ",
     "U144": "Axmol Hub — официальный инструмент для установки и управления версиями движка, toolchain и целями сборки.",
     "U147": "Axmol",
@@ -1852,6 +1864,7 @@
     "U161": "Установите последнюю LTS-версию {version} в Axmol Hub.",
     "U162": "Установить с GitHub",
     "U163": "Установить с AtomGit",
-    "U164": "Если установлена старая версия Axmol Hub, сначала удалите её, а затем установите эту версию."
+    "U164": "Если установлена старая версия Axmol Hub, сначала удалите её, а затем установите эту версию.",
+    "U165": "Текущая версия:"
   }
 }

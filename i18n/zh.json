@@ -521,8 +521,20 @@
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
     "H130": {
-      "value": "下载",
+      "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "H131": {
+      "value": "Axmol 工作台",
+      "context": "homepage > Axmol Hub feature section eyebrow"
+    },
+    "H132": {
+      "value": "了解 Axmol Hub",
+      "context": "homepage > Axmol Hub feature section link"
+    },
+    "H133": {
+      "value": "Axmol Hub 桌面应用窗口",
+      "context": "homepage > Axmol Hub screenshot alt text"
     }
   },
   "v3": {
@@ -1827,8 +1839,8 @@
     "U135": "Linux x64（AppImage）",
     "U139": "下载 {version} LTS",
     "U140": "全部引擎版本",
-    "U141": "工具",
-    "U142": "Axmol Hub",
+    "U141": "下载",
+    "U142": "下载 Axmol Hub",
     "U143": "下载",
     "U144": "Axmol Hub 是官方配套工具，用于安装和管理引擎版本、工具链与构建目标。",
     "U147": "Axmol",
@@ -1852,6 +1864,7 @@
     "U161": "在 Axmol Hub 中安装最新的 {version} LTS 版本。",
     "U162": "从 GitHub 安装",
     "U163": "从 AtomGit 安装",
-    "U164": "如果已安装旧版 Axmol Hub，请先卸载旧版，再安装此版本。"
+    "U164": "如果已安装旧版 Axmol Hub，请先卸载旧版，再安装此版本。",
+    "U165": "当前版本："
   }
 }

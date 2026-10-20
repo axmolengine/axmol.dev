@@ -521,8 +521,20 @@
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
     "H130": {
-      "value": "Descargar",
+      "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "H131": {
+      "value": "Un espacio de trabajo para Axmol",
+      "context": "homepage > Axmol Hub feature section eyebrow"
+    },
+    "H132": {
+      "value": "Descubre Axmol Hub",
+      "context": "homepage > Axmol Hub feature section link"
+    },
+    "H133": {
+      "value": "Ventana de la aplicación de escritorio Axmol Hub",
+      "context": "homepage > Axmol Hub screenshot alt text"
     }
   },
   "v3": {
@@ -1827,8 +1839,8 @@
     "U135": "Linux x64 (AppImage)",
     "U139": "Descargar {version} LTS",
     "U140": "Todas las versiones del motor",
-    "U141": "Herramientas",
-    "U142": "Axmol Hub",
+    "U141": "DESCARGAS",
+    "U142": "Descargar Axmol Hub",
     "U143": "DESCARGAS",
     "U144": "Axmol Hub es la herramienta oficial que instala y gestiona versiones del motor, toolchains y objetivos de compilación.",
     "U147": "Axmol",
@@ -1852,6 +1864,7 @@
     "U161": "Instala la última versión LTS {version} en Axmol Hub.",
     "U162": "Instalar desde GitHub",
     "U163": "Instalar desde AtomGit",
-    "U164": "Si tienes instalada una versión anterior de Axmol Hub, desinstálala antes de instalar esta versión."
+    "U164": "Si tienes instalada una versión anterior de Axmol Hub, desinstálala antes de instalar esta versión.",
+    "U165": "Versión actual:"
   }
 }

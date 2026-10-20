@@ -521,8 +521,20 @@
       "context": "html > body > footer.border-top > div.container > div.row > div.col-md > div.text-center > div.d-flex > a.text-body-secondary"
     },
     "H130": {
-      "value": "Download",
+      "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
+    },
+    "H131": {
+      "value": "A workbench for Axmol",
+      "context": "homepage > Axmol Hub feature section eyebrow"
+    },
+    "H132": {
+      "value": "Explore Axmol Hub",
+      "context": "homepage > Axmol Hub feature section link"
+    },
+    "H133": {
+      "value": "Axmol Hub desktop application window",
+      "context": "homepage > Axmol Hub screenshot alt text"
     }
   },
   "v3": {
@@ -1833,8 +1845,8 @@
     "U135": "Linux x64 (AppImage)",
     "U139": "Download {version} LTS",
     "U140": "All engine releases",
-    "U141": "Tools",
-    "U142": "Axmol Hub",
+    "U141": "DOWNLOADS",
+    "U142": "Download Axmol Hub",
     "U143": "DOWNLOADS",
     "U144": "Axmol Hub is the official companion tool that installs and manages engine releases, toolchains, and build targets.",
     "U147": "Axmol",
@@ -1858,6 +1870,7 @@
     "U161": "Install the latest {version} LTS release in Axmol Hub.",
     "U162": "Install from GitHub",
     "U163": "Install from AtomGit",
-    "U164": "If you have an older version of Axmol Hub installed, uninstall it before installing this version."
+    "U164": "If you have an older version of Axmol Hub installed, uninstall it before installing this version.",
+    "U165": "Current version:"
   }
 }
