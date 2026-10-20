@@ -32,7 +32,10 @@
       if (arch === 'x64') {
         return 'macos-x64';
       }
-      return '';
+      // Safari reports "MacIntel" on Apple silicon too and does not expose
+      // User-Agent Client Hints. Keep the primary action usable in that case;
+      // Intel users can still select their package from the platform menu.
+      return 'macos-arm64';
     }
     if (platformText.includes('linux') || platformText.includes('x11')) {
       const is64Bit = arch === 'x64' || /x86_64|x64|amd64/i.test(`${platform} ${userAgent}`);

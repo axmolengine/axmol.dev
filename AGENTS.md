@@ -14,6 +14,7 @@
 - Template placeholders are allowed only in `templates/` and must use the renderer's `{{i18n:...}}`, `{{route:...}}`, `{{release:...}}`, or `{hubVersion}` syntax. `{{release:latestUrl}}` bakes the newest LTS release URL from the generated registry, while `{hubVersion}` is passed from `build.ps1` into the renderer for the current Hub version and installer links. Generated HTML under `dist/` must contain no unresolved placeholders. Keep two-space HTML indentation and readable block formatting in every template.
 - The `{version}` token in `i18n/*.json` values is replaced with the newest Axmol LTS version (`hub.U139` must keep it in every locale). Never hardcode a concrete Axmol version number into i18n copy.
 - `build.ps1` reads the newest Axmol Hub release, including pre-releases, from `https://github.com/axmolengine/axmol-hub/releases.atom` and passes it to `render-i18n.ps1` as `-HubVersion`. Do not hardcode Hub versions in the renderer or query the GitHub Releases API for them.
+- `templates/hub.html` must load `assets/js/hub-download.js` so platform detection enables the primary installer button and its dropdown remains available.
 - Whenever i18n text or any related localized page/template is changed, run `./build.ps1` with no arguments and inspect the generated pages in `dist/`. Do not pass CI's Axmol documentation or WASM build arguments for this local check.
 - Beta copy must remain conservative. Do not present beta1 as the default production-stable release; keep Axmol 2.11.x LTS as the clear production baseline.
 
