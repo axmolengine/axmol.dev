@@ -8,8 +8,7 @@ param(
   [string]$SchemaVersion = '1.0',
   [string]$SchemaUrl = 'https://axmol.dev/versions/schema/v1.json',
   [string]$ApiBase = 'https://api.github.com',
-  [int]$MaxPages = 10,
-  [string]$Token = $env:GITHUB_TOKEN
+  [int]$MaxPages = 100
 )
 
 $ErrorActionPreference = 'Stop'
@@ -20,94 +19,145 @@ $stableTagPattern = '^v' + [regex]::Escape($Line) + '\.(\d+)$'
 $stableTag = [regex]::new($stableTagPattern)
 
 $headers = @{
-  'Accept' = 'application/vnd.github+json'
-  'X-GitHub-Api-Version' = '2022-11-28'
+  'Accept' = 'text/html'
   'User-Agent' = 'axmol.dev-version-registry'
 }
-if ($Token) {
-  $headers['Authorization'] = "Bearer $Token"
-}
+$releasePageBase = 'https://github.com/{0}/releases' -f $Repository
+$releaseEntries = @()
 
-$releases = @()
+# GitHub's public release pages are paginated and do not consume the anonymous
+# Releases REST API quota. Continue until the requested stable line is complete.
 for ($page = 1; $page -le $MaxPages; ++$page) {
-  $uri = '{0}/repos/{1}/releases?per_page=100&page={2}' -f $ApiBase, $Repository, $page
-  # Invoke-RestMethod writes a JSON array as a single pipeline object, so wrap the
-  # assigned value (not the command) to keep one element per release.
-  $response = Invoke-RestMethod -Uri $uri -Headers $headers -Method Get
-  $batch = @($response)
-  if ($batch.Count -eq 0) {
-    break
-  }
-  $releases += $batch
-  if ($batch.Count -lt 100) {
-    break
-  }
-}
-
-$picked = @(
-  foreach ($release in $releases) {
-    if ($release.draft -or $release.prerelease) {
-      continue
+  $uri = if ($page -eq 1) { $releasePageBase } else { '{0}?page={1}' -f $releasePageBase, $page }
+  $response = Invoke-WebRequest -Uri $uri -Headers $headers -TimeoutSec 30 -UseBasicParsing
+  $sections = [regex]::Matches(
+    $response.Content,
+    '(?is)<section\s+id="release-(?<tag>[^"\s]+)"[^>]*>(?<body>.*?)</section>'
+  )
+  if ($sections.Count -eq 0) {
+    if ($page -eq 1) {
+      throw "No release entries found on GitHub Releases page: $uri"
     }
+    break
+  }
 
-    $tag = [string]$release.tag_name
+  $pageHasOlderLine = $false
+  foreach ($section in $sections) {
+    $tag = [System.Net.WebUtility]::HtmlDecode([string]$section.Groups['tag'].Value)
     $match = $stableTag.Match($tag)
-    if (!$match.Success) {
+    if ($match.Success) {
+      $version = $tag.Substring(1)
+      $dateMatch = [regex]::Match(
+        $section.Groups['body'].Value,
+        '(?i)<relative-time[^>]*\sdatetime="(?<date>[^\"]+)"'
+      )
+      if (!$dateMatch.Success) {
+        throw "Release $tag has no published date on its GitHub Releases page."
+      }
+
+      $releaseEntries += [pscustomobject]@{
+        Patch = [int]$match.Groups[1].Value
+        Version = $version
+        Tag = $tag
+        ReleaseDate = ([datetime]$dateMatch.Groups['date'].Value).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
+        ReleaseUrl = 'https://github.com/{0}/releases/tag/{1}' -f $Repository, $tag
+        ZipArchive = 'https://github.com/{0}/archive/refs/tags/{1}.zip' -f $Repository, $tag
+        TarballArchive = 'https://github.com/{0}/archive/refs/tags/{1}.tar.gz' -f $Repository, $tag
+      }
       continue
     }
 
-    $version = $tag.Substring(1)
-
-    # Every release ships a single zip bundle such as axmol-2.11.5.zip. The API
-    # exposes its content digest as "sha256:<hex>", so consumers never have to
-    # download 240 MB just to verify it. Prefer the asset whose name carries this
-    # exact version, then tie-break on name, so the pick stays deterministic even
-    # if a release one day carries several zip files.
-    $zipAssets = @($release.assets | Where-Object {
-      $_.state -eq 'uploaded' -and [string]$_.name -like '*.zip'
-    })
-    $zipAsset = $null
-    if ($zipAssets.Count -gt 0) {
-      $versionedZipAssets = @($zipAssets | Where-Object { [string]$_.name -like "*$version*.zip" })
-      $candidates = if ($versionedZipAssets.Count -gt 0) { $versionedZipAssets } else { $zipAssets }
-      $zipAsset = $candidates | Sort-Object -Property Name | Select-Object -First 1
-    } else {
-      Write-Warning "Release $tag has no uploaded zip asset; its artifacts[] will be empty."
-    }
-
-    $zipSha256 = $null
-    if ($zipAsset) {
-      $digest = [string]$zipAsset.digest
-      if ($digest -match '^sha256:([a-f0-9]{64})$') {
-        $zipSha256 = $Matches[1]
-      } else {
-        # Older assets uploaded before GitHub started publishing digests have no
-        # digest at all; anything else is unexpected and worth surfacing.
-        Write-Warning "Release $tag zip asset '$($zipAsset.name)' exposes no usable sha256 digest (digest: '$digest')."
+    $otherStableTag = [regex]::Match($tag, '^v(?<major>\d+)\.(?<minor>\d+)\.\d+$')
+    if ($otherStableTag.Success) {
+      $releaseLine = '{0}.{1}' -f $otherStableTag.Groups['major'].Value, $otherStableTag.Groups['minor'].Value
+      if ([version]$releaseLine -lt [version]$Line) {
+        $pageHasOlderLine = $true
       }
     }
+  }
 
-    $published = $release.published_at
-    if (!$published) {
-      $published = $release.created_at
+  # Releases are listed newest to oldest. Once an older stable line appears,
+  # subsequent pages cannot contain more releases for the requested line.
+  if ($pageHasOlderLine) {
+    break
+  }
+
+  $nextPage = [regex]::Match(
+    $response.Content,
+    '(?is)<a\b[^>]*class="next_page"[^>]*href="(?<href>[^"]+)"'
+  )
+  if (!$nextPage.Success) {
+    break
+  }
+  if ($page -eq $MaxPages) {
+    throw "Reached MaxPages ($MaxPages) before finding the end of stable line '$Line'. Increase MaxPages to avoid an incomplete registry."
+  }
+}
+
+$picked = @($releaseEntries | Sort-Object -Property Patch -Descending)
+if ($picked.Count -eq 0) {
+  throw "No stable '$Line' releases matching $stableTagPattern found in $Repository. Aborting so an empty registry can never be published."
+}
+
+# GitHub's expanded-assets pages contain the same release asset names and
+# published SHA-256 digests as the web UI. A HEAD request supplies exact sizes
+# without downloading the large source archive.
+foreach ($entry in $picked) {
+  $assetsUri = 'https://github.com/{0}/releases/expanded_assets/{1}' -f $Repository, $entry.Tag
+  $assetsResponse = Invoke-WebRequest -Uri $assetsUri -Headers $headers -TimeoutSec 30 -UseBasicParsing
+  $assets = @(
+    foreach ($row in [regex]::Matches($assetsResponse.Content, '(?is)<li\b[^>]*>(?<body>.*?)</li>')) {
+      $body = $row.Groups['body'].Value
+      $assetLink = [regex]::Match(
+        $body,
+        '(?is)<a\b[^>]*href="(?<href>[^"]*/releases/download/[^"]+)"[^>]*>(?<label>.*?)</a>'
+      )
+      if (!$assetLink.Success) {
+        continue
+      }
+
+      $name = [regex]::Replace($assetLink.Groups['label'].Value, '<[^>]+>', '').Trim()
+      $name = [System.Net.WebUtility]::HtmlDecode($name)
+      $digestMatch = [regex]::Match($body, '(?i)sha256:([a-f0-9]{64})')
+      [pscustomobject]@{
+        Name = $name
+        Url = [uri]::new([uri]'https://github.com', $assetLink.Groups['href'].Value).AbsoluteUri
+        Sha256 = if ($digestMatch.Success) { $digestMatch.Groups[1].Value } else { $null }
+      }
+    }
+  )
+
+  $zipAssets = @($assets | Where-Object { $_.Name -like '*.zip' })
+  $zipAsset = $null
+  if ($zipAssets.Count -gt 0) {
+    $versionedZipAssets = @($zipAssets | Where-Object { $_.Name -like "*$($entry.Version)*.zip" })
+    $candidates = if ($versionedZipAssets.Count -gt 0) { $versionedZipAssets } else { $zipAssets }
+    $zipAsset = $candidates | Sort-Object -Property Name | Select-Object -First 1
+  } else {
+    Write-Warning "Release $($entry.Tag) has no uploaded zip asset; its artifacts[] will be empty."
+  }
+
+  $entry | Add-Member -NotePropertyName ZipAssetUrl -NotePropertyValue $null
+  $entry | Add-Member -NotePropertyName ZipAssetSize -NotePropertyValue $null
+  $entry | Add-Member -NotePropertyName ZipSha256 -NotePropertyValue $null
+  if ($zipAsset) {
+    $entry.ZipAssetUrl = $zipAsset.Url
+    $entry.ZipSha256 = $zipAsset.Sha256
+    if (!$entry.ZipSha256) {
+      Write-Warning "Release $($entry.Tag) zip asset '$($zipAsset.Name)' exposes no usable sha256 digest."
     }
 
-    # API exposes both zipball_url/tarball_url, but those are redirecting api.github.com
-    # endpoints; keep stable codeload archives so consumers need no redirect handling.
-    [pscustomobject]@{
-      Patch = [int]$match.Groups[1].Value
-      Version = $version
-      Tag = $tag
-      ReleaseDate = ([datetime]$published).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
-      ReleaseUrl = [string]$release.html_url
-      ZipArchive = 'https://github.com/{0}/archive/refs/tags/{1}.zip' -f $Repository, $tag
-      TarballArchive = 'https://github.com/{0}/archive/refs/tags/{1}.tar.gz' -f $Repository, $tag
-      ZipAssetUrl = if ($zipAsset) { [string]$zipAsset.browser_download_url } else { $null }
-      ZipAssetSize = if ($zipAsset) { [int64]$zipAsset.size } else { 0 }
-      ZipSha256 = $zipSha256
+    try {
+      $assetHead = Invoke-WebRequest -Uri $zipAsset.Url -Method Head -Headers $headers -TimeoutSec 30 -MaximumRedirection 10 -UseBasicParsing
+      $contentLength = [string]$assetHead.Headers['Content-Length']
+      if ($contentLength -match '^\d+$') {
+        $entry.ZipAssetSize = [int64]$contentLength
+      }
+    } catch {
+      Write-Warning "Could not read the size of release asset '$($zipAsset.Name)': $($_.Exception.Message)"
     }
   }
-)
+}
 
 if ($picked.Count -eq 0) {
   throw "No stable '$Line' releases matching $stableTagPattern found in $Repository. Aborting so an empty registry can never be published."
@@ -119,9 +169,8 @@ $latest = $ordered[0].Version
 
 $versions = @(
   foreach ($entry in $ordered) {
-    # The release zip bundle is the artifact tooling actually downloads. Its sha256
-    # comes from the API asset digest; older assets without a digest omit the field
-    # rather than advertising an empty or approximate value.
+    # The release zip bundle is the artifact tooling actually downloads. Its
+    # sha256 comes from the public asset page when GitHub provides one.
     $artifacts = @(
       if ($entry.ZipAssetUrl) {
         $zipArtifact = [ordered]@{
@@ -129,7 +178,9 @@ $versions = @(
           arch = 'any'
           kind = 'zip'
           url = $entry.ZipAssetUrl
-          size = $entry.ZipAssetSize
+        }
+        if ($null -ne $entry.ZipAssetSize) {
+          $zipArtifact['size'] = $entry.ZipAssetSize
         }
         if ($entry.ZipSha256) {
           $zipArtifact['sha256'] = $entry.ZipSha256
@@ -150,7 +201,7 @@ $versions = @(
         zip = $entry.ZipArchive
         tarball = $entry.TarballArchive
       }
-      # Release zip bundle with its GitHub asset digest, when the API exposes one.
+      # Release zip bundle with its GitHub asset digest, when the page exposes one.
       artifacts = $artifacts
     }
   }
@@ -171,7 +222,7 @@ $document = [ordered]@{
   source = [ordered]@{
     repository = 'https://github.com/' + $Repository
     releasesApi = '{0}/repos/{1}/releases' -f $ApiBase, $Repository
-    attribution = 'Release metadata generated from the GitHub Releases API for ' + $Repository + '.'
+    attribution = 'Release metadata generated from the public GitHub Releases pages for ' + $Repository + '.'
   }
   channels = $channels
   versions = $versions

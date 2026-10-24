@@ -55,9 +55,6 @@ jobs:
     
     - name: Build HTML site
       shell: pwsh
-      env:
-        # Raises the GitHub Releases API rate limit for the version registry step.
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         ls -r tmp/wasm
         git clone https://github.com/axmolengine/axmol.git tmp/axmol-src
