@@ -24,10 +24,10 @@
     <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.38" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.39" rel="stylesheet">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Axmol","applicationCategory":"GameDevelopmentFramework","operatingSystem":"Windows, Linux, macOS, iOS, Android, Xbox, WebAssembly","url":"https://axmol.dev/","license":"https://github.com/axmolengine/axmol/blob/dev/LICENSE","codeRepository":"https://github.com/axmolengine/axmol"}</script>
   </head>
-  <body>
+  <body class="home-page">
     <a class="visually-hidden-focusable skip-link" href="#main-content">{{i18n:home.H109}}</a>
     <nav class="navbar navbar-expand-lg sticky-top glass-nav border-bottom" aria-label="{{i18n:home.H064}}">
       <div class="container">
@@ -106,27 +106,26 @@
     </nav>
     <main id="main-content">
       <div class="release-banner" role="status">
-        <div class="container d-flex flex-wrap align-items-center justify-content-center gap-2">
-          <span class="release-dot" aria-hidden="true">
-          </span>
-          <span>{{i18n:home.H088}}</span>
-          <a href="/v3/">{{i18n:home.H087}} <svg class="icon-inline" aria-hidden="true">
+        <div class="container release-banner-content">
+          <div class="release-announcement">
+            <span class="release-dot" aria-hidden="true"></span>
+            <span>{{i18n:home.H088}}</span>
+            <a href="/v3/">{{i18n:home.H087}} <svg class="icon-inline" aria-hidden="true">
               <use href="/assets/icons.svg#arrow-right">
               </use>
             </svg>
-          </a>
-        </div>
-      </div>
-      <div class="release-banner" role="status">
-        <div class="container d-flex flex-wrap align-items-center justify-content-center gap-2">
-          <span class="release-dot" aria-hidden="true">
-          </span>
-          <span>{{i18n:home.H134}}</span>
-          <a href="/hub/">{{i18n:home.H135}} <svg class="icon-inline" aria-hidden="true">
+            </a>
+          </div>
+          <span class="release-banner-divider" aria-hidden="true"></span>
+          <div class="release-announcement">
+            <span class="release-dot release-dot-hub" aria-hidden="true"></span>
+            <span>{{i18n:home.H134}}</span>
+            <a href="/hub/">{{i18n:home.H135}} <svg class="icon-inline" aria-hidden="true">
               <use href="/assets/icons.svg#arrow-right">
               </use>
             </svg>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
       <header class="hero hero-gradient position-relative overflow-hidden">
