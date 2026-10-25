@@ -524,17 +524,13 @@
       "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "H131": {
-      "value": "Un espacio de trabajo para Axmol",
-      "context": "homepage > Axmol Hub feature section eyebrow"
+    "H134": {
+      "value": "Axmol Hub 1.0.0 llegará pronto",
+      "context": "homepage > Axmol Hub announcement banner message"
     },
-    "H132": {
-      "value": "Descubre Axmol Hub",
-      "context": "homepage > Axmol Hub feature section link"
-    },
-    "H133": {
-      "value": "Ventana de la aplicación de escritorio Axmol Hub",
-      "context": "homepage > Axmol Hub screenshot alt text"
+    "H135": {
+      "value": "Explora la vista previa de Axmol Hub",
+      "context": "homepage > Axmol Hub announcement banner link"
     }
   },
   "v3": {
@@ -1844,7 +1840,7 @@
     "U143": "DESCARGAS",
     "U144": "Axmol Hub es la herramienta oficial que instala y gestiona versiones del motor, toolchains y objetivos de compilación.",
     "U147": "Axmol",
-    "U148": "Acceso anticipado",
+    "U148": "Vista previa",
     "U149": "Axmol Hub está en acceso anticipado: antes de la 1.0 puede haber imperfecciones y cambios que rompan la compatibilidad.",
     "U152": {
       "value": "El instalador de Windows ya incluye el runtime de .NET",
@@ -1855,16 +1851,20 @@
       "context": "html > body > main > header > p.small"
     },
     "U154": "Descargar para escritorio",
-    "U155": "Descargar para Windows",
+    "U155": "Descargar para Windows (x64)",
     "U156": "Descargar para macOS (Apple silicon)",
     "U157": "Descargar para macOS (Intel)",
-    "U158": "Descargar para Linux",
+    "U158": "Descargar para Linux (x64)",
     "U159": "Elige una plataforma de descarga",
     "U160": "Instalar Axmol con Axmol Hub",
     "U161": "Instala la última versión LTS {version} en Axmol Hub.",
     "U162": "Instalar desde GitHub",
     "U163": "Instalar desde AtomGit",
     "U164": "Si tienes instalada una versión anterior de Axmol Hub, desinstálala antes de instalar esta versión.",
-    "U165": "Versión actual:"
+    "U165": "Versión actual:",
+    "U166": "Descargar para Windows (ARM64)",
+    "U167": "Descargar para Linux (ARM64)",
+    "U168": "Windows 10/11, ARM64",
+    "U169": "Linux ARM64 (AppImage)"
   }
 }

@@ -524,17 +524,13 @@
       "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "H131": {
-      "value": "Рабочая среда Axmol",
-      "context": "homepage > Axmol Hub feature section eyebrow"
+    "H134": {
+      "value": "Axmol Hub 1.0.0 скоро выйдет",
+      "context": "homepage > Axmol Hub announcement banner message"
     },
-    "H132": {
-      "value": "Подробнее об Axmol Hub",
-      "context": "homepage > Axmol Hub feature section link"
-    },
-    "H133": {
-      "value": "Окно настольного приложения Axmol Hub",
-      "context": "homepage > Axmol Hub screenshot alt text"
+    "H135": {
+      "value": "Посмотреть превью Axmol Hub",
+      "context": "homepage > Axmol Hub announcement banner link"
     }
   },
   "v3": {
@@ -1844,7 +1840,7 @@
     "U143": "ЗАГРУЗКИ",
     "U144": "Axmol Hub — официальный инструмент для установки и управления версиями движка, toolchain и целями сборки.",
     "U147": "Axmol",
-    "U148": "Ранний доступ",
+    "U148": "Предварительная версия",
     "U149": "Axmol Hub находится на стадии раннего доступа: до версии 1.0 возможны недоработки и несовместимые изменения.",
     "U152": {
       "value": "Установщик для Windows уже включает среду .NET",
@@ -1855,16 +1851,20 @@
       "context": "html > body > main > header > p.small"
     },
     "U154": "Скачать для настольного компьютера",
-    "U155": "Скачать для Windows",
+    "U155": "Скачать для Windows (x64)",
     "U156": "Скачать для macOS (Apple silicon)",
     "U157": "Скачать для macOS (Intel)",
-    "U158": "Скачать для Linux",
+    "U158": "Скачать для Linux (x64)",
     "U159": "Выберите платформу для загрузки",
     "U160": "Установить Axmol с помощью Axmol Hub",
     "U161": "Установите последнюю LTS-версию {version} в Axmol Hub.",
     "U162": "Установить с GitHub",
     "U163": "Установить с AtomGit",
     "U164": "Если установлена старая версия Axmol Hub, сначала удалите её, а затем установите эту версию.",
-    "U165": "Текущая версия:"
+    "U165": "Текущая версия:",
+    "U166": "Скачать для Windows (ARM64)",
+    "U167": "Скачать для Linux (ARM64)",
+    "U168": "Windows 10/11, ARM64",
+    "U169": "Linux ARM64 (AppImage)"
   }
 }

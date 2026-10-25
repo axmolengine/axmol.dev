@@ -84,7 +84,11 @@ jobs:
         if (!$hubVersionMatch.Success) { throw 'Hub page is missing its baked current version' }
         $hubVersion = $hubVersionMatch.Groups['version'].Value
         if (!$hubHtml.Contains("releases/download/v$hubVersion/axmol-hub-$hubVersion-win-x64.exe")) { throw "Hub page is missing the v$hubVersion Windows installer link" }
+        if (!$hubHtml.Contains("releases/download/v$hubVersion/axmol-hub-$hubVersion-win-arm64.exe")) { throw "Hub page is missing the v$hubVersion Windows ARM64 installer link" }
         if (!$hubHtml.Contains("releases/download/v$hubVersion/axmol-hub-linux-x64.AppImage")) { throw "Hub page is missing the v$hubVersion Linux AppImage link" }
+        if (!$hubHtml.Contains("releases/download/v$hubVersion/axmol-hub-linux-arm64.AppImage")) { throw "Hub page is missing the v$hubVersion Linux ARM64 AppImage link" }
+        if (!$hubHtml.Contains("releases/download/v$hubVersion/axmol-hub-$hubVersion-osx-arm64.pkg")) { throw "Hub page is missing the v$hubVersion macOS Apple silicon installer link" }
+        if (!$hubHtml.Contains("releases/download/v$hubVersion/axmol-hub-$hubVersion-osx-x64.pkg")) { throw "Hub page is missing the v$hubVersion macOS Intel installer link" }
         foreach ($html in (Get-ChildItem ./dist -Filter index.html -Recurse)) {
           $content = Get-Content $html.FullName -Raw
           if ($content.Contains('{version}') -or $content -match '\{\{release:') { throw "$($html.FullName) has unresolved tokens" }

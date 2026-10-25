@@ -8,7 +8,7 @@
 
   const normalizeArchitecture = (architecture, bitness) => {
     const value = (architecture || '').toLowerCase();
-    if (value.includes('arm') || value.includes('aarch64')) {
+    if (value.includes('arm64') || value.includes('aarch64') || (value === 'arm' && bitness === '64')) {
       return 'arm64';
     }
     if (value.includes('x86_64') || value.includes('x86-64') || value.includes('amd64') || (value === 'x86' && bitness === '64')) {
@@ -20,8 +20,12 @@
   const getDownloadTarget = (platform, userAgent, architecture, bitness) => {
     const platformText = `${platform} ${userAgent}`.toLowerCase();
     const arch = normalizeArchitecture(architecture, bitness);
+    const isArm64 = arch === 'arm64' || /arm64|aarch64|armv8/i.test(`${platform} ${userAgent}`);
 
     if (platformText.includes('windows nt') || platformText.includes('windows')) {
+      if (isArm64) {
+        return 'windows-arm64';
+      }
       const is64Bit = arch === 'x64' || /win64|x64|wow64|amd64/i.test(userAgent);
       return is64Bit ? 'windows-x64' : '';
     }
@@ -38,6 +42,9 @@
       return 'macos-arm64';
     }
     if (platformText.includes('linux') || platformText.includes('x11')) {
+      if (isArm64) {
+        return 'linux-arm64';
+      }
       const is64Bit = arch === 'x64' || /x86_64|x64|amd64/i.test(`${platform} ${userAgent}`);
       return is64Bit ? 'linux-x64' : '';
     }

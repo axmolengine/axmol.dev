@@ -524,17 +524,13 @@
       "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "H131": {
-      "value": "Axmol 工作台",
-      "context": "homepage > Axmol Hub feature section eyebrow"
+    "H134": {
+      "value": "Axmol Hub 1.0.0 即将发布",
+      "context": "homepage > Axmol Hub announcement banner message"
     },
-    "H132": {
-      "value": "了解 Axmol Hub",
-      "context": "homepage > Axmol Hub feature section link"
-    },
-    "H133": {
-      "value": "Axmol Hub 桌面应用窗口",
-      "context": "homepage > Axmol Hub screenshot alt text"
+    "H135": {
+      "value": "了解 Axmol Hub 预览版",
+      "context": "homepage > Axmol Hub announcement banner link"
     }
   },
   "v3": {
@@ -1844,7 +1840,7 @@
     "U143": "下载",
     "U144": "Axmol Hub 是官方配套工具，用于安装和管理引擎版本、工具链与构建目标。",
     "U147": "Axmol",
-    "U148": "抢先体验",
+    "U148": "预览版",
     "U149": "Axmol Hub 目前处于抢先体验阶段，1.0 正式版之前可能存在不完善之处与破坏性变更。",
     "U152": {
       "value": "Windows 安装包已内置 .NET 运行时",
@@ -1855,16 +1851,20 @@
       "context": "html > body > main > header > p.small"
     },
     "U154": "下载桌面版",
-    "U155": "下载 Windows 版",
+    "U155": "下载 Windows 版（x64）",
     "U156": "下载 macOS 版（Apple 芯片）",
     "U157": "下载 macOS 版（Intel）",
-    "U158": "下载 Linux 版",
+    "U158": "下载 Linux 版（x64）",
     "U159": "选择下载平台",
     "U160": "使用 Axmol Hub 安装 Axmol 引擎",
     "U161": "在 Axmol Hub 中安装最新的 {version} LTS 版本。",
     "U162": "从 GitHub 安装",
     "U163": "从 AtomGit 安装",
     "U164": "如果已安装旧版 Axmol Hub，请先卸载旧版，再安装此版本。",
-    "U165": "当前版本："
+    "U165": "当前版本：",
+    "U166": "下载 Windows 版（ARM64）",
+    "U167": "下载 Linux 版（ARM64）",
+    "U168": "Windows 10/11，ARM64",
+    "U169": "Linux ARM64（AppImage）"
   }
 }

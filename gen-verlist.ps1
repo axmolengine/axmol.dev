@@ -22,6 +22,28 @@ $headers = @{
   'Accept' = 'text/html'
   'User-Agent' = 'axmol.dev-version-registry'
 }
+
+function Invoke-GitHubRequest {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$Uri,
+    [ValidateSet('Get', 'Head')]
+    [string]$Method = 'Get'
+  )
+
+  for ($attempt = 1; $attempt -le 3; ++$attempt) {
+    try {
+      return Invoke-WebRequest -Uri $Uri -Method $Method -Headers $headers -TimeoutSec 45 -MaximumRedirection 10 -UseBasicParsing
+    } catch {
+      if ($attempt -eq 3) {
+        throw
+      }
+      Write-Warning "GitHub request failed (attempt $attempt of 3); retrying: $Uri ($($_.Exception.Message))"
+      Start-Sleep -Seconds $attempt
+    }
+  }
+}
+
 $releasePageBase = 'https://github.com/{0}/releases' -f $Repository
 $releaseEntries = @()
 
@@ -29,7 +51,7 @@ $releaseEntries = @()
 # Releases REST API quota. Continue until the requested stable line is complete.
 for ($page = 1; $page -le $MaxPages; ++$page) {
   $uri = if ($page -eq 1) { $releasePageBase } else { '{0}?page={1}' -f $releasePageBase, $page }
-  $response = Invoke-WebRequest -Uri $uri -Headers $headers -TimeoutSec 30 -UseBasicParsing
+  $response = Invoke-GitHubRequest -Uri $uri
   $sections = [regex]::Matches(
     $response.Content,
     '(?is)<section\s+id="release-(?<tag>[^"\s]+)"[^>]*>(?<body>.*?)</section>'
@@ -104,7 +126,7 @@ if ($picked.Count -eq 0) {
 # without downloading the large source archive.
 foreach ($entry in $picked) {
   $assetsUri = 'https://github.com/{0}/releases/expanded_assets/{1}' -f $Repository, $entry.Tag
-  $assetsResponse = Invoke-WebRequest -Uri $assetsUri -Headers $headers -TimeoutSec 30 -UseBasicParsing
+  $assetsResponse = Invoke-GitHubRequest -Uri $assetsUri
   $assets = @(
     foreach ($row in [regex]::Matches($assetsResponse.Content, '(?is)<li\b[^>]*>(?<body>.*?)</li>')) {
       $body = $row.Groups['body'].Value
@@ -148,7 +170,7 @@ foreach ($entry in $picked) {
     }
 
     try {
-      $assetHead = Invoke-WebRequest -Uri $zipAsset.Url -Method Head -Headers $headers -TimeoutSec 30 -MaximumRedirection 10 -UseBasicParsing
+      $assetHead = Invoke-GitHubRequest -Uri $zipAsset.Url -Method Head
       $contentLength = [string]$assetHead.Headers['Content-Length']
       if ($contentLength -match '^\d+$') {
         $entry.ZipAssetSize = [int64]$contentLength

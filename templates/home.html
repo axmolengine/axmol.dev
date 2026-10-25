@@ -24,7 +24,7 @@
     <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.35" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.38" rel="stylesheet">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Axmol","applicationCategory":"GameDevelopmentFramework","operatingSystem":"Windows, Linux, macOS, iOS, Android, Xbox, WebAssembly","url":"https://axmol.dev/","license":"https://github.com/axmolengine/axmol/blob/dev/LICENSE","codeRepository":"https://github.com/axmolengine/axmol"}</script>
   </head>
   <body>
@@ -117,6 +117,18 @@
           </a>
         </div>
       </div>
+      <div class="release-banner" role="status">
+        <div class="container d-flex flex-wrap align-items-center justify-content-center gap-2">
+          <span class="release-dot" aria-hidden="true">
+          </span>
+          <span>{{i18n:home.H134}}</span>
+          <a href="/hub/">{{i18n:home.H135}} <svg class="icon-inline" aria-hidden="true">
+              <use href="/assets/icons.svg#arrow-right">
+              </use>
+            </svg>
+          </a>
+        </div>
+      </div>
       <header class="hero hero-gradient position-relative overflow-hidden">
         <div class="energy energy-a" aria-hidden="true">
         </div>
@@ -166,24 +178,6 @@
           </div>
         </div>
       </header>
-      <section class="section-panel" id="axmol-hub">
-        <div class="container">
-          <div class="row align-items-center g-4 g-lg-5">
-            <div class="col-lg-6">
-              <img class="img-fluid rounded-4 shadow-lg" src="/assets/img/hub_main_window.png?v=0.9.1" alt="{{i18n:home.H133}}" loading="lazy">
-            </div>
-            <div class="col-lg-6">
-              <p class="eyebrow">{{i18n:home.H131}}</p>
-              <h2>{{i18n:hub.U038}}</h2>
-              <p class="text-body-secondary">{{i18n:hub.U039}}</p>
-              <a class="btn btn-primary" href="/hub/">{{i18n:home.H132}} <svg class="icon-inline" aria-hidden="true">
-                  <use href="/assets/icons.svg#arrow-right"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="section-tight" id="v3-highlights">
         <div class="container">
           <div class="section-heading">
@@ -344,7 +338,7 @@
             </article>
           </div>
           <div class="support-footer">
-            <a class="btn btn-outline-primary" href="/sponsor/">{{i18n:home.H051}} <svg class="icon-inline" aria-hidden="true">
+            <a class="btn btn-outline-primary" href="/sponsor/#supporters">{{i18n:home.H051}} <svg class="icon-inline" aria-hidden="true">
                 <use href="/assets/icons.svg#arrow-right">
                 </use>
               </svg>

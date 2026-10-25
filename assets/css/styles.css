@@ -108,6 +108,12 @@
   vertical-align: middle;
 }
 
+.hub-platform-menu {
+  max-height: min(65vh, 28rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
 .nav-link.active {
   font-weight: 600;
   border-bottom: 2px solid var(--bs-primary);
@@ -171,6 +177,11 @@
   background-size: 200% 200%;
   animation: heroPulse 10s ease-in-out infinite;
   overflow: hidden;
+}
+
+.hero-gradient.hub-hero {
+  overflow: visible;
+  z-index: 2;
 }
 
 /* fade-out mask at the bottom */
@@ -617,7 +628,7 @@ svg.bi {
 .section-panel { padding: 5rem 0; background: rgba(var(--bs-primary-rgb), .045); border-top: 1px solid var(--ax-card-border); border-bottom: 1px solid var(--ax-card-border); }
 .section-heading { max-width: 44rem; margin-bottom: 2rem; }
 .section-heading h2 { margin-bottom: .75rem; }
-.badge-early-access { color: var(--ax-early-fg); background-color: var(--ax-early-bg); border: 1px solid var(--ax-early-border); font-size: .68rem; font-weight: 700; letter-spacing: .06em; }
+.badge-preview { color: var(--ax-early-fg); background-color: var(--ax-early-bg); border: 1px solid var(--ax-early-border); font-size: .68rem; font-weight: 700; letter-spacing: .06em; }
 .story-card { height: 100%; padding: 1.5rem; border: 1px solid var(--ax-card-border); border-radius: .9rem; background: var(--ax-card-bg); }
 .story-card h3 { margin: 1.1rem 0 .5rem; font-size: 1.05rem; }
 .story-card p { margin-bottom: 0; color: var(--bs-secondary); }

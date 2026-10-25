@@ -524,17 +524,13 @@
       "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "H131": {
-      "value": "A workbench for Axmol",
-      "context": "homepage > Axmol Hub feature section eyebrow"
+    "H134": {
+      "value": "Axmol Hub 1.0.0 is coming",
+      "context": "homepage > Axmol Hub announcement banner message"
     },
-    "H132": {
-      "value": "Explore Axmol Hub",
-      "context": "homepage > Axmol Hub feature section link"
-    },
-    "H133": {
-      "value": "Axmol Hub desktop application window",
-      "context": "homepage > Axmol Hub screenshot alt text"
+    "H135": {
+      "value": "Explore Axmol Hub preview",
+      "context": "homepage > Axmol Hub announcement banner link"
     }
   },
   "v3": {
@@ -1850,7 +1846,7 @@
     "U143": "DOWNLOADS",
     "U144": "Axmol Hub is the official companion tool that installs and manages engine releases, toolchains, and build targets.",
     "U147": "Axmol",
-    "U148": "Early Access",
+    "U148": "Preview",
     "U149": "Axmol Hub is in early access: expect rough edges and breaking changes before 1.0.",
     "U152": {
       "value": "Windows installer with the .NET runtime bundled",
@@ -1861,16 +1857,20 @@
       "context": "html > body > main > header > p.small"
     },
     "U154": "Download desktop",
-    "U155": "Download for Windows",
+    "U155": "Download for Windows (x64)",
     "U156": "Download for macOS (Apple silicon)",
     "U157": "Download for macOS (Intel)",
-    "U158": "Download for Linux",
+    "U158": "Download for Linux (x64)",
     "U159": "Choose a download platform",
     "U160": "Install Axmol with Axmol Hub",
     "U161": "Install the latest {version} LTS release in Axmol Hub.",
     "U162": "Install from GitHub",
     "U163": "Install from AtomGit",
     "U164": "If you have an older version of Axmol Hub installed, uninstall it before installing this version.",
-    "U165": "Current version:"
+    "U165": "Current version:",
+    "U166": "Download for Windows (ARM64)",
+    "U167": "Download for Linux (ARM64)",
+    "U168": "Windows 10/11, ARM64",
+    "U169": "Linux ARM64 (AppImage)"
   }
 }

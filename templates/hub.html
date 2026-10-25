@@ -24,7 +24,7 @@
     <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.35" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.38" rel="stylesheet">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Axmol Hub","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux","url":"https://axmol.dev/hub/","license":"https://github.com/axmolengine/axmol-hub/blob/master/LICENSE","codeRepository":"https://github.com/axmolengine/axmol-hub"}</script>
   </head>
   <body>
@@ -105,10 +105,10 @@
       </div>
     </nav>
     <main id="main-content">
-      <header class="hero hero-gradient text-center">
+      <header class="hero hero-gradient hub-hero text-center">
         <div class="container py-5 py-lg-6">
           <p class="eyebrow">{{i18n:hub.U037}}</p>
-          <h1 class="display-4 fw-bold text-glow mb-3">{{i18n:hub.U038}} <span class="badge badge-early-access align-middle">{{i18n:hub.U148}}</span></h1>
+          <h1 class="display-4 fw-bold text-glow mb-3">{{i18n:hub.U038}} <span class="badge badge-preview align-middle">{{i18n:hub.U148}}</span></h1>
           <p class="hero-lead mx-auto">{{i18n:hub.U039}}</p>
           <div class="d-flex flex-column align-items-center gap-3 mt-4" id="downloads">
             <p class="text-body-secondary small mb-0">{{i18n:hub.U165}} v{hubVersion}</p>
@@ -117,29 +117,41 @@
               <button class="btn btn-primary btn-lg dropdown-toggle dropdown-toggle-split" id="hub-download-options" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="{{i18n:hub.U159}}">
                 <span class="visually-hidden">{{i18n:hub.U159}}</span>
               </button>
-              <ul class="dropdown-menu" aria-labelledby="hub-download-options">
+              <ul class="dropdown-menu hub-platform-menu" aria-labelledby="hub-download-options">
                 <li>
-                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-win-x64.exe" data-hub-target="windows-x64" data-download-label="{{i18n:hub.U155}}">
-                    <span class="d-block">{{i18n:hub.U121}} (64-bit)</span>
-                    <span class="d-block small text-body-secondary">{{i18n:hub.U131}}</span>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-win-x64.exe" data-hub-target="windows-x64" data-download-label="{{i18n:hub.U155}}" title="{{i18n:hub.U131}}">
+                    <span>{{i18n:hub.U121}} (x64)</span>
+                    <span class="visually-hidden">{{i18n:hub.U131}}</span>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-osx-arm64.pkg" data-hub-target="macos-arm64" data-download-label="{{i18n:hub.U156}}">
-                    <span class="d-block">{{i18n:hub.U122}} ({{i18n:hub.U133}})</span>
-                    <span class="d-block small text-body-secondary">{{i18n:hub.U132}}</span>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-win-arm64.exe" data-hub-target="windows-arm64" data-download-label="{{i18n:hub.U166}}" title="{{i18n:hub.U168}}">
+                    <span>{{i18n:hub.U121}} ARM64</span>
+                    <span class="visually-hidden">{{i18n:hub.U168}}</span>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-osx-x64.pkg" data-hub-target="macos-x64" data-download-label="{{i18n:hub.U157}}">
-                    <span class="d-block">{{i18n:hub.U122}} ({{i18n:hub.U134}})</span>
-                    <span class="d-block small text-body-secondary">{{i18n:hub.U132}}</span>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-osx-arm64.pkg" data-hub-target="macos-arm64" data-download-label="{{i18n:hub.U156}}" title="{{i18n:hub.U132}}">
+                    <span>{{i18n:hub.U122}} ({{i18n:hub.U133}})</span>
+                    <span class="visually-hidden">{{i18n:hub.U132}}</span>
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-linux-x64.AppImage" data-hub-target="linux-x64" data-download-label="{{i18n:hub.U158}}">
-                    <span class="d-block">{{i18n:hub.U123}} x64</span>
-                    <span class="d-block small text-body-secondary">{{i18n:hub.U135}}</span>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-{hubVersion}-osx-x64.pkg" data-hub-target="macos-x64" data-download-label="{{i18n:hub.U157}}" title="{{i18n:hub.U132}}">
+                    <span>{{i18n:hub.U122}} ({{i18n:hub.U134}})</span>
+                    <span class="visually-hidden">{{i18n:hub.U132}}</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-linux-x64.AppImage" data-hub-target="linux-x64" data-download-label="{{i18n:hub.U158}}" title="{{i18n:hub.U135}}">
+                    <span>{{i18n:hub.U123}} x64 (AppImage)</span>
+                    <span class="visually-hidden">{{i18n:hub.U135}}</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item py-2" href="https://github.com/axmolengine/axmol-hub/releases/download/v{hubVersion}/axmol-hub-linux-arm64.AppImage" data-hub-target="linux-arm64" data-download-label="{{i18n:hub.U167}}" title="{{i18n:hub.U169}}">
+                    <span>{{i18n:hub.U123}} ARM64 (AppImage)</span>
+                    <span class="visually-hidden">{{i18n:hub.U169}}</span>
                   </a>
                 </li>
               </ul>
@@ -214,6 +226,6 @@
     </footer>
     <script src="/assets/js/bootstrap.bundle.min.js?v=5.3.8"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
-    <script src="/assets/js/hub-download.js?v=1.0.1"></script>
+    <script src="/assets/js/hub-download.js?v=1.0.2"></script>
   </body>
 </html>

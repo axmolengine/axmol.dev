@@ -524,17 +524,13 @@
       "value": "Axmol Hub",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "H131": {
-      "value": "Axmol のワークベンチ",
-      "context": "homepage > Axmol Hub feature section eyebrow"
+    "H134": {
+      "value": "Axmol Hub 1.0.0 がまもなく登場",
+      "context": "homepage > Axmol Hub announcement banner message"
     },
-    "H132": {
-      "value": "Axmol Hub を見る",
-      "context": "homepage > Axmol Hub feature section link"
-    },
-    "H133": {
-      "value": "Axmol Hub デスクトップアプリのウィンドウ",
-      "context": "homepage > Axmol Hub screenshot alt text"
+    "H135": {
+      "value": "Axmol Hub のプレビューを見る",
+      "context": "homepage > Axmol Hub announcement banner link"
     }
   },
   "v3": {
@@ -1844,7 +1840,7 @@
     "U143": "ダウンロード",
     "U144": "Axmol Hub は、エンジンのリリース・ツールチェーン・ビルドターゲットをインストールして管理する公式コンパニオンツールです。",
     "U147": "Axmol",
-    "U148": "アーリーアクセス",
+    "U148": "プレビュー版",
     "U149": "Axmol Hub はアーリーアクセス版です。1.0 に向けて未完成な部分や破壊的な変更が含まれる可能性があります。",
     "U152": {
       "value": "Windows インストーラーには .NET ランタイム同梱",
@@ -1855,16 +1851,20 @@
       "context": "html > body > main > header > p.small"
     },
     "U154": "デスクトップ版をダウンロード",
-    "U155": "Windows 版をダウンロード",
+    "U155": "Windows 版をダウンロード（x64）",
     "U156": "macOS 版をダウンロード（Apple シリコン）",
     "U157": "macOS 版をダウンロード（Intel）",
-    "U158": "Linux 版をダウンロード",
+    "U158": "Linux 版をダウンロード（x64）",
     "U159": "ダウンロードするプラットフォームを選択",
     "U160": "Axmol Hub で Axmol をインストール",
     "U161": "Axmol Hub で最新の {version} LTS をインストールします。",
     "U162": "GitHub からインストール",
     "U163": "AtomGit からインストール",
     "U164": "古い Axmol Hub がインストールされている場合は、先にアンインストールしてから、このバージョンをインストールしてください。",
-    "U165": "現在のバージョン："
+    "U165": "現在のバージョン：",
+    "U166": "Windows 版をダウンロード（ARM64）",
+    "U167": "Linux 版をダウンロード（ARM64）",
+    "U168": "Windows 10/11、ARM64",
+    "U169": "Linux ARM64（AppImage）"
   }
 }
