@@ -766,7 +766,7 @@ svg.bi {
 .lifetime-example-card { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); align-items: center; gap: 1rem; }
 .lifetime-example-card[hidden] { display: none !important; }
 .lifetime-example-card .supporter-logo { min-height: 0; justify-content: flex-start; margin: 0; }
-.lifetime-example-card .supporter-logo img { height: 100px; }
+.lifetime-example-card .supporter-logo img { height: 125px; }
 .lifetime-example-title { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .5rem; }
 .lifetime-example-title h4 { margin: 0; font-size: 1.2rem; }
 .lifetime-preview-badge { display: inline-flex; align-items: center; padding: .2rem .45rem; border: 1px solid var(--ax-preview-border); border-radius: 999px; background: var(--ax-preview-bg); color: var(--ax-preview-fg); font: inherit; font-size: .7rem; font-weight: 700; line-height: 1.2; cursor: help; }
@@ -777,7 +777,7 @@ svg.bi {
   .sponsor-page .supporter-patron-card { grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); gap: .75rem; padding: 1rem; }
   .sponsor-page .corporate-tier-patron .supporter-logo img { height: 130px; }
   .lifetime-example-card { grid-template-columns: minmax(0, 7rem) minmax(0, 1fr); gap: .75rem; padding: 1rem; }
-  .lifetime-example-card .supporter-logo img { height: 82px; }
+  .lifetime-example-card .supporter-logo img { height: 100px; }
 }
 .support-footer { margin-top: 1.5rem; text-align: center; }
 .support-actions { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 1rem; }

@@ -1481,7 +1481,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P160": {
-      "value": "Прежние спонсоры",
+      "value": "Прежние",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > h3.supporter-group-title > span"
     },
     "P157": {
@@ -1672,8 +1672,8 @@
       "value": "Скачать",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "P176": { "value": "ПОСТОЯННОЕ РАЗМЕЩЕНИЕ", "context": "Краткий заголовок группы корпоративных логотипов с постоянным размещением" },
-    "P178": { "value": "Чтобы справедливо отмечать сопоставимый вклад, здесь представлены компании с крупной разовой поддержкой или регулярной ежемесячной поддержкой сопоставимого уровня.", "context": "Критерии размещения логотипа постоянных спонсоров" },
+    "P176": { "value": "ПОЧЁТНЫЕ", "context": "Краткий заголовок группы почётных корпоративных логотипов" },
+    "P178": { "value": "Логотипы компаний с совокупным вкладом от 15 000 долларов США размещаются здесь бессрочно.", "context": "Критерии и бессрочное размещение почётных корпоративных логотипов" },
     "P182": { "value": "dataHabibi", "context": "Компания в предложенной карточке, видимой только в предпросмотре" },
     "P183": { "value": "Данные о недвижимости Дубая и аналитика рынка.", "context": "Описание компании в предложенной карточке, видимой только в предпросмотре" },
     "P187": { "value": "Логотип dataHabibi", "context": "Альтернативный текст официального логотипа в предложенной карточке, видимой только в предпросмотре" },

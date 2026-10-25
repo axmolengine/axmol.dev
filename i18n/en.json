@@ -1481,7 +1481,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P160": {
-      "value": "Past supporters",
+      "value": "Past",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > h3.supporter-group-title > span"
     },
     "P157": {
@@ -1672,8 +1672,8 @@
       "value": "Download",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "P176": { "value": "Lifetime", "context": "Concise lifetime corporate logo group heading in the public supporters section" },
-    "P178": { "value": "To recognize comparable support fairly, this listing is for substantial one-time contributions or sustained monthly support at a comparable level.", "context": "Eligibility for Lifetime Supporters logo listings" },
+    "P176": { "value": "Honorary", "context": "Concise honorary corporate logo group heading in the public supporters section" },
+    "P178": { "value": "Permanent logo recognition for corporate sponsors whose lifetime contributions total US$15,000 or more.", "context": "Eligibility and permanent recognition for honorary corporate logo listings" },
     "P182": { "value": "dataHabibi", "context": "Company name in the preview-only proposed listing" },
     "P183": { "value": "Dubai real estate data and market insights.", "context": "Company description for the preview-only proposed listing" },
     "P187": { "value": "dataHabibi logo", "context": "Alt text for the official company logo in the preview-only proposed listing" },

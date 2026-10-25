@@ -1481,7 +1481,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P160": {
-      "value": "历史支持者",
+      "value": "往届支持者",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > h3.supporter-group-title > span"
     },
     "P157": {
@@ -1672,8 +1672,8 @@
       "value": "下载",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "P176": { "value": "永久展示", "context": "PUBLIC SUPPORTERS 区域中的企业永久展示 Logo 分组短标题" },
-    "P178": { "value": "为公平认可相当规模的支持，此处展示一次性大额赞助或长期月度赞助达到相当额度的企业。", "context": "永久支持者 Logo 展示资格说明" },
+    "P176": { "value": "荣誉", "context": "PUBLIC SUPPORTERS 区域中的企业荣誉 Logo 展示分组短标题" },
+    "P178": { "value": "企业累计赞助达到 15,000 美元及以上，可获永久 Logo 展示。", "context": "企业荣誉 Logo 展示资格及永久展示说明" },
     "P182": { "value": "dataHabibi", "context": "仅预览模式拟议展示卡中的企业名称" },
     "P183": { "value": "迪拜房地产数据与市场洞察。", "context": "仅预览模式拟议展示卡中的企业简介" },
     "P187": { "value": "dataHabibi Logo", "context": "仅预览模式拟议展示卡中官方企业 Logo 的替代文本" },

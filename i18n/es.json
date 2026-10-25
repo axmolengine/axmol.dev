@@ -1481,7 +1481,7 @@
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P160": {
-      "value": "Antiguos patrocinadores",
+      "value": "Anteriores",
       "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > h3.supporter-group-title > span"
     },
     "P157": {
@@ -1672,8 +1672,8 @@
       "value": "Descargar",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
-    "P176": { "value": "Reconocimiento permanente", "context": "Título breve del grupo de logotipos corporativos permanentes" },
-    "P178": { "value": "Para reconocer de forma justa apoyos de magnitud similar, aquí se muestran empresas con aportaciones únicas importantes o aportaciones mensuales sostenidas de un nivel comparable.", "context": "Requisitos para aparecer en la lista de colaboradores permanentes" },
+    "P176": { "value": "Honoríficos", "context": "Título breve del grupo de logotipos corporativos honoríficos" },
+    "P178": { "value": "Logotipos permanentes de empresas cuyas aportaciones acumuladas alcanzan los 15.000 USD.", "context": "Requisitos y reconocimiento permanente para los logotipos corporativos honoríficos" },
     "P182": { "value": "dataHabibi", "context": "Empresa en la ficha propuesta, solo visible en la vista previa" },
     "P183": { "value": "Datos inmobiliarios de Dubái e información del mercado.", "context": "Descripción de la empresa en la ficha propuesta, solo visible en la vista previa" },
     "P187": { "value": "Logotipo de dataHabibi", "context": "Texto alternativo del logotipo oficial en la ficha propuesta, solo visible en la vista previa" },
