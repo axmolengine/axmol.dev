@@ -19,6 +19,7 @@
   --ax-accent-rgb: 0, 200, 150;
   --ax-card-bg: #ffffff;
   --ax-card-border: #e9ecef;
+  --ax-supporter-divider: #cbd1d8;
   --ax-early-bg: #ffca2c;
   --ax-early-fg: #3d3000;
   --ax-early-border: rgba(61, 48, 0, 0.18);
@@ -40,6 +41,7 @@
   --ax-accent-rgb: 0, 200, 150;
   --ax-card-bg: #1a1a20;
   --ax-card-border: rgba(255, 255, 255, 0.08);
+  --ax-supporter-divider: rgba(255, 255, 255, 0.16);
   --ax-early-bg: #7a5c0b;
   --ax-early-fg: #ffe08a;
   --ax-early-border: rgba(255, 224, 138, 0.28);
@@ -647,12 +649,32 @@ svg.bi {
 .sponsor-hero-copy > p:not(.hero-lead) { max-width: 46rem; margin-left: auto; margin-right: auto; }
 .sponsor-page .supporter-card { min-height: 0; }
 .sponsor-page .supporter-logo { min-height: 13rem; }
-.sponsor-page .supporter-featured { align-items: center; text-align: center; }
-.sponsor-page .supporter-featured .supporter-logo { display: flex; width: 100%; align-items: center; justify-content: center; }
-.sponsor-page .supporter-names { max-width: none; }
-.sponsor-page .supporter-names dt { margin-top: 1rem; font-weight: 600; }
-.sponsor-page .supporter-names dt:first-of-type { margin-top: 0; }
-.sponsor-page .supporter-names dd { margin-bottom: 0; color: var(--bs-secondary-color); }
+.sponsor-page .sponsor-support-panel { border-bottom: 0; }
+.sponsor-page { --ax-preview-bg: #ffca2c; --ax-preview-fg: #3d3000; --ax-preview-border: rgba(61, 48, 0, .24); }
+.sponsor-page #supporters { background: linear-gradient(180deg, rgba(var(--bs-primary-rgb), .045) 0, var(--bs-body-bg) 5rem); }
+.sponsor-page #supporters > .container > .section-heading { width: 100%; max-width: none; margin: 0 0 2rem; text-align: left; }
+.sponsor-page #supporters > .container > .section-heading h2 { text-align: left; }
+.sponsor-page .supporter-groups { max-width: 70rem; margin: 0 auto; text-align: center; }
+.sponsor-page .supporter-group { position: relative; padding: 0 0 1.5rem; border-top: 0; }
+.sponsor-page .supporter-group::before { position: absolute; top: .75rem; right: 0; left: 0; border-top: 1px solid var(--ax-supporter-divider); content: ""; }
+.sponsor-page .supporter-group-title { position: relative; z-index: 1; display: inline-flex; min-height: 1.5rem; align-items: center; justify-content: center; gap: .45rem; margin: 0 0 .9rem; padding: 0 .8rem; background: var(--bs-body-bg); color: var(--bs-body-color); font-size: 1rem; font-weight: 700; letter-spacing: .04em; line-height: 1.5rem; }
+.sponsor-page .supporter-patron-group .supporter-group-title { text-transform: uppercase; }
+.sponsor-page .supporter-names { max-width: 52rem; margin: 0 auto; color: var(--bs-secondary-color); line-height: 1.7; }
+.supporter-info-trigger { display: inline-flex; width: 1.2rem; height: 1.2rem; align-items: center; justify-content: center; padding: 0; border: 0; border-radius: 50%; background: transparent; color: var(--bs-secondary-color); cursor: help; }
+.supporter-info-trigger:hover, .supporter-info-trigger:focus-visible { color: var(--bs-body-color); outline: none; }
+.supporter-info-icon { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.supporter-info-dot { fill: currentColor; stroke: none; }
+.sponsor-page .supporter-logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); justify-items: center; gap: 1rem; }
+.sponsor-page .supporter-logo-grid > .supporter-card { width: 100%; max-width: 40rem; }
+.sponsor-page .supporter-patron-card { display: grid; grid-template-columns: minmax(0, 14rem) minmax(0, 1fr); align-items: center; gap: 1.25rem; text-align: center; }
+.sponsor-page .supporter-patron-card .supporter-logo { min-width: 0; min-height: 0; justify-content: flex-start; margin: 0; }
+.sponsor-page .supporter-patron-copy h4 { margin: 0 0 .5rem; font-size: 1.2rem; }
+.sponsor-page .corporate-tier-bronze .supporter-logo img { height: 100px; }
+.sponsor-page .corporate-tier-silver .supporter-logo img { height: 125px; }
+.sponsor-page .corporate-tier-gold .supporter-logo img { height: 150px; }
+.sponsor-page .corporate-tier-platinum .supporter-logo img { height: 175px; }
+.sponsor-page .corporate-tier-diamond .supporter-logo img { height: 200px; }
+.sponsor-page .corporate-tier-patron .supporter-logo img { height: 240px; }
 .sponsor-page .quick-link strong { white-space: nowrap; }
 .sponsor-channel-select { display: grid; max-width: 22rem; gap: .35rem; color: var(--bs-secondary-color); font-size: .875rem; font-weight: 600; }
 .sponsor-channel-select select { min-height: 2.75rem; padding: .55rem 2.4rem .55rem .8rem; border: 1px solid var(--ax-card-border); border-radius: .75rem; background-color: var(--ax-card-bg); color: var(--bs-body-color); font: inherit; }
@@ -724,6 +746,23 @@ svg.bi {
 .supporter-card p { margin-bottom: 1rem; }
 .supporter-link { margin-top: auto; color: var(--ax-accent); font-weight: 600; text-decoration: none; }
 .supporter-link:hover { text-decoration: underline; }
+.lifetime-supporters-section { scroll-margin-top: 6rem; }
+.lifetime-example-card { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); align-items: center; gap: 1rem; }
+.lifetime-example-card[hidden] { display: none !important; }
+.lifetime-example-card .supporter-logo { min-height: 0; justify-content: flex-start; margin: 0; }
+.lifetime-example-card .supporter-logo img { height: 100px; }
+.lifetime-example-title { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .5rem; }
+.lifetime-example-title h4 { margin: 0; font-size: 1.2rem; }
+.lifetime-preview-badge { display: inline-flex; align-items: center; padding: .2rem .45rem; border: 1px solid var(--ax-preview-border); border-radius: 999px; background: var(--ax-preview-bg); color: var(--ax-preview-fg); font: inherit; font-size: .7rem; font-weight: 700; line-height: 1.2; cursor: help; }
+.lifetime-preview-badge:hover, .lifetime-preview-badge:focus-visible { border-color: var(--bs-secondary-color); color: var(--bs-body-color); outline: none; }
+@media (max-width: 767.98px) {
+  .sponsor-page #supporters { background: linear-gradient(180deg, rgba(var(--bs-primary-rgb), .045) 0, var(--bs-body-bg) 3.5rem); }
+  .sponsor-page .supporter-group { padding: 0 0 1.2rem; }
+  .sponsor-page .supporter-patron-card { grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); gap: .75rem; padding: 1rem; }
+  .sponsor-page .corporate-tier-patron .supporter-logo img { height: 130px; }
+  .lifetime-example-card { grid-template-columns: minmax(0, 7rem) minmax(0, 1fr); gap: .75rem; padding: 1rem; }
+  .lifetime-example-card .supporter-logo img { height: 82px; }
+}
 .support-footer { margin-top: 1.5rem; text-align: center; }
 .support-actions { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 1rem; }
 .support-brand { display: inline-flex; align-items: center; gap: .65rem; color: var(--bs-body-color); font-size: 1.45rem; font-weight: 700; letter-spacing: .02em; text-decoration: none; }

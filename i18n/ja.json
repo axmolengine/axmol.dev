@@ -433,7 +433,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
     },
     "H053": {
-      "value": "法人ダイヤモンド",
+      "value": "法人パトロン",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
     },
     "H046": {
@@ -1370,19 +1370,11 @@
     },
     "P162": {
       "value": "公開支援者",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.eyebrow"
-    },
-    "P164": {
-      "value": "オープンに支えられています。",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2"
-    },
-    "P155": {
-      "value": "Axmol の長期的な保守を支援する組織と個人に感謝します。",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2.eyebrow"
     },
     "P169": {
-      "value": "法人ダイヤモンド",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
+      "value": "パトロン",
+      "context": "法人パトロンのロゴカード一覧の見出し"
     },
     "P152": {
       "value": "法人スポンサーのランクを見る",
@@ -1466,43 +1458,39 @@
     },
     "P151": {
       "value": "Scorewarrior",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > div.supporter-logo-grid > article.supporter-card > a.supporter-logo > img [alt]"
     },
     "P163": {
       "value": "Scorewarrior",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > h3.h5"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > article.supporter-card > div.supporter-patron-copy > h4"
     },
     "P154": {
       "value": "Axmol 開発への長期的な資金支援。",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > p.text-body-secondary"
-    },
-    "P153": {
-      "value": "その他の公開支援者",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > h3"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > article.supporter-card > div.supporter-patron-copy > p"
     },
     "P161": {
       "value": "プラチナ",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > h3.supporter-group-title > span"
     },
     "P158": {
       "value": "peterkharitonov, Alain-Serge Nagni",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P159": {
       "value": "支援者",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > h3.supporter-group-title > span"
     },
     "P156": {
       "value": "DUONG, thienphuoc, paulocoutinhox, clvs7-gh",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P160": {
-      "value": "貢献者",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "value": "過去の支援者",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > h3.supporter-group-title > span"
     },
     "P157": {
       "value": "Explorer, 蚊子别跑, 午餐界, 椰子, 零, Turky Mohammed, Paul Gardiner, Julien, Javier Barros, Paulo Coutinho, deal11, bingsoo",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > p.supporter-names"
     },
     "P030": {
       "value": "よくある質問",
@@ -1687,7 +1675,19 @@
     "P175": {
       "value": "ダウンロード",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
-    }
+    },
+    "P176": { "value": "恒久掲載", "context": "公開サポーター一覧にある企業ロゴグループの短い見出し" },
+    "P178": { "value": "同等規模の支援を公平に評価するため、一度の大口支援、または同等額に達する継続的な月額支援を行う企業を掲載します。", "context": "恒久サポーターのロゴ掲載資格" },
+    "P182": { "value": "dataHabibi", "context": "プレビュー専用の掲載提案カードに表示する企業名" },
+    "P183": { "value": "ドバイの不動産データと市場分析。", "context": "プレビュー専用の掲載提案カードに表示する企業紹介" },
+    "P187": { "value": "dataHabibi のロゴ", "context": "プレビュー専用の掲載提案カードに使う公式ロゴの代替テキスト" },
+    "P188": { "value": "パトロン企業は axmol.dev のホームページにも掲載されます。", "context": "スポンサー一覧とホームページでのパトロン企業の紹介を説明するツールチップ" },
+    "P189": { "value": "プラチナ枠の個人サポーターです。", "context": "個人プラチナ一覧を説明するツールチップ" },
+    "P190": { "value": "少額で支援する個人サポーターです。", "context": "個人バッカーズ一覧を説明するツールチップ" },
+    "P191": { "value": "過去に少額で支援した個人の一覧です。", "context": "過去のサポーター一覧を説明するツールチップ" },
+    "P192": { "value": "詳細情報", "context": "サポーター区分の情報アイコンに付けるアクセシブルラベル" },
+    "P193": { "value": "プレビュー", "context": "恒久掲載の提案カードがプレビューであることを示す表示" },
+    "P194": { "value": "プレビュー専用です。スポンサー費用の支払いが完了したことを示すものではありません。", "context": "提案カードはスポンサー費用の支払い済みを示さないことを説明するツールチップ" }
   },
   "sponsorRuntime": {
     "R001": "Alipay",

@@ -433,7 +433,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
     },
     "H053": {
-      "value": "DIAMANTE CORPORATIVO",
+      "value": "MECENAS CORPORATIVO",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
     },
     "H046": {
@@ -1370,19 +1370,11 @@
     },
     "P162": {
       "value": "APOYOS PÚBLICOS",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.eyebrow"
-    },
-    "P164": {
-      "value": "Apoyos abiertos.",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2"
-    },
-    "P155": {
-      "value": "Nuestro agradecimiento a las organizaciones y personas que apoyan el mantenimiento a largo plazo de Axmol.",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2.eyebrow"
     },
     "P169": {
-      "value": "DIAMANTE CORPORATIVO",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
+      "value": "MECENAS",
+      "context": "Encabezado de las fichas de logotipos de mecenas corporativos"
     },
     "P152": {
       "value": "Ver categorías de patrocinio corporativo",
@@ -1466,43 +1458,39 @@
     },
     "P151": {
       "value": "Scorewarrior",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > div.supporter-logo-grid > article.supporter-card > a.supporter-logo > img [alt]"
     },
     "P163": {
       "value": "Scorewarrior",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > h3.h5"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > article.supporter-card > div.supporter-patron-copy > h4"
     },
     "P154": {
       "value": "Apoyo financiero a largo plazo para el desarrollo de Axmol.",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > p.text-body-secondary"
-    },
-    "P153": {
-      "value": "Otros apoyos públicos",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > h3"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > article.supporter-card > div.supporter-patron-copy > p"
     },
     "P161": {
       "value": "Platino",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > h3.supporter-group-title > span"
     },
     "P158": {
       "value": "peterkharitonov, Alain-Serge Nagni",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P159": {
       "value": "Patrocinadores",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > h3.supporter-group-title > span"
     },
     "P156": {
       "value": "DUONG, thienphuoc, paulocoutinhox, clvs7-gh",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P160": {
-      "value": "Colaboradores",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "value": "Antiguos patrocinadores",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > h3.supporter-group-title > span"
     },
     "P157": {
       "value": "Explorer, 蚊子别跑, 午餐界, 椰子, 零, Turky Mohammed, Paul Gardiner, Julien, Javier Barros, Paulo Coutinho, deal11, bingsoo",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > p.supporter-names"
     },
     "P030": {
       "value": "Preguntas frecuentes",
@@ -1687,7 +1675,19 @@
     "P175": {
       "value": "Descargar",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
-    }
+    },
+    "P176": { "value": "Reconocimiento permanente", "context": "Título breve del grupo de logotipos corporativos permanentes" },
+    "P178": { "value": "Para reconocer de forma justa apoyos de magnitud similar, aquí se muestran empresas con aportaciones únicas importantes o aportaciones mensuales sostenidas de un nivel comparable.", "context": "Requisitos para aparecer en la lista de colaboradores permanentes" },
+    "P182": { "value": "dataHabibi", "context": "Empresa en la ficha propuesta, solo visible en la vista previa" },
+    "P183": { "value": "Datos inmobiliarios de Dubái e información del mercado.", "context": "Descripción de la empresa en la ficha propuesta, solo visible en la vista previa" },
+    "P187": { "value": "Logotipo de dataHabibi", "context": "Texto alternativo del logotipo oficial en la ficha propuesta, solo visible en la vista previa" },
+    "P188": { "value": "Las empresas mecenas también aparecen en la página de inicio de axmol.dev.", "context": "Información sobre la presencia de mecenas en Patrocinio y en la página de inicio" },
+    "P189": { "value": "Colaboradores individuales de categoría Platino.", "context": "Información sobre el grupo Platino individual" },
+    "P190": { "value": "Colaboradores individuales con aportaciones pequeñas.", "context": "Información sobre el grupo individual Backers" },
+    "P191": { "value": "Registro de antiguos colaboradores individuales con aportaciones pequeñas.", "context": "Información sobre el grupo de colaboradores anteriores" },
+    "P192": { "value": "Más información", "context": "Etiqueta accesible de los iconos informativos de los grupos" },
+    "P193": { "value": "Vista previa", "context": "Insignia visible que marca como vista previa la ficha propuesta de colaboradores permanentes" },
+    "P194": { "value": "Solo para vista previa; no significa que se haya pagado el patrocinio.", "context": "Información emergente que aclara que la ficha propuesta no confirma un pago" }
   },
   "sponsorRuntime": {
     "R001": "Alipay",

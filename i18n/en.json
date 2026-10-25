@@ -433,7 +433,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
     },
     "H053": {
-      "value": "CORPORATE DIAMOND",
+      "value": "CORPORATE PATRON",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
     },
     "H046": {
@@ -1370,19 +1370,11 @@
     },
     "P162": {
       "value": "PUBLIC SUPPORTERS",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.eyebrow"
-    },
-    "P164": {
-      "value": "Supported in the open.",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2"
-    },
-    "P155": {
-      "value": "We thank the organizations and individuals supporting Axmol’s long-term maintenance.",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2.eyebrow"
     },
     "P169": {
-      "value": "CORPORATE DIAMOND",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
+      "value": "PATRON",
+      "context": "Corporate Patron logo group heading in the public supporters section"
     },
     "P152": {
       "value": "View sponsorship tiers",
@@ -1466,43 +1458,39 @@
     },
     "P151": {
       "value": "Scorewarrior",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > div.supporter-logo-grid > article.supporter-card > a.supporter-logo > img [alt]"
     },
     "P163": {
       "value": "Scorewarrior",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > h3.h5"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > article.supporter-card > div.supporter-patron-copy > h4"
     },
     "P154": {
       "value": "Long-term financial support for Axmol development.",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > p.text-body-secondary"
-    },
-    "P153": {
-      "value": "Other public supporters",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > h3"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > article.supporter-card > div.supporter-patron-copy > p"
     },
     "P161": {
       "value": "Platinum",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > h3.supporter-group-title > span"
     },
     "P158": {
       "value": "peterkharitonov, Alain-Serge Nagni",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P159": {
       "value": "Backers",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > h3.supporter-group-title > span"
     },
     "P156": {
       "value": "DUONG, thienphuoc, paulocoutinhox, clvs7-gh",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P160": {
-      "value": "Contributors",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "value": "Past supporters",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > h3.supporter-group-title > span"
     },
     "P157": {
       "value": "Explorer, 蚊子别跑, 午餐界, 椰子, 零, Turky Mohammed, Paul Gardiner, Julien, Javier Barros, Paulo Coutinho, deal11, bingsoo",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > p.supporter-names"
     },
     "P030": {
       "value": "FAQ",
@@ -1687,7 +1675,19 @@
     "P175": {
       "value": "Download",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
-    }
+    },
+    "P176": { "value": "Lifetime", "context": "Concise lifetime corporate logo group heading in the public supporters section" },
+    "P178": { "value": "To recognize comparable support fairly, this listing is for substantial one-time contributions or sustained monthly support at a comparable level.", "context": "Eligibility for Lifetime Supporters logo listings" },
+    "P182": { "value": "dataHabibi", "context": "Company name in the preview-only proposed listing" },
+    "P183": { "value": "Dubai real estate data and market insights.", "context": "Company description for the preview-only proposed listing" },
+    "P187": { "value": "dataHabibi logo", "context": "Alt text for the official company logo in the preview-only proposed listing" },
+    "P188": { "value": "Patron supporters are also featured on the axmol.dev homepage.", "context": "Tooltip explaining Patron recognition on the Sponsor page and homepage" },
+    "P189": { "value": "Individual supporters in the Platinum tier.", "context": "Tooltip explaining the individual Platinum group" },
+    "P190": { "value": "Individual supporters making smaller contributions.", "context": "Tooltip explaining the individual Backers group" },
+    "P191": { "value": "A record of former small individual supporters.", "context": "Tooltip explaining the Past supporters group" },
+    "P192": { "value": "More information", "context": "Accessible label for supporter group information icons" },
+    "P193": { "value": "Preview", "context": "Visible badge marking the proposed Lifetime supporter card as a preview" },
+    "P194": { "value": "Preview only; this does not indicate that sponsorship payment has been made.", "context": "Tooltip clarifying the proposed supporter card is not a paid sponsorship" }
   },
   "sponsorRuntime": {
     "R001": "Alipay",

@@ -25,7 +25,7 @@
       })();
     </script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.19" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.35" rel="stylesheet">
   </head>
   <body class="sponsor-page">
     <a class="visually-hidden-focusable skip-link" href="#main-content">{{i18n:sponsor.P105}}</a>
@@ -172,7 +172,7 @@
         </div>
       </header>
 
-      <section class="section-panel">
+      <section class="section-panel sponsor-support-panel">
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">{{i18n:sponsor.P121}}</p>
@@ -271,35 +271,109 @@
       <section class="section-tight support-strip" id="supporters">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">{{i18n:sponsor.P162}}</p>
-            <h2>{{i18n:sponsor.P164}}</h2>
-            <p class="text-body-secondary">{{i18n:sponsor.P155}}</p>
+            <h2 class="eyebrow">{{i18n:sponsor.P162}}</h2>
           </div>
-          <div class="row g-3 justify-content-center supporter-featured-row">
-            <div class="col-md-8 col-lg-5">
-              <article class="supporter-card supporter-featured h-100">
-                <div class="supporter-tier">{{i18n:sponsor.P169}}</div>
-                <a class="supporter-logo" href="https://scorewarrior.com/?utm_source=axmol.dev"
-                  target="_blank" rel="noopener">
-                  <img src="https://cdn.prod.website-files.com/633da33305ac754156026dd8/63566f1edf5f0712f94f7f1b_sw-triangle-821890.svg"
-                  alt="{{i18n:sponsor.P151}}">
-                </a>
-                <h3 class="h5">{{i18n:sponsor.P163}}</h3>
-                <p class="text-body-secondary mb-0">{{i18n:sponsor.P154}}</p>
-              </article>
-            </div>
+          <div class="supporter-groups">
+            <section class="supporter-group supporter-patron-group">
+              <h3 class="supporter-group-title">
+                <span>{{i18n:sponsor.P169}}</span>
+                <button class="supporter-info-trigger" type="button" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="{{i18n:sponsor.P188}}" aria-label="{{i18n:sponsor.P192}}">
+                  <svg class="supporter-info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5"></path>
+                    <circle class="supporter-info-dot" cx="12" cy="16" r=".8"></circle>
+                  </svg>
+                </button>
+              </h3>
+              <div class="supporter-logo-grid">
+                <article class="supporter-card supporter-featured supporter-patron-card corporate-tier-patron">
+                  <a class="supporter-logo" href="https://scorewarrior.com/?utm_source=axmol.dev"
+                    target="_blank" rel="noopener">
+                    <img src="https://cdn.prod.website-files.com/633da33305ac754156026dd8/63566f1edf5f0712f94f7f1b_sw-triangle-821890.svg"
+                    alt="{{i18n:sponsor.P151}}">
+                  </a>
+                  <div class="supporter-patron-copy">
+                    <h4>{{i18n:sponsor.P163}}</h4>
+                    <p class="text-body-secondary mb-0">{{i18n:sponsor.P154}}</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="supporter-group lifetime-supporters-section" id="lifetime-supporters">
+              <h3 class="supporter-group-title">
+                <span>{{i18n:sponsor.P176}}</span>
+                <button class="supporter-info-trigger" type="button" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="{{i18n:sponsor.P178}}" aria-label="{{i18n:sponsor.P192}}">
+                  <svg class="supporter-info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5"></path>
+                    <circle class="supporter-info-dot" cx="12" cy="16" r=".8"></circle>
+                  </svg>
+                </button>
+              </h3>
+              <div class="supporter-logo-grid lifetime-supporters-grid">
+                <article class="supporter-card lifetime-example-card" data-lifetime-preview hidden>
+                  <a class="supporter-logo" href="https://datahabibi.ae/" target="_blank" rel="noopener">
+                    <img src="https://datahabibi.ae/assets/icon/dh_logomark.svg" alt="{{i18n:sponsor.P187}}">
+                  </a>
+                  <div class="supporter-patron-copy">
+                    <div class="lifetime-example-title">
+                      <h4>{{i18n:sponsor.P182}}</h4>
+                      <button class="lifetime-preview-badge" type="button" data-bs-toggle="tooltip"
+                        data-bs-placement="top" title="{{i18n:sponsor.P194}}"
+                        aria-label="{{i18n:sponsor.P193}}: {{i18n:sponsor.P194}}">
+                        {{i18n:sponsor.P193}}
+                      </button>
+                    </div>
+                    <p class="text-body-secondary mb-0">{{i18n:sponsor.P183}}</p>
+                  </div>
+                </article>
+              </div>
+            </section>
+            <section class="supporter-group">
+              <h3 class="supporter-group-title">
+                <span>{{i18n:sponsor.P161}}</span>
+                <button class="supporter-info-trigger" type="button" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="{{i18n:sponsor.P189}}" aria-label="{{i18n:sponsor.P192}}">
+                  <svg class="supporter-info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5"></path>
+                    <circle class="supporter-info-dot" cx="12" cy="16" r=".8"></circle>
+                  </svg>
+                </button>
+              </h3>
+              <p class="supporter-names">{{i18n:sponsor.P158}}</p>
+            </section>
+            <section class="supporter-group">
+              <h3 class="supporter-group-title">
+                <span>{{i18n:sponsor.P159}}</span>
+                <button class="supporter-info-trigger" type="button" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="{{i18n:sponsor.P190}}" aria-label="{{i18n:sponsor.P192}}">
+                  <svg class="supporter-info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5"></path>
+                    <circle class="supporter-info-dot" cx="12" cy="16" r=".8"></circle>
+                  </svg>
+                </button>
+              </h3>
+              <p class="supporter-names">{{i18n:sponsor.P156}}</p>
+            </section>
+            <section class="supporter-group supporter-past-group">
+              <h3 class="supporter-group-title">
+                <span>{{i18n:sponsor.P160}}</span>
+                <button class="supporter-info-trigger" type="button" data-bs-toggle="tooltip"
+                  data-bs-placement="top" title="{{i18n:sponsor.P191}}" aria-label="{{i18n:sponsor.P192}}">
+                  <svg class="supporter-info-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <path d="M12 7v5"></path>
+                    <circle class="supporter-info-dot" cx="12" cy="16" r=".8"></circle>
+                  </svg>
+                </button>
+              </h3>
+              <p class="supporter-names mb-0">{{i18n:sponsor.P157}}</p>
+            </section>
           </div>
-          <article class="story-card supporter-names mt-3">
-            <h3>{{i18n:sponsor.P153}}</h3>
-            <dl class="mb-0">
-              <dt>{{i18n:sponsor.P161}}</dt>
-              <dd>{{i18n:sponsor.P158}}</dd>
-              <dt>{{i18n:sponsor.P159}}</dt>
-              <dd>{{i18n:sponsor.P156}}</dd>
-              <dt>{{i18n:sponsor.P160}}</dt>
-              <dd>{{i18n:sponsor.P157}}</dd>
-            </dl>
-          </article>
         </div>
       </section>
 
@@ -524,6 +598,7 @@
     <script src="/assets/js/utils.js?v=2.1.0"></script>
     {{i18n:sponsorRuntime}}
     <script src="/assets/js/sponsor-tiers.js?v=1.1.5"></script>
+    <script src="/assets/js/lifetime-preview.js?v=1.0.0"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
 </html>

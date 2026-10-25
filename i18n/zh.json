@@ -433,7 +433,7 @@
       "context": "html > body > main#main-content > section.section-panel > div.container > div.section-heading > h2.h4"
     },
     "H053": {
-      "value": "CORPORATE DIAMOND",
+      "value": "至臻赞助人",
       "context": "html > body > main#main-content > section.section-panel > div.container > div.supporter-grid > article.supporter-card > div.supporter-tier"
     },
     "H046": {
@@ -1370,19 +1370,11 @@
     },
     "P162": {
       "value": "公开支持者",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.eyebrow"
-    },
-    "P164": {
-      "value": "在公开协作中获得支持。",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2"
-    },
-    "P155": {
-      "value": "感谢以下组织与个人对 Axmol 长期维护的支持。",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > p.text-body-secondary"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.section-heading > h2.eyebrow"
     },
     "P169": {
-      "value": "企业钻石",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > div.supporter-tier"
+      "value": "至臻赞助人",
+      "context": "企业至臻赞助 Logo 卡片组标题"
     },
     "P152": {
       "value": "查看企业赞助档位",
@@ -1466,43 +1458,39 @@
     },
     "P151": {
       "value": "Scorewarrior",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > a.supporter-logo > img [alt]"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > div.supporter-logo-grid > article.supporter-card > a.supporter-logo > img [alt]"
     },
     "P163": {
       "value": "Scorewarrior",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > h3.h5"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > article.supporter-card > div.supporter-patron-copy > h4"
     },
     "P154": {
       "value": "为 Axmol 开发提供长期资金支持。",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.row > div.col-md-8 > article.supporter-card > p.text-body-secondary"
-    },
-    "P153": {
-      "value": "其他公开支持者",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > h3"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-patron-group > article.supporter-card > div.supporter-patron-copy > p"
     },
     "P161": {
       "value": "白金",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > h3.supporter-group-title > span"
     },
     "P158": {
       "value": "peterkharitonov、Alain-Serge Nagni",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P159": {
       "value": "支持者",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > h3.supporter-group-title > span"
     },
     "P156": {
       "value": "DUONG、thienphuoc、paulocoutinhox、clvs7-gh",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-group > p.supporter-names"
     },
     "P160": {
-      "value": "贡献者",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dt"
+      "value": "历史支持者",
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > h3.supporter-group-title > span"
     },
     "P157": {
       "value": "Explorer、蚊子别跑、午餐界、椰子、零、Turky Mohammed、Paul Gardiner、Julien、Javier Barros、Paulo Coutinho、deal11、bingsoo",
-      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > article.story-card > dl.mb-0 > dd"
+      "context": "html > body.sponsor-page > main#main-content > section#supporters > div.container > div.supporter-groups > section.supporter-past-group > p.supporter-names"
     },
     "P030": {
       "value": "常见问题",
@@ -1687,7 +1675,19 @@
     "P175": {
       "value": "下载",
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
-    }
+    },
+    "P176": { "value": "永久展示", "context": "PUBLIC SUPPORTERS 区域中的企业永久展示 Logo 分组短标题" },
+    "P178": { "value": "为公平认可相当规模的支持，此处展示一次性大额赞助或长期月度赞助达到相当额度的企业。", "context": "永久支持者 Logo 展示资格说明" },
+    "P182": { "value": "dataHabibi", "context": "仅预览模式拟议展示卡中的企业名称" },
+    "P183": { "value": "迪拜房地产数据与市场洞察。", "context": "仅预览模式拟议展示卡中的企业简介" },
+    "P187": { "value": "dataHabibi Logo", "context": "仅预览模式拟议展示卡中官方企业 Logo 的替代文本" },
+    "P188": { "value": "至臻赞助企业也会展示在 axmol.dev 首页。", "context": "说明至臻赞助企业在赞助页和首页的展示" },
+    "P189": { "value": "个人白金档赞助者。", "context": "个人白金赞助分组的提示说明" },
+    "P190": { "value": "提供小额赞助的个人支持者。", "context": "个人小额赞助分组的提示说明" },
+    "P191": { "value": "曾经的小额个人赞助者名单。", "context": "历史支持者分组的提示说明" },
+    "P192": { "value": "更多信息", "context": "支持者分组信息图标的无障碍标签" },
+    "P193": { "value": "预览", "context": "标记永久展示拟议卡片为预览的可见标签" },
+    "P194": { "value": "仅用于预览，不代表赞助款项已支付。", "context": "说明拟议支持者卡片不代表已完成赞助付款的提示" }
   },
   "sponsorRuntime": {
     "R001": "支付宝",
