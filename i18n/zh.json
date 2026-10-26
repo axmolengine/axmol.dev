@@ -1673,7 +1673,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P176": { "value": "荣誉", "context": "PUBLIC SUPPORTERS 区域中的企业荣誉 Logo 展示分组短标题" },
-    "P178": { "value": "企业累计赞助达到 15,000 美元及以上，可获永久 Logo 展示。", "context": "企业荣誉 Logo 展示资格及永久展示说明" },
+    "P178": { "value": "企业累计支持金额达到 15,000 美元及以上，可获得永久 Logo 展示。", "context": "企业荣誉 Logo 展示资格及永久展示说明" },
     "P182": { "value": "dataHabibi", "context": "仅预览模式拟议展示卡中的企业名称" },
     "P183": { "value": "迪拜房地产数据与市场洞察。", "context": "仅预览模式拟议展示卡中的企业简介" },
     "P187": { "value": "dataHabibi Logo", "context": "仅预览模式拟议展示卡中官方企业 Logo 的替代文本" },

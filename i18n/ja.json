@@ -1673,7 +1673,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P176": { "value": "名誉", "context": "公開サポーター一覧にある企業の名誉ロゴ掲載グループの短い見出し" },
-    "P178": { "value": "累計支援額が15,000米ドル以上の企業ロゴを恒久的に掲載します。", "context": "企業名誉ロゴ掲載の資格と恒久掲載の説明" },
+    "P178": { "value": "累計支援額が15,000米ドル以上の企業は、ロゴを恒久的に掲載できます。", "context": "企業名誉ロゴ掲載の資格と恒久掲載の説明" },
     "P182": { "value": "dataHabibi", "context": "プレビュー専用の掲載提案カードに表示する企業名" },
     "P183": { "value": "ドバイの不動産データと市場分析。", "context": "プレビュー専用の掲載提案カードに表示する企業紹介" },
     "P187": { "value": "dataHabibi のロゴ", "context": "プレビュー専用の掲載提案カードに使う公式ロゴの代替テキスト" },

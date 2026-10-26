@@ -1673,7 +1673,7 @@
       "context": "html > body > nav.navbar > div.container > div#primary-nav > ul.navbar-nav > li.nav-item > a.nav-link"
     },
     "P176": { "value": "Honorary", "context": "Concise honorary corporate logo group heading in the public supporters section" },
-    "P178": { "value": "Permanent logo recognition for corporate sponsors whose lifetime contributions total US$15,000 or more.", "context": "Eligibility and permanent recognition for honorary corporate logo listings" },
+    "P178": { "value": "Companies with lifetime contributions of US$15,000 or more receive permanent logo recognition.", "context": "Eligibility and permanent recognition for honorary corporate logo listings" },
     "P182": { "value": "dataHabibi", "context": "Company name in the preview-only proposed listing" },
     "P183": { "value": "Dubai real estate data and market insights.", "context": "Company description for the preview-only proposed listing" },
     "P187": { "value": "dataHabibi logo", "context": "Alt text for the official company logo in the preview-only proposed listing" },
