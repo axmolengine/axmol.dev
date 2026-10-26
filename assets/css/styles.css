@@ -753,6 +753,9 @@ svg.bi {
 .corporate-tier-item h3 { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 0 0 .35rem; font-size: 1rem; }
 .corporate-tier-item h3 span { color: var(--bs-secondary-color); font-size: .9rem; font-weight: 500; text-align: right; }
 .corporate-tier-item ul { margin: 0; padding-left: 1.25rem; color: var(--bs-secondary-color); font-size: .9rem; }
+.corporate-honors-note { margin-top: 1rem; padding: 1rem; border: 1px solid var(--ax-card-border); border-radius: .75rem; background: var(--ax-card-bg); }
+.corporate-honors-note h4 { margin: 0 0 .6rem; font-size: 1rem; }
+.corporate-honors-note p { margin: 0 0 .45rem; color: var(--bs-secondary-color); font-size: .9rem; }
 .sponsor-path-card-actions { display: grid; gap: .65rem; margin-top: auto; }
 .sponsor-path-card-actions a.sponsor-path-action { text-decoration: none; }
 .sponsor-path-button { width: 100%; padding: 0; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; }

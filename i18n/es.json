@@ -1680,10 +1680,14 @@
     "P188": { "value": "Las empresas mecenas también aparecen en la página de inicio de axmol.dev.", "context": "Información sobre la presencia de mecenas en Patrocinio y en la página de inicio" },
     "P189": { "value": "Colaboradores individuales de categoría Platino.", "context": "Información sobre el grupo Platino individual" },
     "P190": { "value": "Colaboradores individuales con aportaciones pequeñas.", "context": "Información sobre el grupo individual Backers" },
-    "P191": { "value": "Registro de antiguos colaboradores individuales con aportaciones pequeñas.", "context": "Información sobre el grupo de colaboradores anteriores" },
+    "P191": { "value": "Antiguos colaboradores individuales y empresas cuyo periodo de apoyo ha finalizado.", "context": "Información sobre el grupo de colaboradores anteriores" },
     "P192": { "value": "Más información", "context": "Etiqueta accesible de los iconos informativos de los grupos" },
     "P193": { "value": "Vista previa", "context": "Insignia visible que marca como vista previa la ficha propuesta de colaboradores permanentes" },
-    "P194": { "value": "Solo para vista previa; no significa que se haya pagado el patrocinio.", "context": "Información emergente que aclara que la ficha propuesta no confirma un pago" }
+    "P194": { "value": "Solo para vista previa; no significa que se haya pagado el patrocinio.", "context": "Información emergente que aclara que la ficha propuesta no confirma un pago" },
+    "P195": { "value": "Honors — Reconocimiento permanente", "context": "Título de las reglas de reconocimiento corporativo permanente en el diálogo de niveles" },
+    "P196": { "value": "Las empresas con aportaciones acumuladas de 15.000 USD o más pueden recibir reconocimiento permanente en Honors, con su logotipo, descripción y enlace a su sitio web.", "context": "Requisitos y contenido del reconocimiento permanente en Honors" },
+    "P197": { "value": "Los patrocinadores activos conservan su nivel actual. Si no renuevan dentro de los 30 días posteriores al fin del periodo pagado, quienes cumplan los requisitos pasan a Honors; las demás empresas, a Past.", "context": "Clasificación de empresas al terminar un periodo de patrocinio pagado" },
+    "P198": { "value": "Las aportaciones únicas de 15.000 USD o más cumplen los requisitos de inmediato. Las aportaciones anteriores también cuentan para el total.", "context": "Acceso inmediato mediante una aportación única y cómputo acumulado" }
   },
   "sponsorRuntime": {
     "R001": "Alipay",

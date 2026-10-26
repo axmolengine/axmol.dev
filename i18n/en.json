@@ -1680,10 +1680,14 @@
     "P188": { "value": "Patron supporters are also featured on the axmol.dev homepage.", "context": "Tooltip explaining Patron recognition on the Sponsor page and homepage" },
     "P189": { "value": "Individual supporters in the Platinum tier.", "context": "Tooltip explaining the individual Platinum group" },
     "P190": { "value": "Individual supporters making smaller contributions.", "context": "Tooltip explaining the individual Backers group" },
-    "P191": { "value": "A record of former small individual supporters.", "context": "Tooltip explaining the Past supporters group" },
+    "P191": { "value": "Former individual supporters and corporate sponsors whose support has ended.", "context": "Tooltip explaining the Past supporters group" },
     "P192": { "value": "More information", "context": "Accessible label for supporter group information icons" },
     "P193": { "value": "Preview", "context": "Visible badge marking the proposed Lifetime supporter card as a preview" },
-    "P194": { "value": "Preview only; this does not indicate that sponsorship payment has been made.", "context": "Tooltip clarifying the proposed supporter card is not a paid sponsorship" }
+    "P194": { "value": "Preview only; this does not indicate that sponsorship payment has been made.", "context": "Tooltip clarifying the proposed supporter card is not a paid sponsorship" },
+    "P195": { "value": "Honors — Lifetime Recognition", "context": "Heading for the corporate lifetime recognition policy in the tier dialog" },
+    "P196": { "value": "Corporate supporters with cumulative contributions of USD 15,000 or more qualify for permanent recognition in Honors, including their logo, description, and website link.", "context": "Eligibility and contents of permanent Honors recognition" },
+    "P197": { "value": "Active sponsors retain their current tier. If not renewed within 30 days after the paid period ends, qualifying sponsors move to Honors; others move to Past.", "context": "How active corporate sponsors are classified after a paid period ends" },
+    "P198": { "value": "One-time contributions of USD 15,000 or more qualify immediately. Past contributions count toward eligibility.", "context": "One-time qualification and cumulative contribution eligibility" }
   },
   "sponsorRuntime": {
     "R001": "Alipay",
