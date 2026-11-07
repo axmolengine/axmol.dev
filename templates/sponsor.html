@@ -25,7 +25,7 @@
       })();
     </script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.41" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.42" rel="stylesheet">
   </head>
   <body class="sponsor-page">
     <a class="visually-hidden-focusable skip-link" href="#main-content">{{i18n:sponsor.P105}}</a>
@@ -300,7 +300,7 @@
                 </article>
               </div>
             </section>
-            <section class="supporter-group lifetime-supporters-section" id="lifetime-supporters">
+            <section class="supporter-group honors-supporters-section" id="lifetime-supporters" hidden>
               <h3 class="supporter-group-title">
                 <span>{{i18n:sponsor.P176}}</span>
                 <button class="supporter-info-trigger" type="button" data-bs-toggle="tooltip"
@@ -312,23 +312,7 @@
                   </svg>
                 </button>
               </h3>
-              <div class="supporter-logo-grid lifetime-supporters-grid">
-                <article class="supporter-card lifetime-example-card" data-lifetime-preview hidden>
-                  <a class="supporter-logo" href="https://datahabibi.ae/" target="_blank" rel="noopener">
-                    <img src="https://datahabibi.ae/assets/icon/dh_logomark.svg" alt="{{i18n:sponsor.P187}}">
-                  </a>
-                  <div class="supporter-patron-copy">
-                    <div class="lifetime-example-title">
-                      <h4>{{i18n:sponsor.P182}}</h4>
-                      <button class="lifetime-preview-badge" type="button" data-bs-toggle="tooltip"
-                        data-bs-placement="top" title="{{i18n:sponsor.P194}}"
-                        aria-label="{{i18n:sponsor.P193}}: {{i18n:sponsor.P194}}">
-                        {{i18n:sponsor.P193}}
-                      </button>
-                    </div>
-                    <p class="text-body-secondary mb-0">{{i18n:sponsor.P183}}</p>
-                  </div>
-                </article>
+              <div class="supporter-logo-grid honors-supporters-grid">
               </div>
             </section>
             <section class="supporter-group">
@@ -604,7 +588,7 @@
     <script src="/assets/js/utils.js?v=2.1.0"></script>
     {{i18n:sponsorRuntime}}
     <script src="/assets/js/sponsor-tiers.js?v=1.1.5"></script>
-    <script src="/assets/js/lifetime-preview.js?v=1.0.0"></script>
+    <script src="/assets/js/sponsor-supporters.js?v=1.0.0"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>
 </html>
