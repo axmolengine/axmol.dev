@@ -25,7 +25,7 @@
       })();
     </script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.42" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.43" rel="stylesheet">
   </head>
   <body class="sponsor-page">
     <a class="visually-hidden-focusable skip-link" href="#main-content">{{i18n:sponsor.P105}}</a>
@@ -245,25 +245,51 @@
                 <img data-sponsor-qr-image src="/assets/img/alipay.jpg" alt="{{i18n:sponsor.P106}}">
               </button>
             </section>
-            <div class="sponsor-tier-grid" data-sponsor-tiers>
-              <button type="button" class="sponsor-tier-card" data-tier-amount="5"><span>{{i18n:sponsor.P140}}</span><strong>{{i18n:sponsor.P149}}<small>{{i18n:sponsor.P135}}</small></strong></button>
-              <button type="button" class="sponsor-tier-card" data-tier-amount="25"><span>{{i18n:sponsor.P141}}</span><strong>{{i18n:sponsor.P147}}<small>{{i18n:sponsor.P136}}</small></strong></button>
-              <button type="button" class="sponsor-tier-card" data-tier-amount="50"><span>{{i18n:sponsor.P145}}</span><strong>{{i18n:sponsor.P150}}<small>{{i18n:sponsor.P137}}</small></strong></button>
-              <button type="button" class="sponsor-tier-card" data-tier-amount="100"><span>{{i18n:sponsor.P142}}</span><strong>{{i18n:sponsor.P146}}<small>{{i18n:sponsor.P138}}</small></strong></button>
-              <button type="button" class="sponsor-tier-card" data-tier-amount="250"><span>{{i18n:sponsor.P144}}</span><strong>{{i18n:sponsor.P148}}<small>{{i18n:sponsor.P139}}</small></strong></button>
-              <div class="sponsor-tier-card sponsor-tier-custom">
-                <h4>{{i18n:sponsor.P124}}</h4>
-                <div class="custom-tier-action">
-                  <div class="custom-tier-input-wrap">
-                    <span class="currency-prefix" aria-hidden="true">{{i18n:sponsor.P118}}</span>
-                    <input id="custom-amount-en" class="custom-tier-input" data-custom-amount type="number" min="1" max="500" step="0.01" inputmode="decimal" placeholder="{{i18n:sponsor.P134}}" aria-label="{{i18n:sponsor.P107}}">
-                    <span class="currency-suffix" aria-hidden="true">{{i18n:sponsor.P119}}</span>
+            <fieldset class="sponsor-tier-fieldset">
+              <legend class="visually-hidden">{{i18n:sponsor.P199}}</legend>
+              <div class="sponsor-tier-grid" data-sponsor-tiers>
+                <label class="sponsor-tier-card">
+                  <input class="sponsor-tier-input" type="radio" name="sponsor-tier" value="5" data-tier-amount="5" checked>
+                  <span>{{i18n:sponsor.P140}}</span>
+                  <strong>{{i18n:sponsor.P149}}<small>{{i18n:sponsor.P135}}</small></strong>
+                </label>
+                <label class="sponsor-tier-card">
+                  <input class="sponsor-tier-input" type="radio" name="sponsor-tier" value="25" data-tier-amount="25">
+                  <span>{{i18n:sponsor.P141}}</span>
+                  <strong>{{i18n:sponsor.P147}}<small>{{i18n:sponsor.P136}}</small></strong>
+                </label>
+                <label class="sponsor-tier-card">
+                  <input class="sponsor-tier-input" type="radio" name="sponsor-tier" value="50" data-tier-amount="50">
+                  <span>{{i18n:sponsor.P145}}</span>
+                  <strong>{{i18n:sponsor.P150}}<small>{{i18n:sponsor.P137}}</small></strong>
+                </label>
+                <label class="sponsor-tier-card">
+                  <input class="sponsor-tier-input" type="radio" name="sponsor-tier" value="100" data-tier-amount="100">
+                  <span>{{i18n:sponsor.P142}}</span>
+                  <strong>{{i18n:sponsor.P146}}<small>{{i18n:sponsor.P138}}</small></strong>
+                </label>
+                <label class="sponsor-tier-card">
+                  <input class="sponsor-tier-input" type="radio" name="sponsor-tier" value="250" data-tier-amount="250">
+                  <span>{{i18n:sponsor.P144}}</span>
+                  <strong>{{i18n:sponsor.P148}}<small>{{i18n:sponsor.P139}}</small></strong>
+                </label>
+                <div class="sponsor-tier-card sponsor-tier-custom">
+                  <input class="sponsor-tier-input" id="sponsor-tier-custom" type="radio" name="sponsor-tier" value="custom" data-tier-amount="custom">
+                  <h4><label for="sponsor-tier-custom">{{i18n:sponsor.P124}}</label></h4>
+                  <div class="custom-tier-action">
+                    <div class="custom-tier-input-wrap">
+                      <span class="currency-prefix" aria-hidden="true">{{i18n:sponsor.P118}}</span>
+                      <input id="custom-amount-en" class="custom-tier-input" data-custom-amount type="number" min="1" max="500" step="0.01" inputmode="decimal" placeholder="{{i18n:sponsor.P134}}" aria-label="{{i18n:sponsor.P107}}">
+                      <span class="currency-suffix" aria-hidden="true">{{i18n:sponsor.P119}}</span>
+                    </div>
+                    <label class="custom-monthly-label"><input type="checkbox" data-custom-monthly checked><span aria-hidden="true"></span>{{i18n:sponsor.P120}}</label>
                   </div>
-                  <label class="custom-monthly-label"><input type="checkbox" data-custom-monthly checked><span aria-hidden="true"></span>{{i18n:sponsor.P120}}</label>
                 </div>
-                <button type="button" class="btn btn-outline-primary align-self-start" data-tier-amount="custom">{{i18n:sponsor.P109}}</button>
+                <div class="sponsor-tier-actions">
+                  <button type="button" class="btn btn-primary" data-sponsor-submit>{{i18n:sponsor.P200}}</button>
+                </div>
               </div>
-            </div>
+            </fieldset>
           </div>
         </div>
       </section>
@@ -587,7 +613,7 @@
     <script src="/assets/js/md5.js?v=2.2"></script>
     <script src="/assets/js/utils.js?v=2.1.0"></script>
     {{i18n:sponsorRuntime}}
-    <script src="/assets/js/sponsor-tiers.js?v=1.1.5"></script>
+    <script src="/assets/js/sponsor-tiers.js?v=1.1.6"></script>
     <script src="/assets/js/sponsor-supporters.js?v=1.0.0"></script>
     <script src="/assets/js/theme.js?v=2.1.0"></script>
   </body>

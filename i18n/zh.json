@@ -1276,65 +1276,73 @@
       "value": "支付宝赞助二维码",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > section.sponsor-qr-panel > button.sponsor-qr-image-button > img [alt]"
     },
+    "P199": {
+      "value": "赞助档位",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > fieldset.sponsor-tier-fieldset > legend.visually-hidden"
+    },
+    "P200": {
+      "value": "确认赞助",
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > fieldset.sponsor-tier-fieldset > div.sponsor-tier-grid > div.sponsor-tier-actions > button.btn"
+    },
     "P140": {
       "value": "支持者",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > span"
     },
     "P149": {
       "value": "USD $5",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong"
     },
     "P135": {
       "value": "/ 月",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong > small"
     },
     "P141": {
       "value": "青铜",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > span"
     },
     "P147": {
       "value": "USD $25",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong"
     },
     "P136": {
       "value": "/ 月",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong > small"
     },
     "P145": {
       "value": "白银",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > span"
     },
     "P150": {
       "value": "USD $50",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong"
     },
     "P137": {
       "value": "/ 月",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong > small"
     },
     "P142": {
       "value": "黄金",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > span"
     },
     "P146": {
       "value": "USD $100",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong"
     },
     "P138": {
       "value": "/ 月",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong > small"
     },
     "P144": {
       "value": "白金",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > span"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > span"
     },
     "P148": {
       "value": "USD $250",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong"
     },
     "P139": {
       "value": "/ 月",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > button.sponsor-tier-card > strong > small"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > label.sponsor-tier-card > strong > small"
     },
     "P124": {
       "value": "自定义",
@@ -1362,7 +1370,7 @@
     },
     "P109": {
       "value": "继续",
-      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-card > button.btn"
+      "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div#individual-sponsorship > div.sponsor-tier-grid > div.sponsor-tier-actions > button.btn"
     },
     "P162": {
       "value": "公开支持者",

@@ -63,9 +63,12 @@
   };
 
   document.querySelectorAll("[data-sponsor-tiers]").forEach((tierGrid) => {
-    const channelSelect = tierGrid.parentElement?.querySelector("[data-sponsor-channel]");
-    const channelHelp = tierGrid.parentElement?.querySelector("[data-sponsor-channel-help]");
-    const qrPanel = tierGrid.parentElement?.querySelector("[data-sponsor-qr-panel]");
+    // The tier grid sits inside its own fieldset, so the channel controls are
+    // resolved from the surrounding panel instead of the grid's parent element.
+    const panel = tierGrid.closest("#individual-sponsorship") || tierGrid.parentElement;
+    const channelSelect = panel?.querySelector("[data-sponsor-channel]");
+    const channelHelp = panel?.querySelector("[data-sponsor-channel-help]");
+    const qrPanel = panel?.querySelector("[data-sponsor-qr-panel]");
     const qrTitle = qrPanel?.querySelector("[data-sponsor-qr-title]");
     const qrImage = qrPanel?.querySelector("[data-sponsor-qr-image]");
     const qrOpenButtons = qrPanel?.querySelectorAll("[data-sponsor-qr-open]") || [];
@@ -124,10 +127,25 @@
       form.submit();
     };
 
-    tierGrid.querySelectorAll("[data-tier-amount]").forEach((tier) => {
-      tier.addEventListener("click", () => {
+    // Cards are radio buttons, so a pick no longer pays by itself: the single
+    // Continue button in the grid footer submits the selected tier.
+    const selectedTier = () => tierGrid.querySelector('input[name="sponsor-tier"]:checked');
+    const syncSelectedCard = () => {
+      tierGrid.querySelectorAll(".sponsor-tier-card").forEach((card) => {
+        card.classList.toggle("is-selected", Boolean(card.querySelector('input[name="sponsor-tier"]:checked')));
+      });
+    };
+    tierGrid.querySelectorAll("input[name=\"sponsor-tier\"]").forEach((radio) => {
+      radio.addEventListener("change", syncSelectedCard);
+    });
+    syncSelectedCard();
+
+    tierGrid.querySelectorAll("[data-sponsor-submit]").forEach((submitButton) => {
+      submitButton.addEventListener("click", () => {
         if (qrChannels[channel()]) return;
-        let amount = tier.dataset.tierAmount;
+        const tier = selectedTier();
+        if (!tier) return;
+        let amount = tier.value;
         let monthly = true;
         if (amount === "custom") {
           const input = tierGrid.querySelector("[data-custom-amount]");
@@ -150,16 +168,32 @@
       });
     });
 
+    // Touching the custom amount or its monthly switch picks the custom card.
+    const customRadio = tierGrid.querySelector("#sponsor-tier-custom");
     tierGrid.querySelectorAll("[data-custom-amount]").forEach((input) => {
       const wrapper = input.closest(".custom-tier-input-wrap");
       const updateState = () => wrapper?.classList.toggle("has-value", input.value.trim() !== "");
-      input.addEventListener("input", updateState);
+      input.addEventListener("focus", () => {
+        if (customRadio) customRadio.checked = true;
+        syncSelectedCard();
+      });
+      input.addEventListener("input", () => {
+        if (customRadio) customRadio.checked = true;
+        syncSelectedCard();
+        updateState();
+      });
       input.addEventListener("blur", () => {
         const value = Number(input.value);
         if (Number.isFinite(value) && value > 0 && value <= maxIndividualAmount) input.value = value.toFixed(2);
         updateState();
       });
       updateState();
+    });
+    tierGrid.querySelectorAll("[data-custom-monthly]").forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        if (customRadio) customRadio.checked = true;
+        syncSelectedCard();
+      });
     });
   });
 })();
