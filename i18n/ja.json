@@ -1113,7 +1113,7 @@
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p > a"
     },
     "P052": {
-      "value": "が主導・保守し、コミュニティも貢献しています。バグ修正、改善、新機能には時間と労力が必要です。",
+      "value": " が主導・保守し、コミュニティも貢献しています。バグ修正、改善、新機能には時間と労力が必要です。",
       "context": "html > body.sponsor-page > main#main-content > header.hero > div.container > div.row > div.col-lg-12 > div.sponsor-hero-copy > p"
     },
     "P053": {
@@ -1137,7 +1137,7 @@
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary > a"
     },
     "P117": {
-      "value": "が主導・保守し、コミュニティも貢献しています。",
+      "value": " が主導・保守し、コミュニティも貢献しています。",
       "context": "html > body.sponsor-page > main#main-content > section.section-panel > div.container > div.section-heading > p.text-body-secondary"
     },
     "P064": {
