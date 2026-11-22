@@ -531,6 +531,10 @@
     "H135": {
       "value": "了解 Axmol Hub 预览版",
       "context": "homepage > Axmol Hub announcement banner link"
+    },
+    "H136": {
+      "value": "用 Axmol Hub 安装 LTS",
+      "context": "homepage > hero > LTS install source dropdown button"
     }
   },
   "v3": {

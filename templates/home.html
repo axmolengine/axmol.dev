@@ -140,7 +140,23 @@
               <h1 class="display-3 fw-bold text-glow mb-3">{{i18n:home.H040}}</h1>
               <p class="hero-lead mb-4">{{i18n:home.H042}}</p>
               <div class="d-flex flex-wrap gap-3 mb-4">
-                <a class="btn btn-primary btn-lg" href="/v3/">{{i18n:home.H045}}</a>
+                <div class="dropdown">
+                  <button class="btn btn-primary btn-lg dropdown-toggle text-wrap" type="button" id="hero-install-options" data-bs-toggle="dropdown" aria-expanded="false">{{i18n:home.H136}}</button>
+                  <ul class="dropdown-menu" aria-labelledby="hero-install-options">
+                    <li>
+                      <a class="dropdown-item py-2" href="axmolhub://install?version={{release:latestVersion}}&amp;source=github">{{i18n:hub.U162}}</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2" href="axmolhub://install?version={{release:latestVersion}}&amp;source=atomgit">{{i18n:hub.U163}}</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li>
+                      <a class="dropdown-item py-2" href="/hub/#downloads">{{i18n:hub.U142}}</a>
+                    </li>
+                  </ul>
+                </div>
                 <a class="btn btn-outline-light btn-lg" href="{{release:latestUrl}}">{{i18n:hub.U139}}</a>
                 <a class="btn btn-link btn-lg px-0" href="https://deepwiki.com/axmolengine/axmol" target="_blank" rel="noopener">{{i18n:home.H043}} <svg class="icon-inline" aria-hidden="true">
                     <use href="/assets/icons.svg#arrow-right">

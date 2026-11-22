@@ -531,6 +531,10 @@
     "H135": {
       "value": "Explora la vista previa de Axmol Hub",
       "context": "homepage > Axmol Hub announcement banner link"
+    },
+    "H136": {
+      "value": "Instalar LTS con Axmol Hub",
+      "context": "homepage > hero > LTS install source dropdown button"
     }
   },
   "v3": {

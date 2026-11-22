@@ -531,6 +531,10 @@
     "H135": {
       "value": "Axmol Hub のプレビューを見る",
       "context": "homepage > Axmol Hub announcement banner link"
+    },
+    "H136": {
+      "value": "Axmol Hub で LTS をインストール",
+      "context": "homepage > hero > LTS install source dropdown button"
     }
   },
   "v3": {
