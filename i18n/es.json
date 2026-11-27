@@ -1876,6 +1876,18 @@
     "U166": "Descargar para Windows (ARM64)",
     "U167": "Descargar para Linux (ARM64)",
     "U168": "Windows 10/11, ARM64",
-    "U169": "Linux ARM64 (AppImage)"
+    "U169": "Linux ARM64 (AppImage)",
+    "U170": "Lista de proyectos con motores instalados y destinos de compilación",
+    "U171": "Creación de proyectos con opciones de plantilla y ubicación",
+    "U172": "Versiones instaladas del motor y canales de lanzamiento",
+    "U173": "Configuración de compilación de lanzamiento para Android",
+    "U174": "Verificación de toolchain y estado de instalación",
+    "U175": "Editor de código integrado con archivos del proyecto",
+    "U176": "Asistente de IA respondiendo una pregunta sobre el proyecto",
+    "U177": "Asistente de IA planificando un cambio de código",
+    "U178": "Asistente de IA revisando cambios de Git",
+    "U179": "Captura anterior",
+    "U180": "Captura siguiente",
+    "U181": "Capturas de Axmol Hub"
   }
 }

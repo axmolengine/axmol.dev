@@ -1882,6 +1882,18 @@
     "U166": "Download for Windows (ARM64)",
     "U167": "Download for Linux (ARM64)",
     "U168": "Windows 10/11, ARM64",
-    "U169": "Linux ARM64 (AppImage)"
+    "U169": "Linux ARM64 (AppImage)",
+    "U170": "Projects list with installed engines and build targets",
+    "U171": "New project creation with template and location settings",
+    "U172": "Installed engine versions and release channels",
+    "U173": "Android release build configuration",
+    "U174": "Toolchain verification and setup status",
+    "U175": "Built-in code editor with project files",
+    "U176": "AI assistant asking a question about the project",
+    "U177": "AI assistant planning a code change",
+    "U178": "AI assistant reviewing Git changes",
+    "U179": "Previous screenshot",
+    "U180": "Next screenshot",
+    "U181": "Axmol Hub screenshots"
   }
 }

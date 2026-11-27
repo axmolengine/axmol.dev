@@ -24,7 +24,7 @@
     <meta name="twitter:image" content="https://axmol.dev/assets/img/splash_black.png">
     <script>(()=>{let s=null;try{s=localStorage.getItem("axmol-theme")}catch(e){}const d=matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";document.documentElement.setAttribute("data-bs-theme",s==="light"||s==="dark"?s:d)})();</script>
     <link href="/assets/css/bootstrap.min.css?v=5.3.8" rel="stylesheet">
-    <link href="/assets/css/styles.css?v=3.0.43" rel="stylesheet">
+    <link href="/assets/css/styles.css?v=3.0.46" rel="stylesheet">
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Axmol Hub","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux","url":"https://axmol.dev/hub/","license":"https://github.com/axmolengine/axmol-hub/blob/master/LICENSE","codeRepository":"https://github.com/axmolengine/axmol-hub"}</script>
   </head>
   <body>
@@ -179,7 +179,112 @@
       </header>
       <section class="section-tight" id="preview">
         <div class="container">
-          <img class="img-fluid rounded-4 shadow-lg d-block mx-auto" src="/assets/img/hub_main_window.png?v=0.9.1" alt="{{i18n:hub.U038}}" loading="lazy">
+          <div
+            id="hub-screenshots"
+            class="carousel slide hub-screenshots"
+            data-bs-ride="carousel"
+            data-bs-interval="6000"
+            data-bs-pause="hover"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="{{i18n:hub.U181}}">
+            <div class="carousel-inner rounded-4 shadow-lg">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/proj-list.jpg"
+                  alt="{{i18n:hub.U170}}"
+                  fetchpriority="high">
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/proj-new.jpg"
+                  alt="{{i18n:hub.U171}}"
+                  loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/engine-management.jpg"
+                  alt="{{i18n:hub.U172}}"
+                  loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/android-release.jpg"
+                  alt="{{i18n:hub.U173}}"
+                  loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/toolchain-verify.jpg"
+                  alt="{{i18n:hub.U174}}"
+                  loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/code-editor.jpg"
+                  alt="{{i18n:hub.U175}}"
+                  loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/ai-ask.jpg"
+                  alt="{{i18n:hub.U176}}"
+                  loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/ai-plan.jpg"
+                  alt="{{i18n:hub.U177}}"
+                  loading="lazy">
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/img/hub/ai-git-ops.jpg"
+                  alt="{{i18n:hub.U178}}"
+                  loading="lazy">
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#hub-screenshots"
+                data-bs-slide="prev"
+                aria-label="{{i18n:hub.U179}}">
+                <svg aria-hidden="true" viewBox="0 0 16 16">
+                  <path d="m10.5 3-5 5 5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#hub-screenshots"
+                data-bs-slide="next"
+                aria-label="{{i18n:hub.U180}}">
+                <svg aria-hidden="true" viewBox="0 0 16 16">
+                  <path d="m5.5 3 5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="0" class="active" aria-current="true" aria-label="{{i18n:hub.U170}}"></button>
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="1" aria-label="{{i18n:hub.U171}}"></button>
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="2" aria-label="{{i18n:hub.U172}}"></button>
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="3" aria-label="{{i18n:hub.U173}}"></button>
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="4" aria-label="{{i18n:hub.U174}}"></button>
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="5" aria-label="{{i18n:hub.U175}}"></button>
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="6" aria-label="{{i18n:hub.U176}}"></button>
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="7" aria-label="{{i18n:hub.U177}}"></button>
+              <button type="button" data-bs-target="#hub-screenshots" data-bs-slide-to="8" aria-label="{{i18n:hub.U178}}"></button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
