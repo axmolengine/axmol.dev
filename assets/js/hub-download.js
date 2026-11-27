@@ -57,6 +57,11 @@
       return;
     }
 
+    const primarySize = document.getElementById('hub-primary-size');
+    if (primarySize) {
+      const size = download.querySelector('[data-hub-size]')?.textContent.trim();
+      primarySize.textContent = size ? ` · ${size}` : '';
+    }
     button.textContent = download.dataset.downloadLabel;
     button.disabled = false;
     button.addEventListener('click', () => window.location.assign(download.href));

@@ -7,7 +7,8 @@ param(
   [string]$ReleaseIndex,
   # Latest Axmol Hub version resolved by build.ps1 from GitHub's Releases Atom feed.
   [Parameter(Mandatory = $true)]
-  [string]$HubVersion
+  [string]$HubVersion,
+  [hashtable]$HubSizes = @{}
 )
 
 $ErrorActionPreference = 'Stop'
@@ -143,6 +144,12 @@ foreach ($locale in $locales) {
           $replacement = $latestLtsUrl
         } elseif ($key -eq 'latestVersion') {
           $replacement = [System.Net.WebUtility]::HtmlEncode($latestLtsVersion)
+        } elseif ($key -match '^hubSize\.(.+)$') {
+          $size = $HubSizes[$Matches[1]]
+          $replacement = if ($size) {
+            $number = $size.Number.ToString('G29', [cultureinfo]::GetCultureInfo($locale))
+            [System.Net.WebUtility]::HtmlEncode("$number $($size.Unit)")
+          } else { '' }
         } else {
           throw "Unknown release token '$($token.Value)' in $templatePath"
         }

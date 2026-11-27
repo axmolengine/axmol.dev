@@ -67,12 +67,53 @@ try {
 
 Write-Host "Latest Axmol Hub version: v$hub_version"
 
+# Read the displayed sizes from the same tag's asset list in a single request.
+# Match complete installer names, not update packages or .sha256 sidecars.
+$hub_sizes = @{}
+$hub_tag = $latest_hub_release_uri.Segments[-1]
+$hub_installers = @{
+  "axmol-hub-$hub_version-win-x64.exe" = 'windows-x64'
+  "axmol-hub-$hub_version-win-arm64.exe" = 'windows-arm64'
+  "axmol-hub-$hub_version-osx-arm64.pkg" = 'macos-arm64'
+  "axmol-hub-$hub_version-osx-x64.pkg" = 'macos-x64'
+  'axmol-hub-linux-x64.AppImage' = 'linux-x64'
+  'axmol-hub-linux-arm64.AppImage' = 'linux-arm64'
+}
+try {
+  $hub_assets = Invoke-WebRequest `
+    -Uri "https://github.com/axmolengine/axmol-hub/releases/expanded_assets/$hub_tag" `
+    -Headers @{ 'User-Agent' = 'axmol.dev-build' } `
+    -TimeoutSec 30 `
+    -UseBasicParsing
+  $download_path = [regex]::Escape("/axmolengine/axmol-hub/releases/download/$hub_tag/")
+  foreach ($row in [regex]::Matches($hub_assets.Content, '(?s)<li\b[^>]*>.*?</li>')) {
+    $link = [regex]::Match($row.Value, '<a\b[^>]*\shref="' + $download_path + '(?<name>[^"/]+)"')
+    $target = $hub_installers[$link.Groups['name'].Value]
+    if (!$target) { continue }
+
+    $size = [regex]::Match($row.Value, '>\s*(?<number>[0-9]+(?:\.[0-9]+)?)\s+(?<unit>Bytes?|[KMGT]B)\s*<')
+    if ($size.Success) {
+      $hub_sizes[$target] = @{
+        Number = [decimal]$size.Groups['number'].Value
+        Unit = $size.Groups['unit'].Value
+      }
+    }
+  }
+  foreach ($name in $hub_installers.Keys) {
+    if (!$hub_sizes.ContainsKey($hub_installers[$name])) {
+      Write-Warning "No download size found for '$name' in the $hub_tag asset list."
+    }
+  }
+} catch {
+  Write-Warning "Could not read Axmol Hub download sizes for ${hub_tag}: $($_.Exception.Message)"
+}
+
 # Generate the Axmol release registry before rendering because the pages bake
 # the latest LTS link and version into the markup.
 $release_index = Join-Path $site_dist 'versions/index.json'
 & (Join-Path $PSScriptRoot 'gen-verlist.ps1') -OutputPath $release_index
 
-& (Join-Path $PSScriptRoot 'render-i18n.ps1') -OutputPath $site_dist -ReleaseIndex $release_index -HubVersion $hub_version
+& (Join-Path $PSScriptRoot 'render-i18n.ps1') -OutputPath $site_dist -ReleaseIndex $release_index -HubVersion $hub_version -HubSizes $hub_sizes
 
 # step.2 build docs to main site manual
 if ($axmol_src) {
