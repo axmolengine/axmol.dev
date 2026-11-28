@@ -1759,14 +1759,14 @@
       "context": "html > head > title"
     },
     "U032": {
-      "value": "Axmol Hub 统一管理 Axmol 引擎、项目与构建工具链，并内置通用编程智能体，可读取代码、修改代码并完成构建。",
+      "value": "Axmol Hub 统一管理 Axmol 引擎、项目与构建工具链，并内置 AI 通用编程智能体，可读取代码、修改代码并完成构建。",
       "context": "html > head > meta [content]"
     },
     "U033": {
       "value": "Axmol Hub"
     },
     "U034": {
-      "value": "Axmol 工作台——引擎、项目与构建工具链由它代管，并内置通用编程智能体。",
+      "value": "Axmol 工作台——引擎、项目与构建工具链由它代管，并内置 AI 通用编程智能体。",
       "context": "html > head > meta[property=og:description] [content]"
     },
     "U035": {
